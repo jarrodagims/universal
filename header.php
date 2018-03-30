@@ -25,12 +25,11 @@
 
     </head>
     <body <?php body_class(); ?>>
-    
+
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser.</p>
             <p class="browsehappy">Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
         <section id="header">
 	        <div class="container">
 		        <div class="row">
@@ -50,7 +49,6 @@
                             echo responsive_bs_menu('primary', 'left', 'Eleganzza');
                         ?>
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="menu-item espanol"><span>Se Habla Español</span></li>
                             <li class="menu-item directions"><a href="<?php echo get_site_url()?>/contact">Directions</a></li>
                             <li class="menu-item contact"><a href="tel:+9158670727">Call</a></li>
                         </ul>

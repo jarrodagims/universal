@@ -2,6 +2,11 @@
   .jumbotron {
     text-align: center;
     color: #fff;
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+    }
+
     h1,
     p {
       text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
@@ -9,17 +14,9 @@
   }
 }
 
-#home-bg {
-@media screen and (max-width: $screen-xs-max) {
-    background: url("../img/hero-small.jpg");
-}
-@media screen and (min-width: $screen-xs-max) {
-  background: url("../img/hero.jpg");
-}
-}
 
 .brand-color {
-  color: #896b4e;
+  color: #0D4634;
 }
 
 .form-group label input {
@@ -59,9 +56,9 @@
 }
 
 #contact-form {
-  background: url("../img/border-gold.png") no-repeat rgba(0, 0, 0, 0.5);
   text-align: center;
   background-position-y: bottom;
+  background-color: rgba(35, 44, 104, 0.83);
 
   .ajax-loader {
     position: absolute;
@@ -84,10 +81,13 @@
     }
 
     h4 {
+      font-family: 'Playfair Display', serif;
+
       .light {
         font-weight: 300;
       }
     }
+
     .form-group {
       display: flex;
       justify-content: space-around;
@@ -112,7 +112,7 @@
     input[type="email"],
     input[type="tel"],
     textarea {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(255, 255, 255, 0.62);
       border: 0;
       color: #fff;
       padding: 1em;
@@ -146,15 +146,10 @@
 
 #main-content {
   padding: 2em 0;
-  background: #1a1a1a;
   color: #b3b3b3;
-
-  h3 {
-    color: #fff;
-  }
+  background: #F2F2F2;
 
   h4 {
-    color: #896b4e;
     font-weight: 700;
     letter-spacing: 2px;
   }
@@ -163,6 +158,32 @@
 #home-bg {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#icon-section {
+  .icon-header {
+    background: #232C68;
+
+    .icon {
+      max-height: 50px;
+      margin: 1.5em;
+    }
+
+    .icon-bottom {
+      background: #DDDDDD;
+      color: #232C68;
+      text-align: left;
+      padding: .5em 32px;
+    }
+  }
+
+  p {
+    padding: 1em 32px;
+    text-align: left;
+    line-height: 1.75em;
+    font-size: 16px;
+    color: #999999;
+  }
 }
 
 .banner {
@@ -213,9 +234,6 @@
   }
 }
 
-h3 {
-  color: #896b4e;
-}
 
 #dark-section {
   padding: 2em 0;
@@ -421,6 +439,7 @@ h3 {
 
   .jumbotron {
     margin-bottom: 0;
+
     h1 {
       font-size: 1.5em;
     }
@@ -582,7 +601,7 @@ h3 {
   }
 
   #home-main .jumbotron {
-    padding-top: 13em;
+    padding-top: 4em;
     font-size: 24px;
 
     h1 {
@@ -652,7 +671,6 @@ h3 {
         font-size: 30px;
         margin-top: 12px;
         margin-bottom: 42px;
-        color: #fff;
       }
 
       p.large-text {

@@ -2,8 +2,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Raleway", sans-serif;
-  color: #896b4e;
+  font-family: "Montserrat", serif;
 }
 
 body {
@@ -18,4 +17,14 @@ body {
   .text-center-sm {
     text-align: center;
   }
+}
+
+h4 {
+  color: #0D4634;
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  color: #232C68;
+  font-weight: 700;
 }

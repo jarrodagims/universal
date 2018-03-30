@@ -18,7 +18,7 @@
     &:hover,
     &:focus {
       color: $sherpa-navbar-default-brand-hover-color;
-      background-color: $sherpa-navbar-default-brand-hover-bg;
+      background-color: transparent;
     }
   }
 
@@ -33,7 +33,7 @@
       &:hover,
       &:focus {
         color: $sherpa-navbar-default-link-hover-color;
-        background-color: $sherpa-navbar-default-link-hover-bg;
+        background-color: transparent;
       }
     }
     > .active > a {
@@ -41,7 +41,7 @@
       &:hover,
       &:focus {
         color: $sherpa-navbar-default-link-active-color;
-        background-color: $sherpa-navbar-default-link-active-bg;
+        background-color: transparent;
       }
     }
     > .disabled > a {
@@ -49,7 +49,7 @@
       &:hover,
       &:focus {
         color: $sherpa-navbar-default-link-disabled-color;
-        background-color: $sherpa-navbar-default-link-disabled-bg;
+        background-color: transparent;
       }
     }
   }
@@ -193,10 +193,12 @@
 
     &.directions a {
       background: url("../img/icon-map.png") no-repeat;
+      background-size: contain;
     }
 
     &.contact a {
-      background: url("../img/icon-telephone.png") no-repeat;
+      background: url("../img/icon-phone.png") no-repeat;
+      background-size: contain;
     }
 
     a::before {

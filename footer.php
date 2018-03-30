@@ -81,8 +81,8 @@
 						<?php echo get_option('sherpa_business_zip') ?>
 						</div>
 						<div class="col-md-6 col-xs-12">
-						T: <?php echo get_option('sherpa_telephone_number') ?><br />
-						T: 915.270.1767
+						Ph. <?php echo get_option('sherpa_telephone_number') ?><br />
+						F. (915) 975 - 8055
 							</div>
 
 							</div>
@@ -124,9 +124,9 @@
 						$sm->setColorType('singleColor');
 
 ?></div>
-					<div>
-					<?php dynamic_sidebar( 'footer_widgets3' ); ?>
-					</div>
+                        <div>
+                            &copy; 2018 A&amp;P Plumbing Unlimited  |  All Rights Reserved  |  Powered by AGI Marketing <a href="https://www.agims.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/agi-logo.png" alt="AGI Marketing" class="agi-logo" /></a>
+                        </div>
 				</div>
 			</div>
 		</section>

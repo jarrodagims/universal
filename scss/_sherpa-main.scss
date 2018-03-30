@@ -1,6 +1,9 @@
 body {
   background: #fff;
 
+    background: url("../img/hero.jpg") no-repeat;
+    background-size: contain;
+
   .edit-screen {
     position: absolute;
     width: 480px;
