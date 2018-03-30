@@ -1,0 +1,322 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>changelog.md</title>
+      </head>
+      <body>
+        <h1 id="changelog">Changelog</h1>
+<h2 id="version-3-7-2-annapurna">Version 3.7.2 - Annapurna</h2>
+<ul>
+<li>Bugfix: Devmode code now written properly</li>
+</ul>
+<h2 id="version-3-7-1-annapurna">Version 3.7.1 - Annapurna</h2>
+<ul>
+<li>Move social media button styling to its own scss file</li>
+<li>Use @each loops for the social media buttons</li>
+<li>Bugfix: move classes back into <code>inc/</code> as they weren&#39;t working right in the <code>inc/class/</code> directory</li>
+<li>Add styling for alignleft images</li>
+<li>Switch back to WP version of jQuery, though leaving the code there in case you want to use external jQuery</li>
+<li>Add &quot;Dev Mode&quot; so that when on, uses cache-busting for main.min.js and style.css</li>
+</ul>
+<h2 id="version-3-7-0-annapurna">Version 3.7.0 - Annapurna</h2>
+<ul>
+<li>Update styling for the options page</li>
+<li>Added the missing code for the custom fields for testimonials</li>
+<li>Move all the &quot;content&quot; files into the <code>template-parts/</code> directory</li>
+<li>Organize the <code>inc/</code> directory; move classes into <code>inc/class/</code> and custom post types into <code>inc/cpt/</code></li>
+</ul>
+<h2 id="version-3-6-6-nuptse">Version 3.6.6 - Nuptse</h2>
+<ul>
+<li>Bugfix - fix brand location in nav</li>
+</ul>
+<h2 id="version-3-6-5-nuptse">Version 3.6.5 - Nuptse</h2>
+<ul>
+<li>Bugfix for adding ACF</li>
+<li>Add in custom fields for Testimonial CPT</li>
+</ul>
+<h2 id="version-3-6-4-nuptse">Version 3.6.4 - Nuptse</h2>
+<ul>
+<li>Only load the included version of Advanced Custom Fields if another version is not already loaded</li>
+</ul>
+<h2 id="version-3-6-3-nuptse">Version 3.6.3 - Nuptse</h2>
+<ul>
+<li>Include Advanced Custom Fields within the theme in /plugins/</li>
+<li>Remove ACF from recommended plugins</li>
+</ul>
+<h2 id="version-3-6-2-nuptse">Version 3.6.2 - Nuptse</h2>
+<ul>
+<li>Update &quot;Add to Any&quot; to only be on single items</li>
+<li>Make testimonials on the testimonials page into a list</li>
+<li>Update Testimonials page to no longer include content and include a default H1</li>
+</ul>
+<h2 id="version-3-6-1-nuptse">Version 3.6.1 - Nuptse</h2>
+<ul>
+<li>Fix Theme Options page</li>
+</ul>
+<h2 id="version-3-6-0-nuptse">Version 3.6.0 - Nuptse</h2>
+<ul>
+<li>Add ability to hide social media icons when a URL has not been set for that network</li>
+<li>Add smooth scrolling to internal links (hashtag links)</li>
+<li>Removed compiled versions of main.js and style.css so that it will work better with non-<a href="https://codekitapp.com/">codekit</a> users</li>
+<li>Remove responsive settings (presuming that all sites are going to be responsive from this point on)</li>
+<li>Add ability to turn off the title tag (Yoast adds its own title tag, option prevents duplicate title tag)</li>
+</ul>
+<h2 id="version-3-5-6-kangchenjunga">Version 3.5.6 - Kangchenjunga</h2>
+<ul>
+<li>Make &quot;Add to Any&quot; header translatable</li>
+<li>Add font smoothing</li>
+<li>Add ability to use (or not use) the title as the H1 on pages</li>
+<li>Add bx_slider (YAY!)</li>
+<li>Moved styling for Colorbox from _sherpa-general.scss to _jquery.colorbox.scss</li>
+</ul>
+<h2 id="version-3-5-5-kangchenjunga">Version 3.5.5 - Kangchenjunga</h2>
+<ul>
+<li>Add class for required fields that adds asterisk at the end of a label - <code>&lt;label class=&quot;required&quot;&gt;Label Name&lt;/label&gt;</code></li>
+<li>Change names of added image sizes to use underscores <code>_</code> rather than hyphens <code>-</code> to play nicer with REST API</li>
+<li>Make blog_interior_image sizes an option in the options page</li>
+<li>Add ability to add classes to the blog_interior_image</li>
+<li>Add &quot;Advanced Custom Fields&quot; plugin to recommended plugins</li>
+<li>Add function to get the stars for a testimonial rating</li>
+</ul>
+<h2 id="version-3-5-4-kangchenjunga">Version 3.5.4 - Kangchenjunga</h2>
+<ul>
+<li>Remove responsive images (inc/theme-features.php)</li>
+<li>Add a shortcode for sherpavembed</li>
+<li>Fix:  forgot to add call to inc/add-image-to-post.php in functions.php; fixed now</li>
+<li>Add extra <code>&lt;br /&gt;</code> in inc/add-to-any.php</li>
+<li>Add links to next and previous posts in content-single.php</li>
+<li>Add categories to single posts in content-single.php</li>
+<li>Add tags to single posts through content filter (inc/add-tags-to-single.php)</li>
+<li>Add paging for blog on content-archive.php</li>
+</ul>
+<h2 id="version-3-5-3-kangchenjunga">Version 3.5.3 - Kangchenjunga</h2>
+<ul>
+<li>Add color options for social media buttons so you don&#39;t have to modify the mixins</li>
+<li>Add scss/_sherpa-mixins.scss</li>
+<li>Add options for social media buttons into scss/_sherpa-variables.scss</li>
+<li>Fix &quot;set&quot; methods in inc/SocialMedia.php so that they return <code>$this</code> upon success so that you can chain methods </li>
+<li>Remove excerpt from Testimonials Custom Post Type (inc/testimonials-cpt.php)</li>
+<li>Fix secondary functions in inc/navs.php as they were expecting things to be echoed rather than returned</li>
+</ul>
+<h2 id="version-3-5-2-kangchenjunga">Version 3.5.2 - Kangchenjunga</h2>
+<ul>
+<li>Fix default pic size</li>
+<li>Fix get_the_phone_link to allow for the use of schema</li>
+<li>Add get_the_phone_btn so that you can create buttons with the phone as well as custom text</li>
+<li>Add classes to scss/_sherpa-general.scss</li>
+<li>Update inc/navs.php to take out secondary menu and add multiple other options</li>
+<li>Remove bottom margin on the navbar in scss/_sherpa-navbar.scss</li>
+<li>Simplify styling of navbar in scss/_sherpa-variables.scss</li>
+<li>Add cache-busting to CSS by setting version to time() in inc/styles.php (change back when going live)</li>
+</ul>
+<h2 id="version-3-5-1-kangchenjunga">Version 3.5.1 - Kangchenjunga</h2>
+<ul>
+<li>Fix sherpa_excerpt to work with the flexbox styling</li>
+</ul>
+<h2 id="version-3-5-kangchenjunga">Version 3.5 - Kangchenjunga</h2>
+<ul>
+<li>Add flexbox styling and markup for blog index</li>
+<li>Add custom thumbnail &#39;blog-featured-image&#39; (inc/theme-features.php)</li>
+<li>Add image to blog index</li>
+<li>Rename MAPLINK to MAP (inc/constants.php)</li>
+<li>Add ability to include an ID in the SocialMedia class (inc/SocialMedia.php)</li>
+<li>Remove &quot;Slideshow&quot; stand-in from page-home.php</li>
+<li>Simplify styling the colors on testimonials</li>
+<li>Add social media sharing buttons through filter in &quot;the_content&quot; (inc/add-to-any.php)</li>
+<li>Add ability to have the featured image included inside the post (inc/add-image-to-post.php)</li>
+<li>Add custom thumbnail &#39;blog-interior-image&#39; (inc/theme-features.php)</li>
+<li>Add ability to turn on or off featured image in the post, defaulting to off</li>
+</ul>
+<h2 id="version-3-4-manaslu">Version 3.4 - Manaslu</h2>
+<ul>
+<li>Remove config.rb</li>
+<li>Add Map Link</li>
+<li>Add Map Directions Link</li>
+<li>Add Constants - MAPLINK, DIRECTIONS</li>
+<li>Add ability to use or not use schema with address functions</li>
+</ul>
+<h2 id="version-3-3-2-cho-oyu">Version 3.3.2 - Cho Oyu</h2>
+<ul>
+<li>Update 404 page to remove video and add page listing</li>
+<li>Add ability to have stacked social media icons in inc/SocialMedia.php</li>
+<li>Updated the way styles are enqueued in inc/styles.php</li>
+</ul>
+<h2 id="version-3-3-1-cho-oyu">Version 3.3.1 - Cho Oyu</h2>
+<ul>
+<li>Fix issue caused by i18n conversion in SocialMedia.php</li>
+<li>Fix backwards compatibility on an option call in styles.php</li>
+</ul>
+<h2 id="version-3-3-0-cho-oyu">Version 3.3.0 - Cho Oyu</h2>
+<ul>
+<li>Add i18n</li>
+</ul>
+<h2 id="version-3-2-1-makalu">Version 3.2.1 - Makalu</h2>
+<ul>
+<li>Clean out superfluous JS</li>
+<li>Add ability to see testimonials in REST API</li>
+</ul>
+<h2 id="version-3-2-0-makalu">Version 3.2.0 - Makalu</h2>
+<ul>
+<li>Disable Emoji from theme</li>
+</ul>
+<h2 id="version-3-1-1-lhotse">Version 3.1.1 - Lhotse</h2>
+<ul>
+<li>Fix issue with schema.php</li>
+</ul>
+<h2 id="version-3-1-0-lhotse">Version 3.1.0 - Lhotse</h2>
+<ul>
+<li>Required and Suggested Plugins! (Thank you <a href="http://tgmpluginactivation.com/">TGM Plugin Activation</a>)</li>
+<li>Options page updated with styling and formatting</li>
+<li>Added Schema to options page (for LD+JSON format)</li>
+<li>Added ability to easily add in Google Fonts</li>
+</ul>
+<h2 id="version-3-0-3-nanga-parbat">Version 3.0.3 - Nanga Parbat</h2>
+<ul>
+<li>Bump FontAwesome to 4.7.0</li>
+</ul>
+<h2 id="version-3-0-2-nanga-parbat">Version 3.0.2 - Nanga Parbat</h2>
+<ul>
+<li>Move stat-counter from header to footer</li>
+<li>Set Typekit to load asynchronously</li>
+<li>No longer loading Modernizr by default.  To enable, uncomment out the line in inc/scripts.php</li>
+</ul>
+<h2 id="version-3-0-1-nanga-parbat">Version 3.0.1 - Nanga Parbat</h2>
+<ul>
+<li>Fix Typekit issue</li>
+<li>Add size class to ul for Social Media</li>
+</ul>
+<h2 id="version-3-0-big-update-">Version 3.0 <em>Big Update!</em></h2>
+<ul>
+<li>Add mobile-detect in case we need a JS mobile redirect</li>
+<li>Add Responsive option</li>
+<li>Add Javascript additions in case JS hasn&#39;t been minified and combined</li>
+<li>Update video for the 404 page</li>
+<li>Remove &#39;rincon&#39; references</li>
+<li>Prefix all options with &#39;sherpa_&#39; to reduce the likelihood of conflicts</li>
+<li>Create Testimonials Page</li>
+<li>Set more options upon activation <ul>
+<li>timezone</li>
+<li>time format</li>
+<li>start of week</li>
+<li>make site private</li>
+<li>prevent comments</li>
+<li>permalink structure</li>
+</ul>
+</li>
+<li>Fix URL for Font Awesome</li>
+<li>Add image size for testimonials</li>
+<li>Update Bootstrap to 3.3.7</li>
+<li>Update plugins.js to include the bootstrap parts rather than the full bootstrap.min.js so that it&#39;s easier to pick and choose the plugins you want</li>
+</ul>
+<h2 id="version-2-9-2">Version 2.9.2</h2>
+<ul>
+<li>Bugfix:  Fix the prepend call for the colorbox call</li>
+<li>Bugfix:  Add the css for the HTML5 gallery</li>
+</ul>
+<h2 id="version-2-9-1">Version 2.9.1</h2>
+<ul>
+<li>Bugfix:  remove call to removed rev_slider file</li>
+</ul>
+<h2 id="version-2-9">Version 2.9</h2>
+<ul>
+<li>Change gallery shortcode to work with colorbox</li>
+<li>Add Colorbox to javascript</li>
+</ul>
+<h2 id="version-2-8">Version 2.8</h2>
+<h4 id="big-update-">Big update!</h4>
+<ul>
+<li>Add schema.php</li>
+<li>Add Address into admin</li>
+<li>Set up constants for the address fields</li>
+<li>Return phone to admin</li>
+<li>Create &quot;Home&quot; and &quot;Blog&quot; pages upon activation</li>
+<li>Set &quot;Home&quot; as the Home page and &quot;Blog&quot; and the posts page</li>
+<li>Add address.php</li>
+<li>Add the get_the_address and get_the_address_inline functions</li>
+<li>Removed Revolution Slider stuff</li>
+<li>Removed requirements for Compass</li>
+</ul>
+<h2 id="version-2-7-3">Version 2.7.3</h2>
+<ul>
+<li>Rollback Modernizr back to 2.8.3 to fix the &quot;hidden&quot; issue</li>
+<li>Remove the last mixin that needs compass</li>
+<li>Comment out the import for compass</li>
+<li>Fix the options page issue for google site verification</li>
+</ul>
+<h2 id="version-2-7-2">Version 2.7.2</h2>
+<ul>
+<li>Removed link from title on content-single.php</li>
+</ul>
+<h2 id="version-2-7-1">Version 2.7.1</h2>
+<ul>
+<li>Bumped to jQuery 2.x</li>
+<li>Bumped to Modernizr 3.3.1</li>
+</ul>
+<h2 id="version-2-7">Version 2.7</h2>
+<ul>
+<li>Added 404.php</li>
+<li>Added archive.php</li>
+<li>Updated home.php to be a little more generic so that we can co-opt what was content-home.php into content-archive.php</li>
+</ul>
+<h2 id="version-2-6-4">Version 2.6.4</h2>
+<ul>
+<li>Convert the default location for minified version of main.js to /js/min/main-min.js instead of /js/main-ck.js</li>
+<li>Added in the color for YouTube</li>
+</ul>
+<h2 id="version-2-6-3">Version 2.6.3</h2>
+<ul>
+<li>Added Youtube back in as an option in the SocialMedia class</li>
+</ul>
+<h2 id="version-2-6-2">Version 2.6.2</h2>
+<ul>
+<li>Fixed order of social networks to be whatever order is given at instantiation rather than the order of the networks given in the class</li>
+</ul>
+<h2 id="version-2-6-1">Version 2.6.1</h2>
+<ul>
+<li>Bug fix in inc/SocialMedia.php</li>
+</ul>
+<h2 id="version-2-6">Version 2.6</h2>
+<ul>
+<li>Added Google Site Verification</li>
+</ul>
+<h2 id="version-2-5-2">Version 2.5.2</h2>
+<ul>
+<li>Bump Bootstrap to v3.3.6</li>
+</ul>
+<h2 id="version-2-5-1">Version 2.5.1</h2>
+<ul>
+<li>Updated the styling for social media buttons</li>
+<li>Updated bug in inc/SocialMedia.php</li>
+<li>Removing WooCommerce support (Not used very much, not updated enough)</li>
+</ul>
+<h2 id="version-2-5">Version 2.5</h2>
+<ul>
+<li>Changed how social media is called, now Class-based.  See inc/SocialMedia.php for more info.</li>
+<li>Bumped FontAwesome to v4.6.3</li>
+<li>Removed agi-excerpt.php (should have done that before)</li>
+<li>Removed social-media.php</li>
+</ul>
+<h2 id="version-2-4-3">Version 2.4.3</h2>
+<ul>
+<li>Moved to FontAwesome v4.6.1</li>
+</ul>
+<h2 id="version-2-4-2">Version 2.4.2</h2>
+<ul>
+<li>Removed link from title on pages</li>
+<li>Changed text in edit link on pages from &quot;Edit Post&quot; to &quot;Edit Page&quot;</li>
+<li>Renamed &quot;agi-excerpt&quot; to &quot;sherpa-excerpt&quot;</li>
+</ul>
+<h2 id="version-2-4-1">Version 2.4.1</h2>
+<ul>
+<li>Updated in case of adjustment to the number of columns (FULLWIDTH and COLBASE set in inc/constants.php)</li>
+</ul>
+<h2 id="version-2-4">Version 2.4</h2>
+<ul>
+<li>Removed Open Web Analytics (no longer needed!)</li>
+<li>Added ability to open links in a new tab by adding an &quot;external&quot; class</li>
+<li>Added a gulp file (requires both gulp and gulp-compass)</li>
+<li>Added a changelog (this file right here!)</li>
+</ul>
+
+      </body>
+    </html>

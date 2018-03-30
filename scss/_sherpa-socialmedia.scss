@@ -1,0 +1,45 @@
+.social-media-button {
+  color: $sm-color;
+  display: table-cell;
+  text-align: center;
+  transition: all 250ms;
+  vertical-align: middle;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $sm-hover-color;
+    text-decoration: none;
+  }
+  &.lg {
+    font-size: 17px;
+    height: 40px;
+    width: 40px;
+  }
+  &.md {
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+  }
+  &.sm {
+    font-size: 15px;
+    height: 25px;
+    width: 25px;
+  }
+  &.circle {
+    @extend .img-circle;
+  }
+  &.rounded {
+    @extend .img-rounded;
+  }
+  &.square {
+    border-radius: 0px;
+  }
+
+  // Set up our darken versions
+}
+
+.social-media.list-inline {
+  & > li {
+    padding: 0 2px;
+  }
+}

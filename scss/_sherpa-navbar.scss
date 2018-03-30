@@ -1,0 +1,362 @@
+// Sherpa navbar
+.navbar-sherpa .navbar-toggle {
+  margin-right: 0;
+}
+.page-template-default {
+  .navbar-sherpa .navbar-toggle .icon-bar {
+    background-color: #d2ac4e;
+  }
+}
+
+.navbar-sherpa {
+  background-color: $sherpa-navbar-default-bg;
+  border-color: $sherpa-navbar-default-border;
+  margin-bottom: 0;
+
+  .navbar-brand {
+    color: $sherpa-navbar-default-brand-color;
+    &:hover,
+    &:focus {
+      color: $sherpa-navbar-default-brand-hover-color;
+      background-color: $sherpa-navbar-default-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: $sherpa-navbar-default-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: $sherpa-navbar-default-link-color;
+
+      &:hover,
+      &:focus {
+        color: $sherpa-navbar-default-link-hover-color;
+        background-color: $sherpa-navbar-default-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $sherpa-navbar-default-link-active-color;
+        background-color: $sherpa-navbar-default-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $sherpa-navbar-default-link-disabled-color;
+        background-color: $sherpa-navbar-default-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: $sherpa-navbar-default-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: $sherpa-navbar-default-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: $sherpa-navbar-default-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $sherpa-navbar-default-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $sherpa-navbar-default-link-active-bg;
+        color: $sherpa-navbar-default-link-active-color;
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: $sherpa-navbar-default-link-color;
+          &:hover,
+          &:focus {
+            color: $sherpa-navbar-default-link-hover-color;
+            background-color: $sherpa-navbar-default-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $sherpa-navbar-default-link-active-color;
+            background-color: $sherpa-navbar-default-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: $sherpa-navbar-default-link-disabled-color;
+            background-color: $sherpa-navbar-default-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: $sherpa-navbar-default-link-color;
+    &:hover {
+      color: $sherpa-navbar-default-link-hover-color;
+    }
+  }
+
+  .btn-link {
+    color: $sherpa-navbar-default-link-color;
+    &:hover,
+    &:focus {
+      color: $sherpa-navbar-default-link-hover-color;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        color: $sherpa-navbar-default-link-disabled-color;
+      }
+    }
+  }
+}
+
+.navbar-sherpa {
+  .navbar-brand {
+    padding: 0;
+  }
+}
+
+.navbar-sherpa,
+.navbar-right {
+  li.menu-item a,
+  li.menu-item span {
+    color: #fff;
+  }
+
+  .nav > li > a,
+  .nav > li > span {
+    color: #fff;
+  }
+}
+
+.navbar-right {
+  margin: 0 0;
+
+  li.menu-item {
+    &.directions,
+    &.contact {
+      display: inline-block;
+    }
+
+    &.contact {
+      padding-left: 1em;
+    }
+
+    &.directions {
+      a {
+        display: inline-block;
+      }
+      &::after {
+        content: "|";
+        color: #fff;
+        opacity: 0.5;
+        display: inline-block;
+      }
+    }
+
+    &.directions a,
+    &.contact a {
+      width: 16px;
+      height: 20px;
+      text-indent: -99999px;
+    }
+
+    &.directions a {
+      background: url("../img/icon-map.png") no-repeat;
+    }
+
+    &.contact a {
+      background: url("../img/icon-telephone.png") no-repeat;
+    }
+
+    a::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $grid-float-breakpoint-max) {
+  .menu-primary-container {
+    overflow: hidden;
+  }
+  .navbar-sherpa {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .dropdown-menu {
+      display: block !important;
+      background: transparent;
+      width: 100%;
+      position: relative;
+      padding-bottom: 20px;
+
+      li a:hover,
+      li a:focus {
+        background: #896b4e;
+      }
+    }
+
+    .espanol {
+      display: none;
+    }
+
+    .navbar-collapse.in,
+    .navbar-collapse {
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .navbar-brand {
+      line-height: 50px;
+      img {
+        max-height: 50px;
+        margin-top: 0;
+      }
+    }
+
+    .navbar-toggle {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      z-index: 10;
+      border: 0;
+    }
+  }
+
+  .navbar-right {
+    margin-left: auto;
+    right: 0;
+  }
+
+  .navbar-collapse {
+    order: -1;
+    background: #000;
+    width: 100%;
+  }
+
+  .navbar-right {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    li.menu-item {
+      &.directions {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm-min) {
+  .menu-primary-container {
+    padding-left: 0 !important;
+  }
+
+  .navbar-sherpa .nav.navbar-right > li > a,
+  .navbar-sherpa .nav.navbar-right > li > span {
+    padding: 0 2em 0 0;
+  }
+
+  .navbar-sherpa {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    .navbar-collapse {
+      align-items: center;
+    }
+
+    li.menu-item {
+      font-size: 12px;
+    }
+
+    .nav > li > a {
+      padding: 0 0;
+    }
+
+    .dropdown-menu > li > a:focus {
+      background: #000;
+    }
+
+    li.dropdown:hover {
+      .dropdown-menu {
+        display: block;
+        background: #896b4e;
+
+        .active a {
+          background: #000;
+        }
+
+        a {
+          &:hover,
+          &:focus {
+            background: #000;
+          }
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    li.menu-item {
+      a::before {
+        content: "|";
+        margin: 0 0.5em;
+      }
+
+      &:first-child {
+        a::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-sherpa li.menu-item {
+    a::before {
+      content: "|";
+      margin: 0 2em;
+    }
+
+    &:first-child {
+      a::before {
+        display: none;
+      }
+    }
+  }
+}

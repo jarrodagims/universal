@@ -1,0 +1,217 @@
+#footer {
+  background: #000;
+  color: #fff;
+  padding: 4em 0 2.5em;
+  text-align: center;
+
+  .full-height {
+    margin-bottom: 4em;
+  }
+
+  .navbar-brand {
+    float: none;
+
+    img {
+      margin: 0 auto;
+      max-width: 185px;
+      margin: 0;
+    }
+  }
+
+  .navbar-sherpa .navbar-nav > li > a {
+    color: #fff;
+  }
+
+  #menu-menu-footer {
+    margin: 0 auto;
+  }
+
+  .menu-footer-container,
+  .menu-menu-footer-container {
+    text-align: center;
+    display: flex;
+    flex: 1;
+
+    #menu-footer,
+    #menu-footer-spanish {
+      margin: 0 auto;
+      display: inline-block;
+      float: none;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .row:first-child {
+      flex: 1;
+    }
+  }
+
+  span.title {
+    margin: 1em;
+    display: block;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .textwidget img {
+    display: inline;
+    margin: 0 0.5em 0 0;
+  }
+
+  .social-media-button {
+    color: #d2ac4e; /* Old browsers */
+    //color: -moz-linear-gradient(
+    //  top,
+    //  #d2ac4e 0%,
+    //  #d2c285 20%,
+    //  #fffbe4 51%,
+    //  #d3c893 68%,
+    //  #cabe88 85%,
+    //  #d2b24e 100%
+    //); /* FF3.6-15 */
+    //color: -webkit-linear-gradient(
+    //  top,
+    //  #d2ac4e 0%,
+    //  #d2c285 20%,
+    //  #fffbe4 51%,
+    //  #d3c893 68%,
+    //  #cabe88 85%,
+    //  #d2b24e 100%
+    //); /* Chrome10-25,Safari5.1-6 */
+    //color: linear-gradient(
+    //  to bottom,
+    //  #d2ac4e 0%,
+    //  #d2c285 20%,
+    //  #fffbe4 51%,
+    //  #d3c893 68%,
+    //  #cabe88 85%,
+    //  #d2b24e 100%
+    //);
+  }
+  @media screen and (min-width: $screen-md-min) {
+    text-align: left;
+    span.title {
+      margin: 0 0 0.5em;
+      display: block;
+      font-family: "Raleway", sans-serif;
+    }
+  }
+}
+
+#visit-section {
+  text-align: center;
+  background: #e6e6e6;
+  padding: 3em 0;
+  margin-bottom: 0 !important;
+
+  &.jumbotron {
+    h3 {
+      font-size: 30px;
+    }
+
+    p.blurb {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+#sub-footer {
+  padding: 2em 0;
+  text-align: center;
+  .agi-logo {
+    margin-left: 0.5em;
+  }
+  ul.social-media {
+    margin: 0 0 0 0;
+    a {
+      color: #777a7a;
+      &:hover {
+        color: #2b1d10;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-sm-min) {
+    text-align: left;
+    .col-md-12 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+#map-section {
+  background: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: #fff;
+    &::before {
+      content: url("../img/directions-icon.png");
+      margin-right: 1em;
+    }
+    display: flex;
+    line-height: 60px;
+    height: 60px;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+@media screen and (max-width: $screen-sm-min) {
+  #map-section {
+    height: 110px;
+  }
+}
+
+#footer {
+  @media screen and (max-width: $screen-sm-min) {
+    .navbar-brand {
+      img {
+        margin: 0 auto;
+      }
+    }
+
+    .text-right {
+      text-align: center !important;
+    }
+  }
+
+  .social-media {
+    .fa-facebook,
+    .fa-twitter,
+    .fa-google-plus {
+      &::before {
+        display: none;
+      }
+
+      margin: 0 1em;
+    }
+
+    .facebook-button {
+      background: url("../img/icon-facebook.png") center center no-repeat;
+      background-size: auto 20px;
+    }
+
+    .twitter-button {
+      background: url("../img/icon-twitter.png") center center no-repeat;
+      background-size: auto 20px;
+    }
+
+    .googleplus-button {
+      background: url("../img/icon-gplus.png") center center no-repeat;
+      background-size: auto 20px;
+    }
+  }
+}

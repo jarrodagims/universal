@@ -1,0 +1,21 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  color: #896b4e;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: $screen-sm-min) {
+  .text-center-sm {
+    text-align: center;
+  }
+}
