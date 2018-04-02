@@ -37,7 +37,6 @@ body {
       article {
         min-height: 10em;
         padding: 4em 0;
-        color: #b3b3b3;
 
         .blurb {
           color: #808080;
@@ -55,8 +54,8 @@ body {
 
       p {
         margin-bottom: 3em;
+        color: #666666;
       }
-
 
 
       @media screen and (min-width: $screen-sm-min) {
@@ -81,7 +80,6 @@ body {
             color: #606060;
           }
         }
-
 
       }
     }
