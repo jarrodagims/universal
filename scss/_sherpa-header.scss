@@ -1,8 +1,34 @@
+.page-template-default {
+  #header {
+    background: #F7F7F7;
+
+    .navbar-right {
+      margin: 0 0;
+
+      li.menu-item {
+
+        &.directions a {
+          @include svg-map(#232C68);
+        }
+
+        &.contact a {
+          @include svg-contact(#232C68);
+        }
+      }
+
+      li.menu-item.directions:after {
+        color: #232C68;
+      }
+    }
+  }
+}
+
 #header {
   padding-top: 1em;
   background-position-y: bottom;
   background-repeat: no-repeat;
   padding-bottom: 1em;
+
 
   @media screen and (min-width: $screen-sm-min) {
     padding-top: 2em;
@@ -10,6 +36,7 @@
 
     .menu-primary-container {
       padding-left: 2em;
+      margin-right: 2em;
       justify-content: center;
     }
 

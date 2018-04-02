@@ -1,8 +1,10 @@
 body {
   background: #fff;
 
-    background: url("../img/hero.jpg") no-repeat;
-    background-size: contain;
+   &.home {
+     background: url("../img/hero.jpg") no-repeat;
+     background-size: contain;
+   }
 
   .edit-screen {
     position: absolute;
@@ -55,91 +57,7 @@ body {
         margin-bottom: 3em;
       }
 
-      #contact-form {
-        background: #1a1a1a;
-        text-align: center;
-        padding: 0;
-        max-width: 100%;
 
-        form {
-          margin: 2em auto;
-          padding: 0 3em;
-          text-align: center;
-          color: #fff;
-          display: inline-block;
-
-          h1,
-          h2,
-          h3,
-          h4 {
-            color: #fff;
-          }
-
-          h4 {
-            font-size: 20px;
-            margin-bottom: 3em;
-          }
-
-          .form-group {
-            display: block;
-            max-width: 100%;
-            justify-content: space-around;
-            margin: 0 auto;
-
-            label {
-              flex: 1;
-              width: 100%;
-
-              input {
-                width: 100%;
-              }
-            }
-
-            .col-md-6 {
-              margin: 0 auto;
-            }
-          }
-
-          input[type="text"],
-          input[type="email"],
-          input[type="tel"],
-          textarea {
-            background: rgba(0, 0, 0, 0.5);
-            border: 0;
-            color: #fff;
-            padding: 1em;
-            margin-bottom: 1.25em;
-
-            &::placeholder {
-              color: #fff;
-              font-weight: normal;
-            }
-          }
-
-          textarea {
-            overflow: hidden;
-            height: 2em;
-            padding-bottom: 1.25em;
-          }
-
-          input[type="submit"] {
-            margin-top: 1.5em;
-            margin-bottom: 2.25em;
-            width: auto;
-            margin-left: 0;
-          }
-
-          p {
-            margin-bottom: 2em;
-          }
-        }
-
-        .textwidget {
-          background: #e6e6e6;
-          padding: 2em;
-          display: none !important;
-        }
-      }
 
       @media screen and (min-width: $screen-sm-min) {
         article {
@@ -163,31 +81,8 @@ body {
             color: #606060;
           }
         }
-        #contact-form {
-          margin: 0 0 4em 2em;
-          padding: 1.5em 0 0 0;
-          float: right;
-          width: 35.5%;
 
-          form {
-            h4 {
-              margin-bottom: 2.5em;
-            }
 
-            input[type="submit"] {
-              width: 144px;
-            }
-          }
-
-          .testimonials-widget {
-            h4 {
-              margin-bottom: 1.2em;
-            }
-            .btn {
-              width: 144px;
-            }
-          }
-        }
       }
     }
   }

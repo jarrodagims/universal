@@ -1,18 +1,26 @@
 #footer {
   color: #989B9A;
-  padding: 4em 0 2.5em;
+  background: #fff;
+  padding: 4em 0 0em;
   text-align: center;
 
   .full-height {
     margin-bottom: 4em;
   }
 
+  .menu {
+    padding-left: 0;
+    list-style: none;
+
+    > li a {
+      color: #989B9A;
+    }
+  }
+
   .navbar-brand {
     float: none;
 
     img {
-      margin: 0 auto;
-      max-width: 185px;
       margin: 0;
     }
   }
@@ -51,7 +59,9 @@
   span.title {
     margin: 1em;
     display: block;
-    font-family: "Raleway", sans-serif;
+    font-family: "Playfair Display", serif;
+    color: #0D4634;
+    font-size: 18px;
   }
 
   .textwidget img {
@@ -60,41 +70,31 @@
   }
 
   .social-media-button {
-    color: #d2ac4e; /* Old browsers */
-    //color: -moz-linear-gradient(
-    //  top,
-    //  #d2ac4e 0%,
-    //  #d2c285 20%,
-    //  #fffbe4 51%,
-    //  #d3c893 68%,
-    //  #cabe88 85%,
-    //  #d2b24e 100%
-    //); /* FF3.6-15 */
-    //color: -webkit-linear-gradient(
-    //  top,
-    //  #d2ac4e 0%,
-    //  #d2c285 20%,
-    //  #fffbe4 51%,
-    //  #d3c893 68%,
-    //  #cabe88 85%,
-    //  #d2b24e 100%
-    //); /* Chrome10-25,Safari5.1-6 */
-    //color: linear-gradient(
-    //  to bottom,
-    //  #d2ac4e 0%,
-    //  #d2c285 20%,
-    //  #fffbe4 51%,
-    //  #d3c893 68%,
-    //  #cabe88 85%,
-    //  #d2b24e 100%
-    //);
+    color: #d2ac4e;
   }
+
   @media screen and (min-width: $screen-md-min) {
     text-align: left;
     span.title {
       margin: 0 0 0.5em;
       display: block;
-      font-family: "Raleway", sans-serif;
+    }
+  }
+
+  .footer-bottom {
+    background: #232C68;
+    color: #fff;
+    padding: 1em 0;
+
+    .separate {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar.navbar-sherpa {
+      display: flex;
+      align-items: center;
     }
   }
 }

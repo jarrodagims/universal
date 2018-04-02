@@ -27,13 +27,13 @@
 				
 			
 			echo "<article>\n";
-			if ( is_active_sidebar( 'form_widgets' ) ) : ?>
-			<div id="contact-form" class="col-md-4 hidden-xs"><?php dynamic_sidebar( 'form_widgets' ); ?></div>
-		<?php endif;
+
+
+
 
 		
 			echo $title;
-		
+            get_sidebar();
 			the_content();
 			
 			echo "</article>\n";

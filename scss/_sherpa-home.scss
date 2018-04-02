@@ -160,7 +160,7 @@
   background-size: cover;
 }
 
-#icon-section {
+.icon-section {
   .icon-header {
     background: #232C68;
 
@@ -174,6 +174,9 @@
       color: #232C68;
       text-align: left;
       padding: .5em 32px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
     }
   }
 
@@ -184,6 +187,15 @@
     font-size: 16px;
     color: #999999;
   }
+
+  .icon-plus {
+    text-indent: -9999px;
+    background: url('../img/icon-plus.png') center center no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-size: contain;
+  }
 }
 
 .banner {
@@ -193,11 +205,6 @@
   text-align: center;
   padding: 2em 0;
   letter-spacing: 2px;
-  font-family: "Raleway", sans-serif;
-
-  .btn {
-    font-family: "Roboto", sans-serif;
-  }
 
   .row {
     display: flex;
@@ -206,8 +213,8 @@
 
   p {
     margin-bottom: 0;
-    font-size: 25px;
-    margin-right: 1em;
+    font-size: 22px;
+    margin-right: 0;
   }
 
   background-size: cover;
@@ -407,6 +414,19 @@
   }
 }
 
+.jumbotron.location-hero {
+  background: #232C68;
+  color: #fff;
+  margin-bottom: 0;
+
+  h3 {
+    font-family: "Playfair Display";
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+}
+
 .testimonial_by_wrap {
   margin: 1em 0;
 }
@@ -448,6 +468,7 @@
       display: block;
     }
   }
+
 
   .banner {
     font-size: 18px;
@@ -686,21 +707,56 @@
         padding-right: 3em;
       }
 
-      .banner {
-        max-width: 1170px;
-        height: 187px;
-        font-size: 25px;
-        margin-top: 1em;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        margin-bottom: 0.75em;
-        text-transform: uppercase;
 
-        .btn {
-          margin-left: 50px;
-        }
+    }
+
+    .block-left {
+      background: url('../img/what-to-do-next.png') 0 0 no-repeat;
+      width: 216px;
+      height: 228px;
+      position: absolute;
+      left: 54px;
+      top: 84px;
+    }
+
+
+    .banner-hero {
+      margin-bottom: 6em;
+    }
+
+    .banner-bg {
+      padding-top: 203px;
+      background: url('../img/handcuffs.jpg') 0 0 no-repeat;
+      position: relative;
+    }
+
+    .banner {
+      max-width: 1170px;
+      height: 187px;
+      font-size: 25px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #666666;
+      background: #F2F2F2;
+      padding: 56px 56px 56px 250px;
+      font-family: 'Roboto', sans-serif;
+
+      .btn {
+        margin-left: 50px;
+        text-transform: uppercase;
       }
+    }
+
+    .banner-bottom {
+      background: #232C68;
+      color: #fff;
+      text-align: center;
+      padding: 0.5em;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
     }
   }
 }
@@ -735,12 +791,19 @@
   background: url("../img/about-header.jpg") no-repeat;
   min-height: 300px;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
+  margin: 4em 0 6em;
 
-  @media screen and (max-width: $screen-sm-max) {
-    background: url("../img/bottom.jpg") no-repeat;
-    min-height: 150px;
-    background-size: cover;
+  .jumbotron {
+    padding: 13em 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+
+    h2 {
+      margin: 0 auto 2em auto;
+      line-height: 1.5em;
+      max-width: 70%;
+    }
   }
 }
