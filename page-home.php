@@ -7,11 +7,11 @@
 	<div class="container">
 		<div class="row">
             <div class="jumbotron">
-                <div class="jumbo-content">
+                <div class="jumbo-content waypoint">
                     <div class="hidden-xs">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Platinum Factotum Security" />
-                        <h1>Platinum Factotum Security</span></h1>
-                        <h2>Service</h2>
+                        <div class="fade-down"><h1>Platinum Factotum Security</h1>
+                        <h2>Service</h2></div>
                     </div>
                     <img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-xs.png"
@@ -38,12 +38,12 @@
 
 <div class="flex-order">
 <section id="main-content" class="xs-order-3">
-    <div class="container">
+    <div class="container waypoint">
         <div class="row">
             <div class="col-md-12 text-center">
 
-                <h2>Platinum Factotum Security Services:</h2>
-                <h3>El Paso’s Security Agency</h3>
+                <div class="fade-down"><h2>Platinum Factotum Security Services:</h2>
+                    <h3>El Paso’s Security Agency</h3></div>
                 <p class="blurb">At Platinum Factotum Security Services, it is our overall goal to protect people and property.</p>
                 <p class="xs-larger">We proudly provide high-quality security services to numerous organizations throughout the El Paso area.</p>
 
@@ -70,13 +70,13 @@
             </div>
         </div>
 </section>
-<div class="flex-section bg-city" class="xs-order-4">
+<div class="flex-section bg-city waypoint" class="xs-order-4">
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h2  class="gradient-border"><strong>El Paso-Based</strong>
-                        Minority Owned Security Agency</h2>
+                    <h2  class="gradient-border"><span class="fade-in"><strong>El Paso-Based</strong>
+                        Minority Owned Security Agency</span></h2>
                 </div>
                 <div class="col-md-6">
                     <p class="blurb xs-smaller">Platinum Factotum Security Services a minority-owned El Paso-based security agency providing armed and unarmed security services to the Southwest area.</p>
@@ -87,12 +87,12 @@
         </div>
     </section>
 </div>
-<div class="container-fluid bg-dark xs-order-1">
+<div class="container-fluid bg-dark xs-order-1 waypoint">
     <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h2 class="gradient-border">Comprehensive <span>Security Service</span><br />
-                for the Southwest</h2>
+            <h2 class="gradient-border"><span class="fade-in">Comprehensive <span class="highlight">Security Service</span><br />
+                    for the Southwest</span></h2>
         </div>
         <div class="col-md-6">
             <p>Platinum Factotum Security Services provides executive protection services tailored to completely suit your needs. Our officers are available 24 hours a day, 7 days a week, 365 days a year for long-term and short-term assignments. We specialize in armed and unarmed security</p>
@@ -100,7 +100,7 @@
     </div>
     </div>
 </div>
-<div class="container-fluid bg-shield xs-order-2">
+<div class="container-fluid bg-shield xs-order-2 waypoint">
     <div class="bg">
     <div class="row">
 
@@ -109,7 +109,11 @@
                 <div class="row">
                     <div class="col-md-6 col-xs-12 text-center shield-container">
                         <div class="shield-icon">
-                            <div class="circle"><span class="check"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+                            <div class="circle">
+                                <span class="check-front"></span>
+                                <span class="check">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                                          viewBox="0 0 64.6 48.3" style="enable-background:new 0 0 64.6 48.3;" xml:space="preserve" class="svg-check">
 <g id="Layer_2_1_">
 	<g id="Layer_4">
@@ -160,12 +164,12 @@
     </div>
     </div>
 </div>
-<div class="container-fluid bg-guard">
+<div class="container-fluid bg-guard waypoint">
     <div class="container">
     <div class="row">
         <div class="col-md-6">
-            <h2 class="gradient-border"><strong>Platinum Factotum Security Services</strong>
-                Keeps El Paso Safe</h2>
+            <h2 class="gradient-border"><span class="fade-in"><strong>Platinum Factotum Security Services</strong>
+                    Keeps El Paso Safe</span></h2>
 
             <p>Platinum Factotum Security Services is ready to keep your location safe. Contact us today to learn more about what we have to offer. We are an equal opportunity employer dedicated to a policy of non-discrimination. Our service and employment are available to anyone regardless of race, creed, color, age, sex, religion, national origin, or disability. When you choose Platinum Factotum Security Services, you’re choosing integrity and experience. We’re ready to work for you!
             </p>

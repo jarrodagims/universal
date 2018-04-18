@@ -16,5 +16,16 @@
               }
           }
       });
+
+      $('.waypoint').each(function(){
+          var self = $(this);
+
+          $(this).waypoint({
+              handler: function(){
+                  self.addClass('active');
+              },
+              offset: '50%'
+          });
+      })
   });
 })(jQuery);

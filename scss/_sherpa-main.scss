@@ -225,6 +225,7 @@ body #main  {
   }
 }
 
+
 @media screen and (max-width: $grid-float-breakpoint-max) {
 
   .page-template-default, .blog, .error-404, .post-template-default {
@@ -250,7 +251,6 @@ body #main  {
 
   body #main .container article {
       padding-bottom: 0;
-
   }
 }
 
@@ -258,7 +258,7 @@ body #main .container .flex-wrap article {
   margin-left: 2em;
 
   &:first-child {
-    margin-left: 0;
+    padding-left: 0;
   }
 }
 
