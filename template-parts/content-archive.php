@@ -3,13 +3,13 @@
     	?>
     	<div class="row">
         	<div class="flex-wrap">
-            	
+
     	<?php
 		while(have_posts()) {
 			the_post();
-			
+
 			$permalink = get_permalink();
-			
+
 			if(current_user_can('edit_pages')) {
 				$edit_url = get_edit_post_link();
 				$edit_link = " <small><a href=\"$edit_url\" class=\"post-edit-link\">" . __('Edit Post','sherpa') . "</a></small>";
@@ -27,14 +27,14 @@
                 }
 
 			endif;
-			
+
 			echo "<article>";
 			if(!empty($thumb_url)):
 			?>
 			<a href="<?=$permalink?>">
 			<img src="<?=$thumb_url?>" alt="<?=get_the_title()?>" class="blog-pic" />
 			</a>
-			
+
 			<?php
 			endif;
 			the_title("<h3><a href=\"$permalink\">", "</a>$edit_link</h3>");
@@ -42,7 +42,7 @@
 			echo "</article>";
 		}
 		?>
-		
+
         	</div>
     	</div>
     	<div class="row">

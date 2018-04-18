@@ -1,25 +1,140 @@
-.page-template-default {
-  #header {
-    background: #F7F7F7;
+.page-template-default, .blog, .error404, .post-template-default {
 
-    .navbar-right {
-      margin: 0 0;
+  @media screen and (min-width: $screen-sm-min) {
+    .sub-header {
+      padding: 0 0;
+      background: $sherpa-brand-primary;
 
-      li.menu-item {
+      .container .row {
+        display: flex;
+        height: 100%;
 
-        &.directions a {
-          @include svg-map(#232C68);
-        }
+        .v-align {
+          justify-content: flex-end;
+          align-items: flex-end;
+          width: 100%;
+          padding-bottom: 30px;
 
-        &.contact a {
-          @include svg-contact(#232C68);
+          .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .navbar-right {
+            line-height: 50px;
+            margin-left: 50px;
+          }
         }
       }
 
-      li.menu-item.directions:after {
-        color: #232C68;
+      .navbar-brand > img {
+        max-height: 114px;
       }
     }
+
+    #header {
+      @media screen and (min-width: $screen-sm-min) {
+        .container.border-top {
+          &:before {
+            content: '';
+            background: rgba(182, 130, 78, 1);
+            background: -moz-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(182, 130, 78, 1)), color-stop(100%, rgba(229, 204, 164, 1)));
+            background: -webkit-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
+            background: -o-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
+            background: -ms-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
+            background: linear-gradient(to right, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b6824e', endColorstr='#e5cca4', GradientType=1);
+            height: 1px;
+            width: 100%;
+            display: block;
+          }
+
+          > div > div {
+            padding-top: 1em;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+
+    .navbar-brand>img {
+      max-height: 100px;
+      margin: 0 auto;
+    }
+
+    .navbar-brand {
+      display: block;
+      width: 100%;
+      background: $sherpa-brand-primary;
+    }
+
+    .sub-header {
+      background: $sherpa-brand-primary;
+      color: #fff;
+      padding: 20px 0;
+      z-index: 1;
+      position: relative;
+      overflow: visible;
+
+      .bottom {
+        width: 100%;
+      }
+
+      .row .v-align {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      ul li {
+        color: #fff;
+      }
+
+      @media screen and (max-width: $grid-float-breakpoint-max) {
+        padding: 16px 0;
+      }
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+
+      .v-align {
+        flex: 1;
+        order: -1;
+
+        li.menu-item {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+.sub-header {
+  background: #222222;
+  color: #fff;
+  padding: 20px 0;
+  z-index: 1;
+  position: relative;
+  overflow: visible;
+
+  .row .v-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul li {
+    color: #fff;
+  }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    padding: 16px 0;
   }
 }
 
@@ -28,27 +143,46 @@
   background-position-y: bottom;
   background-repeat: no-repeat;
   padding-bottom: 1em;
+  position: relative;
+  z-index: 1;
 
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    position: absolute;
+    background: transparent;
+    z-index: 100;
+    width: 100%;
+
+    .btn-license {
+      width: auto;
+      display: inline-block !important;
+      font-size: 10px;
+    }
+
+    .navbar-toggle {
+      position: absolute;
+      right: 0;
+      top: -38px;
+      margin-top: 0;
+    }
+  }
 
   @media screen and (min-width: $screen-sm-min) {
-    padding-top: 2em;
+    padding-top: 0;
     padding-bottom: 3.5em;
 
     .menu-primary-container {
       padding-left: 2em;
-      margin-right: 2em;
       justify-content: center;
     }
-
 
     .navbar-collapse.collapse {
       display: flex !important;
       justify-content: flex-end;
 
-
       .menu-primary-container {
         display: flex;
         align-self: center;
+        margin: 0 auto;
       }
     }
 
@@ -65,4 +199,8 @@
       align-items: center;
     }
   }
+}
+
+.btn-license {
+  border-radius: 10px;
 }

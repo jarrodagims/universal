@@ -19,6 +19,7 @@ $color-phone:									$color-rss;
 
 
 // Defaults
+$sherpa-brand-primary:                          #041C3F;
 $sherpa-primary-color:							$black;
 $sherpa-secondary-color:						$white;
 $sherpa-tertiary-color:							$gray-md;
@@ -37,18 +38,18 @@ $sherpa-navbar-default-brand-color:				$white;
 $sherpa-navbar-default-brand-hover-color:		$white;
 $sherpa-navbar-default-brand-hover-bg:			transparent;
 
-$sherpa-navbar-default-color:					$black;
+$sherpa-navbar-default-color:					$sherpa-brand-primary;
 
 $sherpa-navbar-default-link-color:				$sherpa-navbar-default-color;
 
-$sherpa-navbar-default-link-hover-color:		$white;
-$sherpa-navbar-default-link-hover-bg:			$sherpa-primary-color;
+$sherpa-navbar-default-link-hover-color:		$sherpa-navbar-default-color;
+$sherpa-navbar-default-link-hover-bg:			transparent;
 
-$sherpa-navbar-default-link-active-color:		$sherpa-navbar-default-link-hover-color;
-$sherpa-navbar-default-link-active-bg:			$sherpa-navbar-default-link-hover-bg;
+$sherpa-navbar-default-link-active-color:		$sherpa-navbar-default-color;
+$sherpa-navbar-default-link-active-bg:			transparent;
 
 $sherpa-navbar-default-link-disabled-color:		lighten($sherpa-navbar-default-link-hover-color,10%);
-$sherpa-navbar-default-link-disabled-bg:		lighten($sherpa-navbar-default-link-hover-bg,10%);
+$sherpa-navbar-default-link-disabled-bg:		transparent;
 
 $sherpa-navbar-right-link-color:				$white;
 

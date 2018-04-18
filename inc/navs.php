@@ -16,9 +16,6 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-								<?php if(!empty($brand)): ?>
-								<a class="navbar-brand" href='<?=SITEURL?>'><img alt="<?php echo get_bloginfo( 'description' ); ?>" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" /></a>
-    						    <?php endif; ?>
 						    </div>
 						
 						    <!-- Collect the nav links, forms, and other content for toggling -->

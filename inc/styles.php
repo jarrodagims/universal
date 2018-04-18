@@ -20,8 +20,8 @@ function sherpa_styles() {
 	}
 
 
-//	wp_register_style( 'font_awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, '4.7.0', 'all' );
-//	$main_css_deps[] = 'font_awesome';
+	wp_register_style( 'font_awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, '4.7.0', 'all' );
+	$main_css_deps[] = 'font_awesome';
 
 
 	wp_register_style( 'main_css', get_stylesheet_directory_uri() . '/css/style.css', $main_css_deps, (get_option('sherpa_is_dev_mode' == 'y') ? time() : '1.0'), 'all' );

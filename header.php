@@ -25,15 +25,59 @@
 
     </head>
     <body <?php body_class(); ?>>
-
+   <?php if(is_front_page()) : ?> <div class="home-bg"><?php endif; ?>
+   <?php if(is_page_template( 'page-landing.php' )) : ?> <div class="landing-bg"><?php endif; ?>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser.</p>
             <p class="browsehappy">Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+       <?php if(is_front_page() || is_page_template('page-landing.php')) : ?>
+       <div class="container-fluid sub-header">
+           <div class="container">
+               <div class="row ">
+                   <div class="v-align">
+                       <a href="<?=SITEURL?>" class="btn btn-success btn-md hidden-xs btn-license">TX LIC. C19761</a>
+                       <ul class="nav navbar-nav navbar-right">
+                           <li class="menu-item directions"><a href="<?php echo get_site_url()?>/contact">Directions</a> 3500 George Dieter Ste. K | El Paso TX 79936</a></li>
+                           <li class="menu-item contact"><a href="tel:+9153073559">Call</a> 915-307-3559</li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <?php endif; ?>
+       <?php if(!is_front_page() && !is_page_template( 'page-landing.php' )) : ?>
+       <div class="container-fluid sub-header">
+           <div class="container">
+               <div class="row ">
+                   <div class="col-md-4 col-xs-12">
+                       <a class="navbar-brand" href='<?php echo get_site_url() ?>'><img
+                                   src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-footer.png"
+                                   alt="<?php echo get_bloginfo('description'); ?>"/></a>
+                   </div>
+                   <div class="v-align">
+                       <div class="bottom">
+                           <a href="<?=SITEURL?>" class="btn btn-success btn-md hidden-xs btn-license">TX LIC. C19761</a>
+                           <ul class="nav navbar-nav navbar-right">
+                               <li class="menu-item directions"><a href="<?php echo get_site_url()?>/contact">Directions</a> 3500 George Dieter Ste. K | El Paso TX 79936</a></li>
+                               <li class="menu-item contact"><a href="tel:+9153073559">Call</a> 915-307-3559</li>
+                           </ul>
+                       </div>
+
+                   </div>
+               </div>
+           </div>
+       </div>
+       <?php endif; ?>
+
+       <?php if(!is_page_template( 'page-landing.php' )) : ?>
         <section id="header">
+
 	        <div class="container">
+
 		        <div class="row">
 					<div class="<?=FULLWIDTH?>">
+                        <a href="<?=SITEURL?>" class="btn btn-success btn-md visible-xs btn-license">TX LIC. C19761</a>
 				        <?php
 							// Call either the responsive_bs_menu() or the non_responsive_bs_menu() here
 							//  If you are using a menu besides 'primary', use this as the first argument in the function.
@@ -46,13 +90,20 @@
 							
 							// If you don't send a second argument, it will default to no menu on the right side.
 
-                            echo responsive_bs_menu('primary', 'left', 'Eleganzza');
+                            echo responsive_bs_menu('primary', 'left', 'Joseph Law');
                         ?>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="menu-item directions"><a href="<?php echo get_site_url()?>/contact">Directions</a></li>
-                            <li class="menu-item contact"><a href="tel:+9158670727">Call</a></li>
-                        </ul>
 			        </div>
 		        </div>
 	        </div>
+
+            <div class="container border-top">
+                <div class="row">
+                    <div class="<?=FULLWIDTH?>">
+                        <?php if(!is_front_page()) :  global $post; echo get_the_title($post->ID); endif; ?>
+                    </div>
+                </div>
+            </div>
+
         </section>
+        <?php endif; ?>
+

@@ -59,47 +59,6 @@
  * Register our sidebars and widgetized areas.
  *
  */
-function shutter_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => 'Shutter Widgets',
-		'id'            => 'shutter_widgets',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
-
-}
-add_action( 'widgets_init', 'shutter_widgets_init' );
-
-function cabinet_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => 'Cabinet Widgets',
-		'id'            => 'cabinet_widgets',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
-
-}
-add_action( 'widgets_init', 'cabinet_widgets_init' );
-
-function visitus_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => 'Visit Us Widgets',
-		'id'            => 'visitus_widgets',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3>',
-		'after_title'   => '</h3>',
-	) );
- 
-}
-add_action( 'widgets_init', 'visitus_widgets_init' );
 
 function form_widgets_init() {
 
@@ -115,64 +74,6 @@ function form_widgets_init() {
 }
 add_action( 'widgets_init', 'form_widgets_init' );
 
-function footer_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => 'Footer Widgets',
-		'id'            => 'footer_widgets',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
- 
-}
-
-add_action( 'widgets_init', 'footer_widgets_init' );
-
-function footer_widgets2_init() {
-
-	register_sidebar( array(
-		'name'          => 'Footer Widgets 2',
-		'id'            => 'footer_widgets2',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
- 
-}
-add_action( 'widgets_init', 'footer_widgets2_init' );
-
-function footer_widgets3_init() {
-
-	register_sidebar( array(
-		'name'          => 'Footer Widgets 3',
-		'id'            => 'footer_widgets3',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
- 
-}
-add_action( 'widgets_init', 'footer_widgets3_init' );
-
-
-function dir_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => 'Directions Widget',
-		'id'            => 'dir_widgets',
-		'before_widget' => '',
-		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
-	) );
- 
-}
-
-add_action( 'widgets_init', 'dir_widgets_init' );
 //Allow image in shortcodes
 
 add_filter('widget_text', 'do_shortcode');

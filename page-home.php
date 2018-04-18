@@ -7,190 +7,187 @@
 	<div class="container">
 		<div class="row">
             <div class="jumbotron">
-                <h1>Criminal Law & Personal Injury</h1>
-                <p>EL PASO TX</p>
+                <div class="jumbo-content">
+                    <div class="hidden-xs">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Platinum Factotum Security" />
+                        <h1>Platinum Factotum Security</span></h1>
+                        <h2>Service</h2>
+                    </div>
+                    <img
+                                src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-xs.png"
+                                alt="<?php echo get_bloginfo('description'); ?>" class="visible-xs block-center" />
+                        <div class="<?=FULLWIDTH?> visible-xs">
+                             <a href="#contact-form2"><button class="btn btn-lrg btn-primary">SCHEDULE YOUR CONSULTATION</button></a>
+                        </div>
+                </div>
             </div>
 		</div>
 	</div>
 </section>
+<div class="home-bg-overlay"></div>
+</div> <!-- end home-bg -->
 <section id="contact-form">
     <div class="container">
         <div class="row">
             <div class="<?=FULLWIDTH?> hidden-xs">
                 <?php echo do_shortcode( '[contact-form-7 id="21" title="Contact form 1"]' ); ?>
             </div>
-            <div class="<?=FULLWIDTH?> visible-xs">
-                <a href="#contact-form2"><button class="btn btn-lrg btn-primary">SCHEDULE YOUR APPOINTMENT</button></a>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="main-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/who-we-are.jpg" alt="Who We Are" />
-            </div>
-            <div class="col-md-6 text-center">
-                <h4>Who We Are</h4>
-                <h3>The Joseph Law Firm</h3>
-
-                <p>Jon Joseph of the Joseph Law Firm is an attorney dedicated to helping the El Paso community. Whether you’ve been injured in a car accident or need legal defense for a crime committed, we can help you build a strong case.</p>
-            </div>
         </div>
     </div>
 </section>
 
-<section class="icon-section">
+<div class="flex-order">
+<section id="main-content" class="xs-order-3">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h4>What Do We Do?</h4>
-                <p class="blurb">At the Joseph Law Firm, we specialize in criminal law and personal injury.
-                    We can help you with a variety of cases. Some of the most common include:</p>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <a href="<?=SITEURL?>/dwi/">
-                                <div class="icon-header">
-                                    <img src="<?=STYLEURL?>/img/icon-dwi.png" alt="DWI" class="icon" />
-                                <div class="icon-bottom">
-                                    <span>DWI</span>
-                                    <span class="icon-plus">+</span>
-                                </div>
-                             </div>
-                            </a>
-                            <p>If you’re charged with a DWI, you may face hefty fines, penalties, and even jail time. Working with a lawyer can help you lessen your punishments, especially if you are a first-time offender. </p>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="<?=SITEURL?>/serious-felonies/">
-                                <div class="icon-header">
-                                    <img src="<?=STYLEURL?>/img/icon-felonies.png" alt="Felonies" class="icon" />
-                                    <div class="icon-bottom">
-                                        <span>Felonies</span>
-                                        <span class="icon-plus">+</span>
-                                    </div>
-                                </div>
-                            </a>
-                            <p>Felonies can range from burglary and arson to murder and sexual assault. For a felony, one typically receives jail time, numerous fines, and other punishments. </p>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="<?=SITEURL?>/misdemeanors/">
-                                <div class="icon-header">
-                                    <img src="<?=STYLEURL?>/img/icon-handcuffs.png" alt="Misdemeanors<" class="icon"  />
-                                    <div class="icon-bottom">
-                                        <span>Misdemeanors</span>
-                                        <span class="icon-plus">+</span>
-                                    </div>
-                                </div>
-                            </a>
-                            <p>Misdemeanors may include theft, trespassing, and vandalism and can result in up to one year of jail time.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="<?=SITEURL?>/drug-defense/">
-                            <div class="icon-header">
-                                <img src="<?=STYLEURL?>/img/icon-drugs.png" alt="DWI" class="icon" />
-                                <div class="icon-bottom">
-                                    <span>Drug Defense</span>
-                                    <span class="icon-plus">+</span>
-                                </div>
-                            </div>
-                            </a>
-                            <p>Drug charges are taken seriously in the state of Texas. They can include possession, distribution, and manufacturing.  </p>
+                <h2>Platinum Factotum Security Services:</h2>
+                <h3>El Paso’s Security Agency</h3>
+                <p class="blurb">At Platinum Factotum Security Services, it is our overall goal to protect people and property.</p>
+                <p class="xs-larger">We proudly provide high-quality security services to numerous organizations throughout the El Paso area.</p>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                <p class="blurb xs-smaller">Every business has its own unique security needs and requirements. Our team strives to thoroughly understand your particular needs prior to proposing and executing a security program.</p>
+                <p>No matter the type of industry, Platinum Factotum Security Services offers the same level of professionalism, honesty, and integrity to each and every one of our clients. Our personnel is discreet, highly professional, and well trained in all aspects of security services. We strive to meet your security standards. In order to ensure the highest quality service, Platinum Factotum Security Services develops and maintains well-indexed, site specific written instructions. The security officers abide by these instructions while on duty for your site. This is just one of the many ways we achieve excellent results.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <picture>
+                        <source
+                                media="(min-width: 768px)"
+                                srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/security-services.jpg">
+                        <img
+                                src="<?php echo get_stylesheet_directory_uri(); ?>/img/minority-led-security.jpg"
+                                alt="Platinum Factotum Security Services" class="block-center">
+                    </picture>
+                </div>
+            </div>
+        </div>
+</section>
+<div class="flex-section bg-city" class="xs-order-4">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2  class="gradient-border"><strong>El Paso-Based</strong>
+                        Minority Owned Security Agency</h2>
+                </div>
+                <div class="col-md-6">
+                    <p class="blurb xs-smaller">Platinum Factotum Security Services a minority-owned El Paso-based security agency providing armed and unarmed security services to the Southwest area.</p>
+
+                    <p>Our security agency was built upon a stable foundation of knowledge and expertise. With 30 years of combined law enforcement and security experience, Platinum Factotum Security Services can deal with any security situation. Security is a top priority for any business. We can serve as a single-source provider for all of your physical security needs. We are dedicated to provide excellence in the security guard services industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="container-fluid bg-dark xs-order-1">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="gradient-border">Comprehensive <span>Security Service</span><br />
+                for the Southwest</h2>
+        </div>
+        <div class="col-md-6">
+            <p>Platinum Factotum Security Services provides executive protection services tailored to completely suit your needs. Our officers are available 24 hours a day, 7 days a week, 365 days a year for long-term and short-term assignments. We specialize in armed and unarmed security</p>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="container-fluid bg-shield xs-order-2">
+    <div class="bg">
+    <div class="row">
+
+        <div class="col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 text-center shield-container">
+                        <div class="shield-icon">
+                            <div class="circle"><span class="check"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                         viewBox="0 0 64.6 48.3" style="enable-background:new 0 0 64.6 48.3;" xml:space="preserve" class="svg-check">
+<g id="Layer_2_1_">
+	<g id="Layer_4">
+		<path class="st0" d="M8,16.1l15.8,18.1L56.8,0l7.7,8.9L24.4,48.3L0,25.2L8,16.1z"/>
+	</g>
+</g>
+</svg>
+</span></div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <a href="<?=SITEURL?>/personal-injury-lawyer/">
-                            <div class="icon-header">
-                                <img src="<?=STYLEURL?>/img/icon-injury.png" alt="DWI" class="icon" />
-                                <div class="icon-bottom">
-                                    <span>Personal Injury</span>
-                                    <span class="icon-plus">+</span>
-                                </div>
-                            </div>
-                            </a>
-                            <p>Personal injury cases can include slip and fall, negligence, and dog bites, to name a few.  </p>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="<?=SITEURL?>/car-accidents/">
-                            <div class="icon-header">
-                                <img src="<?=STYLEURL?>/img/icon-accidents.png" alt="DWI" class="icon" />
-                                <div class="icon-bottom">
-                                    <span>Car Accidents</span>
-                                    <span class="icon-plus">+</span>
-                                </div>
-                            </div>
-                            </a>
-                            <p>If you were involved in a car accident at the fault of someone else, we can help you be compensated for your injuries and damage sustained to your vehicle. </p>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="<?=SITEURL?>/wrongful-death/">
-                            <div class="icon-header">
-                                <img src="<?=STYLEURL?>/img/icon-death.png" alt="DWI" class="icon" />
-                                <div class="icon-bottom">
-                                    <span>Wrongful Death</span>
-                                    <span class="icon-plus">+</span>
-                                </div>
-                            </div>
-                            </a>
-                            <p>If someone you love dies because of someone else’s negligence, we can help you build a case against the negligent person or entity.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="<?=SITEURL?>/serious-injuries/">
-                            <div class="icon-header">
-                                <img src="<?=STYLEURL?>/img/icon-serious-injury.png" alt="DWI" class="icon" />
-                                <div class="icon-bottom">
-                                    <span>Serious Injuries</span>
-                                    <span class="icon-plus">+</span>
-                                </div>
-                            </div>
-                            </a>
-                            <p>We can help you receive compensation if you have been seriously injured due to another person’s negligence.  </p>
-                        </div>
+                    <div class="col-md-6 col-xs-12 bg-transparent ">
+                        <p>The following are a few examples of locations<br />
+                            we proudly protect:
+                        </p>
+                        <ul>
+                            <li><span>Residential</span></li>
+                            <li><span>Fast Food Restaurants</span></li>
+                            <li><span>Construction Sites</span></li>
+                            <li><span>Hotels & Motels</span></li>
+                            <li><span>Warehouses</span> </li>
+                            <li><span>Federal</span></li>
+                            <li><span>Shipping and Logistics</span></li>
+                            <li><span>Investigative service</span></li>
+                            <li><span>School Perimeters</span></li>
+                            <li><span>Patrol</span></li>
+                            <li><span>Churches</span></li>
+                            <li><span>Empty & Abandoned Buildings</span></li>
+                            <li><span>Event & Front Desk Security</span></li>
+                            <li><span>Retail</span></li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-<div class="about-header">
-    <div class="container">
-        <div class="jumbotron text-center">
-            <h2>We can also help you with domestic crimes, theft crimes, defective product cases, medical malpractice, and premise liability cases. </h2>
-
-            <a href="<?=SITEURL?>/criminal" class="btn btn-primary btn-md">Learn More</a>
-        </div>
     </div>
 </div>
 
-<div class="banner-hero container">
-    <div class="banner-bg">
-        <div class="block-left">
 
-        </div>
-    </div>
-    <div class="banner"><p>If you’ve been charged with a crime or need representation
-            for a personal injury case, we can help.</p> <a href="<?=SITEURL?>/criminal/"><button class="btn btn-md btn-success">LEARN MORE</button></a></div>
-    <div class="banner-bottom">
-        Call to schedule a consultation today!
-    </div>
-</div>
-<div class="jumbotron text-center location-hero">
+<div class="jumbotron text-center contact-hero">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <img src="<?=STYLEURL?>/img/map-pin.png" alt="Directions" />
-
-                <h3>Where We Are Located</h3>
-
-                <p>The <strong>Joseph Law Firm</strong> is located in the heart of downtown El Paso. We’re dedicated to serving the El Paso community because we know that when you need legal representation, you deserve nothing but the best. With personalized assistance, we can help you build a strong case.</p>
+            <div class="col-xs-12">
+                <p>Our personnel is rigorously trained in order to provide the most complete and trustworthy service. Our team also provides private investigation services. Platinum Factotum Security Services serves as your single-source provider for all your physical security needs.</p>
+                <a href="<?=SITEURL?>/contact/"><button class="btn btn-lg btn-success">CONTACT US TODAY</button></a>
         </div>
     </div>
     </div>
 </div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.388304874376!2d-106.49007768442243!3d31.75989354245232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e758562239e3a1%3A0x305a29935ab6472e!2sThe+Law+Offices+of+Joseph+D.+Vasquez!5e0!3m2!1sen!2sus!4v1522682034508" width="100%" height="176" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="container-fluid bg-guard">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="gradient-border"><strong>Platinum Factotum Security Services</strong>
+                Keeps El Paso Safe</h2>
 
+            <p>Platinum Factotum Security Services is ready to keep your location safe. Contact us today to learn more about what we have to offer. We are an equal opportunity employer dedicated to a policy of non-discrimination. Our service and employment are available to anyone regardless of race, creed, color, age, sex, religion, national origin, or disability. When you choose Platinum Factotum Security Services, you’re choosing integrity and experience. We’re ready to work for you!
+            </p>
+        </div>
+        <div class="col-md-6 bg-sm">
+
+
+        </div>
+    </div>
+    </div>
+</div>
+    <?php if(is_active_sidebar( 'form_widgets' )){ //if the field is not empty
+        ?>
+        <section id="contact-form" class="visible-xs">
+            <div class="container" id="contact-form2">
+                <div class="row">
+                    <div class="<?=FULLWIDTH?>">
+                        <?php dynamic_sidebar( 'form_widgets' ); ?>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php } ?>
+</div>
 <?php get_footer(); ?>

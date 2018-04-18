@@ -21,7 +21,7 @@ body #main .container article #sidebar {
     }
 
     .icon-bottom {
-      font-size: 12px;
+      font-size: 14px;
       padding: .5em 1em;
 
       .icon-plus {
@@ -35,7 +35,7 @@ body #main .container article #sidebar {
 
       .icon {
         margin: 1em auto;
-        max-height: 41px;
+        max-height: 26px;
       }
     }
   }
@@ -52,7 +52,7 @@ body #main .container article #sidebar {
   }
 
   .banner-hero {
-    padding: 2em;
+    padding: 1em 2em;
     margin: 2em 0 0;
   }
 
@@ -91,16 +91,16 @@ body #main .container article #sidebar {
   }
 
   .banner-bottom {
-    background: #232C68;
+    background: #041C3F;
     color: #fff;
     text-align: center;
-    padding: 0.5em;
+    padding: 1.5em;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 13px;
   }
 
   #contact-form {
-    background: #232C68;
+    background: #041C3F;
     text-align: center;
     padding: 0;
     max-width: 100%;
@@ -123,7 +123,6 @@ body #main .container article #sidebar {
 
       h4 {
         font-size: 20px;
-        margin-bottom: 3em;
       }
 
       .form-group {
@@ -131,6 +130,7 @@ body #main .container article #sidebar {
         max-width: 100%;
         justify-content: space-around;
         margin: 0 auto;
+        padding: 0 1.5em;
 
         label {
           flex: 1;
@@ -171,7 +171,6 @@ body #main .container article #sidebar {
       input[type="submit"] {
         margin-top: 1em;
         margin-bottom: 1em;
-        width: auto;
         margin-left: 0;
       }
 
@@ -188,10 +187,9 @@ body #main .container article #sidebar {
   }
 
   #contact-form {
-
     @media screen and (min-width: $screen-sm-min) {
       margin: 0 0 0 0;
-      padding: 1.5em 0 0 0;
+      padding: 0 0 0 0;
 
       form {
         h4 {
@@ -212,5 +210,162 @@ body #main .container article #sidebar {
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: $screen-md-min) {
+  body #main .container article #sidebar {
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: $grid-float-breakpoint-max) {
+  body #main .container article #sidebar {
+    float: none;
+    max-width: 100%;
+    margin-left: 0;
+
+
+      .banner-bg {
+        padding-top: 113px;
+        background: url('../img/handcuffs.jpg') center center no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .banner-hero {
+        padding: 2em;
+        margin-top: 4em;
+        margin-bottom: 2.2em;
+      }
+
+      .block-left {
+        background: url('../img/what-to-do-next.png') 0 0 no-repeat;
+        width: 95px;
+        height: 95px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -35px;
+        background-size: contain;
+      }
+
+      .banner {
+        height: auto;
+        font-size: 11px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #666666;
+        background: #F2F2F2;
+        padding: 2em;
+        font-family: 'Roboto', sans-serif;
+
+        p {
+          font-size: 12px !important;
+          padding: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+        .btn {
+          margin-left: 0;
+          text-transform: uppercase;
+        }
+      }
+
+      .banner-bottom {
+        background: #041C3F;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+      }
+
+      .icon-section {
+        padding-bottom: 2em;
+
+        h4 {
+          margin-top: 2em;
+          font-size: 18px;
+        }
+
+        p.blurb {
+          font-size: 15px;
+          padding: 0;
+          margin: 1em auto 2em;
+        }
+
+        .icon-row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 20px;
+
+          .col-xs-6 {
+            padding: 0;
+            margin-bottom: 10px;
+
+            &:nth-child(2n) {
+              padding-left: 5px;
+            }
+
+            p {
+              display: none;
+            }
+          }
+
+
+          .icon-container {
+            width: 50%;
+            flex: 1;
+            margin: 0 .5em 1em 0;
+            -webkit-box-shadow: 5px 6px 16px -4px rgba(0,0,0,0.45);
+            -moz-box-shadow: 5px 6px 16px -4px rgba(0,0,0,0.45);
+            box-shadow: 5px 6px 16px -4px rgba(0,0,0,0.45);
+          }
+
+          .icon-bottom {
+            font-size: 12px;
+            padding: .5em 1.5em;
+
+            .icon-plus {
+              width: 10px;
+              height: 10px;
+            }
+          }
+
+          .icon-header {
+            text-align: center;
+
+            .icon {
+              margin: 1em auto;
+              max-height: 30px;
+            }
+          }
+        }
+      }
+  }
+
+  body #main .container {
+    padding-left: 0;
+    padding-right: 0;
+
+    .content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+body #main .container article .content-contact #sidebar
+{
+  margin-left: 0;
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    clear: both;
   }
 }

@@ -1,10 +1,61 @@
+
 body {
   background: #fff;
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+  .flex-order {
+    display: flex;
+    flex-direction: column;
 
-   &.home {
-     background: url("../img/hero.jpg") no-repeat;
-     background-size: contain;
-   }
+    .container-fluid {
+      width: 100%;
+    }
+
+      .xs-order-1 {
+        order: -1;
+      }
+
+      .xs-order-2 {
+        order: -1;
+      }
+
+      .xs-order-3 {
+        order: 0;
+      }
+    }
+  }
+
+  .landing-bg {
+    #home-main {
+      background: #000 url("../img/cia-lg.jpg") no-repeat;
+      background-position: 100% 0;
+      background-size: cover;
+      position: relative;
+
+      @media screen and (max-width: $grid-float-breakpoint-max) {
+
+      }
+    }
+  }
+
+  .home-bg {
+    background: url("../img/hero.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::after {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+      height: 600px;
+    }
+  }
 
   .edit-screen {
     position: absolute;
@@ -28,7 +79,6 @@ body {
 
   #main {
     .container {
-      background: #fff;
 
       .grid-bg {
         background: transparent !important;
@@ -36,10 +86,17 @@ body {
 
       article {
         min-height: 10em;
-        padding: 4em 0;
+        padding: 0 0 4em;
+
+        .column {
+          float: left;
+        }
 
         .blurb {
           color: #808080;
+          font-size: 30px;
+          margin-bottom: 1em;
+          font-weight: 300;
         }
       }
 
@@ -48,7 +105,7 @@ body {
       }
 
       h2 {
-        font-size: 25px;
+        font-size: 29px;
         margin-bottom: 1em;
       }
 
@@ -57,20 +114,29 @@ body {
         color: #666666;
       }
 
+      ul li {
+        margin-bottom: 1em;
+      }
 
       @media screen and (min-width: $screen-sm-min) {
+
         article {
+
+          .map-container {
+            width: 50%;
+          }
+
           h1 {
             margin-top: 1.75em;
           }
 
           p.blurb {
-            font-size: 25px;
+            font-size: 30px;
           }
 
           p,
           ul {
-            font-size: 20px;
+            font-size: 18px;
             margin-top: 1.25em;
           }
 
@@ -80,8 +146,143 @@ body {
             color: #606060;
           }
         }
-
       }
     }
+  }
+}
+
+body #main  {
+
+  .page-top {
+    background: #F2F2F2;
+    text-align: center;
+    padding: 3em 0;
+    .container {
+      p.blurb {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+
+.page-template-page-landing {
+
+  .content {
+    padding: 3em 0;
+
+
+    .col-md-6:first-child {
+      border-right: 1px solid #E6E6E6;
+    }
+  }
+
+  ul {
+    line-height: 1;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  hr {
+    margin-bottom: 3em;
+  }
+
+  .jumbotron {
+    padding: 100px 0;
+
+    @media screen and (max-width: $grid-float-breakpoint-max) {
+      .floating-badge {
+        display: none;
+      }
+
+      .gradient-border {
+        h1 {
+          color: #fff;
+        }
+      }
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+      .floating-badge {
+        float: left;
+        margin-bottom: 100px;
+      }
+
+      .gradient-border {
+        &::before {
+          height: 134px;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-top: 20px;
+        }
+
+        h1 {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $grid-float-breakpoint-max) {
+
+  .page-template-default, .blog, .error-404, .post-template-default {
+      #header {
+        position: relative;
+      }
+
+      .navbar-sherpa .navbar-collapse, .navbar-sherpa .navbar-collapse.in
+      {
+        background: $sherpa-brand-primary;
+      }
+  }
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+
+  .map-container {
+    width: 100%;
+  }
+
+  body #main .container article {
+      padding-bottom: 0;
+
+  }
+}
+
+body #main .container .flex-wrap article {
+  margin-left: 2em;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.floating-social ul.social-media {
+  position: fixed;
+  left: 0;
+  top: 200px;
+  background: $brand-success;
+  padding: 30px 20px;
+
+  li {
+    display: block;
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .fa-fw {
+    font-size: 22px;
+    width: 20px;
+  }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    display: none;
   }
 }

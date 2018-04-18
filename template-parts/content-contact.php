@@ -24,11 +24,9 @@
 			}
 
             echo "<article>\n";
-            echo "<div class=\"sidebar-content\">";
-            get_sidebar();
-            echo "<div class=\"content\">";
+            echo "<div class=\"content content-contact\">";
             the_content();
-            echo "</div>";
+            get_sidebar();
             echo "</div>";
             echo "</article>\n";
 		}
