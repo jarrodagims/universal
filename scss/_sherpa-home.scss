@@ -228,22 +228,10 @@
       background: transparent;
     }
 
-    //&:hover {
-    //  .check {
-    //    box-shadow: inset 0 0 0 4px #00C9CE, 0 1px 2px rgba(0,0,0,0.1);
-    //    transform: scale(1);
-    //  }
-    //
-    //  .check-front {
-    //    background: #00C9CE;
-    //    transform: scale(1.5);
-    //    opacity: 0;
-    //  }
-    //}
-
     @media screen and (max-width: $grid-float-breakpoint-max) {
       width: 50px;
       height: 50px;
+      background-image: url('../img/bg-blur-mobile.jpg');
     }
   }
 
@@ -426,7 +414,7 @@
       font-size: 15px;
     }
     padding-top: 0;
-    padding-bottom: 10em;
+    padding-bottom: 13em;
     background-size: contain;
   }
 }

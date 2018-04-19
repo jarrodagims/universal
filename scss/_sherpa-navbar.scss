@@ -78,7 +78,7 @@
       &:hover,
       &:focus {
         background-color: $sherpa-navbar-default-link-active-bg;
-        color: $sherpa-navbar-default-link-active-color;
+        color: $white;
       }
     }
 
@@ -86,10 +86,10 @@
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {
-          color: $sherpa-navbar-default-link-color;
+          color: $white;
           &:hover,
           &:focus {
-            color: $sherpa-navbar-default-link-hover-color;
+            color: $white;
             background-color: $sherpa-navbar-default-link-hover-bg;
           }
         }
@@ -97,7 +97,7 @@
           &,
           &:hover,
           &:focus {
-            color: $sherpa-navbar-default-link-active-color;
+            color: $white;
             background-color: $sherpa-navbar-default-link-active-bg;
           }
         }
@@ -105,7 +105,7 @@
           &,
           &:hover,
           &:focus {
-            color: $sherpa-navbar-default-link-disabled-color;
+            color: $white;
             background-color: $sherpa-navbar-default-link-disabled-bg;
           }
         }
@@ -138,6 +138,10 @@
       }
     }
   }
+}
+
+.dropdown-menu>li>a {
+  color: $white;
 }
 
 
@@ -288,7 +292,8 @@
 
       li a:hover,
       li a:focus {
-        background: #896b4e;
+        background: #00C9CE;
+        color: #fff;
       }
     }
     .navbar-collapse,
@@ -402,22 +407,22 @@
     }
 
     .dropdown-menu > li > a:focus {
-      background: #000;
+      background: #00C9CE;
     }
 
     li.dropdown:hover {
       .dropdown-menu {
         display: block;
-        background: #896b4e;
+        background: $sherpa-brand-primary;
 
         .active a {
-          background: #000;
+          background: #00C9CE;
         }
 
         a {
           &:hover,
           &:focus {
-            background: #000;
+            background: #00C9CE;
           }
 
           &:before {
