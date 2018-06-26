@@ -12,15 +12,17 @@
 //@import 'non-responsive';
 
 // Are you not using one of these plugins?  Just comment the import out.
-@import "jquery.bxslider";
-@import "jquery.colorbox";
+//@import "jquery.bxslider";
+//@import "jquery.colorbox";
 
 // Special components
+@import "icons";
 @import "sherpa-mixins";
 @import "sherpa-navbar";
 @import "sherpa-buttons";
 @import "sherpa-general"; 
 @import "sherpa-socialmedia";
+
 
 // Sections 
 @import "sherpa-header";

@@ -1,197 +1,352 @@
-<?php
-	/*
-		Template Name: Home	
-	*/
-	get_header(); ?>
-<section id="home-main">
-	<div class="container">
-		<div class="row">
-            <div class="jumbotron">
-                <div class="jumbo-content waypoint">
-                    <div class="hidden-xs">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Platinum Factotum Security" />
-                        <div class="fade-down"><h1>Platinum Factotum Security</h1>
-                        <h2>Service</h2></div>
+<?php get_header();
+
+/*
+    Template Name: Home
+*/ ?>
+    <section id="home-main">
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron">
+                    <div class="jumbo-content">
+                        <h1>Affordable & Reliable <strong>Medical Assistance</strong>
+                            EL PASO, TX</h1>
                     </div>
-                    <img
-                                src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-xs.png"
-                                alt="<?php echo get_bloginfo('description'); ?>" class="visible-xs block-center" />
-                        <div class="<?=FULLWIDTH?> visible-xs">
-                             <a href="#contact-form2"><button class="btn btn-lrg btn-primary">SCHEDULE YOUR CONSULTATION</button></a>
-                        </div>
-                </div>
-            </div>
-		</div>
-	</div>
-</section>
-<div class="home-bg-overlay"></div>
-</div> <!-- end home-bg -->
-<section id="contact-form">
-    <div class="container">
-        <div class="row">
-            <div class="<?=FULLWIDTH?> hidden-xs">
-                <?php echo do_shortcode( '[contact-form-7 id="21" title="Contact form 1"]' ); ?>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="flex-order">
-<section id="main-content" class="xs-order-3">
-    <div class="container waypoint">
-        <div class="row">
-            <div class="col-md-12 text-center">
-
-                <div class="fade-down"><h2>Platinum Factotum Security Services:</h2>
-                    <h3>El Paso’s Security Agency</h3></div>
-                <p class="blurb">At Platinum Factotum Security Services, it is our overall goal to protect people and property.</p>
-                <p class="xs-larger">We proudly provide high-quality security services to numerous organizations throughout the El Paso area.</p>
-
-            </div>
-        </div>
-    </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                <p class="blurb xs-smaller">Every business has its own unique security needs and requirements. Our team strives to thoroughly understand your particular needs prior to proposing and executing a security program.</p>
-                <p>No matter the type of industry, Platinum Factotum Security Services offers the same level of professionalism, honesty, and integrity to each and every one of our clients. Our personnel is discreet, highly professional, and well trained in all aspects of security services. We strive to meet your security standards. In order to ensure the highest quality service, Platinum Factotum Security Services develops and maintains well-indexed, site specific written instructions. The security officers abide by these instructions while on duty for your site. This is just one of the many ways we achieve excellent results.</p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <picture>
-                        <source
-                                media="(min-width: 768px)"
-                                srcset="<?php echo get_stylesheet_directory_uri(); ?>/img/security-services.jpg">
-                        <img
-                                src="<?php echo get_stylesheet_directory_uri(); ?>/img/minority-led-security.jpg"
-                                alt="Platinum Factotum Security Services" class="block-center">
-                    </picture>
-                </div>
-            </div>
-        </div>
-</section>
-<div class="flex-section bg-city waypoint" class="xs-order-4">
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2  class="gradient-border"><span class="fade-in"><strong>El Paso-Based</strong>
-                        Minority Owned Security Agency</span></h2>
-                </div>
-                <div class="col-md-6">
-                    <p class="blurb xs-smaller">Platinum Factotum Security Services a minority-owned El Paso-based security agency providing armed and unarmed security services to the Southwest area.</p>
-
-                    <p>Our security agency was built upon a stable foundation of knowledge and expertise. With 30 years of combined law enforcement and security experience, Platinum Factotum Security Services can deal with any security situation. Security is a top priority for any business. We can serve as a single-source provider for all of your physical security needs. We are dedicated to provide excellence in the security guard services industry.</p>
                 </div>
             </div>
         </div>
     </section>
-</div>
-<div class="container-fluid bg-dark xs-order-1 waypoint">
-    <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <h2 class="gradient-border"><span class="fade-in">Comprehensive <span class="highlight">Security Service</span><br />
-                    for the Southwest</span></h2>
-        </div>
-        <div class="col-md-6">
-            <p>Platinum Factotum Security Services provides executive protection services tailored to completely suit your needs. Our officers are available 24 hours a day, 7 days a week, 365 days a year for long-term and short-term assignments. We specialize in armed and unarmed security</p>
-        </div>
-    </div>
-    </div>
-</div>
-<div class="container-fluid bg-shield xs-order-2 waypoint">
-    <div class="bg">
-    <div class="row">
 
-        <div class="col-xs-12">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-xs-12 text-center shield-container">
-                        <div class="shield-icon">
+    </div> <!-- end home-bg -->
 
-                            <div class="circle">
-                                <span class="check-front"></span>
-                                <span class="check">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                                         viewBox="0 0 64.6 48.3" style="enable-background:new 0 0 64.6 48.3;" xml:space="preserve" class="svg-check">
-<g id="Layer_2_1_">
-	<g id="Layer_4">
-		<path class="st0" d="M8,16.1l15.8,18.1L56.8,0l7.7,8.9L24.4,48.3L0,25.2L8,16.1z"/>
-	</g>
-</g>
-</svg>
-</span></div>
+
+    <section class="icon-row">
+        <div class="container">
+            <div class="row flex-row">
+                <div class="col-xs-4">
+                    <a href="<?php echo get_page_link(27); ?>" class="icon-button">
+                        <?php get_template_part('template-parts/icon', 'urgent'); ?>
+                        <div class="title">Urgent Care Services</div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="<?php echo get_page_link(83); ?>" class="icon-button">
+                        <?php get_template_part('template-parts/icon', 'gynecological'); ?>
+                        <div class="title">Gynecological Care
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="<?php echo get_page_link(14); ?>" class="icon-button">
+                        <?php get_template_part('template-parts/icon', 'emergency'); ?>
+                        <div class="title">Emergency Medical Services
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="<?php echo get_page_link(41); ?>" class="icon-button">
+                        <?php get_template_part('template-parts/icon', 'broken-bone'); ?>
+                        <div class="title">Broken Bone Care
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="container">
+            <div class="col-md-6">
+                <h3>Now Performing DOT physicals!</h3>
+            </div>
+            <div class="col-md-6">
+                Contact Us Today
+                <a href="">
+                    <button class="btn">
+                        CONTACT FORM
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="main">
+        <div class="container-fluid">
+            <div class="extra-padding">
+                <div class="container">
+                    <div class="row flex-row">
+                        <div class="col-md-6 col-xs-12 padding-top">
+                            <div class="left-home-sidebar">
+
+                                <h2 class="hidden-xs">Country Club Urgent Care Clinic in El Paso, Texas</h2>
+
+                                <h3>Welcome to Country Club Urgent Care! Our El Paso clinic offers affordable and
+                                    reliable medical assistance.</h3>
+
+                                <p>The team at Country Club Urgent Care is always ready to tend to your medical
+                                    emergency needs. We understand the importance of proper and swift health care at an
+                                    affordable cost. For this reason, we provide top-quality emergency medical services
+                                    for patients of all ages.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1 col-xs-12 right-home-sidebar">
+                            <div>
+                                $25
+                                FLU SHOTS
+                            </div>
+
+                            <div>
+                                PRE REGISTER
+                                with us now
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-xs-12 bg-transparent ">
-                        <p>The following are a few examples of locations<br />
-                            we proudly protect:
-                        </p>
-                        <ul>
-                            <li><span>Residential</span></li>
-                            <li><span>Fast Food Restaurants</span></li>
-                            <li><span>Construction Sites</span></li>
-                            <li><span>Hotels & Motels</span></li>
-                            <li><span>Warehouses</span> </li>
-                            <li><span>Federal</span></li>
-                            <li><span>Shipping and Logistics</span></li>
-                            <li><span>Investigative service</span></li>
-                            <li><span>School Perimeters</span></li>
-                            <li><span>Patrol</span></li>
-                            <li><span>Churches</span></li>
-                            <li><span>Empty & Abandoned Buildings</span></li>
-                            <li><span>Event & Front Desk Security</span></li>
-                            <li><span>Retail</span></li>
-                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="bg-back">
+        <img src="<?php echo STYLEURL ?>/img/mobile-banner-mid.jpg" alt=""
+             class="visible-xs visibile-sm"/>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row flex-row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="diamond-bg">
+                            <?php get_template_part('template-parts/icon', 'diamond'); ?>
+                            <?php get_template_part('template-parts/icon', 'urgent-care'); ?>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <h2>Our staff of doctors and physician assistants are ready to assist you and your family.</h2>
+
+                        <p>We treat our patients with the care and respect they deserve. And most importantly, we strive
+                            to see our clients as quickly as possible. No longer will you have to wait for hours in an
+                            ER’s waiting room. You deserve medical assistance quickly and we offer exactly that and
+                            much, much more!</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-</div>
+    </section>
 
-
-<div class="jumbotron text-center contact-hero">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <p>Our personnel is rigorously trained in order to provide the most complete and trustworthy service. Our team also provides private investigation services. Platinum Factotum Security Services serves as your single-source provider for all your physical security needs.</p>
-                <a href="<?=SITEURL?>/contact/"><button class="btn btn-lg btn-success">CONTACT US TODAY</button></a>
+    <section class="ribbon">
+        <div class="container">
+            <div class="row flex-row">
+                <div class="col-xs-12">
+                    <p class="blurb">Services You Can Depend On</p>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-</div>
-<div class="container-fluid bg-guard waypoint">
-    <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <h2 class="gradient-border"><span class="fade-in"><strong>Platinum Factotum Security Services</strong>
-                    Keeps El Paso Safe</span></h2>
+    </section>
 
-            <p>Platinum Factotum Security Services is ready to keep your location safe. Contact us today to learn more about what we have to offer. We are an equal opportunity employer dedicated to a policy of non-discrimination. Our service and employment are available to anyone regardless of race, creed, color, age, sex, religion, national origin, or disability. When you choose Platinum Factotum Security Services, you’re choosing integrity and experience. We’re ready to work for you!
-            </p>
+    <section id="services-bubbles">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <?php get_template_part('template-parts/icon', 'gynecological'); ?>
+
+                    <h4>Gynecological Care</h4>
+
+                    <p>Country Club Urgent Care is an urgent care clinic as well as a gynecology clinic. Our gynecology
+                        clinic offers all the necessary services for women to live life to the healthiest degree.</p>
+
+                    <a href="">
+                        <button class="btn btn-success">LEARN MORE</button>
+                    </a>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="<?= IMGURL ?>circle-gcare.jpg" alt="Gynecological Care"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <img src="<?= IMGURL ?>circle-emergency.jpg" alt="Emergency"/>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <?php get_template_part('template-parts/icon', 'emergency'); ?>
+
+                    <h4>Emergency Medical Services.</h4>
+
+                    <p>Country Club Urgent Care is an urgent care clinic as well as a gynecology clinic. Our gynecology
+                        clinic offers all the necessary services for women to live life to the healthiest degree.</p>
+
+                    <a href="">
+                        <button class="btn btn-success">LEARN MORE</button>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <?php get_template_part('template-parts/icon', 'broken-bone'); ?>
+
+                    <h4>Gynecological Care</h4>
+
+                    <p>Country Club Urgent Care is an urgent care clinic as well as a gynecology clinic. Our gynecology
+                        clinic offers all the necessary services for women to live life to the healthiest degree.</p>
+
+                    <a href="">
+                        <button class="btn btn-success">LEARN MORE</button>
+                    </a>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <img src="<?= IMGURL ?>circle-broken" alt="Broken Bones"/>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6 bg-sm">
+    </section>
 
+    <section class="banner text-center">
+        <p class="blurb">We'll be here to care for you and tend to any medical emergency you may be facing. In addition,
+            we offer regular check-ups as well as gynecological exams.</p>
 
-        </div>
-    </div>
-    </div>
-</div>
-    <?php if(is_active_sidebar( 'form_widgets' )){ //if the field is not empty
-        ?>
-        <section id="contact-form" class="visible-xs">
-            <div class="container" id="contact-form2">
+        <p>Our main goal is to help El Pasoans be as healthy as possible. So come see us today, we're ready to tend to
+            your needs!</p>
+    </section>
+
+    <section id="diagonals">
+        <div>
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="<?=FULLWIDTH?>">
-                        <?php dynamic_sidebar( 'form_widgets' ); ?>
+                    <div class="col-md-6"><h2>When We Say "Urgent" Care, We Mean It!</h2>
+
+                        <p class="blurb">Country Club Urgent Care specializes in comprehensive acute medical services,
+                            urgent care, emergency care, and non-hospital care.</p>
+
+                        <p>Instead of waiting at the ER for hours, you can simply walk into our clinic. We have over 50
+                            years of combined experience in emergency medical services. This amount of experience
+                            translates to one very important thing: reliability.</p>
+                    </div>
+
+                    <div class="col-md-6  dg-blue">
+
                     </div>
                 </div>
             </div>
-        </section>
-    <?php } ?>
-</div>
+        </div>
+
+        <div class="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6"><h3>When you're facing medical issues, all you want is to be treated as soon
+                            as
+                            possible.</h3>
+
+                        <p>Doing so can be difficult when you're wasting time in a waiting room. When you visit Country
+                            Club Urgent Care, you won't have to wait for hours and hours. Instead, you'll be seen by a
+                            friendly medical professional as quickly as possible. You will receive the medical treatment
+                            you deserve in a prompt manner. Any questions you may have will be answered with joy and
+                            candor. We do all this because we know how important it is for our patients to get back to
+                            living their normal lives. Medical emergencies are enough of an inconvenience. Country Club
+                            Urgent Care focuses on easing these inconveniences. With the shortest wait times, complete
+                            care, and friendly assistance, you will be on the road toward healthy living.</p></div>
+                    <div class="col-md-6 dg-white"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="affordable-prices">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center"><h2>We Offer Affordable Prices For All Of Our Patients</h2>
+                    <p>The price of our services are as follows:</p>
+
+                    <div class="card">$75
+                        Initial consultations
+                    </div>
+
+                    <div class="card">$50
+                        Follow-up consultations
+                        (after the first visit)
+                    </div>
+
+                    <div class="card">$30
+                        X-rays
+                    </div>
+
+                    <p>All other prices will be based on your
+                        MEDICARE FEE SCHEDULE</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="bg-back bg-blue">
+        <img src="<?php echo STYLEURL ?>/img/mobile-banner-mid.jpg" alt=""
+             class="visible-xs visibile-sm"/>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row flex-row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="diamond-bg">
+                            <?php get_template_part('template-parts/icon', 'diamondblue'); ?>
+                            <?php get_template_part('template-parts/icon', 'shield'); ?>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 text-center">
+                        <h2>We Accept<br/>
+                            Most Insurance Plans</h2>
+
+                        <p class="blurb">We are now in network with all multiplans. We also now accept Presbyterian
+                            insurance and are pending El Paso First insurance.</p>
+
+                        <p>We do not take Melina insurances and apologize for the inconvenience. Please connect with us
+                            regarding additional insurance questions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Country Club Urgent Care Clinic is Here for El Paso and
+                        Its Surrounding Cities</h2>
+
+                    <p>Our care and love for El Paso set us apart from other clinics. If you're tired of waiting in the
+                        emergency room to only be seen by a doctor who may or may not give you the attention and care
+                        you deserve, choose Country Club Urgent Care in El Paso. We are located on the west side of town
+                        on the intersections of N. Mesa St and Doniphan Dr. We welcome all ages as well as residents
+                        from Las Cruces and surrounding cities. If you’re visiting from out of town, we can also accept
+                        you as a patient. We're here for you whether you live in El Paso or are simply passing
+                        through.</p>
+
+                    <h2>Contact Us Today</h2>
+
+                    <p>Please feel free to contact us with any questions or comments. We can be reached at (915)
+                        307-3870. Our clinic is located at 8041 North Mesa, Suite B2, El Paso, TX 79932. When you need
+                        medical emergency services, choose Country Club Urgent Care. We are a reliable walk-in clinic
+                        that offers urgent care and medical assistance. You'll see just how easy it can be to receive
+                        swift and complete medical assistance.</p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+<?php if (is_active_sidebar('form_widgets')) { //if the field is not empty
+    ?>
+    <section id="contact-form" class="visible-xs">
+        <div class="container" id="contact-form2">
+            <div class="row">
+                <div class="<?= FULLWIDTH ?>">
+                    <?php dynamic_sidebar('form_widgets'); ?>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php } ?>
 <?php get_footer(); ?>

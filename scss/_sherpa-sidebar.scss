@@ -1,22 +1,111 @@
+@mixin svg-arrow($color) {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.62 15.21"><defs><style>.cls-1{fill:#fff;}</style></defs><title>arrow</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_5" data-name="Layer 5"><polygon class="cls-1" points="4.96 0 0 0 7.67 7.67 0.12 15.21 5.08 15.21 12.62 7.67 4.96 0"/></g></g></svg>')
+}
+
+.sidebar-content {
+  margin-top: 45px;
+
+  .post-title {
+    font-weight: 600;
+
+    &::after {
+      display: inline-block;
+      content: '';
+      @include svg-arrow(#fff);
+      height: 23px;
+      width: 23px;
+      background-repeat: no-repeat;
+      background-color: #3982F7;
+      background-position: center center;
+      text-align: center;
+      line-height: 1em;
+      vertical-align: middle;
+      margin-left: 10px;
+      margin-top: 0;
+      transform: rotate(90deg);
+      background-size: 8px;
+    }
+  }
+}
+
 body #main .container article #sidebar {
   float: right;
-  max-width: 400px;
-  background: #F7F7F7;
-  padding: 0 0;
+  max-width: 500px;
   margin-left: 3em;
+
+  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    max-width: 300px;
+
+    .ctf-author-box {
+      display: none;
+    }
+
+    .ctf-tweet-content {
+      margin-left: 0 !important;
+    }
+  }
+
+  .green-box {
+    background: $sherpa-brand-primary;
+    padding: 2em 4em 2em 3em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    p {
+      text-align: left;
+      padding-right: 2em;
+      position: relative;
+      margin-bottom: 0;
+      font-size: 16px;
+
+      &:after {
+        display: inline-block;
+        content: '';
+        @include svg-arrow(#fff);
+        height: 33px;
+        width: 33px;
+        background-repeat: no-repeat;
+        background-color: #3982F7;
+        background-position: center center;
+        text-align: center;
+        line-height: 1em;
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-top: 0;
+        background-size: 8px;
+        position: absolute;
+        right: -1em;
+        top: 50%;
+        border: 2px solid #fff;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  .right-home-sidebar {
+    padding: 30px 70px 50px;
+    //background: #F7F7F7;
+
+
+
+    @media screen and (max-width: $grid-float-breakpoint-max) {
+      padding: 0 0;
+      background: #F7F7F7;
+    }
+  }
 
 
   #contact-form {
-    background: #041C3F;
+    background: #23303F;
     text-align: center;
     padding: 0;
     max-width: 100%;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 
     form {
       margin: 2em auto;
-      padding: 0 2em;
+      padding: 0 0;
       text-align: center;
       color: #fff;
       display: inline-block;
@@ -100,7 +189,7 @@ body #main .container article #sidebar {
 
       form {
         h4 {
-          margin-bottom: 2.5em;
+          margin-bottom: 1.5em;
         }
 
         input[type="submit"] {
@@ -129,81 +218,41 @@ body #main .container article #sidebar {
     margin-bottom: 2em;
   }
 
-  .bg-shield {
-    margin-top: 3em;
-    padding-top: 2em;
-    background-position: 50% 50%;
-    box-shadow: none;
-    background-image: url('../img/bg-blur-mobile.jpg');
+  .list-box {
+    padding: 30px 50px;
+    border: 2px solid #FEF102;
+    background: #8C867E;
 
-    .circle {
-      width: 50px;
-      height: 50px;
+    h3 {
+      margin-top: 0;
+      font-weight: 300;
+      margin-bottom: 1.5em;
+      color: #fff;
+    }
 
-      .check {
-        transform: scale(1);
+    ul {
+      margin: 0 0;
+      padding: 0 0;
+      list-style: none;
+
+      li {
+        margin-bottom: 0;
       }
     }
 
-      .bg-transparent {
+    li a {
+      background: rgba(254, 241, 2, 0.5);
+      color: #fff;
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      margin-bottom: 4px;
 
-        padding: 0 0 2em;
-
-        ul {
-          padding: 0 30px;
-          column-gap: 40px;
-        }
-
-        p {
-          margin-top: 2em;
-        }
-      }
-
-      ul {
-        column-count: 2;
-        list-style: none;
-        padding-left: 0;
-
-        li::before {
-          content: '';
-          width: 10px;
-          height: 10px;
-          border-radius: 10px;
-          line-height: 1em;
-          border: 2px solid #00C9CE;
-          display: inline;
-          float: left;
-          overflow: auto;
-          vertical-align: middle;
-          margin-right: .5em;
-          margin-top: .25em;
-        }
-
-        li {
-          font-size: 12px;
-          color: $white;
-
-          &:hover::before {
-            background: #00C9CE;
-          }
-
-          span {
-            overflow: hidden;
-            display: block;
-            line-height: 1.5em;
-          }
-        }
-      }
-
-      &:first-child {
-        padding: 0 0;
-        margin: 3em 0 0;
-      }
-
-      .bg-transparent {
-        background: transparent;
+      &:hover {
+        background: #FEF102;
       }
     }
+  }
 }
 
 @media screen and (min-width: $screen-md-min) {
@@ -217,14 +266,9 @@ body #main .container article #sidebar {
     float: none;
     max-width: 100%;
     margin-left: 0;
+    background: none;
+    padding: 0 30px;
 
-
-      .banner-bg {
-        padding-top: 113px;
-        background: url('../img/handcuffs.jpg') center center no-repeat;
-        background-size: cover;
-        position: relative;
-      }
 
       .banner-hero {
         padding: 2em;
@@ -232,16 +276,7 @@ body #main .container article #sidebar {
         margin-bottom: 2.2em;
       }
 
-      .block-left {
-        background: url('../img/what-to-do-next.png') 0 0 no-repeat;
-        width: 95px;
-        height: 95px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: -35px;
-        background-size: contain;
-      }
+
 
       .banner {
         height: auto;
@@ -357,8 +392,22 @@ body #main .container article #sidebar {
 body #main .container article .content-contact #sidebar
 {
   margin-left: 0;
-
   @media screen and (max-width: $grid-float-breakpoint-max) {
     clear: both;
+  }
+}
+
+body #main .container article #sidebar p.ctf-tweet-text, body #main .container article #sidebar p.cff-post-text {
+  color: #9b9b9b;
+  text-align: left;
+}
+
+body #main .container article #sidebar .green-box p {
+  color: #fff;
+}
+
+@media screen and (max-width: $grid-float-breakpoint-max) {
+  .cff-wrapper {
+    display: none !important;
   }
 }

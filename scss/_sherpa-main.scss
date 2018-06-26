@@ -1,6 +1,12 @@
 
 body {
   background: #fff;
+
+  &.blog #main, &.post-template-default #main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   @media screen and (max-width: $grid-float-breakpoint-max) {
   .flex-order {
     display: flex;
@@ -25,35 +31,18 @@ body {
   }
 
   .landing-bg {
+
     #home-main {
-      background: #000 url("../img/cia-lg.jpg") no-repeat;
-      background-position: 100% 0;
-      background-size: cover;
       position: relative;
+      background: url('../img/bg-hero.jpg') right center no-repeat;
+      background-size: cover;
+      //background-attachment: fixed;
 
       @media screen and (max-width: $grid-float-breakpoint-max) {
-
+        //background: url('../img/mobile-bg.jpg') right center no-repeat;
+        background-size: cover;
+        //background-attachment: fixed;
       }
-    }
-  }
-
-  .home-bg {
-    background: url("../img/hero.jpg") no-repeat;
-    background-size: cover;
-    position: relative;
-
-    &::after {
-      background: rgba(0, 0, 0, 0.5);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      content: '';
-    }
-
-    @media screen and (min-width: $screen-md-min) {
-      height: 600px;
     }
   }
 
@@ -80,42 +69,59 @@ body {
   #main {
     .container {
 
+
       .grid-bg {
         background: transparent !important;
       }
 
       article {
+
+        h1 {
+          margin-bottom: 1em;
+        }
+
         min-height: 10em;
-        padding: 0 0 4em;
+        padding: 0 0 3em;
 
         .column {
           float: left;
         }
 
         .blurb {
-          color: #808080;
-          font-size: 30px;
-          margin-bottom: 1em;
+          font-size: 22px;
+          margin-bottom: 2em;
           font-weight: 300;
+          line-height: 1.5;
         }
-      }
-
-      h1 {
-        font-size: 30px;
-      }
-
-      h2 {
-        font-size: 29px;
-        margin-bottom: 1em;
       }
 
       p {
         margin-bottom: 3em;
-        color: #666666;
+      }
+
+      ul, ol {
+        margin-bottom: 2em;
+        margin-left: 0;
+      }
+
+      h2 {
+        margin-bottom: 1em;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        font-size: 14px;
       }
 
       ul li {
         margin-bottom: 1em;
+      }
+
+      h2 {
+        color: #23303F;
+        font-size: 22px;
+        font-weight: 500;
       }
 
       @media screen and (min-width: $screen-sm-min) {
@@ -130,14 +136,9 @@ body {
             margin-top: 1.75em;
           }
 
-          p.blurb {
-            font-size: 30px;
-          }
-
           p,
           ul {
-            font-size: 18px;
-            margin-top: 1.25em;
+            font-size: 15px;
           }
 
           .contact-info p {
@@ -153,10 +154,52 @@ body {
 
 body #main  {
 
+  article p.no-margin {
+    margin-bottom: 1.2em;
+  }
+
+  article ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 3em;
+    margin-left: 1em;
+  }
+
   .page-top {
     background: #F2F2F2;
     text-align: center;
     padding: 3em 0;
+
+    @media screen and (min-width: $screen-md-min) {
+      padding: 5.5em 0;
+
+      h2 {
+        line-height: 1.8;
+        margin-top: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+
+      p {
+         line-height: 2;
+        font-size: 16px;
+      }
+
+      p.blurb {
+        line-height: 1.5;
+        font-size: 25px;
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      color: #7A7A7A;
+    }
+
+    p {
+      color: #7A7A7A;
+    }
+
     .container {
       p.blurb {
         margin-bottom: 1em;
@@ -168,28 +211,28 @@ body #main  {
 .page-template-page-landing {
 
   .content {
-    padding: 3em 0;
+    padding: 5em 0 0;
 
+    p {
+      line-height: 1.75;
+      margin-bottom: 2em;
+    }
 
     .col-md-6:first-child {
       border-right: 1px solid #E6E6E6;
     }
   }
 
-  ul {
-    line-height: 1;
-  }
-
-  ul li {
-    list-style: none;
-  }
-
   hr {
-    margin-bottom: 3em;
+    margin: 5em 0;
   }
 
   .jumbotron {
-    padding: 100px 0;
+
+
+    h2 {
+      margin-top: 0;
+    }
 
     @media screen and (max-width: $grid-float-breakpoint-max) {
       .floating-badge {
@@ -204,6 +247,8 @@ body #main  {
     }
 
     @media screen and (min-width: $screen-sm-min) {
+      height: 500px;
+
       .floating-badge {
         float: left;
         margin-bottom: 100px;
@@ -232,11 +277,6 @@ body #main  {
       #header {
         position: relative;
       }
-
-      .navbar-sherpa .navbar-collapse, .navbar-sherpa .navbar-collapse.in
-      {
-        background: $sherpa-brand-primary;
-      }
   }
 
   .sidebar-content {
@@ -254,13 +294,22 @@ body #main  {
   }
 }
 
-body #main .container .flex-wrap article {
-  margin-left: 2em;
-
-  &:first-child {
-    padding-left: 0;
+@media screen and (max-width: $screen-sm-max) {
+  body #main .container .flex-wrap article {
+    margin-bottom: 2em;
   }
 }
+
+@media screen and (min-width: $screen-sm-min) {
+  body #main .container .flex-wrap article {
+    padding-left: 2em;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
 
 .floating-social ul.social-media {
   position: fixed;
@@ -284,5 +333,75 @@ body #main .container .flex-wrap article {
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
     display: none;
+  }
+}
+
+
+.page-bottom {
+  text-align: center;
+  background: #23303F;
+  color: #fff;
+  padding: 83px 0;
+  line-height: 1.5;
+
+  h2 {
+    margin-bottom: 24px;
+    line-height: 1.75;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  strong {
+    font-size: 22px;
+    margin-bottom: 1.75em;
+    display: block;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    padding: 40px 0;
+  }
+}
+
+#ctf .ctf-out-of-tweets { display: none }
+.ctf-tweet-text { color: #9B9B9B; }
+#ctf.ctf-narrow .ctf-author-avatar { border: 1px solid #3982F7; border-radius: 0; padding: 10px;  }
+
+#ctf.ctf-narrow .ctf-tweet-content, #ctf.ctf-narrow .ctf-tweet-actions, #ctf.ctf-narrow .ctf-quoted-tweet  { margin-left: 95px; }
+
+#ctf.ctf-narrow .ctf-author-avatar img {
+  display: none;
+
+}
+
+#ctf.ctf-narrow .ctf-author-avatar {
+  background: url('../img/twitter.png') center center no-repeat;
+  width: 76px;
+  height: 76px;
+}
+
+#ctf .ctf-item {
+  border: 0;
+}
+
+@media screen and (max-width: $grid-float-breakpoint-max) {
+  .ctf.ctf-type-usertimeline {
+    display: none;
+  }
+
+  .flex-row.expand {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $screen-sm-min) {
+  .flex-row.expand {
+    display: flex !important;
   }
 }

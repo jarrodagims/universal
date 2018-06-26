@@ -217,7 +217,7 @@ class SocialMedia {
 			$size_class = 'fa-lg';
 		}
 
-		return "<a href=\"$url\" class=\"$bob-button social-media-button " . $this->getSize() . ' ' . $this->getStyle() . ' ' . $this->getColorType() . " external\"><i class=\"fa fa-" . $icon . " fa-fw $size_class\"><span>" . $name . "</span></i></a>";
+		return "<a href=\"$url\" class=\"$bob-button social-media-button " . $this->getSize() . ' ' . $this->getStyle() . ' ' . $this->getColorType() . " external\" target=\"_blank\"><i class=\"fa fa-" . $icon . " fa-fw $size_class\"><span>" . $name . "</span></i></a>";
 	}
 	
 	public function showSingle($networkName) {

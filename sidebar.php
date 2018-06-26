@@ -1,63 +1,37 @@
-<div id="sidebar" class="col-md-4">
-    <?php if (is_page('contact')) {
-        ?>
-        <section id="contact-form">
-            <div>
-                <?php echo do_shortcode('[contact-form-7 id="21" title="Contact form 1"]'); ?>
-            </div>
-        </section>
-    <?php } ?>
-    <?php if (!is_page('contact')) { //if the field is not empty
-        ?>
-        <section id="contact-form">
-            <div>
-                <?php echo do_shortcode('[contact-form-7 id="21" title="Contact form 1"]'); ?>
-            </div>
-        </section>
-    <?php } ?>
+<div id="sidebar">
+    <div class="right-home-sidebar">
+        <div>
+            <h3>Facebook</h3>
+            <h4 class="hidden-xs">Recent Posts</h4>
+            <?php echo do_shortcode('[custom-facebook-feed]'); ?>
+            <a href="https://www.facebook.com/Maranatha-Physical-Medicine-Rehabilitation-PLLC-1011419035680375/" target="_blank" target="_blank">
+                <button class="btn btn-primary"><span class="glyphicon glyphicon-facebook"></span> Like Our
+                    Page
+                </button>
+            </a>
 
-    <div class="container-fluid bg-shield">
-        <div class="bg">
-            <div class="col-xs-12 text-center shield-container">
-                <div class="shield-icon">
-
-                    <div class="circle">
-                        <span class="check-front"></span>
-                        <span class="check">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                         viewBox="0 0 64.6 48.3" style="enable-background:new 0 0 64.6 48.3;"
-                                         xml:space="preserve" class="svg-check">
-<g id="Layer_2_1_">
-	<g id="Layer_4">
-		<path class="st0" d="M8,16.1l15.8,18.1L56.8,0l7.7,8.9L24.4,48.3L0,25.2L8,16.1z"/>
-	</g>
-</g>
-</svg>
-</span></div>
-                </div>
-            </div>
-            <div class="col-xs-12 bg-transparent">
-                <p>The following are a few examples of locations<br/>
-                    we proudly protect:
-                </p>
-                <ul>
-                    <li><span>Residential</span></li>
-                    <li><span>Fast Food Restaurants</span></li>
-                    <li><span>Construction Sites</span></li>
-                    <li><span>Hotels & Motels</span></li>
-                    <li><span>Warehouses</span></li>
-                    <li><span>Federal</span></li>
-                    <li><span>Shipping and Logistics</span></li>
-                    <li><span>Investigative service</span></li>
-                    <li><span>School Perimeters</span></li>
-                    <li><span>Patrol</span></li>
-                    <li><span>Churches</span></li>
-                    <li><span>Empty & Abandoned Buildings</span></li>
-                    <li><span>Event & Front Desk Security</span></li>
-                    <li><span>Retail</span></li>
-                </ul>
-            </div>
+            <h3>Twitter</h3>
+            <h4 class="hidden-xs">Latest Tweets</h4>
+            <?php echo do_shortcode('[custom-twitter-feeds]'); ?>
+            <a href="https://twitter.com/MaranathaPMR" target="_blank">
+                <button class="btn btn-primary"><span class="glyphicon glyphicon-twitter"></span> Follow Us
+                </button>
+            </a>
         </div>
     </div>
+    <?php if (is_page('contact-us')) : ?>
+        <div id="contact-form">
+            <?php if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
+                echo do_shortcode('[contact-form-7 id="31" title="Contact Form"]');
+            } else {
+                echo do_shortcode('[contact-form-7 id="222" title="Contact form 1"]');
+            }
+            ?>
+        </div>
+    <?php else : ?>
+        <div class="green-box">
+            <p>Rehabilitation Medicine as a whole treat several diseases, injuries, and symptoms. The umbrella, the
+                focus is broken down to include:</p>
+        </div>
+    <?php endif; ?>
 </div>

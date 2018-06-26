@@ -26,6 +26,12 @@
               },
               offset: '50%'
           });
-      })
+      });
+
+      $('.expander').click(function(){
+          $('.expand').toggle();
+          $('.expander').toggleClass('expanded');
+      });
+
   });
 })(jQuery);

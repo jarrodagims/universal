@@ -14,7 +14,7 @@
   touch-action: manipulation;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   white-space: nowrap;
 
   @include button-size(
@@ -90,7 +90,7 @@ a.btn {
 .btn-success {
   @include button-variant(
     $btn-success-color,
-    $btn-success-bg,
+    $btn-default-bg,
     $btn-success-border
   );
 }

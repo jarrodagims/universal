@@ -1,5 +1,5 @@
 {
-  "name": "eleganzza-2018",
+  "name": "sherpa",
   "version": "1.0.0",
   "description": "![Sherpa](https://raw.githubusercontent.com/agims/sherpa/master/screenshot.png) # Sherpa - A Boilerplate WordPress Theme A SCSS-flavored, Twitter Bootstrap-based boilerplate for developing WordPress themes.",
   "main": "gulpfile.js",
@@ -12,7 +12,10 @@
     "gulp-compass": "^2.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "start": "livereload && watch-css"
   },
   "author": "",
   "license": "ISC"

@@ -25,12 +25,10 @@ function sherpa_frontend_scripts() {
 		wp_register_script( 'main_js', THEMEURL . '/js/min/main-min.js', array( 'jquery'), (get_option('sherpa_is_dev_mode' == 'y') ? time() : '1.0'), true );	
 	} else {
     	wp_register_script( 'bootstrap', THEMEURL . '/js/bootstrap.min.js', array('jquery'), '3.3.6', TRUE );
-        wp_register_script( 'waypoints_js', THEMEURL . '/js/jquery.waypoints.min.js', array('jquery', 'bootstrap'), '4.0', TRUE );
     	wp_register_script( 'plugins_js', THEMEURL . '/js/plugins.js', array('jquery', 'bootstrap'), '1.0', TRUE );
 		wp_register_script( 'main_js', THEMEURL . '/js/main.js', array( 'jquery', 'plugins_js'), '1.0.0', true );
 	}
 
-    wp_enqueue_script( 'waypoints_js' );
 	wp_enqueue_script( 'main_js' );
 
 

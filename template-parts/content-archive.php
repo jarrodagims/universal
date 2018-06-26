@@ -23,7 +23,7 @@
                 $thumb_url = $thumb_url_array[0];
 
                 if(empty($thumb_url) || $thumb_url == SITEURL . '/wp-includes/images/media/default.png')  {
-                    $thumb_url = 'http://placehold.it/737x414/';
+                    $thumb_url = get_stylesheet_directory_uri() . '/img/placeholder.png';
                 }
 
 			endif;

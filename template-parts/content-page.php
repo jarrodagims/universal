@@ -16,7 +16,7 @@
     			} else {
     				$edit_link = NULL;
     			}
-   				$title = "<h1>" . get_the_title() . $edit_link . "</h1>\n";
+   				$title = "<span>" . get_the_title() . $edit_link . "</span>\n";
 			}
 			else
 			{
@@ -27,7 +27,21 @@
             echo "<div class=\"sidebar-content\">";
             get_sidebar();
             echo "<div class=\"content\">";
+            echo "<span class=\"post-title\">";
+            the_title();
+            echo "</span>";
             the_content();
+            ?>
+            <div class="banner">
+                <strong>EMPOWERING INDEPENDENCE</strong>
+                <em>Contact Us <span>Today!</span></em>
+            </div>
+            <div class="content">
+            <?php
+            if (get_field('page_two', $pageid)) { ?>
+                <?php echo get_field('page_two', $pageid); ?>
+            <?php  }
+            echo "</div>";
             echo "</div>";
             echo "</div>";
             echo "</article>\n";
