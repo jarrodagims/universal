@@ -1,5 +1,4 @@
 <svg class="icon-diamond" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.13 714.13">
-    <defs></defs>
     <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_6" data-name="Layer 6">
             <path fill="#1e242d" d="M357.8,652.06,62.06,356.32,356.33,62.06,652.07,357.8Z"/>

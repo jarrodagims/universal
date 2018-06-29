@@ -4,6 +4,31 @@
   padding: 4em 0;
   text-align: center;
 
+  .logo-footer {
+    width: 311px;
+  }
+
+  .contact-footer, .hours-footer, .button-footer, .logo-footer {
+
+    box-sizing: content-box;
+  }
+
+  .contact-footer {
+    width: 257px;
+  }
+
+  .hours-footer {
+    width: 358px;
+  }
+
+  .button-footer {
+    width: 283px;
+
+    .btn-success {
+      padding: 20px 40px;
+    }
+  }
+
   .navbar-brand {
     float: none;
     text-align: center;
@@ -149,9 +174,6 @@
       font-size: 18px;
     }
 
-    .btn-success {
-      width: 100%;
-    }
   }
 
   .footer-bottom {
@@ -294,19 +316,6 @@
   align-items: center;
   position: relative;
 
-  &::before {
-    background: -webkit-linear-gradient(left, #30b3e3 0%,#005bb0 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #30b3e3 0%,#005bb0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    opacity: 0.75;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: '';
-    pointer-events: none;
-  }
-
   a {
     color: #fff;
     z-index: 1;
@@ -320,7 +329,6 @@
     .btn {
       border-color: #fff;
       background: transparent;
-      width: 168px;
     }
   }
 }

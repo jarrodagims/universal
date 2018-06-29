@@ -47,18 +47,26 @@
            <div class="container">
                <div class="row ">
                    <div class="v-align">
-                       <a class="navbar-brand" href='<?php echo get_site_url() ?>'><img
+                       <a class="navbar-brand hidden-xs" href='<?php echo get_site_url() ?>'><img
                                    src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
                                    alt="<?php echo get_bloginfo('description'); ?>"/></a>
-                       <div class="col-xs-12 navbar-button text-center">
+                       <div class="col-xs-12 col-md-8 navbar-button text-center">
                            <?php
                            echo responsive_bs_menu('primary', 'left', SITENAME); ?>
+                           <ul class="nav navbar-nav navbar-right">
+                               <li class="menu-item directions"><a href="<?php echo get_site_url()?>/contact">Directions</a></a></li>
+                               <li class="menu-item contact"><a href="tel:9153073870">Call</a></li>
+                           </ul>
                        </div>
-                       <ul class="nav navbar-nav navbar-right">
-                           <li class="menu-item directions"><a href="<?php echo get_site_url()?>/contact">Directions</a></a></li>
-                           <li class="menu-item contact"><a href="tel:9152228255">Call</a></li>
-                       </ul>
+
                    </div>
                </div>
            </div>
        </div>
+
+       <div class="container-fluid logo-header visible-xs">
+           <a class="navbar-brand" href='<?php echo get_site_url() ?>'><img
+                       src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
+                       alt="<?php echo get_bloginfo('description'); ?>"/></a>
+       </div>
+

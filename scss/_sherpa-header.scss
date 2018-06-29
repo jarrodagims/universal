@@ -2,11 +2,29 @@
   padding-bottom: 0;
 }
 
-  .page-template-default, .blog, .error404, .post-template-default, .page-template-page-testimonials {
+
+@media screen and (max-width: $grid-float-breakpoint-max) {
+  .logo-header {
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex !important;
+    justify-content: center;
+
+    .navbar-brand img {
+      height: 55px;
+      margin: 0 auto;
+    }
+  }
+}
+
   @media screen and (min-width: $screen-sm-min) {
     .sub-header.top-header {
       background: #fff;
       padding: 0 0;
+      -webkit-box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.08);
+-moz-box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.08);
+box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.08);
     }
 
     .sub-nav {
@@ -18,14 +36,14 @@
     }
 
     .menu-primary-container {
-      margin: 30px 0;
+      margin: 0 0 10px;
     }
 
     .navbar-sherpa .nav > li > a {
       color: #7D8082;
 
       &:hover {
-        color: #005691;
+        color: $sherpa-brand-primary;
       }
     }
 
@@ -40,7 +58,6 @@
       background: none;
     }
   }
-}
 
 .sub-header {
   background: transparent;
@@ -51,7 +68,7 @@
 
   .row .v-align {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
   }
 
@@ -60,17 +77,23 @@
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
-    padding: 10px 0;
+    padding: 0 0;
     z-index: 1;
+    background: $dark-blue;
+
+    .sub-header.top-header {
+      background: $dark-blue;
+    }
 
     .row .v-align {
       justify-content: center;
       text-align: center;
-      display: block;
+      align-items: center;
 
       .navbar-brand {
         float: none;
         align-self: center;
+        order: 2;
       }
     }
   }

@@ -7,3 +7,14 @@
   color: #fff;
 }
 
+.btn {
+  padding: 22px 66px;
+  font-size: 13px;
+
+  &:hover {
+    background: $sherpa-brand-primary;
+    color: $white;
+    border-color: $sherpa-brand-primary;
+  }
+}
+

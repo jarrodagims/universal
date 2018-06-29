@@ -25,17 +25,26 @@
 
             echo "<article>\n";
             echo "<div class=\"sidebar-content\">";
-            get_sidebar();
-            echo "<div class=\"content\">";
-            echo "<span class=\"post-title\">";
+            echo "<div class=\"content\"><h1 class=\"post-title\">";
+            if (get_field('page_title', $pageid)) :
+            echo get_field('page_title', $pageid);
+            else:
             the_title();
-            echo "</span>";
+            endif;
+            echo "</h1></div>";
+            get_sidebar();
+            echo "<div class=\"content page-content\">";
             the_content();
+           if (!is_page('contact-us')) :
             ?>
-            <div class="banner">
-                <strong>EMPOWERING INDEPENDENCE</strong>
-                <em>Contact Us <span>Today!</span></em>
+            <div class="banner-bottom">
+                <div class="diamond-container"><div class="diamond-bg">
+                    <?php get_template_part('template-parts/icon', 'mini-diamond'); ?>
+                </div></div>
+                <p>IN THE <strong>SOUTHWEST</strong>
+                <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-success">CONTACT FORM</button></a></p>
             </div>
+           <?php endif; ?>
             <div class="content">
             <?php
             if (get_field('page_two', $pageid)) { ?>

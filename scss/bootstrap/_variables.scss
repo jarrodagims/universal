@@ -149,26 +149,26 @@ $table-border-color: #ddd !default;
 $btn-font-weight: normal !default;
 
 $btn-default-color: #333 !default;
-$btn-default-bg: #3982F7 !default;
+$btn-default-bg: transparent !default;
 $btn-default-border: #3982F7 !default;
 
-$btn-primary-color: #fff !default;
-$btn-primary-bg: #3982F7 !default;
+$btn-primary-color: #606060 !default;
+$btn-primary-bg: transparent !default;
 $btn-primary-border: #3982F7 !default;
 
-$btn-success-color: #fff !default;
-$btn-success-bg: #3982F7 !default;
+$btn-success-color: #606060 !default;
+$btn-success-bg: transparent !default;
 $btn-success-border: #3982F7 !default;
 
-$btn-info-color: #fff !default;
+$btn-info-color: #606060 !default;
 $btn-info-bg: $brand-info !default;
 $btn-info-border: #FEF102 !default;
 
-$btn-warning-color: #fff !default;
+$btn-warning-color: #606060 !default;
 $btn-warning-bg: $brand-warning !default;
 $btn-warning-border: darken($btn-warning-bg, 5%) !default;
 
-$btn-danger-color: #fff !default;
+$btn-danger-color: #606060 !default;
 $btn-danger-bg: $brand-danger !default;
 $btn-danger-border: darken($btn-danger-bg, 5%) !default;
 
@@ -242,7 +242,7 @@ $cursor-disabled: not-allowed !default;
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-$dropdown-bg: #fff !default;
+$dropdown-bg: #F7F9FE !default;
 //** Dropdown menu `border-color`.
 $dropdown-border: rgba(0, 0, 0, 0.15) !default;
 //** Dropdown menu `border-color` **for IE8**.
@@ -255,7 +255,7 @@ $dropdown-link-color: $gray-dark !default;
 //** Hover color for dropdown links.
 $dropdown-link-hover-color: darken($gray-dark, 5%) !default;
 //** Hover background for dropdown links.
-$dropdown-link-hover-bg: #f5f5f5 !default;
+$dropdown-link-hover-bg: #F7F9FE !default;
 
 //** Active dropdown menu item text color.
 $dropdown-link-active-color: $component-active-color !default;

@@ -30,21 +30,7 @@ body {
     }
   }
 
-  .landing-bg {
 
-    #home-main {
-      position: relative;
-      background: url('../img/bg-hero.jpg') right center no-repeat;
-      background-size: cover;
-      //background-attachment: fixed;
-
-      @media screen and (max-width: $grid-float-breakpoint-max) {
-        //background: url('../img/mobile-bg.jpg') right center no-repeat;
-        background-size: cover;
-        //background-attachment: fixed;
-      }
-    }
-  }
 
   .edit-screen {
     position: absolute;
@@ -75,6 +61,145 @@ body {
       }
 
       article {
+
+        h2, h3 {
+          color: $sherpa-brand-primary;
+        }
+
+        .banner-bottom {
+          clear: both;
+          position: relative;
+          background: url('../img/bg-internal-banner.jpg') 0 0 no-repeat;
+          background-size: cover;
+          color: #fff;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          overflow: hidden;
+          max-height: 213px;
+
+          p {
+            margin: 0 0;
+            font-family: 'Raleway', sans-serif;
+          }
+
+          .diamond-bg {
+            width: 270px;
+            position: absolute;
+            right: 23px;
+            top: -28px;
+          }
+
+          .urgent-care-text {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            height: 47px;
+            left: 50%;
+          }
+
+          p {
+            font-size: 25px;
+          }
+
+          .btn-success {
+            border-color: #1E242D;
+            background: #1E242D;
+            padding: 20px 50px;
+            margin-left: 35px;
+            color: $white;
+            font-family: 'Montserrat', sans-serif;
+            -webkit-box-shadow: 0px 0px 34px 12px rgba(0,0,0,0.4);
+            -moz-box-shadow: 0px 0px 34px 12px rgba(0,0,0,0.4);
+            box-shadow: 0px 0px 34px 12px rgba(0,0,0,0.4);
+          }
+
+          @media screen and (max-width: $screen-sm-max) {
+            .diamond-container {
+              width: 429px;
+              height: 100%;
+              position: relative;
+              left: 0;
+            }
+
+            p {
+              margin-left: 41px;
+            }
+
+            .btn-success {
+              margin-left: 0;
+            }
+          }
+
+          @media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+            a {
+              clear: both;
+              display: block;
+            }
+          }
+
+          @media screen and (min-width: $screen-md-min) {
+            .diamond-container {
+              width: 429px;
+              height: 100%;
+              position: relative;
+              left: 0;
+            }
+
+            .btn-success {
+              margin-left: 0;
+            }
+
+            p {
+              margin-left: 41px;
+            }
+          }
+
+
+          @media screen and (min-width: $screen-lg-min) {
+
+            .btn-success {
+              margin-left: 35px;
+            }
+          }
+
+          @media screen and (max-width: $grid-float-breakpoint-max) {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: auto;
+            max-height: 100%;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-bottom: 45px;
+            padding-top: 45px;
+            margin-bottom: 35px;
+
+            .diamond-bg {
+              width: 50%;
+              position: relative;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+
+            a {
+              display: block;
+            }
+
+            p {
+              margin-left: 0;
+              text-align: center;
+              font-size: 19px;
+            }
+
+            .btn-success {
+              margin-top: 20px;
+              margin-left: 0;
+              font-size: 12px;
+              padding: 10px 17px;
+            }
+          }
+        }
 
         h1 {
           margin-bottom: 1em;
@@ -133,7 +258,7 @@ body {
           }
 
           h1 {
-            margin-top: 1.75em;
+            margin-top: 108px;
           }
 
           p,
@@ -281,8 +406,12 @@ body #main  {
 
   .sidebar-content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding-bottom: 0;
+  }
+
+  #sidebar {
+    order: 2;
   }
 
   .map-container {
