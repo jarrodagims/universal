@@ -3,12 +3,12 @@
 /*
     Template Name: Home
 */ ?>
-    <section id="home-main">
+    <section id="home-main" class="waypoint">
         <div class="container">
             <div class="row">
                 <div class="jumbotron">
                     <div class="jumbo-content">
-                        <h1><span class="light">Affordable & Reliable</span>
+                        <h1 class="fade-down"><span class="light">Affordable & Reliable</span>
                             <span class="heavy">Medical Assistance</span>
                             <span class="medium">EL PASO, TX</span>
                         </h1>
@@ -113,7 +113,7 @@
         </div>
     </section>
 
-    <section class="bg-back">
+    <section class="bg-back waypoint">
         <img src="<?php echo STYLEURL ?>/img/mobile-banner-mid.jpg" alt=""
              class="visible-xs visibile-sm"/>
         <div class="container-fluid">
@@ -140,12 +140,12 @@
         </div>
     </section>
 
-    <section class="ribbon">
+    <section class="ribbon waypoint">
         <div class="container">
             <div class="row flex-row">
                 <div class="col-xs-12">
-                    <h2><span>Services</span> You Can Depend On</h2>
-                    <h3>Our list of services and specialties include:</h3>
+                    <div class="fade-down"><h2><span>Services</span> You Can Depend On</h2>
+                    <h3>Our list of services and specialties include:</h3></div>
                 </div>
             </div>
         </div>
@@ -153,62 +153,62 @@
 
     <section id="services-bubbles">
         <div class="container">
-            <div class="row flex-row">
+            <div class="row flex-row waypoint">
                 <div class="col-md-7 col-xs-12 icon-content">
-                    <div><?php get_template_part('template-parts/icon', 'gynecological'); ?>
+                    <div><div class="fade-down"><?php get_template_part('template-parts/icon', 'gynecological'); ?></div>
 
-                        <h4>Gynecological Care</h4>
+                        <h4 class="fade-down">Gynecological Care</h4>
 
                         <p>Country Club Urgent Care is an urgent care clinic as well as a gynecology clinic. Our
                             gynecology
                             clinic offers all the necessary services for women to live life to the healthiest
                             degree.</p>
 
-                        <a href="">
+                        <a href="<?= SITEURL ?>/gynecology-clinic-in-el-paso-tx/">
                             <button class="btn btn-success">LEARN MORE</button>
                         </a></div>
                 </div>
                 <div class="col-md-5 col-xs-12 flex-col circle-column">
                     <div class="circle-container"><img src="<?= IMGURL ?>circle-gcare.jpg" alt="Gynecological Care"
-                                                       class="circle"/></div>
+                                                       class="circle" data-parallax='{"y" : 20}' /></div>
                 </div>
             </div>
-            <div class="row flex-row">
+            <div class="row flex-row waypoint">
                 <div class="col-md-5 col-xs-12 flex-col circle-column right">
                     <div class="circle-container right"><img src="<?= IMGURL ?>circle-emergency.jpg" alt="Emergency"
-                                                             class="circle"/></div>
+                                                             class="circle" data-parallax='{"y" : 20}' /></div>
                 </div>
                 <div class="col-md-7 col-xs-12 icon-content right">
-                    <div><?php get_template_part('template-parts/icon', 'emergency'); ?>
+                    <div><div class="fade-down"><?php get_template_part('template-parts/icon', 'emergency'); ?></div>
 
-                        <h4>Emergency Medical Services.</h4>
+                        <h4 class="fade-down">Emergency Medical Services.</h4>
 
                         <p>Country Club Urgent Care is an urgent care clinic as well as a gynecology clinic. Our
                             gynecology clinic offers all the necessary services for women to live life to the healthiest
                             degree.</p>
 
-                        <a href="">
+                        <a href="<?= SITEURL ?>/emergency-medical-services/">
                             <button class="btn btn-success">LEARN MORE</button>
                         </a></div>
                 </div>
             </div>
-            <div class="row flex-row">
+            <div class="row flex-row waypoint">
                 <div class="col-md-7 col-xs-12 icon-content broken-bone">
-                    <div><?php get_template_part('template-parts/icon', 'broken-bone'); ?>
+                    <div><div class="fade-down"><?php get_template_part('template-parts/icon', 'broken-bone'); ?></div>
 
-                        <h4>Broken Bone Care</h4>
+                        <h4 class="fade-down">Broken Bone Care</h4>
 
                         <p>Country Club Urgent Care is an urgent care clinic as well as a gynecology clinic. Our
                             gynecology clinic offers all the necessary services for women to live life to the healthiest
                             degree.</p>
 
-                        <a href="">
+                        <a href="<?= SITEURL ?>/broken-bone-care-el-paso/">
                             <button class="btn btn-success">LEARN MORE</button>
                         </a></div>
                 </div>
                 <div class="col-md-5 col-xs-12 flex-col circle-column">
                     <div class="circle-container"><img src="<?= IMGURL ?>circle-broken.jpg" alt="Broken Bones"
-                                                       class="circle"/></div>
+                                                       class="circle" data-parallax='{"y" : 20}'/></div>
                 </div>
             </div>
         </div>
@@ -281,7 +281,7 @@
         </div>
     </section>
 
-    <section id="affordable-prices">
+    <section id="affordable-prices" class="waypoint">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center"><h2>We Offer <span>Affordable Prices</span> For All Of Our Patients
@@ -290,12 +290,12 @@
 
                     <div class="cards container-fluid">
                         <div class="flex-row">
-                            <div class="card">
+                            <div class="card" data-parallax='{"y" : 25}'>
                                 <div class="card-price">$75</div>
                                 <div class="card-bottom">Initial consultations</div>
                             </div>
 
-                            <div class="card">
+                            <div class="card" data-parallax='{"y" : 25}'>
                                 <div class="card-price">$50</div>
                                 <div class="card-bottom"
                                 ">Follow-up consultations<br/>
@@ -303,7 +303,7 @@
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card" data-parallax='{"y" : 25}'>
                             <div class="card-price">$30</div>
                             <div class="card-bottom"
                             ">X-rays
@@ -319,7 +319,7 @@
 
     </section>
 
-    <section class="bg-back bg-blue">
+    <section class="bg-back bg-blue waypoint">
         <img src="<?php echo STYLEURL ?>/img/mobile-banner-mid.jpg" alt=""
              class="visible-xs visibile-sm"/>
         <div class="container-fluid">

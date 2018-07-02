@@ -534,3 +534,23 @@ body #main  {
     display: flex !important;
   }
 }
+
+.pop-in {
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.rotateY {
+  transform: rotate(90deg) scaleX(-1);
+}
+
+.active {
+
+  .pop-in {
+    transform: scale(1);
+  }
+
+  .rotateY {
+    transform: rotate(90deg) scaleX(1);
+  }
+}

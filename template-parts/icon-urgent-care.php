@@ -1,4 +1,4 @@
-<svg class="urgent-care-text" xmlns="http://www.w3.org/2000/svg"
+<svg class="urgent-care-text pop-in" xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 343.67 123.28">
     <defs>
         <style>.white-text {
