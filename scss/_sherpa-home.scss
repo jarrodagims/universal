@@ -75,25 +75,29 @@
 
   p {
     font-size: 26px;
+    font-weight: 300;
   }
 
   h2 {
     font-size: 39px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
   }
 
   .cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 46px;
+    margin-bottom: 36px;
     margin-top: 40px;
+    max-width: 910px;
 
     .card-price {
       background: $sherpa-brand-primary;
       font-size: 63px;
       color: $white;
-      padding-top: 62px;
-      padding-bottom: 46px;
+      padding-top: 35px;
+      padding-bottom: 35px;
     }
 
     .card {
@@ -114,7 +118,7 @@
       align-items: center;
       justify-content: center;
       display: flex;
-      padding: 30px 0;
+      padding: 20px 0;
       font-size: 19px;
     }
 
@@ -127,6 +131,10 @@
     font-size: 19px;
     span {
       font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      display: block;
+      letter-spacing: 2px;
+      line-height: 1;
     }
   }
 
@@ -135,6 +143,7 @@
 
     p.bottom-text {
       font-size: 15px;
+      margin-bottom: 0;
       span {
         font-size: 13px;
       }
@@ -147,7 +156,7 @@
       width: 100%;
     }
     h2 {
-      font-size: 19px;
+      font-size: 22px;
     }
     p {
       font-size: 17px;
@@ -168,7 +177,7 @@
 
       .card-bottom {
         font-size: 10px;
-        padding: 18px 0;
+        padding: 10px 0;
       }
     }
   }
@@ -710,28 +719,30 @@
 
 #services-bubbles {
   svg {
-    height: 60px;
+    height: 44px;
   }
 
   .circle {
     width: 381px;
-    height: 381px;
+    height: auto;
     align-self: center;
   }
 
   .circle-container {
     position: relative;
 
-    &::before {
-      border-left: 2px solid #E4EAEF;
-      display: block;
-      content: '';
-      height: 216px;
-      width: 2px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -62px;
+    @media screen and (min-width: $screen-md-min) {
+      &::before {
+        border-left: 2px solid #E4EAEF;
+        display: block;
+        content: '';
+        height: 216px;
+        width: 2px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -62px;
+      }
     }
 
     &.right {
@@ -747,7 +758,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 113px 0;
   }
 
   h4 {
@@ -758,9 +768,78 @@
 
   p {
     margin-bottom: 35px;
+    font-weight: 300;
+  }
+
+  @media screen and (min-width: $screen-sm-min) {
+
+   p {
+     font-size: 19px;
+     line-height: 1.25;
+   }
+
+   h4 {
+     margin-bottom: 1em;
+   }
+
+   .flex-row {
+     padding-top: 80px;
+     padding-bottom: 30px;
+   }
+
+    .icon-content {
+      padding: 0 20px 0 0;
+    }
+
+    .right.icon-content {
+      padding: 0 0 0 20px;
+    }
+
+    .circle-column {
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      &.right {
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
+
+    .btn {
+      width: 190px;
+      padding: 20px 40px;
+    }
+
+     .icon-content div {
+       overflow: auto;
+       
+        &:after {
+          border-bottom: 2px solid #E4EAEF;
+          margin: 40px 0 20px;
+          display: block;
+          content: '';
+          width: 100%;
+          height: 2px;
+        }
+      }
+
+    .icon-content.broken-bone div {
+
+      &:after {
+        display: none;
+      }
+    }
+
+      
+
+    h4 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
     .flex-row {
       display: flex;
 
@@ -780,7 +859,11 @@
       }
 
       .icon-content {
-        padding: 25px 70px;
+        padding: 25px 35px;
+      }
+
+      p {
+        display: none;
       }
 
       svg {
@@ -792,8 +875,13 @@
 
 #diagonals {
 
-  h2 {
+  h2, h3 {
     color: $sherpa-brand-primary;
+    font-weight: 300;
+  }
+
+  p {
+    font-weight: 300;
   }
 
   .bg-dark-blue {
@@ -808,14 +896,21 @@
       padding: 40px 0;
       text-align: center;
 
-      h2 {
+      h2, h3 {
         font-size: 19px;
         margin-bottom: 20px;
       }
 
+     
+
       p.blurb {
         font-size: 17px;
         margin-bottom: 20px;
+        line-height: 1.5;
+      }
+      p {
+        line-height: 1.5;
+        font-weight: 300;
       }
     }
   }
@@ -833,7 +928,7 @@
     min-height: 563px;
   }
 
-  h2 {
+  h2, h3 {
     font-size: 26px;
     line-height: 1.5;
     margin-bottom: 34px;
@@ -845,6 +940,10 @@
       max-width: 585px;
     }
 
+    h2 {
+      font-size: 39px;
+    }
+
     .dg-blue {
       min-height: 606px;
     }
@@ -853,6 +952,14 @@
   @media screen and (max-width: $screen-sm-max) {
     .flex-row {
       flex-direction: column;
+    }
+
+    .dg-blue {
+      background: none;
+    }
+
+    .half-col {
+      max-width: 750px;
     }
   }
 
@@ -864,6 +971,18 @@
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
+
+h3 {
+      font-size: 19px;
+    }
+
+    h2 {
+        font-size: 19px;
+        margin-bottom: 20px;
+      }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
     .flex-row {
       flex-direction: column-reverse;
     }
@@ -876,16 +995,11 @@
 
     .half-col {
       text-align: center;
-      padding: 30px 0;
-
-      h2 {
-        font-size: 19px;
-        margin-bottom: 20px;
-      }
+      padding: 30px 15px;
     }
 
     .bg-dark-blue {
-      padding: 0;
+      padding: 1.5em 15px;
     }
   }
 }
@@ -905,6 +1019,55 @@
     font-size: 19px;
   }
 
+
+
+  .icon-diamond {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+  }
+
+  .diamond-bg {
+    text-align: center;
+
+    .urgent-care-text {
+      position: relative;
+      height: 122px;
+      margin: 0 auto;
+    }
+
+    .icon-shield {
+      position: relative;
+      max-height: 298px;
+
+      @media screen and (min-width: $screen-md-min) {
+        margin-left: 180px;
+      }
+    }
+  }
+
+  .icon-diamond {
+    position: absolute;
+  }
+
+  .col-md-6 {
+    justify-content: center;
+  }
+
+  h2 {
+    margin-bottom: 2em;
+    font-weight: 300;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  p {
+    line-height: 1.75em;
+  }
+
   &.bg-blue {
     background: url('../img/bg-blue.png') left center no-repeat;
 
@@ -918,6 +1081,10 @@
 
     .half-col {
       padding: 120px 0;
+    }
+
+    .icon-diamond {
+      height: 120%;
     }
 
     @media screen and (min-width: $screen-md-min) {
@@ -947,49 +1114,6 @@
         font-size: 15px;
       }
     }
-  }
-
-  .diamond-bg {
-    text-align: center;
-
-    .icon-diamond {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      left: 50%;
-    }
-
-    .urgent-care-text {
-      position: relative;
-      height: 122px;
-      margin: 0 auto;
-    }
-
-    .icon-shield {
-      position: relative;
-      max-height: 298px;
-    }
-  }
-
-  .icon-diamond {
-    position: absolute;
-  }
-
-  .col-md-6 {
-    justify-content: center;
-  }
-
-  h2 {
-    margin-bottom: 2em;
-    font-weight: 300;
-
-    span {
-      color: #fff;
-    }
-  }
-
-  p {
-    line-height: 1.75em;
   }
 
   @media screen and (min-width: $screen-sm-min) and (max-width: 1700px) {
@@ -1047,15 +1171,15 @@
     font-weight: 300;
   }
 
+  .icon-diamond {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    height: 110%;
+  }
+
   .diamond-bg {
     text-align: center;
-
-    .icon-diamond {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      height: 120%;
-    }
 
     .urgent-care-text {
       position: relative;
@@ -1086,10 +1210,28 @@
     font-weight: 300;
   }
 
-  @media screen and (min-width: $screen-md-min) {
+  @media screen and (min-width: $screen-lg-min) {
+    .icon-diamond {
+      margin-left: 90px;
+    }
 
+    .urgent-care-text {
+      margin: 0 auto 0 180px !important;
+    }
+  }
+
+  @media screen and (min-width: $screen-sm-min) {
+
+    
     .flex-row {
       height: 650px;
+    }
+
+    h2 {
+      margin-top: .5em;
+      margin-left: 24px;
+      line-height: 1.25em;
+      margin-bottom: .5em;
     }
 
     .half-col {
@@ -1098,6 +1240,7 @@
       margin-right: auto;
       p {
         font-weight: 300;
+        margin-left: 24px;
       }
     }
   }
@@ -1461,12 +1604,14 @@ body #main .container.bg-light {
 }
 
 #contact-section {
-  padding: 123px 0;
+  padding: 96px 0;
 
   h2 {
     font-size: 39px;
     color: #1E242D;
     margin-bottom: 32px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
   }
 
   p.blurb {
@@ -1474,7 +1619,7 @@ body #main .container.bg-light {
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
-    padding: 50px 0;
+    padding: 28px 0;
     text-align: center;
 
     h2 {
@@ -1657,13 +1802,24 @@ body #main .container.bg-light {
 
   p {
     margin-top: 20px;
+    font-weight: 300;
   }
 
   padding: 60px 0;
 
+  @media screen and (min-width: $screen-md-min) {
+    margin-top: 60px; 
+  } 
+
   @media screen and (max-width: $grid-float-breakpoint-max) {
     padding: 40px 0;
     margin-top: 30px;
+     
+     p {
+       margin-left: 15px;
+       margin-right: 15px;
+     }
+
 
     p.blurb {
       font-size: 19px;
@@ -1723,8 +1879,13 @@ body #main .container.bg-light {
    }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
-    padding: 25px 0;
+    padding: 20px 0;
     margin: 0 0;
+    text-align: center;
+
+    .btn {
+      font-size: 8px;
+    }
 
     .col-md-6 {
 
@@ -1734,11 +1895,19 @@ body #main .container.bg-light {
       }
     }
 
+    p.contactus {
+      font-size: 11px;
+      margin-bottom: 0;
+    }
+
     h3 {
       font-size: 12px;
-      width: 100%;
+      width: 80%;
       display: flex;
       justify-content: space-between;
+      margin: 0 auto;
+      text-align: left;
+
 
       span {
         color: $white;
@@ -1780,6 +1949,13 @@ body #main .container.bg-light {
    }
 
    @media screen and (min-width: $screen-md-min) {
+
+     p.contactus {
+     font-family: 'Raleway', sans-serif;
+     font-size: 27px;
+     margin-bottom: 0;
+   }
+   
 .flex-col {
   flex-direction: row;
 }
@@ -1788,6 +1964,8 @@ body #main .container.bg-light {
       margin-left: 37px;
     }
    }
+
+   
 
   @media screen and (min-width: $screen-sm-min) {
     height: 158px;
@@ -2193,6 +2371,10 @@ body #main .container.bg-light {
     margin: 0 0;
     padding: 0;
 
+    svg {
+      max-height: 20px;
+    }
+
     .container {
       padding: 0 0;
     }
@@ -2202,7 +2384,7 @@ body #main .container.bg-light {
     }
 
     a {
-      padding: 30px 0 0;
+      padding: 20px 0 0;
     }
 
     svg {
@@ -2220,7 +2402,7 @@ body #main .container.bg-light {
         border-left: 0;
 
         &:first-child, &:nth-child(2) {
-          border-bottom: 1px solid $white;
+          border-bottom: 1px solid #cacccd;
         }
 
         a {
@@ -2228,12 +2410,12 @@ body #main .container.bg-light {
         }
 
         &:nth-child(even) {
-          border-left: 1px solid $white;
+          border-left: 1px solid #cacccd;
         }
 
         .title {
           background: transparent;
-          padding-bottom: 30px;
+          padding-bottom: 23px;
 
           &:after {
             top: auto;
@@ -2250,6 +2432,8 @@ body #main .container.bg-light {
 
     .title {
       font-size: 14px;
+      padding-top: 0;
+      font-size: 11px;
     }
 
     svg {
@@ -2282,8 +2466,16 @@ body #main .container.bg-light {
     .jumbo-content {
       flex: 1;
       height: 100%;
-      padding: 84px 36px 100px;
+      padding: 11px 36px 105px;
       overflow: auto;
+
+      h1 {
+        line-height: 1.25;
+      }
+
+      .medium {
+        margin-top: .5em;
+      }
       //background: -moz-linear-gradient(left, rgba(125,185,232,0) 0%, rgba(35,44,104,1) 100%); /* FF3.6-15 */
       //background: -webkit-linear-gradient(left, rgba(125,185,232,0) 0%,rgba(35,44,104,1) 100%); /* Chrome10-25,Safari5.1-6 */
       //background: linear-gradient(to right, rgba(125,185,232,0) 0%,rgba(35,44,104,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -2291,6 +2483,7 @@ body #main .container.bg-light {
 
       p {
         margin-bottom: 3em;
+
       }
     }
 
@@ -2304,6 +2497,7 @@ body #main .container.bg-light {
 
     span {
       display: block;
+      font-size: 21px;
     }
   }
 
@@ -2316,7 +2510,7 @@ body #main .container.bg-light {
     margin-bottom: 0;
   }
 
-  #home-bg section#contact-form, #landing-bg section#contact-formm {
+  #home-bg section#contact-form, #landing-bg section#contact-form {
     padding-bottom: 2em;
 
     h4 {
@@ -2339,6 +2533,11 @@ body #main .container.bg-light {
 
       h1 {
         font-size: 2em;
+      }
+
+      span.medium {
+        font-size: 11px;
+        margin-top: 0;
       }
 
       p {

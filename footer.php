@@ -4,12 +4,13 @@
 <section id="footer">
     <div class="container">
             <div class="row flex-row">
-                <div class="col-md-4 col-xs-12 logo-footer">
+                <div class="col-sm-4 col-md-4 col-xs-12 logo-footer">
+                    <span class="title">&nbsp;</span>
                     <a class="navbar-brand" href='<?php echo get_site_url() ?>'><img
                                 src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
                                 alt="<?php echo get_bloginfo('description'); ?>"/></a>
                 </div>
-                <div class="col-md-2 col-xs-12 contact-footer">
+                <div class="col-sm-4 col-md-2 col-xs-12 contact-footer">
                     <span class="title">Contact</span>
                         <p>8041 North Mesa, Suite B2<br />
                             El Paso, TX 79932<br />
@@ -17,7 +18,7 @@
                             <span>FAX.</span> (915) 581-2926<br/>
                         </p>
                 </div>
-                <div class="col-md-3 col-xs-12 hours-footer">
+                <div class="col-sm-4 col-md-3 col-xs-12 hours-footer">
                     <div><span class="title">Hours</span>
                     <p>Monday-Friday : 7:00 AM - 10:00 PM<br />
                         Saturday: 9:00 AM - 9:00 PM<br />
@@ -28,7 +29,7 @@
 
                 </div>
 
-                <div class="col-md-1 button-footer"><span class="title hidden-xs">&nbsp;</span>
+                <div class="col-sm-4 col-md-1 button-footer"><span class="title hidden-xs">&nbsp;</span>
                     <a href="<?= SITEURL ?>/contact-us" class="hidden-xs"><button class="btn btn-md btn-success">SCHEDULE AN APPOINTMENT</button></a>
 
                     <div class="visible-xs">
@@ -41,7 +42,7 @@
                 </div>
             </div>
     </div>
-    <div class="visible-xs"><?php $sm = new SocialMedia(array('facebook', 'twitter'));
+    <div class="visible-xs social-container"><?php $sm = new SocialMedia(array('facebook', 'twitter'));
         $sm->setSize('sm');
         $sm->showNetworkButtons();
         $sm->setColorType('singleColor');

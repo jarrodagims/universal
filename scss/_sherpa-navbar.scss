@@ -268,7 +268,6 @@
 
   img {
     width: 358px;
-    height: 144px;
   }
 }
 
@@ -400,7 +399,7 @@
 
     li.menu-item {
       &.contact {
-        margin-left: auto;
+        margin-left: .5em;
       }
     }
   }

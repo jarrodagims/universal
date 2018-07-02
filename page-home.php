@@ -63,7 +63,7 @@
                     </h3>
                 </div>
                 <div class="col-xs-6 col-md-6 col-sm-6 flex-col">
-                    Contact Us Today
+                    <p class="contactus">Contact Us Today</p>
                     <a href="<?= SITEURL ?>/contact-us/">
                         <button class="btn">
                             CONTACT US
@@ -154,7 +154,7 @@
     <section id="services-bubbles">
         <div class="container">
             <div class="row flex-row">
-                <div class="col-md-6 col-xs-12 icon-content">
+                <div class="col-md-7 col-xs-12 icon-content">
                     <div><?php get_template_part('template-parts/icon', 'gynecological'); ?>
 
                         <h4>Gynecological Care</h4>
@@ -168,17 +168,17 @@
                             <button class="btn btn-success">LEARN MORE</button>
                         </a></div>
                 </div>
-                <div class="col-md-6 col-xs-12 flex-col">
+                <div class="col-md-5 col-xs-12 flex-col circle-column">
                     <div class="circle-container"><img src="<?= IMGURL ?>circle-gcare.jpg" alt="Gynecological Care"
                                                        class="circle"/></div>
                 </div>
             </div>
             <div class="row flex-row">
-                <div class="col-md-6 col-xs-12 flex-col">
+                <div class="col-md-5 col-xs-12 flex-col circle-column right">
                     <div class="circle-container right"><img src="<?= IMGURL ?>circle-emergency.jpg" alt="Emergency"
                                                              class="circle"/></div>
                 </div>
-                <div class="col-md-6 col-xs-12 icon-content">
+                <div class="col-md-7 col-xs-12 icon-content right">
                     <div><?php get_template_part('template-parts/icon', 'emergency'); ?>
 
                         <h4>Emergency Medical Services.</h4>
@@ -193,10 +193,10 @@
                 </div>
             </div>
             <div class="row flex-row">
-                <div class="col-md-6 col-xs-12 icon-content">
+                <div class="col-md-7 col-xs-12 icon-content broken-bone">
                     <div><?php get_template_part('template-parts/icon', 'broken-bone'); ?>
 
-                        <h4>Gynecological Care</h4>
+                        <h4>Broken Bone Care</h4>
 
                         <p>Country Club Urgent Care is an urgent care clinic as well as a gynecology clinic. Our
                             gynecology clinic offers all the necessary services for women to live life to the healthiest
@@ -206,7 +206,7 @@
                             <button class="btn btn-success">LEARN MORE</button>
                         </a></div>
                 </div>
-                <div class="col-md-6 col-xs-12 flex-col">
+                <div class="col-md-5 col-xs-12 flex-col circle-column">
                     <div class="circle-container"><img src="<?= IMGURL ?>circle-broken.jpg" alt="Broken Bones"
                                                        class="circle"/></div>
                 </div>
@@ -261,8 +261,8 @@
                     <div class="col-md-6  flex-col">
 
                         <div class="half-col">
-                            <h2>When you're facing medical issues, all you want is to be treated as soon as
-                                possible.</h2>
+                            <h3>When you're facing medical issues, all you want is to be treated as soon as
+                                possible.</h3>
 
                             <p>Doing so can be difficult when you're wasting time in a waiting room. When you visit
                                 Country Club Urgent Care, you won't have to wait for hours and hours. Instead, you'll be
@@ -312,7 +312,7 @@
                 </div>
             </div>
 
-            <p class="bottom-text">All other prices will be based on your<br/>
+            <p class="bottom-text">All other prices will be based on your
                 <span>MEDICARE FEE SCHEDULE</span></p>
         </div>
 

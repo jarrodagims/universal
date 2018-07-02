@@ -1,31 +1,40 @@
 
-
 #footer {
   padding: 4em 0;
   text-align: center;
 
-  .logo-footer {
-    width: 311px;
+  @media screen and (max-width: $screen-sm-min) {
+        text-align: left;
   }
 
-  .contact-footer, .hours-footer, .button-footer, .logo-footer {
+  @media screen and (min-width: $screen-md-min) {
+    .logo-footer {
+      width: 311px;
+    }
 
-    box-sizing: content-box;
-  }
+    .contact-footer, .hours-footer, .button-footer, .logo-footer, .button-footer {
 
-  .contact-footer {
-    width: 257px;
-  }
+      box-sizing: content-box;
+    }
 
-  .hours-footer {
-    width: 358px;
+    .contact-footer {
+      width: 257px;
+    }
+
+    .hours-footer {
+      width: 358px;
+    }
+
+    .button-footer {
+      width: 283px;
+    }
   }
 
   .button-footer {
-    width: 283px;
 
     .btn-success {
-      padding: 20px 40px;
+      padding: 20px 30px;
+      max-width: 100%;
     }
   }
 
@@ -51,6 +60,11 @@
     a {
       margin: 35px 0;
     }
+
+    span {
+      font-weight: 300;
+      font-size: 11px;
+    }
   }
 
   @media screen and (min-width: $screen-md-min) {
@@ -64,11 +78,31 @@
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
+
+    ul {
+      margin: 0 auto;
+      overflow: auto;
+      width: auto;
+      display: inline-block;
+    }
+
+    .hours-footer, .contact-footer, .logo-footer, .button-footer {
+      text-align: center;
+      width: auto;
+    }
     .hours-footer {
       a {
         margin: 35px auto;
       }
     }
+
+    .button-footer {
+
+    .btn-success {
+      font-size: 8px;
+      padding: 11px 25px;
+    }
+  }
   }
 
   .menu-primary-container {
@@ -112,7 +146,9 @@
     text-align: center;
 
     img {
-      max-height: 148px;
+     
+      width: auto;
+      height: auto;
     }
   }
 
@@ -150,10 +186,11 @@
   span.title {
     margin: 1em;
     display: block;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    color: #303535;
+    color: $sherpa-brand-primary;
     font-weight: 300;
+    text-transform: uppercase;
   }
 
   .textwidget img {
@@ -176,6 +213,21 @@
 
   }
 
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    span.title {
+      font-size: 13px;
+      margin-bottom: 0;
+    }
+
+    .social-container {
+      text-align: center;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
   .footer-bottom {
     color: #fff;
     padding: 1.5em 0;
@@ -184,14 +236,14 @@
     .footer-bottom-border {
       &:before {
         content: '';
-        background: rgba(182,130,78,1);
-        background: -moz-linear-gradient(left, rgba(182,130,78,1) 0%, rgba(229,204,164,1) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(182,130,78,1)), color-stop(100%, rgba(229,204,164,1)));
-        background: -webkit-linear-gradient(left, rgba(182,130,78,1) 0%, rgba(229,204,164,1) 100%);
-        background: -o-linear-gradient(left, rgba(182,130,78,1) 0%, rgba(229,204,164,1) 100%);
-        background: -ms-linear-gradient(left, rgba(182,130,78,1) 0%, rgba(229,204,164,1) 100%);
-        background: linear-gradient(to right, rgba(182,130,78,1) 0%, rgba(229,204,164,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6824e', endColorstr='#e5cca4', GradientType=1 );
+        background: rgba(182, 130, 78, 1);
+        background: -moz-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(182, 130, 78, 1)), color-stop(100%, rgba(229, 204, 164, 1)));
+        background: -webkit-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
+        background: -o-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
+        background: -ms-linear-gradient(left, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
+        background: linear-gradient(to right, rgba(182, 130, 78, 1) 0%, rgba(229, 204, 164, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b6824e', endColorstr='#e5cca4', GradientType=1);
         height: 1px;
         width: 100%;
         display: block;
@@ -241,7 +293,7 @@
 }
 
 .footer-nav {
-  background: #e7e7e7;
+  background: $dark-blue;
   color: #fff;
 
   .navbar-sherpa {
@@ -259,7 +311,13 @@
   }
 
   .navbar-sherpa .navbar-nav > li > a {
-    color: #7D8082;
+    color: $white;
+    font-weight: 300;
+
+  }
+
+  .navbar-sherpa .navbar-nav > .active > a {
+    color: $white !important;
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
@@ -267,12 +325,11 @@
   }
 }
 
-
 #sub-footer {
   padding: 2em 0;
   text-align: center;
-  background: #23303F;
-  color: #fff;
+  background: #e7e7e7;
+  color: #263238;
   font-size: 16px;
   .agi-logo {
     margin-left: 0.5em;
@@ -281,7 +338,7 @@
   ul.social-media {
     margin: 0 0 0 0;
     a {
-      color: #fff;
+      color: $dark-blue;
       &:hover {
         color: $sherpa-brand-primary;
       }
@@ -290,7 +347,6 @@
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
     background: #23303F;
-
 
     ul.social-media {
       a {
@@ -352,7 +408,7 @@
 @media screen and (max-width: $screen-sm-max) {
 
   #sub-footer {
-    background:  #23303F;
+    background: #23303F;
     color: #fff;
     font-size: 10px;
 
@@ -393,8 +449,6 @@
     }
   }
 }
-
-
 
 @media screen and (max-width: $grid-float-breakpoint-max) {
   #footer {
