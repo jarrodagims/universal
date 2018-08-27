@@ -19,10 +19,12 @@ $color-phone:									$color-rss;
 
 
 // Defaults
-$sherpa-brand-primary:                          #3982F7;
-$dark-blue:                                     #1E242D;
+$sherpa-brand-primary:                          #E09105;
+$sherpa-svg-color:                              fff;
+$sherpa-svg-color-hover:                        E09105;
+$sherpa-dark-color:                             #050505;
 $sherpa-primary-color:							$black;
-$sherpa-secondary-color:						$white;
+$sherpa-secondary-color:						#051A3F;
 $sherpa-tertiary-color:							$gray-md;
 
 $sherpa-alt-font-family:						sans-serif;
@@ -39,7 +41,7 @@ $sherpa-navbar-default-brand-color:				$white;
 $sherpa-navbar-default-brand-hover-color:		$white;
 $sherpa-navbar-default-brand-hover-bg:			transparent;
 
-$sherpa-navbar-default-color:					#777B7F;
+$sherpa-navbar-default-color:					$sherpa-brand-primary;
 
 $sherpa-navbar-default-link-color:				$sherpa-navbar-default-color;
 

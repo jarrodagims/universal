@@ -1,0 +1,44 @@
+.home-module-2 {
+  background: url('../img/construction-crew.jpg') 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 191px;
+  color: $white;
+
+  .dark-bg {
+    background: rgba(0,0,0,.6);
+    padding-top: 74px;
+    padding-bottom: 64px;
+
+    h3 {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 1.5;
+      margin-top: .25em;
+      margin-bottom: 1em;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    background: url('../img/crew.jpg') 0 0 no-repeat;
+    background-size: cover; 
+    text-align: center;
+
+    h3 {
+      font-size: 1em !important;
+    }
+
+    .dark-bg {
+      padding-top: 2em;
+    }
+
+    p {
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+  }
+}

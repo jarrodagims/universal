@@ -1,54 +1,52 @@
-<div id="map-section">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6778.87574133545!2d-106.578747!3d31.840298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xedae839ec7587df4!2sCountry+Club+Urgent+Care+Center!5e0!3m2!1sen!2sus!4v1530026669558" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
+    <div id="map-section"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3369.2751584876796!2d-104.23985168482794!3d32.38498498109216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e3791d17083c67%3A0xc6bc1d4efff06c97!2sConstructors%2C+Inc.!5e0!3m2!1sen!2sus!4v1534792873987" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
 <section id="footer">
     <div class="container">
-            <div class="row flex-row">
-                <div class="col-sm-4 col-md-4 col-xs-12 logo-footer">
-                    <span class="title">&nbsp;</span>
-                    <a class="navbar-brand" href='<?php echo get_site_url() ?>'><img
-                                src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
-                                alt="<?php echo get_bloginfo('description'); ?>"/></a>
+            <div class="row">
+                <div class="col-xs-12 col-md-2 logo-footer">
+                    <a href='<?php echo get_site_url() ?>'><img
+                    src="<?= IMGURL ?>logo.png"
+                    alt="<?php echo get_bloginfo('description'); ?>"/></a>
                 </div>
-                <div class="col-sm-4 col-md-2 col-xs-12 contact-footer">
-                    <span class="title">Contact</span>
-                        <p>8041 North Mesa, Suite B2<br />
-                            El Paso, TX 79932<br />
-                            <span>PH.</span>  (915) 307-3870<br />
-                            <span>FAX.</span> (915) 581-2926<br/>
-                        </p>
+                <div class="col-xs-12 col-md-3 contact-footer">
+                    <div><span class="title">CONTACT</span>
+                    <p>3003 South Boyd Drive<br />
+                        Carlsbad, New Mexico 88220
+                    </p></div>
+
                 </div>
-                <div class="col-sm-4 col-md-3 col-xs-12 hours-footer">
-                    <div><span class="title">Hours</span>
-                    <p>Monday-Friday : 7:00 AM - 10:00 PM<br />
-                        Saturday: 9:00 AM - 9:00 PM<br />
-                        Sunday: 9:00 AM - 10:00 PM<br />
-                        <span>Last Patient Will be Seen 30 Minutes Before Close</span>
-                    </p>
+                <div class="col-xs-12 col-md-2 contact-footer phone-footer">
+                <div><span class="title hidden-xs">&nbsp;</span>
+                    <p><span><strong>PH.</strong> (575) 885-8838</span><br />
+                    <span><strong>FAX:</strong> (575) 887-0896</span></p>
+                </div>
+                </div>
+                <div class="col-xs-12 col-md-3 hours-footer">
+                    <div>
+                        <span class="title">OFFICE HOURS</span>
+                        <p>Monday - Friday: <strong>8:00am - 5:00pm</strong>
+                            Saturday - Sunday: <strong>Closed</strong><br />
                     </div>
-
+                </div>
+                <div class="col-xs-12 col-md-2 hours-footer">
+                    <div><span class="title hidden-xs">&nbsp;</span>
+                        <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-primary">
+                                Contact Us
+                            </button></a>
+                    </div>
                 </div>
 
-                <div class="col-sm-4 col-md-1 button-footer"><span class="title hidden-xs">&nbsp;</span>
-                    <a href="<?= SITEURL ?>/contact-us" class="hidden-xs"><button class="btn btn-md btn-success">SCHEDULE AN APPOINTMENT</button></a>
-
-                    <div class="visible-xs">
-                        <?php if(is_front_page()) : ?>
-                            <a href="<?= SITEURL ?>/contact-us"><button class="btn btn-md btn-success">SCHEDULE AN APPOINTMENT</button></a>
-                        <?php else : ?>
-                            <a href="<?= SITEURL ?>/contact-us"><button class="btn btn-md btn-success">SCHEDULE AN APPOINTMENT</button></a>
-                        <?php endif; ?>
-                    </div>
+                <div class="col-xs-12 visible-xs visible-sm">
+                    <?php $sm = new SocialMedia(array('facebook', 'twitter'));
+                    $sm->setSize('sm');
+                    $sm->showNetworkButtons();
+                    $sm->setColorType('singleColor');
+                    ?>
                 </div>
             </div>
     </div>
-    <div class="visible-xs social-container"><?php $sm = new SocialMedia(array('facebook', 'twitter'));
-        $sm->setSize('sm');
-        $sm->showNetworkButtons();
-        $sm->setColorType('singleColor');
-        ?></div>
 </section>
-<section class="footer-nav hidden-xs">
+<section class="footer-nav hidden-xs hidden-sm">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
@@ -59,21 +57,30 @@
 </section>
 <section id="sub-footer">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-xs-12">
-                <div class="hidden-xs"><?php $sm = new SocialMedia(array('facebook', 'twitter'));
+        <div class="flex-row row">
+            <div class="flex-col col-md-12 col-xs-12">
+                <div class="hidden-xs hidden-sm"><?php $sm = new SocialMedia(array('facebook', 'twitter'));
                     $sm->setSize('sm');
                     $sm->showNetworkButtons();
                     $sm->setColorType('singleColor');
                     ?></div>
-                    <div>
-                    &copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | All Rights Reserved | Powered by AGI Marketing <a href="https://www.agims.com/" target="_blank"><img
-                                src="<?php echo get_stylesheet_directory_uri(); ?>/img/agi-logo.png" alt="AGI Marketing"
-                                class="agi-logo"/></a>
-                </div>
+                <div>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | All Rights Reserved</div>
             </div>
         </div>
 </section>
 <?php wp_footer(); ?>
+<script>
+    FB.api(
+        "/352272228167257/ratings",
+        function (response) {
+            if (response && !response.error) {
+                /* handle the result */
+                console.log('test');
+            } else {
+                console.log('no');
+            }
+        }
+    );
+</script>
 </body>
 </html>

@@ -1,0 +1,43 @@
+.home-module-5 {
+  background: $sherpa-secondary-color;
+  color: $white;
+  text-align: center;
+  padding: 100px 0;
+
+  p {
+    font-size: 29px;
+    font-weight: 300;
+    color: #AFAFAF;
+    margin: 0 0;
+    line-height: 1.5;
+  }
+
+  p.blurb {
+    font-size: 40px;
+    color: $white;
+  }
+
+  .col-md-10 {
+    margin: 0 auto;
+  }
+
+  span {
+    color: $sherpa-brand-primary;
+    font-weight: 600;
+  }
+
+
+  @media screen and (max-width: $screen-sm-max) {
+      padding: 2.5em 0;
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      p.blurb {
+        font-size: 16px;
+        margin-top: .5em;
+      }
+  }
+}

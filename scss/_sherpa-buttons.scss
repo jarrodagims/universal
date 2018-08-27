@@ -2,21 +2,57 @@
 // Mixin for creating additional buttons:
 //      button-variant($color, $background, $border)
 
-.btn-read-more {
-  background: $sherpa-brand-primary;
-  color: #fff;
-}
 
-.btn {
-  padding: 22px 66px;
-  font-size: 13px;
-  font-family: 'Montserrat', sans-serif;
+.btn { 
+  padding: 16px 38px;
+  font-size: 11px;
   letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.2s ease-in-out;
 
-  &:hover {
-    background: $sherpa-brand-primary;
+  &.btn-default {
+    background: #E3E3E5;
+    color: $sherpa-dark-color;
+  }
+
+
+  &.btn-default, &.btn-primary {
+    &:hover {
+      background: $sherpa-brand-primary;
+      color: $white;
+      border-color: transparent;
+    } 
+  }
+
+  &.btn-border {
+    background: transparent;
     color: $white;
-    border-color: $sherpa-brand-primary;
+    border: 3px solid $white;
+
+    &:hover {
+      color: $white;
+      background: $sherpa-brand-primary;
+    } 
+  }
+
+  &.btn-register {
+    padding: 24px 31px;
   }
 }
+ 
 
+.btn-read-more {
+  &.btn-border {
+    background: rgba(41,41,44,0.63);
+    color: $white;
+
+    &:hover {
+      color: $sherpa-dark-color;
+      background: $sherpa-brand-primary;
+    } 
+  }
+}
+ 
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: 0;
+}

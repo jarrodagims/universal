@@ -1,0 +1,12 @@
+.home-module-3 {
+  padding: 48px 0 70px;
+
+    .flex-row {
+      justify-content: flex-start;
+    }
+
+    @media screen and (max-width: $grid-float-breakpoint-max) {
+      padding: 32px 0 0;
+    }
+
+}

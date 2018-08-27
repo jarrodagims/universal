@@ -2,36 +2,38 @@
 
 (function($) {
   $(document).ready(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-              || location.hostname == this.hostname) {
-
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                  $('html,body').animate({
-                      scrollTop: target.offset().top
-                  }, 1000);
-                  return false;
-              }
+      $('.home-expander').click(function () {
+          if ($(window).width() < 767) {
+              $($(this).data("target")).slideToggle();
+              $(this).toggleClass('expanded');
           }
       });
 
-      $('.waypoint').each(function(){
-          var self = $(this);
+      $('.expander').click(function () {
+          $($(this).data("target")).slideToggle();
+          $(this).toggleClass('expanded');
+      });
 
-          $(this).waypoint({
-              handler: function(){
-                  self.addClass('active');
-              },
-              offset: '50%'
+      $('#slideshow').cycle({
+          fx:      'scrollHorz',
+          timeout:  0,
+          next:    '#next'
+      });
+
+      $.ajaxSetup({ cache: true });
+      $.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
+          FB.init({
+              appId: '468686503635858',
+              version: 'v2.7',
+              accessToken:
           });
+          FB.getLoginStatus(updateStatusCallback);
       });
 
-      $('.expander').click(function(){
-          $('.expand').toggle();
-          $('.expander').toggleClass('expanded');
+      FB.api('/352272228167257', function(response) {
+          console.log(response);
       });
+
 
   });
 })(jQuery);

@@ -3,383 +3,285 @@
 /*
     Template Name: Home
 */ ?>
-    <section id="home-main" class="waypoint">
-        <div class="container">
-            <div class="row">
+    <section id="home-main">
+        <div class="container-fluid">
+            <div class="row flex-row">
                 <div class="jumbotron">
-                    <div class="jumbo-content">
-                        <h1 class="fade-down"><span class="light">Affordable & Reliable</span>
-                            <span class="heavy">Medical Assistance</span>
-                            <span class="medium">EL PASO, TX</span>
-                        </h1>
+
+                    <img src="<?= IMGURL ?>home-bg-sm.jpg" alt="Constructors, Inc." class="visible-xs" />
+
+
+                    <div class="jumbo-content waypoint active text-center">
+                        <div class="fade-down"><h1><span class="title">A Construction Company</span>
+                                <span class="subtitle"> With a Tradition of Trust and Dependability</span></h1>
+                        </div>
+                        <a href="<?= SITEURL ?>/contact-us/" class="hidden-xs">
+                            <button class="btn btn-lrg btn-primary btn-border">CONTACT US</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     </div> <!-- end home-bg -->
-
-
     <section class="icon-row">
         <div class="container">
-            <div class="row flex-row">
-                <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/about-us/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'urgent'); ?>
-                        <div class="title">Urgent Care Services</div>
+            <ul class="flex-row">
+                <li class="flex-col">
+                    <a href="<?= SITEURL; ?>/commercial-site-development">
+                        <?php get_template_part('template-parts/icon', 'spade'); ?>
+                        Construction &
+                        <br/>Site Development
                     </a>
-                </div>
-                <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/gynecology-clinic-in-el-paso-tx/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'gynecological'); ?>
-                        <div class="title">Gynecological Care
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/emergency-medical-services/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'emergency'); ?>
-                        <div class="title">Emergency Medical Services
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-4">
-                    <a href="<?= SITEURL ?>/broken-bone-care-el-paso/" class="icon-button">
-                        <?php get_template_part('template-parts/icon', 'broken-bone'); ?>
-                        <div class="title">Broken Bone Care
-                        </div>
-                    </a>
-                </div>
-            </div>
+                </li>
+                <li class="flex-col">
+                    <a href="<?= SITEURL; ?>/construction-management/">
+                        <?php get_template_part('template-parts/icon', 'cone'); ?>
+                        Construction
+                        <br/>Management</a>
+                </li>
+                <li class="flex-col">
+                    <a href="<?= SITEURL; ?>/paving/">
+                        <?php get_template_part('template-parts/icon', 'paving'); ?>
+                        Paving <br/>& Asphalt</a>
+                </li>
+                <li class="flex-col">
+                    <a href="<?= SITEURL; ?>/government-contracting/">
+                        <?php get_template_part('template-parts/icon', 'gov'); ?>
+                        Government<br/>
+                        Contracting</a></li>
+                <li class="flex-col">
+                    <a href="<?= SITEURL; ?>/road-and-highway-construction/">
+                        <?php get_template_part('template-parts/icon', 'highway'); ?>
+                        Highway &<br/>
+                        Road Construction</a>
+                </li>
+                <li class="flex-col">
+                    <a href="<?= SITEURL; ?>/utility-installation-construction/">
+                        <?php get_template_part('template-parts/icon', 'utility'); ?>
+                        Utility<br/>
+                        Installation</a>
+                </li>
+                <li class="flex-col">
+                    <a href="<?= SITEURL; ?>/services/">
+                        <?php get_template_part('template-parts/icon', 'landscaping'); ?>
+                        Landscaping</a>
+                </li>
+
+                <li class="flex-col visible-xs contact-button">
+                    <a href="<?= SITEURL; ?>/contact-us/">
+                        Contact Us</a>
+                </li>
+            </ul>
         </div>
     </section>
 
-    <section class="banner">
-        <div class="container">
-            <div class="flex-row row">
-                <div class="col-xs-6 col-md-6 col-sm-6 flex-col">
-                    <h3><span>Now Performing <strong>DOT physicals!</strong></span>
-                    </h3>
-                </div>
-                <div class="col-xs-6 col-md-6 col-sm-6 flex-col">
-                    <p class="contactus">Contact Us Today</p>
-                    <a href="<?= SITEURL ?>/contact-us/">
-                        <button class="btn">
-                            CONTACT US
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="main">
-        <div class="container-fluid">
-            <div class="extra-padding">
-                <div class="container">
-                    <div class="row flex-row">
-                        <div class="col-md-9 col-xs-12 padding-top">
-                            <div class="left-home-sidebar">
-
-                                <h2>Country Club Urgent Care Clinic <span>in El Paso, Texas</span></h2>
-
-                                <h3>Welcome to Country Club Urgent Care! Our El Paso clinic offers affordable and
-                                    reliable medical assistance.</h3>
-
-                                <p>The team at Country Club Urgent Care is always ready to tend to your medical
-                                    emergency needs. We understand the importance of proper and swift health care at an
-                                    affordable cost. For this reason, we provide top-quality emergency medical services
-                                    for patients of all ages.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-md-offset-1 col-xs-12 right-home-sidebar">
-                            <div class="shadow">
-                                <div class="box box-top">
-                                    <span class="price">$25</span>
-                                    <span class="bottom">FLU SHOTS</span>
-                                </div>
-
-                                <div class="box box-bottom">
-                                    <span class="title">PRE REGISTER</span>
-                                    <span class="subtitle">with us now</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-back waypoint">
-        <img src="<?php echo STYLEURL ?>/img/mobile-banner-mid.jpg" alt=""
-             class="visible-xs visibile-sm"/>
-        <div class="container-fluid">
-            <div class="row flex-row">
-                <div class="col-md-6 col-xs-12">
-                    <div class="diamond-bg">
-                        <?php get_template_part('template-parts/icon', 'diamond'); ?>
-                        <?php get_template_part('template-parts/icon', 'urgent-care'); ?>
-                    </div>
-                    <?php get_template_part('template-parts/icon', 'diamond-small'); ?>
-                </div>
-                <div class="col-md-6 col-xs-12">
-                    <div class="half-col">
-                        <h2>Our staff of doctors and physician assistants are ready to assist you and your
-                            family.</h2>
-
-                        <p>We treat our patients with the care and respect they deserve. And most importantly, we
-                            strive to see our clients as quickly as possible. No longer will you have to wait for
-                            hours in an ER’s waiting room. You deserve medical assistance quickly and we offer
-                            exactly that and much, much more!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ribbon waypoint">
+    <section class="home-module-1">
+        <img src="<?= IMGURL ?>construction-man.jpg" alt="Construction Worker" class="visible-xs" />
         <div class="container">
             <div class="row flex-row">
-                <div class="col-xs-12">
-                    <div class="fade-down"><h2><span>Services</span> You Can Depend On</h2>
-                    <h3>Our list of services and specialties include:</h3></div>
+                <div class="col-md-6">
+                    <img src="<?= IMGURL ?>construction-worker.jpg" alt="Construction Worker" class="hidden-xs"/>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="services-bubbles">
-        <div class="container">
-            <div class="row flex-row waypoint">
-                <div class="col-md-7 col-xs-12 icon-content">
-                    <div><div class="fade-down"><?php get_template_part('template-parts/icon', 'gynecological'); ?></div>
+                <div class="col-md-6 flex-col">
 
-                        <h4 class="fade-down">Gynecological Care</h4>
+                    <div class="expander down-arrow" data-target="#expand">Constructors Inc.</div>
+                    <h2>
+                        <ul id="expand" class="expand">
+                                <li>Constructor’s Inc is the best in the Southwest for any and all construction
+                                    needs.
+                                </li>
+                                <li>Our top priority is to ensure that we get the job done in a safe and efficient
+                                    manner.
+                                </li>
+                                <li>Our construction company is highly reviewed with well-established roots all across
+                                    New Mexico and the Southwest.
+                                </li>
+                                <li>Constructors Inc. offers competitive quotes and guarantee quality.</li>
+                                <li>We are your number one supplier of asphalt, dirt, sand, and gravel services.</li>
+                                <li>Constructors, Inc has experience in a variety of commercial projects in the area.
+                                </li>
+                                <li>We handle major government projects and contracts.</li>
 
-                        <p>Country Club Urgent Care is an urgent care clinic as well as a gynecology clinic. Our
-                            gynecology
-                            clinic offers all the necessary services for women to live life to the healthiest
-                            degree.</p>
-
-                        <a href="<?= SITEURL ?>/gynecology-clinic-in-el-paso-tx/">
-                            <button class="btn btn-success">LEARN MORE</button>
-                        </a></div>
-                </div>
-                <div class="col-md-5 col-xs-12 flex-col circle-column">
-                    <div class="circle-container"><img src="<?= IMGURL ?>circle-gcare.jpg" alt="Gynecological Care"
-                                                       class="circle" data-parallax='{"y" : 20}' /></div>
-                </div>
-            </div>
-            <div class="row flex-row waypoint">
-                <div class="col-md-5 col-xs-12 flex-col circle-column right">
-                    <div class="circle-container right"><img src="<?= IMGURL ?>circle-emergency.jpg" alt="Emergency"
-                                                             class="circle" data-parallax='{"y" : 20}' /></div>
-                </div>
-                <div class="col-md-7 col-xs-12 icon-content right">
-                    <div><div class="fade-down"><?php get_template_part('template-parts/icon', 'emergency'); ?></div>
-
-                        <h4 class="fade-down">Emergency Medical Services.</h4>
-
-                        <p>Country Club Urgent Care is an urgent care clinic as well as a gynecology clinic. Our
-                            gynecology clinic offers all the necessary services for women to live life to the healthiest
-                            degree.</p>
-
-                        <a href="<?= SITEURL ?>/emergency-medical-services/">
-                            <button class="btn btn-success">LEARN MORE</button>
-                        </a></div>
-                </div>
-            </div>
-            <div class="row flex-row waypoint">
-                <div class="col-md-7 col-xs-12 icon-content broken-bone">
-                    <div><div class="fade-down"><?php get_template_part('template-parts/icon', 'broken-bone'); ?></div>
-
-                        <h4 class="fade-down">Broken Bone Care</h4>
-
-                        <p>Country Club Urgent Care is an urgent care clinic as well as a gynecology clinic. Our
-                            gynecology clinic offers all the necessary services for women to live life to the healthiest
-                            degree.</p>
-
-                        <a href="<?= SITEURL ?>/broken-bone-care-el-paso/">
-                            <button class="btn btn-success">LEARN MORE</button>
-                        </a></div>
-                </div>
-                <div class="col-md-5 col-xs-12 flex-col circle-column">
-                    <div class="circle-container"><img src="<?= IMGURL ?>circle-broken.jpg" alt="Broken Bones"
-                                                       class="circle" data-parallax='{"y" : 20}'/></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="blue-banner text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <p class="blurb">We'll be here to care for you and tend to any medical emergency you may be facing.
-                        In addition,
-                        we offer regular check-ups as well as gynecological exams.</p>
-
-                    <p>Our main goal is to help El Pasoans be as healthy as possible. So come see us today, we're ready
-                        to tend to
-                        your needs!</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="diagonals">
-        <div>
-            <div class="container-fluid">
-                <div class="row flex-row bg-dark-blue">
-                    <div class="col-xs-12 col-md-6 flex-col">
-                        <div class="half-col"><h2>When We Say "Urgent" Care, We Mean It!</h2>
-
-                            <p class="blurb">Country Club Urgent Care specializes in comprehensive acute medical
-                                services,
-                                urgent care, emergency care, and non-hospital care.</p>
-
-                            <p>Instead of waiting at the ER for hours, you can simply walk into our clinic. We have over
-                                50
-                                years of combined experience in emergency medical services. This amount of experience
-                                translates to one very important thing: reliability.</p></div>
-                    </div>
-
-                    <div class="col-xs-12 col-md-6  dg-blue">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="">
-            <div class="container-fluid">
-                <div class="row flex-row">
-                    <div class="col-md-6  flex-col">
-
-                        <div class="half-col">
-                            <h3>When you're facing medical issues, all you want is to be treated as soon as
-                                possible.</h3>
-
-                            <p>Doing so can be difficult when you're wasting time in a waiting room. When you visit
-                                Country Club Urgent Care, you won't have to wait for hours and hours. Instead, you'll be
-                                seen by a friendly medical professional as quickly as possible. You will receive the
-                                medical treatment you deserve in a prompt manner. Any questions you may have will be
-                                answered with joy and candor. We do all this because we know how important it is for our
-                                patients to get back to living their normal lives. Medical emergencies are enough of an
-                                inconvenience. Country Club Urgent Care focuses on easing these inconveniences. With the
-                                shortest wait times, complete care, and friendly assistance, you will be on the road
-                                toward healthy living.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 dg-white"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="affordable-prices" class="waypoint">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center"><h2>We Offer <span>Affordable Prices</span> For All Of Our Patients
+                        </ul>
                     </h2>
-                    <p>The price of our services are as follows:</p>
-
-                    <div class="cards container-fluid">
-                        <div class="flex-row">
-                            <div class="card" data-parallax='{"y" : 25}'>
-                                <div class="card-price">$75</div>
-                                <div class="card-bottom">Initial consultations</div>
-                            </div>
-
-                            <div class="card" data-parallax='{"y" : 25}'>
-                                <div class="card-price">$50</div>
-                                <div class="card-bottom"
-                                ">Follow-up consultations<br/>
-                                (after the first visit)
-                            </div>
-                        </div>
-
-                        <div class="card" data-parallax='{"y" : 25}'>
-                            <div class="card-price">$30</div>
-                            <div class="card-bottom"
-                            ">X-rays
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <p class="bottom-text">All other prices will be based on your
-                <span>MEDICARE FEE SCHEDULE</span></p>
-        </div>
-
-
-    </section>
-
-    <section class="bg-back bg-blue waypoint">
-        <img src="<?php echo STYLEURL ?>/img/mobile-banner-mid.jpg" alt=""
-             class="visible-xs visibile-sm"/>
-        <div class="container-fluid">
-            <div class="row flex-row">
-                <div class="col-md-6 col-xs-12">
-                    <div class="diamond-bg">
-                        <?php get_template_part('template-parts/icon', 'diamondblue'); ?>
-                        <?php get_template_part('template-parts/icon', 'shield'); ?>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12 text-center">
-                    <div class="half-col">
-
-                        <?php get_template_part('template-parts/icon', 'shield-small'); ?>
-
-                        <h2>We Accept<br/>
-                            Most Insurance Plans</h2>
-
-                        <p class="blurb">We are now in network with all multiplans. We also now accept Presbyterian
-                            insurance and are pending El Paso First insurance.</p>
-
-                        <p>We do not take Melina insurances and apologize for the inconvenience. Please connect with us
-                            regarding additional insurance questions.</p></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact-section">
+    <section class="ribbon">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <h2><span>Country Club Urgent Care Clinic</span> is Here for El Paso and
-                        Its Surrounding Cities</h2>
+                <div class="col-md-6">
+                    <img src="<?= IMGURL ?>family-business.svg" alt="Family Business"/>
+                </div>
 
-                    <p class="blurb">Our care and love for El Paso set us apart from other clinics. If you're tired of
-                        waiting in the
-                        emergency room to only be seen by a doctor who may or may not give you the attention and care
-                        you deserve, choose Country Club Urgent Care in El Paso. We are located on the west side of town
-                        on the intersections of N. Mesa St and Doniphan Dr. We welcome all ages as well as residents
-                        from Las Cruces and surrounding cities. If you’re visiting from out of town, we can also accept
-                        you as a patient. We're here for you whether you live in El Paso or are simply passing
-                        through.</p>
+                <div class="col-md-6">
+                    <div class="extra-padding"><h2>Constructors Inc. is a family owned and operated business.</h2>
 
-                    <h2>Contact Us Today</h2>
+                    <p>We are a local regional construction company that has been in the family for three generations.</p>
 
-                    <p>Please feel free to contact us with any questions or comments. We can be reached at (915)
-                        307-3870. Our clinic is located at 8041 North Mesa, Suite B2, El Paso, TX 79932. When you need
-                        medical emergency services, choose Country Club Urgent Care. We are a reliable walk-in clinic
-                        that offers urgent care and medical assistance. You'll see just how easy it can be to receive
-                        swift and complete medical assistance.</p>
-
+                    </div>
                 </div>
             </div>
-
-
         </div>
 
     </section>
 
+    <section class="home-module-2">
+        <div class="dark-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div class="extra-padding"><h3>Throughout our history we have instilled a strong value system in all of our employees.</h3>
+
+                        <p>We believe in the powers of respect and work ethic. Since our inception in the 1950’s we have
+                            grown vastly and expanded our expertise. The company began as a ditch digging business to a
+                            full scale construction operation that does commercial and government work including
+                            anything to do with concrete, asphalt, sand and gravel.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-module-3">
+        <div class="container">
+            <div class="row flex-row">
+                <div class="col-sm-6 flex-col">
+                    <div class="card">
+                        <h2 class="card-title">
+                            Government & Commercial
+                        </h2>
+<!--                        <img src="--><?//= IMGURL ?><!--government-contractor.jpg" alt="" class="hidden-xs">-->
+<!---->
+<!--                        <img src="--><?//= IMGURL ?><!--government-commercial.jpg" alt="" class="visible-xs">-->
+
+                        <div class="card-img">
+
+                        </div>
+                        <div class="card-text"><h3>We are New Mexico’s leading contractor with bids on major <a href="<?= SITEURL ?>/services/government-contracting/">government</a> and <a href="<?= SITEURL ?>/services/commercial-site-development/
+">commercial</a> projects.</h3>
+                            <p>Our expertise ranges from all facets of commercial and industrial construction including site development, construction management, asphalt paving, utility installation, structural concrete and other construction services.</p>
+                        </div>
+                        <div class="card-bottom">
+                            <a href="<?= SITEURL; ?>/commercial-site-development/">
+                            <button class="btn btn-default">Learn More</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 flex-col">
+                    <div class="card card-2">
+                        <h2 class="card-title">Check out our Services
+                        </h2>
+<!--                        <img src="--><?//= IMGURL ?><!--services.jpg" alt="" class="hidden-xs">-->
+<!--                        <img src="--><?//= IMGURL ?><!--services-sm.jpg" alt="" class="visible-xs">-->
+                        <div class="card-img">
+
+                        </div>
+                        <div class="card-text"><h3>For a more in-depth look into our work, please see our list of <a href="<?=SITEURL ?>/services/">services</a>.</h3>
+                            <p>Our team can handle small to large scale projects. For all your construction needs, we’ve got you covered! This includes utility installation, the pouring of concrete, site development, and asphalt products. We work through all the steps of the construction process with meticulous attention to detail and care.
+                            </p>
+                        </div>
+                        <div class="card-bottom">
+                            <a href="<?= SITEURL; ?>/services/">
+                            <button class="btn btn-default">Learn More</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-module-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 bg-dark">
+                    <img src="<?= IMGURL ?>badge.svg" width="163" alt="" />
+
+                    <h2>Our Core Values</h2>
+
+                    <p class="blurb">As a third generation company, our core values are composed of fundamental principles of family and trust.</p>
+
+                    <p>We believe that our employees are our most valuable asset and strive to maintain a company that operates like a family in order to provide the best quality service. We value innovation, quality, and honest work ethic.  We strive to be employers choice because we treat people with respect and dedicate the same consideration and due diligence to every project.</p>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-module-5">
+        <div class="container">
+            <div class="row flex-row">
+                <div class="col-md-10 flex-col">
+                    <p>As trusted and prolific contractors we have worked on projects like the</p>
+
+                    <p class="blurb"><span>Kiowa Highway</span> <strong>62/180</strong> to a <span>Verizon</span> <strong>store location</strong>
+                        in Carlsbad, New Mexico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-module-6">
+        <div class="container">
+            <div class="row flex-row">
+                <div class="col-md-12 flex-col">
+                    <h2>Our Passion</h2>
+
+                    <p class="blurb">Constructors, Inc. understands construction inside and out. We know every aspect of the industry. From getting the right materials to the pouring of concrete, setting foundations, and erecting a finished project. </p>
+
+                    <p>We are highly flexible in the industry and handle everything from laying a standard driveway to a major construction project. Our team also handles expansive and modern commercial projects. We love what we do and are proud to help build in the Southwest’s flourishing community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="home-module-7">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                <h2>Our Areas of Service</h2>
+
+                <p>New Mexico has been the home of Constructor’s, Inc since it began in the mid-twentieth century. We are located in Carlsbad, New Mexico, but proudly serve the entire Southwest with projects across the state and the region.</p>
+            </div>
+        </div>
+        <div class="bg-dark"><div class="row">
+            <div class="col-md-6 hidden-xs">
+
+            </div>
+            <div class="col-md-6">
+                <h3>Contact Constructors, Inc Today</h3>
+                <p class="blurb">We look forward to hearing from you! Please contact us with any questions or further inquiries about our services at <strong>575-885-8838</strong>.</p>
+                <p>Our construction company is ready to serve your construction project needs, no matter the size or scope of your project.</p>
+            </div>
+        </div></div>
+    </div>
+</section>
+
+<section class="home-module-8">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+               <img src="<?= IMGURL ?>phone.png" alt="" />
+            </div>
+            <div class="col-md-6">
+                <?php get_template_part('template-parts/testimonial-slider'); ?>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php if (is_active_sidebar('form_widgets')) { //if the field is not empty
     ?>

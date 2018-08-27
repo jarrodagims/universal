@@ -41,7 +41,7 @@
   list-style: none;
   font-size: $font-size-base;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
-  background-color: #F7F9FE; 
+  background-color: $sherpa-dark-color; 
   border: 1px solid $dropdown-fallback-border; // IE8 fallback
   border: 1px solid $dropdown-border;
   border-radius: $border-radius-base;
@@ -88,10 +88,10 @@
   &,
   &:hover,
   &:focus {
-    color: $dropdown-link-active-color;
+    color: $white;
     text-decoration: none;
     outline: 0;
-    background-color: $dropdown-link-active-bg;
+    background-color: $sherpa-brand-primary;
   }
 }
 
@@ -129,6 +129,8 @@
     outline: 0;
   }
 }
+
+
 
 // Menu positioning
 //

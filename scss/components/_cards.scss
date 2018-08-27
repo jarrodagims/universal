@@ -1,0 +1,111 @@
+.card {
+  text-align: center;
+  padding: 0 0;
+  -webkit-box-shadow: -1px 1px 13px 2px rgba(204,204,204,1);
+  -moz-box-shadow: -1px 1px 13px 2px rgba(204,204,204,1);
+  box-shadow: -1px 1px 13px 2px rgba(204,204,204,1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .card-title {
+    background: $sherpa-secondary-color;
+    color: $white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding: 32px;
+    font-size: 29px;
+    margin: 0 0;
+  }
+
+  .card-text {
+    padding: 30px 48px 0;
+    flex: 1;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .card-img {
+    height: 180px;
+    background: url('../img/government-commercial.jpg') 0 0 no-repeat;
+    background-size: cover;
+    display: block;
+  }
+
+  &.card-2 {
+    .card-img {
+      background-image: url('../img/services.jpg');
+    }
+  }
+
+  .card-bottom {
+    margin-top: auto;
+    margin-bottom: 48px;
+    margin-top: 12px;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+
+    .card-img {
+      background-image: url('../img/government-commercial.jpg');
+    }
+
+    &.card-2 {
+      .card-img {
+        background-image: url('../img/services-sm.jpg');
+        background-size: cover;
+      }
+    }
+
+      .card-title {
+        font-size: 18px;
+        padding: 1em;
+      }
+
+      .card-bottom {
+        margin-bottom: 2em;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 9px;
+      }
+
+      .card-text { 
+        padding-top: 1em;
+
+        h3 {
+          margin-top: .5em;
+          margin-bottom: 0;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      h3 {
+        font-size: 14px;
+      }
+
+      p {
+        display: none;
+      }
+
+      img {
+        width: auto;
+        height: 198px;
+      }
+
+    margin-bottom: 2em;
+  }
+
+}

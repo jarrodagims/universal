@@ -1,0 +1,45 @@
+.home-module-8 {
+  padding: 70px 0;
+
+  .facebook-icon {
+    margin-bottom: 1em;
+  }
+
+  .btn {
+    margin-top: 1em;
+    font-size: 10px;
+  }
+
+  p {
+    max-width: 60%;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+      text-align: center;
+      padding: 2.5em 0;
+  
+      img {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      p {
+        max-width: 100%;
+        line-height: 1.5;
+        margin-bottom: 1em;
+      }
+
+      .facebook-icon {
+        width: 40px;
+        height: 40px;
+        margin-top: 1.5em;
+      }
+
+      .btn {
+        padding: 14px 30px;
+        font-size: 9px;
+      }
+
+  }
+
+}

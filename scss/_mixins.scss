@@ -1,0 +1,35 @@
+@mixin dropshadow() {
+  -webkit-box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.75);
+}
+
+@mixin dropshadow-thin() {
+  -webkit-box-shadow: 4px 4px 6px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 6px -5px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 6px -5px rgba(0,0,0,0.75);
+}
+
+@mixin nodropshadow() {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform:     translateY(0);
+    transform:         translateY(0)
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform:     translateY(-30px);
+    transform:         translateY(-30px)
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform:     translateY(-15px);
+    transform:         translateY(-15px)
+  }
+}

@@ -22,12 +22,12 @@
 						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-<?=$collapse_id?>">
 			<?php
 		}
-		
+
 		$menu_classes = "nav navbar-nav";
 		if($menu_side == 'right'):
 		    $menu_classes .= ' navbar-right';
         endif;
-		
+
 		$args = array(
 			'theme_location'	=> $theme_location,
 			'depth'				=> 2,
@@ -36,6 +36,8 @@
 			'walker'            => new wp_bootstrap_navwalker()
 		);
 		wp_nav_menu($args);
+
+
 		
 		
 		if($is_responsive == TRUE) {

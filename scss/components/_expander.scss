@@ -1,0 +1,42 @@
+@media screen and (min-width: $screen-sm-min) {
+  .down-arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $grid-float-breakpoint-max) {
+  .down-arrow {
+    background: #E3E5E4;
+    font-weight: 600;
+    color: #606060;
+    padding: 17px 21px;
+    width: 74%;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    @include dropshadow();
+    margin: 2em auto;
+    cursor: pointer;
+
+    &::after {
+      @include svg-arrow(E09105);
+      content: '';
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &.expanded {
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  ul.expand {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+  }
+}

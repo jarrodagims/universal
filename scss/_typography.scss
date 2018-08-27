@@ -1,5 +1,5 @@
 body {
-  color: #848483;
+  color: #666666;
 }
 
 h1 {
@@ -12,10 +12,6 @@ h3,
 h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-
-  span {
-    color: $sherpa-brand-primary;
-  }
 }
 
 p {
@@ -31,8 +27,35 @@ body {
   text-transform: uppercase;
 }
 
+p.no-margin {
+  margin: 0 0;
+}
+
 @media screen and (max-width: $screen-sm-min) {
   .text-center-sm {
     text-align: center;
+  }
+}
+
+.serif-text {
+  font-family: 'Rufina', serif;
+  color: #8F9699;
+}
+
+
+@media screen and (max-width: $grid-float-breakpoint-max) {
+
+  #main {
+    .container {
+      article {
+        h1 {
+          font-size: 2em;
+        }
+
+        p.blurb {
+          font-size: 1em;
+        }
+      }
+    }
   }
 }

@@ -215,11 +215,15 @@
     border-radius: 1px;
   }
   .icon-bar + .icon-bar {
-    margin-top: 4px;
+    margin-top: 2px;
   }
 
   @media (min-width: $grid-float-breakpoint) {
     display: none;
+  }
+
+  @media screen and (max-width: $grid-float-breakpoint) {
+    margin-right: 10px;
   }
 }
 
@@ -463,7 +467,7 @@
       &:hover,
       &:focus {
         background-color: $navbar-default-link-active-bg;
-        color: $navbar-default-link-active-color;
+        color: $dropdown-link-active-color;
       }
     }
 
@@ -474,7 +478,7 @@
           color: $navbar-default-link-color;
           &:hover,
           &:focus {
-            color: $navbar-default-link-hover-color;
+            color: $dropdown-link-hover-color;
             background-color: $navbar-default-link-hover-bg;
           }
         }

@@ -1,0 +1,44 @@
+.ribbon {
+  background: $sherpa-secondary-color;
+  color: $white;
+
+  @media screen and (min-width: $screen-md-min) {
+    padding: 3.5em 0;
+
+    img {
+      max-width: 503px;
+    }
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.5;
+    margin-top: .25em;
+    margin-bottom: 1em;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding: 2em 0;
+    text-align: center;
+
+    h2 {
+      font-size: 1em;
+      margin-top: 1em;
+    }
+
+    img {
+      max-height: 90px;
+    }
+
+    p {
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+
+    .col-md-6 div {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
+}
