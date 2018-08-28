@@ -277,7 +277,6 @@
             </div>
             <div class="col-md-6">
                 <?php get_template_part('template-parts/testimonial-slider'); ?>
-
             </div>
         </div>
     </div>

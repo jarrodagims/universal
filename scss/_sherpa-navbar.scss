@@ -14,7 +14,7 @@
     &:hover,
     &:focus {
       color: $sherpa-navbar-default-brand-hover-color;
-      background-color: transparent;
+      background-color: transparent; 
     }
   }
 
@@ -308,15 +308,15 @@
   }
 
   .navbar-sherpa {
-    display: flex;
+    display: flex; 
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 
     .dropdown-menu {
-      //display: none !important;
       background: transparent;
-      width: 100%;
+      display: block !important; 
+      width: 100%; 
       position: relative;
       padding-bottom: 20px;
 
@@ -328,7 +328,7 @@
       overflow: hidden;
     }
 
-    .navbar-brand {
+    .navbar-brand { 
       line-height: 1;
 
       img {
