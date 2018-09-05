@@ -1,7 +1,18 @@
 #home-main {
   position: relative;
-  background: url('../img/home-bg.jpg') center top no-repeat;
+//   background: url('../img/home-bg.jpg') center top no-repeat;
+//   background-size: cover;
+
+.container-fluid {
+  width: 100%;
+}
+
+.jumbo-bg {
+  background: url('../img/home-bg-bright.jpg') center top no-repeat;
   background-size: cover;
+  min-height: 551px; 
+  width: 100%;
+}
 
 
   .jumbotron {
@@ -9,18 +20,21 @@
     h1 {
       color: $white;
       text-transform: uppercase; 
-      text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+      margin-top: 0;
+      text-shadow: none !important;
 
       .title {
         font-family: 'Raleway', sans-serif;
         display: block;
         letter-spacing: 2px;
+        margin-bottom: 0;
       }
 
       .subtitle {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
         letter-spacing: 2px;
+        text-transform: none;
       }
     }
 
@@ -31,7 +45,7 @@
   }
 
   @media screen and (min-width: $screen-md-min) {
-    height: 542px; 
+//     height: 542px; 
     display: flex;
 
     .flex-row {
@@ -41,16 +55,16 @@
 
     .jumbotron {
       height: 100%;
+      width: 100%;
       display: flex;
       flex: 1;
       justify-content: center;
       align-items: center;
-      margin-bottom: 0;
+      flex-direction: column;
+      margin-bottom: 0; 
 
       .jumbo-content {
-        margin-top: 3.5em;
-
-        
+        width: 100%;
 
         h1 {
           font-size: 37px;
@@ -62,15 +76,14 @@
           }
 
           .subtitle {
-            font-size: 46px;
+            font-size: 24px;
           }
         }
       }
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
-    margin-top: 60px;
+//     margin-top: 60px;
 
     .jumbotron {
       padding: 0 0;
@@ -80,18 +93,27 @@
     .jumbo-content {
       margin: 0 0;
       padding: 2.5em 3em;
-      background: $sherpa-dark-color;
-    }
+      background: #051A3F;
+    } 
 
-    h1 {
-      font-size: 1em;
-      margin: 0 0;
-      .title {
-        margin-bottom: .25em;
-      }
-      .subtitle {
-        font-size: 21px;
+    
+
+    @media screen and (max-width: $grid-float-breakpoint-max) {
+      .jumbotron {
+          h1 {
+          font-size: 1em;
+          margin: 0 0;
+
+          .title {
+            margin-bottom: .5em;
+            display: block;
+            font-weight: 600;
+          }
+
+          .subtitle {
+            font-size: 16px;
+          }
+        }
       }
     }
-  }
 } 

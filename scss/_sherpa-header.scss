@@ -15,7 +15,7 @@
       width: auto;
       margin: 0 auto;
     }
-  }
+  } 
 }
 
 @media screen and (min-width: $screen-sm-min) {
@@ -38,8 +38,8 @@
   }  
 
   .navbar-sherpa .nav > li > a {
-    color: #FFF;
- 
+    color: #606060;
+  
     &:hover {
       color: $sherpa-brand-primary;
     }

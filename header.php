@@ -43,28 +43,6 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body <?php body_class(); ?>>
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId            : '468686503635858',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v3.1'
-        });
-    };
-
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-
-</script>
-<div id="fb-root"></div>
-
 <?php if (is_front_page()) : ?>
 <div class="landing-bg"><?php endif; ?>
     <!--[if lt IE 7]>
