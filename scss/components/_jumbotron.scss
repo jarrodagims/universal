@@ -1,15 +1,14 @@
 #home-main {
   position: relative;
-//   background: url('../img/home-bg.jpg') center top no-repeat;
-//   background-size: cover;
+  background: url('../img/bg-home.jpg') center top no-repeat;
+  background-size: cover;
 
 .container-fluid {
   width: 100%;
 }
 
 .jumbo-bg {
-  background: url('../img/home-bg-bright.jpg') center top no-repeat;
-  background-size: cover;
+ 
   min-height: 551px; 
   width: 100%;
 }
@@ -19,19 +18,18 @@
 
     h1 {
       color: $white;
-      text-transform: uppercase; 
       margin-top: 0;
       text-shadow: none !important;
+      font-family: 'Montserrat', sans-serif;
+
 
       .title {
-        font-family: 'Raleway', sans-serif;
         display: block;
         letter-spacing: 2px;
         margin-bottom: 0;
       }
 
       .subtitle {
-        font-family: 'Raleway', sans-serif;
         font-weight: 400;
         letter-spacing: 2px;
         text-transform: none;
@@ -45,7 +43,7 @@
   }
 
   @media screen and (min-width: $screen-md-min) {
-//     height: 542px; 
+    height: 444px; 
     display: flex;
 
     .flex-row {
@@ -93,7 +91,6 @@
     .jumbo-content {
       margin: 0 0;
       padding: 2.5em 3em;
-      background: #051A3F;
     } 
 
     

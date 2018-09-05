@@ -25,6 +25,11 @@
 
             echo "<article>\n";
             echo "<div class=\"sidebar-content\">";
+            if(get_field('custom_h1')) :
+                echo '<h1>'. get_field('custom_h1', $pageid) . '</h1>';
+            else :
+                echo '<h1>' . $title . '</h1>';
+            endif;
             get_sidebar();
             echo "<div class=\"content page-content\">";
             the_content();

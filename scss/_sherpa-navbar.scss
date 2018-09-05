@@ -404,15 +404,15 @@
   .navbar-button {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center; 
     margin-left: auto;
   }
 
   .navbar-brand {
     position: absolute;
     z-index: 99;
-    left: 0;
-    top: -36px;
+    left: 50%; 
+    transform: translateX(-50%);
   }
 }
 

@@ -7,15 +7,11 @@
         <div class="container-fluid">
             <div class="row flex-row">
                 <div class="jumbotron">
-                    <img src="<?= IMGURL ?>home-bg-sm.jpg" alt="Constructors, Inc." class="visible-xs" />
-
-                    <div class="jumbo-bg hidden-xs">
-
-                    </div>
+                    <img src="<?= IMGURL ?>home-bg-sm.jpg" alt="Jon Leach" class="visible-xs" />
 
                     <div class="jumbo-content waypoint active text-center">
                         <div class="fade-down">
-                            <h1><span class="title">Feel confident, prepared, & more knowledgeable in the court system</span></h1>
+                            <h1><span class="title">Feel confident, prepared, & more <br />knowledgeable in the court system</span></h1>
                         </div>
                         <a href="<?= SITEURL ?>/contact-us/" class="hidden-xs">
                             <button class="btn btn-lrg btn-primary btn-border">CONTACT US</button>
@@ -31,43 +27,50 @@
             <ul class="flex-row">
                 <li class="flex-col">
                     <a href="<?= SITEURL; ?>/commercial-site-development">
-                        <?php get_template_part('template-parts/icon', 'spade'); ?>
+                        <?php get_template_part('template-parts/icon', '1'); ?>
                         Construction &
                         <br/>Site Development
                     </a>
                 </li>
                 <li class="flex-col">
                     <a href="<?= SITEURL; ?>/construction-management/">
-                        <?php get_template_part('template-parts/icon', 'cone'); ?>
+                        <?php get_template_part('template-parts/icon', '2'); ?>
                         Construction
                         <br/>Management</a>
                 </li>
                 <li class="flex-col">
                     <a href="<?= SITEURL; ?>/paving/">
-                        <?php get_template_part('template-parts/icon', 'paving'); ?>
+                        <?php get_template_part('template-parts/icon', '3'); ?>
                         Paving <br/>& Asphalt</a>
                 </li>
                 <li class="flex-col">
                     <a href="<?= SITEURL; ?>/government-contracting/">
-                        <?php get_template_part('template-parts/icon', 'gov'); ?>
+                        <?php get_template_part('template-parts/icon', '4'); ?>
                         Government<br/>
                         Contracting</a></li>
                 <li class="flex-col">
                     <a href="<?= SITEURL; ?>/road-and-highway-construction/">
-                        <?php get_template_part('template-parts/icon', 'highway'); ?>
+                        <?php get_template_part('template-parts/icon', '5'); ?>
                         Highway &<br/>
                         Road Construction</a>
                 </li>
                 <li class="flex-col">
                     <a href="<?= SITEURL; ?>/utility-installation-construction/">
-                        <?php get_template_part('template-parts/icon', 'utility'); ?>
+                        <?php get_template_part('template-parts/icon', '6'); ?>
                         Utility<br/>
                         Installation</a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/services/">
-                        <?php get_template_part('template-parts/icon', 'landscaping'); ?>
-                        Landscaping</a>
+                    <a href="<?= SITEURL; ?>/utility-installation-construction/">
+                        <?php get_template_part('template-parts/icon', '7'); ?>
+                        Utility<br/>
+                        Installation</a>
+                </li>
+                <li class="flex-col">
+                    <a href="<?= SITEURL; ?>/utility-installation-construction/">
+                        <?php get_template_part('template-parts/icon', '8'); ?>
+                        Utility<br/>
+                        Installation</a>
                 </li>
 
                 <li class="flex-col visible-xs contact-button">

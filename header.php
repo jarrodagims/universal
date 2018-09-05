@@ -69,12 +69,12 @@
             <div class="row ">
                 <div class="v-align">
                     <div class="col-xs-12 navbar-button text-center">
+                        <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
                         <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
                                     src="<?= IMGURL; ?>logo.png"
                                     alt="<?php echo get_bloginfo(
                                         'description'
                                     ); ?>"/></a>
-                        <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
                     </div>
                 </div>
             </div>
