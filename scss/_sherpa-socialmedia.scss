@@ -1,5 +1,5 @@
 .social-media-button {
-  color: $sm-color;
+  color: #5F6A70;
   display: table-cell;
   text-align: center;
   transition: all 250ms;
@@ -7,7 +7,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: $sm-hover-color;
+    color: $sherpa-tertiary-color;
     text-decoration: none;
   }
   &.lg {

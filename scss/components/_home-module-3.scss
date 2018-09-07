@@ -1,12 +1,15 @@
 .home-module-3 {
-  padding: 48px 0 70px;
+  padding: 100px 0;
 
-    .flex-row {
-      justify-content: flex-start;
+  h2 {
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-bottom: 2em;
+
+    &.author {
+      margin-top: 2em;
     }
-
-    @media screen and (max-width: $grid-float-breakpoint-max) {
-      padding: 32px 0 0;
-    }
-
+  }
 }

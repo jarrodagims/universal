@@ -119,10 +119,23 @@
   background: #fff;
   text-align: center;
 
+  
+
   .flex-row {
     justify-content: space-between;
     margin: 0; 
     padding: 0;
+    position: relative;
+
+    &:after {
+      @include gradient();
+      content: '';
+      width: 100%;
+      display: block;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+    }
   }
 
   .flex-col {
@@ -146,12 +159,13 @@
     text-align: center;
     flex-direction: column;
     flex: 1;
-    padding: 60px 0;
+    padding: 40px 0;
     position: relative;
 
 
+
     &:before {
-      border-left: 1px solid #CCC;
+      border-left: 1px solid $sherpa-tertiary-color;
       content: '';
       height: 50%;
       width: 1px;
@@ -162,8 +176,9 @@
     }
 
     svg {
-      height: 30px;
+      height: 36px;
       margin-bottom: 15px;
+      transition: transform 0.3s ease-in-out;
 
       path {
         fill: #051A3F;
@@ -171,6 +186,12 @@
     }
 
     &:hover {
+
+      color: $sherpa-tertiary-color !important;
+
+      svg {
+        transform: scale(1.5);
+      }
 
       svg path {
         fill: $sherpa-brand-primary;

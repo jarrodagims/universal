@@ -28,7 +28,7 @@
 
       &:hover,
       &:focus {
-        color: $sherpa-navbar-default-link-hover-color;
+        color: $sherpa-tertiary-color;
         background-color: transparent;
       }
     }
@@ -169,7 +169,10 @@
 }
 
 .navbar-right {
-  margin: 29px 0 10px;
+  margin: 0 0;
+  position: absolute; 
+  right: 0;
+  bottom: 20px;
 
   li.menu-item {
     line-height: 16px;
@@ -406,13 +409,31 @@
     align-items: center;
     justify-content: center; 
     margin-left: auto;
+    margin-top: auto;
+    height: 100%;
   }
+
+  
 
   .navbar-brand {
     position: absolute;
     z-index: 99;
     left: 50%; 
+    top: -20px;
     transform: translateX(-50%);
+    @include svg-tab(#fff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 272px;
+    height: 200px;
+
+    img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 94px;
+      transform: translateX(-50%) translateY(-50%);
+    }
   }
 }
 
@@ -433,7 +454,6 @@
     .navbar-collapse {
       align-items: center;
       justify-content: center;
-      padding-right: 0;
 
       div {
         display: flex;
@@ -545,12 +565,6 @@
 
     margin-left: 1em;
 
-
-
-    &:first-child {
-      margin-left: 0;
-    }
-
     &:first-child {
       a::before {
         display: none;
@@ -604,26 +618,39 @@
   &:focus {
     text-decoration: none;
     color: $white;
-    background-color: $sherpa-brand-primary;
+    background-color: $sherpa-tertiary-color;
   }
 }
 
 @media screen and (min-width: $screen-sm-min) {
   .navbar-sherpa li.menu-item {
-    font-size: 9px;
-
-     .dropdown-menu li.menu-item {
-       font-size: 9px;
-     }
-  }
-}
-
-@media screen and (min-width: $screen-md-min) {
-  .navbar-sherpa li.menu-item {
     font-size: 11px;
+
 
      .dropdown-menu li.menu-item {
        font-size: 11px;
+     }
+  }
+
+}
+
+@media screen and (min-width: $screen-md-min) {
+   .sub-header .navbar-sherpa li.menu-item {
+    font-size: 11px;
+      
+
+      &:nth-child(3) {
+        margin-right: 180px;
+      }
+
+      &:nth-child(4) {
+        margin-left: 180px;
+      }
+
+     .dropdown-menu li.menu-item {
+       font-size: 11px;
+       margin-left: 0;
+       margin-right: 0;
      }
   }
 }
@@ -701,7 +728,7 @@
 
  &::after {
     content: '';
-    background: #606060 !important;
+    background: #fff !important;
     height: 15px;
     width: 1px;
     display: block;
@@ -737,7 +764,7 @@
   }
 
   .dropdown-menu {
-    background: $sherpa-secondary-color;
+    background: $sherpa-brand-primary;
     text-align: left;
   }
 }

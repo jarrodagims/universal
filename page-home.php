@@ -14,7 +14,7 @@
                             <h1><span class="title">Feel confident, prepared, & more <br />knowledgeable in the court system</span></h1>
                         </div>
                         <a href="<?= SITEURL ?>/contact-us/" class="hidden-xs">
-                            <button class="btn btn-lrg btn-primary btn-border">CONTACT US</button>
+                            <button class="btn btn-lrg btn-primary">Schedule an Appointment</button>
                         </a>
                     </div>
                 </div>
@@ -26,51 +26,44 @@
         <div class="container">
             <ul class="flex-row">
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/commercial-site-development">
+                    <a href="<?= SITEURL; ?>/mock-trials/">
                         <?php get_template_part('template-parts/icon', '1'); ?>
-                        Construction &
-                        <br/>Site Development
+                        Mock Trials
                     </a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/construction-management/">
+                    <a href="<?= SITEURL; ?>/focus-groups/">
                         <?php get_template_part('template-parts/icon', '2'); ?>
-                        Construction
-                        <br/>Management</a>
+                        Focus Groups</a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/paving/">
+                    <a href="<?= SITEURL; ?>/jury-selection/">
                         <?php get_template_part('template-parts/icon', '3'); ?>
-                        Paving <br/>& Asphalt</a>
+                        Jury Selection</a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/government-contracting/">
+                    <a href="<?= SITEURL; ?>/post-verdict-research/">
                         <?php get_template_part('template-parts/icon', '4'); ?>
-                        Government<br/>
-                        Contracting</a></li>
+                        Post Verdict Research</a></li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/road-and-highway-construction/">
+                    <a href="<?= SITEURL; ?>/attitude-surveys/">
                         <?php get_template_part('template-parts/icon', '5'); ?>
-                        Highway &<br/>
-                        Road Construction</a>
+                        Attitude Surveys</a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/utility-installation-construction/">
+                    <a href="<?= SITEURL; ?>/witness-preparation-and-training/">
                         <?php get_template_part('template-parts/icon', '6'); ?>
-                        Utility<br/>
-                        Installation</a>
+                        Witness Preparation</a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/utility-installation-construction/">
+                    <a href="<?= SITEURL; ?>/shadow-jury/">
                         <?php get_template_part('template-parts/icon', '7'); ?>
-                        Utility<br/>
-                        Installation</a>
+                        Shadow Jury</a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/utility-installation-construction/">
+                    <a href="<?= SITEURL; ?>/trial-graphics/">
                         <?php get_template_part('template-parts/icon', '8'); ?>
-                        Utility<br/>
-                        Installation</a>
+                        Trial Graphics</a>
                 </li>
 
                 <li class="flex-col visible-xs contact-button">
@@ -86,111 +79,85 @@
         <div class="container">
             <div class="row flex-row">
                 <div class="col-md-6">
-                    <img src="<?= IMGURL ?>construction-worker.jpg" alt="Construction Worker" class="hidden-xs"/>
+                    <div class="extra-padding"><h2>Jonathan Leach, LLC:</h2>
+                    <h3>Trial Consultant Ready to Help You</h3>
+
+                    <p class="blurb">Jonathan Leach, LLC, is a trial consulting firm that helps attorneys, parties, clients, and witnesses present the best case possible. We are not a law firm. Instead we seek to enhance the practice of law by strengthening the skills of the legal practitioner. We do so by providing insights and information about litigation-related behavior and communication. We are based in El Paso, but our clients and cases are located throughout the United States.</p>
+
+                    <p>Whether you need jury consulting, jury research, witness training, or trial graphics, we tailor our services to your particular circumstances in order to help you feel more confident, more prepared, and more knowledgeable as your case goes forward.</p></div>
+
                 </div>
 
                 <div class="col-md-6 flex-col">
-
-                    <div class="expander down-arrow" data-target="#expand">Constructors Inc.</div>
-                    <h2>
-                        <ul id="expand" class="expand">
-                                <li>Constructor’s Inc is the best in the Southwest for any and all construction
-                                    needs.
-                                </li>
-                                <li>Our top priority is to ensure that we get the job done in a safe and efficient
-                                    manner.
-                                </li>
-                                <li>Our construction company is highly reviewed with well-established roots all across
-                                    New Mexico and the Southwest.
-                                </li>
-                                <li>Constructors Inc. offers competitive quotes and guarantee quality.</li>
-                                <li>We are your number one supplier of asphalt, dirt, sand, and gravel services.</li>
-                                <li>Constructors, Inc has experience in a variety of commercial projects in the area.
-                                </li>
-                                <li>We handle major government projects and contracts.</li>
-
-                        </ul>
-                    </h2>
+                    <div class="box"><h2>A Team With Experience, Insight, and Principle</h2>
+                        <p class="blurb">Although as jury consultants we are most often retained by the attorney in a given case, we are also commonly contacted directly by the client or by an insurer. Once we join the team, we then use our insights and expertise to help our clients understand and address the nonlegal or extralegal factors that are likely to affect the case.</p>
+                        <p>
+                        Our primary focus is on effective communications. We work with our clients to develop strategies for presenting the strongest possible case to a judge, a jury, an arbitrator, or a mediator. We bring more than 20 years of experience to this work. We are long-standing members of our professional society, the American Society of Trial Consultants (ASTC).</p></div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="ribbon">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="<?= IMGURL ?>family-business.svg" alt="Family Business"/>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="extra-padding"><h2>Constructors Inc. is a family owned and operated business.</h2>
-
-                    <p>We are a local regional construction company that has been in the family for three generations.</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <section class="home-module-2">
-        <div class="dark-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6">
-                        <div class="extra-padding"><h3>Throughout our history we have instilled a strong value system in all of our employees.</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                </div>
 
-                        <p>We believe in the powers of respect and work ethic. Since our inception in the 1950’s we have
-                            grown vastly and expanded our expertise. The company began as a ditch digging business to a
-                            full scale construction operation that does commercial and government work including
-                            anything to do with concrete, asphalt, sand and gravel.</p></div>
+                <div class="col-md-6">
+                    <div class="extra-padding"><h2>Why Choose Jonathan Leach, LLC?</h2>
+
+                    <p>A native of El Paso, Jonathan Leach is considered one of the most accomplished trial consultants in the nation. He has spent the last 20 years assisting with a remarkable range of matters in both state and federal courts, in venues large and small, from San Diego to Boston and from Minneapolis to Miami. His client list includes trial teams representing more than 30 of the National Law Journal’s Top 250 law firms, as well as smaller firms and solo practitioners in a variety of specialties. Previous posts include a founding membership in the Dallas-based firm of Trial Lab, LLC; several years as a senior consultant at Courtroom Sciences, Inc., in Dallas; and a position in the law department of an international food company. Memorable cases include those involving the “queen of daytime talk-show television”; the trademark for repositionable (sticky) notes; high-profile allegations of securities violations in a number of different venues; and the publicity rights of PGA golfers, among other matters. Mr. Leach is a member of the State Bar of Texas.
+                    </p>
+
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
     <section class="home-module-3">
-        <div class="container">
-            <div class="row flex-row">
-                <div class="col-sm-6 flex-col">
-                    <div class="card">
-                        <h2 class="card-title">
-                            Government & Commercial
-                        </h2>
-                        <div class="card-img">
+        <div class="dark-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Our Values Derive From Our Commitment to Our Clients’ End Results</h2>
 
-                        </div>
-                        <div class="card-text"><h3>We are New Mexico’s leading contractor with bids on major <a href="<?= SITEURL ?>/services/government-contracting/">government</a> and <a href="<?= SITEURL ?>/services/commercial-site-development/
-">commercial</a> projects.</h3>
-                            <p>Our expertise ranges from all facets of commercial and industrial construction including site development, construction management, asphalt paving, utility installation, structural concrete and other construction services.</p>
-                        </div>
-                        <div class="card-bottom">
-                            <a href="<?= SITEURL; ?>/commercial-site-development/">
-                            <button class="btn btn-default">Learn More</button>
-                            </a>
-                        </div>
+                        <p><strong>The success of the firm is a reflection of the outcomes of the clients we serve.</strong></p>
+                        
+                        <p>We are fully committed to providing superior trial preparation for individuals and companies across the U.S. Our values include integrity, perseverance, and intelligence. Thoughtful, smart, and creative approaches give you a distinct edge as you navigate the legal system.</p>
+
+<p>Jonathan Leach, LLC, abides by the ethical responsibilities of our clients as well as the Professional Code of Ethics of the American Society of Trial Consultants. Our efforts are geared toward achieving positive results at trial, mediation, and arbitration, and they are guided by well-recognized standards of professionalism.
+</p>
+
+
                     </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-title">Our Client Comments</div>
 
-                </div>
-                <div class="col-sm-6 flex-col">
-                    <div class="card card-2">
-                        <h2 class="card-title">Check out our Services
-                        </h2>
-                        <div class="card-img">
+                            <div class="card-text">"Jonathan: thanks for your help at the trial. I have asked [my client, a co-defendant] to contribute to your courtroom work, since we were 'free-riding' on it. I was very impressed with y our insights."<br />
 
-                        </div>
-                        <div class="card-text"><h3>For a more in-depth look into our work, please see our list of <a href="<?=SITEURL ?>/services/">services</a>.</h3>
-                            <p>Our team can handle small to large scale projects. For all your construction needs, we’ve got you covered! This includes utility installation, the pouring of concrete, site development, and asphalt products. We work through all the steps of the construction process with meticulous attention to detail and care.
-                            </p>
-                        </div>
-                        <div class="card-bottom">
-                            <a href="<?= SITEURL; ?>/services/">
-                            <button class="btn btn-default">Learn More</button>
-                            </a>
+                            <p class="author"><strong>Margaret Zwisler, Esq.</strong><br />
+                            Latham &amp; Watkins, LLP,<br />
+                            Washington, D.C.</p>
+
+                                <img src="<?= IMGURL ?>latham.png" alt="Latham" width="176" height="58" />
+                            </div>
+
+                            <div class="card-bottom">
+                                <a href="">
+                                    <button class="btn-primary btn-default">
+                                        Testimonials
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button class="btn-primary btn-default">
+                                        Schedule an Appointment
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -201,85 +168,15 @@
     <section class="home-module-4">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 bg-dark">
-                    <img src="<?= IMGURL ?>badge.svg" width="163" alt="" />
-
-                    <h2>Our Core Values</h2>
-
-                    <p class="blurb">As a third generation company, our core values are composed of fundamental principles of family and trust.</p>
-
-                    <p>We believe that our employees are our most valuable asset and strive to maintain a company that operates like a family in order to provide the best quality service. We value innovation, quality, and honest work ethic.  We strive to be employers choice because we treat people with respect and dedicate the same consideration and due diligence to every project.</p>
-                </div>
                 <div class="col-md-6">
+                    <h2>Working With a Trial Consultant </h2>
 
+                    <p>Contacting us early is key. The best time to begin consultation is early enough to adjust trial preparations, and make course corrections, as the case moves forward. Typically we get involved before discovery is underway. That is because, once a critical witness had been deposed, it can be difficult to “unring the bell” of  the transcribed testimony and its ultimate influence on the jury. Virtually all of the tools offered by a trial consulting firm--jury research, theming, graphics development, witness training, and so on--are most effective when deployed well in advance of the target event.  Adjustments to and fine-tuning of the case become possible when there is still time to do so.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="home-module-5">
-        <div class="container">
-            <div class="row flex-row">
-                <div class="col-md-10 flex-col">
-                    <p>As trusted and prolific contractors we have worked on projects like the</p>
-
-                    <p class="blurb"><span>Kiowa Highway</span> <strong>62/180</strong> to a <span>Verizon</span> <strong>store location</strong>
-                        in Carlsbad, New Mexico.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="home-module-6">
-        <div class="container">
-            <div class="row flex-row">
-                <div class="col-md-12 flex-col">
-                    <h2>Our Passion</h2>
-
-                    <p class="blurb">Constructors, Inc. understands construction inside and out. We know every aspect of the industry. From getting the right materials to the pouring of concrete, setting foundations, and erecting a finished project. </p>
-
-                    <p>We are highly flexible in the industry and handle everything from laying a standard driveway to a major construction project. Our team also handles expansive and modern commercial projects. We love what we do and are proud to help build in the Southwest’s flourishing community.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<section class="home-module-7">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-            </div>
-            <div class="col-md-6">
-                <h2>Our Areas of Service</h2>
-
-                <p>New Mexico has been the home of Constructor’s, Inc since it began in the mid-twentieth century. We are located in Carlsbad, New Mexico, but proudly serve the entire Southwest with projects across the state and the region.</p>
-            </div>
-        </div>
-        <div class="bg-dark"><div class="row">
-            <div class="col-md-6 hidden-xs">
-
-            </div>
-            <div class="col-md-6">
-                <h3>Contact Constructors, Inc Today</h3>
-                <p class="blurb">We look forward to hearing from you! Please contact us with any questions or further inquiries about our services at <strong>575-885-8838</strong>.</p>
-                <p>Our construction company is ready to serve your construction project needs, no matter the size or scope of your project.</p>
-            </div>
-        </div></div>
-    </div>
-</section>
-
-<section class="home-module-8">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-               <img src="<?= IMGURL ?>phone.png" alt="" />
-            </div>
-            <div class="col-md-6">
-                <?php get_template_part('template-parts/testimonial-slider'); ?>
-            </div>
-        </div>
-    </div>
-</section>
 
 <?php if (is_active_sidebar('form_widgets')) { //if the field is not empty
     ?>

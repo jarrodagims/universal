@@ -51,19 +51,6 @@
     </p>
     <![endif]-->
 
-    <div class="top-header">
-        <div class="container">
-            <div class="row ">
-                <div class="v-align">
-        <ul class="nav navbar-nav navbar-right">
-            <li class="menu-item directions"><a
-                        href="<?php echo get_site_url() ?>/contact-us">Directions</a></a></li>
-            <li class="menu-item contact"><a href="tel:5758858838">Call</a></li>
-        </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container-fluid sub-header">
         <div class="container">
             <div class="row ">
@@ -71,10 +58,16 @@
                     <div class="col-xs-12 navbar-button text-center">
                         <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
                         <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
-                                    src="<?= IMGURL; ?>logo.png"
+                                    src="<?= IMGURL; ?>logo.svg"
                                     alt="<?php echo get_bloginfo(
                                         'description'
                                     ); ?>"/></a>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="menu-item directions"><a
+                                        href="<?php echo get_site_url() ?>/contact-us">Directions</a></a></li>
+                            <li class="menu-item contact"><a href="tel:5758858838">Call</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
