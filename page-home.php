@@ -146,14 +146,14 @@
                                 <img src="<?= IMGURL ?>latham.png" alt="Latham" width="176" height="58" />
                             </div>
 
-                            <div class="card-bottom">
+                            <div class="card-bottom transparent">
                                 <a href="">
-                                    <button class="btn-primary btn-default">
+                                    <button class="btn btn-default">
                                         Testimonials
                                     </button>
                                 </a>
                                 <a href="">
-                                    <button class="btn-primary btn-default">
+                                    <button class="btn btn-primary">
                                         Schedule an Appointment
                                     </button>
                                 </a>
