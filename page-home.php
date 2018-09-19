@@ -158,15 +158,16 @@
             <div class="flex-row row">
                 <div class="col-xs-12 col-md-6">
                     <div class="blue-box">
-                        <div class="extra-padding"><h2>What We Can Do For You</h2>
-                        <p>Our services include pretrial research, witness preparation, jury selection, courtroom presentation and strategy, and post-trial juror interviews.</p></div>
+                        <div class="extra-padding"><h2>Plumbing Supplies, Fixtures and Special Ordering Services</h2></div>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-md-6">
-                    <div class="extra-padding"><h2>Why Choose Jonathan Leach, LLC?</h2>
+                    <div class="extra-padding"><p class="blurb">Our inventory is made up of anything from copper tubing, fittings, PVC pipe, power tools, and even water heaters. In addition to providing plumbing supplies to both homeowners and professional plumbers, we also stock plumbing fixtures to suit your needs.</p>
 
-                    <p>A native of El Paso, Jonathan Leach is considered one of the most accomplished trial consultants in the nation. He has spent the last 20 years assisting with a remarkable range of matters in both state and federal courts, in venues large and small, from San Diego to Boston and from Minneapolis to Miami. His client list includes trial teams representing more than 30 of the National Law Journal’s Top 250 law firms, as well as smaller firms and solo practitioners in a variety of specialties. Previous posts include a founding membership in the Dallas-based firm of Trial Lab, LLC; several years as a senior consultant at Courtroom Sciences, Inc., in Dallas; and a position in the law department of an international food company. Memorable cases include those involving the “queen of daytime talk-show television”; the trademark for repositionable (sticky) notes; high-profile allegations of securities violations in a number of different venues; and the publicity rights of PGA golfers, among other matters. Mr. Leach is a member of the State Bar of Texas.
+                    <p>
+                        It’s easy to see why we’re El Paso’s one-stop shop for every plumbing supply needs. Even though our inventory is vast and varied, there are still instances in which we might not have the right part or fixture. If this occurs, don’t worry! With our special ordering services, you will have exactly what you need in no time. We even carry discontinued parts so you’ll never have to worry about finding the right piece to complete your project!
+
                     </p>
 
                     </div>
@@ -176,63 +177,57 @@
 
     </section>
 
-    <section class="home-module-3">
-        <div class="dark-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="extra-padding"><h2>Our Values Derive From Our Commitment to Our Clients’ End Results</h2>
 
-                        <p><strong>The success of the firm is a reflection of the outcomes of the clients we serve. </strong></p>
-                        
-                        <p>We are fully committed to providing superior trial preparation for individuals and companies across the U.S. Our values include integrity, perseverance, and intelligence. Thoughtful, smart, and creative approaches give you a distinct edge as you navigate the legal system.</p>
+<section class="home-module-3">
+    <div class="container">
+        <div class="banner-bottom">
+            <p>Check Out Our Vendors</p>
+                <a href="http://pasitos-clinic.agimsweb.com/contact-us/" class="button">
+                    <button class="btn btn-primary">
+                        Vendors
+                    </button>
+                </a>
+        </div>
+    </div>
+</section>
 
-<p>Jonathan Leach, LLC, abides by the ethical responsibilities of our clients as well as the Professional Code of Ethics of the American Society of Trial Consultants. Our efforts are geared toward achieving positive results at trial, mediation, and arbitration, and they are guided by well-recognized standards of professionalism.
-</p></div>
+<section class="home-module-6">
+    <div class="container">
+        <div class="row flex-row">
+            <div class="col-md-6 flex-col">
 
+                <div class="bg-gray"><h2>Serving El Paso, Las Cruces, Juarez, and Beyond</h2><p class="blurb">As an El Paso-based plumbing supplier, <br /><span class="brand"><strong>C & L Plumbing Supply Co. Inc.</strong></span> has the ability to serve the Sun City as well as the surrounding areas.</p></div>
 
-                    </div>
-                    <div class="col-md-6">
-                        <div class="floating-sidebar"><div class="card">
+               <div class="bg-blue">
+                   <p>Our team is made up of bilingual, bicultural experts who can provide personal advice in order for you to achieve your plumbing goals.</p>
 
-
-                            <div class="card-title">Our Client Comments</div>
-
-                            <div class="card-text">
-                                <?php get_template_part('template-parts/testimonial-slider'); ?>
-                            </div>
-
-                            <div class="card-bottom transparent">
-                                <a href="<?= SITEURL ?>/testimonials/">
-                                    <button class="btn btn-default">
-                                        Testimonials
-                                    </button>
-                                </a>
-                                <a href="<?= SITEURL ?>/contact-us/">
-                                    <button class="btn btn-primary">
-                                        Schedule an Appointment
-                                    </button>
-                                </a>
-                            </div>
-                        </div></div>
-                    </div>
+                <p class="small">When it comes to finding a great plumbing supplier, it’s much more than finding a shop that has the right materials. It’s necessary for the supplier to have the right knowledge to answer any questions and the appropriate skill to be trustworthy.  C & L Plumbing Supply Co. Inc. was built on a foundation of trust and customer care. Whether you’re an expert or a do-it-yourselfer, C & L Plumbing Supply Co. Inc. will gladly be your trusted plumbing supplier.</p></div>
+            
+            </div>
+            <div class="col-md-6 flex-col">
+                <div class="bg-square">
+                    
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="home-module-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="extra-padding"><h2>Working With a Trial Consultant </h2>
 
-                    <p>Contacting us early is key. The best time to begin consultation is early enough to adjust trial preparations, and make course corrections, as the case moves forward. Typically we get involved before discovery is underway. That is because, once a critical witness had been deposed, it can be difficult to “unring the bell” of  the transcribed testimony and its ultimate influence on the jury. Virtually all of the tools offered by a trial consulting firm--jury research, theming, graphics development, witness training, and so on--are most effective when deployed well in advance of the target event.  Adjustments to and fine-tuning of the case become possible when there is still time to do so.</p></div>
-                </div>
+
+
+</section>
+
+<section class="home-module-7">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="text-center"><h2>We’re Ready to Be Your Plumbing Supplier!</h2>
+                <p>When you make C & L Plumbing Supply Co. Inc. your go-to plumbing supply store, you’ll never have to worry when a plumbing disaster strikes. We will be here, ready to provide exactly what you need. Contact our team today to learn more about what we have to offer. Before long, your next plumbing project will be underway. Let C & L Plumbing Supply Co. Inc. help you achieve greatness!
+                </p></div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
 
 <?php if (is_active_sidebar('form_widgets')) { //if the field is not empty
     ?>

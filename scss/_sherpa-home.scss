@@ -258,6 +258,21 @@ h2.line {
 
 .banner-bottom {
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: url('../img/bg-mid-banner.jpg') 0 0 no-repeat;
+  color: $white;
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+  p {
+    margin-bottom: 0;
+    font-size: 35px;
+    @include raleway();
+    margin-right: 1em;
+  }
 
 }
 
@@ -770,4 +785,8 @@ input[type="text"]:focus, textarea:focus {
   &.active {
     display: block;
   }
+}
+
+span.brand {
+  color: $sherpa-brand-primary;
 }
