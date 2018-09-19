@@ -1,8 +1,13 @@
 .home-module-3 {
-  padding: 100px 0;
+  padding: 100px 20px 40px;
+
+  
 
   h2 {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
+    line-height: 1.5;
+    font-size: 28px;
+    @include raleway();
   }
 
   p {
@@ -10,6 +15,26 @@
 
     &.author {
       margin-top: 2em;
+      margin-bottom: 3em;
+      strong {
+        display: block;
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    .extra-padding {
+      padding-right: 2em;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    text-align: center;
+    padding: 20px 0;
+
+    h2 {
+      font-size: 19px;
+      margin-top: 1.25em;
     }
   }
 }

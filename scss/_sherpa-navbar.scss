@@ -14,7 +14,7 @@
     &:hover,
     &:focus {
       color: $sherpa-navbar-default-brand-hover-color;
-      background-color: transparent; 
+      background-color: transparent;
     }
   }
 
@@ -28,7 +28,7 @@
 
       &:hover,
       &:focus {
-        color: $sherpa-tertiary-color;
+        color: $sherpa-navbar-default-link-hover-color;
         background-color: transparent;
       }
     }
@@ -36,7 +36,7 @@
       &,
       &:hover,
       &:focus {
-//         color: $sherpa-navbar-default-link-active-color;
+        //         color: $sherpa-navbar-default-link-active-color;
         background-color: transparent;
       }
     }
@@ -75,8 +75,8 @@
     @media (max-width: $screen-sm-max) {
 
       > .open > a {
-      &,
-      &:hover,
+        &,
+        &:hover,
         &:focus {
           background-color: transparent;
         }
@@ -151,7 +151,7 @@
   @media screen and (min-width: $grid-float-breakpoint-max) {
     padding-top: 18px;
 
-    
+
   }
 }
 
@@ -169,10 +169,7 @@
 }
 
 .navbar-right {
-  margin: 0 0;
-  position: absolute; 
-  right: 0;
-  bottom: 20px;
+  margin: auto 0 0;
 
   li.menu-item {
     line-height: 16px;
@@ -238,49 +235,49 @@
       text-align: center;
     }
   }
-    
-    .top-header {
-      position: absolute;
-      z-index: 99;
-      right: 0;
-      top: 0;
+
+  .top-header {
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    top: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+
+    .container {
       height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: transparent;
+    }
 
-      .container {
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .row, .v-align, ul {
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-
-      .navbar-right {
-        margin: 0 0;
-        padding: 0 0;
-      }
+    .row, .v-align, ul {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
 
-    
-
-    
-
-    .admin-bar {
-      .top-header {
-        top: 46px;
-      }
+    .navbar-right {
+      margin: 0 0;
+      padding: 0 0;
     }
+  }
+
+
+
+
+
+
+  .admin-bar {
+    .top-header {
+      top: 46px;
+    }
+  }
 
   .jumbotron .navbar-brand {
     margin: 0 auto;
@@ -311,15 +308,15 @@
   }
 
   .navbar-sherpa {
-    display: flex; 
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 
     .dropdown-menu {
       background: transparent;
-      display: block !important; 
-      width: 100%; 
+      display: block !important;
+      width: 100%;
       position: relative;
       padding-bottom: 20px;
 
@@ -331,7 +328,7 @@
       overflow: hidden;
     }
 
-    .navbar-brand { 
+    .navbar-brand {
       line-height: 1;
 
       img {
@@ -356,8 +353,8 @@
   }
 
   .navbar-right {
-//     right: 0;
-//     position: absolute;
+    //     right: 0;
+    //     position: absolute;
 
     li.menu-item {
 
@@ -407,33 +404,13 @@
   .navbar-button {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: space-between;
     margin-left: auto;
-    margin-top: auto;
-    height: 100%;
   }
 
-  
-
   .navbar-brand {
-    position: absolute;
     z-index: 99;
-    left: 50%; 
-    top: -20px;
-    transform: translateX(-50%);
-    @include svg-tab(#fff);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 272px;
-    height: 200px;
-
-    img {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      height: 94px;
-      transform: translateX(-50%) translateY(-50%);
-    }
+    left: 0;
   }
 }
 
@@ -450,14 +427,18 @@
   .navbar-sherpa {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
+    margin-top: auto;
+    margin-left: auto;
 
     .navbar-collapse {
       align-items: center;
       justify-content: center;
+      padding-right: 0;
 
       div {
         display: flex;
         justify-content: flex-end;
+        margin-right: 2em;
       }
     }
 
@@ -558,12 +539,19 @@
 
 @media screen and (min-width: $screen-sm-min) {
   .navbar-sherpa li.menu-item {
+    
     a::before {
       content: " ";
       margin: 0 0;
     }
 
     margin-left: 1em;
+
+
+
+    &:first-child {
+      margin-left: 0;
+    }
 
     &:first-child {
       a::before {
@@ -618,73 +606,61 @@
   &:focus {
     text-decoration: none;
     color: $white;
-    background-color: $sherpa-tertiary-color;
+    background-color: $sherpa-brand-primary;
   }
 }
 
 @media screen and (min-width: $screen-sm-min) {
   .navbar-sherpa li.menu-item {
-    font-size: 11px;
+    font-size: 9px;
 
-
-     .dropdown-menu li.menu-item {
-       font-size: 11px;
-     }
+    .dropdown-menu li.menu-item {
+      font-size: 9px;
+    }
   }
-
 }
 
 @media screen and (min-width: $screen-md-min) {
-   .sub-header .navbar-sherpa li.menu-item {
+  .navbar-sherpa li.menu-item {
     font-size: 11px;
-      
 
-      &:nth-child(3) {
-        margin-right: 180px;
-      }
-
-      &:nth-child(4) {
-        margin-left: 180px;
-      }
-
-     .dropdown-menu li.menu-item {
-       font-size: 11px;
-       margin-left: 0;
-       margin-right: 0;
-     }
+    .dropdown-menu li.menu-item {
+      font-size: 11px;
+    }
   }
 }
 
 
-  .navbar-right {
-    li.menu-item {
+.navbar-right {
 
-      a {
-        float: left;
-      }
+  li.menu-item {
 
-      &.directions a {
-        @include svg-map($sherpa-svg-color);
+    a {
+      float: left;
+    }
 
-        &:hover {
-          @include svg-map($sherpa-svg-color-hover);
-        }
-      }
+    &.directions a {
+      @include svg-map($sherpa-svg-color);
 
-      &.contact a {
-        @include svg-contact($sherpa-svg-color);
-        margin-right: 0;
-
-        &:hover {
-          @include svg-contact($sherpa-svg-color-hover);
-        }
-      }
-
-      &.directions:after {
-        color: #fff;
+      &:hover {
+        @include svg-map($sherpa-svg-color-hover);
       }
     }
+
+    &.contact a {
+      @include svg-contact($sherpa-svg-color);
+      margin-right: 0;
+
+      &:hover {
+        @include svg-contact($sherpa-svg-color-hover);
+      }
+    }
+
+    &.directions:after {
+      color: #fff;
+    }
   }
+}
 
 
 .sub-header.top-header {
@@ -709,7 +685,7 @@
     background: $white;
 
     .navbar-sherpa {
-       justify-content: flex-end;
+      justify-content: flex-end;
     }
 
     .navbar-right {
@@ -726,9 +702,9 @@
 
 .navbar-right li.menu-item.directions {
 
- &::after {
+  &::after {
     content: '';
-    background: #fff !important;
+    background: #606060 !important;
     height: 15px;
     width: 1px;
     display: block;
@@ -736,14 +712,14 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
- }
+  }
 }
 
 .navbar-right li.menu-item.contact {
 
   padding-left: 0;
   a {
-     margin-left: .75em;
+    margin-left: .75em;
   }
 }
 
@@ -764,7 +740,7 @@
   }
 
   .dropdown-menu {
-    background: $sherpa-brand-primary;
+    background: $sherpa-secondary-color;
     text-align: left;
   }
 }

@@ -1,5 +1,5 @@
 body {
-  color: #5F6A70;
+  color: #666666;
 }
 
 h1 {
@@ -10,8 +10,12 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  @include raleway();
+  font-weight: 400;
+}
+
+h2 {
+  @include raleway();
 }
 
 p {

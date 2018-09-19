@@ -3,15 +3,77 @@
   background-size: cover;
   color: $white;
 
+  h2 {
+    @include raleway();
+  }
+
+  .flex-row {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  
+
   @media screen and (min-width: $screen-md-min) {
     padding: 68px 0;
 
+    .blue-box {
+    background: rgba(0, 62, 122, 0.68);
+    text-align: center;
+
+    .extra-padding {
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+  }
+
+    .flex-row {
+      flex-direction: row;
+    }
+
+    .blue-box {
+      margin-right: 5em;
+    }
+
+    .extra-padding {
+      padding: 100px 0;
+    }
+
     h2 {
-      margin-bottom: 1em;
+      margin-bottom: 1.25em;
+      font-size: 28px;
     }
 
     p {
       font-size: 18px;
+      line-height: 1.85;
+      font-weight: 300;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    .extra-padding {
+      background: rgba(0, 62, 122, 0.68);
+      margin: 40px 20px;
+      padding: 2em;
+      text-align: center;
+
+      p {
+        margin-bottom: 2em;
+      }
+
+      h2 {
+        font-size: 19px;
+        margin-bottom: 1.5em;
+      }
+    }
+
+    .blue-box .extra-padding {
+      margin-bottom: 0;
+      
+      p {
+        margin-bottom: 0;
+      }
     }
   }
 }

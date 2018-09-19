@@ -1,9 +1,10 @@
-<div class="testim"><img src="<?= IMGURL ?>icon-fb.png"  class="facebook-icon" alt="Facebook">
-
+<div class="testim">
 <div class="cycle-slideshow"
      data-cycle-fx="fade"
      data-cycle-timeout="5000"
      data-cycle-slides="> div"
+     data-cycle-pager=".pager"
+     data-cycle-auto-height="calc"
 >
 
     <?php
@@ -20,7 +21,6 @@
             ?>
             <div>
                 <p><?php echo get_the_content();  ?></p>
-                <p>- <strong><?php echo get_the_title(); ?></strong></p>
             </div>
         <?php
         endwhile;
@@ -36,7 +36,5 @@
 
 </div>
 
-<a href="#" class="next" data-cycle-cmd="next"></a>
-<a href="https://www.facebook.com/ciconstructors/reviews" target="_blank">
-    <button class="btn btn-default">Send Feedback</button>
-</a></div>
+    <div class="pager"></div>
+</div>

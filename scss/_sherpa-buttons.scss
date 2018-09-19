@@ -6,25 +6,21 @@
 .btn { 
   padding: 16px 38px;
   font-size: 11px;
-  letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   transition: background-color 0.2s ease-in-out;
   background: $sherpa-brand-primary;
-
-  &.btn-default {
-    background: #E3E3E5;
-    color: $sherpa-dark-color;
-  }
+  border-radius: 8px;
+  font-weight: 600;
 
   
 
 
   &.btn-default, &.btn-primary {
     &:hover, &:focus {
-      background: $sherpa-tertiary-color;
       color: $white;
       border-color: transparent;
-    } 
+      background: lighten($sherpa-brand-primary, 10%);
+    }
   }
 
   &.btn-border {
@@ -34,7 +30,6 @@
 
     &:hover {
       color: $white;
-      background: $sherpa-brand-primary;
     } 
   }
 
@@ -50,7 +45,7 @@
     color: $white;
 
     &:hover {
-      color: $sherpa-dark-color;
+      color: $white;
       background: $sherpa-brand-primary;
     } 
   }

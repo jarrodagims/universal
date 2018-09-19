@@ -1,7 +1,9 @@
 @mixin icon-small() {
-
-
   width: 100%;
+
+  .icon-row {
+      @include dropshadow();
+  }
 
   .container {
     padding: 0 0;
@@ -15,8 +17,12 @@
     margin-bottom: 0;
     width: 100%;
 
+    &:after {
+      display: none;
+    }
+
     .flex-col {
-      width: 25%;
+      width: 50%;
       margin-bottom: 0;
       border-left: 1px solid #e9e9e9;
       border-bottom: 1px solid #e9e9e9;
@@ -42,11 +48,11 @@
         background: $white;
         font-size: 9px;
         font-weight: 500;
-        padding: 19px 0;
+        padding: 24px 0;
         color: #606060;
 
         svg {
-          height: 22px;
+          height: 37px;
           margin-bottom: 1em;
         }
 
@@ -66,27 +72,9 @@
       }
 
 
-      &:nth-child(odd), &:nth-child(6n) {
-        a {
-          background: #f9f9f9;
+      
 
-          &:hover {
-            background: $white;
 
-          }
-        }
-      }
-
-      &:nth-child(5n), &:nth-child(7n) {
-        a {
-          background: $white;
-
-          &:hover {
-            background: #f9f9f9;
-
-          }
-        }
-      }
 
       .title span {
         display: block;
@@ -115,17 +103,43 @@
   }
 }
 
-.icon-row {
-  background: #fff;
-  text-align: center;
+@keyframes anim-1 {
+	50% {
+		transform: translate3d(-100%, 0, 0);
+	}
+	51% {
+		transform: translate3d(-1em, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
 
-  
+
+.icon-row {
+  background: rgba(255,255,255,0.5);
+  text-align: center;
+  @include dropshadow();
+  overflow: hidden;
 
   .flex-row {
     justify-content: space-between;
     margin: 0; 
     padding: 0;
     position: relative;
+
+    &:before {
+        border-bottom: 7px solid #474747;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 200vw;
+        display: block;
+        height: 7px;
+        z-index: 1;
+        left: -50%;
+    }
 
     &:after {
       @include gradient();
@@ -159,43 +173,65 @@
     text-align: center;
     flex-direction: column;
     flex: 1;
-    padding: 40px 0;
+    padding: 2em 0 0; 
     position: relative;
+    overflow: hidden;
+    padding-bottom: 7px;
 
-
-
-    &:before {
-      border-left: 1px solid $sherpa-tertiary-color;
+    &:after {
+      height: 7px;
+      background: $sherpa-brand-primary;
       content: '';
-      height: 50%;
-      width: 1px;
       position: absolute;
+      bottom: 0;
       left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      display: block;
+      z-index: 99;
+      width: 100%;
+      transform: translate3d(-100vw, 0, 0);
     }
+
+    &:hover::after {
+//       transform: translate3d(0, 0, 0);
+      animation: anim-1 0.3s forwards;
+    }
+
+
+
+    span {
+      background: #959eac;
+
+    }
+
+//     &:hover {
+//       border-bottom: 7px solid $sherpa-brand-primary;
+//     }
+
+
+
+//     &:before {
+//       border-left: 1px solid $sherpa-brand-primary;
+//       content: '';
+//       height: 50%;
+//       width: 1px;
+//       position: absolute;
+//       left: 0;
+//       top: 50%;
+//       transform: translateY(-50%);
+//     }
 
     svg {
       height: 36px;
-      margin-bottom: 15px;
-      transition: transform 0.3s ease-in-out;
+      margin-bottom: 2em;
 
       path {
-        fill: #051A3F;
+        fill: #fff;
       }
     }
 
     &:hover {
 
-      color: $sherpa-tertiary-color !important;
-
-      svg {
-        transform: scale(1.5);
-      }
-
-      svg path {
-        fill: $sherpa-brand-primary;
-      }
+      color: $sherpa-brand-primary !important;
 
       text-decoration: none;
 
@@ -211,6 +247,8 @@
       text-align: center;
       width: 100%;
       display: block;
+      background: #959eac;
+      color: $white;
     } 
   }
 
@@ -228,15 +266,93 @@
 
 
 body #main .container article #sidebar {
-
+  
   @include icon-small();
+
+  .icon-row {
+    a {
+      font-weight: 600 !important;
+      font-size: 14px !important;
+      font-family: 'Roboto', sans-serif;
+      padding: 42px 0 !important; 
+    }
+  }
 
 }
 
 .page-template-page-home {
   .icon-row {
-    @media screen and (min-width: $screen-sm-min) {
-    
+
+    &:after {
+      background: #959eac;
+      height: 3em;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      z-index: 0;
+    }
+
+    @media screen and (max-width: $grid-float-breakpoint-max) {
+
+      .flex-row {
+          flex-wrap: wrap;
+          margin-bottom: 2em;
+
+          li.flex-col {
+            width: 25%;
+
+            svg {
+              max-height: 20px;
+            }
+            &:nth-child(1n) {
+                a {
+                  background: #f9f9f9;
+
+                  &:hover {
+                    background: $white;
+                  }
+                }
+            }
+
+
+
+            &:nth-child(8n+1),
+            &:nth-child(8n+3),
+            &:nth-child(8n+6),
+            &:nth-child(8n+8) {
+                a {
+                  background-color: $white;
+
+                  &:hover {
+                    background: #f9f9f9;
+                  }
+                }
+            }
+          }
+        }
+    }
+
+    @media screen and (min-width: $screen-sm-min) and (max-width: $screen-md-min) { 
+        
+        .flex-row {
+          flex-wrap: wrap;
+          margin-bottom: 2em;
+
+          li.flex-col {
+            width: 25%;
+            
+            &:nth-child(5) {
+              a::before {
+                display: none;
+              }
+            }
+          }
+        }
+    }
+
+    @media screen and (min-width: $screen-md-min) {
 
     .flex-row .flex-col {
        &:first-child {

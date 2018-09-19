@@ -1,10 +1,63 @@
 .home-module-1 {
 
-  @media screen and (min-width: $screen-md-min) {
-    padding: 68px;
+  .bg-wrench {
+    background: url('../img/bg-wrenches.jpg') 0 0 no-repeat;
+    background-size: cover;
+  }
 
-    .extra-padding {
-      padding-right: 50px;
+  .brand {
+    color: $sherpa-brand-primary;
+  }
+
+
+
+
+  @media screen and (min-width: $screen-md-min) {
+
+    .home-right-sidebar {
+      padding-top: 113px;
+      padding-bottom: 113px;
+    }
+
+    .bg-wrench {
+      .extra-padding {
+        padding-top: 133px;
+        padding-bottom: 133px;
+      }
+    }
+
+    h1 {
+      font-size: 29px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 1em;
+      line-height: 1.5em;
+
+      .br {
+        display: block;
+      }
+
+      ul {
+        font-size: 19px;
+        list-style: none;
+        padding-left: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        margin-bottom: 3em;
+      }
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 1em;
+      font-size: 28px;
+    }
+
+    .box {
+      margin-left: 135px;
     }
   }
 
@@ -13,29 +66,114 @@
     font-weight: 300;
     margin-top: 2em;
     margin-bottom: 2em;
+    line-height: 1.85;
   }
 
   h2 {
     font-weight: 400;
   }
 
+  p.light {
+    color: #939292;
+  }
+
   .box {
-    background: #5F6A70;
+    background: url('../img/bg-sidebar.jpg') 0 0 no-repeat;
+    background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 60px 80px;
-    @include dropshadow();
+    padding: 60px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    .btn {
+      padding: .25em 2em .25em .5em;
+      border-radius: 200px 60px 60px 200px;
+      background: rgba(239, 103, 103, 0.79);
+      margin-bottom: 1em;
+      text-transform: none; 
+      font-size: 17px;
+    }
+
+    i {
+      background: $sherpa-brand-primary;
+      border-radius: 60px;
+      @include dropshadow();
+      padding: 1em 1.5em;
+      display: inline-block;
+      margin-right: 2em;
+      font-size: 16px;
+
+      &::before {
+        background: $white;
+        border-radius: 100%;
+        padding: .35em;
+        font-size: 20px;
+        color: $sherpa-brand-primary;
+      }
+    }
 
 
     h2 {
       @include raleway();
       font-size: 27px;
-      font-weight: 300;
+      font-weight: 400;
+      margin-top: 0;
+      line-height: 1.35;
     }
 
     p.blurb {
       color: #BDC4C6;
       font-size: 18px;
     }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+
+    .flex-row {
+      flex-direction: column;
+    }
+
+    h2 {
+      margin-bottom: .5em;
+    }
+
+    .box {
+      margin: 0 20px;
+      padding: 40px;
+      margin-bottom: 2em;
+
+      h2 {
+        font-size: 19px;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      p.blurb {
+        font-size: 14px;
+        margin-bottom: 2em;
+      }
+    }
+
+    
+    p.blurb {
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    h2, h3 {
+      font-size: 19px;
+    }
+
+    text-align: center;
   }
 }

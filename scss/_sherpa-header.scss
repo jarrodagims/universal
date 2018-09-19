@@ -15,7 +15,7 @@
       width: auto;
       margin: 0 auto;
     }
-  } 
+  }
 }
 
 @media screen and (min-width: $screen-sm-min) {
@@ -35,13 +35,13 @@
 
   .menu-primary-container {
     margin: 0 0 0;
-  }  
+  }
 
   .navbar-sherpa .nav > li > a {
-    color: $white; 
-  
+    color: #606060;
+
     &:hover {
-      color: #D2B24E;
+      color: $sherpa-brand-primary;
     }
   }
 
@@ -49,8 +49,6 @@
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     min-height: 0;
-    margin-top: auto;
-    margin-bottom: 20px;
   }
 }
 
@@ -61,37 +59,21 @@
 }
 
 .sub-header {
-  background: #5F6A70 !important;
-  color: #fff; 
+  background: transparent;
+  color: #fff;
   padding: 10px 0;
   position: relative;
   overflow: visible;
-
-   &::before {
-    content: '';
-    width: 100%;
-    height: 5px;
-    position: absolute;
-    top: 0;
-    @include gradient();
-    z-index: 9999;
-   }
 
   .row .v-align {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     position: relative;
-    margin-top: auto;
-
   }
 
-  @media screen and (min-width: $screen-sm-min) {
-    padding: 0 0;
-
-    .v-align {
-      height: 150px;
-    }
+  @media screen and (min-width: $screen-md-min) {
+    padding-top: 48px;
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
@@ -141,6 +123,7 @@
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
     position: absolute;
+    background: transparent;
     z-index: 100;
     width: 100%;
 

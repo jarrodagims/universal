@@ -19,13 +19,13 @@ $color-phone:									$color-rss;
 
 
 // Defaults
-$sherpa-brand-primary:                          #003E7A;
-$sherpa-svg-color:                              fff;
-$sherpa-svg-color-hover:                        D2B24E;
+$sherpa-brand-primary:                          #EF6767;
+$sherpa-svg-color:                              EF6767;
+$sherpa-svg-color-hover:                        f49595;
 $sherpa-dark-color:                             #050505;
 $sherpa-primary-color:							$black;
-$sherpa-secondary-color:						#051A3F;
-$sherpa-tertiary-color:							#D2B24E;
+$sherpa-secondary-color:						#474747;
+$sherpa-tertiary-color:							$sherpa-brand-primary;
 
 $sherpa-alt-font-family:						sans-serif;
 
@@ -63,7 +63,7 @@ $sherpa-navbar-default-toggle-icon-bar-bg:		$white;
 
 // Testimonials
 /// Testimonial A
-$testimonial-a: lighten($black, 45%);
+$testimonial-a: #f9f9f9;
 $testimonial-a-accent: lighten($testimonial-a, 10%);
 $testimonial-a-color: $black;
 $testimonial-a-border-color: $testimonial-a-accent;
@@ -79,3 +79,4 @@ $testimonial-b-border-color: $testimonial-b-accent;
 $sm-color: $white;
 $sm-hover-color: $sm-color;
 $singlecolor: $sherpa-primary-color;
+$link-hover-decoration: none;

@@ -19,8 +19,7 @@ function sherpa_styles() {
     	$main_css_deps[] = 'sherpa_google_fonts';
 	}
 
-
-	wp_register_style( 'font_awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, '4.7.0', 'all' );
+	wp_register_style( 'font_awesome', '//use.fontawesome.com/releases/v5.3.1/css/all.css', false, '5.3.1', 'all' );
 	$main_css_deps[] = 'font_awesome';
 
 

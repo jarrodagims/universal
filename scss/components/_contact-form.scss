@@ -90,6 +90,10 @@
       width: auto;
       margin-left: 1em;  
       padding: 17px !important;
+
+      &:hover {
+        background: $sherpa-brand-primary !important;
+      }
     }
 
     p {

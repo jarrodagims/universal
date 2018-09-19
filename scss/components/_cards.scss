@@ -1,12 +1,91 @@
+@mixin cardSmall() {
+  .card-img {
+      background-image: url('../img/government-commercial.jpg');
+    }
+
+    &.card-2 {
+      .card-img {
+        background-image: url('../img/services-sm.jpg');
+        background-size: cover;
+      }
+    }
+
+    .card-bottom {
+      padding: 1em 3em;
+      
+
+      a .btn {
+        font-size: 10px;
+      }
+    }
+
+      .card-title {
+        font-size: 19px;
+        padding: 1.5em;
+      }
+
+      margin-left: 20px;
+      margin-right: 20px;
+
+
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 9px;
+      }
+
+      .card-text { 
+        padding: 1em;
+
+
+        h3 {
+          margin-top: .5em;
+          margin-bottom: 0;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      h3 {
+        font-size: 14px;
+      }
+
+      img {
+        width: auto;
+        margin: 1em auto;
+      }
+}
+
 .card {
   text-align: center;
   padding: 0 0;
-  -webkit-box-shadow: -1px 1px 13px 2px rgba(204,204,204,1);
-  -moz-box-shadow: -1px 1px 13px 2px rgba(204,204,204,1);
-  box-shadow: -1px 1px 13px 2px rgba(204,204,204,1);
+  @include dropshadow();
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  &.floating {
+    position: absolute;
+  }
+
+  .pager { 
+    margin-top: 1em;
+    font-size: 24px;
+    line-height: 1;
+    cursor: hand;
+
+    color: #808C91;
+
+    span {
+      cursor: pointer;
+    }
+
+    .cycle-pager-active {
+      color: $sherpa-brand-primary;
+    }
+  }
 
   .card-title {
     background: #003E7A;
@@ -14,14 +93,19 @@
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    padding: 32px;
-    font-size: 29px;
+    padding: 36px;
+    font-size: 28px;
     margin: 0 0;
   }
 
   .card-text {
-    padding: 86px 127px 0;
+    padding: 86px 127px 50px;
     flex: 1;
+    background: $white;
+  }
+
+  .alignnone {
+    margin: 0 auto;
   }
 
 
@@ -51,8 +135,19 @@
       display: block;
 
       .btn {
-        padding: 2em;
+        padding: 1.75em;
         width: 100%;
+        letter-spacing: 1px;
+        font-size: 14px;
+
+        &.btn-default {
+          color: $white;
+          background : rgba(255, 255, 255, .25);
+
+          &:hover {
+            background: $sherpa-brand-primary;
+          }
+        }
       }
     }
 
@@ -70,60 +165,15 @@
     }
   }
 
+
   @media screen and (max-width: $screen-sm-max) {
-
-    .card-img {
-      background-image: url('../img/government-commercial.jpg');
-    }
-
-    &.card-2 {
-      .card-img {
-        background-image: url('../img/services-sm.jpg');
-        background-size: cover;
-      }
-    }
-
-      .card-title {
-        font-size: 18px;
-        padding: 1em;
-      }
-
-      .card-bottom {
-        margin-bottom: 2em;
-      }
-
-      .btn {
-        padding: 10px 20px;
-        font-size: 9px;
-      }
-
-      .card-text { 
-        padding-top: 1em;
-
-        h3 {
-          margin-top: .5em;
-          margin-bottom: 0;
-        }
-
-        p {
-          margin-bottom: 0;
-        }
-      }
-
-      h3 {
-        font-size: 14px;
-      }
-
-      p {
-        display: none;
-      }
-
-      img {
-        width: auto;
-        height: 198px;
-      }
-
-    margin-bottom: 2em;
+    @include cardSmall();
   }
+}
 
+
+@media screen and (min-width: $screen-md-min) {
+  .floating-sidebar {
+    position: absolute;
+  }
 }

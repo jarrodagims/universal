@@ -5,9 +5,9 @@
 			the_post();
 			
 			$permalink = get_permalink();
-			
+
 			$sherpa_automatic_h1 = get_option('sherpa_automatic_h1');
-			
+
 			if($sherpa_automatic_h1 == 'y')
 			{
     			if(current_user_can('edit_pages')) {
@@ -28,7 +28,7 @@
             if(get_field('custom_h1')) :
                 echo '<h1>'. get_field('custom_h1', $pageid) . '</h1>';
             else :
-                echo '<h1>' . $title . '</h1>';
+                echo '<h1>' . get_the_title() . '</h1>';
             endif;
             get_sidebar();
             echo "<div class=\"content page-content\">";
@@ -39,7 +39,8 @@
                 echo the_post_thumbnail(array(1060,209));
             else:
                 ?>
-                <img src="<?= IMGURL ?>internal-banner.jpg" alt="Construction Experts" />
+                <p class="banner-text">What We Can Do For You <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-primary">Contact Us Today</button></a></p>
+                <img src="<?= IMGURL ?>internal-banner.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
             <?php
             endif; ?>
             </div>

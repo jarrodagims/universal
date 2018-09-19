@@ -564,6 +564,7 @@ h2.line {
   .flex-col {
     display: flex;
     flex-direction: column;
+    z-index: 1;
     //justify-content: center;
   }
 }
@@ -601,13 +602,13 @@ h2.line {
   }
 }
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
+@media screen and (max-width: $screen-sm-max) {
   p.blurb {
     font-size: 15px;
   }
 
   p {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 3em;
     font-weight: 300;
   }
@@ -710,6 +711,10 @@ input[type="text"]:focus, textarea:focus {
 
 .testim {
   position: relative;
+
+  div {
+    width: 100%;
+  }
 
   .next {
     width: 40px;

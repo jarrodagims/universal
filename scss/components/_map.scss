@@ -20,14 +20,19 @@
       text-decoration: none;
     }
   }
+  .navbar-brand {
+    transform: translateX(-50%) scale(1.15);
+    margin-top: 12px;
+  }
 
   @media screen and (max-width: $screen-sm-min) {
     height: 110px;
+   
   }
 }
 
   #map-section {
-    height: 158px;
+    height: 178px;
 
     &::after {
       content: '';
@@ -50,7 +55,12 @@
     background-size: cover;
   }
 
-    @media screen and (max-width: $grid-float-breakpoint-max) {
+    @media screen and (max-width: $screen-sm-max) {
       height: 125px;
+
+      .navbar-brand {
+        top: 0;
+        margin-top: 0;
+      }
     }
   }
