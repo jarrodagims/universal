@@ -1,6 +1,6 @@
 
 .sidebar-content {
-  margin-top: 45px;
+  margin-top: 80px;
 
   .post-title {
     font-weight: 300;
@@ -46,7 +46,7 @@
 
 body #main .container article #sidebar {
   float: right;
-  width: 319px;
+  width: 456px;
   margin-left: 4em;
   text-align: center;
 
@@ -83,36 +83,9 @@ body #main .container article #sidebar {
 //   z-index: 9999;
   position: relative;
 
-  .icon-row {
-
-    .flex-col { 
-
-      &:nth-child(1n) {
-         a {
-           background: #f9f9f9;
-
-           &:hover {
-             background: $white;
-           }
-         }
-      }
-
-      &:nth-child(4n+1), &:nth-child(4n) {
-          a {
-            background: #fff;
-
-            &:hover {
-              background: #f9f9f9;
-            }
-          }
-      }
-    }
-  }
-
-
   .card {
     @include cardSmall();
-    margin: 2em 0;
+    margin: 0 0 2em;
   }
 
   .bottom-sidebar {
@@ -221,12 +194,14 @@ body #main .container article #sidebar {
 
   p {
     color: #515151;
-    font-size: 15px;
+    font-size: 22px;
     text-align: center;
     margin-bottom: 2em;
+    @include raleway();
 
     strong {
       display: block;
+      font-size: 26px;
     }
   }
 
@@ -254,6 +229,7 @@ body #main .container article #sidebar {
   body #main .container article #sidebar {
     margin-bottom: 2em;
     padding-top: 0;
+    z-index: 99;
   }
 }
 

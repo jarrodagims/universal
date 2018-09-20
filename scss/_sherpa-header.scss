@@ -38,7 +38,7 @@
   }
 
   .navbar-sherpa .nav > li > a {
-    color: #606060;
+    color: #909093;
 
     &:hover {
       color: $sherpa-brand-primary;
@@ -49,12 +49,21 @@
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     min-height: 0;
+
   }
 }
 
 @media screen and (max-width: $grid-float-breakpoint-max) {
   .sub-nav {
     background: none;
+  }
+}
+
+.breadcrumbs {
+  background: #f3f4f6;
+  p {
+    margin: 1em 0;
+    font-size: 12px;
   }
 }
 
@@ -74,6 +83,7 @@
 
   @media screen and (min-width: $screen-md-min) {
     padding-top: 48px;
+    padding-bottom: 20px;
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
@@ -103,13 +113,40 @@
 }
 
 .page-template-default, .blog, .error-404, .post-template-default {
-  .sub-header {
-    background: #F2F2F2;
-    margin-bottom: 100px;
-    @media screen and (max-width: $grid-float-breakpoint-max) {
-      background: $sherpa-dark-color;
-    }
+
+  @media screen and (min-width: $screen-md-min) {
+      .sub-header {
+        padding-top: 20px;
+      }
   }
+
+  @media screen and (min-width: $screen-lg-min) {
+    .navbar-brand > img {
+      width: 619px;
+      height: auto;
+    }
+
+    .navbar-brand {
+      width: 619px;
+      height: auto;
+      margin-left: -160px;
+    }
+
+    .navbar-sherpa {
+      margin-bottom: 16px;
+    }
+
+    .navbar-right {
+      margin-bottom: 16px;
+    }
+
+  }
+  
+    .sub-header {
+      @media screen and (max-width: $grid-float-breakpoint-max) {
+        background: $sherpa-dark-color;
+      }
+    }
 
 }
 

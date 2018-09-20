@@ -24,47 +24,47 @@
         <div class="container">
             <ul class="flex-row">
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/services/mock-trials/">
+                    <a href="<?= SITEURL; ?>/products/plumbing-fixtures/">
                         <?php get_template_part('template-parts/icon', '1'); ?>
                         <div class="title">Plumbing Fixtures</div>
                     </a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/services/focus-groups/">
+                    <a href="<?= SITEURL; ?>/products/water-heaters/">
                         <?php get_template_part('template-parts/icon', '2'); ?>
                         <div class="title">Water Heaters</div></a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/services/jury-selection/">
+                    <a href="<?= SITEURL; ?>/products/piping-and-fitting/">
                         <?php get_template_part('template-parts/icon', '3'); ?>
                         <div class="title">Piping</div></a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/services/post-verdict-research/">
+                    <a href="<?= SITEURL; ?>/products/toilets/">
                         <?php get_template_part('template-parts/icon', '4'); ?>
                         <div class="title">Toilets</div></a></li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/services/attitude-surveys/">
+                    <a href="<?= SITEURL; ?>/products/showers/">
                         <?php get_template_part('template-parts/icon', '5'); ?>
                         <div class="title">Showers</div></a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/services/witness-preparation-and-training/">
+                    <a href="<?= SITEURL; ?>/products/bathtubs/">
                         <?php get_template_part('template-parts/icon', '6'); ?>
                         <div class="title">Tubs</div></a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/services/shadow-jury/">
+                    <a href="<?= SITEURL; ?>/products/heating-and-cooling/">
                         <?php get_template_part('template-parts/icon', '7'); ?>
                         <div class="title">Heating & Cooling</div></a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/services/trial-graphics/">
+                    <a href="<?= SITEURL; ?>/products/power-tools/">
                         <?php get_template_part('template-parts/icon', '8'); ?>
                         <div class="title">Power Tools</div></a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/services/trial-graphics/">
+                    <a href="<?= SITEURL; ?>/products/adhesive/">
                         <?php get_template_part('template-parts/icon', '9'); ?>
                         <div class="title">Adhesives</div></a>
                 </li>
@@ -156,9 +156,9 @@
     <section class="home-module-2">
         <div class="container">
             <div class="flex-row row">
-                <div class="col-xs-12 col-md-6">
-                    <div class="blue-box">
-                        <div class="extra-padding"><h2>Plumbing Supplies, Fixtures and Special Ordering Services</h2></div>
+                <div class="col-xs-12 col-md-6  waypoint">
+                    <div class="blue-box draw">
+                        <div class="extra-padding"><h2>Plumbing Supplies, Fixtures <span class="brand">AND</span> Special Ordering Services</h2></div>
                     </div>
                 </div>
 
@@ -182,7 +182,7 @@
     <div class="container">
         <div class="banner-bottom">
             <p>Check Out Our Vendors</p>
-                <a href="http://pasitos-clinic.agimsweb.com/contact-us/" class="button">
+                <a href="#" class="button">
                     <button class="btn btn-primary">
                         Vendors
                     </button>
@@ -196,10 +196,10 @@
         <div class="row flex-row">
             <div class="col-md-6 flex-col">
 
-                <div class="bg-gray"><h2>Serving El Paso, Las Cruces, Juarez, and Beyond</h2><p class="blurb">As an El Paso-based plumbing supplier, <br /><span class="brand"><strong>C & L Plumbing Supply Co. Inc.</strong></span> has the ability to serve the Sun City as well as the surrounding areas.</p></div>
+                <div class="bg-gray"><h2>Serving El Paso, Las Cruces, <span class="br">Juarez, and Beyond</span></h2><p class="blurb">As an El Paso-based plumbing supplier, <br /><span class="brand"><strong>C & L Plumbing Supply Co. Inc.</strong></span> has the ability to serve the Sun City as well as the surrounding areas.</p></div>
 
                <div class="bg-blue">
-                   <p>Our team is made up of bilingual, bicultural experts who can provide personal advice in order for you to achieve your plumbing goals.</p>
+                   <p class="blurb">Our team is made up of bilingual, bicultural experts who can provide personal advice in order for you to achieve your plumbing goals.</p>
 
                 <p class="small">When it comes to finding a great plumbing supplier, it’s much more than finding a shop that has the right materials. It’s necessary for the supplier to have the right knowledge to answer any questions and the appropriate skill to be trustworthy.  C & L Plumbing Supply Co. Inc. was built on a foundation of trust and customer care. Whether you’re an expert or a do-it-yourselfer, C & L Plumbing Supply Co. Inc. will gladly be your trusted plumbing supplier.</p></div>
             

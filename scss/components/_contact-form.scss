@@ -91,9 +91,6 @@
       margin-left: 1em;  
       padding: 17px !important;
 
-      &:hover {
-        background: $sherpa-brand-primary !important;
-      }
     }
 
     p {
@@ -384,7 +381,7 @@
       color: $white;
 
       &:hover {
-        background: $sherpa-brand-primary;
+        background: #f49595;
         color: $white;
       }
     }

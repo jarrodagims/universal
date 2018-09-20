@@ -18,69 +18,73 @@
                 <div class="container-half">
                     <section class="icon-row">
                             <ul class="flex-row">
-                                <li class="flex-col">
-                                    <a href="<?= SITEURL; ?>/services/mock-trials/">
-                                        <?php get_template_part('template-parts/icon', '1'); ?>
-                                        Mock Trials
-                                    </a>
-                                </li>
-                                <li class="flex-col">
-                                    <a href="<?= SITEURL; ?>/services/focus-groups/">
-                                        <?php get_template_part('template-parts/icon', '2'); ?>
-                                        Focus Groups</a>
-                                </li>
-                                <li class="flex-col">
-                                    <a href="<?= SITEURL; ?>/services/jury-selection/">
-                                        <?php get_template_part('template-parts/icon', '3'); ?>
-                                        Jury Selection</a>
-                                </li>
-                                <li class="flex-col">
-                                    <a href="<?= SITEURL; ?>/services/post-verdict-research/">
-                                        <?php get_template_part('template-parts/icon', '4'); ?>
-                                        Post Verdict <br />Research</a></li>
-                                <li class="flex-col">
-                                    <a href="<?= SITEURL; ?>/services/attitude-surveys/">
-                                        <?php get_template_part('template-parts/icon', '5'); ?>
-                                        Attitude Surveys</a>
-                                </li>
-                                <li class="flex-col">
-                                    <a href="<?= SITEURL; ?>/services/witness-preparation-and-training/">
-                                        <?php get_template_part('template-parts/icon', '6'); ?>
-                                        Witness Preparation</a>
-                                </li>
-                                <li class="flex-col">
-                                    <a href="<?= SITEURL; ?>/services/shadow-jury/">
-                                        <?php get_template_part('template-parts/icon', '7'); ?>
-                                        Shadow Jury</a>
-                                </li>
-                                <li class="flex-col">
-                                    <a href="<?= SITEURL; ?>/services/trial-graphics/">
-                                        <?php get_template_part('template-parts/icon', '8'); ?>
-                                        Trial Graphics</a>
-                                </li>
+                                    <li class="flex-col">
+                                        <a href="<?= SITEURL; ?>/products/plumbing-fixtures/">
+                                            <?php get_template_part('template-parts/icon', '1'); ?>
+                                            Plumbing Fixtures
+                                        </a>
+                                    </li>
+                                    <li class="flex-col">
+                                        <a href="<?= SITEURL; ?>/products/water-heaters/">
+                                            <?php get_template_part('template-parts/icon', '2'); ?>
+                                            Water Heaters</a>
+                                    </li>
+                                    <li class="flex-col">
+                                        <a href="<?= SITEURL; ?>/products/piping-and-fitting/">
+                                            <?php get_template_part('template-parts/icon', '3'); ?>
+                                            Piping</a>
+                                    </li>
+                                    <li class="flex-col">
+                                        <a href="<?= SITEURL; ?>/products/toilets/">
+                                            <?php get_template_part('template-parts/icon', '4'); ?>
+                                            Toilets</a></li>
+                                    <li class="flex-col">
+                                        <a href="<?= SITEURL; ?>/products/showers/">
+                                            <?php get_template_part('template-parts/icon', '5'); ?>
+                                            Showers</a>
+                                    </li>
+                                    <li class="flex-col">
+                                        <a href="<?= SITEURL; ?>/products/bathtubs/">
+                                            <?php get_template_part('template-parts/icon', '6'); ?>
+                                            Tubs</a>
+                                    </li>
+                                    <li class="flex-col">
+                                        <a href="<?= SITEURL; ?>/products/heating-and-cooling/">
+                                            <?php get_template_part('template-parts/icon', '7'); ?>
+                                            Heating & Cooling</a>
+                                    </li>
+                                    <li class="flex-col">
+                                        <a href="<?= SITEURL; ?>/products/power-tools/">
+                                            <?php get_template_part('template-parts/icon', '8'); ?>
+                                            Power Tools</a>
+                                    </li>
+                                    <li class="flex-col">
+                                        <a href="<?= SITEURL; ?>/products/adhesive/">
+                                            <?php get_template_part('template-parts/icon', '9'); ?>
+                                            Adhesives</a>
+                                    </li>
                             </ul>
                     </section>
-
                 </div>
             </div>
         </section>
 
     <section>
         <div class="card">
-            <div class="card-title">Our Client Comments</div>
+            <div class="card-top">
+                <img src="<?= IMGURL; ?>bg-sidebar-top.jpg" alt="Wrench" />
+            </div>
+           <div class="card-text">
+            <p><strong>Plumbing Supply Store</strong>
 
-            <div class="card-bottom transparent">
-                <?php get_template_part('template-parts/testimonial-slider'); ?>
-                <a href="<?= SITEURL; ?>/testimonials/">
-                    <button class="btn btn-default">
-                        Testimonials
-                    </button>
-                </a>
-                <a href="<?= SITEURL; ?>/contact-us/">
-                    <button class="btn btn-primary">
-                        Schedule an Appointment
-                    </button>
-                </a>
+            Your One-Stop Shop for All Your <br />Plumbing Supply Needs</p>
+
+            <a href="#">
+                <button class="btn btn-primary">Get Started</button>
+            </a></div>
+
+            <div class="card-bottom">
+                <a href="/" class="arrow">El Paso’s best supplier</a>
             </div>
         </div>
     </section>

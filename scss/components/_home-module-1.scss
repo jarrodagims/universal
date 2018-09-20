@@ -1,7 +1,7 @@
 .home-module-1 {
 
   .bg-wrench {
-    background: url('../img/bg-wrenches.jpg') 0 0 no-repeat;
+    background: url('../img/bg-wrenches.jpg') right 0 no-repeat;
     background-size: cover;
   }
 
@@ -55,7 +55,7 @@
     }
 
     .box {
-      margin-left: 135px;
+      margin-left: 85px;
     }
   }
 
@@ -81,6 +81,7 @@
     color: #fff;
     text-align: center;
     padding: 60px;
+    padding-bottom: 30px;
     flex: 1;
     display: flex;
     justify-content: flex-end;
@@ -94,8 +95,16 @@
       text-transform: none; 
       font-size: 17px;
 
+      i {
+        transition: transform 300ms ease-in-out;
+      }
+
       &:hover {
         background: $sherpa-brand-primary;
+
+        i {
+          transform: scale(1.25);
+        }
       }
     }
 

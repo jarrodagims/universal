@@ -65,12 +65,21 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="menu-item directions"><a
                                         href="<?php echo get_site_url() ?>/contact-us">Directions</a></a></li>
-                            <li class="menu-item contact"><a href="tel:9728908482">Call</a></li>
+                            <li class="menu-item contact"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>">Call</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<?php if(!is_front_page()) : ?>
+    <section class="breadcrumbs">
+        <div class="container">
+            <?php if ( function_exists('yoast_breadcrumb') ) {
+                yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+            } ?>
+        </div>
+    </section>
+<?php endif; ?>
 
 

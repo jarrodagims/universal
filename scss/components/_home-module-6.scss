@@ -13,7 +13,7 @@
   }
 
   p.blurb {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.5;
     margin-top: .5em;
@@ -45,7 +45,7 @@
   }
 
   .bg-blue, .bg-gray {
-    padding: 4em 0;
+    padding: 6em 0;
     position: relative;
   }
 
@@ -70,6 +70,10 @@
 
     h2 {
       margin-bottom: 1em;
+
+      .br {
+        display: block;
+      }
     }
     text-align: center;
 

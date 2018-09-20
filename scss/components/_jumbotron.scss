@@ -49,6 +49,10 @@
 
     .flex-row {
       height: 100%;
+
+      .flex-col {
+        width: 11.1111%;
+      }
     }
 
     .jumbotron {
@@ -64,10 +68,10 @@
       .btn {
         margin-top: 0;
         transition: transform 0.3s ease-in-out;
-        padding: 1.75em;
+        padding: 1.75em 3em;
         line-height: 1; 
         letter-spacing: 1px;
-        font-size: 14px;
+        font-size: 11px;
         margin-bottom: 2em;
 
         &:hover {
@@ -82,7 +86,7 @@
           font-size: 41px; 
           line-height: 1.45;
           margin-top: 3.5em;
-          margin-bottom: 1em;
+          margin-bottom: 0.5em;
 
           span.br {
             display: block;
@@ -109,7 +113,7 @@
 
     .jumbo-content {
       margin: 0 0;
-      padding: 2.2em 2em 5.2em;
+      padding: 3.8em 2em 7.5em; 
     } 
 
 
