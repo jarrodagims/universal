@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb721c2-176a-4b35-a1f8-3c3538869751" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page-home.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sherpa-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sherpa-mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sherpa-navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_home-module-1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-1.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_icon-row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_icon-row.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_jumbotron.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_sherpa-home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_home-module-2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_home-module-5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-5.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_home-module-6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-6.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_home-module-7.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-7.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +198,7 @@
           <entry key="html" value="359" />
           <entry key="js" value="32" />
           <entry key="json" value="1" />
-          <entry key="php" value="2301" />
+          <entry key="php" value="2417" />
           <entry key="scss" value="606" />
         </counts>
       </usages-collector>
@@ -211,7 +207,7 @@
           <entry key="CSS" value="3" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="32" />
-          <entry key="PHP" value="2301" />
+          <entry key="PHP" value="2417" />
           <entry key="SCSS" value="606" />
           <entry key="Scratch" value="359" />
         </counts>
@@ -223,8 +219,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page-home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="145" column="70" selection-start-line="145" selection-start-column="70" selection-end-line="145" selection-end-column="70" />
+            <state relative-caret-position="220">
+              <caret line="227" column="87" selection-start-line="227" selection-start-column="87" selection-end-line="227" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -321,8 +317,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>banner</find>
-      <find>working with</find>
       <find>why choose</find>
       <find>&lt;?= SITEURL; ?&gt;/</find>
       <find>button</find>
@@ -351,6 +345,8 @@
       <find>el Paso's</find>
       <find>ex[amder</find>
       <find>plumbing supplier</find>
+      <find>we</find>
+      <find>we''</find>
     </findStrings>
     <replaceStrings>
       <replace>$color</replace>
@@ -697,12 +693,12 @@
       <workItem from="1536761700049" duration="6458000" />
       <workItem from="1536784806934" duration="965000" />
       <workItem from="1536938969908" duration="169000" />
-      <workItem from="1537289269677" duration="45698000" />
+      <workItem from="1537289269677" duration="46993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1167375000" />
+    <option name="totallyTimeSpent" value="1168670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="972" y="23" width="1588" height="1417" extended-state="0" />
@@ -1095,8 +1091,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page-home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="145" column="70" selection-start-line="145" selection-start-column="70" selection-end-line="145" selection-end-column="70" />
+        <state relative-caret-position="220">
+          <caret line="227" column="87" selection-start-line="227" selection-start-column="87" selection-end-line="227" selection-end-column="87" />
         </state>
       </provider>
     </entry>

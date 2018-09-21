@@ -4,4 +4,13 @@
   h2 {
     margin-bottom: 1em;
   }
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding: 0 0 2em 0;
+
+    h2 {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
 }

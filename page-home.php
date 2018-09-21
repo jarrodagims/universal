@@ -151,10 +151,10 @@
 
             </div>
             <div class="col-md-6">
-                <h2>One Source for Every Commercial and Residential <span class="brand">Plumbing Supply Need</span></h2>
+                <div class="extra-padding"><h2>One Source for Every Commercial and Residential <span class="brand">Plumbing Supply Need</span></h2>
                 <p class="blurb">Whether you’re a professional plumber who requires a reliable supplier or a homeowner who needs to replace a leaky faucet, C & L Plumbing Supply Co. Inc. can help.</p>
                 <p>First and foremost, we are a plumbing supplier for El Paso and the surrounding areas. Since we offer everything you could ever require, your next plumbing project will proceed accordingly.
-                </p>
+                </p></div>
             </div>
         </div>
     </div>
@@ -225,6 +225,7 @@
 </section>
 
 <section class="home-module-7">
+    <img src="<?= IMGURL ?>bg-sink-small.jpg" alt="Sink" class="visible-xs visible-sm" />
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
