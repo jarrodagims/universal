@@ -75,7 +75,11 @@
     </div> <!-- end home-bg -->
 
     <section class="home-module-1">
+
+        <img src="<?= IMGURL ?>bg-wrench-small.jpg" alt="Plumbing Supply Store" class="visible-xs">
+
         <div class="bg-wrench">
+
             <div class="container"><div class="row flex-row">
                 <div class="col-md-6">
                    <div class="extra-padding"> <div class="text-center"><h1>Plumbing Supply Store</h1>

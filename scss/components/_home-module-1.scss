@@ -3,6 +3,10 @@
   .bg-wrench {
     background: url('../img/bg-wrenches.jpg') right 0 no-repeat;
     background-size: cover;
+
+    @media screen and (max-width: $screen-sm-max) {
+      background: none;
+    }
   }
 
   .brand {

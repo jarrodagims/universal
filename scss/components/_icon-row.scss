@@ -49,6 +49,7 @@
         font-weight: 500;
         padding: 24px 0;
         color: $white;
+        
 
         svg {
           height: 50px;
@@ -291,37 +292,15 @@ body #main .container article #sidebar {
 
       .flex-row {
           flex-wrap: wrap;
-          margin-bottom: 2em;
 
           li.flex-col {
-            width: 25%;
 
-            svg {
-              max-height: 20px;
-            }
-            &:nth-child(1n) {
-                a {
-                  background: #f9f9f9;
-
-                  &:hover {
-                    background: $white;
-                  }
-                }
+            .title {
+              background: transparent;
             }
 
-
-
-            &:nth-child(8n+1),
-            &:nth-child(8n+3),
-            &:nth-child(8n+6),
-            &:nth-child(8n+8) {
-                a {
-                  background-color: $white;
-
-                  &:hover {
-                    background: #f9f9f9;
-                  }
-                }
+            a {
+              padding-bottom: 0;
             }
           }
         }

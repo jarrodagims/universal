@@ -72,15 +72,7 @@
     // Remove background color from open dropdown
 
 
-    @media (max-width: $screen-sm-max) {
-
-      > .open > a {
-        &,
-        &:hover,
-        &:focus {
-          background-color: transparent;
-        }
-      }
+    @media (max-width: $grid-float-breakpoint-max) {
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {
@@ -88,7 +80,7 @@
           &:hover,
           &:focus {
             color: $white;
-            background-color: $sherpa-brand-primary;
+            background-color: $sherpa-navbar-default-link-hover-bg;
           }
         }
         > .active > a {
@@ -96,7 +88,7 @@
           &:hover,
           &:focus {
             color: $white;
-            background-color: $sherpa-brand-primary;
+            background-color: $sherpa-navbar-default-link-active-bg;
           }
         }
         > .disabled > a {
@@ -104,7 +96,7 @@
           &:hover,
           &:focus {
             color: $white;
-            background-color: $sherpa-brand-primary;
+            background-color: $sherpa-navbar-default-link-disabled-bg;
           }
         }
       }
@@ -150,8 +142,6 @@
 
   @media screen and (min-width: $grid-float-breakpoint-max) {
     padding-top: 18px;
-
-
   }
 }
 
@@ -229,11 +219,19 @@
   .navbar-nav {
     > li > a {
       color: $white !important;
+
+      &::before {
+        display: none;
+      }
     }
 
     .dropdown-menu {
       text-align: center;
     }
+  }
+
+  .navbar-brand img {
+    height: 24px;
   }
 
   .top-header {
@@ -268,11 +266,6 @@
     }
   }
 
-
-
-
-
-
   .admin-bar {
     .top-header {
       top: 46px;
@@ -295,7 +288,6 @@
 
   .menu-primary-container {
     overflow: hidden;
-    margin-top: 100px;
   }
 
   .navbar-nav {
@@ -315,7 +307,6 @@
 
     .dropdown-menu {
       background: transparent;
-      display: block !important;
       width: 100%;
       position: relative;
       padding-bottom: 20px;
@@ -338,12 +329,11 @@
     }
 
     .navbar-toggle {
-      z-index: 9999;
-      border: 0;
-      margin-right: 25px;
       position: absolute;
-      top: 0px;
-      left: 0;
+      top: 50px;
+      right: 0;
+      z-index: 10;
+      border: 0;
 
 
       .icon-bar {
@@ -352,9 +342,76 @@
     }
   }
 
+  .navbar-sherpa {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 99;
+    top: 53px;
+    position: absolute;
+    width: 100%;
+
+    .dropdown-menu {
+      background: transparent;
+      width: 100%;
+      position: relative;
+      padding-bottom: 20px;
+
+      li a:hover,
+      li a:focus {
+        background: $sherpa-brand-primary;
+        color: #fff;
+      }
+    }
+    .navbar-collapse,
+    .navbar-collapse.in {
+      background: #959EAC;
+      border: 0;
+      margin-top: -4px;
+
+
+      .navbar-nav > li > a {
+        color: #fff;
+
+        a::before {
+          display: none;
+          margin: 0 0;
+        }
+      }
+    }
+
+    .navbar-collapse.in,
+    .navbar-collapse {
+      padding: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+    }
+
+    .navbar-toggle {
+      position: absolute;
+      right: 0;
+      z-index: 10;
+      border: 0;
+      top: 0;
+
+      .icon-bar {
+        height: 3px;
+        width: 24px;
+      }
+
+      &[aria-expanded="true"] {
+        .icon-bar {
+          background: #fff;
+        }
+      }
+    }
+  }
+
   .navbar-right {
-    //     right: 0;
-    //     position: absolute;
+    right: 0;
+    position: absolute;
+    margin: 0 0;
 
     li.menu-item {
 
@@ -386,10 +443,6 @@
         padding: 0;
       }
     }
-
-    margin-right: 0;
-    width: 100%;
-
   }
 
   .navbar-collapse {
@@ -398,6 +451,39 @@
   }
 
 }
+
+@media (max-width: $grid-float-breakpoint-max) {
+ 
+
+ 
+  .dropdown-menu {
+    box-shadow: none;
+    border: 0;
+
+  }
+
+  .navbar-sherpa {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 99;
+
+    .dropdown-menu {
+      background: transparent;
+      width: 100%;
+      position: relative;
+      padding-bottom: 20px;
+
+      li a:hover,
+      li a:focus {
+        background: $sherpa-brand-primary;
+        color: #fff;
+      }
+    }
+  }
+
+}
+
 
 
 @media screen and (min-width: $screen-sm-min) {
@@ -539,7 +625,7 @@
 
 @media screen and (min-width: $screen-sm-min) {
   .navbar-sherpa li.menu-item {
-    
+
     a::before {
       content: " ";
       margin: 0 0;

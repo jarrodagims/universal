@@ -33,9 +33,9 @@
     padding: 0 0 0;
   }
 
-  .menu-primary-container {
-    margin: 0 0 0;
-  }
+//   .menu-primary-container {
+//     margin: 0 0 0;
+//   }
 
   .navbar-sherpa .nav > li > a {
     color: #909093;
@@ -49,7 +49,6 @@
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     min-height: 0;
-
   }
 }
 
@@ -89,7 +88,6 @@
   @media screen and (max-width: $grid-float-breakpoint-max) {
     padding: 0 0;
     z-index: 1;
-    background: $sherpa-dark-color;
 
     .sub-header.top-header {
       background: $sherpa-dark-color;
@@ -101,12 +99,10 @@
       align-items: center;
 
       .navbar-brand {
-        align-self: flex-start;
-        margin-top: 10px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90px;
+        float: left;
+        padding: 15px 15px;
+        font-size: 18px;
+        line-height: 20px;
       }
     }
   }
@@ -141,7 +137,7 @@
     }
 
   }
-  
+
     .sub-header {
       @media screen and (max-width: $grid-float-breakpoint-max) {
         background: $sherpa-dark-color;
