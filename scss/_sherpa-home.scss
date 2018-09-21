@@ -664,6 +664,11 @@ h2.line {
 @media screen and (max-width: $grid-float-breakpoint-max) {
   .expand {
     display: none;
+    margin-bottom: 2em;
+
+    li {
+      margin-bottom: 1em;
+    }
 
     &.active {
       display: block;

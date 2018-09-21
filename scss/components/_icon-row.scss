@@ -259,11 +259,17 @@
   @media screen and (max-width: $screen-sm-max) {
     @include icon-small();
     background: #959EAC;
+
+    
     
 
     .flex-row {
       &::before {
         display: none;
+      }
+
+      .flex-col {
+        border-left: 0;
       }
     }
   }
