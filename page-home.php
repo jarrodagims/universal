@@ -95,25 +95,26 @@
                 </div>
             </div></div>
         </div>
+        <div class="expander visible-xs visible-sm" data-target="#expand"><a href="#" class="arrow">El Paso’s best supplier</a></div>
         <div class="container home-right-sidebar">
 
             <div class="row flex-row">
                 <div class="col-md-6">
                     <div class="extra-padding">
 
-                    <h2>
+                    <h2 class="no-margin">
                         <ul>
-                            <li>El Paso’s best supplier since 1972!</li>
-                            <li>Top rated plumbing supplier, year after year</li>
+                            <li class="hidden-xs hidden-sm">El Paso’s best supplier since 1972!</li>
+                            <div class="expand" id="expand"><li>Top rated plumbing supplier, year after year</li>
                             <li>Highly reviewed customer service and assistance</li>
                             <li>Affordable supplies for residential and commercial needs</li>
                             <li>Local company ready to help the community thrive</li>
                             <li>Read our reviews and see what our happy customers have to say about us!</li>
-                            <li>Contact us online and we’ll answer your questions quickly!</li>
+                            <li>Contact us online and we’ll answer your questions quickly!</li></div>
                         </ul>
                     </h2>
 
-                    <h2>El Paso’s Go-To Residential and <br />Commercial <span class="brand">Plumbing Supplier</span></h2>
+                        <h2 class="larger">El Paso’s Go-To Residential and <span class="br-md">Commercial <span class="brand">Plumbing Supplier</span></span></h2>
 
 
                     <p class="blurb">Since 1972, C & L Plumbing Supply Co. Inc. has been El Paso’s go-to source for every residential and commercial plumbing supply need.</p>
@@ -142,6 +143,8 @@
     </section>
 
 <section class="home-module-5">
+    <img src="<?=IMGURL ?>bg-mid-banner-small.jpg" class="visible-xs" alt="Wrenches" />
+
     <div class="container">
         <div class="row flex-row">
             <div class="col-md-6">

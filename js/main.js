@@ -20,6 +20,12 @@
           });
       });
 
+      $('.expander').click(function (event) {
+          event.preventDefault();
+          $($(this).data("target")).slideToggle();
+          $(this).toggleClass('expanded');
+      });
+
   });
 
 })(jQuery);

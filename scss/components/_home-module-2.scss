@@ -66,9 +66,10 @@
 
   @media screen and (max-width: $screen-sm-max) {
     .extra-padding {
-      margin: 40px 20px;
+      margin: 40px 0 0;
       padding: 2em;
       text-align: center;
+      margin-top: 0;
 
       p {
         margin-bottom: 2em;

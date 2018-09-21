@@ -77,6 +77,8 @@
       .open .dropdown-menu {
         > li > a {
           color: $white;
+          padding: 1em 0;
+          
           &:hover,
           &:focus {
             color: $white;
@@ -365,7 +367,7 @@
     }
     .navbar-collapse,
     .navbar-collapse.in {
-      background: #959EAC;
+      background: #474747;
       border: 0;
       margin-top: -4px;
 
@@ -390,7 +392,7 @@
 
     .navbar-toggle {
       position: absolute;
-      right: 0;
+      right: 20px;
       z-index: 10;
       border: 0;
       top: 0;
@@ -409,7 +411,7 @@
   }
 
   .navbar-right {
-    right: 0;
+    right: 20px;
     position: absolute;
     margin: 0 0;
 
@@ -806,6 +808,12 @@
   padding-left: 0;
   a {
     margin-left: .75em;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    a {
+      margin-left: 0.5em;
+    }
   }
 }
 

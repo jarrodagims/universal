@@ -38,7 +38,7 @@
     }
 
     .btn {
-      margin-top: 2em;
+      margin-top: 2.5em;
       padding: 2em 3.5em;
       @include dropshadow();
     }
@@ -119,20 +119,30 @@
 
 
     @media screen and (max-width: $screen-sm-max) {
+
+      background: none;
+
       .jumbotron {
         width: 100%;
         padding-top: 50px;
+        background: url('../img/bg-hero-small.jpg') 0 0 no-repeat;
+        background-size: cover;
+
+
+        .jumbo-content { 
+          padding: 7.5em 2em 9em;
+        }
 
         .btn {
           font-size: 10px;
-          padding: 1em;
+          padding: 1.5em 3em;
         }
         
           h1 {
-          font-size: 1.25em;
           line-height: 1.25;
           margin: 0 0; 
           font-weight: 300;
+          font-size: 26px;
 
           .title {
             margin-bottom: .5em;

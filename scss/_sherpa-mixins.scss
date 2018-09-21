@@ -25,3 +25,32 @@
 	}
 }
 
+@mixin expander($background) {
+	background: #1E3151;
+	color: $white;
+	text-align: left;
+	font-size: 24px;
+	padding: 0;
+
+	a {
+		padding: 1.5em 1.5em;
+		position: relative;
+
+		&::after {
+			@include svg-arrow(FFFFFF);
+			content: '';
+			display: block;
+			height: 32px;
+			width: 32px;
+			position: absolute;
+			right: 1.5em;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	a .btn {
+		font-size: 10px;
+	}
+}
+

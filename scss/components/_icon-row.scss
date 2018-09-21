@@ -45,9 +45,9 @@
 
       a {
         background: #959EAC;
-        font-size: 9px;
+        font-size: 11px;
         font-weight: 500;
-        padding: 24px 0;
+        padding: 24px 0 10px;
         color: $white;
         
 
@@ -297,10 +297,6 @@ body #main .container article #sidebar {
 
             .title {
               background: transparent;
-            }
-
-            a {
-              padding-bottom: 0;
             }
           }
         }

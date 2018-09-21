@@ -98,9 +98,11 @@
       text-align: center;
       align-items: center;
 
+      
+
       .navbar-brand {
         float: left;
-        padding: 15px 15px;
+        padding: 15px 15px 15px 20px;
         font-size: 18px;
         line-height: 20px;
       }
@@ -138,11 +140,7 @@
 
   }
 
-    .sub-header {
-      @media screen and (max-width: $grid-float-breakpoint-max) {
-        background: $sherpa-dark-color;
-      }
-    }
+    
 
 }
 

@@ -274,6 +274,19 @@ h2.line {
     margin-right: 1em;
   }
 
+  @media screen and (max-width: $screen-sm-max) {
+    flex-direction: column;
+    background: url('../img/bg-headless.jpg') 0 0 no-repeat;
+    background-size: cover;
+
+    p {
+      margin-right: 0;
+      line-height: 1.5;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+  }
 }
 
 #services-bubbles {
