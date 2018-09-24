@@ -14,7 +14,7 @@
                                     ); ?>"/></a>
                     </div>
                     <div class="contact-footer phone-footer">
-                        <div><span class="title">CONTACT</span>
+                        <div><span class="title">Contact</span>
                             <p>528 Satellite Dr.<br />
                                 El Paso, TX 79912<br />
                                 <strong>PH</strong>. 972.890.8482
@@ -22,7 +22,7 @@
                     </div>
                     <div class="hours-footer">
                         <div>
-                            <span class="title">HOURS</span>
+                            <span class="title">Hours</span>
                             <p>Monday - Friday: <br /><strong>8:30am - 6:00pm</strong><br />
                                 Saturday - Sunday: <strong>Closed</strong><br />
                         </div>
@@ -30,10 +30,16 @@
                     <div class="button-footer">
                         <div><span class="title hidden-xs">&nbsp;</span>
                             <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-primary">
-                                    Schedule an Appointment
+                                    Contact Us today
                                 </button></a>
                         </div>
                     </div>
+
+                    <?php $sm = new SocialMedia(array('facebook', 'twitter'));
+                    $sm->setSize('sm');
+                    $sm->showNetworkButtons();
+                    $sm->setColorType('singleColor');
+                    ?>
                 </div>
             </div>
     </div>

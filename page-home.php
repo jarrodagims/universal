@@ -84,7 +84,7 @@
                 <div class="col-md-6">
                    <div class="extra-padding"> <div class="text-center"><h1>Plumbing Supply Store</h1>
                     <h2>Your One-Stop Shop for All Your <span class="br">Plumbing Supply Needs</span></h2>
-                    <a href="#">
+                    <a href="<?= SITEURL ?>/contact-us/">
                         <button class="btn btn-primary">
                             Get Started
                         </button>
@@ -129,11 +129,11 @@
                     <div class="box">
                         <h3>Plumbing Supply Store</h3>
                         
-                        <a href="#">
+                        <a href="<?= SITEURL ?>/about-us/">
                             <button class="btn btn-primary"><i class="fas fa-check"></i> Residential</button>
                         </a>
 
-                        <a href="#">
+                        <a href="<?= SITEURL ?>/about-us/">
                             <button class="btn btn-primary"><i class="fas fa-check"></i> Commercial</button>
                         </a>
                     </div>
@@ -188,8 +188,8 @@
 <section class="home-module-3">
     <div class="container">
         <div class="banner-bottom">
-            <p>Check Out Our Vendors</p>
-                <a href="#" class="button">
+            <p>Check Out <span class="br-xs">Our Vendors</span></p>
+                <a href="<?= SITEURL ?>/about-us/" class="button">
                     <button class="btn btn-primary">
                         Vendors
                     </button>
@@ -206,9 +206,11 @@
                 <div class="bg-gray"><h2>Serving El Paso, Las Cruces, <span class="br">Juarez, and Beyond</span></h2><p class="blurb">As an El Paso-based plumbing supplier, <br /><span class="brand"><strong>C & L Plumbing Supply Co. Inc.</strong></span> has the ability to serve the Sun City as well as the surrounding areas.</p></div>
 
                <div class="bg-blue">
-                   <p class="blurb">Our team is made up of bilingual, bicultural experts who can provide personal advice in order for you to achieve your plumbing goals.</p>
+                   <div class="extra-padding"><p class="blurb">Our team is made up of bilingual, bicultural experts who can provide personal advice in order for you to achieve your plumbing goals.</p>
 
                 <p class="small">When it comes to finding a great plumbing supplier, it’s much more than finding a shop that has the right materials. It’s necessary for the supplier to have the right knowledge to answer any questions and the appropriate skill to be trustworthy.  C & L Plumbing Supply Co. Inc. was built on a foundation of trust and customer care. Whether you’re an expert or a do-it-yourselfer, C & L Plumbing Supply Co. Inc. will gladly be your trusted plumbing supplier.</p></div>
+
+               </div>
             
             </div>
             <div class="col-md-6 flex-col">
@@ -229,9 +231,9 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <div class="text-center"><h2>We’re Ready to Be Your Plumbing Supplier!</h2>
+                <div class="extra-padding"><div class="text-center"><h2>We’re Ready to Be Your Plumbing Supplier!</h2>
                 <p>When you make C & L Plumbing Supply Co. Inc. your go-to plumbing supply store, you’ll never have to worry when a plumbing disaster strikes. We will be here, ready to provide exactly what you need. Contact our team today to learn more about what we have to offer. Before long, your next plumbing project will be underway. Let C & L Plumbing Supply Co. Inc. help you achieve greatness!
-                </p></div>
+                </p></div></div>
             </div>
         </div>
     </div>

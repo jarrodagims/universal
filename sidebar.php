@@ -79,12 +79,12 @@
 
             Your One-Stop Shop for All Your <br />Plumbing Supply Needs</p>
 
-            <a href="#">
+            <a href="<?= SITEURL ?>/contact-us/">
                 <button class="btn btn-primary">Get Started</button>
             </a></div>
 
             <div class="card-bottom">
-                <a href="/" class="arrow">El Paso’s best supplier</a>
+                <a href="<?= SITEURL ?>/contact-us/" class="arrow">El Paso’s best supplier</a>
             </div>
         </div>
     </section>

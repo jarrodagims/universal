@@ -6,11 +6,13 @@
   }
 
   @media screen and (max-width: $screen-sm-max) {
-    padding: 0 0 2em 0;
+    padding: 0 0 4em 0;
 
     h2 {
-      font-size: 18px;
+      font-size: 22px;
       line-height: 1.5;
+      margin-top: 2em;
+
     }
 
     p {

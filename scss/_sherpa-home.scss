@@ -278,6 +278,8 @@ h2.line {
     flex-direction: column;
     background: url('../img/bg-headless.jpg') 0 0 no-repeat;
     background-size: cover;
+    margin-left: -15px;
+    margin-right: -15px;
 
     p {
       margin-right: 0;
@@ -287,6 +289,9 @@ h2.line {
       margin-bottom: 1em;
     }
 
+    .br-xs {
+      display: block;
+    }
   }
 }
 
@@ -633,7 +638,7 @@ h2.line {
 
 @media screen and (max-width: $screen-sm-max) {
   p.blurb {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   p {
@@ -808,4 +813,10 @@ input[type="text"]:focus, textarea:focus {
 
 span.brand {
   color: $sherpa-brand-primary;
+}
+
+@media screen and (max-width: $grid-float-breakpoint-max) {
+  .br-xs {
+    display: block;
+  }
 }

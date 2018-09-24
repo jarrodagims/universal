@@ -16,11 +16,8 @@
   }
 
   .btn {
-    padding: 20px 30px;
     width: 100%;
     letter-spacing: 1px;
-
-    
   }
 
 
@@ -302,7 +299,10 @@
 
     .phone-footer {
       margin-top: 2em;
+    }
 
+    .hours-footer {
+      margin-bottom: 2em;
     }
 
     span.title {
@@ -355,6 +355,18 @@
   @media screen and (max-width: $screen-sm-max) {
     .flex-row {
       flex-direction: column;
+    }
+
+    .title {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    .btn {
+      margin-top: 2em;
     }
   }
 }
@@ -437,8 +449,6 @@
 @media screen and (max-width: $screen-sm-max) {
 
   #sub-footer {
-    background: #050505;
-    color: $white;
     font-size: 10px;
     padding: 1em 0;
     text-align: center;
@@ -467,7 +477,8 @@
     }
 
     .navbar-brand {
-      height: auto;
+
+      margin-bottom: 2em;
 
       img {
         margin: 0 auto;
@@ -479,6 +490,7 @@
 
     span.title {
       margin: 0 0 .5em 0;
+      text-transform: none;
     }
 
     .navbar-brand {
@@ -488,6 +500,7 @@
       img {
         width: auto;
         margin: 0 auto;
+        width: 196px;
       }
     }
   }
@@ -513,7 +526,6 @@
 
     .btn {
       font-size: 9px;
-      padding: 14px 18px;
       margin-bottom: 28px;
       width: auto;
       @include nodropshadow();
