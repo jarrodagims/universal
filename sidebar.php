@@ -30,7 +30,7 @@
                                             Water Heaters</a>
                                     </li>
                                     <li class="flex-col">
-                                        <a href="<?= SITEURL; ?>/products/piping-and-fitting/">
+                                        <a href="<?= SITEURL; ?>/products/piping-and-fittings/">
                                             <?php get_template_part('template-parts/icon', '3'); ?>
                                             Piping</a>
                                     </li>

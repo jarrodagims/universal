@@ -7,6 +7,7 @@
             <div class="flex-row row">
                 <div class="col-xs-12 flex-col">
                     <div class="logo-footer">
+                        <span class="title hidden-xs">&nbsp;</span>
                         <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
                                     src="<?= IMGURL; ?>logo.svg"
                                     alt="<?php echo get_bloginfo(
@@ -15,16 +16,18 @@
                     </div>
                     <div class="contact-footer phone-footer">
                         <div><span class="title">Contact</span>
-                            <p>528 Satellite Dr.<br />
-                                El Paso, TX 79912<br />
-                                <strong>PH</strong>. 972.890.8482
+                            <p>4300 Rosa St.<br />
+                                El Paso, TX 79915<br />
+                                <strong>PH</strong>.  (915) 532-3917
                             </p></div>
                     </div>
                     <div class="hours-footer">
                         <div>
                             <span class="title">Hours</span>
-                            <p>Monday - Friday: <br /><strong>8:30am - 6:00pm</strong><br />
-                                Saturday - Sunday: <strong>Closed</strong><br />
+                            <p>Monday - Thursday: <strong>7:30am - 4:00pm</strong><br />
+                                Friday: <strong>7:30am - 3:30pm</strong><br />
+                                Saturday & Sunday: <strong>Closed</strong>
+                            </p>
                         </div>
                     </div>
                     <div class="button-footer">

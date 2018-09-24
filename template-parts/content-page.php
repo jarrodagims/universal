@@ -40,7 +40,7 @@
             else:
                 ?>
                 <p class="banner-text">What We Can Do For You <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-primary">Contact Us Today</button></a></p>
-                <img src="<?= IMGURL ?>internal-banner.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
+                <img class="visible-xs" src="<?= IMGURL ?>bg-mid-banner.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
             <?php
             endif; ?>
             </div>

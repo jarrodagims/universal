@@ -6,12 +6,27 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
+    @media screen and (min-width: $screen-md-min) {
+      margin-top: 100px;
+    }
+
     img {
       border: 1px solid $sherpa-brand-primary;
+      height: 214px;
     }
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {
+
+    
+
+    &.blog #main, &.post-template-default #main {
+      img {
+        height: auto;
+      }
+    }
+
+
     .flex-order {
       display: flex;
       flex-direction: column;
@@ -200,6 +215,13 @@ body {
           overflow: hidden;
           text-align: center;
           margin: 0 auto;
+          background-size: cover;
+
+          @media screen and (min-width: $screen-md-min) {
+
+            height: 250px;
+
+          }
 
           .banner-text {
             z-index: 1;

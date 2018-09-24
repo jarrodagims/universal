@@ -35,7 +35,7 @@
                         <div class="title">Water Heaters</div></a>
                 </li>
                 <li class="flex-col">
-                    <a href="<?= SITEURL; ?>/products/piping-and-fitting/">
+                    <a href="<?= SITEURL; ?>/products/piping-and-fittings/">
                         <?php get_template_part('template-parts/icon', '3'); ?>
                         <div class="title">Piping</div></a>
                 </li>
