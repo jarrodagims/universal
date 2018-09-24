@@ -18,7 +18,13 @@
                         <div><span class="title">Contact</span>
                             <p>4300 Rosa St.<br />
                                 El Paso, TX 79915<br />
-                                <strong>PH</strong>.  (915) 532-3917
+                                <strong>PH</strong>.  <?php if (!empty(get_option('sherpa_telephone_number'))) :
+                                    $num = get_option('sherpa_telephone_number');
+                                    $area = substr($num, 0, 3);
+                                    $first = substr($num, 3, 3);
+                                    $last = substr($num, 6, 4);
+                                    echo "(". $area . ") " . $first . "-" . $last;
+                                    endif; ?>
                             </p></div>
                     </div>
                     <div class="hours-footer">
