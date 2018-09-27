@@ -7,7 +7,6 @@
             <div class="flex-row row">
                 <div class="col-xs-12 flex-col">
                     <div class="logo-footer">
-                        <span class="title hidden-xs">&nbsp;</span>
                         <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
                                     src="<?= IMGURL; ?>logo.svg"
                                     alt="<?php echo get_bloginfo(
@@ -16,7 +15,7 @@
                     </div>
                     <div class="contact-footer phone-footer">
                         <div><span class="title">Contact</span>
-                            <p>4300 Rosa St.<br />
+                            <p>6821 Market Ave.<br />
                                 El Paso, TX 79915<br />
                                 <strong>PH</strong>.  <?php if (!empty(get_option('sherpa_telephone_number'))) :
                                     $num = get_option('sherpa_telephone_number');
@@ -30,16 +29,27 @@
                     <div class="hours-footer">
                         <div>
                             <span class="title">Hours</span>
-                            <p>Monday - Thursday: <strong>7:30am - 4:00pm</strong><br />
-                                Friday: <strong>7:30am - 3:30pm</strong><br />
-                                Saturday & Sunday: <strong>Closed</strong>
+                            <p>Monday - Friday: <strong>8:00am - 4:00pm</strong><br />
+                                Saturday: <strong>8:00am - 3:00pm</strong><br />
+                                Sunday: <strong>Closed</strong>
                             </p>
                         </div>
                     </div>
+                    <div class="bbb-footer">
+                        <img
+                                src="<?= IMGURL; ?>bbb.png"
+                                alt="<?php echo get_bloginfo(
+                                    'description'
+                                ); ?>"/>
+                    </div>
                     <div class="button-footer">
-                        <div><span class="title hidden-xs">&nbsp;</span>
+                        <div>
+                            <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-default">
+                                    Contact Us
+                                </button></a>
+
                             <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-primary">
-                                    Contact Us today
+                                    Free Estimates
                                 </button></a>
                         </div>
                     </div>

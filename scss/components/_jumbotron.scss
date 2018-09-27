@@ -1,12 +1,10 @@
 .landing-bg {
-  
+  background: url('../img/bg-home.jpg') center top no-repeat;
+  background-size: cover;
 }
 
 #home-main {
   position: relative;
-  background-size: cover;
-  background: url('../img/bg-home.jpg') center top no-repeat;
-  background-size: cover;
   z-index: 0;
 
 .container-fluid {
@@ -21,7 +19,7 @@
   .jumbotron {
 
     h1 {
-      color: $white;
+      color: #000;
       margin-top: 0;
       text-shadow: none !important;
 
@@ -40,7 +38,6 @@
     .btn {
       margin-top: 2.5em;
       padding: 2em 3.5em;
-      @include dropshadow();
     }
   }
 
@@ -68,15 +65,15 @@
 
       .btn {
         margin-top: 0;
-        transition: transform 0.3s ease-in-out;
         padding: 1.75em 3em;
         line-height: 1; 
         letter-spacing: 1px;
         font-size: 11px;
         margin-bottom: 2em;
+        width: 20em;
 
-        &:hover {
-          transform: scale(1.2);
+        &.btn-default {
+          margin-right: 20px;
         }
       }
 
@@ -91,6 +88,17 @@
 
           span.br {
             display: block;
+            font-size: 22px;
+
+            &::before {
+              content: '// ';
+              opacity: 0.5;
+            } 
+
+            &::after {
+              content: ' //';
+              opacity: 0.5;
+            }
           }
           
           .btn {

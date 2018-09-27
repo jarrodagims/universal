@@ -6,44 +6,25 @@
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-headless.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-hero-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-home.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-mid-banner-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-mid-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-sidebar-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-sidebar-top.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-sidebar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-sink-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-square.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-wrench-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-wrenches.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/3-star-rating.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/4-star-rating.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/5-star-rating.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/agi-cool.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-headless.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-hero-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-home.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-mid-banner-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-mid-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-sidebar-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-sidebar-top.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-sidebar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-sink-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-square.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-wrench-small.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/bg-wrenches.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/no-profile-pic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/build/placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-home.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_sherpa-buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sherpa-variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_sherpa-footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_sherpa-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_sherpa-home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_sherpa-navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_home-module-1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-1.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_home-module-2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-2.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_home-module-3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-3.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_home-module-4.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-4.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_home-module-5.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-5.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_icon-row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_icon-row.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_jumbotron.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_map.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.css.map" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -252,34 +233,45 @@
     <session id="-442955598">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="scss" value="1" />
+          <entry key="js" value="1" />
+          <entry key="php" value="4" />
+          <entry key="scss" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="SCSS" value="1" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PHP" value="4" />
+          <entry key="SCSS" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="19" />
-          <entry key="php" value="99" />
-          <entry key="scss" value="1" />
+          <entry key="js" value="718" />
+          <entry key="json" value="5" />
+          <entry key="php" value="2362" />
+          <entry key="scss" value="903" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="19" />
-          <entry key="PHP" value="99" />
-          <entry key="SCSS" value="1" />
+          <entry key="JSON" value="5" />
+          <entry key="JavaScript" value="718" />
+          <entry key="PHP" value="2362" />
+          <entry key="SCSS" value="903" />
         </counts>
       </usages-collector>
     </session>
@@ -287,60 +279,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package-lock.json">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/page-home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="743">
+              <caret line="328" column="14" lean-forward="true" selection-start-line="328" selection-start-column="14" selection-end-line="328" selection-end-column="14" />
+              <folding>
+                <element signature="e#5556#9380#0#HTML" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/components/_home-module-2.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/components/_home-module-5.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="806">
+              <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/components/_home-module-3.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+            <state relative-caret-position="743">
+              <caret line="60" column="22" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="60" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/_sherpa-variables.scss">
+        <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/components/_home-module-1.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5876">
-              <caret line="226" column="12" selection-start-line="226" selection-start-column="12" selection-end-line="226" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/_sherpa-header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2600">
-              <caret line="100" column="15" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sidebar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            <state relative-caret-position="477">
+              <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -348,7 +347,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template-parts/content-page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
+            <state relative-caret-position="943">
               <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
             </state>
           </provider>
@@ -358,7 +357,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -366,8 +365,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="67" column="198" lean-forward="true" selection-start-line="67" selection-start-column="198" selection-end-line="67" selection-end-column="198" />
+            <state relative-caret-position="215">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -376,12 +375,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.sub-header</find>
-      <find>sherpa-brand-</find>
-      <find>media</find>
-      <find>a team</find>
-      <find>your one</find>
-      <find>residential</find>
       <find>our values</find>
       <find>hover</find>
       <find>link-color</find>
@@ -406,9 +399,14 @@
       <find>HREF=&quot;#</find>
       <find>our team is made</find>
       <find>internal-banner</find>
+      <find>navbar-brand</find>
+      <find>stagnant</find>
+      <find>contact us</find>
+      <find>sllide</find>
+      <find>slide-content flex-col</find>
+      <find>bg-counter</find>
     </findStrings>
     <replaceStrings>
-      <replace>$color</replace>
       <replace>http://lariat.agimsweb.com</replace>
       <replace>#00C9CE</replace>
       <replace>#8C867E;</replace>
@@ -438,6 +436,7 @@
       <replace>&lt;h2&gt;$1&lt;/h2&gt;</replace>
       <replace>&lt;?= SITEURL; ?&gt;/services/</replace>
       <replace>sherpa-brand-primary</replace>
+      <replace>slide-content</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\wamp64\www\wordpress\wp-content\themes\eleganzza-2018</dir>
@@ -471,8 +470,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/template-parts/icon-focus.php" />
         <option value="$PROJECT_DIR$/template-parts/icon-mock-trials.php" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.html" />
         <option value="$PROJECT_DIR$/../twentyseventeen/functions.php" />
@@ -486,7 +483,6 @@
         <option value="$PROJECT_DIR$/scss/components/_map.scss" />
         <option value="$PROJECT_DIR$/img/logo-tab.svg" />
         <option value="$PROJECT_DIR$/scss/_sherpa-footer.scss" />
-        <option value="$PROJECT_DIR$/scss/components/_home-module-3.scss" />
         <option value="$PROJECT_DIR$/scss/components/_home-module-4.scss" />
         <option value="$PROJECT_DIR$/scss/components/_icon-row.scss" />
         <option value="$PROJECT_DIR$/scss/components/_cards.scss" />
@@ -505,23 +501,26 @@
         <option value="$PROJECT_DIR$/scss/_icons.scss" />
         <option value="$PROJECT_DIR$/inc/SocialMedia.php" />
         <option value="$PROJECT_DIR$/scss/_sherpa-general.scss" />
-        <option value="$PROJECT_DIR$/scss/components/_home-module-2.scss" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/scss/_sherpa-navbar.scss" />
         <option value="$PROJECT_DIR$/scss/_sherpa-header.scss" />
         <option value="$PROJECT_DIR$/scss/style.scss" />
         <option value="$PROJECT_DIR$/scss/_sherpa-mixins.scss" />
         <option value="$PROJECT_DIR$/scss/_sherpa-sidebar.scss" />
         <option value="$PROJECT_DIR$/scss/components/_home-module-1.scss" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="/private/var/folders/pr/t9901z0n4z7dbkstysncwp0m0000gn/T/fz3temp-2/functions.php" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/page-home.php" />
         <option value="$PROJECT_DIR$/sidebar.php" />
         <option value="$PROJECT_DIR$/template-parts/content-page.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/scss/_sherpa-variables.scss" />
+        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/scss/_sherpa-navbar.scss" />
         <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/scss/components/_home-module-3.scss" />
+        <option value="$PROJECT_DIR$/scss/components/_home-module-5.scss" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/scss/components/_home-module-2.scss" />
+        <option value="$PROJECT_DIR$/page-home.php" />
       </list>
     </option>
   </component>
@@ -546,8 +545,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="749" />
-    <option name="y" value="28" />
+    <option name="x" value="940" />
+    <option name="y" value="23" />
     <option name="width" value="1588" />
     <option name="height" value="1417" />
   </component>
@@ -748,18 +747,19 @@
       <workItem from="1536938969908" duration="169000" />
       <workItem from="1537289269677" duration="48362000" />
       <workItem from="1537798442190" duration="6608000" />
-      <workItem from="1537810592726" duration="3137000" />
+      <workItem from="1537810592726" duration="7487000" />
+      <workItem from="1537886746576" duration="1021000" />
+      <workItem from="1537890709976" duration="34468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1179784000" />
+    <option name="totallyTimeSpent" value="1219623000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="749" y="28" width="1588" height="1417" extended-state="0" />
-    <editor active="true" />
+    <frame x="940" y="23" width="1588" height="1417" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19793014" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20310478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -773,7 +773,7 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5033602" side_tool="true" weight="0.19731319" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4966398" visible="true" weight="0.17952636" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4966398" visible="true" weight="0.17952636" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -790,20 +790,6 @@
   </component>
   <component name="WordPressConfiguration" doNotAskAgain="true" />
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scss/components/_home-module-3.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/_home-module-4.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -894,13 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="579">
           <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding>
-            <element signature="e#68#73#0" expanded="true" />
-            <element signature="e#378#383#1" expanded="true" />
-            <element signature="e#576#581#1" expanded="true" />
-            <element signature="e#839#844#1" expanded="true" />
-            <element signature="e#1208#1213#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -967,13 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="119" column="45" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/theme-features.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -1008,13 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/_home-module-2.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_sherpa-mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -1029,31 +994,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_sherpa-navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5642">
-          <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_sherpa-sidebar.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4420">
           <caret line="170" column="18" selection-start-line="170" selection-start-column="18" selection-end-line="170" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page-home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1067,10 +1011,24 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_sherpa-variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scss/components/_home-module-1.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5876">
-          <caret line="226" column="12" selection-start-line="226" selection-start-column="12" selection-end-line="226" selection-end-column="12" />
+          <caret line="254" column="12" selection-start-line="254" selection-start-column="12" selection-end-line="254" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1088,45 +1046,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_sherpa-navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="572" selection-start-line="572" selection-end-line="572" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/_home-module-3.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/_home-module-5.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="77" column="18" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/content-page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
+        <state relative-caret-position="943">
           <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="60" column="22" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="60" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_sherpa-variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="67" column="198" lean-forward="true" selection-start-line="67" selection-start-column="198" selection-end-line="67" selection-end-column="198" />
+        <state relative-caret-position="215">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
+    <entry file="file://$PROJECT_DIR$/scss/components/_home-module-2.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        <state relative-caret-position="312">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page-home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="328" column="14" lean-forward="true" selection-start-line="328" selection-start-column="14" selection-end-line="328" selection-end-column="14" />
+          <folding>
+            <element signature="e#5556#9380#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

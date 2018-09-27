@@ -5,12 +5,31 @@
 
 .btn { 
   padding: 16px 38px;
-  font-size: 11px;
+  font-size: 12px;
+  letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   transition: background-color 0.2s ease-in-out;
   background: $sherpa-brand-primary;
   font-weight: 600;
 
+  &.btn-default {
+    background: #918F8D;
+    &:hover {
+      background: darken(#918F8D, 10%); 
+    }
+  }
+
+  &.btn-outline {
+    border: 2px solid $sherpa-brand-primary;
+    color: $sherpa-brand-primary;
+
+    &:hover {
+      background: $sherpa-brand-primary;
+      color: $white;
+    }
+    
+    background: transparent;
+  }
   
 
 
@@ -18,7 +37,6 @@
     &:hover, &:focus {
       color: $white;
       border-color: transparent;
-      background: lighten($sherpa-brand-primary, 10%);
     }
   }
 

@@ -1,170 +1,185 @@
 .home-module-2 {
-  background: url('../img/bg-chairs.jpg') 0 0 no-repeat;
+  background: url('../img/bg-slider.jpg') 0 0 no-repeat;
   background-size: cover;
+  color: $white;
+  text-align: center;
 
-  h2 {
-    @include raleway();
+  h5 {
+    color: #736357;
   }
 
-  .flex-row {
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .blue-box {
-    box-shadow: inset 0 0 0 2px $sherpa-brand-primary;
-    position: relative;
-
-    h2 {
-      line-height: 1.5;
-
-      .brand {
-        text-transorm: uppercase;
-        font-weight: 700;
-        color: $sherpa-brand-primary;
-      }
-    }
-  }
-
-  @media screen and (min-width: $screen-md-min) {
-    .blue-box {
+  .cycle-pager {
     text-align: center;
+    margin: 50px auto;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
 
-    .extra-padding {
-      padding-left: 3em;
-      padding-right: 3em;
+    li {
+      list-style: none;
+      float: left;
+
+      &.cycle-pager-active {
+        a::before {
+          background: $sherpa-brand-primary;
+        }
+      }
+
+      a {
+        text-indent: -9999px;
+        overflow: hidden;
+        width: 7px;
+        height: 7px;
+        display: block;
+        margin-right: 12px;
+
+        &::before {
+          content: '';
+          border-radius: 100%;
+          background: #646564;
+          display: block;
+          height: 7px;
+          width: 7px;
+          position: absolute;
+          color: $white;
+        }
+      }
     }
   }
 
-    .flex-row {
-      flex-direction: row;
-    }
+  .slider {
+    width: 100%;
 
-    .blue-box {
-      margin-right: 5em;
-    }
+    .slide-menu {
+      width: 20%;
+      background: rgba(0, 0, 0, 0.17);
 
-    .extra-padding {
-      padding: 100px 0;
-    }
+      li {
+        
 
-    h2 {
-      margin-bottom: 1.25em;
-      font-size: 36px;
-    }
+        a {
+          color: $white;
+          padding: 2em 1em;
+          display: block;
+          position: relative;
+          overflow: visible;
 
-    p {
-      line-height: 1.85;
-      font-weight: 300;
-    }
+          &::before {
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            content: '';
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            left: 0;
+            height: 1px;
+          }
 
-    p.blurb {
-      font-size: 20px;
-      margin-bottom: 2em;
-    }
-  }
 
-  @media screen and (max-width: $screen-sm-max) {
+          &:hover {
+            background: #000;
+            content: '';
+            display: block;
+            border-top: 1px solid #000;
+            margin-top: -1px;
 
-    .blue-box {
-      margin-right: 20px !important;
-      margin-left: 20px !important;
+            &::before {
+              display: none;
+            }
 
-      h2 { 
-        font-weight: 600;
+
+            &::after {
+              width: 0; 
+              height: 0; 
+              border-top: 10px solid transparent;
+              border-bottom: 10px solid transparent;
+              position: absolute;
+              border-left: 10px solid $sherpa-brand-primary;  
+              content: '';
+              display: block;
+              top: 50%;
+              transform: translateY(-50%);
+              right: -10px;
+              z-index: 999;
+            }
+          }
+        }
+
+        a::after {
+          width: 0; 
+          height: 0; 
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          position: absolute;
+          border-left: 10px solid $sherpa-brand-primary;
+          transition: opacity 0.3s ease-in-out;  
+          content: '';
+          display: block;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -10px;
+          z-index: 999;
+          opacity: 0;
+        }
+
+
+        &.cycle-pager-active {
+          a::after {
+            opacity: 1;
+          }
+        }
+
+        &:last-child {
+          border-bottom: 0;
+
+          a {
+            &::before {
+              display: none;
+            }
+          }
+        }
       }
-    } 
+    }
 
-    .extra-padding {
-      margin: 40px 0 0;
-      padding: 2em;
-      text-align: center;
-      margin-top: 0;
+    .slideshow {
+      width: 80%;
+      justify-content: flex-start;
 
-      p {
-        margin-bottom: 2em;
+      .slide {
+        display: flex !important;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
       }
+    }
+    
+
+    .slide-content {
+      background: $white;
+      color: #000;
+      display: block !important;
 
       h2 {
-        font-size: 19px;
-        margin-top: 1em;
-        margin-bottom: 1em;
+        font-size: 29px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
       }
-
-      p:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    .blue-box .extra-padding {
-      margin-bottom: 0;
-
-      p {
-        margin-bottom: 0;
+      
+      .extra-padding {
+        padding: 2em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
-  }
-}
 
-
-
-.draw {
-  transition: color 0.25s;
-  
-  &:hover {
-    color: $sherpa-brand-primary;
-  }
-
-  &::before,
-  &::after {
-    box-sizing: inherit;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-
-  &::before,
-  &::after {
-    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
-    border: 2px solid transparent;
-    width: 0;
-    height: 0;
-  }
-
-  // This covers the top & right borders (expands right, then down)
-  &::before {
-    top: 0;
-    left: 0;
-  }
-
-  // And this the bottom & left borders (expands left, then up)
-  &::after {
-    bottom: 0;
-    right: 0;
-  }
-
-  // Hover styles
-  &:hover::before,
-  &:hover::after {
-    width: 100%;
-    height: 100%;
-  }
-
-  &:hover::before {
-    border-top-color: lighten($sherpa-brand-primary, 10%); // Make borders visible
-    border-right-color: lighten($sherpa-brand-primary, 10%);
-    transition:
-            width 0.25s ease-out, // Width expands first
-            height 0.25s ease-out 0.25s; // And then height
-  }
-
-  &:hover::after {
-    border-bottom-color: lighten($sherpa-brand-primary, 10%); // Make borders visible
-    border-left-color: lighten($sherpa-brand-primary, 10%);
-    transition:
-            border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
-            width 0.25s ease-out 0.5s, // And then exanding width
-            height 0.25s ease-out 0.75s; // And finally height
+    .slide-img {
+      width: 50%;
+       display: block !important;
+      background: url('../img/slide-bathroom.jpg');
+      background-size: cover;
+      display: block;
+    }
   }
 }

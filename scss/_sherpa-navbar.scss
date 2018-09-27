@@ -57,7 +57,7 @@
       background-color: $sherpa-navbar-default-toggle-hover-bg;
     }
     .icon-bar {
-      background-color: $white;
+      background-color: #000;
     }
   }
 
@@ -451,6 +451,8 @@
     width: 100%;
   }
 
+  
+
 }
 
 @media (max-width: $grid-float-breakpoint-max) {
@@ -567,6 +569,16 @@
       }
     }
   }
+}
+
+@media screen and (min-width: $screen-md-min) {
+  
+    .sub-header .navbar-brand {
+      img {
+        height: 196px;
+      }
+    }
+
 }
 
 @media screen and (max-width: $screen-sm-max) {

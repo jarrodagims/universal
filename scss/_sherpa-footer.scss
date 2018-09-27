@@ -18,6 +18,7 @@
   .btn {
     width: 100%;
     letter-spacing: 1px;
+    margin-bottom: 10px;
   }
 
 
@@ -85,6 +86,10 @@
    .logo-footer {
      width: 40%;
      padding-right: 4em;
+
+     img {
+       height: 194px;
+     }
    }
 
    .flex-col {
@@ -218,6 +223,8 @@
     float: none;
     text-align: center;
     position: relative;
+    display: block;
+    height: auto;
 
     img {
       width: 100%;
@@ -377,7 +384,7 @@
 
 .footer-nav {
 
-  background: #474747;
+  background: #EAEAEA;
 
   @media screen and (min-width: $screen-md-min) {
     li.menu-item:first-child {
@@ -402,7 +409,7 @@
   }
 
   .navbar-sherpa .navbar-nav > li > a {
-    color: $white;
+    color: #606060;
 
     &:hover {
       color: $sherpa-brand-primary;
@@ -417,8 +424,8 @@
 #sub-footer {
   padding: 32px 0;
   text-align: center;
-  background: #fff;
-  color: #666666;
+  background: #050505;
+  color: $white;
   font-size: 16px;
 
   .agi-logo {
@@ -434,7 +441,7 @@
   ul.social-media {
     margin: 0 0 0 0;
     a {
-      color: #666666;
+      color: $white;
       &:hover {
         color: $sherpa-brand-primary;
       }

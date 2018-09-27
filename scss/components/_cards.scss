@@ -125,7 +125,17 @@
   .card-text {
     padding: 86px 127px 50px;
     flex: 1;
-    background: $white;
+    background: #F4F4F4;
+
+    em {
+      &::before {
+        content: '// '
+      }
+
+      &::after {
+        content: ' //'
+      }
+    }
   }
 
   .alignnone {

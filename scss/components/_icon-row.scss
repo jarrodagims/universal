@@ -114,9 +114,8 @@
 
 
 .icon-row {
-  background: rgba(255,255,255,0.5);
+  background: #212421;
   text-align: center;
-  @include dropshadow();
   overflow: hidden;
 
   .flex-row {
@@ -124,36 +123,22 @@
     margin: 0; 
     padding: 0;
     position: relative;
-
-    &:before {
-        border-bottom: 7px solid #474747;
-        content: '';
-        position: absolute;
-        bottom: 0;
-        width: 200vw;
-        display: block;
-        height: 7px;
-        z-index: 1;
-        left: -50%;
-    }
-
-    &:after {
-      @include gradient();
-      content: '';
-      width: 100%;
-      display: block;
-      height: 1px;
-      position: absolute;
-      bottom: 0;
-    }
   }
 
   .flex-col {
     flex: auto;
     flex-direction: column;
+    padding-top: 2em;
+	padding-bottom: 2em;
 
     &:last-child a:after {
       border-right: 0;
+    }
+
+    &:nth-child(2) a {
+		border-left: 1px solid #918F8D;
+		border-right: 1px solid #918F8D;
+		
     }
   }
 
@@ -163,60 +148,16 @@
     width: 100%;
     display: flex;
     align-items: center;
-    color: #606060;
+    color: $white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     flex-direction: column;
-    flex: 1;
-    padding: 3.5em 0 0; 
+    flex: 1; 
+    padding: .5em 0; 
     position: relative;
     overflow: hidden;
-    padding-bottom: 7px;
-
-    @include icon-up();
-
-    &:after {
-      height: 7px;
-      background: $sherpa-brand-primary;
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      display: block;
-      z-index: 99;
-      width: 100%;
-      transform: translate3d(-100vw, 0, 0);
-    }
-
-    &:hover::after {
-//       transform: translate3d(0, 0, 0);
-      animation: anim-1 0.3s forwards;
-    }
-
-
-
-    span {
-      background: #959eac;
-
-    }
-
-//     &:hover {
-//       border-bottom: 7px solid $sherpa-brand-primary;
-//     }
-
-
-
-//     &:before {
-//       border-left: 1px solid $sherpa-brand-primary;
-//       content: '';
-//       height: 50%;
-//       width: 1px;
-//       position: absolute;
-//       left: 0;
-//       top: 50%;
-//       transform: translateY(-50%);
-//     }
+    transition: color 300ms ease-in-out;
 
     svg {
       height: 40px;
@@ -228,9 +169,7 @@
     }
 
     &:hover {
-
-      color: $sherpa-brand-primary !important;
-
+      color: darken($white, 20%);
       text-decoration: none;
 
     }
@@ -294,18 +233,6 @@ body #main .container article #sidebar {
 
 .page-template-page-home {
   .icon-row {
-
-    &:after {
-      background: #959eac;
-      height: 3em;
-      content: '';
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      left: 0;
-      z-index: 0;
-    }
-
     @media screen and (max-width: $screen-sm-max) {
 
       &::before {

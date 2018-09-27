@@ -120,4 +120,14 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'yoast-seo-breadcrumbs' );
 }
 
+function printPhone() {
+    if (!empty(get_option('sherpa_telephone_number'))) :
+        $num = get_option('sherpa_telephone_number');
+        $area = substr($num, 0, 3);
+        $first = substr($num, 3, 3);
+        $last = substr($num, 6, 4);
+        echo "(". $area . ") " . $first . "-" . $last;
+    endif;
+}
+
 

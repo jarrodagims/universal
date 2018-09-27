@@ -1,6 +1,6 @@
 
 #map-section {
-  height: 214px;
+  height: 163px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,17 +31,15 @@
   }
 }
 
-  #map-section {
-    height: 178px;
-
-
-    &::before {
+#map-section {
+  &::before {
     position: absolute;
     pointer-events: none;
     width: 100%;
     height: 100%;
     content: '';
     display: block;
+    background: url('../img/footer-map.png') 0 0 no-repeat;
     background-size: cover;
   }
 
