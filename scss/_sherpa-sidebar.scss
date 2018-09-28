@@ -1,6 +1,6 @@
 
 .sidebar-content {
-  margin-top: 80px;
+  margin-top: 140px;
 
   .post-title {
     font-weight: 300;
@@ -11,7 +11,7 @@
   
   @media screen and (min-width: $screen-md-min) {
     .page-content, #sidebar {
-      padding-top: 10px;
+      padding-top: 2em;
     }
   }
 
@@ -46,9 +46,28 @@
 
 body #main .container article #sidebar {
   float: right;
-  width: 456px;
+  width: 380px;
   margin-left: 4em;
   text-align: center;
+
+  .box {
+    background: #212421;
+    padding: 70px;
+    margin-top: 20px;
+    
+    h2 {
+      color: $white;
+      line-height: 1.5;
+      font-size: 21px;
+    }
+
+    a button {
+      display: block;
+      clear: both;
+      margin: 0 auto 10px;
+      width: 200px;
+    }
+  }
 
   .card-bottom a .btn.btn-default {
     background: #999999;
@@ -110,9 +129,12 @@ body #main .container article #sidebar {
 
 
     .header {
-      background: $sherpa-secondary-color;
+      background: #212421;
       padding: 2em 0;
       width: 100%;
+      color: $white;
+      font-size: 21px;
+      @include raleway();
 
 
       h2 {

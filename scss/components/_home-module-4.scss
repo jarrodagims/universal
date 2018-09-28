@@ -1,3 +1,29 @@
 .home-module-4 {
+  padding: 6.25em 0;
+
+  h2 {
+    font-size: 27px;
+  }
   
+  img.no-margin {
+      width: 100%;
+  }
+
+  text-align: center;
+
+  .extra-padding {
+    margin: 2em 0 0 2.45em;
+    text-align: left;
+
+    p {
+      font-size: 19px;
+      font-weight: 300;
+      margin-top: 2.5em;
+      line-height: 1.5;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding-top: 0;
+  }
 }

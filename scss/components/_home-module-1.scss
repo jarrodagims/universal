@@ -48,7 +48,11 @@
 
   @media screen and (min-width: $screen-md-min) {
 
-    padding: 108px 0;
+    .br-md {
+      display: block;
+    }
+
+    padding: 70px 0;
 
     .home-right-sidebar {
       padding-top: 113px;
@@ -101,12 +105,18 @@
     }
   }
 
+  p {
+    font-size: 19px;
+    line-height: 1.5em;
+    font-weight: 300;
+  }
+
   p.blurb {
     font-size: 19px;
     font-weight: 300;
-    margin-top: 2em;
+    margin-top: 2em; 
     margin-bottom: 1em;
-    line-height: 1.85;
+    line-height: 1.5;
   }
 
   h2 {
@@ -116,6 +126,7 @@
   p.light {
     color: #939292;
   }
+
 
   .box {
     background: url('../img/bg-sidebar.jpg') 0 0 no-repeat;
@@ -184,6 +195,16 @@
   }
 
   @media screen and (max-width: $screen-sm-max) {
+
+
+
+    &.bg-dark {
+      padding: 56px 0;
+      
+      h2 {
+        margin-top: 0;
+      }
+    }
 
     ul {
       list-style: none;

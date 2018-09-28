@@ -16,10 +16,12 @@
   }
 
   .btn {
-    width: 100%;
+    width:  100%;
     letter-spacing: 1px;
     margin-bottom: 10px;
-  }
+    padding: 16px 2em;
+    max-width: 178px;
+  } 
 
 
   a.arrow {
@@ -84,12 +86,17 @@
   @media screen and (min-width: $screen-md-min) {
 
    .logo-footer {
-     width: 40%;
-     padding-right: 4em;
+     width: 280px;
 
      img {
-       height: 194px;
+       width: 280px;
+       height: auto;
      }
+   }
+
+   .button-footer {
+     flex: 0;
+
    }
 
    .flex-col {
@@ -103,9 +110,19 @@
 
    .hours-footer {
      width: 30%;
+
    }
 
+   .bbb-footer {
+     flex: 1;
+     justify-content: center;
+     display: flex;
+     align-items: flex-start;
+   } 
+
     .contact-footer, .hours-footer {
+      display: flex;
+      justify-content: center;
       
       > div {
         
@@ -220,16 +237,11 @@
   }
 
   .navbar-brand {
-    float: none;
     text-align: center;
     position: relative;
     display: block;
     height: auto;
-
-    img {
-      width: 100%;
-      
-    }
+    float: none;
   }
 
   .navbar-sherpa .navbar-nav > li > a {
@@ -270,6 +282,7 @@
     font-size: 18px;
     color: #606060;
     font-weight: 600; 
+    text-transform: uppercase;
   }
 
   .social-media-button {
@@ -282,16 +295,14 @@
 
   @media screen and (min-width: $screen-md-min) {
     text-align: left;
+    
 
     span.title {
       margin: 0 0 0.5em;
       display: block;
-      font-size: 18px;
+      font-size: 15px;
     }
 
-    .logo-footer, .hours-footer {
-      margin-right: auto;
-    }
   }
 
   
@@ -301,6 +312,17 @@
     .button-footer {
       flex: 1;
       width: 100%;
+      flex-direction: row;
+      flex-wrap: nowrap; 
+
+      div {
+        display: flex;
+        justify-content: center;
+
+        a:first-child {
+          margin-right: 10px;
+        }
+      }
     }
 
     .contact-footer, .hours-footer {
@@ -500,12 +522,13 @@
 
     span.title {
       margin: 0 0 .5em 0;
-      text-transform: none;
     }
 
     .navbar-brand {
       position: relative;
       transform: none;
+      top: 0;
+      left: auto;
 
       img {
         width: auto;
@@ -530,9 +553,6 @@
 
     text-align: center;
 
-    a {
-      display: block;
-    }
 
     .btn {
       font-size: 9px;

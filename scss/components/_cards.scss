@@ -45,8 +45,8 @@
         padding: 1.5em;
       }
 
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: -35px;
+      margin-right: -35px;
 
       .btn {
         padding: 1.5em 3em;
@@ -79,6 +79,7 @@
       img {
         width: auto;
         margin: 0 auto;
+        display: block;
       }
 }
 
@@ -89,6 +90,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 5em;
 
   &.floating {
     position: absolute;
@@ -120,14 +122,38 @@
     padding: 36px;
     font-size: 28px;
     margin: 0 0;
-  }
+  } 
 
   .card-text {
-    padding: 86px 127px 50px;
+    padding: 3em 90px 50px;
     flex: 1;
     background: #F4F4F4;
 
+    p {
+      margin-top: 2.5em;
+      font-size: 17px;
+    }
+
+    p.author {
+      font-size: 21px;
+      margin-top: 1em;
+    }
+
+    h2 {
+      letter-spacing: -1px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 2.5em;
+    }
+
     em {
+      font-size: 19px;
+      font-style: normal;
+      @include raleway();
+      margin-bottom: .75em;
+
       &::before {
         content: '// '
       }

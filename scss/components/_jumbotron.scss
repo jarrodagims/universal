@@ -70,7 +70,7 @@
         letter-spacing: 1px;
         font-size: 11px;
         margin-bottom: 2em;
-        width: 20em;
+        width: 18em;
 
         &.btn-default {
           margin-right: 20px;
@@ -80,15 +80,21 @@
       .jumbo-content {
         width: 100%;
 
+        .fade-down {
+          margin-bottom: 3em;
+        }
+
         h1 {
-          font-size: 41px; 
-          line-height: 1.45;
-          margin-top: 3.5em;
+          font-size: 37px; 
+          line-height: 1.75;
+          margin-top: 3.25em;
           margin-bottom: 0.5em;
 
           span.br {
             display: block;
-            font-size: 22px;
+            font-size: 22px; 
+            margin-top: 0;
+
 
             &::before {
               content: '// ';
@@ -122,7 +128,7 @@
 
     .jumbo-content {
       margin: 0 0;
-      padding: 3.8em 2em 7.5em; 
+      padding: 3.8em 2em 11em; 
     } 
 
 

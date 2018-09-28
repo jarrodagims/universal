@@ -267,7 +267,7 @@ h2.line {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background: url('../img/bg-mid-banner.jpg') 0 0 no-repeat;
+  background: url('../img/bg-content.jpg') 0 0 no-repeat;
   color: $white;
   padding-top: 4em;
   padding-bottom: 4em;
@@ -818,6 +818,12 @@ input[type="text"]:focus, textarea:focus {
 
 span.brand {
   color: $sherpa-brand-primary;
+}
+
+@media screen and (min-width: $screen-md-min) {
+  .br-md {
+    display: block;
+  }
 }
 
 @media screen and (max-width: $grid-float-breakpoint-max) {

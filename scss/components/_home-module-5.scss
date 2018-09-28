@@ -4,9 +4,19 @@
   a {
     color: $white;
     font-size: 19px;
-    padding-top: 200px;
-    padding-bottom: 20px;
     display: block;
+    @include raleway();
+    position: relative;
+
+    &::after {
+      content: '';
+      @include svg-chevron(ffffff);
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin-left: .5em;
+      bottom: 0;
+    }
 
     &.fade-down {
       transform: translateY(-50px);
@@ -15,7 +25,7 @@
     }
 
     strong {
-      font-size: 29px;
+      font-size: 28px;
     }
   }
 
@@ -42,6 +52,11 @@
   }
 
   .bg {
+    padding-top: 200px;
+    padding-bottom: 3em;
+    text-align: right;
+    padding-right: 2.8em;
+
 
     &::after {
       background: rgba(0,0,0,.5);
@@ -72,6 +87,7 @@
   .bg-countertops {
     position: relative;
     z-index: 1;
+    text-align: right;
 
     &::before {
       background: url('../img/bg-countertops.jpg') 0 0 no-repeat;
@@ -83,6 +99,7 @@
       position: absolute;
       right: -15px;
       z-index: -1; 
+      top: 0;
     }
   }
 
@@ -99,6 +116,7 @@
       position: absolute;
       right: -15px;
       z-index: -1;
+      top: 0;
     }
   }
 
@@ -107,6 +125,8 @@
     height: 100%;
     align-items: flex-end;
     display: flex;
+    padding-bottom: 3em;
+    padding-left: 2.8em;
 
     &::after {
       transition: opacity 0.3s ease-in-out;
@@ -120,11 +140,13 @@
       left: -30px;
       z-index: -1;
       opacity: 0;
+      bottom: 0;
     }
 
     &:hover {
       &::after {
         opacity: 1;
+        bottom: 0;
       }
     }
 
@@ -138,6 +160,73 @@
       position: absolute;
       left: -30px;
       z-index: -1;
+      bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+      
+  text-align: center;
+  
+
+  .bg {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+
+    a {
+       padding: 2em 0;
+     }
+
+    &::before {
+      left: -30px;
+      width: 100vw;
+    }
+    &::after {
+      width: 100vw;
+      left: -30px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    strong {
+      display: block;
+      font-size: 16px;
+    }
+  }
+
+  .bg-remodeling {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0 0;
+
+    p {
+      font-size: 14px;
+    }
+
+    strong {
+      display: block;
+      font-size: 16px;
+    }
+
+    a {
+      padding: 5em 0;
+    }
+
+    &::before {
+      left: -30px;
+      width: 100vw;
+    }
+
+    &::after {
+      width: 100vw;
+      left: -30px;
+    }
     }
   }
 }

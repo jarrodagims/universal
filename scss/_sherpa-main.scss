@@ -87,7 +87,7 @@ body {
 
 
         h1 {
-          color: #808C91;
+          color: #212421;
           font-size: 32px;
           @include raleway();
           font-weight: 400;
@@ -102,7 +102,7 @@ body {
 
         h2, h3 {
           @include raleway();
-          color: #808C91;
+          color: #212421;
           font-size: 25px;
         }
 
@@ -114,6 +114,7 @@ body {
 
         p {
           font-weight: 300;
+          color: #918F8D;
         }
 
 
@@ -128,6 +129,7 @@ body {
 
         ul {
           padding-left: 3em;
+          color: #918F8D;
         }
 
 

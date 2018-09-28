@@ -1,8 +1,10 @@
 @mixin icon-small() {
   width: 100%;
+  
 
   .icon-row {
-      @include dropshadow();
+	  background: url('../img/bg-sidebar.jpg') 0 0 no-repeat;
+	  background-size: cover;
   }
 
   .container {
@@ -21,39 +23,35 @@
     }
 
     .flex-col {
-      width: 33.33333%;
+      width: 50%; 
       margin-bottom: 0;
-      border-left: 1px solid #6C7787;
-      border-bottom: 1px solid #6C7787;
+      padding: 0.5em;
 
-      &.contact-button {
-        a {
-          background: $sherpa-secondary-color;
-          color: $white;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-
-          &:hover {
-            background: $sherpa-brand-primary;
-            color: $white;
-          }
-        }
+      &:nth-child(2) a {
+		border: 1px solid $white;
       }
 
+      background: rgba(96, 96, 96, 0.71);
+
+      &:hover {
+      	background: #000;
+      }
+
+
       a {
-        background: #959EAC;
-        font-size: 11px;
-        font-weight: 500;
+        font-size: 17px;
         padding: 24px 0 10px;
         color: $white;
+        padding: 2em;
+        font-weight: 400;
+        border: 1px solid $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .title {
           background: transparent;
         }
-        
 
         svg {
           height: 50px;
@@ -66,12 +64,23 @@
 
 
         &:hover {
-          background: $sherpa-brand-primary;
           color: $white !important;
+          
+          &::after {
+          	display: none;
+          }
         }
 
         &::before {
           display: none;
+        }
+      }
+
+      &:nth-child(4n+1), &:nth-child(4n) {
+        background: rgba(96, 96, 96, 0.53);
+
+        &:hover {
+        	background: #000;
         }
       }
 
@@ -128,18 +137,12 @@
   .flex-col {
     flex: auto;
     flex-direction: column;
-    padding-top: 2em;
-	padding-bottom: 2em;
 
-    &:last-child a:after {
-      border-right: 0;
+    a {
+    	padding-top: 2em;
+		padding-bottom: 2em;
     }
-
-    &:nth-child(2) a {
-		border-left: 1px solid #918F8D;
-		border-right: 1px solid #918F8D;
-		
-    }
+    
   }
 
 
@@ -154,10 +157,20 @@
     text-align: center;
     flex-direction: column;
     flex: 1; 
-    padding: .5em 0; 
     position: relative;
     overflow: hidden;
     transition: color 300ms ease-in-out;
+
+    &::before {
+    	border-left: 1px solid #918F8D;
+    	content: '';
+    	display: block;
+    	height: 50%;
+    	top: 50%;
+    	transform: translateY(-50%);
+    	position: absolute;
+    	left: 0;
+    }
 
     svg {
       height: 40px;
@@ -168,9 +181,26 @@
       }
     }
 
+    &::after {
+      width: 10px; 
+	  height: 10px; 
+	  border-left: 7px solid transparent;
+	  border-right: 7px solid transparent;
+	  border-bottom: 7px solid $sherpa-brand-primary;
+	  content: '';
+	  bottom: 0;
+	  opacity: 0;
+	  transition: opacity 0.3s ease-in-out;
+	  position: absolute;
+    }
+
     &:hover {
-      color: darken($white, 20%);
+
+      &:after {
+      	opacity: 1;
+      }
       text-decoration: none;
+
 
     }
 
@@ -197,9 +227,6 @@
 
   @media screen and (max-width: $screen-sm-max) {
     @include icon-small();
-    background: #959EAC;
-
-    
     
 
     .flex-row {
@@ -220,19 +247,11 @@ body #main .container article #sidebar {
   
   @include icon-small();
 
-  .icon-row {
-    a {
-      font-weight: 600 !important;
-      font-size: 14px !important;
-      font-family: 'Roboto', sans-serif;
-      padding: 33px 0 !important; 
-    }
-  }
 
 }
 
 .page-template-page-home {
-  .icon-row {
+  .mid-row {
     @media screen and (max-width: $screen-sm-max) {
 
       &::before {
@@ -240,7 +259,6 @@ body #main .container article #sidebar {
       }
 
       .flex-row {
-          flex-wrap: wrap;
 
           li.flex-col {
 
@@ -266,4 +284,128 @@ body #main .container article #sidebar {
     }
   }
   }
+}
+
+.mid-row {
+  background: #212421;
+  text-align: center;
+  overflow: hidden;
+
+  .flex-row {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    flex-direction: row;
+  }
+
+  .flex-col {
+    flex: auto;
+    flex-direction: column;
+
+    a {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+  }
+
+
+  .flex-col a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    transition: color 300ms ease-in-out;
+
+    &::before {
+      border-left: 1px solid #918F8D;
+      content: '';
+      display: block;
+      height: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      left: 0;
+    }
+
+    svg {
+      height: 40px;
+      margin-bottom: 2em;
+
+      path {
+        fill: #fff;
+      }
+    }
+
+    &::after {
+      width: 10px;
+      height: 10px;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 7px solid $sherpa-brand-primary;
+      content: '';
+      bottom: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      position: absolute;
+    }
+
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+      text-decoration: none;
+    }
+
+    &:focus, &:active {
+      text-decoration: none;
+    }
+
+    .title {
+      margin: 0 auto;
+      padding: 12px 0;
+      text-align: center;
+      width: 100%;
+      display: block;
+      background: #959eac;
+      color: $white;
+    }
+  }
+
+  .flex-col:first-child {
+    a::before {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+
+    .flex-row {
+      &::before {
+        display: none;
+      }
+
+      .flex-col {
+        border-left: 0;
+        width: 33.333%;
+
+        a { 
+        font-size: 15px;
+
+        	&::before {
+			  height: 70%;
+			}
+        }
+      }
+    }
+  }
+
 }

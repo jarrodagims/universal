@@ -205,6 +205,10 @@
 ')
 }
 
+@mixin svg-chevron($color) {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.82 8.67"><title>Asset 1</title><g id="33837ecc-cd43-422d-b830-156da8dec3e1" data-name="Layer 2"><g id="2b94c75f-9e37-4a6c-abc2-c4aead10e343" data-name="Layer 1"><polygon points="8.82 4.33 4.48 0 3.52 0.96 6.89 4.33 3.52 7.7 4.48 8.67 8.82 4.33" fill="#fff"/><polygon points="5.3 4.33 0.96 0 0 0.96 3.37 4.33 0 7.7 0.96 8.67 5.3 4.33" fill="#fff"/></g></g></svg>');
+}
+
 @keyframes hover-icon-up {
   0%,
   50%,

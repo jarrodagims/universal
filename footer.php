@@ -14,7 +14,7 @@
                                     ); ?>"/></a>
                     </div>
                     <div class="contact-footer phone-footer">
-                        <div><span class="title">Contact</span>
+                        <div><span class="title">Address</span>
                             <p>6821 Market Ave.<br />
                                 El Paso, TX 79915<br />
                                 <strong>PH</strong>.  <?php if (!empty(get_option('sherpa_telephone_number'))) :
@@ -28,7 +28,7 @@
                     </div>
                     <div class="hours-footer">
                         <div>
-                            <span class="title">Hours</span>
+                            <span class="title">Office Hours</span>
                             <p>Monday - Friday: <strong>8:00am - 4:00pm</strong><br />
                                 Saturday: <strong>8:00am - 3:00pm</strong><br />
                                 Sunday: <strong>Closed</strong>
@@ -36,11 +36,11 @@
                         </div>
                     </div>
                     <div class="bbb-footer">
-                        <img
+                        <div><img
                                 src="<?= IMGURL; ?>bbb.png"
                                 alt="<?php echo get_bloginfo(
                                     'description'
-                                ); ?>"/>
+                                ); ?>"/></div>
                     </div>
                     <div class="button-footer">
                         <div>
@@ -53,12 +53,13 @@
                                 </button></a>
                         </div>
                     </div>
-
-                    <?php $sm = new SocialMedia(array('facebook', 'twitter'));
-                    $sm->setSize('sm');
-                    $sm->showNetworkButtons();
-                    $sm->setColorType('singleColor');
-                    ?>
+                    <div class="visible-xs">
+                        <?php $sm = new SocialMedia(array('facebook', 'twitter'));
+                        $sm->setSize('sm');
+                        $sm->showNetworkButtons();
+                        $sm->setColorType('singleColor');
+                        ?>
+                    </div>
                 </div>
             </div>
     </div>

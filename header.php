@@ -72,14 +72,4 @@
             </div>
         </div>
     </div>
-<?php if(!is_front_page()) : ?>
-    <section class="breadcrumbs">
-        <div class="container">
-            <?php if ( function_exists('yoast_breadcrumb') ) {
-                yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-            } ?>
-        </div>
-    </section>
-<?php endif; ?>
-
 

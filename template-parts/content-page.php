@@ -25,13 +25,13 @@
 
             echo "<article>\n";
             echo "<div class=\"sidebar-content\">";
+            get_sidebar();
+            echo "<div class=\"content page-content\">";
             if(get_field('custom_h1')) :
                 echo '<h1>'. get_field('custom_h1', $pageid) . '</h1>';
             else :
                 echo '<h1>' . get_the_title() . '</h1>';
             endif;
-            get_sidebar();
-            echo "<div class=\"content page-content\">";
             the_content();
             ?>
             <div class="banner banner-bottom">
@@ -39,8 +39,7 @@
                 echo the_post_thumbnail(array(1060,209));
             else:
                 ?>
-                <p class="banner-text">What We Can Do For You <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-primary">Contact Us Today</button></a></p>
-                <img class="visible-xs" src="<?= IMGURL ?>bg-mid-banner.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
+                <img class="visible-xs" src="<?= IMGURL ?>bg-content.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>" />
             <?php
             endif; ?>
             </div>

@@ -25,7 +25,7 @@
         </div>
         </div> <!-- end home-bg -->
 
-        <section class="icon-row">
+        <section class="mid-row">
             <div class="container">
                 <ul class="flex-row">
                     <li class="flex-col">
@@ -56,15 +56,11 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="extra-padding">
-                            <div class="text-center"><h2>Our homes are rarely <span class="brand">stagnant</span>.</h2>
-                                <p class="blurb">We’re always changing, cleaning, and improving them—updating them to
-                                    match our growing families and to keep up with the hottest design trends,
-                                    rearranging furniture and adding decor to every bit of wall space available, even
-                                    remodeling entire sections of it.</p>
+                            <div class="text-center">
+                                <h2>Our homes are rarely <span class="brand">stagnant.</span></h2>
+                                <p class="blurb">We’re always changing, cleaning, and improving them—<span class="br-md">updating them to match our growing families and to keep up with the hottest design trends, rearranging furniture and <span class="br-md">adding decor to every bit of wall space available, even remodeling entire sections of it.</span></span></p>
 
-                                <p>If you’re constantly updating your home, it only makes sense that you give your
-                                    countertops and cabinets a bit of TLC as well. We specialize in remodeling,
-                                    countertops, cabinets, and more!</p>
+                                <p>If you’re constantly updating your home, it only makes sense that you give your countertops and cabinets a bit of <span class="br-md">TLC as well. We specialize in remodeling, countertops, cabinets, and more!</span></p>
                             </div>
                         </div>
                     </div>
@@ -77,13 +73,12 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h2>What We Can Do For You</h2>
+                <div class="extra-padding"><h2>What We Can Do For You</h2>
 
-                <p>We spend a lot of time in our kitchens and bathrooms, so we want to be sure they look great.</p>
+                    <p>We spend a lot of time in our kitchens and bathrooms, so we <span class="br-md">want to be sure they look great.</span></p>
+                <p class="small">We offer a wide variety of kitchen and bathroom remodeling services, including:</p></div>
 
-                <p class="small">We offer a wide variety of kitchen and bathroom remodeling services, including:</p>
-
-                <div class="slider" >
+                <div class="slider hidden-xs hidden-sm" >
                     <div class="flex-row"><div class="slide-menu">
                         <ul class="list-unstyled pager-links">
 
@@ -97,7 +92,7 @@
                                 <div class="extra-padding">
                                     <h5>WOODS, FINISHES, & PAINTS</h5>
 
-                                    <div class="text"><h2>Bathroom Cabinet Installations</h2>
+                                    <div class="text"><h2>Kitchen Cabinet Installations</h2>
 
                                         <p>The Benefits of Installing New Bathroom Cabinets</p>
 
@@ -118,7 +113,7 @@
                                 <div class="extra-padding">
                                     <h5>WOODS, FINISHES, & PAINTS</h5>
 
-                                    <div class="text"><h2>Kitchen Cabinet Installations</h2>
+                                    <div class="text"><h2>Bathroom Cabinet Installations</h2>
 
                                         <p>The Benefits of Installing New Kitchen Cabinets</p>
 
@@ -259,10 +254,16 @@
                     </div>
                 </div>
 
-                <div class="cycle-pager"></div>
+                <div class="cycle-pager hidden-xs hidden-sm"></div>
+
             </div>
         </div>
     </div>
+    <section class="visible-xs visible-sm icon-row">
+        <ul class="flex-row">
+            <?php get_template_part('template-parts/icon', 'row'); ?>
+        </ul>
+    </section>
 
 </section>
 
@@ -274,12 +275,9 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="extra-padding">
-                            <div class="text-center"><h2>We work hard to ensure you are <span class="brand">satisfied</span> with all of the
-                                    services we offer.</h2>
-                                <p class="blurb">We only work with the best of the best in terms of the tools and
-                                    materials we use. With us, you can guarantee that you will be satisfied with the
-                                    final results and that the final product will last for many years.</p>
-
+                            <div class="text-center">
+                                <h2>We work hard to ensure you are <span class="brand">satisfied</span> with all of the services we offer.</h2>
+                                <p class="blurb">We only work with the best of the best in terms of the tools and materials we use. With us, you can guarantee that you will be satisfied with the final results and that the final product will last for many years.</p>
                             </div>
                         </div>
                     </div>
@@ -309,7 +307,7 @@
 <section class="home-module-5 grid waypoint-stagger">
     <div class="container">
         <div class="row flex-row">
-            <div class="col-md-6 flex-col">
+            <div class="col-md-6 col-xs-12 flex-col">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12  waypoints">
@@ -318,18 +316,19 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 waypoints">
-                            <div class="bg bg-cabinets"><a href="<?= SITEURL ?>/kitchen-cabinets-el-paso" class="fade-down"><strong>Cabinets Kitchen</strong> Cabinets & Bathroom Cabinets</a></div>
+                            <div class="bg bg-cabinets"><a href="<?= SITEURL ?>/kitchen-cabinets-el-paso" class="fade-down"><strong>Cabinets</strong> Cabinets & Bathroom Cabinets</a></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 flex-col waypoints">
+            <div class="col-md-6 col-xs-12 flex-col waypoints">
                             <div class="bg-remodeling"><a href="<?= SITEURL ?>/kitchen-remodeling/" class="fade-down"><strong>Remodeling</strong> Bathroom & Kitchen</a></div>
             </div>
         </div>
     </div>
 </section>
 <section class="home-module-4">
+
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -339,9 +338,9 @@
                     <div class="testimonial">
                         <div class="card-text"><h2 class="">Review Us</h2>
                         <em>Happy Clients</em>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor interdum dui. Sed id accumsan risus. Mauris mollis placerat egestas. Nullam blandit libero ac dolor posuere ultricies. Donec suscipit ex ac gravida lacinia. Fusce id finibus risus. Suspendisse faucibus et ligula ac tempus. Suspendisse iaculis tortor venenatis vulputate efficitur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci </p>
 
-                        <p>Lorem ipsum</p>
+                        <p class="author">Lorem ipsum</p>
 
                         <img src="<?= IMGURL ?>5-star-rating.png" alt="5 stars" height="20" />
 
@@ -356,28 +355,30 @@
 
             </div>
             <div class="col-md-6">
-                <h2>Residential & Commercial Services</h2>
+                <div class="extra-padding"><h2>Residential & Commercial Services</h2>
 
                 <p>We currently offer residential kitchen and bathroom remodeling services to residents in El Paso and Las Cruces but are looking to expand our reach to commercial services as well. Fifteen years ago, we started this company from scratch with the goal of helping homeowners upgrade the cabinets and countertops in their homes so they can have the dream home they always envisioned.</p>
 
                 <h2>Locations We Serve</h2>
 
-                <p>We are based in El Paso, Texas but are happy to serve homeowners in Las Cruces and other surrounding communities. We can work in homes of all sizes, both big and small, and ages. No matter the kind of bathroom or kitchen you have, we’re ready and able to help you.</p>
+                <p>We are based in El Paso, Texas but are happy to serve homeowners in Las Cruces and other surrounding communities. We can work in homes of all sizes, both big and small, and ages. No matter the kind of bathroom or kitchen you have, we’re ready and able to help you.</p></div>
 
             </div>
         </div>
+        <img src="<?= IMGURL ?>why-choose-us.jpg" alt="Why Choose Us" class="no-margin visible-xs" />
         <div class="row">
             <div class="col-md-6">
-                <h2>Why Choose Us?</h2>
+                <div class="extra-padding"><h2>Why Choose Us?</h2>
 
-                <p>We understand that there are many other granite companies out there preaching the same services to you, but with our expert skills, knowledge, and materials, you can’t go wrong when you receive remodeling services from our company. In addition, we have all the necessary certifications for this industry, including in Quartz, which is required.</p>
+                <p>We understand that there are many other granite companies out there preaching the same services to you, but with our expert skills, knowledge, and materials, you can’t go wrong when you receive remodeling services from our company. In addition, we have all the necessary certifications for this industry, including in Quartz, which is required.</p></div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 hidden-xs">
                 <img src="<?= IMGURL ?>why-choose-us.jpg" alt="Why Choose Us" />
             </div>
         </div>
     </div>
+
 </section>
 
 <section class="home-module-3">
@@ -385,9 +386,13 @@
         <div class="row">
             <div class="col-md-6"></div>
             <div class="col-md-6">
-                <h2>Call Today!</h2>
-                <p>If you’re looking to update your cabinets, remodel your kitchen, or anything in between, Magic Stone Granite, LLC is the place to call. We accept credit card payments, checks, and cash and can help you in both English and Spanish. We’re always ready to help you get the job done right. Our team of hardworking professionals has what it takes to help you capture your vision and get the job done right the first time. Give us a call today to learn more about the services we offer.
+                <div class="extra-padding"><h2>Call Today!</h2>
+                <p>If you’re looking to update your cabinets, remodel your kitchen, or anything in between, Magic Stone Granite, LLC is the place to call. We accept credit card payments, checks, and cash and can help you in both English and Spanish. We’re always ready to help you get the job done right. Our team of hardworking professionals has what it takes to help you capture your vision and get the job done right the first time.
                 </p>
+
+                <p><strong>Give us a call today to learn more about the services we offer.</strong></p>
+
+                </div>
             </div>
         </div>
     </div>

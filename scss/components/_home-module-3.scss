@@ -2,4 +2,32 @@
   background: url('../img/bg-counter-faded.jpg') 0 0 no-repeat;
   background-size: cover;
   color: $white;
+
+  h2 {
+    font-size: 27px;
+    margin-bottom: 1.25em;
+  }
+
+  p {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 2em;
+  }
+
+  strong {
+    font-size: 21px;
+  }
+
+  padding: 152px 0 20px;
+
+  @media screen and (max-width: $screen-sm-max) {
+    text-align: center;
+    background: url('../img/bg-counter-faded-sm.jpg') 0 0 no-repeat;
+    background-size: cover;
+    padding: 2em 0;
+
+    p {
+      margin-bottom:  0;
+    }
+  }
 }
