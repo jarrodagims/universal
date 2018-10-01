@@ -1,5 +1,7 @@
 @mixin cardSmall() {
 
+  margin-bottom: 0;
+
   .card-img {
       background-image: url('../img/government-commercial.jpg');
     }
@@ -9,6 +11,10 @@
         background-image: url('../img/services-sm.jpg');
         background-size: cover;
       }
+    }
+
+    h2 {
+      font-size: 19px;
     }
 
     .card-bottom {
@@ -49,14 +55,22 @@
       margin-right: -35px;
 
       .btn {
-        padding: 1.5em 3em;
-        font-size: 11px;
+        font-size: 9px;
+        padding: 1.5em 2em;
         margin-top: 3em;
         margin-bottom: 2em;
       }
 
       .card-text { 
-        padding: 2em;
+        padding: 2em 20px;
+
+        img {
+          margin: 0.5em auto 0;
+        }
+
+        em {
+          font-size: 16px;
+        }
 
 
         h3 {
@@ -65,15 +79,21 @@
         }
 
         p {
-          margin-top: 1em;
+          margin-top: 2em;
           margin-bottom: 0;
           font-weight: 400;
-          line-height: 1.5;
+          line-height: 1.75;
+          font-size: 15px;
+          padding: 0 3em;
+
+          &.author {
+            font-size: 15px;
+          }
         }
       }
 
-      h3 {
-        font-size: 14px;
+      h3, em, .author {
+        font-size: 16px;
       }
 
       img {
@@ -81,6 +101,8 @@
         margin: 0 auto;
         display: block;
       }
+
+      padding: 0 20px;
 }
 
 .card {
@@ -91,6 +113,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 5em;
+  color: #918F8D;
 
   &.floating {
     position: absolute;
@@ -141,6 +164,7 @@
 
     h2 {
       letter-spacing: -1px;
+      color: #000;
     }
 
     img {

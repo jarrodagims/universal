@@ -199,10 +199,19 @@
 
 
     &.bg-dark {
-      padding: 56px 0;
+      padding: 3em 0;
       
       h2 {
         margin-top: 0;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
+
+      .btn {
+        font-size: 9px;
+        padding: 1.5em 2em;
       }
     }
 
@@ -259,9 +268,13 @@
 
     
     p.blurb {
-      font-size: 17px;
+      font-size: 15px;
       line-height: 1.75;
       margin-top: 1em;
+    }
+
+    p {
+      font-size: 15px;
     }
 
     h3 {
@@ -277,10 +290,6 @@
       font-size: 19px;
     }
 
-    .brand {
-      display: block;
-    }
-
 
     h2.larger {
       font-size: 22px;
@@ -288,10 +297,7 @@
       margin-top: 0;
     }
 
-    .btn {
-      margin-top: .5em;
-      padding: 1.25em 2em;
-    }
+    
 
     p.light {
       font-size: 15px;
@@ -302,8 +308,17 @@
 }
 
 @media screen and (max-width: $screen-sm-max) {
+
+  .home-module-1 {
+    padding: 1.5em 0;
+  }
+
+  .btn {
+    font-size: 9px;
+    padding: 16px 1em; 
+  }
+  
   .expander {
-      background: #1E3151;
       color: $white;
       text-align: left;
       font-size: 20px;
@@ -317,7 +332,6 @@
         color: $white;
         display: block;
 
-
         &::after {
           @include svg-arrow(FFFFFF);
           content: '';
@@ -330,8 +344,6 @@
           transform: translateY(-50%);
           transition: transform 0.3s ease-in-out;
         }
-
-        
       }
 
       &.expanded {

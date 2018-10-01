@@ -13,17 +13,11 @@
                                         'description'
                                     ); ?>"/></a>
                     </div>
-                    <div class="contact-footer phone-footer">
+                    <div class="footer-blocks"><div class="contact-footer phone-footer">
                         <div><span class="title">Address</span>
                             <p>6821 Market Ave.<br />
                                 El Paso, TX 79915<br />
-                                <strong>PH</strong>.  <?php if (!empty(get_option('sherpa_telephone_number'))) :
-                                    $num = get_option('sherpa_telephone_number');
-                                    $area = substr($num, 0, 3);
-                                    $first = substr($num, 3, 3);
-                                    $last = substr($num, 6, 4);
-                                    echo "(". $area . ") " . $first . "-" . $last;
-                                    endif; ?>
+                                <strong>PH</strong>.  <?php printPhone(); ?>
                             </p></div>
                     </div>
                     <div class="hours-footer">
@@ -52,7 +46,7 @@
                                     Free Estimates
                                 </button></a>
                         </div>
-                    </div>
+                    </div></div>
                     <div class="visible-xs">
                         <?php $sm = new SocialMedia(array('facebook', 'twitter'));
                         $sm->setSize('sm');

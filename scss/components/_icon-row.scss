@@ -39,15 +39,16 @@
 
 
       a {
-        font-size: 17px;
+        font-size: 15px; 
         padding: 24px 0 10px;
         color: $white;
-        padding: 2em;
+        padding: 3.5em 1em;
         font-weight: 400;
         border: 1px solid $white;
         display: flex;
         align-items: center;
         justify-content: center;
+        line-height: 2;
 
         .title {
           background: transparent;
@@ -304,8 +305,8 @@ body #main .container article #sidebar {
     flex-direction: column;
 
     a {
-      padding-top: 2em;
-      padding-bottom: 2em;
+      padding-top: 2.25em;
+      padding-bottom: 2.25em;
     }
   }
 

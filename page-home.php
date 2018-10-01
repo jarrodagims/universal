@@ -7,13 +7,15 @@
         <div class="container-fluid">
             <div class="row flex-row">
                 <div class="jumbotron">
-
+                    <div class="visible-xs visible-sm hero-mobile">
+                        <img src="<?= IMGURL ?>bg-hero-mobile.jpg" alt="" class="visible-xs" />
+                    </div>
                     <div class="jumbo-content waypoint text-center">
                         <div class="fade-down">
                             <h1>Countertops, Cabinets, & Remodeling <span class="br">from <strong>Magic Stone Granite, LLC</strong></span>
                             </h1>
                         </div>
-                        <a href="<?= SITEURL ?>/contact-us/">
+                        <a class="hidden-xs" href="<?= SITEURL ?>/contact-us/" >
                             <button class="btn btn-lrg btn-default">Contact Us</button>
                         </a>
                         <a href="<?= SITEURL ?>/contact-us/">
@@ -57,7 +59,7 @@
                     <div class="col-xs-12">
                         <div class="extra-padding">
                             <div class="text-center">
-                                <h2>Our homes are rarely <span class="brand">stagnant.</span></h2>
+                                <h2>Our homes are <span class="br-xs">rarely <span class="brand">stagnant.</span></span></h2>
                                 <p class="blurb">We’re always changing, cleaning, and improving them—<span class="br-md">updating them to match our growing families and to keep up with the hottest design trends, rearranging furniture and <span class="br-md">adding decor to every bit of wall space available, even remodeling entire sections of it.</span></span></p>
 
                                 <p>If you’re constantly updating your home, it only makes sense that you give your countertops and cabinets a bit of <span class="br-md">TLC as well. We specialize in remodeling, countertops, cabinets, and more!</span></p>
@@ -276,7 +278,7 @@
                     <div class="col-xs-12">
                         <div class="extra-padding">
                             <div class="text-center">
-                                <h2>We work hard to ensure you are <span class="brand">satisfied</span> with all of the services we offer.</h2>
+                                <h2>We work hard to ensure you <span class="br-xs">are <span class="brand">satisfied</span> with all <span class="br-xs">of the services we offer.</span></span></h2>
                                 <p class="blurb">We only work with the best of the best in terms of the tools and materials we use. With us, you can guarantee that you will be satisfied with the final results and that the final product will last for many years.</p>
                             </div>
                         </div>
@@ -311,18 +313,18 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12  waypoints">
-                            <div class="bg bg-countertops"><a href="<?= SITEURL ?>/granite-countertops-el-paso/" class="fade-down"><strong>Countertops</strong> Granite, Quartz & Marble</a></div>
+                            <div class="bg bg-countertops"><a href="<?= SITEURL ?>/granite-countertops-el-paso/" class="fade-down"><strong>Countertops</strong> <span>Granite, Quartz & Marble</span></a></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 waypoints">
-                            <div class="bg bg-cabinets"><a href="<?= SITEURL ?>/kitchen-cabinets-el-paso" class="fade-down"><strong>Cabinets</strong> Cabinets & Bathroom Cabinets</a></div>
+                            <div class="bg bg-cabinets"><a href="<?= SITEURL ?>/kitchen-cabinets-el-paso" class="fade-down"><strong>Cabinets</strong> <span>Kitchen Cabinets & Bathroom Cabinets</span></a></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-xs-12 flex-col waypoints">
-                            <div class="bg-remodeling"><a href="<?= SITEURL ?>/kitchen-remodeling/" class="fade-down"><strong>Remodeling</strong> Bathroom & Kitchen</a></div>
+                            <div class="bg-remodeling"><a href="<?= SITEURL ?>/kitchen-remodeling/" class="fade-down"><strong>Remodeling</strong> <span>Bathroom & Kitchen</span></a></div>
             </div>
         </div>
     </div>
@@ -331,7 +333,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 append-to-md">
 
                 <div class="card">
 
@@ -344,7 +346,7 @@
 
                         <img src="<?= IMGURL ?>5-star-rating.png" alt="5 stars" height="20" />
 
-                        <a href="#">
+                        <a href="https://www.facebook.com/magicstonegranite/" target="_blank">
                             <button class="btn-default btn">Review Us Here</button>
                         </a></div>
                     </div>
@@ -355,7 +357,7 @@
 
             </div>
             <div class="col-md-6">
-                <div class="extra-padding"><h2>Residential & Commercial Services</h2>
+                <div class="extra-padding"><h2>Residential & <span class="br-xs">Commercial Services</span></h2>
 
                 <p>We currently offer residential kitchen and bathroom remodeling services to residents in El Paso and Las Cruces but are looking to expand our reach to commercial services as well. Fifteen years ago, we started this company from scratch with the goal of helping homeowners upgrade the cabinets and countertops in their homes so they can have the dream home they always envisioned.</p>
 
@@ -365,7 +367,7 @@
 
             </div>
         </div>
-        <img src="<?= IMGURL ?>why-choose-us.jpg" alt="Why Choose Us" class="no-margin visible-xs" />
+        <img src="<?= IMGURL ?>counters-sm.jpg" alt="Why Choose Us" class="no-margin visible-xs" />
         <div class="row">
             <div class="col-md-6">
                 <div class="extra-padding"><h2>Why Choose Us?</h2>
@@ -396,6 +398,10 @@
             </div>
         </div>
     </div>
+</section>
+
+<section class="home-module-4 visible-xs visible-sm append-to-sm">
+
 </section>
 
 

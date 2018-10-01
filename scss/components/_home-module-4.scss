@@ -25,5 +25,26 @@
 
   @media screen and (max-width: $screen-sm-max) {
     padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+
+
+    .extra-padding {
+      padding: 0 20px;
+      margin: 2.5em 0;
+      text-align: center;
+
+      h2 {
+        font-size: 20px;
+        line-height: 1.5;
+      }
+
+      p {
+        margin: 2em 0 2em;
+        font-size: 15px;
+        line-height: 1.75;
+      }
+
+    }
   }
 }

@@ -16,6 +16,10 @@
       display: inline-block;
       margin-left: .5em;
       bottom: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: .25em;
     }
 
     &.fade-down {
@@ -168,6 +172,13 @@
       
   text-align: center;
   
+    span {
+      font-size: 15px;
+    }
+
+    a::after {
+      display: none;
+    }
 
   .bg {
     text-align: center;
@@ -176,7 +187,8 @@
     padding: 0 0;
 
     a {
-       padding: 2em 0;
+       padding: 2.25em 0;
+       line-height: 1em;
      }
 
     &::before {
@@ -214,8 +226,9 @@
       font-size: 16px;
     }
 
+
     a {
-      padding: 5em 0;
+      padding: 4em 0;
     }
 
     &::before {

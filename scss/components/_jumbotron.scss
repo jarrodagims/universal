@@ -1,6 +1,9 @@
-.landing-bg {
-  background: url('../img/bg-home.jpg') center top no-repeat;
-  background-size: cover;
+@media screen and (min-width: $screen-md-min) {
+
+  .landing-bg {
+      background: url('../img/bg-home.jpg') center top no-repeat;
+      background-size: cover;
+    }
 }
 
 #home-main {
@@ -41,9 +44,14 @@
     }
   }
 
+
+
+
   @media screen and (min-width: $screen-md-min) {
     display: flex;
     flex-direction: column;
+
+    
 
     .flex-row {
       height: 100%;
@@ -128,33 +136,42 @@
 
     .jumbo-content {
       margin: 0 0;
-      padding: 3.8em 2em 11em; 
+      padding: 2.5em 1.5em 2em; 
     } 
 
 
     @media screen and (max-width: $screen-sm-max) {
 
+      .hero-mobile {
+        margin-top: -50px;
+      }
+
       .jumbotron {
         width: 100%;
-        padding-top: 50px;
         background: url('../img/bg-hero-small.jpg') 0 0 no-repeat;
         background-size: cover;
 
 
         .jumbo-content { 
-          padding: 7.5em 2em 9em;
+          background: $white;
         }
 
         .btn {
-          font-size: 10px;
-          padding: 1.5em 3em;
+          font-size: 9px;
+          padding: 1.5em 2em;
         }
         
           h1 {
           line-height: 1.25;
           margin: 0 0; 
           font-weight: 400;
-          font-size: 26px;
+          font-size: 18px;
+
+          span {
+            font-size: 15px;
+            margin-top: 0.5em;
+            display: block;
+          }
 
           .title {
             margin-bottom: .5em;
@@ -168,6 +185,18 @@
         }
       }
     }
+
+
+  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+      .hero-mobile {
+        height: 500px;
+        margin-top: 0;
+        background: url('../img/bg-home.jpg') center bottom no-repeat;
+        background-size: cover;
+      }
+
+      
+  }
 } 
 
 @media screen and (max-width: $screen-sm-max) {

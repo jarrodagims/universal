@@ -14,7 +14,7 @@
           });
       });
 
-
+      //waypoint activate animations in a staggered
       $('.waypoint-stagger').each(function(){
           var goldenSection = 1 / 1.61803398875; /* ( 1 / phi ) */
           var ms_i_1 = 1 / goldenSection;
@@ -38,6 +38,7 @@
           $(this).toggleClass('expanded');
       });
 
+      //make the three boxes clickable
       (function() {
           var $objects = $('.waypoints');
           $.each( $objects, function ( index, object ) {
@@ -49,15 +50,48 @@
           });
       }());
 
-      $('.slideshow').cycle({
-          timeout: 8000,
-          fx: 'scrollHorz',
-          slides: '> div',
-          pauseOnHover: 'true',
-          pager: '.cycle-pager, .pager-links'
-      });
+
+
+
+      (function() {
+          //Only do slideshow on small screens
+          var timeout;
+          window.addEventListener('resize', function ( event ) {
+              if (timeout) {
+                  window.cancelAnimationFrame(timeout);
+              }
+              timeout = window.requestAnimationFrame(function () {
+                  resize();
+              });
+          }, false);
+
+          function resize() {
+              if ($(window).width() > 992) {
+                  //initialize the slider
+                  $('.slideshow').cycle({
+                      timeout: 8000,
+                      fx: 'scrollHorz',
+                      slides: '> div',
+                      pauseOnHover: 'true',
+                      pager: '.cycle-pager, .pager-links'
+                  });
+
+                  $('.card').appendTo('.append-to-md');
+
+              }
+              else if ($(window).width() < 768) {
+                  $('.slideshow').cycle('destroy');
+
+                  $('.card').appendTo('.append-to-sm');
+              }
+          }
+
+          resize();
+
+      })();
   });
 
+    //builds the links for the slider navigation
     $(document).on('cycle-bootstrap', function( e, opts, API ) {
         API.buildPagerLink = function(opts, slideOpts, slide) {
             var pagerLink;
@@ -74,4 +108,7 @@
             });
         }
     });
+
+
+
 })(jQuery);

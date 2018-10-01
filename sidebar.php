@@ -35,11 +35,13 @@
                     to learn more about the <br />
                     services we oﬀer.</h2>
 
-                <a href="#">
+                <a href="<?= SITEURL ?>/contact-us/">
                     <button class="btn btn-default">CONTACT US</button>
-                    <span class="btn btn-primary">
+                </a>
+                <a href="<?= SITEURL ?>/contact-us/">
+                    <button class="btn btn-primary">
                         FREE ESTIMATES
-                    </span>
+                    </button>
                 </a>
             </div>
         </section>

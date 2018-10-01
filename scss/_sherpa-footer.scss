@@ -16,11 +16,12 @@
   }
 
   .btn {
-    width:  100%;
+    width:  170px;
     letter-spacing: 1px;
     margin-bottom: 10px;
     padding: 16px 2em;
     max-width: 178px;
+    font-size: 10px;
   } 
 
 
@@ -88,10 +89,19 @@
    .logo-footer {
      width: 280px;
 
+     
+
      img {
-       width: 280px;
        height: auto;
      }
+   }
+
+   .footer-blocks {
+       flex: 1;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       width: 100%;
    }
 
    .button-footer {
@@ -104,25 +114,18 @@
       justify-content: space-between;
     }
 
-   .contact-footer {
-     width: 20%;
-   }
-
-   .hours-footer {
-     width: 30%;
-
-   }
 
    .bbb-footer {
-     flex: 1;
      justify-content: center;
      display: flex;
      align-items: flex-start;
+      margin: 0 auto;
    } 
 
     .contact-footer, .hours-footer {
       display: flex;
       justify-content: center;
+      margin: 0 auto;
       
       > div {
         
@@ -286,7 +289,7 @@
   }
 
   .social-media-button {
-    color: #fff;
+    color: #918F8D;
 
     &:hover {
       color: $sherpa-brand-primary;
@@ -344,6 +347,13 @@
 
     .social-container {
       text-align: center;
+    }
+
+    .bbb-footer {
+      img {
+        height: 83px;
+        margin-bottom: 1em;
+      }
     }
 
     .btn {
@@ -496,6 +506,8 @@
   #footer {
     padding: 2em 0;
 
+    
+
     a {
       width: auto;
     }
@@ -509,8 +521,6 @@
     }
 
     .navbar-brand {
-
-      margin-bottom: 2em;
 
       img {
         margin: 0 auto;
@@ -557,13 +567,14 @@
     .btn {
       font-size: 9px;
       margin-bottom: 28px;
-      width: auto;
+      padding: 1.5em 2em;
+      width: 133px;
       @include nodropshadow();
     }
     
 
     .social-media-button {
-      color: #051A3F;
+      color: #918F8D;
 
       &:hover {
         color: $sherpa-brand-primary !important;
