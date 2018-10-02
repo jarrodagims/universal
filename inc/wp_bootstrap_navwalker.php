@@ -92,7 +92,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 //			}
             //click dropdown
             if ( $args->has_children && $depth === 0 ) {
-                $atts['href']   		= '#';
+                $atts['href'] = ! empty( $item->url ) ? $item->url : '';
                 $atts['data-toggle']	= 'dropdown';
                 $atts['class']			= 'dropdown-toggle';
                 $atts['aria-haspopup']	= 'true';

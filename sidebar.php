@@ -9,7 +9,6 @@
             ?>
         </div>
         <section>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13567.379827668776!2d-106.4405365!3d31.7747144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49392db52261b69e!2sC%26L+Plumbing+Supply+Co+Inc!5e0!3m2!1sen!2sus!4v1537292962999" width="100%" height="100%" frameborder="0" style="border:0; display: block;" allowfullscreen></iframe>
         </section>
     <?php endif; ?>
     <?php if (!is_page('contact-us')) : ?>

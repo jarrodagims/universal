@@ -110,10 +110,11 @@
   padding: 0 0;
   @include dropshadow();
   height: 100%;
-  display: flex;
+  display: flex; 
   flex-direction: column;
-  margin-bottom: 5em;
   color: #918F8D;
+  background: #F4F4F4;
+
 
   &.floating {
     position: absolute;
@@ -150,7 +151,6 @@
   .card-text {
     padding: 3em 90px 50px;
     flex: 1;
-    background: #F4F4F4;
 
     p {
       margin-top: 2.5em;

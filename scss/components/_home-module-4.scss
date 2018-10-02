@@ -3,6 +3,7 @@
 
   h2 {
     font-size: 27px;
+    color: #606060;
   }
   
   img.no-margin {
@@ -12,7 +13,7 @@
   text-align: center;
 
   .extra-padding {
-    margin: 2em 0 0 2.45em;
+    margin: 0 0 0 2.45em;
     text-align: left;
 
     p {
@@ -20,6 +21,20 @@
       font-weight: 300;
       margin-top: 2.5em;
       line-height: 1.5;
+    }
+  }
+
+  .flex-row:last-child .extra-padding {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    .flex-row {
+      margin-bottom: 5em;
+    }
+
+    .flex-row:last-child .extra-padding {
+      margin-right: 2.5em;
     }
   }
 

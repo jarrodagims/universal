@@ -14,7 +14,7 @@
           });
       });
 
-      //waypoint activate animations in a staggered
+      //waypoint activate animations in a staggered fashion
       $('.waypoint-stagger').each(function(){
           var goldenSection = 1 / 1.61803398875; /* ( 1 / phi ) */
           var ms_i_1 = 1 / goldenSection;
@@ -51,8 +51,6 @@
       }());
 
 
-
-
       (function() {
           //Only do slideshow on small screens
           var timeout;
@@ -75,14 +73,19 @@
                       pauseOnHover: 'true',
                       pager: '.cycle-pager, .pager-links'
                   });
-
+                  //move testimonial card around
                   $('.card').appendTo('.append-to-md');
-
+                  //make dropdown hoverable
+                  $('.dropdown-toggle').attr('data-toggle', 'hover');
               }
-              else if ($(window).width() < 768) {
-                  $('.slideshow').cycle('destroy');
 
+              else if ($(window).width() < 992) {
+                  //remove slider
+                  $('.slideshow').cycle('destroy');
+                  //move testimonial card around
                   $('.card').appendTo('.append-to-sm');
+                  //make dropdown clickable
+                  $('.dropdown-toggle').attr('data-toggle', 'dropdown');
               }
           }
 

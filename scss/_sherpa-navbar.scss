@@ -168,6 +168,10 @@
     &.directions,
     &.contact {
       display: inline-block;
+
+      a {
+        margin: 0 10px; 
+      }
     }
 
     &.contact {
@@ -175,6 +179,7 @@
     }
 
     &.directions {
+
       a {
         display: inline-block;
       }
@@ -185,7 +190,6 @@
       width: 22px;
       height: 22px;
       text-align: center;
-      text-indent: -99999px;
       padding: 0;
 
       &:hover {
@@ -196,6 +200,7 @@
     &.directions a {
       background-size: contain;
       background-repeat: no-repeat;
+
     }
 
     &.contact a {
@@ -583,7 +588,7 @@
   }
 }
 
-@media screen and (min-width: $screen-md-min) {
+@media screen and (min-width: $screen-lg-min) {
   
     .sub-header .navbar-brand {
       img {
@@ -819,7 +824,7 @@
 
   &::after {
     content: '';
-    background: #606060 !important;
+    background: #918F8D !important;
     height: 15px;
     width: 1px;
     display: block;
@@ -831,11 +836,8 @@
 }
 
 .navbar-right li.menu-item.contact {
-
   padding-left: 0;
-  a {
-    margin-left: .75em;
-  }
+  
 
   @media screen and (max-width: $screen-sm-max) {
     a {

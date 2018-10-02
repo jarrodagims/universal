@@ -2,7 +2,7 @@
 body {
   background: #fff;
 
-  &.blog #main, &.post-template-default #main {
+  &.blog #main, &.post-template-default #main, &.error404 #main {
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 100px;
@@ -92,7 +92,7 @@ body {
 
 
         h1 {
-          color: #212421;
+          color: #606060;
           font-size: 32px;
           @include raleway();
           font-weight: 400;
@@ -107,7 +107,7 @@ body {
 
         h2, h3 {
           @include raleway();
-          color: #212421;
+          color: #606060;
           font-size: 25px;
         }
 
@@ -193,8 +193,6 @@ body {
 
 
           ul {
-              padding-left: 0;
-              list-style: none;
               display: none;
             }
 
@@ -332,7 +330,7 @@ body {
       }
       
       ul li, ol li {
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
         position: relative;
         line-height: 1.5;
         font-weight: 300;
@@ -343,7 +341,7 @@ body {
 
         font-size: 16px;
         font-weight: 400; 
-        margin-bottom: 2em;
+        margin-bottom: 1.5em;
 
         @media screen and (max-width: $grid-float-breakpoint-max) {
           &.expander {
@@ -548,6 +546,8 @@ body #main {
 @media screen and (min-width: $screen-sm-min) {
   body #main .container .flex-wrap article {
     padding-left: 2em;
+    display: flex;
+    flex-direction: column;
 
     &:first-child {
       padding-left: 0;

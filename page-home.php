@@ -31,17 +31,17 @@
             <div class="container">
                 <ul class="flex-row">
                     <li class="flex-col">
-                        <a href="<?= SITEURL; ?>/products/plumbing-fixtures/">
+                        <a href="<?= SITEURL; ?>/granite-countertops-el-paso/">
                             Countertops
                         </a>
                     </li>
                     <li class="flex-col">
-                        <a href="<?= SITEURL; ?>/products/water-heaters/">
+                        <a href="<?= SITEURL; ?>/cabinets/">
                             Cabinets
                         </a>
                     </li>
                     <li class="flex-col">
-                        <a href="<?= SITEURL; ?>/products/piping-and-fittings/">
+                        <a href="<?= SITEURL; ?>/bathroom-remodeling/">
                             Remodeling
                         </a>
                     </li>
@@ -98,7 +98,7 @@
 
                                         <p>The Benefits of Installing New Bathroom Cabinets</p>
 
-                                        <a href="<?= SITEURL ?>/bathroom-cabinets-el-paso/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
+                                        <a href="<?= SITEURL ?>/kitchen-cabinets-el-paso/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
 
                                     <?php $sm = new SocialMedia(array('facebook', 'twitter'));
                                     $sm->setSize('sm');
@@ -119,7 +119,7 @@
 
                                         <p>The Benefits of Installing New Kitchen Cabinets</p>
 
-                                        <a href="<?= SITEURL ?>/kitchen-cabinets-el-paso/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
+                                        <a href="<?= SITEURL ?>/bathroom-cabinets-el-paso/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
 
                                     <?php $sm = new SocialMedia(array('facebook', 'twitter'));
                                     $sm->setSize('sm');
@@ -140,7 +140,7 @@
 
                                         <p>The Benefits of Installing New Kitchen Cabinets</p>
 
-                                        <a href="<?= SITEURL ?>/kitchen-cabinets-el-paso/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
+                                        <a href="<?= SITEURL ?>/cabinets/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
 
                                     <?php $sm = new SocialMedia(array('facebook', 'twitter'));
                                     $sm->setSize('sm');
@@ -201,7 +201,7 @@
                                     <div class="text"><h2>Granite Countertops</h2>
 
                                         <p>The Benefits of Installing New Kitchen Cabinets</p>
-                                        <a href="<?= SITEURL ?>/kitchen-remodeling/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
+                                        <a href="<?= SITEURL ?>/granite-countertops-el-paso/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
 
                                     <?php $sm = new SocialMedia(array('facebook', 'twitter'));
                                     $sm->setSize('sm');
@@ -221,7 +221,7 @@
                                     <div class="text"><h2>Quartz Countertops</h2>
 
                                         <p>The Benefits of Installing New Kitchen Cabinets</p>
-                                        <a href="<?= SITEURL ?>/kitchen-remodeling/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
+                                        <a href="<?= SITEURL ?>/quartz-countertops-el-paso/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
 
                                     <?php $sm = new SocialMedia(array('facebook', 'twitter'));
                                     $sm->setSize('sm');
@@ -241,7 +241,7 @@
                                     <div class="text"><h2>Marble Countertops</h2>
 
                                         <p>The Benefits of Installing New Kitchen Cabinets</p>
-                                        <a href="<?= SITEURL ?>/kitchen-remodeling/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
+                                        <a href="<?= SITEURL ?>/marble-countertops-el-paso/"><button class="btn btn-primary btn-outline">LEARN MORE</button></a></div>
 
                                     <?php $sm = new SocialMedia(array('facebook', 'twitter'));
                                     $sm->setSize('sm');
@@ -297,7 +297,7 @@
                         <div class="extra-padding">
                             <div class="text-center"><h2>Our Materials</h2>
                                 <h3>Constantly Updating Your Home</h3>
-                                <a href="#"><button class="btn btn-primary">FIND MATERIALS</button></a>
+                                <a href="<?= SITEURL ?>/granite-countertops-el-paso/"><button class="btn btn-primary">FIND MATERIALS</button></a>
                             </div>
                         </div>
                     </div>
@@ -313,12 +313,12 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12  waypoints">
-                            <div class="bg bg-countertops"><a href="<?= SITEURL ?>/granite-countertops-el-paso/" class="fade-down"><strong>Countertops</strong> <span>Granite, Quartz & Marble</span></a></div>
+                            <div class="bg bg-countertops"><a href="<?= SITEURL ?>/countertops/" class="fade-down"><strong>Countertops</strong> <span>Granite, Quartz & Marble</span></a></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-12 waypoints">
-                            <div class="bg bg-cabinets"><a href="<?= SITEURL ?>/kitchen-cabinets-el-paso" class="fade-down"><strong>Cabinets</strong> <span>Kitchen Cabinets & Bathroom Cabinets</span></a></div>
+                            <div class="bg bg-cabinets"><a href="<?= SITEURL ?>/cabinets/" class="fade-down"><strong>Cabinets</strong> <span>Kitchen Cabinets & Bathroom Cabinets</span></a></div>
                         </div>
                     </div>
                 </div>
@@ -332,8 +332,8 @@
 <section class="home-module-4">
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 append-to-md">
+        <div class="row flex-row">
+            <div class="col-md-6 append-to-md flex-col">
 
                 <div class="card">
 
@@ -346,7 +346,7 @@
 
                         <img src="<?= IMGURL ?>5-star-rating.png" alt="5 stars" height="20" />
 
-                        <a href="https://www.facebook.com/magicstonegranite/" target="_blank">
+                        <a href="https://www.google.com/search?q=magic+stone+el+paso&oq=magic+stone+el+paso&aqs=chrome..69i57j69i60l3j0.5606j0j4&sourceid=chrome&ie=UTF-8#lrd=0x86e75b070322b1e1:0x52dc11769adb6dc2,3,," target="_blank">
                             <button class="btn-default btn">Review Us Here</button>
                         </a></div>
                     </div>
@@ -356,11 +356,14 @@
 
 
             </div>
-            <div class="col-md-6">
-                <div class="extra-padding"><h2>Residential & <span class="br-xs">Commercial Services</span></h2>
+            <div class="col-md-6 flex-col">
+                <div class="extra-padding">
+                 <h2>Residential & <span class="br-xs">Commercial Services</span></h2>
 
                 <p>We currently offer residential kitchen and bathroom remodeling services to residents in El Paso and Las Cruces but are looking to expand our reach to commercial services as well. Fifteen years ago, we started this company from scratch with the goal of helping homeowners upgrade the cabinets and countertops in their homes so they can have the dream home they always envisioned.</p>
-
+                <div class="visible-md visible-lg">
+                    <br /><br />
+                </div>
                 <h2>Locations We Serve</h2>
 
                 <p>We are based in El Paso, Texas but are happy to serve homeowners in Las Cruces and other surrounding communities. We can work in homes of all sizes, both big and small, and ages. No matter the kind of bathroom or kitchen you have, we’re ready and able to help you.</p></div>
@@ -368,14 +371,14 @@
             </div>
         </div>
         <img src="<?= IMGURL ?>counters-sm.jpg" alt="Why Choose Us" class="no-margin visible-xs" />
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row flex-row">
+            <div class="col-md-6 flex-col">
                 <div class="extra-padding"><h2>Why Choose Us?</h2>
 
                 <p>We understand that there are many other granite companies out there preaching the same services to you, but with our expert skills, knowledge, and materials, you can’t go wrong when you receive remodeling services from our company. In addition, we have all the necessary certifications for this industry, including in Quartz, which is required.</p></div>
             </div>
 
-            <div class="col-md-6 hidden-xs">
+            <div class="col-md-6 hidden-xs flex-col">
                 <img src="<?= IMGURL ?>why-choose-us.jpg" alt="Why Choose Us" />
             </div>
         </div>

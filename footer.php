@@ -1,6 +1,6 @@
     <div id="map-section">
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13567.379827668776!2d-106.4405365!3d31.7747144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49392db52261b69e!2sC%26L+Plumbing+Supply+Co+Inc!5e0!3m2!1sen!2sus!4v1537292962999" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.9448319500366!2d-106.39330688484316!3d31.77199058128705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75b070322b1e1%3A0x52dc11769adb6dc2!2sMagic+Stone+Granite+LLC.!5e0!3m2!1sen!2sus!4v1538489423240" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 <section id="footer">
     <div class="container">
@@ -23,18 +23,20 @@
                     <div class="hours-footer">
                         <div>
                             <span class="title">Office Hours</span>
-                            <p>Monday - Friday: <strong>8:00am - 4:00pm</strong><br />
+                            <p>Monday - Friday: <strong>8:00am - 5:00pm</strong><br />
                                 Saturday: <strong>8:00am - 3:00pm</strong><br />
                                 Sunday: <strong>Closed</strong>
                             </p>
                         </div>
                     </div>
                     <div class="bbb-footer">
-                        <div><img
+                        <div>
+                            <a href="https://www.bbb.org/us/tx/el-paso/profile/countertops/magic-stone-granite-0895-99126451" target="_blank"><img
                                 src="<?= IMGURL; ?>bbb.png"
                                 alt="<?php echo get_bloginfo(
                                     'description'
-                                ); ?>"/></div>
+                                ); ?>"/></a>
+                        </div>
                     </div>
                     <div class="button-footer">
                         <div>

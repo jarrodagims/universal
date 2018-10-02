@@ -50,6 +50,7 @@
   @media screen and (min-width: $screen-md-min) {
     display: flex;
     flex-direction: column;
+    height: 560px;
 
     
 
@@ -189,7 +190,7 @@
 
   @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
       .hero-mobile {
-        height: 500px;
+        height: 300px;
         margin-top: 0;
         background: url('../img/bg-home.jpg') center bottom no-repeat;
         background-size: cover;

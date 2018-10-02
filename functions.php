@@ -132,3 +132,13 @@ function printPhone() {
 
 add_filter( 'user_can_richedit' , '__return_false', 50 );
 
+function short_title($after = '', $length) {
+    $mytitle = explode(' ', get_the_title(), $length);
+    if (count($mytitle)>=$length) {
+        array_pop($mytitle);
+        $mytitle = implode(" ",$mytitle). $after;
+    } else {
+        $mytitle = implode(" ",$mytitle);
+    }
+    return $mytitle;
+}

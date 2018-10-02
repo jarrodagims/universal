@@ -831,3 +831,41 @@ span.brand {
     display: block;
   }
 }
+
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha {
+  display: none;
+}
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha {
+  display: inline-block;
+}
+
+.list-columns {
+  column-count: 2;
+}
+
+.list-columns.three-columns {
+  column-count: 3;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  display: none;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  border: 0;
+  background: #8a2020;
+  clear: both;
+  padding: 1em;
+  font-size: 12px;
+  color: #fff !important;
+  margin: 0 2em;
+}
+
+span.wpcf7-not-valid-tip {
+  color: #c53939;
+  font-size: 1em;
+  font-weight: normal;
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

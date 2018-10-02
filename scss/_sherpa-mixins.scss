@@ -26,31 +26,39 @@
 }
 
 @mixin expander($background) {
-	background: #1E3151;
-	color: $white;
-	text-align: left;
-	font-size: 24px;
-	padding: 0;
-
-	a {
-		padding: 1.5em 1.5em;
+	cursor: pointer;
+	span {
 		position: relative;
+		display: inline-block;
+		padding-right: calc(32px + .5em);
+
 
 		&::after {
-			@include svg-arrow(FFFFFF);
+			@include svg-arrow(ED1C24);
 			content: '';
 			display: block;
 			height: 32px;
 			width: 32px;
 			position: absolute;
-			right: 1.5em;
+			right: 0;
 			top: 50%;
 			transform: translateY(-50%);
+			transition: transform ease-in-out 300ms;
 		}
 	}
 
-	a .btn {
-		font-size: 10px;
+	&.expanded {
+
+		span::after {
+			transform: translateY(-50%) rotate(90deg);
+		}
 	}
 }
 
+
+h1, h2, h3 {
+
+	&.expander {
+		@include expander(#ff0000);
+	}
+}
