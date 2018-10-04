@@ -12,9 +12,11 @@
   background: $sherpa-brand-primary;
   font-weight: 600;
   color: $white;
+  transition: transform 300ms ease-in-out;
 
    &:hover {
     background: darken($sherpa-brand-primary, 10%);
+    transform: scale(1.15);
   }
 
   &.btn-default {

@@ -38,16 +38,14 @@
 
           function resize() {
               if ($(window).width() > 992) {
-                  //initialize the slider
-
+                  //insert logo in the middle
                   $('<li id="logo-container" class="menu-item"></li>').append($(logo)).insertBefore($(middle));
-
                   //make dropdown hoverable
                   $('.dropdown-toggle').attr('data-toggle', 'hover');
               }
 
               else if ($(window).width() < 992) {
-
+                  //move logo back to default position
                   $('.navbar-button').prepend($(logo));
                   //make dropdown clickable
                   $('.dropdown-toggle').attr('data-toggle', 'dropdown');

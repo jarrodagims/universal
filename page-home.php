@@ -19,7 +19,7 @@
                             <img src="<?= IMGURL ?>bg-hero-mobile.jpg" alt="" class="visible-xs" />
                         </div>
                         <div class="jumbo-content waypoint">
-                            <div class="fade-down">
+                            <div><div class="fade-down">
                                 <h1>Home Health Care<br />
                                     Service with Compassion<br />
                                     and Excellence</h1>
@@ -27,7 +27,7 @@
 
                             <a class="hidden-xs" href="<?= SITEURL ?>/contact-us/" >
                                 <button class="btn btn-lrg">CONTACT US TODAY</button>
-                            </a>
+                            </a></div>
                         </div>
                     </div>
                 </div>

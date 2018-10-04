@@ -31,8 +31,6 @@
 		position: relative;
 		display: inline-block;
 		padding-right: calc(32px + .5em);
-
-
 		&::after {
 			@include svg-filled-arrow(ED1C24);
 			content: '';
@@ -46,6 +44,10 @@
 			transition: transform ease-in-out 300ms;
 			background-repeat: no-repeat;
 		}
+	}
+
+	&:hover span::after {
+		@include svg-filled-arrow(F25F2B);
 	}
 
 	&.expanded {
