@@ -1,253 +1,28 @@
 .home-module-2 {
-  background: url('../img/bg-slider.jpg') 0 0 no-repeat;
+  background: url('../img/bg-mid.jpg') 0 0 no-repeat;
   background-size: cover;
-  color: $white;
-  text-align: center;
-  padding-top: 4em;
+  overflow: hidden;
 
-  p {
-    line-height: 1.5;
-    font-size: 27px;
-    font-weight: 300;
-    margin-bottom: .75em;
-    @include raleway();
-
-    &.small {
-      font-size: 16px;
-    }
+  .flex-row .flex-col:first-child {
+    z-index: 2;
   }
 
-  h2 {
-    font-size: 19px;
-    margin-bottom: 3em;
-
-    &::before {
-      content: '// ';
-    }
+  .bg-blue {
+    color: $white;
+    padding: 90px 0 90px 104px;
 
     &::after {
-      content: ' //';
-    }
-  }
-
-  h5 {
-    color: #736357;
-    letter-spacing: 1px;
-  }
-
-  .cycle-pager {
-    text-align: center;
-    margin: 50px auto;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-
-    li {
-      list-style: none;
-      float: left;
-
-      &.cycle-pager-active {
-        a::before {
-          background: $sherpa-brand-primary;
-        }
-      }
-
-      a {
-        text-indent: -9999px;
-        overflow: hidden;
-        width: 7px;
-        height: 7px;
-        display: block;
-        margin-right: 12px;
-
-        &::before {
-          content: '';
-          border-radius: 100%;
-          background: #646564;
-          display: block;
-          height: 7px;
-          width: 7px;
-          position: absolute;
-          color: $white;
-        }
-      }
-    }
-  }
-
-  .slider {
-    width: 100%;
-    margin-top: 3.6em;
-
-    .slide-menu {
-      width: 25%;
-      background: rgba(0, 0, 0, 0.17);
-
-      li {
-        
-
-        a {
-          color: $white;
-          padding: 1.5em 2.5em;
-          display: block;
-          position: relative;
-          overflow: visible;
-          text-align: left;
-          line-height: 1.5;
-          font-size: 15px;
-
-          &::before {
-            border-bottom: 1px solid rgba(255,255,255,0.2);
-            content: '';
-            position: absolute;
-            bottom: 0;
-            display: block;
-            width: 100%;
-            left: 0;
-            height: 1px;
-          }
-
-
-          &:hover {
-            background: #000;
-            content: '';
-            display: block;
-            border-top: 1px solid #000;
-            margin-top: -1px;
-
-            &::before {
-              display: none;
-            }
-
-
-            &::after {
-              width: 0; 
-              height: 0; 
-              border-top: 10px solid transparent;
-              border-bottom: 10px solid transparent;
-              position: absolute;
-              border-left: 10px solid $sherpa-brand-primary;  
-              content: '';
-              display: block;
-              top: 50%;
-              transform: translateY(-50%);
-              right: -10px;
-              z-index: 999;
-            }
-          }
-        }
-
-        a::after {
-          width: 0; 
-          height: 0; 
-          border-top: 10px solid transparent;
-          border-bottom: 10px solid transparent;
-          position: absolute;
-          border-left: 10px solid $sherpa-brand-primary;
-          transition: opacity 0.3s ease-in-out;  
-          content: '';
-          display: block;
-          top: 50%;
-          transform: translateY(-50%);
-          right: -10px;
-          z-index: 999;
-          opacity: 0;
-        }
-
-
-        &.cycle-pager-active {
-          a::after {
-            opacity: 1;
-          }
-        }
-
-        &:last-child {
-          border-bottom: 0;
-
-          a {
-            &::before {
-              display: none;
-            }
-          }
-        }
-      }
-    }
-
-    .slideshow {
-      width: 85%;
-      justify-content: flex-start;
-
-      .slide {
-        display: flex !important;
-        flex-direction: row;
-        width: 100%;
-        height: 100%;
-      }
-    }
-    
-
-    .slide-content {
-      background: $white;
-      color: #000;
-      display: block !important;
-      width: 52%;
-
-      h2 {
-        font-size: 39px;
-        font-weight: 600;
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 0;
-        margin-bottom: .5em;
-        margin-top: 1em;
-
-        &::before, &::after {
-          display: none;
-        }
-      }
-
-      p {
-        font-size: 15px;
-        font-family: 'Roboto', sans-serif;
-        margin-bottom: 2em;
-      }
-      
-      .extra-padding {
-        padding: 3em 2em;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-    }
-
-    .slide-img {
-      flex: 1;
-      width: 100%;
-       display: block !important;
-      background: url('../img/slide-bathroom.jpg');
-      background-size: cover;
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: $screen-sm-max) {
-    padding-top: 1.5em;
-
-    p {
-      font-size: 16px;
-    }
-
-    h2 {
-      font-size: 16px;
-      margin-bottom: 2em;
-    }
-
-    p {
-      margin-bottom: 1em;
-    }
-
-    p.small {
-      margin-bottom: 3.75em;
-      font-size: 15px;
+      background: rgba($sherpa-secondary-color, .9);
+      color: $white;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      display: block; 
+      width: 50vw;
+      height: 100%;
+      z-index: -1;
     }
   }
 }

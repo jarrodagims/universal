@@ -86,7 +86,7 @@
 }
 
 .sub-header {
-  background: transparent;
+  background: #EDEFEF;
   color: #fff;
   padding: 10px 0;
   position: relative;
@@ -97,11 +97,41 @@
     align-items: flex-end;
     justify-content: space-between;
     position: relative;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $screen-lg-min) {
+    padding: 1em 0;
+    margin-top: 103px;
+
+    #header-logo {
+      width: 80px;
+    }
+
+    #header-logo img {
+      position: absolute;
+      width: 80px;
+      height: auto;
+      bottom: 20px;
+    }
+
+    #logo-container {
+      height: 1px;
+    }
   }
 
   @media screen and (min-width: $screen-md-min) {
-    padding-top: 48px;
-    padding-bottom: 20px;
+    
+
+    #header-logo {
+      display: none;
+    }
+
+    #menu-primary {
+      #header-logo {
+        display: block;
+      }
+    }
   }
 
   @media screen and (max-width: $grid-float-breakpoint-max) {

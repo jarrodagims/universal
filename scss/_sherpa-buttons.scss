@@ -11,6 +11,11 @@
   transition: background-color 0.2s ease-in-out;
   background: $sherpa-brand-primary;
   font-weight: 600;
+  color: $white;
+
+   &:hover {
+    background: darken($sherpa-brand-primary, 10%);
+  }
 
   &.btn-default {
     background: #918F8D;

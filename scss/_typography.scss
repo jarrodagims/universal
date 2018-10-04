@@ -1,9 +1,9 @@
 body {
-  color: #666666;
+  color: #606060;
 }
 
 h1 {
-  color: #1E242D;
+  color: #606060;
 }
 
 h1,
@@ -16,6 +16,8 @@ h4 {
 
 h2 {
   @include raleway();
+  margin-bottom: 1em;
+  font-size: 32px;
 }
 
 p {

@@ -34,7 +34,7 @@
 
 
 		&::after {
-			@include svg-arrow(ED1C24);
+			@include svg-filled-arrow(ED1C24);
 			content: '';
 			display: block;
 			height: 32px;
@@ -44,13 +44,14 @@
 			top: 50%;
 			transform: translateY(-50%);
 			transition: transform ease-in-out 300ms;
+			background-repeat: no-repeat;
 		}
 	}
 
 	&.expanded {
 
 		span::after {
-			transform: translateY(-50%) rotate(90deg);
+			transform: translateY(-50%) rotate(180deg);
 		}
 	}
 }

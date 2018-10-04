@@ -56,17 +56,13 @@
             <div class="row ">
                 <div class="v-align">
                     <div class="col-xs-12 navbar-button text-center">
-                        <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
-                                    src="<?= IMGURL; ?>logo.svg"
+                        <a id="header-logo" class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
+                                    src="<?= IMGURL; ?>logo.png"
                                     alt="<?php echo get_bloginfo(
                                         'description'
                                     ); ?>"/></a>
                         <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="menu-item directions"><a
-                                        href="<?php echo get_site_url() ?>/contact-us"></a></a></li>
-                            <li class="menu-item contact"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"></a></li>
-                        </ul>
+
                     </div>
                 </div>
             </div>

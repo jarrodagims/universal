@@ -161,7 +161,10 @@
 }
 
 .navbar-right {
-  margin: 0 0 0;
+  margin: 2em 0 0 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
 
   li.menu-item {
     line-height: 16px;
@@ -187,8 +190,8 @@
 
     &.directions a,
     &.contact a {
-      width: 22px;
-      height: 22px;
+      width: 16px;
+      height: 16px;
       text-align: center;
       padding: 0;
 
@@ -824,7 +827,7 @@
 
   &::after {
     content: '';
-    background: #918F8D !important;
+    background: $white !important;
     height: 15px;
     width: 1px;
     display: block;

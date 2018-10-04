@@ -1,8 +1,5 @@
-<li class="flex-col"><a href="<?= SITEURL ?>/kitchen-cabinets-el-paso/">Kitchen Cabinet Installations</a></li>
-<li class="flex-col"><a href="<?= SITEURL ?>/bathroom-cabinets-el-paso/">Bathroom Cabinet Installations</a></li>
-<li class="flex-col"><a href="<?= SITEURL ?>/cabinets/">Cabinet Design</a></li>
-<li class="flex-col"><a href="<?= SITEURL ?>/bathroom-remodeling/">Bathroom Remodeling</a></li>
-<li class="flex-col"><a href="<?= SITEURL ?>/kitchen-remodeling/">Kitchen Remodeling</a></li>
-<li class="flex-col"><a href="<?= SITEURL ?>/granite-countertops-el-paso/">Granite Countertops</a></li>
-<li class="flex-col"><a href="<?= SITEURL ?>/quartz-countertops-el-paso/">Quartz Countertops</a></li>
-<li class="flex-col"><a href="<?= SITEURL ?>/marble-countertops-el-paso/">Marble Countertops</a></li>
+<li><a href="<?= SITEURL ?>/geriatric-at-home-therapy/in-home-physical-therapy/"><div class="icon"><?php get_template_part('template-parts/icon', '1'); ?></div> Physical therapy</a></li>
+<li><a href="<?= SITEURL ?>/geriatric-at-home-therapy/in-home-occupational-therapy/"><div class="icon"><?php get_template_part('template-parts/icon', '2'); ?></div> Occupational Therapy</a></li>
+<li><a href="<?= SITEURL ?>/geriatric-at-home-nursing/"><div class="icon"><?php get_template_part('template-parts/icon', '3'); ?> </div>Nursing</a></li>
+<li><a href="<?= SITEURL ?>/geriatric-home-health-aide/"><div class="icon"><?php get_template_part('template-parts/icon', '4'); ?></div> Home Health Aides</a></li>
+<li><a href="<?= SITEURL ?>/geriatric-medical-social-workers/"><div class="icon"><?php get_template_part('template-parts/icon', '5'); ?></div> Social Services</a></li>

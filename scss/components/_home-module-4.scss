@@ -1,65 +1,15 @@
 .home-module-4 {
-  padding: 6.25em 0;
+  padding: 111px 0;
+  background: #EDEFEF;
 
-  h2 {
-    font-size: 27px;
-    color: #606060;
-  }
-  
-  img.no-margin {
-      width: 100%;
+  p, ul {
+    font-size: 18px;
+    font-weight: 300;
   }
 
-  text-align: center;
-
-  .extra-padding {
-    margin: 0 0 0 2.45em;
-    text-align: left;
-
-    p {
-      font-size: 19px;
-      font-weight: 300;
-      margin-top: 2.5em;
-      line-height: 1.5;
-    }
+  .banner {
+    display: block;
+    margin-top: 2em;
   }
 
-  .flex-row:last-child .extra-padding {
-    margin-left: 0;
-  }
-
-  @media screen and (min-width: $screen-md-min) {
-    .flex-row {
-      margin-bottom: 5em;
-    }
-
-    .flex-row:last-child .extra-padding {
-      margin-right: 2.5em;
-    }
-  }
-
-  @media screen and (max-width: $screen-sm-max) {
-    padding-top: 0;
-    padding-bottom: 0;
-    overflow: hidden;
-
-
-    .extra-padding {
-      padding: 0 20px;
-      margin: 2.5em 0;
-      text-align: center;
-
-      h2 {
-        font-size: 20px;
-        line-height: 1.5;
-      }
-
-      p {
-        margin: 2em 0 2em;
-        font-size: 15px;
-        line-height: 1.75;
-      }
-
-    }
-  }
 }

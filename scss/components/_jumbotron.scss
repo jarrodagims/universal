@@ -1,18 +1,66 @@
 @media screen and (min-width: $screen-md-min) {
 
-  .landing-bg {
-      background: url('../img/bg-home.jpg') center top no-repeat;
-      background-size: cover;
+  
+}
+
+
+.btn-arrow {
+  content: '';
+  @include svg-arrow(ffffff);
+  background-size: 8px;
+  background-position: 5px center;
+  background-color: rgba(#137CCD, .9);
+  border-bottom-right-radius: 35px * 2;
+  border-top-right-radius: 35px * 2;
+  position: absolute; 
+  width: 30px;
+  height: 60px; 
+  transform: translateY(-50%);
+  transition: transform 300ms ease-in-out;
+
+  &.right {
+    left: 0px;
+    top: 50%;
+
+    &:hover {
+      transform: translateY(-50%) translateX(-10px);
     }
+  }
+
+  &.left {
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    z-index: 9999;
+ 
+    &:hover {
+      transform: translateY(-50%) rotate(180deg) translateX(-10px);
+    }
+  }
+
+  &.down {
+    transform: translateX(-50%) rotate(90deg);
+    left: 50%;
+    right: auto;
+    bottom: -40px;
+    background-color: $sherpa-secondary-color;
+
+    &:hover {
+      transform:  translateX(-50%) translateY(-10px) rotate(90deg);
+    } 
+  }
 }
 
 #home-main {
   position: relative;
   z-index: 0;
+   background: url('../img/bg-hero.jpg') center top no-repeat;
+   background-size: cover; 
 
 .container-fluid {
   width: 100%;
 }
+
 
 .jumbo-bg {
   min-height: 551px; 
@@ -22,7 +70,8 @@
   .jumbotron {
 
     h1 {
-      color: #000;
+      color: $white;
+      text-align: left;
       margin-top: 0;
       text-shadow: none !important;
 
@@ -41,7 +90,23 @@
     .btn {
       margin-top: 2.5em;
       padding: 2em 3.5em;
+      @include dropshadow();
     }
+
+    .jumbo-content {
+      &::before {
+        background: rgba(#137CCD, .9);
+        width: 50vw;
+        content: '';
+        right: 0;
+        top: 0;
+        position: absolute;
+        height: 100%;
+        z-index: -1;
+      }
+    }
+
+
   }
 
 
@@ -50,16 +115,19 @@
   @media screen and (min-width: $screen-md-min) {
     display: flex;
     flex-direction: column;
-    height: 560px;
+
+    
+
+    .bg-circle {
+      overflow: hidden;
+
+       
+    }
 
     
 
     .flex-row {
       height: 100%;
-
-      .flex-col {
-        width: 11.1111%;
-      }
     }
 
     .jumbotron {
@@ -81,6 +149,8 @@
         margin-bottom: 2em;
         width: 18em;
 
+       
+
         &.btn-default {
           margin-right: 20px;
         }
@@ -95,7 +165,7 @@
 
         h1 {
           font-size: 37px; 
-          line-height: 1.75;
+          line-height: 1.5;
           margin-top: 3.25em;
           margin-bottom: 0.5em;
 

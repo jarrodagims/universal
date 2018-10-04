@@ -2,6 +2,11 @@
   text-align: center;
   overflow: hidden;
   text-align: left;
+  padding: 137px 0;
+
+  .flex-col {
+    justify-content: flex-start;
+  }
 
   h2 {
     font-family: 'Raleway', sans-serif;

@@ -3,6 +3,12 @@
 (function($) {
   $(document).ready(function() {
 
+      $('.expander').click(function (event) {
+          event.preventDefault();
+          $($(this).data("target")).slideToggle();
+          $(this).toggleClass('expanded');
+      });
+
       $('.waypoint').each(function(){
           var self = $(this);
 
@@ -14,42 +20,9 @@
           });
       });
 
-      //waypoint activate animations in a staggered fashion
-      $('.waypoint-stagger').each(function(){
-          var goldenSection = 1 / 1.61803398875; /* ( 1 / phi ) */
-          var ms_i_1 = 1 / goldenSection;
-
-          $(this).waypoint({
-              handler: function(){
-                  var $objects = $('.waypoints');
-                  $.each( $objects, function ( index, object ) {
-                      setTimeout( function () {
-                          $( object ).addClass( 'active' );
-                      }, 120 * ( index + 1 ) * ms_i_1 );
-                  });
-              },
-              offset: '50%'
-          });
-      });
-
-      $('.expander').click(function (event) {
-          event.preventDefault();
-          $($(this).data("target")).slideToggle();
-          $(this).toggleClass('expanded');
-      });
-
-      //make the three boxes clickable
-      (function() {
-          var $objects = $('.waypoints');
-          $.each( $objects, function ( index, object ) {
-              var $object = $( object );
-              $object.on('click', function() {
-                  var target = $(this).find('a').attr('href');
-                  location.href = target;
-              });
-          });
-      }());
-
+      var logo = $('#header-logo');
+      var list = $('#menu-primary').children();
+      var middle = list[Math.floor(list.length / 2)];
 
       (function() {
           //Only do slideshow on small screens
@@ -66,24 +39,16 @@
           function resize() {
               if ($(window).width() > 992) {
                   //initialize the slider
-                  $('.slideshow').cycle({
-                      timeout: 8000,
-                      fx: 'scrollHorz',
-                      slides: '> div',
-                      pauseOnHover: 'true',
-                      pager: '.cycle-pager, .pager-links'
-                  });
-                  //move testimonial card around
-                  $('.card').appendTo('.append-to-md');
+
+                  $('<li id="logo-container" class="menu-item"></li>').append($(logo)).insertBefore($(middle));
+
                   //make dropdown hoverable
                   $('.dropdown-toggle').attr('data-toggle', 'hover');
               }
 
               else if ($(window).width() < 992) {
-                  //remove slider
-                  $('.slideshow').cycle('destroy');
-                  //move testimonial card around
-                  $('.card').appendTo('.append-to-sm');
+
+                  $('.navbar-button').prepend($(logo));
                   //make dropdown clickable
                   $('.dropdown-toggle').attr('data-toggle', 'dropdown');
               }

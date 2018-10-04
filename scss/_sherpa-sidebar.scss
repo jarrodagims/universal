@@ -51,7 +51,7 @@ body #main .container article #sidebar {
   text-align: center;
 
   .box {
-    background: #212421;
+    background: $sherpa-secondary-color;
     padding: 44px;
     margin-top: 20px;
     
@@ -105,6 +105,16 @@ body #main .container article #sidebar {
 //   z-index: 9999;
   position: relative;
 
+  .home-module-1 {
+    padding: 42px 33px;
+    margin: 0 0;
+
+    ul {
+      margin: 0 0;
+      padding: 0 0;
+    }
+  }
+
   .card {
     @include cardSmall();
     margin: 0 0 2em;
@@ -126,18 +136,38 @@ body #main .container article #sidebar {
 
   .bg {
     justify-content: flex-start; 
-    align-items: flex-end; 
     text-align: center;
     flex-direction: column;
+    @include dropshadow();
 
 
     .header {
-      background: #212421;
+      background: #F4F4F4;
       padding: 2em 0;
       width: 100%;
-      color: $white;
+      color: #606060;
       font-size: 21px;
       @include raleway();
+      position: relative;
+
+      span {
+        display: inline-block;
+        position: relative;
+        padding-right: 30px;
+      }
+
+      span::after {
+        @include svg-filled-arrow(ffffff);
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
 
 
       h2 {

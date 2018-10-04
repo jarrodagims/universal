@@ -3,8 +3,8 @@
   	background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns="http://www.w3.org/2000/svg"%20viewBox="0%200%2014.4%2020.7"%3E%3Cg%20fill="%23#{$color}"%20id="Layer_2"%20data-name="Layer%202"%3E%3Cg%20id="Layer_6"%20data-name="Layer%206"%3E%3Cpath%20id="_7"%20data-name="7"%20%20d="M7.2,0A7.21,7.21,0,0,0,0,7.2c0,1.89,1.17,4.72,3.49,8.42,1.71,2.72,3.45,4.94,3.46,5a.32.32,0,0,0,.25.12h0a.3.3,0,0,0,.25-.12s1.75-2.26,3.46-5c2.32-3.71,3.49-6.53,3.49-8.38A7.21,7.21,0,0,0,7.2,0Zm0,10.67A3.47,3.47,0,1,1,10.67,7.2,3.47,3.47,0,0,1,7.2,10.67Z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
   	content: '';
   	display: block;
-  	width: 22px;
-  	height: 22px;
+  	width: 16px;
+  	height: 16px;
   	background-repeat: no-repeat;
   	background-position: center center;
   }
@@ -15,15 +15,15 @@
   	background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns="http://www.w3.org/2000/svg"%20viewBox="0%200%2013.39%2019.79"%3E%3Cg%20fill="%23#{$color}"%20id="Layer_2"%20data-name="Layer%202"%3E%3Cg%20id="Layer_6"%20data-name="Layer%206"%3E%3Cpath%20id="_8"%20data-name="8"%20%20d="M13.26,17.51l-1.47-2.92a1.37,1.37,0,0,0-1.22-.73,1.58,1.58,0,0,0-.38.05l-1.75.43c-.26-.2-1.06-1-2.5-3.86s-1.59-4-1.59-4.26l1.48-1A1.2,1.2,0,0,0,6.3,3.68L4.83.75A1.41,1.41,0,0,0,3.56,0,1.45,1.45,0,0,0,2.8.21L1.92.74a3.63,3.63,0,0,0-1.64,2A7,7,0,0,0,.05,5.61a20,20,0,0,0,2.12,6.5,22.82,22.82,0,0,0,3.48,5.17c1.56,1.66,3.1,2.51,4.57,2.51a3.76,3.76,0,0,0,1.19-.2l1-.28a1.41,1.41,0,0,0,.86-.72A1.21,1.21,0,0,0,13.26,17.51Z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
     content: '';
   	display: block;
-  	width: 22px;
-  	height: 22px;
+  	width: 16px;
+  	height: 16px;
   	background-repeat: no-repeat;
   	background-position: center center;
   }
 }
 
 @mixin svg-arrow($color) {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.41 28.41"><title>Asset 4</title><g id="3e6c0f3e-5523-4469-97bb-a589646e0d10" data-name="Layer 2"><g id="529d7cf2-fec0-40c5-938e-fc73b911b13b" data-name="Layer 1"><polygon points="10.22 7.38 17.05 14.21 10.22 21.03 11.31 22.12 19.23 14.21 11.31 6.29 10.22 7.38" fill="%23#{$color}"/><path d="M14.21,0a14.2,14.2,0,1,0,14.2,14.21A14.22,14.22,0,0,0,14.21,0m0,27A12.79,12.79,0,1,1,27,14.21,12.8,12.8,0,0,1,14.21,27" fill="%23#{$color}"/></g></g></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.27 14.15"><g id="d2d75648-cdc9-41eb-ad10-281f2350da98" data-name="Layer 2"><g id="96802664-1d4c-4baa-abde-3604886adfc3" data-name="Layer 1"><polygon points="8.27 7.08 1.19 0 0 1.19 5.88 7.08 0 12.96 1.19 14.15 8.27 7.08" fill="%23#{$color}"/></g></g></svg>');
   background-repeat: no-repeat;
 }
 
@@ -221,6 +221,10 @@
 
 @mixin svg-chevron($color) {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.82 8.67"><title>Asset 1</title><g id="33837ecc-cd43-422d-b830-156da8dec3e1" data-name="Layer 2"><g id="2b94c75f-9e37-4a6c-abc2-c4aead10e343" data-name="Layer 1"><polygon points="8.82 4.33 4.48 0 3.52 0.96 6.89 4.33 3.52 7.7 4.48 8.67 8.82 4.33" fill="#fff"/><polygon points="5.3 4.33 0.96 0 0 0.96 3.37 4.33 0 7.7 0.96 8.67 5.3 4.33" fill="#fff"/></g></g></svg>');
+}
+
+@mixin svg-filled-arrow($color) {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.79 24.52"><title>Asset 3</title><g id="21551a7e-5e20-4ce0-904a-0da606fb6d5c" data-name="Layer 2"><g id="4a72d9a2-7399-49c4-82a1-d4c429a9c56c" data-name="Layer 1"><path d="M23.79,12.26A12.08,12.08,0,0,1,11.9,24.52,12.08,12.08,0,0,1,0,12.26,12.08,12.08,0,0,1,11.9,0a12.08,12.08,0,0,1,11.9,12.26" fill="#137ccd"/><g opacity="0.94"><polygon points="11.9 15.56 17.37 9.91 16.45 8.97 11.9 13.66 7.34 8.97 6.42 9.91 11.9 15.56" fill="#fff"/></g></g></g></svg>');
 }
 
 @keyframes hover-icon-up {
