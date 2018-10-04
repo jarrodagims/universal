@@ -546,8 +546,7 @@
 
       div {
         display: flex;
-        justify-content: flex-end;
-        margin-right: 2em;
+        justify-content: center;
       }
     }
 
@@ -592,6 +591,14 @@
 }
 
 @media screen and (min-width: $screen-lg-min) {
+
+  .navbar-sherpa {
+    margin: 0 auto;
+
+    .navbar-collapse {
+      padding-left: 0;
+    }
+  }
   
     .sub-header .navbar-brand {
       img {
@@ -827,7 +834,7 @@
 
   &::after {
     content: '';
-    background: $white !important;
+    background: $white;
     height: 15px;
     width: 1px;
     display: block;

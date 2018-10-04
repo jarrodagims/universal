@@ -32,7 +32,7 @@
 		display: inline-block;
 		padding-right: calc(32px + .5em);
 		&::after {
-			@include svg-filled-arrow(ED1C24);
+			@include svg-filled-arrow(137CCD);
 			content: '';
 			display: block;
 			height: 32px;
@@ -44,11 +44,13 @@
 			transition: transform ease-in-out 300ms;
 			background-repeat: no-repeat;
 		}
+
+		&:hover::after {
+			@include svg-filled-arrow(F25F2B);
+		}
 	}
 
-	&:hover span::after {
-		@include svg-filled-arrow(F25F2B);
-	}
+
 
 	&.expanded {
 

@@ -69,6 +69,7 @@ body #main .container article #sidebar {
       width: 160px; 
       font-size: 10px;
       padding: 16px 0;
+      @include dropshadow();
     }
   }
 
@@ -157,7 +158,7 @@ body #main .container article #sidebar {
       }
 
       span::after {
-        @include svg-filled-arrow(ffffff);
+        @include svg-filled-arrow(137CCD);
         content: '';
         width: 20px;
         height: 20px;

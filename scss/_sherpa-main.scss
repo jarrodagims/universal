@@ -73,6 +73,37 @@ body {
   #main {
     .container {
 
+      .navbar-right {
+
+  li.menu-item {
+
+    a {
+      float: left;
+    }
+
+    &.directions a {
+      @include svg-map(137CCD);
+
+      &:hover {
+        @include svg-map($sherpa-svg-color-hover);
+      }
+    }
+
+    &.contact a {
+      @include svg-contact(137CCD);
+      margin-right: 0;
+
+      &:hover {
+        @include svg-contact(F25F2B);
+      }
+    }
+
+    &.directions:after {
+      background: #137CCD;
+    }
+  }
+}
+
       article {
         .ngg-galleryoverview {
           width: auto !important;

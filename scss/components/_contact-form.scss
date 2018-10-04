@@ -376,13 +376,13 @@
       padding: 20px 32px;
       transition: all 0.3s ease-in-out; 
       border: 0;
-
       background: $sherpa-brand-primary;
       color: $white;
 
       &:hover {
-        background: #f49595;
         color: $white;
+        background: darken($sherpa-brand-primary, 10%);
+        transform: scale(1.25);
       }
     }
 
@@ -399,7 +399,7 @@
 }
 
 #contact-form {
-  background: #918F8D;
+  background: $sherpa-secondary-color;
 
   @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
     margin-bottom: 3em;
@@ -416,6 +416,7 @@
 
       input[type="submit"] {
         width: 144px;
+        @include dropshadow();
       }
     }
 
