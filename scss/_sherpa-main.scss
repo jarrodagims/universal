@@ -7,7 +7,7 @@ body {
     padding-right: 15px;
     margin-top: 100px;
 
-    @media screen and (min-width: $screen-md-min) {
+    @include media-breakpoint-up(md) {
 
       h1 {
         margin-bottom: 1em;
@@ -19,7 +19,7 @@ body {
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
 
     
 
@@ -171,7 +171,7 @@ body {
 
 
 
-        @media screen and (min-width: $screen-md-min) {
+        @include media-breakpoint-up(md) {
 
             h1 {
               margin-top: 0;
@@ -179,13 +179,13 @@ body {
             }
         }
 
-        @media screen and (max-width: $screen-sm-max) {
+        @include media-breakpoint-down(sm) {
             .columns {
               flex-direction: column;
             }
         }
 
-        @media screen and (max-width: $grid-float-breakpoint-max) {
+        @include media-breakpoint-down(xs) {
 
         
 
@@ -237,7 +237,7 @@ body {
             color: $sherpa-brand-primary;
           }
 
-          @media screen and (max-width: $grid-float-breakpoint-max) {
+          @include media-breakpoint-down(xs) {
             padding-top: 0;
           }
         }
@@ -256,7 +256,7 @@ body {
           margin: 0 auto;
           background-size: cover;
 
-          @media screen and (min-width: $screen-md-min) {
+          @include media-breakpoint-up(md) {
             height: 272px;
           }
 
@@ -291,7 +291,7 @@ body {
               margin-left: 2em; 
             }
 
-            @media screen and (max-width: $screen-sm-max) {
+            @include media-breakpoint-down(sm) {
               font-size: 1em;
               display: block;
               margin-left: auto;
@@ -303,7 +303,7 @@ body {
               }
             }
 
-            @media screen and (max-width: $grid-float-breakpoint-max) {
+            @include media-breakpoint-down(xs) {
               position: relative;
               color: #5f6a70;
 
@@ -330,7 +330,7 @@ body {
 //           }
            
 
-          @media screen and (max-width: $screen-sm-max) {
+          @include media-breakpoint-down(sm) {
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -340,7 +340,7 @@ body {
             background: none;
           }
 
-          @media screen and (max-width: $grid-float-breakpoint-max) {
+          @include media-breakpoint-down(xs) {
             flex-direction: column-reverse;
             img {
               margin-bottom: 1em;
@@ -399,7 +399,7 @@ body {
         font-weight: 400; 
         margin-bottom: 1.5em;
 
-        @media screen and (max-width: $grid-float-breakpoint-max) {
+        @include media-breakpoint-down(xs) {
           &.expander {
             margin-bottom: 0;
             text-align: center;
@@ -413,7 +413,7 @@ body {
         line-height: 1.5;
       }
 
-      @media screen and (min-width: $screen-sm-min) {
+      @include media-breakpoint-up(sm) {
 
         article {
 
@@ -463,7 +463,7 @@ body #main {
     text-align: center;
     padding: 3em 0;
 
-    @media screen and (min-width: $screen-md-min) {
+    @include media-breakpoint-up(md) {
       padding: 5.5em 0;
 
       h2 {
@@ -526,7 +526,7 @@ body #main {
       margin-top: 0;
     }
 
-    @media screen and (max-width: $grid-float-breakpoint-max) {
+    @include media-breakpoint-down(xs) {
       .floating-badge {
         display: none;
       }
@@ -538,7 +538,7 @@ body #main {
       }
     }
 
-    @media screen and (min-width: $screen-sm-min) {
+    @include media-breakpoint-up(sm) {
       height: 500px;
 
       .floating-badge {
@@ -562,7 +562,7 @@ body #main {
   }
 }
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
 
   .page-template-default, .blog, .error-404, .post-template-default {
     #header {
@@ -593,13 +593,13 @@ body #main {
   }
 }
 
-@media screen and (max-width: $screen-sm-max) {
+@include media-breakpoint-down(sm) {
   body #main .container .flex-wrap article {
     margin-bottom: 2em;
   }
 }
 
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   body #main .container .flex-wrap article {
     padding-left: 2em;
     display: flex;
@@ -631,7 +631,7 @@ body #main {
     width: 20px;
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     display: none;
   }
 }
@@ -671,7 +671,7 @@ body #main {
   }
 }
 
-@media screen and (min-width: $screen-md-min) {
+@include media-breakpoint-up(md) {
   .two-column {
     column-count: 2;
   }

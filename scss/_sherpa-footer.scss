@@ -47,7 +47,7 @@
         text-decoration: none;
       }
 
-     @media screen and (min-width: $screen-sm-min) {
+     @include media-breakpoint-up(sm) {
         position: relative;
         display: inline-block;
         margin-bottom: 1em;
@@ -72,7 +72,7 @@
      }
   }
 
-//   @media screen and (min-width: $screen-lg-min) {
+//   @include media-breakpoint-up(lg) {
 //     .logo-footer {
 //       margin-right: auto;
 //     }
@@ -87,7 +87,7 @@
 
 //   }
 
-  @media screen and (min-width: $screen-md-min) {
+  @include media-breakpoint-up(md) {
 
    .footer-blocks {
        flex: 1;
@@ -138,12 +138,12 @@
     }
   }
 
-  @media screen and (max-width: $screen-sm-min) {
+  @include media-breakpoint-down(sm) {
     text-align: left;
   }
 
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
 
     ul {
       margin: 20px auto;
@@ -288,7 +288,7 @@
     }
   }
 
-  @media screen and (min-width: $screen-md-min) {
+  @include media-breakpoint-up(md) {
     text-align: left;
     
 
@@ -302,7 +302,7 @@
 
   
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
 
     .button-footer {
       flex: 1;
@@ -390,7 +390,7 @@
     }
   }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     .flex-row {
       flex-direction: column;
     }
@@ -414,7 +414,7 @@
 
   background: $sherpa-secondary-color;
 
-  @media screen and (min-width: $screen-md-min) {
+  @include media-breakpoint-up(md) {
     li.menu-item:first-child {
       margin-left: 0 !important;
     }
@@ -442,7 +442,7 @@
     color: #fff;
   }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     text-align: center;
   }
 }
@@ -475,7 +475,7 @@
     }
   }
 
-   @media screen and (max-width: $screen-sm-max) {
+   @include media-breakpoint-down(sm) {
       .flex-col {
         flex-direction: column;
       }
@@ -486,7 +486,7 @@
 }
 
 
-@media screen and (max-width: $screen-sm-max) {
+@include media-breakpoint-down(sm) {
 
   #sub-footer {
     font-size: 10px;
@@ -550,7 +550,7 @@
 
   
 
-@media screen and (max-width: $screen-sm-max) {
+@include media-breakpoint-down(sm) {
   #footer {
     padding: 30px 20px 0;
 

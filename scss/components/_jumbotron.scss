@@ -1,4 +1,4 @@
-@media screen and (min-width: $screen-md-min) {
+@include media-breakpoint-up(md) {
 
   
 }
@@ -26,7 +26,7 @@
 //       transform: translateY(-50%) translateX(-10px);
 //     }
 
-    @media screen and (max-width: $screen-sm-max) {
+    @include media-breakpoint-down(sm) {
       left: 50%;
       transform: translateX(-50%) rotate(90deg);
       top: auto; 
@@ -49,7 +49,7 @@
 //       transform: translateY(-50%) rotate(180deg) translateX(-10px);
 //     }
 
-    @media screen and (max-width: $screen-sm-max) {
+    @include media-breakpoint-down(sm) {
       left: 50%;
       transform: translateX(-50%) rotate(90deg);
       top: auto; 
@@ -81,7 +81,7 @@
 
   
 
-  @media screen and (min-width: $screen-md-min) {
+  @include media-breakpoint-up(md) {
 
     position: relative;
     z-index: 0;
@@ -227,7 +227,7 @@
       padding: 2.5em 1.5em 2em; 
     } 
 
-    @media screen and (max-width: $screen-sm-max) {
+    @include media-breakpoint-down(sm) {
 
      
 
@@ -260,13 +260,13 @@
 
 } 
 
-@media screen and (max-width: $screen-sm-max) {
+@include media-breakpoint-down(sm) {
   span.break-xs {
     display: block;
   }
 }
 
-@media screen and (min-width: $screen-md-min) {
+@include media-breakpoint-up(md) {
   span.break-lg {
     display: block;
   }

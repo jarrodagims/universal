@@ -233,7 +233,7 @@
 
 
 // Scale up controls for tablets and up
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
 
   // Scale up the controls a smidge
   .carousel-control {

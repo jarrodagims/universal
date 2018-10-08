@@ -41,7 +41,7 @@
     }
   }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     background: $sherpa-secondary-color;
     margin-bottom: 1.5em;
 

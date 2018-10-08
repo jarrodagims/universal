@@ -250,14 +250,14 @@
   }
 
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     
     @include cardSmall();
   }
 }
 
 
-@media screen and (min-width: $screen-md-min) {
+@include media-breakpoint-up(md) {
   .floating-sidebar {
     position: absolute;
   }

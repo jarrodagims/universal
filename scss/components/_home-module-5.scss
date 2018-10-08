@@ -20,7 +20,7 @@
     line-height: 2;
   }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
 
     .extra-padding {
       padding: 0 20px;

@@ -2,7 +2,7 @@
   padding-bottom: 0;
 }
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
   .logo-header {
     text-align: center;
     padding-top: 8px;
@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .sub-header.top-header {
     background: #FFFFFF;
     padding: 0 0;
@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
   .sub-nav {
     background: none;
   }
@@ -100,7 +100,7 @@
     align-items: center;
   }
 
-  @media screen and (min-width: $screen-lg-min) {
+  @include media-breakpoint-up(lg) {
     padding: 1em 0;
     margin-top: 110px;
 
@@ -120,7 +120,7 @@
     }
   }
 
-  @media screen and (min-width: $screen-lg-min) {
+  @include media-breakpoint-up(lg) {
     
 
     #header-logo {
@@ -134,11 +134,11 @@
     }
   }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     margin-top: 77px;
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     padding: 0 0;
 
     .sub-header.top-header {
@@ -166,7 +166,7 @@
 
 .page-template-default, .blog, .error404, .post-template-default {
 
-  @media screen and (min-width: $screen-md-min) {
+  @include media-breakpoint-up(md) {
       .sub-header {
         background: #F7F7F7;
       }
@@ -174,7 +174,7 @@
 
 
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
 
       .navbar-sherpa .navbar-toggle {
       
@@ -199,7 +199,7 @@
   position: relative;
   z-index: 1;
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     position: absolute;
     background: transparent;
     z-index: 100;
@@ -212,7 +212,7 @@
     }
   }
 
-  @media screen and (min-width: $screen-sm-min) {
+  @include media-breakpoint-up(sm) {
     padding-top: 0;
     padding-bottom: 3.5em;
 

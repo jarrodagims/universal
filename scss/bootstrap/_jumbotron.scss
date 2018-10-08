@@ -36,7 +36,7 @@
     max-width: 100%;
   }
 
-  @media screen and (min-width: $screen-sm-min) {
+  @include media-breakpoint-up(sm) {
     padding-top:    ($jumbotron-padding * 1.6);
     padding-bottom: ($jumbotron-padding * 1.6);
 

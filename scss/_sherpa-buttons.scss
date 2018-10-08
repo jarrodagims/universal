@@ -63,7 +63,7 @@
     padding: 24px 31px;
   }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     font-size: 9px;
     padding: 1.5em 2em;
   }

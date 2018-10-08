@@ -72,7 +72,7 @@
     // Remove background color from open dropdown
 
 
-    @media (max-width: $grid-float-breakpoint-max) {
+    @include media-breakpoint-down(xs) {
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {
@@ -142,12 +142,12 @@
 .top-header {
   background: $sherpa-dark-color;
 
-  @media screen and (min-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-up(xs) {
     padding-top: 18px;
   }
 }
 
-@media screen and (max-width: $screen-sm-max) {
+@include media-breakpoint-down(sm) {
 
   .sub-header .navbar-brand {
     margin: 0;
@@ -215,7 +215,7 @@
     }
   }
 
-  @media (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     position: absolute;
     right: 30px;
     top: 50%;
@@ -228,7 +228,7 @@
 
 
 
-@media (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
 
   .navbar-nav {
     > li > a {
@@ -463,7 +463,7 @@
 
 }
 
-@media (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
  
 
  
@@ -505,7 +505,7 @@
 
 
 
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .navbar-button {
     display: flex;
     align-items: center;
@@ -519,7 +519,7 @@
   }
 }
 
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .menu-primary-container {
     padding-left: 0 !important;
   }
@@ -586,7 +586,7 @@
   }
 }
 
-@media screen and (min-width: $screen-lg-min) {
+@include media-breakpoint-up(lg) {
 
   .navbar-sherpa {
     margin: 0 auto;
@@ -604,7 +604,7 @@
 
 }
 
-@media screen and (max-width: $screen-sm-max) {
+@include media-breakpoint-down(sm) {
 
   .navbar-sherpa .navbar-collapse {
     padding-left: 0;
@@ -630,7 +630,7 @@
   }
 }
 
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .navbar-sherpa li.menu-item {
     a::before {
       content: " ";
@@ -639,7 +639,7 @@
   }
 }
 
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .navbar-sherpa li.menu-item {
 
 
@@ -663,7 +663,7 @@
   }
 }
 
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .navbar-sherpa li.menu-item {
 
     a::before {
@@ -702,7 +702,7 @@
   }
 }
 
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .navbar-sherpa li.menu-item {
     margin-left: 20px;
   }
@@ -714,7 +714,7 @@
   }
 }
 
-@media screen and (min-width: $screen-md-min) {
+@include media-breakpoint-up(md) {
   .navbar-sherpa li.menu-item {
     margin-left: 35px;
   }
@@ -743,7 +743,7 @@
   }
 }
 
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .navbar-sherpa li.menu-item {
     font-size: 9px;
 
@@ -753,19 +753,19 @@
   }
 }
 
-@media screen and (max-width: $screen-md-max) {
+@include media-breakpoint-down(md) {
   &#menu-item-93 { 
     display: none;
   }
 }
 
-@media screen and (min-width: $screen-md-min) {
+@include media-breakpoint-up(md) {
   .navbar-sherpa li.menu-item {
     letter-spacing: 1px;
   }
 }
 
-@media screen and (min-width: $screen-lg-min) {
+@include media-breakpoint-up(lg) {
   .navbar-sherpa li.menu-item {
     font-size: 11px;
     letter-spacing: 1px;
@@ -846,7 +846,7 @@
     margin-top: 0;
   }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     background: $white;
 
     .navbar-sherpa {
@@ -875,7 +875,7 @@
     transform: translateY(-50%);
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     &::after {
       background: $sherpa-secondary-color;
     }
@@ -895,7 +895,7 @@
 .navbar-right li.menu-item.contact {
   padding-left: 0;
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     &.contact a {
       @include svg-contact(137CCD);
       margin-right: 0;
@@ -907,14 +907,14 @@
   }
   
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     a {
       margin-left: 0.5em;
     }
   }
 }
 
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .navbar-nav>.active>a:focus, .navbar-sherpa .navbar-nav>.active>a:hover, .navbar-sherpa .navbar-nav>li>a:focus, .navbar-sherpa .navbar-nav>li>a:hover {
     background: transparent;
   }
@@ -925,7 +925,7 @@
 }
 
 
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .dropdown-menu>li>a {
     font-weight: 600;
   }
@@ -942,7 +942,7 @@
 }
 
 //
-//@media screen and (min-width: $screen-sm-min) {
+//@include media-breakpoint-up(sm) {
 //
 //  .open > .dropdown-menu {
 //    -webkit-transform: scale(1, 1);
@@ -980,7 +980,7 @@
 
 
 
-@media screen and (min-width: $screen-md-min) {
+@include media-breakpoint-up(md) {
   .navbar-sherpa li.dropdown:hover .dropdown-menu {
     display: block;
     position: absolute;

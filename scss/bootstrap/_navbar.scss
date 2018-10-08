@@ -244,7 +244,7 @@
     line-height: $line-height-computed;
   }
 
-  @media (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     // Dropdowns get custom display when collapsed
     .open .dropdown-menu {
       position: static;
@@ -302,7 +302,7 @@
   @include form-inline;
 
   .form-group {
-    @media (max-width: $grid-float-breakpoint-max) {
+    @include media-breakpoint-down(xs) {
       margin-bottom: 5px;
 
       &:last-child {
@@ -473,7 +473,7 @@
       }
     }
 
-    @media (max-width: $grid-float-breakpoint-max) {
+    @include media-breakpoint-down(xs) {
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {
@@ -607,7 +607,7 @@
       }
     }
 
-    @media (max-width: $grid-float-breakpoint-max) {
+    @include media-breakpoint-down(xs) {
       // Dropdowns get custom display
       .open .dropdown-menu {
         > .dropdown-header {

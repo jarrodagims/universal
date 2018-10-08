@@ -4,7 +4,7 @@
   
 }
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
   .flex-row {
     flex-direction: column;
   }
@@ -66,7 +66,7 @@
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     padding: 3em 0 1em;
     background: #F2F2F2;
 
@@ -116,7 +116,7 @@
     color: $white;
   }
 
-  @media screen and (min-width: $screen-sm-min) {
+  @include media-breakpoint-up(sm) {
     display: none !important;
   }
 }
@@ -158,14 +158,14 @@ h2.line {
     box-shadow: 0px 0px 20px 0px rgba(50, 50, 50, 0.75);
   }
 
-  @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @include media-breakpoint-between(sm, md) {
     &:after {
       right: -400px;
       left: auto;
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     text-align: center;
 
     &:after {
@@ -212,7 +212,7 @@ h2.line {
   }
 
 
-  @media screen and (min-width: $screen-sm-min) {
+  @include media-breakpoint-up(sm) {
 
     ul.serif-text {
       
@@ -249,7 +249,7 @@ h2.line {
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     text-align: center;
     padding-top: 30px;
 
@@ -279,7 +279,7 @@ h2.line {
     margin-right: 1em;
   }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     flex-direction: column;
     background: url('../img/bg-headless.jpg') 0 0 no-repeat;
     background-size: cover;
@@ -314,7 +314,7 @@ h2.line {
   .circle-container {
     position: relative;
 
-    @media screen and (min-width: $screen-lg-min) {
+    @include media-breakpoint-up(lg) {
       &::before {
         border-left: 2px solid #E4EAEF;
         display: block;
@@ -354,7 +354,7 @@ h2.line {
     font-weight: 300;
   }
 
-  @media screen and (min-width: $screen-sm-min) {
+  @include media-breakpoint-up(sm) {
 
    p {
      font-size: 19px;
@@ -389,7 +389,7 @@ h2.line {
     }
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
 
     .btn {
       width: 190px;
@@ -466,7 +466,7 @@ h2.line {
     flex-direction: row;
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     
     .flex-col {
       flex-wrap: wrap;
@@ -498,7 +498,7 @@ h2.line {
   width: 100%;
   padding: 14px 0;
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     padding: 20px 0;
     text-align: center;
 
@@ -520,7 +520,7 @@ h2.line {
   position: relative;
   overflow: hidden;
 
-  @media screen and (min-width: $screen-md-min) {
+  @include media-breakpoint-up(md) {
     padding: 120px 0;
   }
 
@@ -542,7 +542,7 @@ h2.line {
     font-weight: 300;
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
     text-align: center; 
     padding-top: 0;
 
@@ -609,7 +609,7 @@ h2.line {
 }
 
 
-@media screen and (max-width: $screen-sm-min) {
+@include media-breakpoint-down(sm) {
   h1,
   h2,
   h3,
@@ -620,7 +620,7 @@ h2.line {
 
 
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
   .flex-section {
     display: flex;
     flex-direction: column-reverse;
@@ -641,7 +641,7 @@ h2.line {
   }
 }
 
-@media screen and (max-width: $screen-sm-max) {
+@include media-breakpoint-down(sm) {
   p.blurb {
     font-size: 17px;
   }
@@ -662,7 +662,7 @@ h2.line {
   }
 }
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
   .extra-padding {
     padding-left: 20px;
     padding-right: 20px;
@@ -671,7 +671,7 @@ h2.line {
 
 
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
   .expand {
     display: none;
     margin-bottom: 2em;
@@ -686,7 +686,7 @@ h2.line {
   }
 }
 
-@media (min-width: $screen-lg-min) {
+@include media-breakpoint-up(lg) {
   .container-half{
     width: 565px;
     margin: 0 0;
@@ -707,7 +707,7 @@ h2.line {
   }
 }
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
   .flex-order {
     flex-direction: column;
 
@@ -780,7 +780,7 @@ input[type="text"]:focus, textarea:focus {
       transform: translateX(-50%) translateY(-50%);
     }
 
-    @media screen and (max-width: $screen-sm-max) {
+    @include media-breakpoint-down(sm) {
       right: auto;
       left: 50%;
       top: auto;
@@ -788,7 +788,7 @@ input[type="text"]:focus, textarea:focus {
       bottom: -40px;
     }
 
-    @media screen and (min-width: $screen-md-min) {
+    @include media-breakpoint-up(md) {
       top: 50%;
       transform: translateY(-50%);
       z-index: 999;
@@ -820,13 +820,13 @@ span.brand {
   color: $sherpa-brand-primary;
 }
 
-@media screen and (min-width: $screen-md-min) {
+@include media-breakpoint-up(md) {
   .br-md {
     display: block;
   }
 }
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
   .br-xs {
     display: block;
   }

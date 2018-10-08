@@ -91,7 +91,7 @@
     }
   }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
 
     ul.icon-list {
       margin: 0 20px 2.5em;
@@ -125,7 +125,7 @@
     }
   }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     text-align: center;
     padding: 0;
     overflow: hidden;
@@ -151,7 +151,7 @@
     }
   }
 
-  @media screen and (min-width: $screen-md-min) {
+  @include media-breakpoint-up(md) {
 
     h2 {
       font-size: 32px;

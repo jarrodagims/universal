@@ -23,7 +23,7 @@
     margin-bottom: 10px;
   }
 
-  @media screen and (max-width: $grid-float-breakpoint-max) {
+  @include media-breakpoint-down(xs) {
      padding-top: 50px;
      padding-bottom: 40px;
 

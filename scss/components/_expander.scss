@@ -1,10 +1,10 @@
-@media screen and (min-width: $screen-sm-min) {
+@include media-breakpoint-up(sm) {
   .down-arrow {
     display: none;
   }
 }
 
-@media screen and (max-width: $grid-float-breakpoint-max) {
+@include media-breakpoint-down(xs) {
   .down-arrow {
     background: #E3E5E4;
     font-weight: 600;

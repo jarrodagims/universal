@@ -25,7 +25,7 @@
     margin-top: 12px;
   }
 
-  @media screen and (max-width: $screen-sm-min) {
+  @include media-breakpoint-down(sm) {
     height: 110px;
    
   }
@@ -43,7 +43,7 @@
     background-size: cover;
   }
 
-    @media screen and (max-width: $screen-sm-max) {
+    @include media-breakpoint-down(sm) {
       height: 80px;
       margin-bottom: 0em;
 

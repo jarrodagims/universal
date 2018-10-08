@@ -150,19 +150,19 @@ blockquote.testimonial {
 
 
 .text-sm-center {
-    @media (min-width: $screen-sm-min) {
+    @include media-breakpoint-up(sm) {
         text-align: center;
     }
 }
 
 .text-sm-left {
-    @media (min-width: $screen-sm-min) {
+    @include media-breakpoint-up(sm) {
         text-align: left;
     }
 }
 
 .text-sm-right {
-    @media (min-width: $screen-sm-min) {
+    @include media-breakpoint-up(sm) {
         text-align: right;
     }
 }
@@ -170,19 +170,19 @@ blockquote.testimonial {
 
 
 .text-md-center {
-    @media (min-width: $screen-md-min) {
+    @include media-breakpoint-up(md) {
         text-align: center;
     }
 }
 
 .text-md-left {
-    @media (min-width: $screen-md-min) {
+    @include media-breakpoint-up(md) {
         text-align: left;
     }
 }
 
 .text-md-right {
-    @media (min-width: $screen-md-min) {
+    @include media-breakpoint-up(md) {
         text-align: right;
     }
 }
@@ -190,19 +190,19 @@ blockquote.testimonial {
 
 
 .text-lg-center {
-    @media (min-width: $screen-lg-min) {
+    @include media-breakpoint-up(lg) {
         text-align: center;
     }
 }
 
 .text-lg-left {
-    @media (min-width: $screen-lg-min) {
+    @include media-breakpoint-up(lg) {
         text-align: left;
     }
 }
 
 .text-lg-right {
-    @media (min-width: $screen-lg-min) {
+    @include media-breakpoint-up(lg) {
         text-align: right;
     }
 }
@@ -226,10 +226,10 @@ figure.gallery-item {
     article {
         padding: 0 15px 30px;
         width: 100%;
-        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        @include media-breakpoint-between(sm, md) {
             width: 50%;
         }
-        @media (min-width: $screen-md-min) {
+        @include media-breakpoint-up(md) {
             width: 33.33333333%;
         }
     }

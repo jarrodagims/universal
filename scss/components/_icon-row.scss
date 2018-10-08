@@ -231,7 +231,7 @@
       }
     }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
     @include icon-small();
     
 
@@ -258,7 +258,7 @@ body #main .container article #sidebar {
 
 .page-template-page-home {
   .mid-row {
-    @media screen and (max-width: $screen-sm-max) {
+    @include media-breakpoint-down(sm) {
 
       &::before {
         display: none;
@@ -277,7 +277,7 @@ body #main .container article #sidebar {
 
    
 
-    @media screen and (min-width: $screen-md-min) {
+    @include media-breakpoint-up(md) {
 
     .flex-row .flex-col {
        &:first-child {
@@ -392,7 +392,7 @@ body #main .container article #sidebar {
     }
   }
 
-  @media screen and (max-width: $screen-sm-max) {
+  @include media-breakpoint-down(sm) {
 
     .flex-row {
       &::before {
