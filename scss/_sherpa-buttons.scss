@@ -4,7 +4,7 @@
 
 
 .btn { 
-  padding: 16px 38px;
+  padding: 2em 28px;
   font-size: 12px;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
@@ -61,6 +61,11 @@
 
   &.btn-register {
     padding: 24px 31px;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    font-size: 9px;
+    padding: 1.5em 2em;
   }
 }
  

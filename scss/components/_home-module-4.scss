@@ -1,5 +1,5 @@
 .home-module-4 {
-  padding: 111px 0;
+  padding: 100px 0;
   background: #EDEFEF;
 
   p, ul {
@@ -9,7 +9,61 @@
 
   .banner {
     display: block;
-    margin-top: 2em;
+    margin-top: 5em;
+  }
+
+  h2 {
+    line-height: 1.5;
+    margin-top: 0;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    margin-bottom: 2em;
+  }
+
+  p.blurb {
+    font-size: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 1.5em;
+
+    li {
+      margin-bottom: .5em;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    padding: 2em 0 0;
+    text-align: center;
+
+    img {
+      margin-top: 2em;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 19px;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      padding-left: 0;
+      margin-left: 0;
+      list-style: none;
+      font-size: 16px;
+
+      li {
+        margin-bottom: 1em;
+      }
+    }
   }
 
 }

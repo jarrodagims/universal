@@ -1,9 +1,55 @@
 .home-module-3 {
-  background: url('../img/bg-phone.png') right 0 no-repeat;
-  background-size: cover;
-  padding: 144px 0;
+  
+  .col-md-6:first-child {
+    padding: 134px 0;
+  }
+
+
+  .col-md-6:last-child {
+    background: url('../img/bg-phone.png') right 0 no-repeat;
+    background-size: auto 100%;
+    flex: 1;
+  }
 
   h2 {
     color: #606060;
+    margin-top: 0;
+    line-height: 1.5;
   }
+
+  @media screen and (max-width: $screen-sm-max) {
+    position: relative;
+    z-index: -1;
+
+    .flex-row {
+      flex-direction: column;
+    }
+    
+    .col-md-6:first-child {
+       padding: 1em 0;
+       text-align: center;
+
+       h2 {
+         font-size: 19px;
+         line-height: 1.5;
+       }
+
+       p {
+         margin-bottom: 1em;
+       }
+    }
+
+    .col-md-6:last-child {
+      background: none;
+      display: block;
+
+      img {
+        height: auto;
+        width: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  
 }

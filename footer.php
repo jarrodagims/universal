@@ -14,14 +14,14 @@
                                     ); ?>"/></a>
                     </div>
                     <div class="footer-blocks"><div class="contact-footer phone-footer">
-                        <div><span class="title">Address</span>
+                        <div><span class="title">Contact</span>
                             <p>6070 Gateway Blvd E #312, El Paso, TX 79905<br />
                                 <strong>PH</strong>.  <?php printPhone(); ?>
                             </p></div>
                     </div>
                     <div class="hours-footer">
                         <div>
-                            <span class="title">Office Hours</span>
+                            <span class="title">Hours</span>
                             <p>Monday - Friday: <strong>8:00am - 5:00pm</strong><br />
                                 Saturday - Sunday: <strong>Closed</strong><br />
                             </p>

@@ -107,6 +107,7 @@ add_action( 'wp_footer', 'liveReload',100 );
 
 add_action( 'wp_footer', 'mycustom_wp_footer' );
 
+//redirect to thank you page
 function mycustom_wp_footer()
 {
     echo '<script type="text/javascript">';
@@ -120,6 +121,7 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'yoast-seo-breadcrumbs' );
 }
 
+//print the phone with parenthesis
 function printPhone() {
     if (!empty(get_option('sherpa_telephone_number'))) :
         $num = get_option('sherpa_telephone_number');
@@ -130,8 +132,10 @@ function printPhone() {
     endif;
 }
 
+//disable tinyMCE
 add_filter( 'user_can_richedit' , '__return_false', 50 );
 
+//shorten blog post titles
 function short_title($after = '', $length) {
     $mytitle = explode(' ', get_the_title(), $length);
     if (count($mytitle)>=$length) {
@@ -142,3 +146,12 @@ function short_title($after = '', $length) {
     }
     return $mytitle;
 }
+
+//allow shortcode in wp menu
+add_filter('wp_nav_menu_items', 'do_shortcode');
+
+//site url shortcode
+function url_shortcode() {
+    return get_bloginfo('url');
+}
+add_shortcode('wpurl','url_shortcode');

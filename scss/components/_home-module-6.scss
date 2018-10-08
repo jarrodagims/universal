@@ -11,10 +11,13 @@
   h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: .75em;
   }
 
   p {
     font-weight: 300;
+    font-size: 18px;
   }
 
   p.blurb {
@@ -32,6 +35,28 @@
   a {
     font-weight: 600;
   }
+
+  .col-md-6:last-child {
+    .extra-padding {
+      padding-left: 5.5em;
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .extra-padding {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .v-align-bottom {
+    align-self: flex-end;
+    margin-top: auto;
+  }
+
 
   .bg-square {
     flex: 1;
@@ -125,7 +150,11 @@
 
    @media screen and (max-width: $screen-sm-max) {
 
-      padding: 1.5em .5em;
+      padding: 1.5em 0 0;
+
+      img {
+        width: 100%;
+      }
 
       .bg-square {
         background: none;
@@ -136,8 +165,9 @@
       }
       
       h2 {
-        font-size: 18px;
-        margin-bottom: 0;
+        font-size: 19px;
+        margin-bottom: 1em;
+        line-height: 1.5;
       }
 
       p.small {
@@ -156,6 +186,8 @@
         line-height: 1.5;
         margin-bottom: 1.5em;
       }
+
+      text-align: center;
 
    }
 

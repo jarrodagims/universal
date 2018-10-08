@@ -29,8 +29,7 @@
 	cursor: pointer;
 	span {
 		position: relative;
-		display: inline-block;
-		padding-right: calc(32px + .5em);
+		padding-right: calc(30px + .5em);
 		&::after {
 			@include svg-filled-arrow(137CCD);
 			content: '';
@@ -45,10 +44,12 @@
 			background-repeat: no-repeat;
 		}
 
-		&:hover::after {
+		
+	}
+
+	&:hover span::after {
 			@include svg-filled-arrow(F25F2B);
 		}
-	}
 
 
 
@@ -57,6 +58,10 @@
 		span::after {
 			transform: translateY(-50%) rotate(180deg);
 		}
+	}
+
+	span {
+		display: inline-block;
 	}
 }
 

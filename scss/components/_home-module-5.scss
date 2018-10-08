@@ -5,10 +5,37 @@
   overflow: visible;
   position: relative;
   @include dropshadow();
-  padding: 93px 0;
+  padding: 66px 0 76px;
 
-  .btn {
+  .btn { 
     margin-top: 2em;
     @include dropshadow();
+  }
+
+  .extra-padding {
+    padding: 0 5em;
+  }
+
+  p {
+    line-height: 2;
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+
+    h2 {
+      font-size: 19px;
+      line-height: 1.5;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    padding: 2em 0;
+
+    .btn {
+      margin-bottom: 2em;
+    }
+
   }
 }

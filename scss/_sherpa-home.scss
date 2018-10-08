@@ -264,7 +264,7 @@ h2.line {
 .banner-bottom {
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   background: url('../img/banner-bottom.jpg') 0 0 no-repeat;

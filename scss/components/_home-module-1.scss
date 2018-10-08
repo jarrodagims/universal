@@ -13,6 +13,10 @@
     }
   }
 
+  h1 {
+    margin-bottom: 1em;
+  }
+
   h1, h2 {
     margin-top: 0 !important;
   }
@@ -44,7 +48,8 @@
          position: relative;
          transition: width 300ms ease-in-out; 
          width: 100%;
-         font-size: 12px;
+         font-size: 15px;
+         text-align: left;
  
          &:hover {
            background: $sherpa-secondary-color;
@@ -72,7 +77,7 @@
         width: 85px;
         height: 78px;
         position: relative;
-        margin-right: 2em;
+        margin-right: 2.5em;
 
         svg {
           width: 50%;
@@ -82,6 +87,91 @@
           position: absolute;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+
+    ul.icon-list {
+      margin: 0 20px 2.5em;
+    }
+
+    .container {
+      margin: 0 0;
+      width: 100%;
+    }
+
+    .expander {
+      margin: 0 0;
+      background: #F4F4F4;
+      padding: 1em;
+      font-size: 19px;
+      position: relative;
+      margin-bottom: 2em;
+      width: 100%;
+
+      span::after {
+        @include svg-filled-arrow(137CCD);
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    text-align: center;
+    padding: 0;
+
+    .container {
+      margin: 0 0;
+      padding: 0 0;
+    }
+
+    ul {
+      margin: 0 20px 3em;
+    }
+
+    
+
+    h2 {
+      font-size: 19px;
+    }
+
+
+    p, ul li {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+
+    h1 {
+      font-size: 32px;
+    }
+
+    ul {
+      display: block !important;
+      height: auto !important;
+      margin: 3em 0 0 0;
+    }
+
+    ul.icon-list {
+      margin: 0 0 0 110px;
+
+      li {
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .expander span::after {
+      display: none;
     }
   }
 }

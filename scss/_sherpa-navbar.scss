@@ -161,10 +161,9 @@
 }
 
 .navbar-right {
-  margin: 2em 0 0 30px;
   position: absolute;
+  top: 30px;
   left: 0;
-  top: 0;
 
   li.menu-item {
     line-height: 16px;
@@ -215,10 +214,13 @@
     }
   }
 
-  @media (max-width: $screen-sm-max) {
-    padding-left: 20px;
-    padding-right: 2px;
-    bottom: 3px;
+  @media (max-width: $grid-float-breakpoint-max) {
+    position: absolute;
+    right: 30px;
+    width: auto;
+    top: -45px;
+    z-index: 9999;
+    left: auto;
   }
 }
 
@@ -357,7 +359,6 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    z-index: 99;
     top: 53px;
     position: absolute;
     width: 100%;
@@ -421,12 +422,7 @@
   }
 
   .navbar-right {
-    right: 20px;
-    position: absolute;
-    margin: 0 0 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 99;
+   
 
     li.menu-item {
 
@@ -485,6 +481,8 @@
     flex-wrap: wrap;
     position: relative;
     top: 0;
+    
+    z-index: 9999;
 
 
     .navbar-button {
@@ -728,6 +726,13 @@
       margin-left: 0;
     }
   }
+
+  .navbar-right {
+
+    li.menu-item.directions {
+      margin-left: 0;
+    }
+  }
 }
 
 // Hover/Focus state
@@ -750,9 +755,33 @@
   }
 }
 
-@media screen and (min-width: $screen-md-min) {
+@media screen and (max-width: $screen-md-max) {
+  &#menu-item-93 { 
+    display: none;
+  }
+}
+
+@media screen and (min-width: $screen-lg-min) {
   .navbar-sherpa li.menu-item {
     font-size: 11px;
+
+    &#menu-item-93 {
+      text-indent: -9999px;
+      content: '';
+      width: 80px; 
+      height: 10px;
+      position: relative;
+
+      a {
+        position: absolute;
+        background: url('../img/logo.png') 0 0;
+        background-size: cover;
+        width: 82px; 
+        height: 134px;
+        top: -110px;
+      } 
+    }
+    
 
     .dropdown-menu li.menu-item {
       font-size: 11px;
@@ -771,6 +800,7 @@
 
     &.directions a {
       @include svg-map($sherpa-svg-color);
+      margin-left: 15px;
 
       &:hover {
         @include svg-map($sherpa-svg-color-hover);
@@ -818,10 +848,6 @@
       justify-content: flex-end;
     }
 
-    .navbar-right {
-      margin: 0 0;
-      top: 0px;
-    }
 
     ul {
       text-align: center;
@@ -843,10 +869,37 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    &::after {
+      background: $sherpa-secondary-color;
+    }
+
+    &.directions a {
+      @include svg-map(137CCD);
+
+      &:hover {
+        @include svg-map(137CCD);
+      }
+    } 
+
+    
+  }
 }
 
 .navbar-right li.menu-item.contact {
   padding-left: 0;
+
+  @media screen and (max-width: $grid-float-breakpoint-max) {
+    &.contact a {
+      @include svg-contact(137CCD);
+      margin-right: 0;
+
+      &:hover {
+        @include svg-contact(137CCD);
+      }
+    }
+  }
   
 
   @media screen and (max-width: $screen-sm-max) {

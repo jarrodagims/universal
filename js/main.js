@@ -20,11 +20,6 @@
           });
       });
 
-      var logo = $('#header-logo');
-      var list = $('#menu-primary').children();
-      var middle = list[Math.floor(list.length / 2)];
-      var logoMoved = false;
-
       (function() {
           //Only do slideshow on small screens
           var timeout;
@@ -39,20 +34,11 @@
 
           function resize() {
               if ($(window).width() > 992) {
-                  //insert logo in the middle
-                  if(logoMoved === false) {
-                      $('<li id="logo-container" class="menu-item"></li>').append($(logo)).insertBefore($(middle));
-                      logoMoved = true;
-                  }
                   //make dropdown hoverable
                   $('.dropdown-toggle').attr('data-toggle', 'hover');
               }
 
               else if ($(window).width() < 992) {
-                  //move logo back to default position
-                  $('#logo-container').remove();
-                  $('.navbar-button').prepend($(logo));
-                  logoMoved = false;
                   //make dropdown clickable
                   $('.dropdown-toggle').attr('data-toggle', 'dropdown');
               }

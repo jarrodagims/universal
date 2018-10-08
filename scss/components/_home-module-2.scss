@@ -9,7 +9,22 @@
 
   .bg-blue {
     color: $white;
-    padding: 90px 0 90px 104px;
+    padding: 76px 0 76px 90px;
+
+    h2 {
+      line-height: 1.5;
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.75;
+      font-size: 20px;
+
+      &.small {
+        font-size: 18px;
+        margin-top: 1em;
+      }
+    }
 
     &::after {
       background: rgba($sherpa-secondary-color, .9);
@@ -23,6 +38,39 @@
       width: 50vw;
       height: 100%;
       z-index: -1;
+    }
+  }
+
+  @media screen and (max-width: $screen-sm-max) {
+    background: $sherpa-secondary-color;
+
+    img {
+      width: 100%;
+    }
+
+    .flex-row {
+      position: relative;
+    }
+
+    .flex-row .flex-col:first-child {
+      position: absolute;
+      width: 100%;
+      bottom: -30px;
+    }
+
+    .bg-blue {
+      padding: 1em 20px 3em; 
+      text-align: center;
+
+      h2 {
+        font-size: 19px;
+        line-height: 1.5;
+      }
+      
+
+      &::after {
+        display: none;
+      }
     }
   }
 }
