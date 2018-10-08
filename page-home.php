@@ -9,15 +9,13 @@
         <div class="container">
             <div class="row flex-row">
                 <div class="col-md-6 flex-col">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="hidden-xs nav navbar-nav navbar-right">
                         <li class="menu-item directions"><a
                                     href="<?php echo get_site_url() ?>/contact-us"></a></a></li>
                         <li class="menu-item contact"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"></a></li>
                     </ul>
                     <div class="jumbotron">
-                        <div class="visible-xs visible-sm hero-mobile">
-                            <img src="<?= IMGURL ?>bg-hero-mobile.jpg" alt="" class="visible-xs" />
-                        </div>
+
                         <div class="jumbo-content waypoint">
                             <div><div class="fade-down">
                                 <h1>Home Health Care<br />
@@ -38,13 +36,13 @@
             </div>
         </div>
     </section>
-    <img src="<?=IMGURL ?>home-sm.jpg" class="visible-xs visible-sm" alt="" />
+    <img src="<?=IMGURL ?>home-sm.jpg" class="visible-xs visible-sm stretch-img" alt="Home Health Care Service" />
 
 <section class="home-module-1">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="expander" data-target="#expand"><span>Home Health Agency</span></h1>
+                <h2 class="expander" data-target="#expand"><span>Home Health Agency</span></h2>
                 <div class-="extra-padding"><ul class="expand" id="expand">
                     <li>The best patient-centered agency in El Paso, TX.</li>
                     <li>Top performing therapists and home health aides.</li>
@@ -97,7 +95,7 @@
             <div class="col-md-6 flex-col">
                 <div class="extra-padding"><h2>We Provide at Home Care <br />Focused on Patient Needs
                 </h2>
-                    <p>Our team is proud to serve the El Paso <span class="br-xs">community <span class="br-md">with the following in <span class="br-xs"><a href="#">home services</a>:</span></span></p></div>
+                    <p>Our team is proud to serve the El Paso <span class="br-xs">community <span class="br-md">with the following in <span class="br-xs"><a href="<?= SITEURL ?>/geriatric-home-health-aide/">home services</a>:</span></span></p></div>
             </div>
             <div class="col-md-6 flex-col">
                 <img src="<?= IMGURL ?>phone-sm.png" alt="" class="visible-sm visible-xs" />

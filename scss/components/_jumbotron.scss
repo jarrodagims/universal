@@ -22,9 +22,9 @@
     left: 0px;
     top: 50%;
 
-    &:hover {
-      transform: translateY(-50%) translateX(-10px);
-    }
+//     &:hover {
+//       transform: translateY(-50%) translateX(-10px);
+//     }
 
     @media screen and (max-width: $screen-sm-max) {
       left: 50%;
@@ -33,9 +33,9 @@
       bottom: -30px;
       background-color: $sherpa-secondary-color;
 
-      &:hover {
-        transform: translateX(-50%) rotate(90deg);
-      }
+//       &:hover {
+//         transform: translateX(-50%) rotate(90deg);
+//       }
     }
   }
 
@@ -45,9 +45,9 @@
     transform: translateY(-50%) rotate(180deg);
     z-index: 9999;
  
-    &:hover {
-      transform: translateY(-50%) rotate(180deg) translateX(-10px);
-    }
+//     &:hover {
+//       transform: translateY(-50%) rotate(180deg) translateX(-10px);
+//     }
 
     @media screen and (max-width: $screen-sm-max) {
       left: 50%;
@@ -57,9 +57,9 @@
       background-color: $sherpa-secondary-color;
       position: absolute;
 
-      &:hover {
-        transform: translateX(-50%) rotate(90deg);
-      }
+//       &:hover {
+//         transform: translateX(-50%) rotate(90deg);
+//       }
     }
   }
 
@@ -70,14 +70,13 @@
     bottom: -30px;
     background-color: $sherpa-secondary-color;
 
-    &:hover {
-      transform:  translateX(-50%) translateY(-10px) rotate(90deg);
-    } 
+//     &:hover {
+//       transform:  translateX(-50%) translateY(-10px) rotate(90deg);
+//     } 
   }
 }
 
 #home-main {
-  z-index: 0;
   position: relative;
 
   

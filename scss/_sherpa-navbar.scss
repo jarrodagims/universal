@@ -157,6 +157,7 @@
   .sub-header {
     background: none;
     text-align: center;
+    z-index: 99;
   }
 }
 
@@ -217,8 +218,9 @@
   @media (max-width: $grid-float-breakpoint-max) {
     position: absolute;
     right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
     width: auto;
-    top: -45px;
     z-index: 9999;
     left: auto;
   }
@@ -304,7 +306,7 @@
   }
 
   .navbar-nav {
-    margin: 7.5px 0;
+    margin: 3px 0;
   }
 
   .col-xs-12.navbar-button {
@@ -396,7 +398,7 @@
       padding: 0;
       overflow: hidden;
       position: absolute;
-      top: 0;
+      top: 50px;
     }
 
     .navbar-toggle {
@@ -413,11 +415,7 @@
         width: 24px;
       }
 
-      &[aria-expanded="true"] {
-        .icon-bar {
-          background: #fff;
-        }
-      }
+      
     }
   }
 
@@ -761,18 +759,25 @@
   }
 }
 
+@media screen and (min-width: $screen-md-min) {
+  .navbar-sherpa li.menu-item {
+    letter-spacing: 1px;
+  }
+}
+
 @media screen and (min-width: $screen-lg-min) {
   .navbar-sherpa li.menu-item {
     font-size: 11px;
+    letter-spacing: 1px;
 
-    &#menu-item-93 {
+    &.logo-menu {
       text-indent: -9999px;
       content: '';
       width: 80px; 
-      height: 10px;
+      height: 10px; 
       position: relative;
 
-      a {
+      a, a:hover, a:focus, a:visited {
         position: absolute;
         background: url('../img/logo.png') 0 0;
         background-size: cover;

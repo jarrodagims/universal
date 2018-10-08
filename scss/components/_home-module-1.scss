@@ -49,7 +49,8 @@
          width: 100%;
          font-size: 11px;
          text-align: left;
- 
+
+         
          &:hover {
            background: $sherpa-secondary-color;
            color: $white !important;
@@ -78,6 +79,7 @@
         position: relative;
         margin-right: 2.5em;
 
+       
         svg {
           width: 50%;
           transform: translateX(-50%) translateY(-50%);
@@ -126,6 +128,7 @@
   @media screen and (max-width: $screen-sm-max) {
     text-align: center;
     padding: 0;
+    overflow: hidden;
 
     .container {
       margin: 0 0;
@@ -150,22 +153,29 @@
 
   @media screen and (min-width: $screen-md-min) {
 
-    h1 {
+    h2 {
       font-size: 32px;
+      margin-bottom: 1em;
     }
 
     ul {
       display: block !important;
       height: auto !important;
-      margin: 3em 0 0 0;
+      margin: 0 0 0 0;
     }
 
     ul.icon-list {
-      margin: 0 0 0 110px;
+      margin: 0 0 0 110px; 
+
 
       li {
         font-size: 18px;
         letter-spacing: 1px;
+
+        .icon {
+          width: 85px;
+          height: 75px;
+        }
       }
     }
 
@@ -173,5 +183,9 @@
       display: none;
     }
   }
+}
+
+.stretch-img {
+  width: 100%;
 }
 

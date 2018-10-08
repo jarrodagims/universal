@@ -46,7 +46,7 @@
 
 body #main .container article #sidebar {
   float: right;
-  width: 380px;
+  width: 435px;
   margin-left: 4em;
   text-align: center;
 
@@ -97,6 +97,13 @@ body #main .container article #sidebar {
 
   @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
     width: 300px;
+
+    .icon-list span {
+      width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   } 
 
 }
@@ -115,6 +122,23 @@ body #main .container article #sidebar {
       padding: 0 0;
     }
   }
+
+   .icon {
+        background: $sherpa-brand-primary;
+        width: 66px;
+        height: 62px;
+        position: relative;
+        margin-right: 2.5em;
+
+       
+        svg {
+          width: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          top: 50%;
+          left: 50%;
+          position: absolute;
+        }
+      }
 
   .card {
     @include cardSmall();
@@ -144,7 +168,7 @@ body #main .container article #sidebar {
 
     .header {
       background: #F4F4F4;
-      padding: 2em 0;
+      padding: 1em 0;
       width: 100%;
       color: #606060;
       font-size: 21px;

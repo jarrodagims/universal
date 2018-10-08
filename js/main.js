@@ -49,24 +49,5 @@
       })();
   });
 
-    //builds the links for the slider navigation
-    $(document).on('cycle-bootstrap', function( e, opts, API ) {
-        API.buildPagerLink = function(opts, slideOpts, slide) {
-            var pagerLink;
-            var pagers = opts.API.getComponent( 'pager' );
-            pagers.each(function() {
-                var pager = $(this);
-                var text = $('h2', slide).text();
-                var markup = $('<li><a href="#">' + text + '</a></li>');
-                pagerLink = $( markup ).appendTo( pager );
-                pagerLink.on( opts.pagerEvent, function(e) {
-                    e.preventDefault();
-                    opts.API.page( pager, e.currentTarget);
-                });
-            });
-        }
-    });
-
-
 
 })(jQuery);

@@ -23,7 +23,7 @@
                         <div>
                             <span class="title">Hours</span>
                             <p>Monday - Friday: <strong>8:00am - 5:00pm</strong><br />
-                                Saturday - Sunday: <strong>Closed</strong><br />
+                                <span class="br-xs">Saturday - Sunday: <strong>Closed</strong></span><br />
                             </p>
                         </div>
                     </div>

@@ -28,7 +28,7 @@
 
         <section>
             <div class="box">
-                <h2>We’re Here For You When<br /> You
+                <h2>We’re Here For You When You<br />
                     Need Us Most
                 </h2>
 

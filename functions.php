@@ -152,6 +152,6 @@ add_filter('wp_nav_menu_items', 'do_shortcode');
 
 //site url shortcode
 function url_shortcode() {
-    return get_bloginfo('url');
+    return bloginfo('url');
 }
 add_shortcode('wpurl','url_shortcode');
