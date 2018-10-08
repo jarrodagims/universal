@@ -30,7 +30,6 @@
 
     li {
       margin-bottom: 5px;
-      font-size: 16px;
 
       a {
          display: flex;
@@ -48,7 +47,7 @@
          position: relative;
          transition: width 300ms ease-in-out; 
          width: 100%;
-         font-size: 15px;
+         font-size: 11px;
          text-align: left;
  
          &:hover {
@@ -74,8 +73,8 @@
     
       .icon {
         background: $sherpa-brand-primary;
-        width: 85px;
-        height: 78px;
+        width: 58px;
+        height: 58px;
         position: relative;
         margin-right: 2.5em;
 

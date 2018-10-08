@@ -15,7 +15,7 @@
                     </div>
                     <div class="footer-blocks"><div class="contact-footer phone-footer">
                         <div><span class="title">Contact</span>
-                            <p>6070 Gateway Blvd E #312, El Paso, TX 79905<br />
+                            <p>6070 Gateway Blvd E #312, <span class="br-xs">El Paso, TX 79905</span><br />
                                 <strong>PH</strong>.  <?php printPhone(); ?>
                             </p></div>
                     </div>

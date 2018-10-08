@@ -44,7 +44,8 @@
   }
 
     @media screen and (max-width: $screen-sm-max) {
-      height: 125px;
+      height: 80px;
+      margin-bottom: 0em;
 
       .navbar-brand {
         top: 0;

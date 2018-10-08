@@ -43,6 +43,8 @@
 
   @media screen and (max-width: $screen-sm-max) {
     background: $sherpa-secondary-color;
+    margin-bottom: 1.5em;
+
 
     img {
       width: 100%;
@@ -58,9 +60,19 @@
       bottom: -30px;
     }
 
+
     .bg-blue {
-      padding: 1em 20px 3em; 
+      padding: 2em 20px 3em; 
       text-align: center;
+
+      p {
+      font-size: 15px;
+      margin-bottom: 1em;
+
+        &.small {
+          font-size: 15px;
+        }
+      }
 
       h2 {
         font-size: 19px;

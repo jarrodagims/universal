@@ -230,6 +230,8 @@
 
     @media screen and (max-width: $screen-sm-max) {
 
+     
+
     .flex-row {
       flex-direction: column;
       .flex-col {
@@ -242,13 +244,14 @@
 
     .jumbo-content {
       color: $white;
-      padding: 2em 0;
+      padding: 3em 0 5em;
 
       h1 {
         color: $white;
         font-size: 28px;
-        line-height: 1.5;
+        line-height: 1.25;
         padding: 0 0;
+        margin-bottom: 1em;
       }
 
       text-align: center;

@@ -38,7 +38,7 @@
             </div>
         </div>
     </section>
-    <img src="<?=IMGURL ?>sidebar-top.jpg" class="visible-xs visible-sm" alt="" />
+    <img src="<?=IMGURL ?>home-sm.jpg" class="visible-xs visible-sm" alt="" />
 
 <section class="home-module-1">
     <div class="container">
@@ -97,7 +97,7 @@
             <div class="col-md-6 flex-col">
                 <div class="extra-padding"><h2>We Provide at Home Care <br />Focused on Patient Needs
                 </h2>
-                <p>Our team is proud to serve the El Paso community <br />with the following in <a href="#">home services</a>:</p></div>
+                    <p>Our team is proud to serve the El Paso <span class="br-xs">community <span class="br-md">with the following in <span class="br-xs"><a href="#">home services</a>:</span></span></p></div>
             </div>
             <div class="col-md-6 flex-col">
                 <img src="<?= IMGURL ?>phone-sm.png" alt="" class="visible-sm visible-xs" />
@@ -123,7 +123,7 @@
             </div>
 
             <div class="col-xs-12  col-md-6">
-                <div class="extra-padding"><p>The values of our agency are a reflection of the importance we place on patient care. We consistently uphold the following values:</p>
+                <div class="extra-padding"><p>The values of our agency are a reflection of the importance we place on patient care. <span class="brand br-xs">We consistently uphold the following values</span>:</p>
 
                 <ul>
                     <li>You will be treated with respect and compassion.</li>
@@ -182,7 +182,7 @@
 
                 <div class="v-align-bottom"><h2>Contact Us Today to Receive<br /> Care Tomorrow</h2>
 
-                    <p>If you would like to meet with us, we would be happy to schedule an appointment at our office, which is located at 6070 Gateway Blvd E #312, El Paso, TX 79905.</p></div>
+                    <p>If you would like to meet with us, we would be happy to schedule an appointment at our office, which is located at <span class="brand br-xs">6070 Gateway Blvd E #312, El Paso, TX 79905</span>.</p></div>
 </div>
 
             </div>
