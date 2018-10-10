@@ -3,21 +3,16 @@
 	function bs_menu($is_responsive = TRUE, $theme_location = 'primary', $menu_side = 'left', $brand = NULL, $rightNav = NULL) {
     	ob_start();
     	?>
-		<nav class="navbar navbar-sherpa">
+        <nav class="navbar navbar-sherpa navbar-expand-lg navbar-dark">
         <?php
 		if($is_responsive == TRUE) {
 			$collapse_id = rand(1,99);
 			?>
 						    <!-- Brand and toggle get grouped for better mobile display -->
-						    <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-<?=$collapse_id?>">
-                                    <span class="sr-only"><?=__('Toggle navigation','sherpa')?></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-						    </div>
-						
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-<?=$collapse_id?>" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
 						    <!-- Collect the nav links, forms, and other content for toggling -->
 						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-<?=$collapse_id?>">
 			<?php
@@ -38,7 +33,7 @@
 		wp_nav_menu($args);
 
 
-		
+
 		
 		if($is_responsive == TRUE) {
 			?>
@@ -60,3 +55,6 @@
 	function non_responsive_bs_menu($theme_location = 'primary', $menu_side = 'left', $brand = NULL) {
 		return bs_menu(FALSE, $theme_location, $menu_side, $brand);
 	}
+
+
+

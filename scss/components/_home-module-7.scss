@@ -1,22 +1,3 @@
 .home-module-7 {
-  padding: 106px 0;
 
-  h2 {
-    margin-bottom: 1em;
-  }
-
-  @include media-breakpoint-down(sm) {
-    padding: 0 0 4em 0;
-
-    h2 {
-      font-size: 22px;
-      line-height: 1.5;
-      margin-top: 2em;
-
-    }
-
-    p {
-      margin-bottom: 0;
-    }
-  }
 }

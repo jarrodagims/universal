@@ -4,19 +4,25 @@
 
 
 .btn { 
-  padding: 2em 28px;
-  font-size: 12px;
+  padding: 1em 4em;
+  font-size: 11px;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   transition: background-color 0.2s ease-in-out;
-  background: $sherpa-brand-primary;
+  background: $sherpa-secondary-color;
   font-weight: 600;
   color: $white;
   transition: transform 300ms ease-in-out;
+  border: transparent;
+  border-radius: 0;
 
    &:hover {
-    background: darken($sherpa-brand-primary, 10%);
-    transform: scale(1.15);
+    background: darken($sherpa-secondary-color, 10%);
+  }
+
+  &:focus, &:active, &:visited {
+    border: 0 !important;
+    background: darken($sherpa-secondary-color, 10%);
   }
 
   &.btn-default {

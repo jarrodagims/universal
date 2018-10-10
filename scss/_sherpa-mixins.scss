@@ -1,3 +1,4 @@
+
 @mixin sm-lighten($color) {
 	background-color: $color;
 	&:hover,
@@ -29,13 +30,13 @@
 	cursor: pointer;
 	span {
 		position: relative;
-		padding-right: calc(30px + .5em);
+		padding-right: calc(20px + .5em);
 		&::after {
 			@include svg-filled-arrow(137CCD);
 			content: '';
 			display: block;
-			height: 32px;
-			width: 32px;
+			height: 20px;
+			width: 20px;
 			position: absolute;
 			right: 0;
 			top: 50%;
@@ -43,8 +44,6 @@
 			transition: transform ease-in-out 300ms;
 			background-repeat: no-repeat;
 		}
-
-		
 	}
 
 	&:hover span::after {

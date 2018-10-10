@@ -91,8 +91,7 @@ add_shortcode( 'wpurl', function( $atts ){
 function register_my_menus() {
     register_nav_menus(
         array(
-            'criminal-menu' => __( 'Criminal Defense Menu' ),
-            'personal-injury-menu' => __( 'Personal Injury Menu' )
+            'secondary-menu' => __( 'Secondary Menu' )
         )
     );
 }
