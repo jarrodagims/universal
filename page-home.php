@@ -32,6 +32,20 @@
     <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>
 </section>
 
+<section class="home-module-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Client Success Stories</h2>
+                <p>Client Success Stories</p>
+
+                <strong>Milo Acosta</strong>
+                <p><i>Physicians Vascular Services</i></p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php if (is_active_sidebar('form_widgets')) { //if the field is not empty
     ?>
     <section id="contact-form" class="visible-xs">

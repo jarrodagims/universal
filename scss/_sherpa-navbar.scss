@@ -9,6 +9,8 @@
   border-color: $sherpa-navbar-default-border;
   margin-bottom: 0;
 
+
+
   .navbar-brand {
     color: $sherpa-navbar-default-brand-color;
     &:hover,
@@ -141,6 +143,8 @@
 
 .v-align {
   width: 100%;
+
+  
 }
  
 .v-align > div {
@@ -164,7 +168,7 @@
 }
 
 .top-header {
-  padding: 0 70px;
+  padding: 76px 70px 0;
 }
 
 #menu-secondary {
@@ -190,6 +194,7 @@
 
       a {
         position: relative;
+        font-family: 'Montserrat', sans-serif;
         
         &::after {
             content: '';
