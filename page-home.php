@@ -35,12 +35,71 @@
 <section class="home-module-2">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h2>Client Success Stories</h2>
-                <p>Client Success Stories</p>
+            <div class="col-md-12">
 
-                <strong>Milo Acosta</strong>
-                <p><i>Physicians Vascular Services</i></p>
+<div class="d-flex flex-row">
+
+    <div class="p-2 flex-fill">
+        <h2>Client <strong>Success Stories</strong></h2>
+        <div class="slide">
+            <p>Thanks to AGI, our internet leads & new patients that <br />
+                found us online is more than double the industry average.
+            </p>
+
+            <?php get_template_part('/template-parts/icon', '1') ?>
+
+            <strong>Milo Acosta</strong>
+            <p><i>Physicians Vascular Services</i></p>
+        </div>
+        <!--                <div class="slide">-->
+        <!--                    <p>We have been a client of AGI’s a multitude of years and are not only pleased with their service, we are now the TOP company in our area and surrounding in the HVAC industry. Anything Internet, social media, IT, and all around tech service - AGI is a MUST!!!!”</p>-->
+        <!---->
+        <!--                    --><?php //get_template_part('/template-parts/icon', '1') ?>
+        <!---->
+        <!--                    <strong>Adrian Arreola</strong>-->
+        <!--                    <p><i>Scott Heating & Cooling</i></p>-->
+        <!--                </div>-->
+        <!---->
+        <!--                <div class="slide">-->
+        <!--                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices arcu eget ullamcorper pellentesque. Proin auctor nunc at mauris consequat, eu eleifend velit porttitor. Maecenas sit amet mollis orci.</p>-->
+        <!---->
+        <!--                    --><?php //get_template_part('/template-parts/icon', '1') ?>
+        <!---->
+        <!--                    <strong>Shorty</strong>-->
+        <!--                    <p><i>National Furniture Liquidators</i></p>-->
+        <!--                </div>-->
+
+    </div>
+    <div class="p-2 flex-fill circle-list">
+
+        <ul class="slide-menu list-unstyled">
+            <li class="active">
+                <div class="circle-container"> <div class="circle">
+                        <img src="<?=IMGURL?>circle-runner.png" alt="">
+                    </div></div>
+                <?php get_template_part('/template-parts/icon', '1') ?>
+                <?php get_template_part('/template-parts/icon', '2') ?>
+            </li>
+
+            <li>
+                <div class="circle-container"><div class="circle">
+                        <div class="image-wrapper"><img src="<?=IMGURL?>circle-scott.png" alt=""></div>
+                    </div></div>
+                <?php get_template_part('/template-parts/icon', '1') ?>
+                <?php get_template_part('/template-parts/icon', '3') ?>
+            </li>
+
+            <li>
+                <div class="circle-container"><div class="circle">
+                        <img src="<?=IMGURL?>circle-shorty.png" alt="">
+                    </div></div>
+                <?php get_template_part('/template-parts/icon', '1') ?>
+                <?php get_template_part('/template-parts/icon', '3') ?>
+            </li>
+        </ul>
+    </div>
+</div>
+
             </div>
         </div>
     </div>

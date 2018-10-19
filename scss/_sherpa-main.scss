@@ -1,4 +1,14 @@
+.flex-row {
+  display: flex;
 
-body {
 
+  .flex-col {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
+    &.circle-list {
+      justify-content: flex-end;
+    }
+  }
 }

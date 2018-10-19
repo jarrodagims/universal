@@ -195,6 +195,9 @@
       a {
         position: relative;
         font-family: 'Montserrat', sans-serif;
+        padding: 1em 0;
+        font-weight: 600;
+        letter-spacing: 1px;
         
         &::after {
             content: '';
@@ -220,7 +223,7 @@
       } 
 
       &:nth-child(2n) {
-        border-color: $google-red;
+        border-color: $google-red ;
         a:hover, a:active, a:focus {
           color: $google-red;
 
@@ -230,7 +233,7 @@
         }
       }
 
-      &:nth-child(3n) {
+      &:nth-child(3) {
         border-color: $google-yellow;
         a:hover, a:active, a:focus {
           color: $google-yellow;

@@ -1,3 +1,152 @@
 .home-module-2 {
+    h2 {
+      color: #000000;
+    }
 
+    p {
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    svg.stars {
+      height: 17px;
+      display: block;
+      margin-bottom: 1em;
+    }
+
+    ul li {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-right: 27px;
+      position: relative;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:not(.active) {
+        .logo {
+        height: 27px;
+
+        path, polygon, rect {
+          fill: #E3E4E5 !important;
+          }
+        }
+      }
+
+      &:last-child .circle-container {
+        &::after {
+          display: none;
+        }
+      }
+
+      .circle-container {
+        position: relative;
+        margin-bottom: 1em;
+
+        &::after {
+          content: '';
+          height: 1px;
+          width: 27px;
+          display: block;
+          position: absolute;
+          right: -27px;
+          transform: translateY(-50%);
+          top: 50%;
+          background: #E3E4E5;
+        }
+      }
+    }
+
+  ul {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .circle {
+    width: 149px;
+    height: 149px;
+    border-radius: 100%;
+    border: 10px solid $white;
+
+    &:before {
+      border: 2px solid #E3E4E5;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    &::after {
+      background: #6F757A;
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+      border-radius: 50%;
+      opacity: .5;
+    }
+
+
+
+
+    img {
+      border-radius: 100%;
+      box-shadow: 1px 1px 5px -2px rgba(0,0,0,0.45);
+    }
+  }
+
+  $widthz: 190px;
+
+  li.active {
+    width: 222px;
+    .logo {
+        height: 42px;
+      }
+  }
+
+  li.active .circle {
+    width: $widthz;
+    height: $widthz;
+    padding: 10px;
+    position: relative;
+    border: 0;
+
+    img {
+      box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+    }
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: $widthz + 2px;
+      height: $widthz + 2px;
+      top: -2px;
+      left: -2px;
+      background-color: white;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: $widthz + 8px;
+      height: $widthz + 8px;
+      top: -5px;
+      left: -5px;
+      background-image: rgb(236,183,30);
+      background-image: linear-gradient(90deg, rgba(236,183,30,1) 0%, rgba(244,214,126,1) 85%, rgba(255,255,255,1) 100%);
+      border-radius: 50%;
+      z-index: -2;
+      box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+    }
+  }
 }
