@@ -1,0 +1,65 @@
+.progress-ring {
+
+}
+
+.progress-ring__circle {
+  transition: 0.35s stroke-dashoffset;
+  // axis compensation
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.circles {
+  input {
+    display: none;
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .progress-ring {
+    width: 160px;
+    height: 160px;
+
+    .circle {
+      cx: 80px;
+      cy: 80px;
+    }
+  }
+}
+
+#circular-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: rotate(90deg);
+}
+
+#circular-line.flip {
+  transform: rotate(90deg) scaleY(-1);
+}
+
+#circular-line-path {
+  stroke-dasharray: 106;
+  stroke-dashoffset: 0;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke: #F6A4EB;
+}
+
+.straight-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  height: 4px;
+  background: #F6A4EB;
+  border-radius: 3px;
+  transform-origin: left;
+  transform: scaleX(0);
+}

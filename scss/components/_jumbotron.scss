@@ -19,6 +19,8 @@
   height: 844px;
   justify-content: center;
 
+ 
+
   h1 {
     font-size: 75px;
     color: $white;
@@ -49,4 +51,10 @@
 
 span.brand {
   color: $sherpa-brand-primary;
+}
+
+#home-main {
+   .flex-col {
+    flex-direction: column;
+  }
 }
