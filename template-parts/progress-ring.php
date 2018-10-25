@@ -21,11 +21,7 @@
 <!--        placeholder="progress"-->
 <!--    >-->
 
-    <div id="circle-line">
-        <svg width="160px" height="160px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <circle id="circle-line-path" stroke-width="4" cx="19" cy="19" r="17"></circle>
-            </g>
-        </svg>
-    </div>
+    <svg>
+        <circle id='shape' cx='160' cy='160' r='80' stroke-dasharray='1000' stroke-dashoffset='0'/>
+    </svg>
 </div>
