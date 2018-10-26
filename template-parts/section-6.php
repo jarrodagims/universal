@@ -3,21 +3,21 @@
 
     <div class="container">
         <div class="row">
-            <div class="col col-md-4">
-                <h2>
-                    Work With The Best
+            <div class="col col-md-5 flex-col">
+                <div class="swish"><h2>
+                        Work With <strong>The <span class="brand">Best</span></strong>
                 </h2>
                 <p>
-                    First Google Partner Agency in El Paso
-                </p>
+                    First <span class="google-logo">Google Partner</span> Agency in El Paso
+                </p></div>
             </div>
-            <div class="col col-md-8">
-                <div class="badges flex-row">
-                    <div class="badge top-social"></div>
-                    <div class="badge top-design"></div>
-                    <div class="badge top-seo"></div>
-                    <div class="badge digital"></div>
-                    <div class="badge top-ppc"></div>
+            <div class="col col-md-7">
+                <div class="badges">
+                    <div class="upcity-badge top-social"></div>
+                    <div class="upcity-badge top-design"></div>
+                    <div class="upcity-badge top-seo"></div>
+                    <div class="upcity-badge digital"></div>
+                    <div class="upcity-badge top-ppc"></div>
                 </div>
             </div>
         </div>
