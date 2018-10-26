@@ -44,15 +44,11 @@
 
 
 @mixin gradient() {
-  background : -moz-linear-gradient(0% 69376.04% 0deg,rgba(210, 172, 78, 1) 0%,rgba(210, 172, 78, 1) 1.22%,rgba(210, 194, 133, 1) 26.06%,rgba(211, 200, 147, 1) 68.9%,rgba(202, 190, 136, 1) 85.51%,rgba(210, 178, 78, 1) 98.54%,rgba(210, 178, 78, 1) 100%);
-  background : -webkit-linear-gradient(0deg, rgba(210, 172, 78, 1) 0%, rgba(210, 172, 78, 1) 1.22%, rgba(210, 194, 133, 1) 26.06%, rgba(211, 200, 147, 1) 68.9%, rgba(202, 190, 136, 1) 85.51%, rgba(210, 178, 78, 1) 98.54%, rgba(210, 178, 78, 1) 100%);
-  background : -webkit-gradient(linear,0% 69376.04% ,0.05% 69376.04% ,color-stop(0,rgba(210, 172, 78, 1) ),color-stop(0.0122,rgba(210, 172, 78, 1) ),color-stop(0.2606,rgba(210, 194, 133, 1) ),color-stop(0.689,rgba(211, 200, 147, 1) ),color-stop(0.8551,rgba(202, 190, 136, 1) ),color-stop(0.9854,rgba(210, 178, 78, 1) ),color-stop(1,rgba(210, 178, 78, 1) ));
-  background : -o-linear-gradient(0deg, rgba(210, 172, 78, 1) 0%, rgba(210, 172, 78, 1) 1.22%, rgba(210, 194, 133, 1) 26.06%, rgba(211, 200, 147, 1) 68.9%, rgba(202, 190, 136, 1) 85.51%, rgba(210, 178, 78, 1) 98.54%, rgba(210, 178, 78, 1) 100%);
-  background : -ms-linear-gradient(0deg, rgba(210, 172, 78, 1) 0%, rgba(210, 172, 78, 1) 1.22%, rgba(210, 194, 133, 1) 26.06%, rgba(211, 200, 147, 1) 68.9%, rgba(202, 190, 136, 1) 85.51%, rgba(210, 178, 78, 1) 98.54%, rgba(210, 178, 78, 1) 100%);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#D2AC4E', endColorstr='#D2B24E' ,GradientType=0)";
-  background : linear-gradient(90deg, rgba(210, 172, 78, 1) 0%, rgba(210, 172, 78, 1) 1.22%, rgba(210, 194, 133, 1) 26.06%, rgba(211, 200, 147, 1) 68.9%, rgba(202, 190, 136, 1) 85.51%, rgba(210, 178, 78, 1) 98.54%, rgba(210, 178, 78, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D2AC4E',endColorstr='#D2B24E' , GradientType=1);
+  background: rgb(236,183,30);
+  background: linear-gradient(90deg, rgba(236,183,30,1) 0%, rgba(244,214,126,1) 85%, rgba(255,255,255,1) 100%);
 }
+
+
 
 
 @function _trim($string) {

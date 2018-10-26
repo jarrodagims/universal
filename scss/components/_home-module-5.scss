@@ -4,9 +4,23 @@
 
   h2 {
     color: $white;
+    margin-right: 1em;
+    margin-bottom: 0;
   }
 
   .col {
     display: flex;
+    justify-content: center;
+    padding: 5em 0;
+  }
+
+  &::after {
+    @include gradient();
+    height: 10px;
+    content: '';
+    width: 100%;
+    display: block;
+
+
   }
 }
