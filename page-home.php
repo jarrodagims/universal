@@ -110,6 +110,8 @@
 
 <?php get_template_part('template-parts/section', '5'); ?>
 
+<?php get_template_part('template-parts/section', '6'); ?>
+
 <?php if (is_active_sidebar('form_widgets')) { //if the field is not empty
     ?>
     <section id="contact-form" class="visible-xs">
