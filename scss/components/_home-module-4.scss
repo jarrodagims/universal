@@ -1,3 +1,9 @@
 .home-module-4 {
+  background: url('../img/bg-desktop.jpg') 0 0 no-repeat;
+  background-size: cover;
+  padding: 6em 0;
 
+  h2 {
+    color: $white;
+  }
 }

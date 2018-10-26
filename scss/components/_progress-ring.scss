@@ -10,35 +10,41 @@
 }
 
 .circles {
-  input {
-    display: none;
-  }
+
+  .circle {
+    position: relative;
+
+    .circle-container {
+      position: absolute;
+      width: 160px;
+      height: 160px;
 
 
 
-}
-
-.circle {
-  position: relative;
-
-  svg {
-    width: 160px;
-    height: 160px;
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    #shape {
-      fill: none;
-      stroke: red;
-      stroke-width: 4;
-      transition: all 4s ease-in-out;
+      &.unfilled {
+        z-index: -1;
+      }
     }
 
-    circle {
-      position: relative;
-    }
+    svg {
+      width: 160px;
+      height: 160px;
+      background: transparent;
 
+      circle {
+        fill: none;
+        stroke-width: 10;
+        transition: all 4s ease-in-out;
+      }
+
+      circle {
+        position: relative;
+      }
+
+      #gray-circle {
+        z-index: -1;
+      }
+    }
   }
 }
+

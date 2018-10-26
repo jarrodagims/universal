@@ -2,6 +2,7 @@
   background: #000 url('../img/bg-phones.jpg') 0 0 no-repeat;
   background-size: cover;
   padding-top: 291px;
+  position: relative;
 
   h2 {
     color: $white;
@@ -64,6 +65,26 @@
     }
   }
 
- 
+  .phone-bg {
+    background: url('../img/bg-phones.png') 0 0 no-repeat;
+    background-size: cover;
+    width: 709px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+  }
+
+  .svg-dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    svg {
+      width: 709px;
+      height: 676px;
+    }
+  }
   
 }  
