@@ -1,4 +1,26 @@
 .home-module-6 {
   background: url('../img/bg-building.jpg') 0 bottom no-repeat;
   background-size: cover;
+  padding-top: 10em;
+  padding-bottom: 10em;
+
+  h2 {
+    color: #000;
+    margin-bottom: 0;
+  }
+
+  p {
+    color: #606060;
+  }
+
+  .badges {
+    max-width: 100%;
+  }
+
+  .badge {
+    width: 210px;
+    height: 210px;
+    background: url('../img/top-seo.png') center center no-repeat;
+    display: block;
+  }
 }
