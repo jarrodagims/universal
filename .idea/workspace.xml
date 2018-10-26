@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb721c2-176a-4b35-a1f8-3c3538869751" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page-home.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-parts/section-6.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/section-6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_home-module-6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-6.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -333,7 +331,7 @@
           <entry key="json" value="3" />
           <entry key="php" value="36" />
           <entry key="sass" value="1" />
-          <entry key="scss" value="84" />
+          <entry key="scss" value="85" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -344,7 +342,7 @@
           <entry key="JavaScript" value="1" />
           <entry key="PHP" value="36" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="SCSS" value="84" />
+          <entry key="SCSS" value="85" />
           <entry key="Sass" value="1" />
           <entry key="Scratch" value="4" />
         </counts>
@@ -356,7 +354,7 @@
           <entry key="html" value="117" />
           <entry key="json" value="3" />
           <entry key="php" value="3199" />
-          <entry key="scss" value="3036" />
+          <entry key="scss" value="3129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -365,7 +363,7 @@
           <entry key="JSON" value="3" />
           <entry key="PHP" value="3199" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="SCSS" value="3036" />
+          <entry key="SCSS" value="3129" />
           <entry key="Scratch" value="117" />
         </counts>
       </usages-collector>
@@ -394,11 +392,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template-parts/section-6.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="130">
+              <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scss/components/_home-module-6.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -462,15 +469,6 @@
                 <element signature="e#358#862#0" />
                 <element signature="e#878#1077#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template-parts/svg-dots.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret column="3511" selection-start-column="3511" selection-end-column="3511" />
             </state>
           </provider>
         </entry>
@@ -574,7 +572,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scss/_sherpa-sidebar.scss" />
         <option value="$PROJECT_DIR$/scss/components/_jumbotron.scss" />
         <option value="$PROJECT_DIR$/inc/wp_bootstrap_navwalker.php" />
         <option value="$PROJECT_DIR$/inc/scripts.php" />
@@ -625,6 +622,7 @@
         <option value="$PROJECT_DIR$/scss/components/_home-module-5.scss" />
         <option value="$PROJECT_DIR$/page-home.php" />
         <option value="$PROJECT_DIR$/template-parts/section-6.php" />
+        <option value="$PROJECT_DIR$/scss/components/_home-module-6.scss" />
       </list>
     </option>
   </component>
@@ -877,12 +875,12 @@
       <workItem from="1540497946714" duration="1315000" />
       <workItem from="1540504872019" duration="36000" />
       <workItem from="1540506210967" duration="612000" />
-      <workItem from="1540507505481" duration="8958000" />
+      <workItem from="1540507505481" duration="9250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1376191000" />
+    <option name="totallyTimeSpent" value="1376483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="995" y="238" width="1421" height="1148" extended-state="0" />
@@ -919,13 +917,6 @@
   </component>
   <component name="WordPressConfiguration" doNotAskAgain="true" />
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/inc/navs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/wp_bootstrap_navwalker.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4238">
@@ -1223,8 +1214,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/section-6.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="130">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/_home-module-6.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
         </state>
       </provider>
     </entry>
