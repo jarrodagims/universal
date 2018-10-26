@@ -50,6 +50,16 @@
       border-bottom: 1px solid rgba(255,255,255,0.4);
       width: 100%;
       padding: .5em;
+
+      &::before {
+        content: '|';
+        display: inline-block;
+      }
+
+      &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
     }
 
     textarea {
@@ -59,6 +69,13 @@
 
     ::placeholder {
       color: $white;
+
+      &::before {
+        content: '| ';
+        display: block;
+        width: 1em;
+        height: 100%;
+      }
     }
 
     
