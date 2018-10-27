@@ -45,7 +45,7 @@
                             found us online is more than double the industry average.
                         </p>
 
-                        <?php get_template_part('/template-parts/icon', '1') ?>
+                        <?php get_template_part('/template-parts/icon', 'stars') ?>
 
                         <strong>Milo Acosta</strong>
                         <p><i>Physicians Vascular Services</i></p>
@@ -76,24 +76,24 @@
                             <div class="circle-container"> <div class="circle">
                                     <img src="<?=IMGURL?>circle-runner.png" alt="">
                                 </div></div>
-                            <?php get_template_part('/template-parts/icon', '1') ?>
-                            <?php get_template_part('/template-parts/icon', '2') ?>
+                            <?php get_template_part('/template-parts/icon', 'stars') ?>
+                            <?php get_template_part('/template-parts/icon', 'pvs-logo') ?>
                         </li>
 
                         <li>
                             <div class="circle-container"><div class="circle">
                                     <div class="image-wrapper"><img src="<?=IMGURL?>circle-scott.png" alt=""></div>
                                 </div></div>
-                            <?php get_template_part('/template-parts/icon', '1') ?>
-                            <?php get_template_part('/template-parts/icon', '3') ?>
+                            <?php get_template_part('/template-parts/icon', 'stars') ?>
+                            <?php get_template_part('/template-parts/icon', 'scott') ?>
                         </li>
 
                         <li>
                             <div class="circle-container"><div class="circle">
                                     <img src="<?=IMGURL?>circle-shorty.png" alt="">
                                 </div></div>
-                            <?php get_template_part('/template-parts/icon', '1') ?>
-                            <?php get_template_part('/template-parts/icon', '3') ?>
+                            <?php get_template_part('/template-parts/icon', 'stars') ?>
+                            <?php get_template_part('/template-parts/icon', 'scott') ?>
                         </li>
                     </ul>
                 </div>

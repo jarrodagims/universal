@@ -49,5 +49,12 @@
     </div>
 </section>
 <?php wp_footer(); ?>
+<?php
+/**
+ *
+ * DO NOT PUT JAVASCRIPT HERE PUT IT IN MAIN.JS
+ *
+ */
+?>
 </body>
 </html>
