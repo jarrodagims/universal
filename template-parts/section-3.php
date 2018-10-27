@@ -1,6 +1,6 @@
 <section class="home-module-3 waypoint">
     <div class="phone-bg">
-
+        <img src="<?= IMGURL ?>bg-phones.png" alt="Phones" />
     </div>
 
     <div class="svg-dots">

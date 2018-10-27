@@ -27,7 +27,7 @@ class SocialMedia {
 	private $facebook = array(
 		'url' => FACEBOOK,
 		'name' => "Facebook",
-		'icon' => 'facebook',
+		'icon' => 'facebook-f',
 		'default' => 'http://facebook.com/',
 	);
 	private $twitter = array(
@@ -51,13 +51,13 @@ class SocialMedia {
 	private $linkedin = array(
 		'url' => LINKEDIN,
 		'name' => 'LinkedIn',
-		'icon' => 'linkedin',
+		'icon' => 'linkedin-in',
 		'default' => 'http://linkedin.com/',
 	);
 	private $youtube = array(
 		'url' => YOUTUBE,
 		'name' => 'YouTube',
-		'icon' => 'youtube-play',
+		'icon' => 'youtube',
 		'default' => 'https://www.youtube.com',
 	);
 	private $showNetworks = array();

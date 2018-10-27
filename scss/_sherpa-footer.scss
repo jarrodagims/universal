@@ -1,11 +1,19 @@
 
 
 #footer {
-  padding: 2em 0 2em;
+  padding: 0 0 2em;
   text-align: center;
   background: #000;
   color: $white;
 
+  &::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    @include gradient();
+    display: block;
+  }
+  
   .flex-row {
     justify-content: space-between;
     display: flex;
@@ -28,10 +36,19 @@
   .btn {
     letter-spacing: 1px;
     margin-bottom: 10px;
-    padding: 2em 2em;
+    padding: 1em;
     font-size: 11px; 
     text-transform: none;
   } 
+
+  .phone-footer {
+    a {
+      color: $sherpa-brand-primary;
+      font-size: 2em;
+      font-family: 'Lato', sans-serif;
+
+    }
+  }
 
 
   a.arrow {
@@ -186,7 +203,7 @@
   }
 
   p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.75;
     font-weight: 300;
     color: $white;
@@ -195,8 +212,17 @@
   ul {
     padding-left: 0;
     margin-top: auto;
+    display: flex;
+    justify-content: space-between;
   }
 
+  p.small {
+    font-size: .5em;
+
+    svg {
+      display: inline-block;
+    }
+  }
 
 
   ul li {
@@ -287,7 +313,7 @@
   }
 
   .social-media-button {
-    color: #918F8D;
+    color: $white;
 
     &:hover {
       color: $sherpa-brand-primary;

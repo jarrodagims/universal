@@ -313,6 +313,14 @@ function sherpa_theme_option_page() {
 							<input name="sherpa_linkedin_url" type="text" value="<?=get_option('sherpa_linkedin_url')?>" class="regular-text">
 						</td>
 					</tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="sherpa_youtube_url"><?=__("YouTube URL",'sherpa')?></label>
+                        </th>
+                        <td>
+                            <input name="sherpa_youtube_url" type="text" value="<?=get_option('sherpa_youtube_url')?>" class="regular-text">
+                        </td>
+                    </tr>
 					<tr>
     					<td colspan="2">
         					<?php submit_button(); ?>

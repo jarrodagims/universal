@@ -13,11 +13,11 @@
                                 'description'
                             ); ?>"/></a>
             </div>
-            <div class="col">
-                915.209.5381
+            <div class="col phone-footer">
+                <a href="tel:9152095381">915.209.5381</a>
             </div>
 
-            <div class="col">
+            <div class="col address-footer">
                 <p>1370 Pullman Dr, Suite G<br />El Paso, TX 79936</p>
             </div>
 
@@ -31,7 +31,12 @@
                 </div>
             </div>
             <div class="col">
-                <p>Privacy Policy | Site Copyright &copy; <?php echo date('Y'); ?> <img class="logo-sm" src="<?= IMGURL ?>agi-cool.svg" alt="AGI Marketing" /></p>
+                <?php $sm = new SocialMedia(array('facebook', 'twitter', 'linkedin', 'youtube'));
+                $sm->setSize('md');
+                $sm->showNetworkButtons(); 
+                $sm->setColorType('singleColor');
+                ?>
+                <p class="small">Privacy Policy | Site Copyright &copy; <?php echo date('Y'); ?> <img class="logo-sm" src="<?= IMGURL ?>agi-cool.svg" alt="AGI Marketing" /></p>
             </div>
             <div class="d-none d-sm-block d-md-none">
                 <?php $sm = new SocialMedia(array('facebook', 'twitter'));

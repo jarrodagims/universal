@@ -4,12 +4,12 @@
         <div class="row">
             <div class="col">
                 <h2>
-                    Bring In More<br />
-                    Business With<br />
-                    A Great Website
+                    Bring In <strong>More</strong><br />
+                    <strong>Business</strong> With<br />
+                    A <strong>Great Website</strong>
                 </h2>
 
-                <a href="">
+                <a href="<?= SITEURL ?>/contact-us/">
                     <button class="btn btn-primary">Find Out How!</button>
                 </a>
             </div>
