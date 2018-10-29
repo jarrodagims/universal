@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb721c2-176a-4b35-a1f8-3c3538869751" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change beforePath="$PROJECT_DIR$/scss/_sherpa-main.scss" afterPath="$PROJECT_DIR$/scss/_sherpa-main.scss" />
-      <change beforePath="$PROJECT_DIR$/scss/_sherpa-navbar.scss" afterPath="$PROJECT_DIR$/scss/_sherpa-navbar.scss" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_jumbotron.scss" afterPath="$PROJECT_DIR$/scss/components/_jumbotron.scss" />
-      <change beforePath="$PROJECT_DIR$/scss/style.css.map" afterPath="$PROJECT_DIR$/scss/style.css.map" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -418,11 +412,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -434,7 +428,8 @@
             <state relative-caret-position="190">
               <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding>
-                <marker date="1540835211772" expanded="true" signature="3612:3642" ph="..." />
+                <marker date="1540851835977" expanded="true" signature="15:5170" ph="{...}" />
+                <marker date="1540851835977" expanded="true" signature="3612:3642" ph="..." />
               </folding>
             </state>
           </provider>
@@ -450,7 +445,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="141">
@@ -633,10 +628,10 @@
         <option value="$PROJECT_DIR$/template-parts/section-2.php" />
         <option value="$PROJECT_DIR$/scss/components/_home-module-2.scss" />
         <option value="$PROJECT_DIR$/template-parts/section-6.php" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/template-parts/section-5.php" />
         <option value="$PROJECT_DIR$/page-home.php" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -661,7 +656,7 @@
     </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="12" />
     <option name="y" value="183" />
     <option name="width" value="1440" />
@@ -709,13 +704,12 @@
             <path>
               <item name="agims2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="agims2018" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agims2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="agims2018" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agims2018" type="b2602c69:ProjectViewProjectNode" />
@@ -905,15 +899,15 @@
       <workItem from="1540504872019" duration="36000" />
       <workItem from="1540506210967" duration="612000" />
       <workItem from="1540507505481" duration="16416000" />
-      <workItem from="1540822228217" duration="16724000" />
+      <workItem from="1540822228217" duration="17064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1407762000" />
+    <option name="totallyTimeSpent" value="1408102000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="183" width="1440" height="877" extended-state="0" />
+    <frame x="10" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28194445" sideWeight="0.4946108" order="0" side_tool="false" content_ui="combo" />
@@ -1238,14 +1232,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/home-boxes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="979">
@@ -1307,7 +1293,8 @@
         <state relative-caret-position="190">
           <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
-            <marker date="1540835211772" expanded="true" signature="3612:3642" ph="..." />
+            <marker date="1540851835977" expanded="true" signature="15:5170" ph="{...}" />
+            <marker date="1540851835977" expanded="true" signature="3612:3642" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1327,6 +1314,14 @@
           <folding>
             <marker date="1540848855276" expanded="true" signature="2677:2779" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

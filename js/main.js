@@ -9,17 +9,19 @@
           $(this).toggleClass('expanded');
       });
 
+      $('.slideshow').cycle({
+          timeout: 8000,
+          fx: 'fade',
+          slides: '> div',
+          pauseOnHover: 'true',
+          pager: '.cycle-pager, .slide-menu',
+          // autoHeight: 'container'
+      });
+
 
       (function() {
           var deskFunctions = function() {
-              $('.slideshow').cycle({
-                  timeout: 8000,
-                  fx: 'fade',
-                  slides: '> div',
-                  pauseOnHover: 'true',
-                  pager: '.cycle-pager, .slide-menu',
-                  // autoHeight: 'container'
-              });
+
 
               //make dropdown hoverable
               $('.dropdown-toggle').attr('data-toggle', 'hover');

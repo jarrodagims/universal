@@ -246,9 +246,22 @@
       text-align: center;
     }
 
+    .slide {
+      width: 100%;
+    }
+
     p {
        font-size: 13px;
     }
+
+    .slide-menu li {
+      transform: scale(.75);
+    }
+
+    .cycle-pager {
+      justify-content: center;
+    }
+
 
     .stars {
       background-position: center center;
