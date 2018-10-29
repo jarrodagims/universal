@@ -52,7 +52,6 @@
     <![endif]-->
 
     <div class="container-fluid top-header">
-            <div class="row ">
                 <div class="v-align">
                     <div class="col-xs-12 navbar-button text-center">
                         <a id="header-logo" class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
@@ -65,5 +64,4 @@
                         <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact Us</button></a>
                     </div>
                 </div>
-            </div>
     </div>

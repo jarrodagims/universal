@@ -26,8 +26,7 @@
     color: $white;
     font-weight: 600;
     
-
-    span.br-md {
+    .br-md {
       font-size: 43px;
       display: block;
       margin-bottom: 100px;
@@ -46,6 +45,31 @@
     padding: 1.5em 2em;
     text-transform: none;
     font-size: 15px;
+  }
+
+  @include media-breakpoint-down(md) {
+    height: auto;
+    width: 100%;
+
+    p {
+      font-size: 17px;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    h1 {
+      font-size: 30px;
+
+      .br-md {
+        font-size: 17px;
+      }
+    }
+
+    .btn {
+      font-size: 8px;
+    }
   }
 }
 
