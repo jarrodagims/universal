@@ -9,18 +9,38 @@
           $(this).toggleClass('expanded');
       });
 
-      $('.waypoint').each(function(){
-          var self = $(this);
-
-          $(this).waypoint({
-              handler: function(){
-                  self.addClass('active');
-              },
-              offset: '50%'
-          });
-      });
 
       (function() {
+          var deskFunctions = function() {
+              $('.slideshow').cycle({
+                  timeout: 8000,
+                  fx: 'fade',
+                  slides: '> div',
+                  pauseOnHover: 'true',
+                  pager: '.cycle-pager, .slide-menu',
+                  // autoHeight: 'container'
+              });
+
+              //make dropdown hoverable
+              $('.dropdown-toggle').attr('data-toggle', 'hover');
+
+              $('.waypoint').each(function(){
+                  var self = $(this);
+
+                  $(this).waypoint({
+                      handler: function(){
+                          self.addClass('active');
+                      },
+                      offset: '50%'
+                  });
+              });
+          };
+
+          var mobileFunctions = function() {
+              //make dropdown clickable
+              $('.dropdown-toggle').attr('data-toggle', 'dropdown');
+          };
+
           //Only do slideshow on small screens
           var timeout;
           window.addEventListener('resize', function ( event ) {
@@ -34,20 +54,37 @@
 
           function resize() {
               if ($(window).width() > 992) {
-                  //make dropdown hoverable
-                  $('.dropdown-toggle').attr('data-toggle', 'hover');
+                  deskFunctions();
               }
 
               else if ($(window).width() < 992) {
-                  //make dropdown clickable
-                  $('.dropdown-toggle').attr('data-toggle', 'dropdown');
+                  mobileFunctions();
               }
           }
 
           resize();
 
       })();
+
   });
+
+    //builds the links for the slider navigation
+    $(document).on('cycle-bootstrap', function( e, opts, API ) {
+        API.buildPagerLink = function(opts, slideOpts, slide) {
+            var pagerLink;
+            var pagers = opts.API.getComponent( 'pager' );
+
+            (function() {
+                var pager = $(pagers[0]);
+                var markup = $('<li></li>');
+                pagerLink = $( markup ).appendTo( pager );
+                pagerLink.on( opts.pagerEvent, function(e) {
+                    e.preventDefault();
+                    opts.API.page( pager, e.currentTarget);
+                });
+            })();
+        }
+    });
 
 
 })(jQuery);

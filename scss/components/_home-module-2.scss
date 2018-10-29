@@ -3,6 +3,27 @@
     background: rgb(230,230,230);
     background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 30%);
 
+    .flex-fill {
+      flex: 1;
+      padding-right: 2em;
+
+      .cycle-pager {
+        display: flex;
+        color: #E3E4E5;
+
+        .cycle-pager-active {
+          color: $sherpa-brand-primary;
+        }
+      }
+   }
+
+  .cycle-pager {
+    li {
+      cursor: hand;
+      cursor: pointer;
+    }
+  }
+
     h2 {
       color: #000000;
     }
@@ -25,11 +46,31 @@
       padding-right: 27px;
       position: relative;
 
+
+      //&:first-child {
+      //  .circle::after {
+      //    background-image: url('../img/circle-runner.png');
+      //  }
+      //}
+      //
+      //&:nth-child(2) {
+      //  .circle::after {
+      //    background-image: url('../img/circle-scott.png');
+      //  }
+      //}
+      //
+      //&:nth-child(3) {
+      //  .circle::after {
+      //    background-image: url('../img/circle-shorty.png');
+      //  }
+      //}
+
+
       &:last-child {
         padding-right: 0;
       }
 
-      &:not(.active) {
+      &:not(.cycle-pager-active) {
         .logo {
         height: 27px;
 
@@ -68,11 +109,13 @@
     margin-left: auto;
   }
 
+
   .circle {
     width: 149px;
     height: 149px;
     border-radius: 100%;
     border: 10px solid $white;
+    text-indent: -9999px;
 
     &:before {
       border: 2px solid #E3E4E5;
@@ -84,6 +127,8 @@
       width: 100%;
       height: 100%;
       border-radius: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     &::after {
@@ -96,63 +141,100 @@
       height: calc(100% - 20px);
       border-radius: 50%;
       opacity: .5;
-    }
+      background-size: cover;
+    } 
 
     img {
       border-radius: 100%;
       box-shadow: 1px 1px 5px -2px rgba(0,0,0,0.45);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      max-width: calc(100% - 20px);
     }
   }
 
-  $widthz: 190px;
+  .slide-menu {
+    height: 100%;
+  }
 
-  li.active {
-    width: 222px;
+  $circle-width: 190px;
+
+  .slide-menu li.cycle-pager-active {
+    //transform: scale(1.05);
+
     .logo {
         height: 42px;
-      }
+      } 
   }
 
   .circle-list {
     margin-left: auto;
   }
 
-  li.active .circle {
-    width: $widthz;
-    height: $widthz;
+  li.cycle-pager-active .circle {
+    width: $circle-width;
+    height: $circle-width;
     padding: 10px;
     position: relative;
-    border: 0;
     z-index: 99;
+    background-position: center center;
+    border: 0;
+    //transition: all 300ms ease-in-out;
 
     img {
       box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+
     }
 
     &:before {
       position: absolute;
       content: "";
-      width: $widthz + 2px;
-      height: $widthz + 2px;
+      width: $circle-width + 2px;
+      height: $circle-width + 2px;
       top: -2px;
       left: -2px;
+      z-index: -1;
       background-color: white;
       border-radius: 50%;
-      z-index: -1;
+      //background-image: url('data:image/svg+xml;utf8,<svg width="160" height="160" viewBox="0 0 160 160"><defs><linearGradient id="g1"><stop stop-color="#ecb71e"/><stop offset=".3" stop-color="#f4d67e"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><circle id="shape" cx="80" cy="80" r="68" stroke-dasharray="1000" stroke-dashoffset="0" stroke="url(#g1)"></circle></svg>');
+      //border: 0;
     }
 
     &:after {
       position: absolute;
       content: "";
-      width: $widthz + 8px;
-      height: $widthz + 8px;
+      width: $circle-width + 8px;
+      height: $circle-width + 8px;
       top: -5px;
       left: -5px;
       background-image: rgb(236,183,30);
       background-image: linear-gradient(90deg, rgba(236,183,30,1) 0%, rgba(244,214,126,1) 85%, rgba(255,255,255,1) 100%);
       border-radius: 50%;
       z-index: -2;
+      opacity: 1;
       box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
     }
+  }
+
+  .stars {
+    @include svg-stars($sherpa-brand-primary);
+    width: 100%;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+
+  li .stars {
+    background-position: center center;
+  }
+
+  li.cycle-pager-active .stars {
+    height: 20px;
+  }
+
+  .slideshow {
+    width: 100%;
   }
 }

@@ -28,7 +28,7 @@
             <div class="col-md-12">
                 <h2>Contact Us</h2>
                 <h3>I'd Like to Learn More</h3>
-                <?php echo do_shortcode('[contact-form-7 id="41" title="Contact Form"]'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="9" title="Contact form 1"]'); ?>
             </div>
         </div>
     </div>
