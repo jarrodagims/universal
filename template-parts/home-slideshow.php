@@ -41,7 +41,7 @@
                     <div class="p-2 flex-fill circle-list">
 
                         <ul class="slide-menu list-unstyled">
-                            <li class="active">
+                            <li>
                                 <div class="circle-container">
                                     <div class="circle">
                                         <img src="<?=IMGURL?>circle-runner.png" alt="">
