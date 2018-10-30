@@ -176,6 +176,10 @@
       display: inline-block;
     }
 
+    .col {
+      flex-basis: auto;
+    }
+
     .logo-footer img {
       height: 100px;
     }

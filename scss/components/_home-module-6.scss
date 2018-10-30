@@ -16,7 +16,7 @@
 
     &.message {
       &::before {
-        top: -50%;
+        top: -16px;
       }
     }
   }
@@ -226,14 +226,24 @@
           width: auto;
           left: 50%;
           transform: translateX(-50%);
-          position: relative;
         }
  
         .upcity-badge {
           width: 60px;
           height: 60px;
           background-size: cover;
-          transform: none;
+
+          &:first-child {
+            transform: translateY(10px);
+          }
+
+          &:nth-child(2) {
+            transform: translateX(-30px) translateY(10px);
+          }
+
+          &:nth-child(4) {
+            transform: translateX(30px) translateY(10px);
+          }
         }
 
         .upcity-badge.top-seo {
