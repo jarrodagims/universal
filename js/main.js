@@ -36,11 +36,15 @@
                       offset: '50%'
                   });
               });
+
+              $('.slide-menu').appendTo($('.circle-list'));
+
           };
 
           var mobileFunctions = function() {
               //make dropdown clickable
               $('.dropdown-toggle').attr('data-toggle', 'dropdown');
+              $('.slide-menu').insertBefore($('.slideshow'));
           };
 
           //Only do slideshow on small screens

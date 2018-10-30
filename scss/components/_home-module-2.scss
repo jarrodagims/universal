@@ -46,6 +46,14 @@
       padding-right: 27px;
       position: relative;
 
+      .logo {
+        text-align: center;
+
+        img {
+          margin: 0 auto;
+        }
+      }
+
 
       //&:first-child {
       //  .circle::after {
@@ -162,8 +170,6 @@
   $circle-width: 190px;
 
   .slide-menu li.cycle-pager-active {
-    //transform: scale(1.05);
-
     .logo {
         height: 42px;
       } 
@@ -186,7 +192,6 @@
 
     img {
       box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
-
     }
 
     &:before {
@@ -255,6 +260,10 @@
        font-size: 13px;
     }
 
+    ul.slide-menu {
+      margin: 0 auto;
+    }
+
     .slide-menu, .circle-list {
       margin: 0 auto;
     }
@@ -266,15 +275,79 @@
       margin: 0 auto;
       text-align: center;
 
+      .circle:before, .circle:after {
+        border: 0;
+      }
+
+      .circle {
+        padding: 0;
+        display: block;
+        position: relative;
+        width: 109px;
+        height: 109px;
+
+        &::before {
+          width: 100px;
+          height: 100px;
+          transform: translateX(-50%) translateY(-50%);
+          left: 50%;
+          top: 50%;
+        }
+
+        &::after {
+          width: 105px;
+          height: 105px;
+          transform: translateX(-50%) translateY(-50%);
+          left: 50%;
+          top: 50%;
+        }
+
+        img {
+          width: 90px;
+          height: 90px;
+        }
+
+      }
+
+      .circle::after, .circle img {
+         @include nodropshadow();
+      }
+      
       &.cycle-pager-active {
         display: block;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        transform: scale(1);
+
+        .logo {
+          height: 27px;
+          
+          &::before {
+            content: '';
+            border-left: 1px solid #E3E4E5;
+            margin: 0 20px;
+            height: 30px;
+            float: left;
+            display: block;
+          }
+        }
+      }
+
+      .circle-container, &:last-child .circle-container {
+        &::after {
+          display: none;
+        }
+      }
+
+      .stars {
+        display: none;
       }
     }
 
     .cycle-pager {
       justify-content: center;
     }
-
 
     .stars {
       background-position: center center;

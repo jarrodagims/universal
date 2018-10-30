@@ -13,38 +13,54 @@
 
   .circle {
     position: relative;
+  }
 
+  .circle-container {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+
+    &.unfilled {
+      z-index: -1;
+    }
+  }
+
+  svg {
+    width: 160px;
+    height: 160px;
+    background: transparent;
+
+    circle {
+      fill: none;
+      stroke-width: 10;
+      transition: all 4s ease-in-out;
+    }
+
+    circle {
+      position: relative;
+    }
+
+    #gray-circle {
+      z-index: -1;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
     .circle-container {
-      position: absolute;
-      width: 160px;
-      height: 160px;
-
-
-
-      &.unfilled {
-        z-index: -1;
-      }
+      transform: scale(.5);
     }
 
-    svg {
-      width: 160px;
-      height: 160px;
-      background: transparent;
-
-      circle {
-        fill: none;
-        stroke-width: 10;
-        transition: all 4s ease-in-out;
-      }
-
-      circle {
-        position: relative;
-      }
-
-      #gray-circle {
-        z-index: -1;
-      }
+    .num {
+      font-size: 22px;
     }
+
+    
+
+    .circle .perc {
+      font-size: 16px;
+      padding-top: .25em;
+    }
+
   }
 }
 

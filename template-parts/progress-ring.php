@@ -1,4 +1,4 @@
-<div class="circle">80<span class="perc">%</span>
+<div class="circle"><div class="text"><span class="num">80</span><span class="perc">%</span></div>
     <div class="circle-container">
         <svg width="160" height="160" viewBox="0 0 160 160">
             <defs>

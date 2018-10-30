@@ -41,14 +41,17 @@
                     <div class="p-2 flex-fill circle-list">
 
                         <ul class="slide-menu list-unstyled">
-                            <li>
+                            <li class="cycle-pager-active">
                                 <div class="circle-container">
                                     <div class="circle">
                                         <img src="<?=IMGURL?>circle-runner.png" alt="">
                                     </div>
                                 </div>
                                 <?php get_template_part('/template-parts/icon', 'stars') ?>
-                                <?php get_template_part('/template-parts/icon', 'pvs-logo') ?>
+                                <div class="logo">
+                                    <?php get_template_part('/template-parts/icon', 'pvs-logo') ?>
+                                </div>
+
                             </li>
 
                             <li>
@@ -58,7 +61,10 @@
                                     </div>
                                 </div>
                                 <?php get_template_part('/template-parts/icon', 'stars') ?>
-                                <?php get_template_part('/template-parts/icon', 'scott') ?>
+                                <div class="logo">
+                                    <?php get_template_part('/template-parts/icon', 'scott') ?>
+                                </div>
+
                             </li>
 
                             <li>
@@ -68,7 +74,10 @@
                                     </div>
                                 </div>
                                 <?php get_template_part('/template-parts/icon', 'stars') ?>
-                                <?php get_template_part('/template-parts/icon', 'scott') ?>
+                                <div class="logo">
+                                    <?php get_template_part('/template-parts/icon', 'scott') ?>
+                                </div>
+
                             </li>
                         </ul>
                     </div>

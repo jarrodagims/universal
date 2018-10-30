@@ -60,11 +60,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
 
-      p {
-        margin-bottom: 0;
-        font-size: 16px;
-      }
+    p {
+      margin-bottom: 0;
+      font-size: 16px;
     }
   }
 
@@ -89,6 +89,45 @@
       width: 100%;
       
     }
+  }
+
+  @include media-breakpoint-down(md) {
+    background: #000 url('../img/bg-boxes-mobile.jpg') 0 0 no-repeat;
+    background-size: contain;
+    padding-top: 0;
+
+      .phone-bg {
+        display: none;
+      }
+
+      .circles {
+        padding-top: 2em;
+        flex-direction: column;
+      }
+
+      .circle {
+        width: 80px;
+        height: 80px;
+      }
+
+      .col {
+        flex-basis: auto;
+      }
+
+      .circle-col p {
+        font-size: 13px;
+      }
+
+      .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+      }
+
   }
   
 }  

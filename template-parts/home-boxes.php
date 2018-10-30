@@ -8,8 +8,8 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-8">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
                 <div class="icons">
                     <div class="icon-row">
                         <div class="boxes-header"><h2><strong>How</strong> We Do It</h2></div>
@@ -73,22 +73,22 @@
                 </div>
             </div>
         </div>
-        <div class="row flex-row circles">
+        <div class="row circles">
             <div class="col flex-col circle-col">
                 <div>
                     <?php get_template_part('template-parts/progress', 'ring') ?>
 
-                    <p>Nearly 80% of potential customers<br />
-                        leave a mobile website that doesn’t<br />
-                        display well on their device.</p></div>
+                    <p>Nearly 80% of potential customers
+                        <span class="br-md">leave a mobile website that doesn’t</span>
+                        <span class="br-md">display well on their device.</span></p></div>
             </div>
 
             <div class="col flex-col circle-col">
                 <div>
                     <?php get_template_part('template-parts/progress', 'ring') ?>
-                    <p>Of People Research<br />
-                        a Local Business Before<br />
-                        Making a Purchase</p></div>
+                    <p>Of People Research
+                        <span class="br-md">a Local Business Before</span>
+                        <span class="br-md">Making a Purchase</span></p></div>
             </div>
         </div>
     </div>
