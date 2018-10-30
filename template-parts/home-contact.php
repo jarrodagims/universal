@@ -2,7 +2,7 @@
 
 
     <div class="container">
-        <div class="row flex-row  top-contact" >
+        <div class="row top-contact" >
             <div class="col col-md-5 flex-col">
                 <div class="swish"><h2>
                         Work With <strong>The <span class="brand">Best</span></strong>

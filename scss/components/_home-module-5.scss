@@ -21,6 +21,24 @@
     width: 100%;
     display: block;
 
+  }
 
+  @include media-breakpoint-down(md) {
+      text-align: center;
+
+      .col {
+        flex-direction: column;
+        padding: 3em 0;
+      }
+
+      h2 {
+        font-size: 20px;
+
+        strong {
+          display: block;
+        }
+
+        margin-bottom: 1em;
+      }
   }
 }

@@ -245,7 +245,7 @@
   }
 
   @include media-breakpoint-down(md) {
-    padding: 2em 0;
+    padding: 2em 0 0;
 
     .flex-fill {
       padding-right: 0;

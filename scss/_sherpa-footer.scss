@@ -585,7 +585,12 @@
 
 @include media-breakpoint-down(sm) {
   #footer {
-    padding: 30px 20px 0;
+    padding: 0 0;
+
+    .row {
+      flex-direction: column;
+      height: auto;
+    }
 
     h2 {
       font-size: 19px;

@@ -36,9 +36,9 @@
 
 <?php get_template_part('template-parts/home', 'boxes'); ?>
 
-<?php get_template_part('template-parts/home', 'ribbon'); ?>
-
 <?php get_template_part('template-parts/home', 'website'); ?>
+
+<?php get_template_part('template-parts/home', 'ribbon'); ?>
 
 <?php get_template_part('template-parts/home', 'contact'); ?>
 

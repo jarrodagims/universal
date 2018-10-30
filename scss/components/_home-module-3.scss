@@ -95,13 +95,17 @@
     background: #000 url('../img/bg-boxes-mobile.jpg') 0 0 no-repeat;
     background-size: contain;
     padding-top: 0;
+    overflow: hidden;
+
 
     .svg-dots {
-      width: 150%;
       height: auto;
-      top: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      left: 50%;
+      left: 0;
+      bottom: 0;
+
+      svg {
+        width: auto;
+      }
     }
 
       .phone-bg {

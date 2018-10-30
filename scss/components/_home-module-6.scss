@@ -23,6 +23,7 @@
 
   .top-contact {
     height: 594px;
+    display: flex;
   }
 
   .contact-bottom {
@@ -43,7 +44,6 @@
     .form-group {
       display: flex;
     }
-
 
 
     h2, h3 {
@@ -211,5 +211,51 @@
     }
 
 
+  }
+
+  @include media-breakpoint-down(md) {
+      .top-contact {
+        text-align: center;
+        height: auto;
+        display: block;
+        padding: 6em 0;
+
+        .badges {
+          transform: none;
+          margin: 0 auto;
+          width: auto;
+          left: 50%;
+          transform: translateX(-50%);
+          position: relative;
+        }
+ 
+        .upcity-badge {
+          width: 60px;
+          height: 60px;
+          background-size: cover;
+          transform: none;
+        }
+
+        .upcity-badge.top-seo {
+          width: 88px;
+          height: 88px;
+          background-size: cover;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .col {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 11px;
+        }
+      }
   }
 }
