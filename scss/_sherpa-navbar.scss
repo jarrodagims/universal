@@ -274,6 +274,14 @@
   }
 }
 
+.page-template-default {
+
+  .top-header {
+    background: #000;
+    padding-bottom: 2em;
+  }
+}
+
 @include media-breakpoint-down(md) {
 
   .navbar-brand {

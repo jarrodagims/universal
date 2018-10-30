@@ -24,7 +24,7 @@
 
 
               //make dropdown hoverable
-              $('.dropdown-toggle').attr('data-toggle', 'hover');
+              // $('.dropdown-toggle').attr('data-toggle', 'hover');
 
               $('.waypoint').each(function(){
                   var self = $(this);
@@ -43,7 +43,7 @@
 
           var mobileFunctions = function() {
               //make dropdown clickable
-              $('.dropdown-toggle').attr('data-toggle', 'dropdown');
+              // $('.dropdown-toggle').attr('data-toggle', 'dropdown');
               $('.slide-menu').insertBefore($('.slideshow'));
           };
 

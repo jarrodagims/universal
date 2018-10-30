@@ -1,0 +1,40 @@
+.google-colors {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 4px;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 2em;
+
+  li {
+    background: red;
+    height: 4px;
+    padding: 0;
+
+
+    &:nth-child(1n) {
+      background: #5780C0;
+    }
+
+    &:nth-child(2n) {
+      background: #E7453C;
+    }
+
+    &:nth-child(3n) {
+      background: #F7B92A;
+    }
+
+    &:nth-child(4n) {
+      background: #5780C0;
+    }
+
+    &:nth-child(5n) {
+      background: #2DA04B;
+    }
+
+    &:nth-child(6n) {
+      background: #E7453C;
+    }
+  }
+}

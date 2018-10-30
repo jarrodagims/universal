@@ -16,15 +16,6 @@
                     <source media="(min-width: 992px)" srcset="<?= IMGURL ?>badges-large.png">
                     <img src="<?= IMGURL ?>badges.png" alt="Badges" />
                 </picture>
-
-
-<!--                <div class="badges">-->
-<!--                    <div class="upcity-badge top-social"></div>-->
-<!--                    <div class="upcity-badge top-design"></div>-->
-<!--                    <div class="upcity-badge top-seo"></div>-->
-<!--                    <div class="upcity-badge digital"></div>-->
-<!--                    <div class="upcity-badge top-ppc"></div>-->
-<!--                </div>-->
             </div>
         </div>
     </div>

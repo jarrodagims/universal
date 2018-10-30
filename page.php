@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php get_template_part('template-parts/page', 'top-banner'); ?>
 <section id="main">
 	<div class="container">
 		<div class="row">
@@ -15,4 +16,6 @@
 		</div>
 	</div>
 </section>
+<?php get_template_part('template-parts/page', 'google-banner'); ?>
+<?php get_template_part('template-parts/page', 'contact'); ?>
 <?php get_footer(); ?>
