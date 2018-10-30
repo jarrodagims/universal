@@ -10,7 +10,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <img src="<?=IMGURL?>google-partner-banner.png" alt="Google Partner Agency" />
+            <img src="<?=IMGURL?>google-partner-banner.png" alt="Google Partner Agency" class="internal-banner" />
         </div>
     </div>
 </div>
