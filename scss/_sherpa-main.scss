@@ -105,3 +105,16 @@
   padding: 1em 0;
   font-family: 'Poppins', sans-serif;
 }
+
+.bottom-list {
+  background: #F2F2F2;
+  padding: 3em 0;
+
+  ul {
+    list-style: none;
+    li {
+      @include svg-check();
+    }
+  }
+}
+
