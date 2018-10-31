@@ -13,7 +13,7 @@
                 <?php endif; ?>
 
                 <?php the_archive_title('<h1>','</h1>'); ?>
-				<?php get_template_part('template-parts/content', 'archive'); ?>
+				<?php get_template_part('template-parts/content/content', 'archive'); ?>
 			</div>
 		</div>
 	</div>

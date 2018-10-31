@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="<?=FULLWIDTH?>">
-				<?php get_template_part('template-parts/content', 'contact'); ?>
+				<?php get_template_part('template-parts/content/content', 'contact'); ?>
 			</div>
 		</div>
 	</div>

@@ -47,9 +47,9 @@
                                         <img src="<?=IMGURL?>circle-runner.png" alt="">
                                     </div>
                                 </div>
-                                <?php get_template_part('/template-parts/icon', 'stars') ?>
+                                <?php get_template_part('/template-parts/icons/icon', 'stars') ?>
                                 <div class="logo">
-                                    <?php get_template_part('/template-parts/icon', 'pvs-logo') ?>
+                                    <?php get_template_part('/template-parts/icons/icon', 'pvs-logo') ?>
                                 </div>
 
                             </li>
@@ -60,9 +60,9 @@
                                         <img src="<?=IMGURL?>circle-scott.png" alt="">
                                     </div>
                                 </div>
-                                <?php get_template_part('/template-parts/icon', 'stars') ?>
+                                <?php get_template_part('/template-parts/icons/icon', 'stars') ?>
                                 <div class="logo">
-                                    <?php get_template_part('/template-parts/icon', 'scott') ?>
+                                    <?php get_template_part('/template-parts/icons/icon', 'scott') ?>
                                 </div>
 
                             </li>
@@ -73,9 +73,9 @@
                                         <img src="<?=IMGURL?>circle-shorty.png" alt="">
                                     </div>
                                 </div>
-                                <?php get_template_part('/template-parts/icon', 'stars') ?>
+                                <?php get_template_part('/template-parts/icons/icon', 'stars') ?>
                                 <div class="logo">
-                                    <?php get_template_part('/template-parts/icon', 'scott') ?>
+                                    <?php get_template_part('/template-parts/icons/icon', 'scott') ?>
                                 </div>
 
                             </li>

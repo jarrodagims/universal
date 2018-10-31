@@ -1,0 +1,150 @@
+.circles {
+
+  color: $white;
+  justify-content: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+
+  .circle {
+    position: relative;
+  }
+
+  .circle-container {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+
+    &.unfilled {
+      z-index: -1;
+    }
+  }
+
+  svg {
+    width: 160px;
+    height: 160px;
+    background: transparent;
+
+    circle {
+      fill: none;
+      stroke-width: 10;
+      transition: all 4s ease-in-out;
+    }
+
+    circle {
+      position: relative;
+    }
+
+    #gray-circle {
+      z-index: -1;
+    }
+  }
+
+
+  .flex-col {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .circle {
+    font-size: 55px;
+    font-family: 'Lato', sans-serif;
+    margin: .25em;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 1em;
+
+    
+    .perc {
+      font-size: 39px;
+    }
+  }
+
+  .circle-col {
+    align-items: center;
+
+    > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .circles {
+    padding-top: 2em;
+    flex-direction: column;
+
+    .circle {
+      width: 80px;
+      height: 80px;
+      margin-right: 0.25em;
+    }
+
+    .circle-col p {
+      font-size: 13px;
+    }
+
+    .circle-container {
+      transform: scale(.5);
+    }
+
+    .num {
+      font-size: 22px;
+    }
+
+    
+
+    .circle .perc {
+      font-size: 16px;
+      padding-top: .25em;
+    }
+  }
+}
+
+.page-template-default {
+  .circles {
+    background: #000;
+    padding: 2em 0;
+
+    .circle-container, svg, .circle {
+      width: 86px;
+      height: 86px;
+      margin: 0;
+    }
+
+    .text {
+      display: flex;
+      align-items: center;
+
+    }
+
+    svg circle {
+      stroke-width: 3px;
+    }
+
+    .num {
+      font-size: 31px;
+    }
+
+    .perc {
+       font-size: 12px;
+    }
+    
+    p {
+      font-size: 13px;
+      padding-left: 2em;
+    }
+  }
+}

@@ -23,50 +23,9 @@
     font-family: 'Lato', sans-serif;
   }
 
-  .circle {
-    font-size: 55px;
-    font-family: 'Lato', sans-serif;
-    margin: .25em;
-    border-radius: 50%;
-//     background: red;
-    width: 160px;
-    height: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-right: 1em;
-
-
-    &:before {
-      content: '';
-      width: 100%;
-      height: 100%;
-      display: block;
-      background: #ff0;
-      position: absolute;
-      border-radius: 50%;
-      z-index: -1;
-    }
-
-    .perc {
-      font-size: 39px;
-    }
-  }
-
-  .circle-col {
-    align-items: center;
-
-     > div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    p {
-      margin-bottom: 0;
-      font-size: 16px;
-    }
+  .circles {
+    padding-top: 10em;
+    padding-bottom: 2em;
   }
 
   .phone-bg {
@@ -86,7 +45,6 @@
     height: 676px;
 
     svg {
-
       width: 100%;
       
     }
@@ -113,24 +71,13 @@
         display: none;
       }
 
-      .circles {
-        padding-top: 2em;
-        flex-direction: column;
-      }
 
-      .circle {
-        width: 80px;
-        height: 80px;
-        margin-right: 0.25em;
-      }
 
       .col {
         flex-basis: auto;
       }
 
-      .circle-col p {
-        font-size: 13px;
-      }
+
 
       .text {
         display: flex;

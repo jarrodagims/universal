@@ -20,7 +20,7 @@
                     </div>
                     <section class="home-module-1">
                             <ul class="icon-list">
-                                <?php get_template_part('template-parts/icon', 'row'); ?>
+                                <?php get_template_part('/template-parts/icons/icon', 'row'); ?>
                             </ul>
                     </section>
             </div>

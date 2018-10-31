@@ -190,3 +190,48 @@ body #main .container article #sidebar {
    }
  }
 }
+
+.page-template-default {
+  .icon-row {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    background: #000;
+
+    svg {
+      height: 24px;
+    }
+
+    .flex-col {
+      width: auto;
+      height: auto;
+      justify-content: center;
+      flex: 1;
+
+     &::after {
+       content: '';
+       height: 50%;
+       background: #606060;
+       width: 1px;
+       display: block;
+       position: absolute;
+       right: 0;
+       top: 50%;
+       transform: translateY(-50%);
+     }
+    }
+
+    .flex-col a {
+      outline: 0;
+
+      &:hover {
+        background: transparent;
+        outline: 0 !important;
+      }
+    }
+
+    .title {
+      font-size: 16px;
+    }
+  }
+}

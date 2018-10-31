@@ -9,3 +9,99 @@
     }
   }
 }
+
+.top-banner {
+  width: 100%;
+  height: 449px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+
+
+  h1 {
+    color: $white;
+    font-size: 39px;
+    margin-bottom: 1em;
+  }
+
+  .google-colors {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.internal-banner {
+  margin-bottom: 2em;
+}
+
+#sidebar {
+  float: right;
+  width: 380px;
+  margin-left: 4em;
+  text-align: center;
+
+  &.sidebar-testimonial {
+    background: #000;
+    color: $white;
+    padding: 152px 2em;
+
+    p:first-child {
+      font-style: italic;
+      text-align: center;
+      font-size: 16px;
+
+      &::after {
+        @include svg-stars($sherpa-brand-primary);
+        width: 100%;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 2em auto;
+        content: '';
+        display: block;
+      }
+    }
+  }
+}
+
+.sidebar-content {
+  margin: 6em 0;
+}
+
+.banner-middle {
+  background:  url('../img/bg-gradient.jpg') 0 0 no-repeat;
+  background-size: cover;
+  padding: 4em 0;
+  margin-top: 5em;
+}
+
+.banner-bottom {
+  background: url('../img/bg-banner-bottom.jpg') 0 0 no-repeat;
+  background-size: cover;
+  color: $white;
+  padding-bottom: 76px;
+
+  @include media-breakpoint-up(md) {
+    height: 833px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
+.banner-ribbon {
+  @include gradient();
+  color: $white;
+  text-align: center;
+  font-size: 22px;
+  padding: 1em 0;
+  font-family: 'Poppins', sans-serif;
+}

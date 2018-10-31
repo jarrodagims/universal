@@ -1,66 +1,21 @@
-.progress-ring {
+// .progress-ring {
 
-}
+// }
 
-.progress-ring__circle {
-  transition: 0.35s stroke-dashoffset;
-  // axis compensation
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%;
-}
+// .progress-ring__circle {
+//   transition: 0.35s stroke-dashoffset;
+//   // axis compensation
+//   transform: rotate(-90deg);
+//   transform-origin: 50% 50%;
+// }
 
-.circles {
+// .circles {
 
-  .circle {
-    position: relative;
-  }
+  
 
-  .circle-container {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-
-    &.unfilled {
-      z-index: -1;
-    }
-  }
-
-  svg {
-    width: 160px;
-    height: 160px;
-    background: transparent;
-
-    circle {
-      fill: none;
-      stroke-width: 10;
-      transition: all 4s ease-in-out;
-    }
-
-    circle {
-      position: relative;
-    }
-
-    #gray-circle {
-      z-index: -1;
-    }
-  }
-
-  @include media-breakpoint-down(md) {
-    .circle-container {
-      transform: scale(.5);
-    }
-
-    .num {
-      font-size: 22px;
-    }
-
+//   @include media-breakpoint-down(md) {
     
 
-    .circle .perc {
-      font-size: 16px;
-      padding-top: .25em;
-    }
-
-  }
-}
+//   }
+// }
 

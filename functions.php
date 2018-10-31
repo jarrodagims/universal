@@ -154,3 +154,4 @@ function url_shortcode() {
     return bloginfo('url');
 }
 add_shortcode('wpurl','url_shortcode');
+

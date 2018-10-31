@@ -14,7 +14,7 @@
                     <div class="icon-row">
                         <div class="boxes-header"><h2><strong>How</strong> We Do It</h2></div>
                         <div class="flex-col  clear-left">
-                            <a href=""><?php get_template_part('template-parts/icon', 'seo'); ?>
+                            <a href=""><?php get_template_part('/template-parts/icons/icon', 'seo'); ?>
                                 <div class="title">Search Engine<br />
                                     Optimization</div>
                             </a>
@@ -22,40 +22,40 @@
                     </div>
                     <div class="icon-row">
                         <div class="flex-col">
-                            <a href=""><?php get_template_part('template-parts/icon', 'social'); ?>
+                            <a href=""><?php get_template_part('/template-parts/icons/icon', 'social'); ?>
                                 <div class="title">Social Media<br />
                                     Marketing</div>
                             </a>
                         </div>
-                        <div class="flex-col"><a href=""><?php get_template_part('template-parts/icon', 'website') ?>
+                        <div class="flex-col"><a href=""><?php get_template_part('/template-parts/icons/icon', 'website') ?>
                                 <div class="title">Website
                                     Management</div>
                             </a>
                         </div>
-                        <div class="flex-col"><a href=""><?php get_template_part('template-parts/icon', 'reputation') ?>
+                        <div class="flex-col"><a href=""><?php get_template_part('/template-parts/icons/icon', 'reputation') ?>
                                 <div class="title">Reputation
                                     Management</div>
                             </a>
                         </div>
                     </div>
                     <div class="icon-row">
-                        <div class="flex-col"><a href=""><?php get_template_part('template-parts/icon', 'youtube') ?>
+                        <div class="flex-col"><a href=""><?php get_template_part('/template-parts/icons/icon', 'youtube') ?>
                                 <div class="title">Youtube
                                     Marketing</div>
                             </a>
                         </div>
-                        <div class="flex-col"><a href=""><?php get_template_part('template-parts/icon', 'display') ?>
+                        <div class="flex-col"><a href=""><?php get_template_part('/template-parts/icons/icon', 'display') ?>
                                 <div class="title">Display
                                     Advertising</div>
                             </a>
                         </div>
-                        <div class="flex-col"><a href=""><?php get_template_part('template-parts/icon', 'ppc') ?>
+                        <div class="flex-col"><a href=""><?php get_template_part('/template-parts/icons/icon', 'ppc') ?>
                                 <div class="title">Pay-Per-Click
                                     Advertising</div>
                             </a>
                         </div>
                         <div class="flex-col">
-                            <a href=""><?php get_template_part('template-parts/icon', 'remarketing') ?>
+                            <a href=""><?php get_template_part('/template-parts/icons/icon', 'remarketing') ?>
                                 <div class="title">Remarketing/
                                     Retargeting</div>
                             </a>

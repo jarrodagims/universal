@@ -10,7 +10,7 @@
 			<div class="<?=FULLWIDTH?>">
     			<article>
         			<h1><?=__('Testimonials')?></h1>
-    				<?php get_template_part('template-parts/content', 'testimonials'); ?>
+    				<?php get_template_part('template-parts/content/content', 'testimonials'); ?>
     			</article>
 			</div>
 		</div>
