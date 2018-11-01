@@ -18,6 +18,19 @@
           // autoHeight: 'container'
       });
 
+      $('.internal-slideshow').cycle({
+          timeout: 8000,
+          fx: 'carousel',
+          slides: '> div',
+          pauseOnHover: 'true',
+          pager: '.cycle-pager',
+          carouselVisible: 1,
+          next: '#next3',
+          prev: '#prev3'
+          // paused: true
+          // autoHeight: 'container'
+      });
+
 
       (function() {
           var deskFunctions = function() {

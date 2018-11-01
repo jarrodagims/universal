@@ -1,5 +1,5 @@
-<?php if (get_field('page_bottom_list')) : ?>
-    <section class="page-bottom">
+<?php if (get_field('page_bottom')) : ?>
+    <section class="page-bottom page-module">
         <div class="container">
             <div class="row">
                 <?php

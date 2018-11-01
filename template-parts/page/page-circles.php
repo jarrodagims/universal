@@ -20,7 +20,6 @@
                             </svg>
                         </div>
                     </div>
-
                     <p>91% of search traffic stays on the first page.</p></div>
             </div>
             <div class="col flex-col circle-col">

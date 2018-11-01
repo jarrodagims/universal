@@ -1,0 +1,182 @@
+.slideshow-container {
+  background: #000;
+  color: $white;
+  text-align: center;
+
+  .name {
+    display: block;
+    font-size: 28px;
+  }
+
+  .title {
+    display: block;
+    font-size: 20px;
+  }
+}
+
+.slideshow-header {
+  background: #F2F2F2;
+  margin: 3em 0 0;
+  padding: 2em 0;
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.slideshow-container {
+  background: #000;
+}
+
+.internal-slideshow {
+  overflow: visible !important;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .slide-container {
+    width: 318px;
+  }
+
+
+
+  .slide {
+    &:nth-child(4n + 1) {
+      > div {
+        border-top: 3px solid #5780C0;
+      }
+    }
+
+    &:nth-child(4n + 2) {
+      > div {
+        border-top: 3px solid #E7453C;
+      }
+    }
+
+    &:nth-child(4n + 3) {
+      > div {
+        border-top: 3px solid #F7B92A;
+      }
+    }
+
+    &:nth-child(4n + 4) {
+      > div {
+        border-top: 3px solid #2DA04B;
+      }
+    }
+
+  }
+
+
+  .slide > div {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    transition: all 300ms ease-in-out;
+  }
+
+  h3 {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    text-align: right;
+    display: none;
+
+    .name {
+      font-size: 10px;
+    }
+
+    .title {
+      font-size: 7px;
+    }
+  }
+
+  .g-circle {
+    @include svg-g-ring();
+    display: flex;
+    width: 26px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-bottom: .25em;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+
+    &:before {
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+
+
+  .cycle-slide-active {
+    position: relative;
+
+    h3 {
+      display: none;
+    }
+
+    > div {
+      transform: scale(1.05);
+      z-index: 99;
+      @include dropshadow();
+    }
+
+    .slide-container {
+
+    }
+  }
+}
+
+.next {
+  &::before {
+    content: '';
+    @include svg-chevron($white);
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-repeat: no-repeat;
+    margin: 0 0;
+    position: absolute;
+    background-size: 22px 22px;
+    right: 0;
+  }
+
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translatex(-50%) rotate(270deg);
+  display: block;
+  overflow: hidden;
+  text-indent: -999px;
+}
+
+.prev {
+  &::before {
+    content: '';
+    @include svg-chevron($white);
+    width: 22px;
+    height: 22px;
+    display: block;
+    background-repeat: no-repeat;
+    margin: 0 0;
+    position: absolute;
+    background-size: 22px 22px;
+    right: 0;
+  }
+
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translatex(-50%) rotate(90deg);
+  display: block;
+  overflow: hidden;
+  text-indent: -999px;
+}

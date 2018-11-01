@@ -10,6 +10,10 @@
   }
 }
 
+/*
+  Internal Pages
+ */
+
 .top-banner {
   width: 100%;
   height: 449px;
@@ -52,6 +56,7 @@
     background: #000;
     color: $white;
     padding: 152px 2em;
+    margin-bottom: 2em;
 
     p:first-child {
       font-style: italic;
@@ -89,6 +94,10 @@
   color: $white;
   padding-bottom: 76px;
 
+  h2 {
+    color: $white;
+  }
+
   @include media-breakpoint-up(md) {
     height: 833px;
     display: flex;
@@ -118,3 +127,53 @@
   }
 }
 
+.page-bottom {
+  padding: 2em 0;
+}
+
+.page-module {
+  padding: 2em 0;
+}
+
+/*
+  End Internal Pages
+ */
+
+
+/*
+  CF7 Validation
+ */
+
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha {
+  display: none;
+}
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha {
+  display: inline-block;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  display: none;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+  border: 0;
+  background: #8a2020;
+  clear: both;
+  padding: 1em;
+  font-size: 12px;
+  color: #fff !important;
+  margin: 0 2em;
+}
+
+span.wpcf7-not-valid-tip {
+  color: #fff;
+  background: #8a2020;
+  font-size: 1em;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/*
+  end CF7 Validation
+ */
