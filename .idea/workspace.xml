@@ -2,35 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb721c2-176a-4b35-a1f8-3c3538869751" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/page-youtube-ads.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/_sidebar-contact-form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/_sidebar-icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/components/_youtube-banner.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template-parts/home/home-main.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template-parts/page/page-youtube-banner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template-parts/sidebar/sidebar-contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template-parts/sidebar/sidebar-icons.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template-parts/sidebar/sidebar-testimonial.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template-parts/page/page-circles-web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/youtube.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/youtube.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page-home.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_sherpa-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sherpa-sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_contact-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_contact-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_icon-row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_icon-row.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_jumbotron.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_slideshow.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_slideshow.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-parts/content/content-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/content/content-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-parts/page/page-bottom.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/page/page-bottom.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-parts/page/page-middle-banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/page/page-middle-banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-parts/page/page-slideshow.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/page/page-slideshow.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -360,7 +337,7 @@
           <entry key="html" value="9" />
           <entry key="js" value="4" />
           <entry key="json" value="5" />
-          <entry key="php" value="123" />
+          <entry key="php" value="125" />
           <entry key="sass" value="1" />
           <entry key="scss" value="125" />
           <entry key="txt" value="1" />
@@ -371,7 +348,7 @@
           <entry key="CSS" value="1" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="4" />
-          <entry key="PHP" value="123" />
+          <entry key="PHP" value="125" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="125" />
           <entry key="Sass" value="1" />
@@ -385,8 +362,8 @@
           <entry key="html" value="211" />
           <entry key="js" value="236" />
           <entry key="json" value="6" />
-          <entry key="php" value="7946" />
-          <entry key="scss" value="10339" />
+          <entry key="php" value="7986" />
+          <entry key="scss" value="10700" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -394,9 +371,9 @@
           <entry key="CSS" value="5" />
           <entry key="JSON" value="6" />
           <entry key="JavaScript" value="236" />
-          <entry key="PHP" value="7946" />
+          <entry key="PHP" value="7986" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="SCSS" value="10339" />
+          <entry key="SCSS" value="10700" />
           <entry key="Scratch" value="211" />
         </counts>
       </usages-collector>
@@ -404,11 +381,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="390">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -417,7 +394,7 @@
         <entry file="file://$PROJECT_DIR$/template-parts/sidebar/sidebar-testimonial.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
-              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -426,7 +403,7 @@
         <entry file="file://$PROJECT_DIR$/template-parts/page/page-youtube-banner.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="206">
-              <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+              <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
               <folding>
                 <element signature="e#284#1408#0#HTML" />
                 <element signature="e#1838#1899#0#HTML" />
@@ -435,11 +412,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/components/_youtube-banner.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+            <state relative-caret-position="419">
+              <caret line="59" column="3" lean-forward="true" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -447,8 +424,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/_sherpa-main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="131" column="1" lean-forward="true" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
+            <state relative-caret-position="516">
+              <caret line="144" column="21" lean-forward="true" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
               <folding>
                 <element signature="e#656#676#0" />
               </folding>
@@ -457,10 +434,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template-parts/page/page-circles.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="15" column="28" selection-end-line="89" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template-parts/page/page-circles-web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="11" column="68" lean-forward="true" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/components/_index.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -469,7 +464,7 @@
         <entry file="file://$PROJECT_DIR$/page-youtube-ads.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
-              <caret line="6" column="89" lean-forward="true" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
+              <caret line="6" column="89" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -573,7 +568,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/template-parts/content-page.php" />
         <option value="$PROJECT_DIR$/template-parts/page-top-banner.php" />
         <option value="$PROJECT_DIR$/template-parts/page-middle-banner.php" />
@@ -617,13 +611,14 @@
         <option value="$PROJECT_DIR$/template-parts/sidebar/sidebar-contact.php" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_29.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_30.html" />
-        <option value="$PROJECT_DIR$/page.php" />
         <option value="$PROJECT_DIR$/template-parts/sidebar/sidebar-testimonial.php" />
         <option value="$PROJECT_DIR$/scss/components/_index.scss" />
         <option value="$PROJECT_DIR$/page-youtube-ads.php" />
-        <option value="$PROJECT_DIR$/scss/_sherpa-main.scss" />
         <option value="$PROJECT_DIR$/template-parts/page/page-youtube-banner.php" />
         <option value="$PROJECT_DIR$/scss/components/_youtube-banner.scss" />
+        <option value="$PROJECT_DIR$/scss/_sherpa-main.scss" />
+        <option value="$PROJECT_DIR$/template-parts/page/page-circles-web.php" />
+        <option value="$PROJECT_DIR$/page.php" />
       </list>
     </option>
   </component>
@@ -648,7 +643,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="612" />
+    <option name="x" value="827" />
     <option name="y" value="23" />
     <option name="width" value="2218" />
     <option name="height" value="1354" />
@@ -686,13 +681,13 @@
             <path>
               <item name="agims2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="agims2018" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="template-parts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="agims2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="agims2018" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="template-parts" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -881,15 +876,15 @@
       <workItem from="1540931017357" duration="3950000" />
       <workItem from="1540994870109" duration="18275000" />
       <workItem from="1541081823679" duration="20653000" />
-      <workItem from="1541168230545" duration="15023000" />
+      <workItem from="1541168230545" duration="16427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1473823000" />
+    <option name="totallyTimeSpent" value="1475227000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="612" y="23" width="2218" height="1354" extended-state="0" />
+    <frame x="827" y="23" width="2218" height="1354" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4946108" visible="true" weight="0.19025736" />
@@ -923,13 +918,6 @@
   </component>
   <component name="WordPressConfiguration" doNotAskAgain="true" />
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scss/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_26.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -948,13 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template-parts/page/page-circles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1235,14 +1216,7 @@
     <entry file="file://$PROJECT_DIR$/scss/components/_index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1270,31 +1244,21 @@
     <entry file="file://$PROJECT_DIR$/template-parts/sidebar/sidebar-testimonial.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_sherpa-main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="131" column="1" lean-forward="true" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
-          <folding>
-            <element signature="e#656#676#0" />
-          </folding>
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page-youtube-ads.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
-          <caret line="6" column="89" lean-forward="true" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
+          <caret line="6" column="89" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/page/page-youtube-banner.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
-          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
           <folding>
             <element signature="e#284#1408#0#HTML" />
             <element signature="e#1838#1899#0#HTML" />
@@ -1304,8 +1268,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/components/_youtube-banner.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+        <state relative-caret-position="419">
+          <caret line="59" column="3" lean-forward="true" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_sherpa-main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="144" column="21" lean-forward="true" selection-start-line="144" selection-start-column="21" selection-end-line="144" selection-end-column="21" />
+          <folding>
+            <element signature="e#656#676#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/page/page-circles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="28" selection-end-line="89" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/page/page-circles-web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="68" lean-forward="true" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
