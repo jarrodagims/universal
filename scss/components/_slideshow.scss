@@ -26,6 +26,22 @@
 
 .slideshow-container {
   background: #000;
+  color: $white;
+
+  h2 {
+    color: $white;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+  }
+
+  .col {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 3em 0;
+  }
 }
 
 .internal-slideshow {
@@ -36,8 +52,6 @@
   .slide-container {
     width: 318px;
   }
-
-
 
   .slide {
     &:nth-child(4n + 1) {
@@ -79,6 +93,7 @@
     right: .5em;
     text-align: right;
     display: none;
+
 
     .name {
       font-size: 10px;
@@ -150,7 +165,7 @@
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translatex(-50%) rotate(270deg);
+  transform: translateY(-50%)  translateX(-50%) rotate(270deg);
   display: block;
   overflow: hidden;
   text-indent: -999px;
@@ -175,7 +190,7 @@
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translatex(-50%) rotate(90deg);
+  transform: translateY(-50%) translateX(-50%) rotate(90deg);
   display: block;
   overflow: hidden;
   text-indent: -999px;

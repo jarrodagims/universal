@@ -26,7 +26,10 @@
           pager: '.cycle-pager',
           carouselVisible: 1,
           next: '#next3',
-          prev: '#prev3'
+          prev: '#prev3',
+          caption: '.cycle-caption',
+          captionPlugin: 'caption2',
+          captionTemplate: '<h2>{{cycleTitle}}</h2>'
           // paused: true
           // autoHeight: 'container'
       });

@@ -1,0 +1,79 @@
+.banner-middle.youtube-banner {
+  overflow: hidden;
+  padding: 4em 0 0;
+
+  .table {
+    margin: 3em 0 3em 3em;
+    background: rgba(242, 242, 242, 0.12);
+
+    .col {
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      align-items: center;
+      padding: 2em;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .table-header {
+    background: rgb(236,183,30);
+    background: linear-gradient(90deg, rgba(236,183,30,1) 0%, rgba(244,214,126,0.75) 49%, rgba(255,255,255,1) 100%);
+    
+
+    padding: 2em;
+
+    .col {
+      padding: 0 0;
+    }
+    h2 {
+      margin-bottom: 0;
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      line-height: 1.5;
+    }
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .cell {
+
+  }
+
+  .icon-row {
+    background: transparent;
+    margin-bottom: 3em;
+
+    img {
+      height: 32px;
+    }
+
+    p {
+      color: $white;
+    }
+  }
+
+  .dark-bg {
+    position: relative;
+
+    &::before {
+      background : #000000;
+      background : rgba(0, 0, 0, 1);
+      opacity : 0.49;
+      filter: alpha(opacity=49) progid:DXImageTransform.Microsoft.Alpha(opacity=49) ;
+      content: '';
+      width: 150vw;
+      height: 100%;
+      left: -50vw;
+      top: 0;
+      position: absolute;
+      content: '';
+    }
+  }
+}

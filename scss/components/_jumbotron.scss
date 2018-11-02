@@ -1,13 +1,14 @@
 .landing-bg {
   background: url('../img/bg-hero.jpg');
   background-size: cover;
- 
-  @include media-breakpoint-up(md) {
-    .navbar, .navbar-sherpa {
+  
+}
+
+@include media-breakpoint-up(md) {
+    .top-header .navbar, .top-header .navbar-sherpa {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-    }
   }
 }
 

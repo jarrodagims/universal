@@ -46,22 +46,33 @@
   margin-bottom: 2em;
 }
 
-#sidebar {
-  float: right;
-  width: 380px;
-  margin-left: 4em;
-  text-align: center;
+.sidebar-content {
+  margin: 6em 0;
+}
 
-  &.sidebar-testimonial {
-    background: #000;
-    color: $white;
-    padding: 152px 2em;
-    margin-bottom: 2em;
+.banner-middle {
+  background:  url('../img/bg-gradient.jpg') 0 0 no-repeat;
+  background-size: cover;
+  padding: 4em 0;
+  margin-top: 5em;
 
+  .testimonial {
+    background: rgba(247, 247, 247, 0.9);
+    padding: 3em;
+    text-align: center;
+
+    p:last-child {
+      font-size: 12px;
+
+      em {
+        font-size: 10px;
+      }
+    }
+   
     p:first-child {
       font-style: italic;
       text-align: center;
-      font-size: 16px;
+      font-size: 13px;
 
       &::after {
         @include svg-stars($sherpa-brand-primary);
@@ -75,17 +86,6 @@
       }
     }
   }
-}
-
-.sidebar-content {
-  margin: 6em 0;
-}
-
-.banner-middle {
-  background:  url('../img/bg-gradient.jpg') 0 0 no-repeat;
-  background-size: cover;
-  padding: 4em 0;
-  margin-top: 5em;
 }
 
 .banner-bottom {
@@ -135,6 +135,10 @@
   padding: 2em 0;
 }
 
+
+.check {
+  @include svg-check();
+}
 /*
   End Internal Pages
  */

@@ -11,7 +11,7 @@
 </section>
 <section class="slideshow-container">
     <div class="internal-slideshow">
-        <div class="slide">
+        <div class="slide" data-cycle-title="Creative Content Writer">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>marie.jpg" alt="Marie"/>
@@ -22,7 +22,7 @@
                     <span class="title">Creative Content Writer</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Marketing Executive">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>dino.jpg" alt="Dino"/>
@@ -33,7 +33,7 @@
                     <span class="title">Marketing Executive</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Social Media Manager">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>erika.jpg" alt="Erika Menes"/>
@@ -44,7 +44,7 @@
                     <span class="title">Social Media Manager</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Marketing Executive">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>jeremy.jpg" alt="Jeremy"/>
@@ -55,7 +55,7 @@
                     <span class="title">Marketing Executive</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="SEO Web Developer">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>chris.jpg" alt="Chris"/>
@@ -66,7 +66,7 @@
                     <span class="title">SEO Web Developer</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Operations Manager">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>dan.jpg" alt="Danielle"/>
@@ -77,7 +77,7 @@
                     <span class="title">Operations Manager</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Director of Development">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>eric.jpg" alt="Eric"/>
@@ -88,7 +88,7 @@
                     <span class="title">Director of Development</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Production Leader">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>ashley.jpg" alt="Ashley"/>
@@ -99,7 +99,7 @@
                     <span class="title">Production Leader</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Content Writer & SEO Specialist">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>otto.jpg" alt="Otto"/>
@@ -110,7 +110,7 @@
                     <span class="title">Content Writer & SEO Specialist</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Creative Content Writer">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>julia.jpg" alt="Otto"/>
@@ -121,7 +121,7 @@
                     <span class="title">Creative Content Writer</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Account Executive">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>anna.jpg" alt="Anna"/>
@@ -132,7 +132,7 @@
                     <span class="title">Account Executive</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Graphic Designer">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>monica.jpg" alt="Monica"/>
@@ -143,7 +143,7 @@
                     <span class="title">Graphic Designer</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Web Developer">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>jarrod.jpg" alt="Jarrod"/>
@@ -154,7 +154,7 @@
                     <span class="title">Web Developer</span>
                 </h3></div>
         </div>
-        <div class="slide">
+        <div class="slide" data-cycle-title="Senior Content Editor">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>jaqueline.jpg" alt="Jaqueline"/>
@@ -165,8 +165,7 @@
                     <span class="title">Senior Content Editor</span>
                 </h3></div>
         </div>
-
-        <div class="slide">
+        <div class="slide"  data-cycle-title="Online Presence Specialist">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>jen.jpg" alt="Jarrod"/>
@@ -177,8 +176,7 @@
                     <span class="title">Online Presence Specialist</span>
                 </h3></div>
         </div>
-
-        <div class="slide">
+        <div class="slide" data-cycle-title="Online Reputation Specialist">
             <div>
                 <div class="slide-container">
                     <img src="<?= IMGURL ?>bdoge.jpg" alt="Brian"/>
@@ -196,7 +194,9 @@
         <div class="row">
             <div class="col">
                 <a href=# id="prev3" class="prev"><< Prev </a>
+                <div class="cycle-caption">
 
+                </div>
                 <a href=# id="next3" class="next"> Next >> </a>
             </div>
         </div>

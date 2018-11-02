@@ -195,102 +195,102 @@
     }
   }
 
-  #sidebar {
-
-
-    #contact-form {
-      background: $sherpa-dark-color;
-      text-align: center;
-      padding: 0;
-      max-width: 100%;
-      width: 100%;
-      margin-bottom: 15px;
-
-      form {
-
-        h1,
-        h2,
-        h3,
-        h4 {
-          color: #fff;
-        }
-
-        h4 {
-          font-size: 20px;
-        }
-
-        .form-group {
-          display: block;
-          max-width: 100%;
-          justify-content: space-around;
-          margin: 0 auto;
-          padding: 0 1.5em;
-
-          label {
-            flex: 1;
-            width: 100%;
-
-            input {
-              width: 100%;
-            }
-          }
-
-          .col-md-6 {
-            margin: 0 auto;
-          }
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        textarea {
-          background: rgba(255, 255, 255, 0.5);
-          border: 0;
-          color: #fff;
-          padding: 1em;
-          margin-bottom: 1.25em;
-          transition: all 0.3ms ease-in;
-
-          &::placeholder {
-            color: #fff;
-            font-weight: normal;
-          }
-        }
-
-        textarea {
-          overflow: hidden;
-          height: 2em;
-          padding-bottom: 1.25em;
-        }
-
-        input[type="submit"] {
-          margin-top: 1em;
-          margin-bottom: 1em;
-          margin-left: 0;
-          background-color: #ED511B;
-          border-color: #ED511B;
-          color: $white;
-          padding: 20px 32px;
-          transition: all 0.3ms ease-in-out;
-
-          &:hover {
-            background-color: rgba(237,81,27,0.8);
-            border-color: rgba(237,81,27,0.8);
-          }
-        }
-
-        p {
-          margin-bottom: 2em;
-        }
-      }
-
-      .textwidget {
-        background: #e6e6e6;
-        padding: 2em;
-        display: none !important;
-      }
-    }
-  }
+  //#sidebar {
+  //
+  //
+  //  #contact-form {
+  //    background: $sherpa-dark-color;
+  //    text-align: center;
+  //    padding: 0;
+  //    max-width: 100%;
+  //    width: 100%;
+  //    margin-bottom: 15px;
+  //
+  //    form {
+  //
+  //      h1,
+  //      h2,
+  //      h3,
+  //      h4 {
+  //        color: #fff;
+  //      }
+  //
+  //      h4 {
+  //        font-size: 20px;
+  //      }
+  //
+  //      .form-group {
+  //        display: block;
+  //        max-width: 100%;
+  //        justify-content: space-around;
+  //        margin: 0 auto;
+  //        padding: 0 1.5em;
+  //
+  //        label {
+  //          flex: 1;
+  //          width: 100%;
+  //
+  //          input {
+  //            width: 100%;
+  //          }
+  //        }
+  //
+  //        .col-md-6 {
+  //          margin: 0 auto;
+  //        }
+  //      }
+  //
+  //      input[type="text"],
+  //      input[type="email"],
+  //      input[type="tel"],
+  //      textarea {
+  //        background: rgba(255, 255, 255, 0.5);
+  //        border: 0;
+  //        color: #fff;
+  //        padding: 1em;
+  //        margin-bottom: 1.25em;
+  //        transition: all 0.3ms ease-in;
+  //
+  //        &::placeholder {
+  //          color: #fff;
+  //          font-weight: normal;
+  //        }
+  //      }
+  //
+  //      textarea {
+  //        overflow: hidden;
+  //        height: 2em;
+  //        padding-bottom: 1.25em;
+  //      }
+  //
+  //      input[type="submit"] {
+  //        margin-top: 1em;
+  //        margin-bottom: 1em;
+  //        margin-left: 0;
+  //        background-color: #ED511B;
+  //        border-color: #ED511B;
+  //        color: $white;
+  //        padding: 20px 32px;
+  //        transition: all 0.3ms ease-in-out;
+  //
+  //        &:hover {
+  //          background-color: rgba(237,81,27,0.8);
+  //          border-color: rgba(237,81,27,0.8);
+  //        }
+  //      }
+  //
+  //      p {
+  //        margin-bottom: 2em;
+  //      }
+  //    }
+  //
+  //    .textwidget {
+  //      background: #e6e6e6;
+  //      padding: 2em;
+  //      display: none !important;
+  //    }
+  //  }
+  //}
 }
 
 

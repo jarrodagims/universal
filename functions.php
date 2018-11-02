@@ -132,7 +132,7 @@ function printPhone() {
 }
 
 //disable tinyMCE
-add_filter( 'user_can_richedit' , '__return_false', 50 );
+//add_filter( 'user_can_richedit' , '__return_false', 50 );
 
 //shorten blog post titles
 function short_title($after = '', $length) {
@@ -154,4 +154,24 @@ function url_shortcode() {
     return bloginfo('url');
 }
 add_shortcode('wpurl','url_shortcode');
+
+add_filter('the_content', 'do_shortcode');
+
+function my_acf_format_value( $value, $post_id, $field ) {
+
+    // run do_shortcode on all textarea values
+    $value = do_shortcode($value);
+
+
+    // return
+    return $value;
+}
+
+add_filter('acf/format_value/type=textarea', 'my_acf_format_value', 10, 3);
+
+
+function sidebar_icons_shortcode() {
+    return get_template_part('/template-parts/sidebar/sidebar', 'icons');
+}
+add_shortcode( 'sidebar_icons', 'sidebar_icons_shortcode' );
 
