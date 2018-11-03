@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb721c2-176a-4b35-a1f8-3c3538869751" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/template-parts/home/home-circles.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change beforePath="$PROJECT_DIR$/prepros-6.config" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/scss/_sherpa-main.scss" afterPath="$PROJECT_DIR$/scss/_sherpa-main.scss" />
-      <change beforePath="$PROJECT_DIR$/scss/_sherpa-variables.scss" afterPath="$PROJECT_DIR$/scss/_sherpa-variables.scss" />
       <change beforePath="$PROJECT_DIR$/scss/components/_circles.scss" afterPath="$PROJECT_DIR$/scss/components/_circles.scss" />
       <change beforePath="$PROJECT_DIR$/scss/style.css.map" afterPath="$PROJECT_DIR$/scss/style.css.map" />
-      <change beforePath="$PROJECT_DIR$/template-parts/home/home-boxes.php" afterPath="$PROJECT_DIR$/template-parts/home/home-boxes.php" />
-      <change beforePath="$PROJECT_DIR$/template-parts/page/page-circles-web.php" afterPath="$PROJECT_DIR$/template-parts/page/page-circles-web.php" />
-      <change beforePath="$PROJECT_DIR$/template-parts/page/page-circles.php" afterPath="$PROJECT_DIR$/template-parts/page/page-circles.php" />
       <change beforePath="$PROJECT_DIR$/template-parts/progress-ring.php" afterPath="$PROJECT_DIR$/template-parts/progress-ring.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -435,16 +425,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_circles.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scss/components/_circles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="991">
-              <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_sherpa-main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/_sherpa-main.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -457,11 +437,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="progress-ring.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="progress-ring.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template-parts/progress-ring.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="234">
+              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_circles.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/components/_circles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -470,8 +460,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="70" column="49" lean-forward="false" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
+            <state relative-caret-position="177">
+              <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -481,9 +471,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>parallax</find>
-      <find>.actr</find>
-      <find>.active</find>
       <find>background-color</find>
       <find>first-child</find>
       <find>cycle-pager</find>
@@ -511,6 +498,9 @@
       <find>dropdown</find>
       <find>gray-circle</find>
       <find>#</find>
+      <find>gray</find>
+      <find>unfilled</find>
+      <find>stroke</find>
     </findStrings>
     <replaceStrings>
       <replace>flex-col</replace>
@@ -900,12 +890,12 @@
       <workItem from="1540994870109" duration="18275000" />
       <workItem from="1541081823679" duration="20653000" />
       <workItem from="1541168230545" duration="16790000" />
-      <workItem from="1541260620144" duration="4504000" />
+      <workItem from="1541260620144" duration="5586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1480094000" />
+    <option name="totallyTimeSpent" value="1481176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1686" y="40" width="2218" height="1057" extended-state="0" />
@@ -1253,14 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="70" column="49" lean-forward="false" selection-start-line="70" selection-start-column="49" selection-end-line="70" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_sherpa-main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="847">
@@ -1279,6 +1261,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/page/page-circles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/home/home-circles.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -1289,26 +1287,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template-parts/page/page-circles.php">
+    <entry file="file://$PROJECT_DIR$/scss/components/_circles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="376">
+          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/progress-ring.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/_circles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="991">
-          <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+        <state relative-caret-position="234">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding />
         </state>
       </provider>

@@ -13,8 +13,8 @@
     width: 160px;
     height: 160px;
 
-    &.unfilled {
-      z-index: -1;
+    &.filled {
+      z-index: 99;
     }
   }
 
@@ -22,9 +22,13 @@
     width: 160px;
     height: 160px;
     background: transparent;
-    transition: all 1s ease-in-out;
-    stroke-linecap: round;
-    stroke-dasharray: 0 999;
+
+    &.gradient-circle {
+      transition: all 1s ease-in-out;
+      stroke-linecap: round;
+      stroke-dasharray: 0 999;
+      transform: rotate(-90deg);
+    }
 
     circle {
       fill: none;
@@ -36,9 +40,10 @@
       position: relative;
     }
 
-    &.gray-circle {
+    .gray-circle {
       z-index: -1;
       stroke-dasharray: 1000;
+      stroke: #858585;
     }
   }
 
@@ -61,7 +66,6 @@
     align-items: center;
     position: relative;
     margin-right: 1em;
-
     
     .perc {
       font-size: 39px;
@@ -138,6 +142,7 @@
 
     svg circle {
       stroke-width: 3px;
+
     }
 
     .num {

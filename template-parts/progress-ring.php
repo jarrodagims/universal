@@ -1,5 +1,5 @@
 <div class="circle"><div class="text"><span class="num"><?php echo $template_args['percentage']; ?></span><span class="perc">%</span></div>
-    <div class="circle-container">
+    <div class="circle-container filled">
         <svg class="gradient-circle" width="160" height="160" viewBox="0 0 160 160" data-percent="<?php echo $template_args['percentage']; ?>">
             <defs>
                 <linearGradient id="g1">
@@ -15,8 +15,9 @@
     </div>
 
     <div class="circle-container unfilled">
-        <svg class='gray-circle' width="160" height="160" viewBox="0 0 160 160">
-            <circle  cx='80' cy='80' r='68' stroke-dasharray='1000' stroke-dashoffset='0'>
+        <svg width="160" height="160" viewBox="0 0 160 160">
+
+            <circle class='gray-circle' cx='80' cy='80' r='68' stroke-dashoffset='0' stroke-dasharray="1000" stroke="red">
             </circle>
         </svg>
     </div>
