@@ -198,3 +198,22 @@ span.wpcf7-not-valid-tip {
 /*
   end CF7 Validation
  */
+
+/*
+
+Animations
+
+ */
+
+.fade-down {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all $transitionTime ease-in-out;
+}
+
+.active {
+  .fade-down {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

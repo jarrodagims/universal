@@ -1,15 +1,14 @@
-<section class="home-module-6">
-
-
+<section class="home-module-6 waypoint">
     <div class="container">
         <div class="row top-contact" >
             <div class="col col-md-5 flex-col">
-                <div class="swish"><h2>
+                <div class="fade-down"><div class="swish"><h2>
+                        <div class="half-circle"><img src="<?= IMGURL ?>swish.svg" alt="Swish" /></div>
                         Work With <strong>The <span class="brand">Best</span></strong>
                 </h2>
                 <p>
                     First <span class="google-logo">Google Partner</span> <strong>Partner Agency</strong> in El Paso
-                </p></div>
+                </p></div></div>
             </div>
             <div class="col flex-col col-md-7">
                 <picture>

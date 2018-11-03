@@ -70,8 +70,6 @@
                       handler: function(){
                           self.addClass('active');
                           drawCircles();
-
-                          // $(this).destroy();
                       },
                       offset: '50%'
                   });

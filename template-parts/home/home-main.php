@@ -6,7 +6,7 @@
 
                     <div class="jumbo-content waypoint">
                         <div>
-                            <h1><span class="brand">BIG</span> OPPORTUNITIES.
+                            <h1 class="fade-down"><span class="brand">BIG</span> OPPORTUNITIES.
                                 <span class="br-md">Local Businesses. Creative Solutions.</span></h1>
 
                             <p><strong>More Customers</strong> & <strong>Increased Phone Calls</strong>, Leads, Website & Foot Traffic</p>

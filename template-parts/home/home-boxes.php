@@ -1,5 +1,5 @@
-<section class="home-module-3 waypoint">
-    <div class="phone-bg">
+<section class="home-module-3 circle-waypoint">
+    <div class="phone-bg" data-parallax='{"y" : 100}'>
         <img src="<?= IMGURL ?>bg-phones.png" alt="Phones" />
     </div>
 
