@@ -1,5 +1,4 @@
 .circles {
-
   color: $white;
   justify-content: center;
   background: rgb(0,0,0);
@@ -23,6 +22,9 @@
     width: 160px;
     height: 160px;
     background: transparent;
+    transition: all 1s ease-in-out;
+    stroke-linecap: round;
+    stroke-dasharray: 0 999;
 
     circle {
       fill: none;
@@ -34,8 +36,9 @@
       position: relative;
     }
 
-    #gray-circle {
+    &.gray-circle {
       z-index: -1;
+      stroke-dasharray: 1000;
     }
   }
 
@@ -104,8 +107,6 @@
       font-size: 22px;
     }
 
-    
-
     .circle .perc {
       font-size: 16px;
       padding-top: .25em;
@@ -133,7 +134,6 @@
     .text {
       display: flex;
       align-items: center;
-
     }
 
     svg circle {

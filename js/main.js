@@ -39,6 +39,16 @@
           var deskFunctions = function() {
 
 
+              var drawCircles = function() {
+                  var $circle = $('.gradient-circle'),
+                  roundRadius = $circle.find('circle').attr('r'),
+                  roundPercent = $circle.data('percent'),
+                  roundCircum = 2 * roundRadius * Math.PI,
+                  roundDraw = roundPercent * roundCircum / 100
+                  $circle.css('stroke-dasharray', roundDraw  + ' 999');
+              };
+
+
               //make dropdown hoverable
               // $('.dropdown-toggle').attr('data-toggle', 'hover');
 
@@ -48,6 +58,20 @@
                   $(this).waypoint({
                       handler: function(){
                           self.addClass('active');
+                      },
+                      offset: '50%'
+                  });
+              });
+
+              $('.circle-waypoint').each(function(){
+                  var self = $(this);
+
+                  $(this).waypoint({
+                      handler: function(){
+                          self.addClass('active');
+                          drawCircles();
+
+                          // $(this).destroy();
                       },
                       offset: '50%'
                   });

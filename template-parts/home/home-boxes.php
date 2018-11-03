@@ -73,25 +73,6 @@
                 </div>
             </div>
         </div>
-        <div class="row circles">
-            <div class="col flex-col circle-col">
-                <div>
-                    <?php get_template_part('template-parts/progress', 'ring') ?>
-
-                    <p>Nearly 80% of potential customers
-                        <span class="br-md">leave a mobile website that doesn’t</span>
-                        <span class="br-md">display well on their device.</span></p></div>
-            </div>
-
-            <div class="col flex-col circle-col">
-                <div>
-                    <?php get_template_part('template-parts/progress', 'ring') ?>
-                    <p>Of People Research
-                        <span class="br-md">a Local Business Before</span>
-                        <span class="br-md">Making a Purchase</span></p></div>
-            </div>
-        </div>
+        <?php get_template_part('/template-parts/home/home', 'circles'); ?>
     </div>
-
-
 </section>
