@@ -17,11 +17,11 @@
                 <a href="tel:9152095381">915.209.5381</a>
             </div>
 
-            <div class="col address-footer">
+            <div class=" address-footer">
                 <p>1370 Pullman Dr, Suite G<br />El Paso, TX 79936</p>
             </div>
 
-            <div class="col button-footer">
+            <div class="button-footer">
                 <div>
                     <a href="<?= SITEURL ?>/contact-us/">
                         <button class="btn btn-primary">

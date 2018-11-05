@@ -218,8 +218,20 @@ Animations
   }
 }
 
+@include media-breakpoint-down(md) {
+  .fade-down {
+    opacity: 1;
+    transform: none;
+  }
+
+  .br-xs {
+      display: block;
+    }
+}
+
 @include media-breakpoint-up(md) {
   .br-md {
     display: block;
+   
   }
 }

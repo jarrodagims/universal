@@ -197,6 +197,9 @@
 
     li {
       flex: 1;
+      justify-content: center;
+      display: flex;
+      align-items: center;
       text-align: center;
       border-right: 1px solid #CCCCCC !important;
       border-bottom: 4px solid;
@@ -282,6 +285,16 @@
   }
 }
 
+@include media-breakpoint-down(lg) {
+
+  .menu-secondary-container {
+    .navbar-nav li a::after {
+      display: none;
+    }
+  }
+}
+
+
 .page-template-default {
 
   .top-header {
@@ -337,6 +350,7 @@
         width: 33.33%;
         flex: auto;
         font-size: 7px;
+        border-bottom-width: 2px;
         
         a {
           padding: 3em 0;

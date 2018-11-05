@@ -268,11 +268,50 @@
   }
 
   @include media-breakpoint-down(md) {
+
+
+    .contact-bottom {
+
+      padding: 3.25em 0 1.5em;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
+
+      .form-group {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        margin: 0 2em;
+      }
+
+      ::placeholder {
+        font-size: 12px;
+      }
+
+      .form-group label {
+        font-size: 12px;
+        width: 100%;
+        margin-right: 0;
+        padding: 1em 0;
+
+         &:last-child {
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+      }
+    }
+
+   
+
       .top-contact {
         text-align: center;
         height: auto;
         display: block;
-        padding: 6em 0;
+        padding: 3.5em 0 0;
 
         .badges {
           transform: none;
@@ -368,3 +407,9 @@ Animations
      }
   }
 }
+
+ @include media-breakpoint-down(md) {
+  .swish h2 .half-circle {
+    display: none !important;
+  }
+ }

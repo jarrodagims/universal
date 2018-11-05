@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_sherpa-buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_sherpa-footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_sherpa-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_sherpa-navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-navbar.scss" afterDir="false" />
@@ -19,12 +17,12 @@
       <change beforePath="$PROJECT_DIR$/scss/components/_home-module-6.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_home-module-6.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/components/_icon-row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_icon-row.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/components/_jumbotron.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_jumbotron.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/components/_map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_map.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-parts/home/home-boxes.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/home/home-boxes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template-parts/home/home-circles.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/home/home-circles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template-parts/home/home-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/home/home-contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-parts/home/home-slideshow.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/home/home-slideshow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-parts/icons/icon-nfl.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/icons/icon-nfl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template-parts/home/home-main.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/home/home-main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template-parts/home/home-website.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/home/home-website.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -354,7 +352,7 @@
           <entry key="html" value="9" />
           <entry key="js" value="4" />
           <entry key="json" value="5" />
-          <entry key="php" value="137" />
+          <entry key="php" value="139" />
           <entry key="sass" value="1" />
           <entry key="scss" value="125" />
           <entry key="txt" value="1" />
@@ -365,7 +363,7 @@
           <entry key="CSS" value="1" />
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="4" />
-          <entry key="PHP" value="137" />
+          <entry key="PHP" value="139" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="125" />
           <entry key="Sass" value="1" />
@@ -377,9 +375,9 @@
           <entry key="css" value="5" />
           <entry key="gitignore" value="6" />
           <entry key="html" value="211" />
-          <entry key="js" value="256" />
+          <entry key="js" value="266" />
           <entry key="json" value="6" />
-          <entry key="php" value="8166" />
+          <entry key="php" value="8366" />
           <entry key="scss" value="10700" />
         </counts>
       </usages-collector>
@@ -387,8 +385,8 @@
         <counts>
           <entry key="CSS" value="5" />
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="256" />
-          <entry key="PHP" value="8166" />
+          <entry key="JavaScript" value="266" />
+          <entry key="PHP" value="8366" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="SCSS" value="10700" />
           <entry key="Scratch" value="211" />
@@ -408,19 +406,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template-parts/page/page-slideshow.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4354">
-              <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template-parts/home/home-contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="182">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -428,7 +417,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
+            <state relative-caret-position="197">
               <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
             </state>
           </provider>
@@ -437,17 +426,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template-parts/home/home-main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template-parts/home/home-boxes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="312">
+              <caret line="11" column="165" lean-forward="true" selection-start-line="11" selection-start-column="165" selection-end-line="11" selection-end-column="165" />
             </state>
           </provider>
         </entry>
@@ -455,8 +435,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template-parts/home/home-circles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="10" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="442">
+              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template-parts/home/home-ribbon.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template-parts/home/home-website.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -464,8 +462,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template-parts/home/home-slideshow.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+            <state relative-caret-position="832">
+              <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -482,8 +480,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="442">
+              <caret line="17" column="63" lean-forward="true" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -492,7 +490,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>stars</find>
       <find>find out</find>
       <find>cursor</find>
       <find>template-parts/icon</find>
@@ -522,6 +519,7 @@
       <find>bg-phones</find>
       <find>80%</find>
       <find>google-colors</find>
+      <find>bring in</find>
     </findStrings>
     <replaceStrings>
       <replace>flex-col</replace>
@@ -587,7 +585,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scss/components/icon-check.scss" />
         <option value="$PROJECT_DIR$/scss/_typography.scss" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_26.html" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -630,14 +627,15 @@
         <option value="$PROJECT_DIR$/scss/components/_home-module-6.scss" />
         <option value="$PROJECT_DIR$/scss/_sherpa-main.scss" />
         <option value="$PROJECT_DIR$/template-parts/icons/icon-nfl.php" />
-        <option value="$PROJECT_DIR$/template-parts/home/home-main.php" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/template-parts/home/home-slideshow.php" />
         <option value="$PROJECT_DIR$/template-parts/home/home-boxes.php" />
         <option value="$PROJECT_DIR$/template-parts/home/home-circles.php" />
         <option value="$PROJECT_DIR$/template-parts/home/home-contact.php" />
+        <option value="$PROJECT_DIR$/template-parts/home/home-slideshow.php" />
+        <option value="$PROJECT_DIR$/template-parts/home/home-main.php" />
         <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/template-parts/home/home-website.php" />
       </list>
     </option>
   </component>
@@ -662,10 +660,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="579" />
-    <option name="y" value="320" />
+    <option name="x" value="810" />
+    <option name="y" value="86" />
     <option name="width" value="1691" />
-    <option name="height" value="1057" />
+    <option name="height" value="1297" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -707,6 +705,12 @@
               <item name="agims2018" type="462c0819:PsiDirectoryNode" />
               <item name="template-parts" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="agims2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agims2018" type="462c0819:PsiDirectoryNode" />
+              <item name="template-parts" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -897,15 +901,15 @@
       <workItem from="1541081823679" duration="20653000" />
       <workItem from="1541168230545" duration="16790000" />
       <workItem from="1541260620144" duration="7641000" />
-      <workItem from="1541430831702" duration="6172000" />
+      <workItem from="1541430831702" duration="10926000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1489403000" />
+    <option name="totallyTimeSpent" value="1494157000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="579" y="320" width="1691" height="1057" extended-state="0" />
+    <frame x="810" y="86" width="1691" height="1297" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4946108" visible="true" weight="0.25288054" />
@@ -922,7 +926,7 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5048909" side_tool="true" weight="0.21962617" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4951091" visible="true" weight="0.20442571" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4951091" visible="true" weight="0.16316232" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -955,13 +959,6 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_27.html" />
     <entry file="file://$PROJECT_DIR$/../agims/page-landing-2018.php" />
-    <entry file="file://$PROJECT_DIR$/template-parts/home/home-ribbon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/page/page-bottom-banner.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1104,13 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template-parts/home/home-website.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_sherpa-home.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1201,24 +1191,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/home/home-boxes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template-parts/home/home-circles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1229,24 +1205,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template-parts/home/home-main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page-home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template-parts/home/home-slideshow.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1259,14 +1221,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/home/home-contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="182">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/home/home-slideshow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="63" lean-forward="true" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/home/home-main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="11" column="165" lean-forward="true" selection-start-line="11" selection-start-column="165" selection-end-line="11" selection-end-column="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/home/home-circles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/home/home-ribbon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template-parts/home/home-website.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
+        <state relative-caret-position="197">
           <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
         </state>
       </provider>

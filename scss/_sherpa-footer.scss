@@ -5,25 +5,34 @@
   text-align: center;
   background: #000;
   color: $white;
+  
   .container-fluid {
-    max-width: 1640px;
+    max-width: 1700px;
     margin: 0 auto;
   }
 
-  .phone-footer, .hours-footer, .address-footer {
+  .logo-footer, .phone-footer, .hours-footer, .address-footer {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
-  .address-footer p {
-    text-align: left;
+  .button-footer {
+    padding: 0 30px;
   }
+
 
   .address-footer {
-    flex-basis: 250px;
+    text-align: left;
+    padding: 0 30px;
   }
 
+  .address-footer p {
+    text-align: left;
+    margin-bottom: 0;
+    display: inline;
+
+  }
 
 
   &::before {
@@ -52,15 +61,12 @@
 
   .logo-sm {
     height: 13px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     padding-left: .5em;
   }
 
   .btn {
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     padding: 1.5em 2em;
     font-size: 11px; 
     text-transform: none;
@@ -147,6 +153,7 @@
        align-items: center;
    }
 
+  
 
    .flex-col {
       flex-direction: row;
@@ -187,22 +194,30 @@
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     text-align: left;
   }
 
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
+
+    .address-footer p {
+      margin-top: 0;
+    }
 
     ul {
       margin: 20px auto;
       overflow: auto;
       width: auto;
       display: inline-block;
+      justify-content: flex-start !important;
     }
 
     .col {
       flex-basis: auto;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
     }
 
     .logo-footer img {
@@ -241,7 +256,7 @@
 
   ul {
     padding-left: 0;
-    margin-top: auto;
+    margin-top: 2em;
     display: flex;
     justify-content: space-between;
   }
@@ -249,6 +264,7 @@
   p.small {
     font-size: 14px;
     position: relative;
+    margin-bottom: 0;
 
     svg {
       display: inline-block;
@@ -366,7 +382,18 @@
 
   
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
+
+     .phone-footer {
+      a {
+        font-size: 24px;
+      }
+     }
+
+     .address-footer {
+       text-align: center;
+     }
+
 
     .button-footer {
       flex: 1;
@@ -388,8 +415,8 @@
     }
 
     .phone-footer {
-      margin-top: 1.25em;
-      margin-bottom: 2em;
+      margin-top: 3em;
+      margin-bottom: 1em;
     }
 
     .hours-footer {
@@ -421,10 +448,6 @@
       line-height: 1.75;
       font-weight: 300;
       margin-bottom: 0em;
-
-      br {
-        display: none;
-      }
     }
   }
 
@@ -454,7 +477,7 @@
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     .flex-row {
       flex-direction: column;
     }
@@ -464,7 +487,7 @@
     }
 
     p {
-      font-size: 13px;
+      font-size: 16px;
     }
 
     .btn {
@@ -606,6 +629,7 @@
         width: auto;
         margin: 0 auto;
         width: auto;
+        height: 48px;
       }
     }
   }
@@ -616,7 +640,7 @@
 
 @include media-breakpoint-down(sm) {
   #footer {
-    padding: 0 0;
+    padding: 0 0 2em;
 
     .row {
       flex-direction: column;
@@ -635,16 +659,22 @@
       font-size: 9px;
       margin-bottom: 28px;
       @include nodropshadow();
+      padding: 1.5em 2em;
       width: auto;
     }
     
 
     .social-media-button {
       color: #918F8D;
+      font-size: 13px;
 
       &:hover {
         color: $sherpa-brand-primary !important;
       }
+    }
+
+    ul li {
+      margin: 0 1.5em;
     }
 
     .sub-footer {

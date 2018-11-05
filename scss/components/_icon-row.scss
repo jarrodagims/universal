@@ -18,6 +18,7 @@
     .flex-col {
       width: 109px;
       height: 109px;
+      margin: 0 0 10px; 
 
       a {
         padding: 16px 12px;
@@ -40,10 +41,10 @@
 .icons {
   z-index: 2;
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     position: relative;
     margin: 0 auto;
-    padding-top: 8em;
+    padding-top: 5em;
 
     .icon-row {
       width: auto;
@@ -195,7 +196,7 @@
 
 .page-template-page-home {
  .icon-row {
-   @include media-breakpoint-down(sm) {
+   @include media-breakpoint-down(md) {
       
       @include icon-small();
    }

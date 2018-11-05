@@ -27,6 +27,14 @@
       }
    }
 
+   @include media-breakpoint-up(lg) {
+      .stars-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+   }
+
   .cycle-pager {
     li {
       cursor: hand;
@@ -101,11 +109,7 @@
       //  }
       //}
       
-      .stars-logo {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-      }
+     
 
       &:last-child {
         padding-right: 0;
@@ -127,23 +131,27 @@
         }
       }
 
-      &:nth-child(2) {
+      
 
-        .circle-container {
-          &::after, &::before {
-            content: '';
-            height: 1px;
-            width: 27px;
-            display: block;
-            position: absolute;
-            right: -27px;
-            transform: translateY(-50%);
-            top: 50%;
-            background: #E3E4E5;
-          }
+      @include media-breakpoint-up(md) { 
+        &:nth-child(2) {
 
-          &::before {
-            left: -27px;
+          .circle-container {
+            &::after, &::before {
+              content: '';
+              height: 1px;
+              width: 27px;
+              display: block;
+              position: absolute;
+              right: -27px;
+              transform: translateY(-50%);
+              top: 50%;
+              background: #E3E4E5;
+            }
+
+            &::before {
+              left: -27px;
+            }
           }
         }
       }
@@ -292,6 +300,11 @@
   @include media-breakpoint-down(md) {
     padding: 2em 0 0;
 
+    h2 {
+      font-size: 20px;
+      margin-bottom: 2em;
+    }
+
     .flex-fill {
       padding-right: 0;
       text-align: center;
@@ -328,28 +341,28 @@
         padding: 0;
         display: block;
         position: relative;
-        width: 109px;
-        height: 109px;
+        width: 100px;
+        height: 100px;
 
         &::before {
-          width: 100px;
-          height: 100px;
           transform: translateX(-50%) translateY(-50%);
           left: 50%;
           top: 50%;
+          width: 90px;
+          height: 90px;
         }
 
         &::after {
-          width: 105px;
-          height: 105px;
           transform: translateX(-50%) translateY(-50%);
           left: 50%;
           top: 50%;
+          width: 95px;
+          height: 95px;
         }
 
         img {
-          width: 90px;
-          height: 90px;
+          width: 80px;
+          height: 80px;
         }
 
       }
@@ -364,6 +377,12 @@
         display: flex;
         flex-direction: row;
         transform: scale(1);
+
+        > div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
         .logo {
           height: 27px;
@@ -394,9 +413,10 @@
       justify-content: center;
     }
 
-    .stars {
+    .cycle-slide .stars {
       background-position: center center;
-      margin-bottom: 1em;
+      margin-bottom: .75em;
+      height: 13px;
     }
 
     .flex-row {

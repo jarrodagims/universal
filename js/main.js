@@ -9,6 +9,16 @@
           $(this).toggleClass('expanded');
       });
 
+      var drawCircles = function() {
+          var $circle = $('.gradient-circle'),
+              roundRadius = $circle.find('circle').attr('r'),
+              roundPercent = $circle.data('percent'),
+              roundCircum = 2 * roundRadius * Math.PI,
+              roundDraw = roundPercent * roundCircum / 100
+          $circle.css('stroke-dasharray', roundDraw  + ' 999');
+      };
+
+
       $('.slideshow').cycle({
           timeout: 8000,
           fx: 'fade',
@@ -35,52 +45,49 @@
           // autoHeight: 'container'
       });
 
+      $('.waypoint').each(function(){
+          var self = $(this);
+
+          $(this).waypoint({
+              handler: function(){
+                  self.addClass('active');
+              },
+              offset: '50%'
+          });
+      });
+
+      $('.circle-waypoint').each(function(){
+          var self = $(this);
+
+          $(this).waypoint({
+              handler: function(){
+                  self.addClass('active');
+                  drawCircles();
+              },
+              offset: '50%'
+          });
+      });
+
 
       (function() {
           var deskFunctions = function() {
 
 
-              var drawCircles = function() {
-                  var $circle = $('.gradient-circle'),
-                  roundRadius = $circle.find('circle').attr('r'),
-                  roundPercent = $circle.data('percent'),
-                  roundCircum = 2 * roundRadius * Math.PI,
-                  roundDraw = roundPercent * roundCircum / 100
-                  $circle.css('stroke-dasharray', roundDraw  + ' 999');
-              };
 
 
               //make dropdown hoverable
               // $('.dropdown-toggle').attr('data-toggle', 'hover');
 
-              $('.waypoint').each(function(){
-                  var self = $(this);
 
-                  $(this).waypoint({
-                      handler: function(){
-                          self.addClass('active');
-                      },
-                      offset: '50%'
-                  });
-              });
-
-              $('.circle-waypoint').each(function(){
-                  var self = $(this);
-
-                  $(this).waypoint({
-                      handler: function(){
-                          self.addClass('active');
-                          drawCircles();
-                      },
-                      offset: '50%'
-                  });
-              });
 
               $('.slide-menu').appendTo($('.circle-list'));
 
           };
 
           var mobileFunctions = function() {
+
+
+
               //make dropdown clickable
               // $('.dropdown-toggle').attr('data-toggle', 'dropdown');
               $('.slide-menu').insertBefore($('.slideshow'));

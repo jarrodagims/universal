@@ -54,6 +54,11 @@
   }
 
   @include media-breakpoint-down(md) {
+
+    .circles {
+      padding-top: 2em;
+    }
+    
     background: #000 url('../img/bg-boxes-mobile.jpg') 0 0 no-repeat;
     background-size: contain;
     padding-top: 0;

@@ -3,9 +3,9 @@
         <div class="row">
             <div class="col">
                 <h2>
-                    Bring In <strong>More</strong><br />
-                    <strong>Business</strong> With<br />
-                    A <strong>Great Website</strong>
+                    Bring In <strong>More</strong>
+                    <span class="br-md"><strong>Business</strong> With</span>
+                    <span class="br-xs"><span class="br-md">A <strong>Great Website</strong></span></span>
                 </h2>
 
                 <a href="<?= SITEURL ?>/contact-us/">

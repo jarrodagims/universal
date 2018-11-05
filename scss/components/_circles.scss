@@ -74,6 +74,10 @@
 
   .circle-col {
     align-items: center;
+    
+    p.long {
+      width: 250px;
+    }
 
     > div {
       display: flex;
@@ -105,6 +109,10 @@
 
     .circle-container {
       transform: scale(.5);
+    }
+
+    .circle-col p {
+      width: auto !important;
     }
 
     .num {
@@ -146,7 +154,6 @@
 
     svg circle {
       stroke-width: 3px;
-
     }
 
     .num {
