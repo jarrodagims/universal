@@ -18,7 +18,14 @@
             </div>
         </div>
     </div>
-
+    <ul class="google-colors hidden-xs">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
     <div class="container contact-bottom">
         <div class="row">
             <div class="col-md-12">

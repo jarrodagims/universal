@@ -13,16 +13,16 @@
                                 </p>
 
                                 <div class="stars"></div>
-                                <strong>Milo Acosta</strong>
-                                <p><i>Physicians Vascular Services</i></p>
+                                <p class="author"><strong>Milo Acosta</strong><br />
+                                <i>Physicians Vascular Services</i></p>
                             </div>
                             <div class="slide">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices arcu eget ullamcorper pellentesque.</p>
 
                                 <div class="stars"></div>
 
-                                <strong>Adrian Arreola</strong>
-                                <p><i>Scott Heating & Cooling</i></p>
+                                <p class="author"><strong>Adrian Arreola</strong><br />
+                                <i>Scott Heating & Cooling</i></p>
                             </div>
 
                             <div class="slide">
@@ -30,8 +30,8 @@
 
                                 <div class="stars"></div>
 
-                                <strong>Shorty</strong>
-                                <p><i>National Furniture Liquidators</i></p>
+                                <p class="author"><strong>Shorty</strong><br />
+                                <i>National Furniture Liquidators</i></p>
                             </div>
 
 
@@ -42,40 +42,49 @@
 
                         <ul class="slide-menu list-unstyled">
                             <li class="cycle-pager-active">
-                                <div class="circle-container">
-                                    <div class="circle">
-                                        <img src="<?=IMGURL?>circle-runner.png" alt="">
+                                <div>
+                                    <div class="circle-container">
+                                        <div class="circle">
+                                            <img src="<?=IMGURL?>circle-runner.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="stars-logo">
+                                        <?php get_template_part('/template-parts/icons/icon', 'stars') ?>
+                                        <div class="logo">
+                                            <?php get_template_part('/template-parts/icons/icon', 'pvs-logo') ?>
+                                        </div>
                                     </div>
                                 </div>
-                                <?php get_template_part('/template-parts/icons/icon', 'stars') ?>
-                                <div class="logo">
-                                    <?php get_template_part('/template-parts/icons/icon', 'pvs-logo') ?>
-                                </div>
-
                             </li>
 
                             <li>
-                                <div class="circle-container">
+                                <div><div class="circle-container">
                                     <div class="circle">
                                         <img src="<?=IMGURL?>circle-scott.png" alt="">
                                     </div>
                                 </div>
-                                <?php get_template_part('/template-parts/icons/icon', 'stars') ?>
-                                <div class="logo">
-                                    <?php get_template_part('/template-parts/icons/icon', 'scott') ?>
+                                    <div class="stars-logo">
+                                        <?php get_template_part('/template-parts/icons/icon', 'stars') ?>
+                                        <div class="logo">
+                                            <?php get_template_part('/template-parts/icons/icon', 'scott') ?>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </li>
 
                             <li>
-                                <div class="circle-container">
+                                <div><div class="circle-container">
                                     <div class="circle">
                                         <img src="<?=IMGURL?>circle-shorty.png" alt="">
                                     </div>
                                 </div>
-                                <?php get_template_part('/template-parts/icons/icon', 'stars') ?>
-                                <div class="logo">
-                                    <?php get_template_part('/template-parts/icons/icon', 'scott') ?>
+                                    <div class="stars-logo">
+                                        <?php get_template_part('/template-parts/icons/icon', 'stars') ?>
+                                        <div class="logo">
+                                        <?php get_template_part('/template-parts/icons/icon', 'nfl') ?>
+                                        </div>
+                                    </div>
                                 </div>
 
                             </li>

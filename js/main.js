@@ -15,6 +15,7 @@
           slides: '> div',
           pauseOnHover: 'true',
           pager: '.cycle-pager, .slide-menu',
+          paused: 'true'
           // autoHeight: 'container'
       });
 

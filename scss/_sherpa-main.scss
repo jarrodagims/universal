@@ -217,3 +217,9 @@ Animations
     transform: translateY(0);
   }
 }
+
+@include media-breakpoint-up(md) {
+  .br-md {
+    display: block;
+  }
+}

@@ -5,11 +5,11 @@
 }
 
 @include media-breakpoint-up(md) {
-    .top-header .navbar, .top-header .navbar-sherpa {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-  }
+//     .top-header .navbar, .top-header .navbar-sherpa {
+//       position: absolute;
+//       left: 50%;
+//       transform: translateX(-50%);
+//   }
 }
 
 #home-main {
@@ -21,35 +21,40 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 844px;
+  height: 809px;
   justify-content: center;
-
  
 
   h1 {
     font-size: 75px;
     color: $white;
     font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 80px;
     
     .br-md {
       font-size: 43px;
       display: block;
-      margin-bottom: 100px;
     }
   }
 
   p {
     color: $white;
-    font-size: 25px;
+    font-size: 26px;
     font-family: 'Lato', sans-serif;
-    margin-bottom: 40px;
     font-weight: 300;
+    margin-top: 0px;
+
+    strong {
+      font-weight: 700;
+    }
   }
 
   .btn {
     padding: 1.5em 2em;
     text-transform: none;
     font-size: 15px;
+    margin-top: 50px;
   }
 
   @include media-breakpoint-down(md) {

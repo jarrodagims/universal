@@ -61,7 +61,7 @@
                                     ); ?>"/></a>
                         <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
 
-                        <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact Us</button></a>
+                        <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact Us</button></a>
                     </div>
                 </div>
     </div>

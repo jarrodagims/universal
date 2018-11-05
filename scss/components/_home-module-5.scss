@@ -4,14 +4,16 @@
 
   h2 {
     color: $white;
-    margin-right: 1em;
+    margin-right: auto;
     margin-bottom: 0;
+    font-size: 45px;
+    font-weight: 300;
   }
 
   .col {
     display: flex;
     justify-content: center;
-    padding: 5em 0;
+    padding: 7em 0;
   }
 
   &::after {
@@ -21,6 +23,10 @@
     width: 100%;
     display: block;
 
+  }
+
+  .btn {
+    padding: 1.5em 2em;
   }
 
   @include media-breakpoint-down(md) {

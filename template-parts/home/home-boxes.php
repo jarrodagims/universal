@@ -28,35 +28,35 @@
                             </a>
                         </div>
                         <div class="flex-col"><a href=""><?php get_template_part('/template-parts/icons/icon', 'website') ?>
-                                <div class="title">Website
+                                <div class="title">Website<br />
                                     Management</div>
                             </a>
                         </div>
                         <div class="flex-col"><a href=""><?php get_template_part('/template-parts/icons/icon', 'reputation') ?>
-                                <div class="title">Reputation
+                                <div class="title">Reputation<br />
                                     Management</div>
                             </a>
                         </div>
                     </div>
                     <div class="icon-row">
                         <div class="flex-col"><a href=""><?php get_template_part('/template-parts/icons/icon', 'youtube') ?>
-                                <div class="title">Youtube
+                                <div class="title">Youtube<br />
                                     Marketing</div>
                             </a>
                         </div>
                         <div class="flex-col"><a href=""><?php get_template_part('/template-parts/icons/icon', 'display') ?>
-                                <div class="title">Display
+                                <div class="title">Display<br />
                                     Advertising</div>
                             </a>
                         </div>
                         <div class="flex-col"><a href=""><?php get_template_part('/template-parts/icons/icon', 'ppc') ?>
-                                <div class="title">Pay-Per-Click
+                                <div class="title">Pay-Per-Click<br />
                                     Advertising</div>
                             </a>
                         </div>
                         <div class="flex-col">
                             <a href=""><?php get_template_part('/template-parts/icons/icon', 'remarketing') ?>
-                                <div class="title">Remarketing/
+                                <div class="title">Remarketing/<br />
                                     Retargeting</div>
                             </a>
                         </div>

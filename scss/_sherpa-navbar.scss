@@ -143,7 +143,11 @@
 
 .v-align {
   width: 100%;
+  
 
+  .header-button {
+    margin-left: auto;
+  } 
   
 }
  
@@ -153,9 +157,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 1; 
+  flex-basis: 0;
 
   .navbar-brand {
-    margin-right: 0;
+    margin-right: auto;
   }
 }
 
@@ -370,6 +376,19 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
+
+// @include media-breakpoint-up(md) {
+
+//   .navbar-sherpa {
+//     flex: 1;
+
+//     .menu-primary-container, #menu-primary {
+//       display: flex;
+//       flex: 1;
+//       justify-content: space-between;
+//     }
+//   }
+// }

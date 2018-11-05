@@ -4,7 +4,7 @@
             width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 <section id="footer">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col logo-footer">
                 <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
@@ -30,7 +30,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col social-footer">
                 <?php $sm = new SocialMedia(array('facebook', 'twitter', 'linkedin', 'youtube'));
                 $sm->setSize('md');
                 $sm->showNetworkButtons(); 
