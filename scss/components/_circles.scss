@@ -130,6 +130,28 @@
   }
 }
 
+.page-id-42 {
+   @include media-breakpoint-up(lg) {
+     
+  .icons {
+    position: absolute;
+    width: 100%;
+   
+      .icon-row {
+        background: rgba(0, 0, 0, 0.79);
+
+        .flex-col {
+          @include nodropshadow();
+        }
+
+        .flex-col a {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+
 .page-template-default, .blog, .error404, .post-template-default, .page-template-page-landing  {
   .circles {
     background: #000;
