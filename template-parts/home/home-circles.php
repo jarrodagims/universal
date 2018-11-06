@@ -1,4 +1,7 @@
 <div class="row circles">
+    <div class="col">
+
+    </div>
     <div class="col flex-col circle-col">
         <div>
             <?php hm_get_template_part( 'template-parts/progress-ring', [ 'percentage' => '80' ] );  ?>

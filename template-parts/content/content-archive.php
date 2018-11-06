@@ -1,8 +1,6 @@
 <?php
 	if(have_posts()) {
     	?>
-        	<div class="flex-wrap">
-
     	<?php
 		while(have_posts()) {
 			the_post();
@@ -27,7 +25,8 @@
 
 			endif;
 
-			echo "<article>";
+			echo "<article class='col'>";
+			echo "<div class=\"sidebar-content\">";
 			if(!empty($thumb_url)):
 			?>
 			<a href="<?=$permalink?>">
@@ -40,11 +39,11 @@
             echo short_title('...', 5);
             echo '</a>' . $edit_link . '</h3>';
             sherpa_excerpt();
+            echo "</div>";
 			echo "</article>";
 		}
 		?>
 
-        	</div>
         	<div class="col-sm-6 text-sm-left text-xs-center">
             	<?php previous_posts_link( 'Newer posts' ); ?>
         	</div>
