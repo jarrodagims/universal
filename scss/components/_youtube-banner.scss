@@ -49,6 +49,8 @@
   .icon-row {
     background: transparent;
     margin-bottom: 3em;
+    margin-left: 0;
+    width: 100%;
 
     img {
       height: 32px;
@@ -74,6 +76,17 @@
       top: 0;
       position: absolute;
       content: '';
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+
+    .dark-bg {
+      padding: 2em 0;
+    }
+    
+    .table {
+      margin: 2em 0;
     }
   }
 }

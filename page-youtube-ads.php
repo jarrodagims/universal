@@ -1,9 +1,13 @@
-<?php get_header(); ?>
+<?php get_header();
+/*
+		Template Name: Youtube
+*/
+?>
 <?php get_template_part('template-parts/page/page', 'top-banner'); ?>
     <section id="main">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col right-aligned">
                     <?php get_template_part('template-parts/content/content', 'page'); ?>
                 </div>
             </div>

@@ -230,6 +230,10 @@
 
 .page-bottom {
   padding: 2em 0;
+
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
 }
 
 .page-module {
@@ -238,6 +242,19 @@
   @include media-breakpoint-down(md) {
     padding: 2em 15px;
     text-align: center;
+  }
+}
+
+.page-id-230 {
+  .page-module {
+    padding: 0 0;
+  }
+
+  .col-md-6.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -263,7 +280,7 @@
 }
 
 
-.page-template-default, .blog, .error404, .post-template-default, .page-template-page-landing {
+.page-template-default, .blog, .error404, .post-template-default, .page-template-page-landing, .page-template-page-youtube-ads {
   h3 {
     font-size: 22px;
     margin-bottom: 1em;
