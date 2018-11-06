@@ -10,7 +10,7 @@
         <div class="top-banner" style="background-image: url('<?php echo $backgroundImg[0]; ?>')">
            <?php echo $title; ?>
 
-            <?php if(!is_page('contact-us')) : ?>
+            <?php if(!is_page(293)) : ?>
             <a href="<?= SITEURL ?>/contact-us/"><button class="btn btn-success">Contact Us</button></a>
             <?php endif; ?>
         </div>

@@ -44,7 +44,7 @@
                                     Marketing</div>
                             </a>
                         </div>
-                        <div class="flex-col"><a href="<?= SITEURL ?>/display-advertising/"><?php get_template_part('/template-parts/icons/icon', 'display') ?>
+                        <div class="flex-col"><a href="<?= SITEURL ?>/web-design-management/"><?php get_template_part('/template-parts/icons/icon', 'display') ?>
                                 <div class="title">Display<br />
                                     Advertising</div>
                             </a>

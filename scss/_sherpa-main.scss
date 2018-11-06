@@ -65,6 +65,8 @@
 .sidebar-content {
   margin: 6em 0 0;
 
+  
+
   @include media-breakpoint-down(md) {
     margin: 1em 0;
   }
@@ -269,6 +271,11 @@
 
   p {
     margin-bottom: 2em;
+  }
+
+  p.blurb {
+    font-size: 22px;
+    color: #8A939B;
   }
 
   @include media-breakpoint-up(md) {
