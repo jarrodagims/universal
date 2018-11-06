@@ -119,6 +119,10 @@
       font-size: 22px;
     }
 
+    .circle-col {
+      width: 100%;
+    }
+
     .circle .perc {
       font-size: 16px;
       padding-top: .25em;
@@ -126,7 +130,7 @@
   }
 }
 
-.page-template-default {
+.page-template-default, .blog, .error404, .post-template-default, .page-template-page-landing  {
   .circles {
     background: #000;
     padding: 2em 0;
@@ -142,19 +146,15 @@
     } 
 
     .circle-container, svg, .circle {
-      width: 86px;
-      height: 86px;
-      margin: 0;
+      width: 106px;
+      height: 106px;
+      margin-right: 20px;
     }
 
     .text {
       display: flex;
       align-items: center;
-    }
-
-    svg circle {
-      stroke-width: 3px;
-    }
+    } 
 
     .num {
       font-size: 31px;
@@ -167,6 +167,49 @@
     p {
       font-size: 13px;
       padding-left: 2em;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .circles {
+       svg circle {
+        stroke-width: 5px;
+      }
+
+      .row {
+        flex-direction: column;
+      }
+
+      .circle {
+        width: auto;
+        height: 90px;
+        margin-right: 0.25em;
+      }
+
+
+      .circle-col {
+        width: 100%;
+        flex: 1;
+      }
+
+      .circle-col p {
+        font-size: 13px; 
+        padding-left: 0;
+       
+      }
+
+      .circle-col p {
+        width: auto;
+      }
+
+      .num {
+        font-size: 22px;
+      }
+
+      .circle .perc {
+        font-size: 16px;
+        padding-top: .25em;
+      }
     }
   }
 }

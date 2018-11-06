@@ -2,14 +2,12 @@
     <div class="container">
         <div class="row">
             <div class="col flex-col circle-col">
-                <div>
-                    <?php hm_get_template_part( 'template-parts/progress-ring', [ 'percentage' => '91' ] );  ?>
-                    <p>91% of search traffic stays on the first page.</p></div>
+                <?php hm_get_template_part( 'template-parts/progress-ring', [ 'percentage' => '91' ] );  ?>
+                <p>91% of search traffic stays on the first page.</p>
             </div>
             <div class="col flex-col circle-col">
-                <div>
-                    <?php hm_get_template_part( 'template-parts/progress-ring', [ 'percentage' => '75' ] );  ?>
-                    <p>The top 5 results get 75% of the clicks.</p></div>
+                <?php hm_get_template_part( 'template-parts/progress-ring', [ 'percentage' => '75' ] );  ?>
+                <p>The top 5 results get 75% of the clicks.</p>
             </div>
             <div class="col flex-col circle-col">
                 <?php hm_get_template_part( 'template-parts/progress-ring', [ 'percentage' => '93' ] );  ?>

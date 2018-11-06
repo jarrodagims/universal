@@ -89,8 +89,6 @@
     input[type="submit"] {
       width: auto;
       margin-left: 1em;  
-      padding: 17px !important;
-
     }
 
     p {
@@ -382,7 +380,6 @@
       &:hover {
         color: $white;
         background: darken($sherpa-brand-primary, 10%);
-        transform: scale(1.25);
       }
     }
 

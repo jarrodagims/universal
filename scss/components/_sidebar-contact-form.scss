@@ -41,8 +41,7 @@
     }
 
     @include media-breakpoint-up(md) {
-      margin: 2em auto;
-
+      margin: 2em auto 0;
     }
 
     h1,
@@ -133,7 +132,7 @@
     }
 
     form {
-      margin: 2em auto;
+      margin: 2em auto 0;
       padding: 0;
       text-align: center;
       color: $white;
@@ -205,6 +204,7 @@
     width: 364px;
     float: right;
     margin-left: 4em;
+
   }
 
   &::before {
@@ -219,7 +219,8 @@
   }
 
   @include media-breakpoint-down(md) {
-
+    padding-top: 0;   
+    
     &::before {
       display: none;
     }
@@ -286,11 +287,12 @@
         background: #2193FA;
         border: 0;
         color: $white;
-        transition: all 0.3s ease-in-out;
         font-weight: 600;
 
         &:hover {
           background: $sherpa-brand-primary;
+          cursor: hand;
+          cursor: pointer;
         }
       }
 

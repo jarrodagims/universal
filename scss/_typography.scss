@@ -26,6 +26,20 @@ h2 {
   font-weight: 500;
 }
 
+
+@include media-breakpoint-down(md) {
+   h2 {
+      font-size: 20px;
+   }
+
+   h3 {
+     font-size: 18px;
+   }
+}
+
+
+
+
 .text-white {
   h1,
 h2,

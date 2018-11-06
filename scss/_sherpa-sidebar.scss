@@ -29,5 +29,17 @@
       }
     }
   }
+
+  @include media-breakpoint-down(md) {
+    
+
+    &.sidebar-testimonial { 
+      margin-left: 0;
+      float: none;
+      margin: 2em 0 0;
+      width: 100%;
+      padding: 2em 2em 1em;
+    }
+  }
 }
 

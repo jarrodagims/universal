@@ -203,7 +203,7 @@
  }
 }
 
-.page-template-default {
+.page-template-default, .blog, .error404, .post-template-default, .page-template-page-landing  {
   .icon-row {
     width: 100%;
     margin: 0 auto;
@@ -246,4 +246,18 @@
       font-size: 16px;
     }
   } 
+
+
+  @include media-breakpoint-down(md) {
+
+    .icon-row svg {
+      height: 20px;
+    }
+
+    .icon-row .title {
+      font-size: 10px;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
 }

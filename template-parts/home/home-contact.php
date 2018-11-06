@@ -1,6 +1,6 @@
 <section class="home-module-6 waypoint">
     <div class="container">
-        <div class="row top-contact" >
+        <div class="row top-contact">
             <div class="col col-lg-5 flex-col">
                 <div class="fade-down"><div class="swish"><h2>
                         <div class="half-circle"><img src="<?= IMGURL ?>swish.svg" alt="Swish" /></div>

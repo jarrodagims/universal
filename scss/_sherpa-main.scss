@@ -25,6 +25,7 @@
   text-align: center;
   position: relative;
   flex-direction: column;
+  background-position: center center;
 
 
   h1 {
@@ -40,6 +41,21 @@
     bottom: 0;
     margin-bottom: 0;
   }
+
+  @include media-breakpoint-down(md) {
+    padding: 2em;
+    height: auto;
+
+    h1 {
+      font-size: 22px;
+    }
+  }
+}
+
+.page-template-page-contact {
+  .top-banner h1 {
+    margin-bottom: 0;
+  }
 }
 
 .internal-banner {
@@ -47,7 +63,11 @@
 }
 
 .sidebar-content {
-  margin: 6em 0;
+  margin: 6em 0 0;
+
+  @include media-breakpoint-down(md) {
+    margin: 1em 0;
+  }
 }
 
 .banner-middle {
@@ -63,6 +83,8 @@
 
     p:last-child {
       font-size: 12px;
+      margin-bottom: 0;
+      margin-top: 0;
 
       em {
         font-size: 10px;
@@ -73,6 +95,7 @@
       font-style: italic;
       text-align: center;
       font-size: 13px;
+      margin-bottom: 1em;
 
       &::after {
         @include svg-stars($sherpa-brand-primary);
@@ -80,9 +103,24 @@
         height: 16px;
         background-repeat: no-repeat;
         background-position: center center;
-        margin: 2em auto;
+        margin: 1em auto 0;
         content: '';
         display: block;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2em 15px;
+
+    .row {
+      flex-direction: column;
+
+      .d-flex, .col {
+        flex: 1;
+        text-align: center;
       }
     }
   }
@@ -104,6 +142,26 @@
     align-items: flex-end;
     justify-content: flex-end;
   }
+
+  @include media-breakpoint-down(md) {
+    padding: 2em 0;
+    text-align: center;
+    background-position: center center;
+    height: auto;
+    text-align: right;
+
+    .col-md-6 {
+      margin-left: auto;
+    }
+
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
 }
 
 .banner-ribbon {
@@ -113,6 +171,10 @@
   font-size: 22px;
   padding: 1em 0;
   font-family: 'Poppins', sans-serif;
+
+  @include media-breakpoint-down(md) {
+      font-size: 18px;
+  }
 }
 
 .bottom-list {
@@ -121,8 +183,45 @@
 
   ul {
     list-style: none;
+    padding-left: 0;
     li {
       @include svg-check();
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    
+
+
+    .lists {
+      overflow: auto;
+      margin: 0 auto;
+      flex: 0;
+      
+
+      .col-md-6 {
+
+        &:last-child {
+          &::before {
+            width: 1px;
+            height: 100%;
+            content: '';
+            display: block;
+            position: absolute;
+            background: #D6D6D6;
+            left: -30px;
+            top: 0;
+          }
+        }
+      }
+      margin: 0 auto;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    ul {
+      padding-left: 0;
+      margin-bottom: 0;
     }
   }
 }
@@ -132,7 +231,12 @@
 }
 
 .page-module {
-  padding: 2em 0;
+  padding: 106px 0;
+
+  @include media-breakpoint-down(md) {
+    padding: 2em 15px;
+    text-align: center;
+  }
 }
 
 .check {
@@ -154,8 +258,77 @@
     display: block;
     height: 100%;
   }
+}
+
+
+.page-template-default, .blog, .error404, .post-template-default, .page-template-page-landing {
+  h3 {
+    font-size: 22px;
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-bottom: 2em;
+  }
+
+  @include media-breakpoint-up(md) {
+    #main {
+      margin-bottom: 4em;
+    }
+  }
+
+  @include media-breakpoint-down(md) { 
+    
+    .icons {
+      padding-top: 0;
+    }
+
+  }
+}
+
+
+.sidebar-widget {
+  background: #F7F7F7;
+  float: right;
+  padding: 3em 3em 2em;
+  text-align: center;
+  margin-left: 3em;
+  margin-bottom: 3em;
+  @include dropshadow();
+
+  h3 {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  strong {
+    color: #000000;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #main {
+    ul, ol {
+      margin-bottom: 2em;
+    }
+  }
+}
+
+
+@include media-breakpoint-down(md) {
+  
+  .content {
+    text-align: center;
+    padding: 2em 15px;
+  }
 
 }
+
+
 /*
   End Internal Pages
  */
@@ -235,3 +408,5 @@ Animations
    
   }
 }
+
+
