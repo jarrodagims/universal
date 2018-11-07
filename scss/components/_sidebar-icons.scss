@@ -90,11 +90,11 @@
   position: absolute;
   z-index: 2;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     right: 0;
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(lg) {
     position: relative;
     margin: 0 auto;
 

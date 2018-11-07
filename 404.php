@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<?php get_template_part('template-parts/page/page', 'top-banner'); ?>
 <section id="main">
 	<div class="container">
 		<div class="row">

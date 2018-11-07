@@ -14,6 +14,19 @@
   Internal Pages
  */
 
+ .blog-pic {
+   height: 200px;
+   margin-bottom: 1em;
+ }
+
+ .btn-read-more {
+   margin-bottom: 2em;
+
+   &:hover {
+     color: $white;
+   }
+ }
+
 .top-banner {
   width: 100%;
   height: 449px;
@@ -268,7 +281,7 @@
 
   &::before {
     content: '';
-    background: url('../img/bg-websites-bottom.png') 0 0 no-repeat;
+    background: url('../img/bg-websites-bottom.png') right 0 no-repeat;
     background-size: 913px;
     width: 50vw;
     left: -25vw;
@@ -276,6 +289,22 @@
     position: absolute;
     display: block;
     height: 100%;
+  }
+
+  @include media-breakpoint-down(lg) {
+      &::before {
+        left: -10vw;
+        background-size: cover;
+      }
+  }
+
+  @include media-breakpoint-down(sm) {
+
+      &::before {
+        left: -20vw;
+        background-size: cover;
+        width: 120vw;
+      }
   }
 }
 
@@ -331,6 +360,17 @@
 
   strong {
     color: #000000;
+  }
+
+  .btn {
+    padding: 1.5em 4em;
+  }
+
+  @include media-breakpoint-down(md) {
+    float: none;
+    width: 100%;
+    flex: 1;
+    margin: 2em auto;
   }
 }
 

@@ -200,11 +200,10 @@
 #sidebar.sidebar-contact-form {
   position: relative;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     width: 364px;
     float: right;
     margin-left: 4em;
-
   }
 
   &::before {
@@ -218,7 +217,7 @@
     top: -20px;
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     padding-top: 0;   
     
     &::before {
@@ -304,6 +303,28 @@
   }
 }
 
+.blog {
+
+#sidebar.sidebar-contact-form {
+  position: relative;
+
+    @media screen and (min-width: 768px) and (max-width: 998px) {
+      width: auto;
+      float: none;
+      margin: 0 auto;
+
+
+      &::before {
+        display: none;
+      }
+
+      #contact-form {
+        padding-top: 2em;
+      }
+    }
+  }
+}
+
 
 
 #contact-form {
@@ -373,7 +394,7 @@
 #contact-form {
   background: #000;
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     padding-top: 2em !important;
     margin-bottom: 0 !important;
   }

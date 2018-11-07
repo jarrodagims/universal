@@ -22,16 +22,4 @@
 
 <?php get_template_part('template-parts/home/home', 'contact'); ?>
 
-<?php if (is_active_sidebar('form_widgets')) { //if the field is not empty
-    ?>
-    <section id="contact-form" class="visible-xs">
-        <div class="container" id="contact-form2">
-            <div class="row">
-                <div class="<?= FULLWIDTH ?>">
-                    <?php dynamic_sidebar('form_widgets'); ?>
-                </div>
-            </div>
-        </div>
-    </section>
-<?php } ?>
 <?php get_footer(); ?>

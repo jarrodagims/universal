@@ -15,8 +15,9 @@
 				$edit_link = "";
 			}
 				
-			
+
 			echo "<article>";
+			echo "<div class=\"content page-content\">";
 			the_title("<h1>", "$edit_link</h1>");
 			echo '<div class="article-meta"><div class="row"><div class="col-sm-4 text-sm-left text-xs-center">';
 			the_date($date_format, '<div class="post-date">','</div>');
@@ -30,7 +31,7 @@
 			echo '</div><div class="col-sm-6 text-sm-right text-xs-center">';
 			next_post_link();
 			echo '</div></div>';
-			
+            echo "</div>";
 			echo "</article>";
 		}
 		

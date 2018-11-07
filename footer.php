@@ -37,13 +37,6 @@
                 ?>
                 <p class="small">Privacy Policy | Site Copyright &copy; <?php echo date('Y'); ?> <img class="logo-sm" src="<?= IMGURL ?>agi-cool.svg" alt="AGI Marketing" /></p>
             </div>
-            <div class="d-none d-sm-block d-md-none">
-                <?php $sm = new SocialMedia(array('facebook', 'twitter'));
-                $sm->setSize('sm');
-                $sm->showNetworkButtons();
-                $sm->setColorType('singleColor');
-                ?>
-            </div>
         </div>
     </div>
 </section>

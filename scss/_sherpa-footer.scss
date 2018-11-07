@@ -5,10 +5,14 @@
   text-align: center;
   background: #000;
   color: $white;
-  
+
   .container-fluid {
     max-width: 1700px;
     margin: 0 auto;
+  }
+
+  .logo-footer {
+    flex: 1;
   }
 
   .logo-footer, .phone-footer, .hours-footer, .address-footer {
@@ -102,7 +106,7 @@
         text-decoration: none;
       }
 
-     @include media-breakpoint-up(sm) {
+     @include media-breakpoint-up(md) {
         position: relative;
         display: inline-block;
         margin-bottom: 1em;
@@ -143,6 +147,8 @@
 //   }
 
   @include media-breakpoint-up(md) {
+
+    
 
    .footer-blocks {
        flex: 1;
@@ -186,6 +192,9 @@
     }
 
 
+   
+
+
     .contact-footer {
 
       .btn {
@@ -205,12 +214,16 @@
       margin-top: 0;
     }
 
+    .social-footer {
+      text-align: center;
+    }
+
     ul {
       margin: 20px auto;
       overflow: auto;
       width: auto;
       display: inline-block;
-      justify-content: flex-start !important;
+      justify-content: flex-start;
     }
 
     .col {
@@ -258,7 +271,6 @@
     padding-left: 0;
     margin-top: 2em;
     display: flex;
-    justify-content: space-between;
   }
 
   p.small {
@@ -383,17 +395,22 @@
   
 
   @include media-breakpoint-down(md) {
+    .row.align-items-center {
+      flex-direction: column;
+    }
 
-     .phone-footer {
-      a {
-        font-size: 24px;
-      }
-     }
 
-     .address-footer {
-       text-align: center;
-     }
+   .phone-footer {
+     margin-top: 0;
 
+    a {
+      font-size: 24px;
+    }
+   }
+
+   .address-footer {
+     text-align: center;
+   }
 
     .button-footer {
       flex: 1;
@@ -415,8 +432,8 @@
     }
 
     .phone-footer {
-      margin-top: 3em;
       margin-bottom: 1em;
+      margin-top: 3em;
     }
 
     .hours-footer {
@@ -529,7 +546,7 @@
     color: #fff;
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     text-align: center;
   }
 }
@@ -562,7 +579,8 @@
     }
   }
 
-   @include media-breakpoint-down(sm) {
+   @media screen and (max-width: 992px) {
+
       .flex-col {
         flex-direction: column;
       }
@@ -573,7 +591,7 @@
 }
 
 
-@include media-breakpoint-down(sm) {
+@media screen and (max-width: 992px) {
 
   #sub-footer {
     font-size: 10px;
@@ -586,7 +604,6 @@
     }
   }
 
-  
 
   #footer {
     padding: 2em 0;
@@ -638,7 +655,8 @@
 
   
 
-@include media-breakpoint-down(sm) {
+@media screen and (max-width: 992px) {
+
   #footer {
     padding: 0 0 2em;
 
@@ -684,4 +702,34 @@
     }
   }
 }
+
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+
+  .phone-footer a {
+    font-size: 24px !important;
+  }
+    
+  #footer {
+    ul {
+      justify-content: center;
+
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+
+}
  
+
+
+@media screen and (min-width: 1400px) {
+
+  #footer {
+
+    ul {
+      justify-content: space-between;
+    }
+  }
+}

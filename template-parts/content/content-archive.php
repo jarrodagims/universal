@@ -25,8 +25,10 @@
 
 			endif;
 
-			echo "<article class='col'>";
-			echo "<div class=\"sidebar-content\">";
+			echo "<article>";
+			?>
+            <?php
+			echo "<div class=\"blog-post\">";
 			if(!empty($thumb_url)):
 			?>
 			<a href="<?=$permalink?>">
@@ -38,7 +40,9 @@
 			echo '<h3><a href="' . $permalink . '">';
             echo short_title('...', 5);
             echo '</a>' . $edit_link . '</h3>';
+            echo '<p>';
             sherpa_excerpt();
+            echo '</p>';
             echo "</div>";
 			echo "</article>";
 		}

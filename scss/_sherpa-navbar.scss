@@ -300,7 +300,7 @@
     background: #000;
   }
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     .top-header {
        padding-bottom: 2em;
     } 
