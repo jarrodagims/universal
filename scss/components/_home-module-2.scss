@@ -295,6 +295,14 @@
 
   .slideshow {
     width: 100%;
+
+    .slide {
+      display: none;
+    }
+
+    .slide:first-child {
+      display: block;
+    }
   }
 
   @include media-breakpoint-down(md) {

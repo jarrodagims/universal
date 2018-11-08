@@ -7,7 +7,7 @@
                         Work With <strong>The <span class="brand">Best</span></strong>
                 </h2>
                 <p>
-                    First <span class="google-logo">Google Partner</span> <strong>Partner Agency</strong> in El Paso
+                    First <img src="<?= IMGURL ?>google.svg" alt="Google" class="google-logo" /> <strong>Partner Agency</strong> in El Paso
                 </p></div></div>
             </div>
             <div class="col flex-col col-lg-7">

@@ -1,6 +1,11 @@
 .landing-bg {
   background: url('../img/bg-hero.jpg');
   background-size: cover;
+
+  @include media-breakpoint-down(md) {
+    background: url('../img/bg-mobile.jpg');
+    background-size: cover;
+  }
   
 }
 
@@ -23,12 +28,15 @@
   flex-direction: column;
   height: 809px;
   justify-content: center;
- 
+  
+  span.brand {
+    font-weight: 600;
+  }
 
   h1 {
     font-size: 75px;
     color: $white;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 80px;
     

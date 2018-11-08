@@ -7,6 +7,12 @@ $bg =  get_field('banner_middle_bg');
                 <?php
                     echo get_field('banner_middle_text');
                 ?>
+
+                <?php if(is_page('display-advertising')) : ?>
+
+                <?php get_template_part('template-parts/page/page', 'display'); ?>
+
+                <?php endif; ?>
                 </div>
             </div>
     </section>

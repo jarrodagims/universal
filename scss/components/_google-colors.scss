@@ -37,4 +37,8 @@
       background: #E7453C;
     }
   }
+
+  @include media-breakpoint-down(md) {
+    column-gap: 0;
+  }
 }

@@ -13,7 +13,7 @@
 <?php if(is_page('seo')) : ?>
 <?php get_template_part('template-parts/page/page', 'circles'); ?>
 <?php endif; ?>
-<?php if(is_page('website-design')) : ?>
+<?php if(is_page('web-design-management')) : ?>
     <?php get_template_part('template-parts/page/page', 'circles-web'); ?>
 <?php endif; ?>
 <?php if ( get_field( 'icon_bar' ) ): ?>

@@ -1,4 +1,4 @@
-<section class="home-module-3 circle-waypoint">
+<section class="home-module-3 waypoint">
     <div class="phone-bg" data-parallax='{"y" : 100}'>
         <img src="<?= IMGURL ?>bg-phones.png" alt="Phones" />
     </div>
@@ -13,7 +13,7 @@
                 <div class="icons">
                     <div class="icon-row">
                         <div class="boxes-header"><h2><strong>How</strong> We Do It</h2></div>
-                        <div class="flex-col  clear-left">
+                        <div class="flex-col clear-left">
                             <a href="<?= SITEURL ?>/seo/"><?php get_template_part('/template-parts/icons/icon', 'seo'); ?>
                                 <div class="title">Search Engine<br />
                                     Optimization</div>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="icon-row">
                         <div class="flex-col"><a href="<?= SITEURL ?>/youtube-advertising/"><?php get_template_part('/template-parts/icons/icon', 'youtube') ?>
-                                <div class="title">Youtube<br />
+                                <div class="title">YouTube<br />
                                     Marketing</div>
                             </a>
                         </div>

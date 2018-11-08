@@ -46,20 +46,7 @@
 
   }
 
-  .icon-row {
-    background: transparent;
-    margin-bottom: 3em;
-    margin-left: 0;
-    width: 100%;
 
-    img {
-      height: 32px;
-    }
-
-    p {
-      color: $white;
-    }
-  }
 
   .dark-bg {
     position: relative;
@@ -87,6 +74,23 @@
     
     .table {
       margin: 2em 0;
+    }
+  }
+}
+
+.banner-middle {
+  .icon-row {
+    background: transparent;
+    margin-bottom: 3em;
+    margin-left: 0;
+    width: 100%;
+
+    img {
+      height: 32px;
+    }
+
+    p {
+      color: $white;
     }
   }
 }

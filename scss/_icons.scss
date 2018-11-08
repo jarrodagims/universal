@@ -108,3 +108,15 @@
     }
   }
 }
+
+@mixin icon-line() {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 786.61 218.2"><title>line-1</title><g id="f89d58c4-cd16-4aed-a486-fddb5a5996c4" data-name="Layer 2"><g id="fac71f47-ef2b-4e68-a3a8-38f73db08294" data-name="Layer 8"><rect x="-15.73" y="201.3" width="32.63" height="1.17" transform="translate(202.47 201.3) rotate(90)" fill="#e6e6e6"/><polygon points="0.29 186.7 786.61 1.13 786.32 0 0.01 185.56 0.29 186.7" fill="#e6e6e6"/></g></g></svg>');
+}
+
+@mixin icon-line-2() {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495.16 191.74"><title>line-2</title><g id="fd868f3d-eb8d-4249-ad67-a06e03b0438c" data-name="Layer 2"><g id="a7f87b5f-376f-43d9-ba13-c939f6af33ce" data-name="Layer 8"><rect x="-15.72" y="174.84" width="32.63" height="1.17" transform="translate(176.02 174.83) rotate(90)" fill="#e6e6e6"/><polygon points="0.37 159.98 495.16 1.11 494.79 0 0 158.88 0.37 159.98" fill="#e6e6e6"/></g></g></svg>');
+}
+
+@mixin icon-line-3() {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.35 135.44"><title>line-3</title><g id="b29e4fe5-b5a8-44a7-a148-07cf8ec7489e" data-name="Layer 2"><g id="a71bc8d1-1124-4195-920a-e2f9b0291b24" data-name="Layer 8"><rect x="-15.73" y="118.54" width="32.63" height="1.17" transform="translate(119.71 118.54) rotate(90)" fill="#e6e6e6"/><polygon points="0.56 103.84 204.35 1.03 203.79 0 0 102.82 0.56 103.84" fill="#e6e6e6"/></g></g></svg>');
+}

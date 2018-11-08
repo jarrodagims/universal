@@ -40,6 +40,10 @@
   flex-direction: column;
   background-position: center center;
 
+  h1 {
+    font-family: 'Poppins', sans-serif;
+  }
+
 
   h1 {
     color: $white;
@@ -90,6 +94,38 @@
   background-size: cover;
   padding: 4em 0;
   margin-top: 5em;
+  overflow: hidden;
+  position: relative;
+
+  .banner-align-bottom {
+    position: relative;
+    z-index: 2;
+    margin-top: 4em;
+
+    img {
+      padding-top: 2em;
+    }
+
+    &::before {
+      content: '';
+     
+      background: rgba(0,0,0,.79);
+      width: 150vw;
+      left: -50vw;
+      position: absolute;
+      height: 100vh;
+      display: block;
+      z-index: -1;
+    }
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h3 {
+    font-family: 'Poppins', sans-serif;
+  }
 
   .testimonial {
     background: rgba(247, 247, 247, 0.9);
@@ -252,6 +288,10 @@
 .page-module {
   padding: 106px 0;
 
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
   @include media-breakpoint-down(md) {
     padding: 2em 15px;
     text-align: center;
@@ -313,6 +353,11 @@
   h3 {
     font-size: 22px;
     margin-bottom: 1em;
+
+    &.brand {
+      color: $sherpa-brand-primary;
+      font-weight: 500;
+    }
   }
 
   p {

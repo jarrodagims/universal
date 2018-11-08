@@ -45,7 +45,7 @@
     height: 8px;
     @include gradient();
     display: block;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
   
   .flex-row {
@@ -192,9 +192,6 @@
     }
 
 
-   
-
-
     .contact-footer {
 
       .btn {
@@ -202,11 +199,6 @@
       }
     }
   }
-
-  @include media-breakpoint-down(md) {
-    text-align: left;
-  }
-
 
   @include media-breakpoint-down(md) {
 
@@ -730,6 +722,7 @@
 
     ul {
       justify-content: space-between;
+      margin-top: 0;
     }
   }
 }
