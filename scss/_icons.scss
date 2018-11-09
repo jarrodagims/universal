@@ -58,11 +58,11 @@
   &::before {
       background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><title>check</title><g id="fc87daac-3907-416a-838c-dfa2eeee8b3f" data-name="Layer 2"><g id="aa0de6fd-9b04-4029-9f4e-07e2dae9e671" data-name="Layer 8"><path d="M.64,6A5.36,5.36,0,1,1,6,11.36,5.36,5.36,0,0,1,.64,6M0,6A6,6,0,1,0,6,0,6,6,0,0,0,0,6" fill="#ecb71e"/><polygon points="8.62 3.93 4.85 7 3.49 5.36 2.9 5.84 4.74 8.07 9.1 4.52 8.62 3.93" fill="#ecb71e"/></g></g></svg>');
       content: '';
-      width: 12px;
-      height: 12px;
+      width: 16px;
+      height: 16px;
       display: inline-block;
       background-repeat: no-repeat;
-      background-size: 12px 12px;
+      background-size: 16px 16px;
       margin-right: 10px;
   }
 }

@@ -239,7 +239,7 @@
    }
 
     svg {
-      height: 24px;
+      height: 32px;
     }
 
     .flex-col {
@@ -247,6 +247,8 @@
       height: auto;
       justify-content: center;
       flex: 1;
+      margin-left: 0;
+      margin-bottom: 0;
 
      &::after {
        content: '';

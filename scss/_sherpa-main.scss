@@ -40,6 +40,34 @@
   flex-direction: column;
   background-position: center center;
 
+  .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &.google-banner {
+    background: url('../img/google-partner-header-sm.jpg') right 0 no-repeat;
+    background-size: contain;
+    
+
+    .col {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    h1 {
+      color: #000;
+
+      img {
+        height: 47px;
+      }
+    }
+  }
+
   h1 {
     font-family: 'Poppins', sans-serif;
   }
@@ -69,11 +97,6 @@
   }
 }
 
-.page-template-page-contact {
-  .top-banner h1 {
-    margin-bottom: 0;
-  }
-}
 
 .internal-banner {
   margin-bottom: 2em;
@@ -92,10 +115,11 @@
 .banner-middle {
   background:  url('../img/bg-gradient.jpg') 0 0 no-repeat;
   background-size: cover;
-  padding: 4em 0;
+  padding: 2em 0;
   margin-top: 5em;
   overflow: hidden;
   position: relative;
+
 
   .banner-align-bottom {
     position: relative;
@@ -160,6 +184,24 @@
       }
     }
   }
+
+   @include media-breakpoint-up(lg) {
+    .seo-laptop-bg {
+        height: 495px;
+
+        &::before {
+          content: '';
+          background: url('../img/search-results.png') 0 0 no-repeat;
+          background-size: cover;
+          width: 969px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+        }
+      }
+   } 
+
+  
 
   @include media-breakpoint-down(md) {
     margin-top: 0;
@@ -231,6 +273,7 @@
 ul.check-list {
   list-style: none;
   padding-left: 0;
+  
   li {
     @include svg-check();
   }
@@ -240,11 +283,15 @@ ul.check-list {
   background: #F2F2F2;
   padding: 3em 0;
 
+  ul {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
   
 
   @media screen and (min-width: 1200px) {
     
-
+      
 
     .lists {
       overflow: auto;
