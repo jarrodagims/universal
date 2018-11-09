@@ -1,4 +1,4 @@
-<div class="icon-row">
+<div class="icon-row display-icons">
     <div class="col">
         <img src="<?=IMGURL?>/icon-target.svg" alt="Target" />
         <p>You can target customers based on their online behavior</p>

@@ -24,7 +24,7 @@ else:
 <?php
 endif;
 ?>
-<ul class="google-colors hidden-xs">
+<ul class="google-colors">
     <li></li>
     <li></li>
     <li></li>

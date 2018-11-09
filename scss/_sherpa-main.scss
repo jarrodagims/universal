@@ -228,17 +228,19 @@
   }
 }
 
+ul.check-list {
+  list-style: none;
+  padding-left: 0;
+  li {
+    @include svg-check();
+  }
+}
+
 .bottom-list {
   background: #F2F2F2;
   padding: 3em 0;
 
-  ul {
-    list-style: none;
-    padding-left: 0;
-    li {
-      @include svg-check();
-    }
-  }
+  
 
   @media screen and (min-width: 1200px) {
     
@@ -379,6 +381,9 @@
     
     .icons {
       padding-top: 0;
+      margin: 0 0;
+      width: 100%;
+      max-width: 100%;
     }
 
   }
@@ -435,6 +440,42 @@
     padding: 2em 15px;
   }
 
+}
+
+.partner-middle-banner {
+  overflow: hidden;
+
+
+  @include media-breakpoint-down(md) {
+    .extra-padding {
+      padding: 2em 0;
+    }
+
+    .partner-bg::before {
+      display: none;
+    }
+  }
+}
+
+
+.partner-bg {
+  position: relative;
+
+  &::before {
+    background: url('../img/google-partners-middle-banner.jpg') right 0 no-repeat;
+    background-size: cover;
+    content: '';
+    display: block;
+    position: absolute;
+    right: -25vw;
+    top: 0;
+    height: 100%;
+    width: 50vw;
+  }
+
+  @include media-breakpoint-up(md) {
+    height: 464px;
+  }
 }
 
 

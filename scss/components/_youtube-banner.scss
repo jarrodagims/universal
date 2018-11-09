@@ -92,5 +92,26 @@
     p {
       color: $white;
     }
+
+    &.display-icons {
+      margin-bottom: 0;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      img {
+        height: 60px;
+        margin-bottom: 1em;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+
+      .col {
+        margin-bottom: 2em;
+      }
+    }
   }
 }
