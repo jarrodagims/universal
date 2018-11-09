@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb721c2-176a-4b35-a1f8-3c3538869751" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_icons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_sherpa-main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_sherpa-main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/components/_icon-row.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/components/_icon-row.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-parts/page/page-top-banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-parts/page/page-top-banner.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -364,7 +361,7 @@
           <entry key="html" value="255" />
           <entry key="js" value="270" />
           <entry key="json" value="7" />
-          <entry key="php" value="10635" />
+          <entry key="php" value="10670" />
           <entry key="scss" value="11806" />
         </counts>
       </usages-collector>
@@ -373,7 +370,7 @@
           <entry key="CSS" value="5" />
           <entry key="JSON" value="7" />
           <entry key="JavaScript" value="270" />
-          <entry key="PHP" value="10635" />
+          <entry key="PHP" value="10670" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="SCSS" value="11806" />
           <entry key="Scratch" value="255" />
@@ -413,10 +410,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template-parts/page/page-top-banner.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state relative-caret-position="727">
+              <caret line="27" column="100" selection-start-line="27" selection-start-column="100" selection-end-line="27" selection-end-column="100" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -453,7 +451,7 @@
         <entry file="file://$PROJECT_DIR$/scss/_sherpa-main.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="482">
-              <caret line="574" column="3" lean-forward="true" selection-start-line="574" selection-start-column="3" selection-end-line="574" selection-end-column="3" />
+              <caret line="608" column="3" lean-forward="true" selection-start-line="608" selection-start-column="3" selection-end-line="608" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -887,18 +885,18 @@
       <workItem from="1541260620144" duration="7641000" />
       <workItem from="1541430831702" duration="31431000" />
       <workItem from="1541695047481" duration="2855000" />
-      <workItem from="1541709139673" duration="14742000" />
+      <workItem from="1541709139673" duration="15692000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1532259000" />
+    <option name="totallyTimeSpent" value="1533209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="770" y="75" width="1691" height="1297" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4946108" visible="true" weight="0.2589448" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4946108" visible="true" weight="0.2589448" />
       <window_info id="Structure" order="1" sideWeight="0.5053892" side_tool="true" weight="0.2065782" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -912,7 +910,7 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5048909" side_tool="true" weight="0.21962617" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4951091" visible="true" weight="0.16316232" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4951091" visible="true" weight="0.16316232" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1221,7 +1219,7 @@
     <entry file="file://$PROJECT_DIR$/scss/_sherpa-main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
-          <caret line="574" column="3" lean-forward="true" selection-start-line="574" selection-start-column="3" selection-end-line="574" selection-end-column="3" />
+          <caret line="608" column="3" lean-forward="true" selection-start-line="608" selection-start-column="3" selection-end-line="608" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1269,10 +1267,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template-parts/page/page-top-banner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        <state relative-caret-position="727">
+          <caret line="27" column="100" selection-start-line="27" selection-start-column="100" selection-end-line="27" selection-end-column="100" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

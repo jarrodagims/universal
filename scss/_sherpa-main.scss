@@ -48,9 +48,36 @@
   }
 
   &.google-banner {
-    background: url('../img/google-partner-header-sm.jpg') right 0 no-repeat;
+    position: relative;
     background-size: contain;
+    background-position: right 0;
+
+    &::after {
+      background: url('../img/google-partner-header.jpg') right 0 no-repeat;
+      background-size: contain;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%; 
+      z-index: -1;
+    }
+
     
+    &::before {
+      background: #fbfbfb;
+      background-size: cover;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%; 
+      z-index: -2;
+    }
 
     .col {
       display: flex;

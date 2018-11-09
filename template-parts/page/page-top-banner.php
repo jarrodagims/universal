@@ -25,7 +25,7 @@
 <?php endif;
 else:
     ?>
-        <div class="top-banner" style="background-image: url('<?= IMGURL ?>bg-building-top.jpg');"  alt="<?php echo get_bloginfo( 'name' ); ?>">
+        <div class="top-banner <?php if(is_page('google-partner')) : ?>google-banner<?php endif; ?>" style="background-image: url('<?= IMGURL ?>bg-building-top.jpg');"  alt="<?php echo get_bloginfo( 'name' ); ?>">
             <div class="container">
                 <div class="row">
                     <div class="col">
