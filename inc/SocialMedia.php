@@ -58,7 +58,7 @@ class SocialMedia {
 		'url' => YOUTUBE,
 		'name' => 'YouTube',
 		'icon' => 'youtube',
-		'default' => 'https://www.youtube.com',
+		'default' => 'https://www.youtube.com/channel/UCG6VrBxIYi2M5lmxkJWTLJw',
 	);
 	private $showNetworks = array();
 	private $networkNames = array(

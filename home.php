@@ -4,21 +4,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-                <div class="sidebar-content">
-                    <div class="sidebar sidebar-contact-form" id="sidebar">
-                        <div id="contact-form"><h3>Contact Us</h3>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-agi.png"
-                                 alt="AGI Marketing"/>
-                            <?php echo do_shortcode('[contact-form-7 id="41" title="Contact"]'); ?>
-                        </div>
-                        <?php if (get_field('sidebar_icons')) :
-                            ?>
-                            <?php get_template_part('/template-parts/sidebar/sidebar', 'icons'); ?>
-                        <?php endif; ?>
-                    </div>
-                </div>
                 <div class="content page-content">
-                    <?php get_template_part('template-parts/content/content', 'archive'); ?>
+                    <div class="row">
+                        <?php get_template_part('template-parts/content/content', 'archive'); ?>
+                    </div>
+<?php if(have_posts()) : ?>
+                    <div class="row">
+                        <div class="col-sm-6 text-sm-left text-xs-center">
+                            <?php previous_posts_link( 'Newer posts' ); ?>
+                        </div>
+                        <div class="col-sm-6 text-sm-right text-xs-center">
+                            <?php next_posts_link( 'Older posts' ); ?>
+                        </div>
+                    </div>
+<?php endif; ?>
                 </div>
 			</div>
 		</div>

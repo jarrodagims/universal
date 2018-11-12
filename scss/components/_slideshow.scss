@@ -21,9 +21,8 @@
 
   h2 {
     margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
   }
-
-  
 }
 
 .slideshow-container {
@@ -31,9 +30,9 @@
   color: $white;
 
   h2 {
-    color: $white;
+    color: $white; 
     margin-bottom: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 28px;
   }
@@ -45,6 +44,13 @@
     padding-top: 3em;
     padding-bottom: 3em;
     position: relative;
+  }
+
+  @include media-breakpoint-down(md) {
+
+    h2 {
+      font-size: 20px;
+    }
   }
 
   

@@ -108,13 +108,6 @@
       //    background-image: url('../img/circle-shorty.png');
       //  }
       //}
-      
-     
-
-      &:last-child {
-        padding-right: 0;
-      }
-
       &:not(.cycle-pager-active) {
         .logo {
         height: 27px;
@@ -124,6 +117,19 @@
           }
         }
       }
+     
+
+      &:last-child {
+        padding-right: 0;
+
+        &:not(.cycle-pager-active) {
+          .logo {
+          height: 32px;
+          }
+        }
+      }
+
+      
 
       &:last-child .circle-container {
         &::after {

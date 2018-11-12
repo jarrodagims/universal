@@ -13,8 +13,8 @@
     <div class="col flex-col circle-col">
         <div>
             <?php hm_get_template_part( 'template-parts/progress-ring', [ 'percentage' => '81' ] );  ?>
-            <p class="long">Of People Research
-                <span class="br-md">a Local Business Before</span>
-                <span class="br-md">Making a Purchase</span></p></div>
+            <p class="long">81% of people research
+                <span class="br-md">a Local Business before</span>
+                <span class="br-md">making a purchase.</span></p></div>
     </div>
 </div>

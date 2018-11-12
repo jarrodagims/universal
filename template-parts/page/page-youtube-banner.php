@@ -27,7 +27,7 @@
                         <img src="<?= IMGURL ?>icon-map.svg" alt="Youtube" />
                     <p class="title">YouTube is the 3rd<br />
                         most visited site in the world, after<br />
-                        Facebook & google.
+                        Facebook & Google.
                     </p>
                 </div>
                 <?php

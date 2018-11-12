@@ -160,7 +160,7 @@
     &::before {
       content: '';
      
-      background: rgba(0,0,0,.79);
+      background: rgba(0,0,0,.9);
       width: 150vw;
       left: -50vw;
       position: absolute;
@@ -300,9 +300,15 @@
 ul.check-list {
   list-style: none;
   padding-left: 0;
+
+  span {
+    display: block;
+    overflow: hidden;
+  }
   
   li {
     @include svg-check();
+    margin-bottom: .5em;
   }
 }
 
@@ -459,7 +465,6 @@ ul.check-list {
       width: 100%;
       max-width: 100%;
     }
-
   }
 }
 

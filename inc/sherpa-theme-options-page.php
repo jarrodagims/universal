@@ -318,7 +318,7 @@ function sherpa_theme_option_page() {
                             <label for="sherpa_youtube_url"><?=__("YouTube URL",'sherpa')?></label>
                         </th>
                         <td>
-                            <input name="sherpa_youtube_url" type="text" value="<?=get_option('sherpa_youtube_url')?>" class="regular-text">
+                            <input name="sherpa_youtube_url" type="text" value="https://www.youtube.com/channel/UCG6VrBxIYi2M5lmxkJWTLJw" class="regular-text">
                         </td>
                     </tr>
 					<tr>

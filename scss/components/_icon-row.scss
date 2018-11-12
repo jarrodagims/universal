@@ -181,7 +181,7 @@
 
   .title {
     margin: 0 auto;
-    padding: 12px 0;
+    padding: 12px 0 0;
     text-align: center;
     width: 100%;
     display: block;
@@ -235,6 +235,7 @@
 
      .title {
        color: $white;
+       padding-bottom: 0;
      }
    }
 
@@ -265,6 +266,7 @@
 
     .flex-col a {
       outline: 0;
+      padding: 24px 0;
 
       &:hover {
         background: transparent;

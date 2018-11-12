@@ -43,6 +43,7 @@
 }
 
 @mixin svg-chevron($color) {
+  margin-left: .5em;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.88 3.94"><title>Asset 1</title><g id="ebaaa947-f42e-4a3a-9b87-879574ce7a12" data-name="Layer 2"><g id="ee5fd1d0-221f-4990-85c7-9006dcc2506f" data-name="Layer 8"><polygon points="3.94 3.23 0.71 0 0 0 3.94 3.94 7.88 0 7.17 0 3.94 3.23" fill="#ecb71e"/></g></g></svg>') center center no-repeat;
 }
 
@@ -60,10 +61,11 @@
       content: '';
       width: 16px;
       height: 16px;
-      display: inline-block;
+      float: left;
       background-repeat: no-repeat;
       background-size: 16px 16px;
       margin-right: 10px;
+      margin-top: 4px; 
   }
 }
 

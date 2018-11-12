@@ -9,6 +9,10 @@
           $(this).toggleClass('expanded');
       });
 
+      $('.check-list li').each((function() {
+          $(this).wrapInner('<span></span>');
+      }));
+
       var drawCircles = function() {
           var $circle = $('.gradient-circle'),
               roundRadius = $circle.find('circle').attr('r'),
@@ -71,25 +75,16 @@
 
       (function() {
           var deskFunctions = function() {
-
-
-
-
               //make dropdown hoverable
-              // $('.dropdown-toggle').attr('data-toggle', 'hover');
-
-
+              $('.dropdown-toggle').attr('data-toggle', 'hover');
 
               $('.slide-menu').appendTo($('.circle-list'));
-
           };
 
           var mobileFunctions = function() {
 
-
-
               //make dropdown clickable
-              // $('.dropdown-toggle').attr('data-toggle', 'dropdown');
+              $('.dropdown-toggle').attr('data-toggle', 'dropdown');
               $('.slide-menu').insertBefore($('.slideshow'));
           };
 
