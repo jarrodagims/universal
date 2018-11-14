@@ -49,7 +49,6 @@
 
     svg {
       width: 100%;
-      
     }
   }
 
@@ -63,15 +62,24 @@
     }
   }
 
+  @media screen and (max-width: 1600px) {
+      background-size: contain;
+  }
+
+  @media screen and (max-width: 768px) {
+    background: #000 url('../img/bg-boxes-mobile.jpg') 0 0 no-repeat;
+    background-size: contain;
+  }
+
   @include media-breakpoint-down(md) {
+    
 
     .circles {
       padding-top: 2em;
     }
     
-    background: #000 url('../img/bg-boxes-mobile.jpg') 0 0 no-repeat;
-    background-size: cover;
-    padding-top: 0;
+    
+    padding-top: 0; 
     overflow: hidden;
 
 

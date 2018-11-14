@@ -46,7 +46,7 @@
 
                     <p class="small">These ads, while we may be inclined to skip them, are a great way to advertise to potential customers.</p>
                 </div>
-                <div class="col col-md-7 table">
+                <div class="col col-md-8 table">
                     <div class="row table-header">
                         <div class="col">
                             <div class="cell"><h2>There are multiple kinds of ads we can run
@@ -58,7 +58,7 @@
                         <div class="col">
                             <div class="cell"><p class="check">Skippable Video Ads</p></div>
                         </div>
-                        <div class="col">
+                        <div class="col  col-sm-12 col-lg-7">
                             <div class="cell"><p>These ads can be inserted at the beginning, middle, or end of a video and are typically longer ads. They allow users to skip the video after five seconds. They’re compatible with both desktop and mobile devices.</p></div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                         <div class="col">
                             <div class="cell"><p class="check">Non-skippable Video Ads</p></div>
                         </div>
-                        <div class="col">
+                        <div class="col col-sm-12 col-lg-7">
                             <div class="cell"><p>These video ads come before a video and must be watched before the user can watch their video. They’re usually only 15 to 20 seconds and are compatible across devices.</p></div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                         <div class="col">
                             <div class="cell"><p class="check">Bumper Ads</p></div>
                         </div>
-                        <div class="col">
+                        <div class="col col-sm-12 col-lg-7">
                            <div class="cell"><p>Bumper ads are non-skippable ads that appear before
                             the main video and are only six seconds long.</p></div>
                         </div>
@@ -86,7 +86,7 @@
                         <div class="col">
                             <div class="cell"><p class="check">Overlay Ads</p></div>
                         </div>
-                        <div class="col">
+                        <div class="col col-sm-12 col-lg-7">
                            <div class="cell"><p>Overlay ads appear on top of the video themselves toward the bottom of the window. They’re transparent and occupy only about 20 percent of the screen.</p></div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                         <div class="col">
                             <div class="cell"><p class="check">Sponsored Cards</p></div>
                         </div>
-                        <div class="col">
+                        <div class="col col-sm-12 col-lg-7">
                            <div class="cell"><p>These ads appear throughout the video to show content that is relevant to what the viewer is watching.</p></div>
                         </div>
                     </div>

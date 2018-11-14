@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row top-contact">
             <div class="col col-lg-5 flex-col">
-                <div class="fade-down"><div class="swish"><h2>
-                        <div class="half-circle"><img src="<?= IMGURL ?>swish.svg" alt="Swish" /></div>
+                <div class=""><div class="swish"><h2>
+                        <div class="half-circle"><?php get_template_part('/template-parts/icons/icon', 'swish') ?></div>
                         Work With <strong>The <span class="brand">Best</span></strong>
                 </h2>
                 <p>

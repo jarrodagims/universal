@@ -11,15 +11,70 @@
 </section>
 <section class="slideshow-container">
     <div class="internal-slideshow">
-        <div class="slide" data-cycle-title="Creative Content Writer">
+        <div class="slide" data-cycle-title="President">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>marie.jpg" alt="Marie"/>
+                    <img src="<?= IMGURL ?>jim.jpg" alt="Jim"/>
                 </div>
                 <h3>
-                    <span class="g-circle">M</span>
-                    <span class="name">Mari Gomez</span>
-                    <span class="title">Creative Content Writer</span>
+                    <span class="g-circle">J</span>
+                    <span class="name">Jim Singelyn</span>
+                    <span class="title">President</span>
+                </h3></div>
+        </div>
+        <div class="slide" data-cycle-title="Client Relations Manager">
+            <div>
+                <div class="slide-container">
+                    <img src="<?= IMGURL ?>vince.jpg" alt="Vince"/>
+                </div>
+                <h3>
+                    <span class="g-circle">V</span>
+                    <span class="name">Vince</span>
+                    <span class="title">Client Relations Manager</span>
+                </h3></div>
+        </div>
+        <div class="slide" data-cycle-title="Operations Manager">
+            <div>
+                <div class="slide-container">
+                    <img src="<?= IMGURL ?>dan.jpg" alt="Danielle"/>
+                </div>
+                <h3>
+                    <span class="g-circle">D</span>
+                    <span class="name">Danielle Singelyn</span>
+                    <span class="title">Operations Manager</span>
+                </h3></div>
+        </div>
+        <div class="slide" data-cycle-title="Marketing Executive">
+            <div>
+                <div class="slide-container">
+                    <img src="<?= IMGURL ?>jeremy.jpg" alt="Jeremy"/>
+                </div>
+                <h3>
+                    <span class="g-circle">J</span>
+                    <span class="name">Jeremy Jubera</span>
+                    <span class="title">Marketing Executive</span>
+                </h3></div>
+        </div>
+        <div class="slide" data-cycle-title="Account Executive">
+            <div>
+                <div class="slide-container">
+                    <img src="<?= IMGURL ?>anna.jpg" alt="Anna"/>
+                </div>
+                <h3>
+                    <span class="g-circle">A</span>
+                    <span class="name">Anna Hernandez</span>
+                    <span class="title">Account Executive</span>
+                </h3></div>
+        </div>
+        <div class="slide" data-cycle-title="Account Executive">
+            <div>
+                <div class="slide-container">
+                    <img src="<?= IMGURL ?>edgar.jpg" alt="Edgar"/>
+                </div>
+                <h3>
+                    <span class="g-circle">E</span>
+                    <span class="name">Edgar</span>
+                    <span class="title">Account Executive</span>
                 </h3></div>
         </div>
         <div class="slide" data-cycle-title="Marketing Executive">
@@ -44,17 +99,7 @@
                     <span class="title">Social Media Manager</span>
                 </h3></div>
         </div>
-        <div class="slide" data-cycle-title="Marketing Executive">
-            <div>
-                <div class="slide-container">
-                    <img src="<?= IMGURL ?>jeremy.jpg" alt="Jeremy"/>
-                </div>
-                <h3>
-                    <span class="g-circle">J</span>
-                    <span class="name">Jeremy Jubera</span>
-                    <span class="title">Marketing Executive</span>
-                </h3></div>
-        </div>
+
         <div class="slide" data-cycle-title="SEO Web Developer">
             <div>
                 <div class="slide-container">
@@ -66,17 +111,7 @@
                     <span class="title">SEO Web Developer</span>
                 </h3></div>
         </div>
-        <div class="slide" data-cycle-title="Operations Manager">
-            <div>
-                <div class="slide-container">
-                    <img src="<?= IMGURL ?>dan.jpg" alt="Danielle"/>
-                </div>
-                <h3>
-                    <span class="g-circle">D</span>
-                    <span class="name">Danielle Singelyn</span>
-                    <span class="title">Operations Manager</span>
-                </h3></div>
-        </div>
+
         <div class="slide" data-cycle-title="Director of Development">
             <div>
                 <div class="slide-container">
@@ -119,17 +154,6 @@
                     <span class="g-circle">J</span>
                     <span class="name">Julia Hettiger</span>
                     <span class="title">Creative Content Writer</span>
-                </h3></div>
-        </div>
-        <div class="slide" data-cycle-title="Account Executive">
-            <div>
-                <div class="slide-container">
-                    <img src="<?= IMGURL ?>anna.jpg" alt="Anna"/>
-                </div>
-                <h3>
-                    <span class="g-circle">A</span>
-                    <span class="name">Anna Hernandez</span>
-                    <span class="title">Account Executive</span>
                 </h3></div>
         </div>
         <div class="slide" data-cycle-title="Graphic Designer">

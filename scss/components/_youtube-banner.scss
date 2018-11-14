@@ -14,22 +14,26 @@
 
     p {
       margin-bottom: 0;
+      font-size: 13px;
+      font-weight: 400;
+      
     }
 
     p.check::before {
-      margin-top: 5px;
+      margin-top: 3px;
     }
   }
 
   .table-header {
     background: rgb(236,183,30);
-    background: linear-gradient(90deg, rgba(236,183,30,1) 0%, rgba(244,214,126,0.75) 49%, rgba(255,255,255,1) 100%);
-    
+    background: linear-gradient(90deg, rgba(236,183,30,1) 0%, rgba(244,214,126,0.75) 49%, rgba(255,255,255,0.5) 100%);
+  
 
-    padding: 2em;
+    padding: 2em 7em 2em 4em;
 
     .col {
       padding: 0 0;
+      border: 0;
     }
 
 
@@ -38,6 +42,15 @@
       font-family: 'Poppins', sans-serif;
       font-size: 22px;
       line-height: 1.5;
+      font-weight: 400;
+    }
+
+    @include media-breakpoint-down(md) {
+      padding: 2em; 
+      
+      h2 {
+        font-size: 20px;
+      }
     }
   }
 
@@ -47,11 +60,6 @@
     justify-content: center;
     
   }
-
-  .cell {
-
-  }
-
 
 
   .dark-bg {
@@ -69,6 +77,13 @@
       top: 0;
       position: absolute;
       content: '';
+    }
+    
+
+    @media-breakpoint-up(md) {
+      h2 {
+        font-size: 30px;
+      }
     }
   }
 

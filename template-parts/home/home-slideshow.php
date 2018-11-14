@@ -36,7 +36,7 @@
 
 
                         </div>
-                        <div class="cycle-pager"></div>
+                        <div class="cycle-pager"><li class="cycle-pager-active"></li><li></li><li></li></div>
                     </div>
                     <div class="p-2 flex-fill circle-list">
 
@@ -70,7 +70,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </li>
 
                             <li>

@@ -239,9 +239,35 @@
      }
    }
 
-    svg {
+   .icon-svg {
       height: 32px;
-    }
+      display: flex;
+      margin-bottom: 1em;
+   }
+
+    svg {
+     
+
+      &.icon-youtube {
+        width: 32px;
+      } 
+
+      &.icon-website {
+        width: 34px;
+      } 
+
+      &.icon-social {
+        width: 28px;
+      }
+
+      &.icon-ppc {
+        width: 38px;
+      }
+
+      &.icon-reputation {
+        width: 32px;
+      }
+    } 
 
     .flex-col {
       width: auto;

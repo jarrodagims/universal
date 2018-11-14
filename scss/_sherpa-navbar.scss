@@ -183,6 +183,11 @@
 
   .nav-link {
     text-transform: uppercase;
+
+    &.disabled {
+      color: #606060;
+      pointer-events: none;
+    }
   }
 }
 

@@ -22,7 +22,6 @@
     content: '';
     width: 100%;
     display: block;
-
   }
 
   .btn {
@@ -31,7 +30,6 @@
 
   @include media-breakpoint-down(md) {
       text-align: center;
-
 
       .col {
         flex-direction: column;

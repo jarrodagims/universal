@@ -5,7 +5,7 @@
             <div class="col">
                 <h2>Find Out How <strong>Your Business Looks Online</strong></h2>
 
-                <a href="#"><button class="btn btn-primary">GET A FREE AUDIT</button></a>
+                <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-primary">GET A FREE AUDIT</button></a>
             </div>
         </div>
     </div>

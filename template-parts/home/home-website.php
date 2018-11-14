@@ -11,7 +11,9 @@
                 <a href="<?= SITEURL ?>/contact-us/">
                     <button class="btn btn-primary">Find Out How!</button>
                 </a>
+
             </div>
         </div>
     </div></div>
+    <img src="<?=IMGURL?>/bg-websites-mobile.jpg" alt="BG Websites"  />
 </section>

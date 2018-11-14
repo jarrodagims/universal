@@ -16,16 +16,29 @@
     margin-top: 0;
   }
 
+  img {
+    display: none;
+  }
+
   @include media-breakpoint-down(md) {
     padding-top: 0;
     text-align: center;
+    background: none;
 
-    
+
+    background-size: cover;
+    padding: 0;
 
     .bg-gradient {
       background: rgb(0,0,0);
-      background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
-      padding-bottom: 2em;
+      background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+      position: absolute;
+      width: 100%;
+      margin-bottom: 10em;
+    }
+
+    img {
+      display: block;
     }
     
     h2 {

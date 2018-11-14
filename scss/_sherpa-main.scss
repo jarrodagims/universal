@@ -49,35 +49,9 @@
 
   &.google-banner {
     position: relative;
-    background-size: contain;
     background-position: right 0;
-
-    &::after {
-      background: url('../img/google-partner-header.jpg') right 0 no-repeat;
-      background-size: contain;
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: block;
-      width: 100%;
-      height: 100%; 
-      z-index: -1;
-    }
-
-    
-    &::before {
-      background: #fbfbfb;
-      background-size: cover;
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: block;
-      width: 100%;
-      height: 100%; 
-      z-index: -2;
-    }
+    background-size: contain;
+    background-color: #fbfbfb;
 
     .col {
       display: flex;
@@ -93,6 +67,32 @@
         height: 47px;
       }
     }
+
+    @media screen and (min-width: 992px) and (max-width: 1600px) {
+       background-position: 0 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      &::before {
+        background: rgba(255,255,255,0.9);
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: block;
+      }
+
+      .col {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+    }
+
+     @media screen and (max-width: 1578px) {
+        background-size: cover;
+     }
   }
 
   h1 {
@@ -117,6 +117,7 @@
   @include media-breakpoint-down(md) {
     padding: 2em;
     height: auto;
+
 
     h1 {
       font-size: 22px;
@@ -385,12 +386,13 @@ ul.check-list {
     padding: 0 0;
   }
 
-  .col-md-6.text-center {
+  .col.text-center {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+
 }
 
 .check {
@@ -420,12 +422,15 @@ ul.check-list {
       }
   }
 
+
   @include media-breakpoint-down(sm) {
+      height: auto;
+      img {
+        margin: 2em auto;
+      }
 
       &::before {
-        left: -20vw;
-        background-size: cover;
-        width: 120vw;
+        display: none;
       }
   }
 }
@@ -444,16 +449,18 @@ ul.check-list {
 
   p {
     margin-bottom: 2em;
+    font-weight: 300;
   }
 
   p.blurb {
     font-size: 22px;
     color: #8A939B;
-  }
+    font-weight: 300;
+  }  
 
   @include media-breakpoint-up(md) {
     #main {
-      margin-bottom: 4em;
+      margin-bottom: 5em;
     }
   }
 

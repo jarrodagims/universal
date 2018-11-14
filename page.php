@@ -9,9 +9,9 @@
 		</div>
 	</div>
 </section>
-    <?php if(is_page('youtube-advertising')) : ?>
-        <?php get_template_part('template-parts/page/page', 'youtube-banner'); ?>
-    <?php endif; ?>
+<?php if(is_page('youtube-advertising')) : ?>
+    <?php get_template_part('template-parts/page/page', 'youtube-banner'); ?>
+<?php endif; ?>
 
 <?php get_template_part('template-parts/page/page', 'middle-banner'); ?>
 
