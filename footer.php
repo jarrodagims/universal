@@ -39,7 +39,7 @@
                 <ul class="list-inline social-media lg">
                     <li><a href="https://www.facebook.com/agimarketing" class="facebook-button social-media-button lg square lighten external" target="_blank"><i class="fab fa-facebook-f fa-fw fa-lg"><span>Facebook</span></i></a></li>
                     <li><a href="https://twitter.com/agi_marketing" class="twitter-button social-media-button lg square lighten external" target="_blank"><i class="fab fa-twitter fa-fw fa-lg"><span>Twitter</span></i></a></li>
-                    <li><a href="http://linkedin.com/" class="linkedin-button social-media-button lg square lighten external" target="_blank"><i class="fab fa-linkedin-in fa-fw fa-lg"><span>LinkedIn</span></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/agi-marketing" class="linkedin-button social-media-button lg square lighten external" target="_blank"><i class="fab fa-linkedin-in fa-fw fa-lg"><span>LinkedIn</span></i></a></li>
                     <li><a href="https://www.youtube.com/channel/UCG6VrBxIYi2M5lmxkJWTLJw" class="youtube-button social-media-button lg square lighten external" target="_blank"><i class="fab fa-youtube fa-fw fa-lg"><span>YouTube</span></i></a></li>
                 </ul>
                 <p class="small">Privacy Policy | Site Copyright &copy; <?php echo date('Y'); ?> <img class="logo-sm" src="<?= IMGURL ?>agi-cool.svg" alt="AGI Marketing" /></p>
