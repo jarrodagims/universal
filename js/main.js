@@ -82,6 +82,28 @@
           });
       });
 
+      //waypoint activate animations in a staggered fashion
+      $('.waypoint-stagger').each(function(){
+          var goldenSection = 1 / 1.61803398875; /* ( 1 / phi ) */
+          var ms_i_1 = 1 / goldenSection;
+
+          $(this).waypoint({
+              handler: function(){
+                  setTimeout( function () {
+                      console.log('test');
+                      $( '.center' ).addClass( 'active' );
+                      setTimeout( function () {
+                          $( '.inner' ).addClass( 'active' );
+                          setTimeout( function () {
+                              $( '.outer' ).addClass( 'active' );
+                          }, 200 * ( 1 ) * ms_i_1 );
+                      }, 200 * ( 2 ) * ms_i_1 );
+                  }, 200 * ( 3 ) * ms_i_1 );
+              },
+              offset: '50%'
+          });
+      });
+
 
       (function() {
           var deskFunctions = function() {

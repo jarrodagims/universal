@@ -189,28 +189,6 @@
                     <span class="title">Senior Content Editor</span>
                 </h3></div>
         </div>
-        <div class="slide"  data-cycle-title="Creative Content Writer">
-            <div>
-                <div class="slide-container">
-                    <img src="<?= IMGURL ?>marie.jpg" alt="Jarrod"/>
-                </div>
-                <h3>
-                    <span class="g-circle">M</span>
-                    <span class="name">Maria Gomez</span>
-                    <span class="title">Creative Content Writer</span>
-                </h3></div>
-        </div>
-        <div class="slide"  data-cycle-title="Reporting & Online Presence Specialist">
-            <div>
-                <div class="slide-container">
-                    <img src="<?= IMGURL ?>julian.jpg" alt="Jarrod"/>
-                </div>
-                <h3>
-                    <span class="g-circle">J</span>
-                    <span class="name">Julian Avila</span>
-                    <span class="title">Reporting & Online Presence Specialist</span>
-                </h3></div>
-        </div>
         <div class="slide"  data-cycle-title="Online Presence Specialist">
             <div>
                 <div class="slide-container">
