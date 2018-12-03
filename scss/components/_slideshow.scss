@@ -57,6 +57,11 @@
   
 }
 
+
+.internal-slideshow .slide { display: none }
+.internal-slideshow .slide.first { display: block }
+
+
 .internal-slideshow {
   overflow: visible !important;
   left: 50%;

@@ -26,7 +26,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 809px;
+  height: 709px;
   justify-content: center;
   
   span.brand {
@@ -36,14 +36,18 @@
   h1 {
     font-size: 75px;
     color: $white;
-    font-weight: 500;
+    font-weight: 500; 
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 80px;
+    
+    strong {
+      font-weight: 600;
+    }
     
     .br-md {
       font-size: 43px;
       display: block;
-    }
+    } 
   }
 
   p {

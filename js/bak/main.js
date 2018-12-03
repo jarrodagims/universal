@@ -78,7 +78,7 @@
                   self.addClass('active');
                   drawCircles();
               },
-              offset: '2000'
+              offset: '50%'
           });
       });
 
@@ -100,7 +100,7 @@
                       }, 200 * ( 2 ) * ms_i_1 );
                   }, 200 * ( 3 ) * ms_i_1 );
               },
-              offset: '2000'
+              offset: '50%'
           });
       });
 
