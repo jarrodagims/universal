@@ -60,15 +60,22 @@
 
 .internal-slideshow .slide { display: none }
 .internal-slideshow .slide.first { display: block }
-
+ 
 
 .internal-slideshow {
   overflow: visible !important;
+  width: 318px;
   left: 50%;
   transform: translateX(-50%);
+//   position: absolute;
+//   padding-top: 246px;
 
   .slide-container {
     width: 318px;
+
+    img {
+      width: 318px;
+    }
   }
 
   .slide {

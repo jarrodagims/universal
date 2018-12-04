@@ -10,11 +10,11 @@
     </div>
 </section>
 <section class="slideshow-container">
-    <div class="internal-slideshow">
+    <div class="internal-slideshow"  data-cycle-center-horz="true">
         <div class="slide" data-cycle-title="President">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>jim.jpg" alt="Jim"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>jim.jpg" alt="Jim"/>
                 </div>
                 <h3>
                     <span class="g-circle">J</span>
@@ -25,7 +25,7 @@
         <div class="slide" data-cycle-title="Client Relations Manager">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>vince.jpg" alt="Vince"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>vince.jpg" alt="Vince"/>
                 </div>
                 <h3>
                     <span class="g-circle">V</span>
@@ -36,7 +36,7 @@
         <div class="slide" data-cycle-title="Operations Manager">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>dan.jpg" alt="Danielle"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>dan.jpg" alt="Danielle"/>
                 </div>
                 <h3>
                     <span class="g-circle">D</span>
@@ -47,7 +47,7 @@
         <div class="slide" data-cycle-title="Marketing Executive">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>jeremy.jpg" alt="Jeremy"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>jeremy.jpg" alt="Jeremy"/>
                 </div>
                 <h3>
                     <span class="g-circle">J</span>
@@ -58,7 +58,7 @@
         <div class="slide" data-cycle-title="Account Executive">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>anna.jpg" alt="Anna"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>anna.jpg" alt="Anna"/>
                 </div>
                 <h3>
                     <span class="g-circle">A</span>
@@ -69,7 +69,7 @@
         <div class="slide" data-cycle-title="Account Executive">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>edgar.jpg" alt="Edgar"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>edgar.jpg" alt="Edgar"/>
                 </div>
                 <h3>
                     <span class="g-circle">E</span>
@@ -80,7 +80,7 @@
         <div class="slide" data-cycle-title="Marketing Executive">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>dino.jpg" alt="Dino"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>dino.jpg" alt="Dino"/>
                 </div>
                 <h3>
                     <span class="g-circle">D</span>
@@ -91,7 +91,7 @@
         <div class="slide" data-cycle-title="Social Media Manager">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>erika.jpg" alt="Erika Menes"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>erika.jpg" alt="Erika Menes"/>
                 </div>
                 <h3>
                     <span class="g-circle">E</span>
@@ -103,7 +103,7 @@
         <div class="slide" data-cycle-title="SEO Web Developer">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>chris.jpg" alt="Chris"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>chris.jpg" alt="Chris"/>
                 </div>
                 <h3>
                     <span class="g-circle">C</span>
@@ -115,7 +115,7 @@
         <div class="slide" data-cycle-title="Director of Development">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>eric.jpg" alt="Eric"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>eric.jpg" alt="Eric"/>
                 </div>
                 <h3>
                     <span class="g-circle">E</span>
@@ -126,7 +126,7 @@
         <div class="slide" data-cycle-title="Production Leader">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>ashley.jpg" alt="Ashley"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>ashley.jpg" alt="Ashley"/>
                 </div>
                 <h3>
                     <span class="g-circle">A</span>
@@ -137,7 +137,7 @@
         <div class="slide" data-cycle-title="Content Writer & SEO Specialist">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>otto.jpg" alt="Otto"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>otto.jpg" alt="Otto"/>
                 </div>
                 <h3>
                     <span class="g-circle">O</span>
@@ -148,7 +148,7 @@
         <div class="slide" data-cycle-title="Creative Content Writer">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>julia.jpg" alt="Otto"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>julia.jpg" alt="Otto"/>
                 </div>
                 <h3>
                     <span class="g-circle">J</span>
@@ -159,7 +159,7 @@
         <div class="slide" data-cycle-title="Graphic Designer">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>monica.jpg" alt="Monica"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>monica.jpg" alt="Monica"/>
                 </div>
                 <h3>
                     <span class="g-circle">M</span>
@@ -170,7 +170,7 @@
         <div class="slide" data-cycle-title="Web Developer">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>jarrod.jpg" alt="Jarrod"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>jarrod.jpg" alt="Jarrod"/>
                 </div>
                 <h3>
                     <span class="g-circle">J</span>
@@ -181,7 +181,7 @@
         <div class="slide" data-cycle-title="Senior Content Editor">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>jaqueline.jpg" alt="Jaqueline"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>jaqueline.jpg" alt="Jaqueline"/>
                 </div>
                 <h3>
                     <span class="g-circle">J</span>
@@ -192,7 +192,7 @@
         <div class="slide"  data-cycle-title="Creative Content Writer">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>marie.jpg" alt="Jarrod"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>marie.jpg" alt="Jarrod"/>
                 </div>
                 <h3>
                     <span class="g-circle">M</span>
@@ -203,7 +203,7 @@
         <div class="slide"  data-cycle-title="Reporting & Online Presence Specialist">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>julian.jpg" alt="Jarrod"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>julian.jpg" alt="Jarrod"/>
                 </div>
                 <h3>
                     <span class="g-circle">J</span>
@@ -214,7 +214,7 @@
         <div class="slide"  data-cycle-title="Online Presence Specialist">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>jen.jpg" alt="Jarrod"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>jen.jpg" alt="Jarrod"/>
                 </div>
                 <h3>
                     <span class="g-circle">J</span>
@@ -225,7 +225,7 @@
         <div class="slide" data-cycle-title="Online Reputation Specialist">
             <div>
                 <div class="slide-container">
-                    <img src="<?= IMGURL ?>bdoge.jpg" alt="Brian"/>
+                    <img height="246" width="318" src="<?= IMGURL ?>bdoge.jpg" alt="Brian"/>
                 </div>
                 <h3>
                     <span class="g-circle">B</span>

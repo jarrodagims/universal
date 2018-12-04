@@ -22,15 +22,6 @@
           $circle.css('stroke-dasharray', roundDraw  + ' 999');
       };
 
-      var drawSwish = function() {
-          var $circle = $('.icon-swish'),
-              roundRadius = $circle.find('circle').attr('r'),
-              roundPercent = $circle.data('percent'),
-              roundCircum = 2 * roundRadius * Math.PI,
-              roundDraw = roundPercent * roundCircum / 100
-          $circle.css('stroke-dasharray', roundDraw  + ' 999');
-      };
-
 
       $('.slideshow').cycle({
           timeout: 8000,
@@ -54,7 +45,8 @@
           prev: '#prev3',
           caption: '.cycle-caption',
           captionPlugin: 'caption2',
-          captionTemplate: '<h2>{{cycleTitle}}</h2>'
+          captionTemplate: '<h2>{{cycleTitle}}</h2>',
+          centerHorz: 'true'
           // paused: true
           // autoHeight: 'container'
       });
