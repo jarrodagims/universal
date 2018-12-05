@@ -10,7 +10,7 @@
     </div>
 </section>
 <section class="slideshow-container">
-    <div class="internal-slideshow"  data-cycle-center-horz="true">
+    <div class="internal-slideshow">
         <div class="slide" data-cycle-title="President">
             <div>
                 <div class="slide-container">
