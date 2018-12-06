@@ -139,7 +139,7 @@
 
       
 
-      @include media-breakpoint-up(md) { 
+      @include media-breakpoint-up(lg) { 
         &:nth-child(2) {
 
           .circle-container {
@@ -153,7 +153,7 @@
               transform: translateY(-50%);
               top: 50%;
               background: #E3E4E5;
-            }
+            }  
 
             &::before {
               left: -27px;
