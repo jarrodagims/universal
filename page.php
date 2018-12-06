@@ -9,38 +9,26 @@
 		</div>
 	</div>
 </section>
-<?php if(is_page('youtube-advertising')) : ?>
-    <?php get_template_part('template-parts/page/page', 'youtube-banner'); ?>
-<?php endif; ?>
-
 <?php get_template_part('template-parts/page/page', 'middle-banner'); ?>
-
-    <?php if(is_page('seo')) : ?>
-    <?php get_template_part('template-parts/page/page', 'circles'); ?>
-    <?php endif; ?>
-
-    <?php if(is_page('web-design-management')) : ?>
-        <?php get_template_part('template-parts/page/page', 'circles-web'); ?>
-    <?php endif; ?>
-
-    <?php if(is_page('google-partner')) : ?>
-        <?php get_template_part('template-parts/page/page', 'partner'); ?>
-    <?php endif; ?>
-
-    <?php if ( get_field( 'icon_bar' ) ): ?>
-    <?php get_template_part('template-parts/page/page', 'icons'); ?>
-    <?php endif; ?>
-
-    <?php if(is_page('seo')) : ?>
-        <?php get_template_part('template-parts/page/page', 'seo'); ?>
-    <?php endif; ?>
-
+<?php if(is_page('seo')) : ?>
+<?php get_template_part('template-parts/page/page', 'circles'); ?>
+<?php endif; ?>
+<?php if(is_page('web-design-management')) : ?>
+    <?php get_template_part('template-parts/page/page', 'circles-web'); ?>
+<?php endif; ?>
+<?php if(is_page('google-partner')) : ?>
+    <?php get_template_part('template-parts/page/page', 'partner'); ?>
+<?php endif; ?>
+<?php if ( get_field( 'icon_bar' ) ): ?>
+<?php get_template_part('template-parts/page/page', 'icons'); ?>
+<?php endif; ?>
+<?php get_template_part('template-parts/page/page', 'bottom-banner'); ?>
+<?php get_template_part('template-parts/page/page', 'ribbon'); ?>
+<?php get_template_part('template-parts/page/page', 'bottom-list'); ?>
 <?php get_template_part('template-parts/page/page', 'bottom'); ?>
-
-    <?php if(is_page('about-us')) : ?>
-        <?php get_template_part('template-parts/page/page', 'icons'); ?>
-    <?php endif; ?>
-
+<?php if(is_page('about-us')) : ?>
+    <?php get_template_part('template-parts/page/page', 'icons'); ?>
+<?php endif; ?>
 <?php get_template_part('template-parts/page/page', 'google-banner'); ?>
 <?php get_template_part('template-parts/page/page', 'contact'); ?>
 <?php get_footer(); ?>

@@ -48,6 +48,7 @@
     </div>
 </section>
 <?php wp_footer(); ?>
+<link rel='stylesheet' href='<?=THEMEURL?>/style.css' type='text/css' media='all' />
 <?php
 /**
  *

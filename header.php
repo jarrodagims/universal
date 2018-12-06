@@ -131,7 +131,6 @@
 	src="//c.statcounter.com/8056140/0/51d197f5/1/" alt="Web
 	Analytics"></a></div></noscript>
 	<!-- End of Statcounter Code -->
-    <script src='https://www.google.com/recaptcha/api.js?render=6LdKIH4UAAAAACadLjBg3d0jTeAy9dz6xm8u-ep-'></script>
 </head>
 <body <?php body_class(); ?>>
 <!-- Google Tag Manager (noscript) -->
