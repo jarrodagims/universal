@@ -329,7 +329,9 @@
   }
 
   .navbar-sherpa .navbar-collapse, .navbar-sherpa .navbar-collapse.collapsing, .navbar-sherpa .navbar-collapse.collapse.in {
-      height: 100% !important;
+//       height: 100% !important;
+
+    
   }
 
   .v-align .header-button {
@@ -367,11 +369,13 @@
       left: 0;
       width: 100%;
       padding: 0 0;
+      top: 23px;
     }
 
     .navbar-toggler:not(:disabled):not(.disabled) {
       position: absolute;
       right: 20px;
+      top: 0;
     }
   }
  

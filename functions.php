@@ -111,6 +111,11 @@ function mycustom_wp_footer()
 {
     echo '<script type="text/javascript">';
     echo 'document.addEventListener( \'wpcf7mailsent\', function( event ) {';
+    echo 'window.dataLayer.push({
+        "event" : "cf7submission",
+        "formId" : event.detail.contactFormId,
+        "response" : event.detail.inputs
+    });';
     echo 'location = "' . SITEURL . '/thank-you/";';
     echo '}, false );';
     echo '</script>';
