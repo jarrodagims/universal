@@ -29,8 +29,7 @@
           slides: '> div',
           pauseOnHover: 'true',
           pager: '.cycle-pager, .slide-menu',
-          pagerTemplate: '',
-          paused: 'true'
+          pagerTemplate: ''
           // autoHeight: 'container'
       });
 
@@ -136,7 +135,7 @@
 
               adjustSlide();
 
-              if ($(window).width() > 992) {
+              if ($(window).width() >= 992) {
                   deskFunctions();
               }
 

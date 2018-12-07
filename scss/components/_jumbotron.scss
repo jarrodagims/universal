@@ -1,11 +1,11 @@
 .landing-bg {
-  background: url('../img/bg-hero.jpg');
+  background: url('../img/bg-galaxy.jpg') 50% 100%;
   background-size: cover;
 
   @include media-breakpoint-down(md) {
-    background: url('../img/bg-mobile.jpg');
+    background: url('../img/bg-galaxy-sm.jpg') 50% 100%;
     background-size: cover;
-  }
+  } 
   
 }
 
@@ -18,7 +18,7 @@
 }
 
 #home-main {
-  position: relative;
+  position: relative; 
 }
 
 .jumbotron {

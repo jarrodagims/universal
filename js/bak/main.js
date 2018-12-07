@@ -22,15 +22,6 @@
           $circle.css('stroke-dasharray', roundDraw  + ' 999');
       };
 
-      var drawSwish = function() {
-          var $circle = $('.icon-swish'),
-              roundRadius = $circle.find('circle').attr('r'),
-              roundPercent = $circle.data('percent'),
-              roundCircum = 2 * roundRadius * Math.PI,
-              roundDraw = roundPercent * roundCircum / 100
-          $circle.css('stroke-dasharray', roundDraw  + ' 999');
-      };
-
 
       $('.slideshow').cycle({
           timeout: 8000,
@@ -42,6 +33,16 @@
           paused: 'true'
           // autoHeight: 'container'
       });
+
+      function adjustSlide() {
+          /*jshint validthis: true */
+          var slide = $('.internal-slideshow');
+          var contW = $('.slideshow-container').width();
+          var contH = $('.slideshow-container').height();
+          var w = slide.outerWidth();
+          var h = slide.outerHeight();
+          slide.css( 'marginLeft', (contW - w) / 2 );
+      }
 
       $('.internal-slideshow').cycle({
           timeout: 8000,
@@ -78,7 +79,7 @@
                   self.addClass('active');
                   drawCircles();
               },
-              offset: '50%'
+              offset: '2000'
           });
       });
 
@@ -100,7 +101,7 @@
                       }, 200 * ( 2 ) * ms_i_1 );
                   }, 200 * ( 3 ) * ms_i_1 );
               },
-              offset: '50%'
+              offset: '2000'
           });
       });
 
@@ -132,6 +133,9 @@
           }, false);
 
           function resize() {
+
+              adjustSlide();
+
               if ($(window).width() > 992) {
                   deskFunctions();
               }
@@ -147,23 +151,6 @@
 
   });
 
-    // builds the links for the slider navigation
-    // $(document).on('cycle-bootstrap', function( e, opts, API ) {
-    //     API.buildPagerLink = function(opts, slideOpts, slide) {
-    //         var pagerLink;
-    //         var pagers = opts.API.getComponent( 'pager' );
-    //
-    //         (function() {
-    //             var pager = $(pagers[0]);
-    //             var markup = $('<li></li>');
-    //             pagerLink = $( markup ).appendTo( pager );
-    //             pagerLink.on( opts.pagerEvent, function(e) {
-    //                 e.preventDefault();
-    //                 opts.API.page( pager, e.currentTarget);
-    //             });
-    //         })();
-    //     }
-    // });
 
 
 

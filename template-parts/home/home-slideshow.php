@@ -17,20 +17,20 @@
                                 <i>Physicians Vascular Services</i></p>
                             </div>
                             <div class="slide">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices arcu eget ullamcorper pellentesque.</p>
+                                <p>We are more than glad to talk about the current Marketing company we use AGI Marketing. We have been a client of AGI’s a multitude of years and are not only pleased with their service we are now the TOP company in our area and surrounding in the HVAC industry. Anything Internet, social media, IT, and all around Tech service AGI is a MUST!!!!</p>
 
                                 <div class="stars"></div>
 
                                 <p class="author"><strong>Adrian Arreola</strong><br />
-                                <i>Scott Heating & Cooling</i></p>
+                                <i>Scott Heating &amp; Cooling</i></p>
                             </div>
 
                             <div class="slide">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices arcu eget ullamcorper pellentesque.</p>
+                                <p>Our furniture store frequently runs specials and various sales events. AGI quickly launches these campaigns, and we have experienced steady sales growth with each of these events. They have dramatically impacted our bottom-line!</p>
 
                                 <div class="stars"></div>
 
-                                <p class="author"><strong>Shorty</strong><br />
+                                <p class="author"><strong>Glen Morris</strong><br />
                                 <i>National Furniture Liquidators</i></p>
                             </div>
 
