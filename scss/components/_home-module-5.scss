@@ -1,0 +1,14 @@
+.home-module-5 {
+  background: url('../img/bg-hanger.jpg') 0 0 no-repeat;
+  background-size: cover;
+
+  svg {
+    height: 50px;
+  }
+
+  .box {
+    background: rgba(0,0,0,0.5);
+    color: $white;
+    padding: 4em;
+  }
+}

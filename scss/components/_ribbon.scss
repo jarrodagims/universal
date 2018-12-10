@@ -1,48 +1,16 @@
 .ribbon {
-//   background: $sherpa-secondary-color;
-//   color: $white;
-
-//   @include media-breakpoint-up(md) {
-//     padding: 3.5em 0;
-
-//     img {
-//       max-width: 503px;
-//     }
-//   }
-
-//   h2 {
-//     font-weight: 500;
-//     font-size: 26px;
-//     line-height: 1.5;
-//     margin-top: .25em;
-//     margin-bottom: 1em; 
-//   }
-
-//   @include media-breakpoint-down(sm) {
-//     padding: 2em 0;
-//     text-align: center;
-
-//     h2 {
-//       font-size: 1em;
-//       margin-top: 1em;
-//     }
-
-//     img {
-//       max-height: 90px;
-//     }
-
-//     p {
-//       margin-bottom: 0;
-//       line-height: 1.5;
-//     }
-
-//     .col-md-6 div {
-//       padding-left: 1em;
-//       padding-right: 1em;
-//     }
-//   }
-
-  @include gradient(); 
+  background: #0D5572;
+  position: relative;
+    
+   &::after {
+    content: '';
+    width: 100%;
+    height: 8px;
+    @include gradient();
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
 
   h2 {
     color: $white;
