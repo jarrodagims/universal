@@ -41,7 +41,6 @@
     flex-direction: column;
     flex: 1;
     border-top: 10px solid $white;
-    border-bottom: 10px solid $white;
 
     &:first-child {
       .box {
@@ -51,9 +50,12 @@
     }
 
     &:last-child {
-      .box {
-        border-left: 5px solid $white;
-        border-right: 10px solid $white;
+      .row {
+        .box {
+          border-left: 5px solid $white;
+          border-right: 10px solid $white;
+          
+        }
       }
     }
     
@@ -76,6 +78,6 @@
     flex: 1;
     justify-content: flex-start;
     align-items: flex-start;
-    
+    border-bottom: 10px solid $white;
   }
 }
