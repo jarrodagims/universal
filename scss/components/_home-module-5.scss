@@ -2,13 +2,80 @@
   background: url('../img/bg-hanger.jpg') 0 0 no-repeat;
   background-size: cover;
 
+  .container > .row {
+    @include dropshadow();
+  }
+
+
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+
+    .col {
+      padding: 0 0;
+    }
+
+    .row:first-child {
+      flex: 0 auto;
+    }
+
+    .row:last-child {
+      flex: 1;
+
+      .col {
+        display: flex;
+      }
+
+      .box {
+        flex: 1;
+      }
+    }
+  }
+
   svg {
     height: 50px;
+    margin-bottom: 1em;
+  }
+
+  .col.flex-col {
+    flex-direction: column;
+    flex: 1;
+    border-top: 10px solid $white;
+    border-bottom: 10px solid $white;
+
+    &:first-child {
+      .box {
+        border-left: 10px solid $white;
+        border-right: 5px solid $white;
+      }
+    }
+
+    &:last-child {
+      .box {
+        border-left: 5px solid $white;
+        border-right: 10px solid $white;
+      }
+    }
+    
+    .row:last-child {
+      display: flex;
+    }
+  }
+
+  .col {
+    flex-direction: column;
+    flex: 1;
   }
 
   .box {
     background: rgba(0,0,0,0.5);
     color: $white;
     padding: 4em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
   }
 }

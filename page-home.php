@@ -84,7 +84,7 @@
 <section class="home-module-5">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col flex-col">
                 <div class="row">
                     <div class="col">
                         <div class="box">
@@ -102,13 +102,9 @@
                             <h3>Quality Ironing Services</h3>
                             <p>Bring us your clean clothes and we’ll iron it all for you!</p></div>
                     </div>
-
-
-
                 </div>
             </div>
-
-            <div class="col">
+            <div class="col flex-col">
                 <div class="row">
                     <div class="col">
                         <div class="box">
@@ -135,8 +131,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>
