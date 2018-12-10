@@ -40,14 +40,9 @@
     <div class="container-fluid top-header">
                 <div class="v-align">
                     <div class="col-xs-12 navbar-button text-center">
-                        <a id="header-logo" class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
-                                    src="<?= IMGURL; ?>logo.svg"
-                                    alt="<?php echo get_bloginfo(
-                                        'description'
-                                    ); ?>"/></a>
+
                         <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
 
-                        <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact Us</button></a>
                     </div>
                 </div>
     </div>

@@ -4,18 +4,19 @@
 
 
 .btn, input[type="submit"] { 
-  padding: 1.5em 7em;
+  padding: 1em 7em;
   font-size: 11px;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   transition: background-color 0.2s ease-in-out;
   background: $sherpa-secondary-color;
   font-weight: 600;
-  color: $white;
+  color: $white; 
   transition: transform 300ms ease-in-out;
   border: transparent;
-  border-radius: 0;
+  border-radius: 10px;
   text-transform: uppercase;
+
 
    &:hover {
     background: darken($sherpa-secondary-color, 10%);

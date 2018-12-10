@@ -155,7 +155,7 @@
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-grow: 1; 
   flex-basis: 0;
@@ -166,7 +166,7 @@
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #BABABA;
+  color: #A0967F;
 
   &:hover {
     color: $white;
@@ -174,9 +174,13 @@
 }
 
 .top-header {
-  padding: 76px 70px 0;
   position: relative;
   z-index: 99;
+  background: #1A1A1A;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #menu-secondary {

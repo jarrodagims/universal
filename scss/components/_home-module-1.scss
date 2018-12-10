@@ -4,5 +4,33 @@
     font-family: 'Montserrat', sans-serif;
   }
 
+  background: url('../img/bg-hero.jpg')center 0 no-repeat;
+  background-size: cover;
+
+  .jumbotron {
+    height: 470px;
+  }
+
+
+  .jumbo-content {
+
+    h1 {
+      font-size: 25px;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1em;
+
+
+      span {
+        display: block;
+        font-size: 39px;
+        text-transform: none;
+        margin-top: .25em;
+        margin-bottom: 0;
+      }
+    }
+  }
+
 }
 
