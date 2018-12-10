@@ -3,9 +3,9 @@
 /*
     Template Name: Home
 */ ?>
-<div class="container">
+<div class="container ">
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 text-center">
             <a id="header-logo" class="navbar-brand" href='<?php echo get_site_url(); ?>'><img
                         src="<?= IMGURL; ?>logo.svg"
                         alt="<?php echo get_bloginfo(

@@ -4,7 +4,7 @@
 
 
 .btn, input[type="submit"] { 
-  padding: 1em 7em;
+  padding: 1.5em 4em;
   font-size: 11px;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
@@ -16,6 +16,9 @@
   border: transparent;
   border-radius: 10px;
   text-transform: uppercase;
+  background: rgb(0,180,235);
+background: linear-gradient(90deg, rgba(0,180,235,1) 0%, rgba(0,55,255,1) 100%);
+
 
 
    &:hover {
