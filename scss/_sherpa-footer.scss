@@ -3,8 +3,8 @@
 #footer {
   padding: 0 0 2em;
   text-align: center;
-  background: #000;
-  color: $white;
+  background: $white;
+  color: #000;
 
   .container-fluid {
     max-width: 1700px;
@@ -18,7 +18,7 @@
   .logo-footer, .phone-footer, .hours-footer, .address-footer {
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
   }
 
   .button-footer {
@@ -47,7 +47,7 @@
     display: block;
     margin-bottom: 2em;
   }
-  
+
   .flex-row {
     justify-content: space-between;
     display: flex;
@@ -66,7 +66,7 @@
   .logo-sm {
     height: 16px;
     padding-left: .5em;
-    
+
 
     @media screen and (min-width: 1800px) {
       position: absolute;
@@ -79,9 +79,9 @@
     letter-spacing: 1px;
     margin-bottom: 0;
     padding: 1.5em 2em;
-    font-size: 11px; 
+    font-size: 11px;
     text-transform: none;
-  } 
+  }
 
   .phone-footer {
     a {
@@ -89,7 +89,6 @@
       font-size: 36px;
       font-weight: 700;
       font-family: 'Lato', sans-serif;
-
     }
   }
 
@@ -146,7 +145,7 @@
 //     .hours-footer {
 //       margin-right: auto;
 //     }
-    
+
 //     .logo-footer {
 //       margin-right: auto;
 //     }
@@ -155,7 +154,7 @@
 
   @include media-breakpoint-up(md) {
 
-    
+
 
    .footer-blocks {
        flex: 1;
@@ -166,7 +165,7 @@
        align-items: center;
    }
 
-  
+
 
    .flex-col {
       flex-direction: row;
@@ -182,16 +181,16 @@
 
       img {
         height: 95px;
-      } 
-   } 
+      }
+   }
 
     .contact-footer, .hours-footer {
       display: flex;
       justify-content: center;
       margin: 0 auto;
-      
+
       > div {
-        
+
         font-weight: 300;
         display: flex;
         flex-direction: column;
@@ -263,7 +262,6 @@
     font-size: 18px;
     line-height: 1.75;
     font-weight: 300;
-    color: $white;
   }
 
   ul {
@@ -366,12 +364,12 @@
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     color: $sherpa-secondary-color;
-    font-weight: 600; 
+    font-weight: 600;
     text-transform: uppercase;
   }
 
   .social-media-button {
-    color: $white;
+    color: #1A1A1A;
     font-size: 1.25rem;
 
     &:hover {
@@ -381,7 +379,7 @@
 
   @include media-breakpoint-up(md) {
     text-align: left;
-    
+
 
     span.title {
       margin: 0 0 1em;
@@ -391,7 +389,7 @@
 
   }
 
-  
+
 
   @include media-breakpoint-down(md) {
     .row.align-items-center {
@@ -414,7 +412,7 @@
     .button-footer {
       flex: 1;
       flex-direction: row;
-      flex-wrap: nowrap; 
+      flex-wrap: nowrap;
 
       div {
         display: flex;
@@ -607,7 +605,7 @@
   #footer {
     padding: 2em 0;
 
-    
+
 
     a {
       width: auto;
@@ -652,7 +650,7 @@
 }
 
 
-  
+
 
 @media screen and (max-width: 992px) {
 
@@ -679,7 +677,7 @@
       padding: 1.5em 2em;
       width: auto;
     }
-    
+
 
     .social-media-button {
       color: #918F8D;
@@ -708,7 +706,7 @@
   .phone-footer a {
     font-size: 24px !important;
   }
-    
+
   #footer {
     ul {
       justify-content: center;
@@ -718,9 +716,8 @@
       }
     }
   }
-
 }
- 
+
 
 
 @media screen and (min-width: 1400px) {
