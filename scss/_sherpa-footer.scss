@@ -19,7 +19,7 @@
 
   .phone-footer, .address-footer {
     display: flex;
-    
+
     div {
       margin: 0 auto;
       display: inline-block;
@@ -539,6 +539,10 @@
   font-size: 16px;
   color: #29292C;
 
+  p {
+    margin-bottom: 0;
+  }
+
   .agi-logo {
     margin-left: 0.5em;
   }
@@ -552,6 +556,8 @@
   ul.social-media {
     margin: 0 0 0 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     a {
       color: #29292C;
