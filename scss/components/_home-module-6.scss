@@ -1,2 +1,46 @@
 .home-module-6 {
+    @include shape();
+    background-repeat: no-repeat;
+    background-position: -50% -50px;
+    background-size: 50%;
+    padding: 5.75em 0;
+
+    .row {
+        display: flex;
+
+        .col:first-child {
+
+            h2 {
+                font-weight: 800;
+                font-size: 37px;
+                margin-bottom: 0;
+
+                .light {
+                    font-weight: 300;
+                    font-family: 'Montserrat', sans-serif;
+                }
+            }
+        }
+
+        .col:last-child {
+           
+
+            h2 {
+                font-size: 25px;
+                font-family: 'Poppins', sans-serif;
+                line-height: 1.5;
+            }
+        }
+
+        .col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    h2 {
+        
+    }
 }

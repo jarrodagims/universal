@@ -1,11 +1,23 @@
 .home-module-5 {
   background: url('../img/bg-hanger.jpg') 0 0 no-repeat;
   background-size: cover;
+  padding: 4.5em 0;
 
   .container > .row {
     @include dropshadow();
   }
 
+  .icon-1 {
+    height: 34px;
+  }
+
+  .icon-2 {
+    height: 47px;
+  }
+
+  .icon-3 {
+    height: 40px;
+  }
 
   .flex-col {
     display: flex;
@@ -40,20 +52,20 @@
   .col.flex-col {
     flex-direction: column;
     flex: 1;
-    border-top: 10px solid $white;
+    border-top: 15px solid $white;
 
     &:first-child {
       .box {
-        border-left: 10px solid $white;
-        border-right: 5px solid $white;
+        border-left: 15px solid $white;
+        border-right: 7.5px solid $white;
       }
     }
 
     &:last-child {
       .row {
         .box {
-          border-left: 5px solid $white;
-          border-right: 10px solid $white;
+          border-left: 7.5px solid $white;
+          border-right: 15px solid $white;
           
         }
       }
@@ -78,6 +90,6 @@
     flex: 1;
     justify-content: flex-start;
     align-items: flex-start;
-    border-bottom: 10px solid $white;
+    border-bottom: 15px solid $white;
   }
 }

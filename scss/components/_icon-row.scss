@@ -182,7 +182,6 @@
   background: #1A1A1A;
 
   .container {
-    max-width: 1580px;
     width: 100%;
   }
 
@@ -200,8 +199,8 @@
 
 
     a {
-      padding-top: 3em;
-      padding-bottom: 3em;
+      padding-top: 1.75em;
+      padding-bottom: 1.75em;
     }
 
 
@@ -209,7 +208,7 @@
       border-right: 1px solid #CCCCCC;
       content: '';
       display: block;
-      height: 50%;
+      height: 30%;
       top: 50%;
       right: 0;
       transform: translateY(-50%);
@@ -228,7 +227,7 @@
     align-items: center;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
     flex-direction: column;
     flex: 1;

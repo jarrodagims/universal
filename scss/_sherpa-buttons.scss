@@ -4,7 +4,7 @@
 
 
 .btn, input[type="submit"] { 
-  padding: 1.5em 4em;
+  padding: 1.5em 3em;
   font-size: 11px;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
@@ -14,7 +14,7 @@
   color: $white; 
   transition: transform 300ms ease-in-out;
   border: transparent;
-  border-radius: 10px;
+  border-radius: 8px;
   text-transform: uppercase;
   position: relative;
   z-index: 1;

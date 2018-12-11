@@ -1,7 +1,7 @@
 
 
 #footer {
-  padding: 0 0 2em;
+  padding: 2em 0;
   text-align: center;
   background: $white;
   color: #000;
@@ -13,22 +13,18 @@
 
   .logo-footer {
     flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
-  .logo-footer, .phone-footer, .hours-footer, .address-footer {
+  .phone-footer, .hours-footer, .address-footer {
     justify-content: center;
     align-items: center;
     text-align: left;
   }
 
-  .button-footer {
-    padding: 0 30px;
-  }
-
-
   .address-footer {
     text-align: left;
-    padding: 0 30px;
   }
 
   .address-footer p {
@@ -40,6 +36,10 @@
   .flex-row {
     justify-content: space-between;
     display: flex;
+  }
+
+  .navbar-brand {
+     margin: 0 0;
   }
 
   .navbar-brand img {
@@ -67,9 +67,9 @@
   .btn {
     letter-spacing: 1px;
     margin-bottom: 0;
-    padding: 1.5em 2em;
+    padding: 1.5em 4em;
     font-size: 11px;
-    text-transform: none;
+    text-transform: uppercase;
   }
 
   .phone-footer {
@@ -126,24 +126,7 @@
      }
   }
 
-//   @include media-breakpoint-up(lg) {
-//     .logo-footer {
-//       margin-right: auto;
-//     }
-
-//     .hours-footer {
-//       margin-right: auto;
-//     }
-
-//     .logo-footer {
-//       margin-right: auto;
-//     }
-
-//   }
-
   @include media-breakpoint-up(md) {
-
-
 
    .footer-blocks {
        flex: 1;
@@ -153,8 +136,6 @@
        width: 100%;
        align-items: center;
    }
-
-
 
    .flex-col {
       flex-direction: row;
@@ -185,7 +166,6 @@
         flex-direction: column;
       }
     }
-
 
     .contact-footer {
 
@@ -248,9 +228,10 @@
   }
 
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.75;
     font-weight: 300;
+    color: #606060;
   }
 
   ul {
@@ -309,7 +290,7 @@
   }
 
   .navbar-brand {
-    text-align: center;
+    text-align: left;
     position: relative;
     display: block;
     height: auto;
@@ -348,11 +329,10 @@
   }
 
   span.title {
-    margin: 1em;
     display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    color: $sherpa-secondary-color;
+    color: #000000;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -371,7 +351,7 @@
 
 
     span.title {
-      margin: 0 0 1em;
+      margin: 0 0;
       display: block;
       font-size: 17px;
     }
@@ -501,8 +481,12 @@
 
 
 .footer-nav {
+  background: #1A1A1A;
 
-  background: $sherpa-secondary-color;
+  li a {
+    color: $sherpa-brand-primary;
+    text-transform: uppercase;
+  }
 
   @include media-breakpoint-up(md) {
     li.menu-item:first-child {
@@ -537,7 +521,7 @@
   }
 }
 
-#sub-footer {
+.sub-footer {
   padding: 32px 0;
   text-align: center;
   background: #FFF;
@@ -549,7 +533,7 @@
     margin-left: 0.5em;
   }
 
-  .flex-col {
+  .col {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -557,6 +541,8 @@
 
   ul.social-media {
     margin: 0 0 0 0;
+    display: flex;
+
     a {
       color: #29292C;
       &:hover {

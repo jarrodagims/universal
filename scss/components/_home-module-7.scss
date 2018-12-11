@@ -1,6 +1,16 @@
 .home-module-7 {
     background: #1A1A1A;
     color: $white;
+    padding: 4em 0;
 
-    
+    h2 {
+        color: $white;
+        font-size: 25px;
+    }
+
+    .col {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }

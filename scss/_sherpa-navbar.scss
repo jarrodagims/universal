@@ -164,10 +164,10 @@
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #A0967F;
+  color: #A0967F !important;
 
   &:hover {
-    color: $white;
+    color: $white !important;
   }
 }
 
@@ -349,8 +349,10 @@
   font-weight: 600;
 }
 
-.navbar-nav.navbar-right {
+.navbar-nav.navbar-right { 
   flex-direction: row;
+  position: absolute;
+  right: 0;
 
   li.menu-item {
     position: relative;

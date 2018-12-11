@@ -215,22 +215,6 @@
 
     a { 
       display: block;
-
-      .btn {
-        padding: 1.75em;
-        width: 100%;
-        letter-spacing: 1px;
-        font-size: 14px;
-
-        &.btn-default {
-          color: $white;
-          background : rgba(255, 255, 255, .25);
-
-          &:hover {
-            background: $sherpa-brand-primary;
-          }
-        }
-      }
     }
 
 

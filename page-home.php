@@ -23,7 +23,7 @@
                 <span>High-Quality Ironing Services in El Paso</span>
             </h1>
 
-            <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact Us</button></a>
+            <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact Us Today</button></a>
         </div>
     </div>
 </section>
@@ -52,19 +52,17 @@
         <div class="col">
             <div class="card">
                 <div class="card-top">
-                    you wash it, we iron it!
+                    <span>you wash it,</span> we iron it!
                 </div>
 
                 <div class="card-bottom">
-                    <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact Us</button></a>
+                    <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact Us Today</button></a>
                 </div>
             </div>
 
             <div class="card card-secondary">
-                <div class="row">
-                    <div class="col">Iron a piece of clothing in</div>
-                    <div class="col"><img src="<?=IMGURL?>iron-time.svg" alt="15-20 minutes"></div>
-                </div>
+                    Iron a piece of clothing in
+                   <img src="<?=IMGURL?>iron-time.svg" alt="15-20 minutes">
             </div>
         </div>
     </div>
@@ -75,7 +73,7 @@
         <div class="row">
             <div class="col">
                 <h2>How We Can Help — Our Services</h2>
-                <p>Quality Iron Maid strives to provide the best shirt ironing service in the Southwest. Below, we’ve outlined our main services for your convenience:</p>
+                <p>Quality Iron Maid strives to provide the best shirt ironing service in the <span class="br-md">Southwest. Below, we’ve outlined our main services for your convenience:</span></p>
             </div>
         </div>
     </div>
@@ -113,7 +111,7 @@
                             <p>Quality Iron Maid also offers corporate ironing services to local companies. We’ve worked with hotels, border patrol, and the Sun Metro in the past so we can take care of your ironing needs, no matter the size!</p></div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row"> 
                     <div class="col">
                         <div class="box">
                             <?php echo get_template_part('template-parts/icons/icon','3') ?>
@@ -140,7 +138,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>Military & Monthly Discounts</h2>
+                <h2>Military <span class="light">&</span> Monthly <span class="brand">Discounts</span></h2>
             </div>
             <div class="col">
                 <h2>At Quality Iron Maid, we are completely devoted to our friends and neighbors.

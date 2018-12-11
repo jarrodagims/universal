@@ -36,8 +36,8 @@
     <p class="browsehappy">Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     </p>
     <![endif]-->
-
-    <div class="container-fluid top-header">
+<div class="top-header">
+<div class="container">
             <div class="v-align">
                 <div class="col-xs-12 navbar-button text-center">
                     <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
@@ -49,3 +49,5 @@
                 </div>
             </div>
     </div>
+</div>
+    
