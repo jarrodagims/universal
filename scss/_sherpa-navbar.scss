@@ -193,166 +193,13 @@
   }
 }
 
-
-
-@include media-breakpoint-down(md) {
-
-  .navbar-sherpa #menu-primary {
-    background: #000;
-  }
-
-  .navbar-nav .dropdown-menu {
-    text-align: center;
-    font-size: 13px;
-    margin-top: 0;
-  }
-
-  .navbar-sherpa #menu-primary .nav-link {
-    justify-content: center;
-  }
-
-  .navbar-sherpa .navbar-collapse, .navbar-sherpa .navbar-collapse.collapsing, .navbar-sherpa .navbar-collapse.collapse.in {
-//       height: 100% !important;
-
-    
-  }
-
-  .v-align .header-button {
-    margin-right: 60px;
-  } 
-
-   #menu-primary {
-     top: 40px;
-     position: absolute;
-     width: 100%;
-     left: 0 !important;
-   }
-
-  .navbar-brand {
-    width: 146px;
-  }
- 
-  .top-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15px;
-
-    a .btn {
-      padding: 1em 4em;
-      font-size: 6px;
-    }
- 
-    > .row {
-      width: 100%;
-    }
-
-    .navbar-sherpa {
-      order: 2;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      padding: 0 0;
-      top: 23px;
-    }
-
-    .navbar-toggler:not(:disabled):not(.disabled) {
-      position: absolute;
-      right: 20px;
-      top: 0;
-    }
-  }
- 
-  .navbar-toggler {
-    padding: 0 0;
-    border: 0;
-  }
-  
-
-  .navbar-dark .navbar-toggler-icon {
-    background: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 23.3 11.9" enable-background="new 0 0 23.3 11.9" xml:space="preserve">
-  <title>navbar-button</title>
-  <g>
-      <g id="Layer_3">
-          <rect y="5" fill="#FFFFFF" width="23.3" height="1.8"/>
-          <rect fill="#FFFFFF" width="23.3" height="1.8"/>
-          <rect y="10.1" fill="#FFFFFF" width="23.3" height="1.8"/>
-      </g>
-  </g>
-  </svg>');
-  background-repeat: no-repeat;
-    background-position: center center;
-  }
-
-  .menu-secondary-container {
-    .navbar-nav {
-      li {
-        width: 33.33%;
-        flex: auto;
-        font-size: 7px;
-        border-bottom-width: 2px;
-        
-        a {
-          padding: 3em 0;
-        }
-
-        &:nth-child(2n) {
-          background: #F2F2F2;
-        }
-
-        a:hover::after {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
-.navbar-sherpa #menu-primary {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-
-  .dropdown-toggle::after {
-    content: ''; 
-    @include svg-chevron($white);
-    border: 0;
-    width: 10px;
-    height: 10px; 
-    display: inline-block;
-  }
-
-  .nav-link {
-    display: flex;
-    align-items: center;
-    
-  }
-
-}
-
-.navbar-sherpa #menu-primary .nav-link {
-  font-weight: 600;
-
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-}
-
-.dropdown-menu {
-  font-size: 13px;
-  background: rgba(0,0,0,0.79);
-}
-
-.dropdown-item {
-  font-weight: 600;
-}
-
 .navbar-nav.navbar-right { 
   flex-direction: row;
   position: absolute;
-  right: 0;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
 
   li.menu-item {
     position: relative;
@@ -419,6 +266,164 @@
   a {
     margin: 0 0 0 15px;
   }
+}
+
+
+
+@include media-breakpoint-down(md) {
+
+  .navbar-right {
+    position: relative;
+    top: 50%;
+  }
+
+  .navbar-brand {
+      margin: 0 auto;
+  }
+
+  .navbar-sherpa #menu-primary {
+    background: #000;
+  }
+
+  .navbar-nav .dropdown-menu {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 0;
+  }
+
+  .navbar-sherpa #menu-primary .nav-link {
+    justify-content: center;
+  }
+
+  .navbar-sherpa .navbar-collapse, .navbar-sherpa .navbar-collapse.collapsing, .navbar-sherpa .navbar-collapse.collapse.in {
+//       height: 100% !important;
+
+    
+  }
+
+  .v-align .header-button {
+    margin-right: 60px;
+  } 
+
+   #menu-primary {
+     top: 40px;
+     position: absolute;
+     width: 100%;
+     left: 0 !important;
+   }
+
+  .navbar-brand {
+    width: 271px;
+    max-width: 100%;
+    padding: 10px 0;
+  }
+ 
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 50px;
+
+    a .btn {
+      padding: 1em 4em;
+      font-size: 6px;
+    }
+ 
+    > .row {
+      width: 100%;
+    }
+
+    .navbar-sherpa {
+      order: 2;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 0 0;
+      top: 10px;
+    }
+
+    .navbar-toggler:not(:disabled):not(.disabled) {
+      position: absolute;
+      left: 20px;
+      top: 0;
+    }
+  }
+ 
+  .navbar-toggler {
+    padding: 0 0;
+    border: 0;
+  }
+  
+
+  .navbar-dark .navbar-toggler-icon {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.65 9.52"><g id="a4984a0b-204b-4adf-8637-28bd0ccbcf77" data-name="Layer 2"><g id="eeb8ac9b-06cc-4dae-b15c-8047e3263e95" data-name="Layer 3"><rect y="4.01" width="20.65" height="1.5" fill="%23fff"/><rect width="20.65" height="1.5" fill="%23fff"/><rect y="8.01" width="20.65" height="1.5" fill="%23fff"/></g></g></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+  } 
+
+  .menu-secondary-container {
+    .navbar-nav {
+      li {
+        width: 33.33%;
+        flex: auto;
+        font-size: 7px;
+        border-bottom-width: 2px;
+        
+        a {
+          padding: 3em 0;
+        }
+
+        &:nth-child(2n) {
+          background: #F2F2F2;
+        }
+
+        a:hover::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.navbar-sherpa #menu-primary {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+
+  .dropdown-toggle::after {
+    content: ''; 
+    @include svg-chevron($white);
+    border: 0;
+    width: 10px;
+    height: 10px; 
+    display: inline-block;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    
+  }
+
+}
+
+.navbar-sherpa #menu-primary .nav-link {
+  font-weight: 600;
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.dropdown-menu {
+  font-size: 13px;
+  background: rgba(0,0,0,0.79);
+}
+
+.dropdown-item {
+  font-weight: 600;
 }
 
 

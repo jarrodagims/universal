@@ -2,6 +2,10 @@
   background: url('../img/bg-hanger.jpg') 0 0 no-repeat;
   background-size: cover;
   padding: 4.5em 0;
+  
+  p {
+    margin-bottom: 0;
+  }
 
   .container > .row {
     @include dropshadow();
@@ -91,5 +95,9 @@
     justify-content: flex-start;
     align-items: flex-start;
     border-bottom: 15px solid $white;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: none;
   }
 }

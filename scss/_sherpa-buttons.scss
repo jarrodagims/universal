@@ -34,8 +34,6 @@
     z-index: -1;
   }
 
-
-
    &:hover {
     background: darken($sherpa-secondary-color, 10%);
 
@@ -95,7 +93,7 @@
 
   @include media-breakpoint-down(sm) {
     font-size: 9px;
-    padding: 1.5em 2em;
+    padding: 2em 4em;
   }
 }
  

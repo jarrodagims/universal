@@ -1,6 +1,8 @@
 @mixin icon-small() {
   width: 100%;
   list-style: none;
+  background: url('../img/bg-hanger.jpg') 0 100% no-repeat;
+  background-size: cover; 
 
 
   .flex-col.flex-row {
@@ -14,49 +16,7 @@
   .container, .container-fluid {
     padding: 0 0;
   }
-
-  .flex-col:first-child {
-
-    li {
-      background: #fff;
-      margin-bottom: 0;
-      width: 100%;
-
-      a {
-        &:active, &:focus {
-          background: $sherpa-brand-primary;
-          color: $white;
-        }
-      }
-    }
-
-    li:nth-child(even) {
-      background: #F2F2F2;
-    }
-  }
-
-  .flex-col:last-child {
-
-    li {
-      background: rgba(255,255,255,0.19);
-      flex: 1;
-      width: 100%;
-      margin-bottom: 0;
-
-      &:nth-child(even) {
-        background: rgba(255,255,255,0.14);
-      }
-
-      a {
-        color: $white;
-
-        &:active, &:focus {
-          background: rgba(250, 192, 0, 0.5);
-          color: $white;
-        }
-      }
-    }
-  }
+  
 
   .flex-row {
     flex-direction: row;
@@ -65,11 +25,11 @@
     margin-bottom: 0;
     width: 100%;
     list-style: none !important;
+    border: 3px solid $white;
 
     &.visible-xs {
       display: flex !important;
     }
-
 
     &:after {
       display: none;
@@ -83,20 +43,49 @@
         display: none;
       }
 
+      &:nth-child(2) {
+        order: 0;
+      }
+
+      &:nth-child(1) {
+        order: 1;
+      }
+
+      &:nth-child(3) {
+        order: 3;
+      }
+
+      &:nth-child(4) {
+        order: 4;
+      }
+
+      &:nth-child(5) {
+        order: 5;
+      }
+
+      &:last-child a {
+        padding: 2em 1em;
+      }
+
       a {
         font-size: 9px;
-        padding: 24px 0 10px;
-        color: #151516;
-        padding: 1.5em 1em;
+        padding: 2.75em 1em;
         font-weight: 400;
         display: flex;
         align-items: center;
         justify-content: center;
-        line-height: 2;
+        line-height: 1.5;
         white-space: nowrap;
+        color: $white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        border: 3px solid $white;
+        background: rgba(0,0,0,0.8);
+        
 
-
-
+        &:hover {
+          background: $sherpa-secondary-color;
+        }
 
         .icon {
           flex: 1;
@@ -107,8 +96,17 @@
         }
 
         svg {
-          height: 21px;
+          height: 23px;
           margin-bottom: 1em;
+          display: block;
+
+          &.icon-2 {
+            height: 28px;
+          }
+
+          &.icon-4 {
+            height: 36px;
+          }
         }
 
 
@@ -201,6 +199,10 @@
     a {
       padding-top: 1.75em;
       padding-bottom: 1.75em;
+
+      svg {
+        display: none;
+      }
     }
 
 

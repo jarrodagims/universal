@@ -41,22 +41,32 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="footer-nav">
-    <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
-</section>
-<section class="sub-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col">
+            <div class="d-md-none d-xs-block d-sm-block">
                 <?php
 $sm = new SocialMedia(array('facebook', 'twitter'));
 $sm->setSize('md');
 $sm->showNetworkButtons();
 $sm->setColorType('singleColor');
 ?>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer-nav d-none d-md-block">
+    <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
+</section>
+<section class="sub-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-none d-md-block">
+                    <?php
+$sm = new SocialMedia(array('facebook', 'twitter'));
+$sm->setSize('md');
+$sm->showNetworkButtons();
+$sm->setColorType('singleColor');
+?>
+                </div>
                 <p class="small">Privacy Policy | Site Copyright &copy;
                     <?php echo date('Y'); ?>
                 </p>

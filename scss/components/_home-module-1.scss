@@ -35,5 +35,29 @@
     }
   }
 
+  @include media-breakpoint-down(md) {
+
+     background: url('../img/bg-hero-mobile.jpg') center 0 no-repeat;
+     background-size: cover;
+
+    .jumbotron {
+      padding: 3em;
+      height: 500px;
+    }
+
+    .jumbo-content {
+
+      h1 {
+        font-size: 15px;
+        margin-top: 0;
+
+        span {
+          font-size: 30px; 
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
 }
 

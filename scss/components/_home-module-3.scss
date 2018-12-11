@@ -45,7 +45,7 @@
       color: $white;
       font-size: 18px;
       font-family: 'Poppins', sans-serif;
-      padding: 2em;
+      padding: 2em 15px;
       text-align: left;
       display: flex;
       justify-content: center;
@@ -75,5 +75,63 @@
 
     .card {
         margin-left: 80px;
+    }
+
+    @include media-breakpoint-down(md) {
+        text-align: center;
+        padding: 3em 0 0;
+
+        .card {
+            margin-left: 0;
+            padding: 0 0;
+            margin-top: 2em;
+            margin-bottom: 0;
+
+            .card-top {
+                font-size: 27px;
+                padding-left: .5em;
+                padding-right: .5em;
+                background-size: 80% auto;
+            }
+
+            &.card-secondary {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 15px;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+
+        
+
+        .row {
+            flex-direction: column;
+
+            .col {
+                flex: 1;
+            }
+
+            .col:last-child {
+                padding: 0 0;
+            }
+        }
+
+        h2 {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        p.blurb {
+            font-size: 20px;
+            margin-top: 1em;
+        }
+
+        p {
+            font-size: 15px;
+        }
     }
 }
