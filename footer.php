@@ -12,20 +12,25 @@
                 <p>If you’re looking for ironing clothes service in El Paso, Quality Iron Maid can help.</p>
             </div>
             <div class="col phone-footer">
-                <span class="title">Address</span>
-                <p>
-                    1475 George Dieter Street<br />
-                    Suite C<br />
-                    El Paso, TX 79936<br />
-                    PH. (915) 320-6795
-                </p>
+                <div>
+                    <span class="title">Address</span>
+                    <p>
+                        1475 George Dieter Street<br />
+                        Suite C<br />
+                        El Paso, TX 79936<br />
+                        PH. (915) 320-6795
+                    </p>
+                </div>
             </div>
             <div class="col address-footer">
-                <span class="title">Office Hours</span>
-                <p>Monday - Friday:<br />
-                    <strong>7:30am - 6:30pm</strong><br />
-                    Saturday: <strong>8:00am - 2:30pm</strong><br />
-                    Sunday: <strong>Closed</strong></p>
+                <div>
+                    <span class="title">Office Hours</span>
+                    <p>Monday - Friday:<br />
+                        <strong>7:30am - 6:30pm</strong><br />
+                        Saturday: <strong>8:00am - 2:30pm</strong><br />
+                        Sunday: <strong>Closed</strong></p>
+                </div>
+
             </div>
             <div class="button-footer">
                 <div>
