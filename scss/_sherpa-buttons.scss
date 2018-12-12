@@ -36,6 +36,7 @@
 
    &:hover {
     background: darken($sherpa-secondary-color, 10%);
+    color: $white;
 
     &::before {
       opacity: 0;
