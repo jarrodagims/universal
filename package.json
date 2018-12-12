@@ -11,9 +11,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path  --source-map  css scss/style.scss css/style.css --output-style compressed",
-    "prefix": "postcss  css/style.css --use autoprefixer -r",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-css": "node-sass --include-path  --source-map  scss scss/style.scss css/style.css --output-style compressed",
+    "prefix": "postcss css/style.css --use autoprefixer -r",
+    "watch-css": "nodemon -e scss css -x \"npm run build-css\"",
     "start": "livereload",
     "build-images": "imagemin --plugin=pngcrush img/* --out-dir=img/build",
     "watch-img": "nodemon -e img -x \"npm run build-images\""

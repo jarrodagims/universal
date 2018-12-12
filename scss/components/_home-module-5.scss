@@ -2,6 +2,9 @@
   background: url('../img/bg-hanger.jpg') 0 0 no-repeat;
   background-size: cover;
   padding: 4.5em 0;
+  -webkit-box-shadow: inset 0px 0px 11px 5px rgba(0,0,0,0.21);
+  -moz-box-shadow: inset 0px 0px 11px 5px rgba(0,0,0,0.21);
+  box-shadow: inset 0px 0px 11px 5px rgba(0,0,0,0.21);
   
   p {
     margin-bottom: 0;
@@ -95,6 +98,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     border-bottom: 15px solid $white;
+
+    h3 {
+      font-size: 34px;
+    }
   }
 
   @include media-breakpoint-down(md) {

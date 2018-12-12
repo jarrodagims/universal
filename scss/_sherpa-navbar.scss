@@ -179,6 +179,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include media-breakpoint-up(md) {
+    .v-align>div {
+      justify-content: flex-start;
+      position: relative;
+      
+      .navbar {
+        padding-left: 0;
+      }
+    }
+  }
 }
 
 #menu-secondary {
@@ -408,13 +419,12 @@
 }
 
 .navbar-sherpa #menu-primary .nav-link {
-  font-weight: 600;
-
+  font-weight: 400;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .dropdown-menu {

@@ -1,55 +1,213 @@
-#sidebar {
+.sidebar-content {
+  margin-top: 20px;
 
+  .post-title {
+    font-weight: 300;
+    font-size: 39px;
+    color: #8f9699;
+  }
 
+  //   @media screen and (min-width: $screen-md-min) {
+  //     .page-content, #sidebar {
+  //       padding-top: 2em;
+  //     }
+  //   }
+  @include media-breakpoint-between(md, lg) {
+    .img-responsive {
+      max-width: 40%;
+      height: auto;
 
-  &.sidebar-testimonial {
-    float: right;
-    width: 380px;
-    margin-left: 4em;
-    text-align: center;
-    background: #000;
-    color: $white;
-    padding: 7em 2em;
-    margin-bottom: 2em;
-
-    p:first-child {
-      font-style: italic;
-      text-align: center;
-      font-size: 16px;
-
-      &::after {
-        @include svg-stars($sherpa-brand-primary);
-        width: 100%;
-        height: 16px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        margin: 2em auto;
-        content: '';
-        display: block;
+      img {
+        max-width: 100%;
+        height: auto;
       }
     }
   }
 
-  @include media-breakpoint-down(md) {
-    
+  @include media-breakpoint-between(sm, md) {
+    .flex-row {
+      flex-direction: column;
+    }
 
-    &.sidebar-testimonial { 
-      margin-left: 0;
-      float: none;
-      margin: 2em 0 0;
-      width: 100%;
-      padding: 2em 2em 1em;
+    .img-responsive {
+      max-width: 30%;
+      height: auto;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 }
 
-//left aligned sidebar
-.page-id-206 {
-  #sidebar.sidebar-testimonial {
-    float: left;
-    margin-left: 0;
-    margin-right: 4em;
-    margin-bottom: 3em;
+body #main .container article #sidebar {
+  float: right;
+  width: 346px;
+  margin-left: 4em;
+  text-align: center;
+  position: relative;
+
+  .icon-row .flex-row {
+    border: 0;
+  }
+
+  .home-module-3 {
+    padding-top: 0;
+    background: none;
+    margin-top: 10px;
+
+    &::after {
+      display: none; 
+    }
+
+    .card { 
+      margin-left: 0;
+
+      .card-top {
+        font-size: 24px;
+        background-size: 80% auto;
+      } 
+    }
+
+    .card-secondary {
+      font-size: 14px;
+    }
+
+    .card-secondary img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .btn {
+      font-size: 8px;
+    }
+  }   
+
+  .sidebar-top-dark {
+    background: #33373f;
+    padding: 2.95em 3em;
+    margin-top: 3em;
+
+    p { 
+      margin-bottom: 0;
+      color: $white;
+      font-family: "Poppins", sans-serif;
+      line-height: 1.5;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  .extra-padding {
+    background: #000;
+  }
+
+  .shadow {
+    @include dropshadow();
+  }
+
+  .box {
+    background: $sherpa-secondary-color;
+    padding: 44px;
+    margin-top: 20px;
+
+    h2 {
+      color: $white;
+      line-height: 1.5;
+      font-size: 21px;
+      margin-bottom: 1.25em;
+    }
+
+    a .btn {
+      display: block;
+      clear: both;
+      margin: 0 auto 10px;
+      width: 160px;
+      font-size: 10px;
+      padding: 16px 0;
+      @include dropshadow();
+    }
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    color: $white;
+  }
+
+  h4 {
+    font-size: 19px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: $white;
   }
 }
 
+@include media-breakpoint-up(md) {
+  body #main .container article #sidebar {
+    margin-bottom: 2em;
+    padding-top: 0;
+    z-index: 99;
+    background: none;
+
+    .shadow {
+      @include dropshadow-thin();
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  body #main .container article #sidebar {
+    float: none;
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 2em;
+    background: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  body #main .container {
+    margin-top: 3em;
+    //     padding-left: 0;
+    //     padding-right: 0;
+
+    .content {
+      padding-left: 15px;
+      padding-right: 15px;
+      text-align: center;
+
+      ul:not(.icon-list) {
+        padding-left: 0;
+
+        li {
+          padding-left: 0;
+          margin-left: 0;
+        }
+
+        li::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+body #main .container article .content-contact #sidebar {
+  margin-left: 0;
+  @include media-breakpoint-down(xs) {
+    clear: both;
+  }
+}
+
+body #main .container article #sidebar p.ctf-tweet-text,
+body #main .container article #sidebar p.cff-post-text {
+  color: #9b9b9b;
+  text-align: left;
+}
+
+body #main .container article #sidebar .green-box p {
+  color: #fff;
+}

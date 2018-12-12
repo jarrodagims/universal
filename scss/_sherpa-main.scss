@@ -14,11 +14,9 @@
   Internal Pages
  */
 
-
 /*
   End Internal Pages
  */
-
 
 /*
   CF7 Validation
@@ -31,11 +29,13 @@
   display: inline-block;
 }
 
-div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
   display: none;
 }
 
-div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
   border: 0;
   background: #8a2020;
   clear: both;
@@ -78,11 +78,10 @@ Animations
 }
 
 @include media-breakpoint-down(md) {
-
   .extra-padding {
     padding: 0 15px;
   }
-  
+
   .fade-down {
     opacity: 1;
     transform: none;
@@ -99,6 +98,631 @@ Animations
   }
 }
 
-.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse {
   max-height: none;
+}
+
+body {
+  background: #fff;
+
+  &.blog #main,
+  &.post-template-default #main,
+  &.error404 #main {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 100px;
+
+    @include media-breakpoint-up(md) {
+      h1 {
+        margin-bottom: 1em;
+      }
+    }
+
+    img {
+      height: 214px;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    &.blog #main,
+    &.post-template-default #main {
+      img {
+        height: auto;
+      }
+    }
+
+    //     .flex-order {
+    //       display: flex;
+    //       flex-direction: column;
+
+    //       .container-fluid {
+    //         width: 100%;
+    //       }
+
+    //       .xs-order-1 {
+    //         order: -1;
+    //       }
+
+    //       .xs-order-2 {
+    //         order: -1;
+    //       }
+
+    //       .xs-order-3 {
+    //         order: 0;
+    //       }
+    //     }
+  }
+
+  .edit-screen {
+    position: absolute;
+    width: 480px;
+    left: 0;
+    top: 46px;
+    z-index: 99;
+    background-repeat: no-repeat;
+    background-size: 480px auto;
+    opacity: 0.5;
+  }
+
+  .testimonials-widget {
+    .btn {
+      width: 148px;
+    }
+  }
+
+  #main {
+    .container {
+      .navbar-right {
+        li.menu-item {
+          a {
+            float: left;
+          }
+
+          &.directions a {
+            @include svg-map(137ccd);
+
+            &:hover {
+              @include svg-map($sherpa-svg-color-hover);
+            }
+          }
+
+          &.contact {
+            margin-left: 0;
+            margin-right: 0;
+          }
+
+          &.contact a {
+            @include svg-contact(137ccd);
+            margin-left: 20px;
+            margin-right: 20px;
+
+            &:hover {
+              @include svg-contact(F25F2B);
+            }
+          }
+
+          &.directions:after {
+            background: #606060;
+          }
+        }
+      }
+
+      article {
+        .ngg-galleryoverview {
+          width: auto !important;
+          clear: none !important;
+        }
+
+        .columns {
+          display: flex;
+          flex-direction: row;
+
+          > div {
+            width: 50%;
+          }
+        }
+
+        h1 {
+          color: #606060;
+          font-size: 32px;
+          @include raleway();
+
+          span {
+            margin-top: 0;
+          }
+          &.no-margin {
+            margin-bottom: 0;
+          }
+        }
+
+        h2,
+        h3 {
+          @include raleway();
+          color: #606060;
+          font-size: 25px;
+        }
+
+        p.blurb {
+          color: $sherpa-brand-primary;
+          font-weight: 300;
+          font-family: "Poppins", sans-serif;
+          font-size: 20px;
+        }
+
+        p {
+          font-weight: 300;
+          color: #606060;
+        }
+
+        h2 {
+          font-size: 20px;
+          color: $sherpa-brand-primary;
+        }
+
+        h3,
+        h2 {
+          ul {
+            line-height: 1;
+            font-family: "Roboto", sans-serif;
+          }
+        }
+
+        ul {
+          color: #606060;
+        }
+
+        @include media-breakpoint-up(md) {
+          h1 {
+            margin-top: 0;
+            line-height: 1.5;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          .columns {
+            flex-direction: column;
+            display: flex;
+
+            > div {
+              width: 100%;
+            }
+          }
+        }
+
+        @include media-breakpoint-down(xs) {
+          h1 {
+            text-align: center;
+            line-height: 1.5;
+            margin-top: 0;
+            font-size: 19px;
+            margin-bottom: 1em !important;
+          }
+
+          ul {
+            font-size: 15px;
+          }
+
+          h3,
+          h2 {
+            &.list {
+              text-align: center;
+            }
+
+            ul {
+              padding-left: 0;
+              list-style: none;
+              margin-bottom: 0;
+            }
+
+            ul li {
+              text-align: center;
+              margin-bottom: 1em;
+              font-size: 14px;
+            }
+          }
+        }
+
+        h1,
+        h2,
+        h3 {
+          ul {
+            display: none;
+          }
+
+          &.expanded ul {
+            display: block;
+          }
+        }
+
+        .page-bottom {
+          padding-top: 2em;
+
+          strong.header {
+            color: $sherpa-brand-primary;
+          }
+
+          @include media-breakpoint-down(xs) {
+            padding-top: 0;
+          }
+        }
+
+        .banner-bottom {
+          clear: both;
+          position: relative;
+          position: relative;
+          color: #fff;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          overflow: hidden;
+          padding: 0 0;
+          text-align: center;
+          margin: 0 auto;
+          background-size: cover;
+
+          @include media-breakpoint-up(md) {
+            height: 256px;
+          }
+
+          .banner-text {
+            z-index: 1;
+            position: absolute;
+            font-size: 21px;
+            @include raleway();
+            width: 369px;
+            height: 100%;
+            background: $sherpa-dark-color;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            font-weight: 300;
+            display: flex;
+            flex-direction: column;
+
+            p {
+              font-size: 25px;
+              margin: 0 0;
+              padding: 0 0;
+              line-height: 1.5;
+              font-weight: 400;
+              color: #29292c;
+            }
+
+            strong {
+              color: $sherpa-brand-primary;
+              font-size: 21px;
+              font-weight: 500;
+              font-family: "Roboto", sans-serif;
+            }
+
+            .btn {
+              margin-left: 0;
+              margin-top: 1em;
+            }
+
+            @include media-breakpoint-down(sm) {
+              font-size: 1em;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 100%;
+              flex-direction: column;
+              padding: 1em;
+
+              strong {
+                display: block;
+              }
+
+              .banner-text {
+                margin: 0 auto;
+                flex-direction: column;
+                color: $white;
+              }
+            }
+
+            @include media-breakpoint-down(xs) {
+              position: relative;
+
+              .btn {
+                margin: 1em auto;
+                display: block;
+              }
+            }
+          }
+
+          img {
+            z-index: -1;
+          }
+
+          @include media-breakpoint-down(sm) {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: auto;
+            max-height: 100%;
+            background: none;
+            margin-bottom: 0;
+          }
+
+          @include media-breakpoint-down(xs) {
+            flex-direction: column-reverse;
+            img {
+              margin-bottom: 1em;
+            }
+          }
+        }
+
+        h1 {
+          margin-bottom: 1.5em;
+          line-height: 1.5;
+          font-size: 30px;
+          color: #606060;
+          font-weight: 300;
+          font-family: 'Poppins', sans-serif;
+        }
+
+        min-height: 10em;
+        padding: 0 0 3em;
+
+        .blurb {
+          font-size: 22px;
+          margin-bottom: 2em;
+          font-weight: 300;
+          line-height: 1.5;
+        }
+      }
+
+      strong.header {
+        font-size: 23px;
+        font-weight: 300;
+        margin-bottom: 0;
+        display: block;
+        font-family: "Raleway", sans-serif;
+        color: $sherpa-dark-color;
+      }
+
+      .flex-row strong.header {
+        margin-bottom: 0;
+      }
+
+      .sidebar-content {
+        ul:not(.flex-row) {
+          list-style: none;
+          padding-left: 1em;
+
+          li {
+            position: relative;
+            padding-left: 1em;
+
+            h3 {
+              font-size: 1em;
+              margin-bottom: 0;
+            }
+          }
+
+          li::before {
+            content: "";
+            border-radius: 100%;
+            background: #4f4f4f;
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            left: 0;
+            display: block;
+            top: 0.5em;
+          }
+
+          &.double-list {
+            > li {
+              padding-left: 0;
+              width: 50%;
+
+              &::before {
+                display: none;
+              }
+            }
+
+            @include media-breakpoint-down(sm) {
+              > li {
+                width: 100%;
+              }
+
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      ul,
+      ol {
+        margin-bottom: 3em;
+        margin-left: 0;
+      }
+
+      h2 {
+        margin-bottom: 1em;
+      }
+
+      ul li,
+      ol li {
+        margin-bottom: 0.5em;
+        position: relative;
+        line-height: 1.5;
+        font-weight: 300;
+      }
+
+      h2,
+      h3 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 1.5em;
+
+        @include media-breakpoint-down(xs) {
+          &.expander {
+            margin-bottom: 0;
+            text-align: center;
+          }
+        }
+      }
+
+      .page-content h2,
+      .page-content h3 {
+        margin-top: 0;
+        font-weight: 300;
+        line-height: 1.5;
+        color: $sherpa-brand-primary;
+        opacity: 0.75;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      @include media-breakpoint-up(sm) {
+        article {
+          .map-container {
+            width: 50%;
+          }
+
+          p {
+            margin-bottom: 3em;
+          }
+
+          p,
+          ul {
+            font-size: 16px;
+          }
+
+          .contact-info p {
+            font-size: 14px;
+            margin: 0.75em 0;
+            color: #606060;
+          }
+        }
+      }
+    }
+  }
+}
+
+body #main {
+  article p.no-margin {
+    margin-bottom: 1.2em;
+  }
+
+  article ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 3em;
+    margin-left: 1em;
+
+    li ul {
+      margin-top: 1em;
+    }
+  }
+
+  .page-top {
+    background: #f2f2f2;
+    text-align: center;
+    padding: 3em 0;
+
+    @include media-breakpoint-up(md) {
+      padding: 5.5em 0;
+
+      h2 {
+        line-height: 1.8;
+        margin-top: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+
+      p {
+        line-height: 2;
+        font-size: 19px;
+      }
+
+      p.blurb {
+        line-height: 1.5;
+        font-size: 25px;
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      color: #7a7a7a;
+    }
+
+    p {
+      color: #7a7a7a;
+    }
+
+    .container {
+      p.blurb {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .page-template-default,
+  .blog,
+  .error-404, 
+  .post-template-default {
+    #header {
+      position: relative;
+    }
+
+    .sidebar-content {
+      margin-top: 0;
+    }
+  }
+
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  #sidebar {
+    order: 2; 
+  }
+ 
+  .map-container {
+    width: 100%;
+  }
+
+  body #main .container article {
+    padding-bottom: 0;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  body #main .container .flex-wrap article {
+    margin-bottom: 2em;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  body #main .container .flex-wrap article {
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .two-column {
+    column-count: 2;
+  }
+
+  .page-template-default,
+  .blog,
+  .error-404,
+  .post-template-default {
+    .internal-banner .navbar-brand {
+      margin-left: -14px;
+    }
+  }
 }

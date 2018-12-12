@@ -3,17 +3,7 @@
 /*
     Template Name: Home
 */ ?>
-<div class="container ">
-    <div class="row">
-        <div class="col-xs-12 text-center">
-            <a id="header-logo" class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.svg"
-                    alt="<?php echo get_bloginfo(
-                            'description'
-                        ); ?>" /></a>
-        </div>
-    </div>
-</div>
-</div> <!-- end home-bg -->
+
 <section class="home-module-1">
     <div class="jumbotron">
         <div class="jumbo-content">
@@ -102,7 +92,8 @@
                             <?php echo get_template_part('template-parts/icons/icon','1') ?>
                             <h3>Express Ironing </h3>
                             <p>Need a shirt or dress ironed as soon as possible?
-                                Don’t worry, we’ll take care of it! In 15-20 minutes, your article of clothing will
+                                Don’t worry, we’ll take care of it! In <strong>15-20 minutes</strong>, your article of
+                                clothing will
                                 look good as new.</p>
                         </div>
                     </div>
