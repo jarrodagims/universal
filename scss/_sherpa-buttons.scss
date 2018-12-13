@@ -9,43 +9,26 @@
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   transition: background-color 0.2s ease-in-out;
-  background: $sherpa-secondary-color;
+   background : #CCCCCC;
+  background : rgba(204, 204, 204, 0.66);
   font-weight: 600;
   color: $white; 
   transition: transform 300ms ease-in-out;
   border: transparent;
-  border-radius: 8px;
+  border-radius: 0;
   text-transform: uppercase;
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background: darken($sherpa-secondary-color, 10%);
   
-  &::before {
-    background: linear-gradient(90deg, rgba(0,180,235,1) 0%, rgba(0,55,255,1) 100%);
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 101%;
-    border-radius: 10px;
-    height: 100%;
-    transition: all 300ms ease-in-out;
-    z-index: -1;
-  }
-
    &:hover {
-    background: darken($sherpa-secondary-color, 10%);
+    background: darken(#CCCCCC, 10%);
     color: $white;
-
-    &::before {
-      opacity: 0;
-    }
   }
 
   &:focus, &:active, &:visited {
     border: 0 !important;
-    background: darken($sherpa-secondary-color, 10%);
+    background: darken(#CCCCCC, 10%);
   }
 
   &.btn-default {

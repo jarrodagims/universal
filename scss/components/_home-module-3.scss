@@ -1,165 +1,20 @@
 .home-module-3 {
-    padding: 6em 0;
-    @include shape();
-    background-repeat: no-repeat;
-    background-position: right 0;
-    background-size: 50%;
+    background: url('../img/bg-beverages.png') right 0 no-repeat;
+    background-size: 50% auto;
 
-    .card {
-        background: $white;
-        margin-bottom: 1em;
 
-       .card-top {
-            font-size: 33px;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            color: #1A1A1A;
-            padding-top: 4em;
-            padding-bottom: .5em;
-            background: url('../img/bg-sidebar-top.jpg') right 0 no-repeat;
-            background-size: 80% auto;
-
-            span {
-                color: $sherpa-brand-primary;
-            }
-        }
-
-        .card-bottom {
-            padding-bottom: 2em;
-        }
-    }
-
-    @include media-breakpoint-between(sm,lg) {
-        .card {
-            .card-top {
-                background-size: 80% auto;
-                font-size: 24px;
-            }
-        }
-    }
-
-    @include media-breakpoint-between(xs,md) {
-      background-position: calc(100vw - 150px) 0;
-    }
-
-    h2 {
-        font-size: 20px;
-        color: $sherpa-brand-primary;
+    h1 {
         font-family: 'Poppins', sans-serif;
-    }
+        font-weight: 700;
+        font-size: 101px;
+        color: #33373F;
 
-    p.blurb {
-        font-size: 25px;
-        font-family: 'Poppins', sans-serif;
-    }
-
-    .card.card-secondary {
-      background: url('../img/bg-sidebar-bottom.jpg') 0 0 no-repeat;
-      background-size: cover;
-      color: $white;
-      font-size: 18px;
-      font-family: 'Poppins', sans-serif;
-      padding: 2em 15px;
-      text-align: left;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      align-items: center;
-
-      img {
-          height: 150px;
-          margin-left: .5em;
-      }
-
-      .row {
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-      }
-
-      .col {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-      }
-
-    }
-
-    .card {
-        margin-left: 80px;
-        margin-bottom: 10px;
-    }
-
-   
-
-    @include media-breakpoint-down(md) {
-        text-align: center;
-        padding: 3em 0 0;
-        background: none;
-
-        .card {
-            margin-left: 0;
-            padding: 0 0;
-            margin-top: 2em;
-            margin-bottom: 0;
-
-            .card-top {
-                font-size: 27px;
-                padding-left: .5em;
-                padding-right: .5em;
-                padding-top: 5em;
-                background-size: 60% auto;
-                background-position: right 0;
-            }
-
-            &.card-secondary {
-                margin-top: 0;
-                margin-bottom: 0;
-                font-size: 15px;
-
-                img {
-                    width: 120px;
-                    height: 120px;
-                }
-            }
-        }
-
-        
-
-        .row {
-            flex-direction: column;
-
-            .col {
-                flex: 1;
-            }
-
-            .col:last-child {
-                padding: 0 0;
-            }
-        }
-
-        h2 {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        p.blurb {
-            font-size: 20px;
-            margin-top: 1em;
-        }
-
-        p {
-            font-size: 15px;
-        }
-    }
-
-     @include media-breakpoint-down(sm) {
-        .card {
-            .card-top {
-                background-size: 80% auto;
-            }
+        span {
+            display: block;
+            font-weight: 300;
+            @include raleway();
+            font-size: 41px;
+            color: #999B95;
         }
     }
 }

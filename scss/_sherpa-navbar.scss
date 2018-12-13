@@ -159,7 +159,7 @@
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-grow: 1; 
   flex-basis: 0;
@@ -172,10 +172,17 @@
   .navbar-brand {
     margin-right: auto;
   }
+
+  .navbar-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #A0967F !important;
+  color: #fff !important;
 
   &:hover {
     color: $white !important;
@@ -185,7 +192,7 @@
 .top-header {
   position: relative;
   z-index: 99;
-  background: #1A1A1A;
+  background: #000;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -216,11 +223,9 @@
 
 .navbar-nav.navbar-right { 
   flex-direction: row;
-  position: absolute;
-  right: 20px;
+  left: 20px;
   top: 50%;
-  transform: translateY(-50%);
-
+  margin-right: 20px;
 
   li.menu-item {
     position: relative;

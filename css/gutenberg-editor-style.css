@@ -1,0 +1,4 @@
+html .mceContentBody,
+.wp-block {
+  max-width: 100%;
+}

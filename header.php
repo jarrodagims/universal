@@ -37,28 +37,22 @@
     </p>
     <![endif]-->
     <div class="top-header <?php if(!is_front_page()) : ?>internal<?php endif; ?>">
-        <div class="container">
+        <div class="container-fluid">
             <div class="v-align">
                 <div class="col-xs-12 navbar-button text-center">
+                    <div class="navbar-left">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="menu-item directions"><a href="<?php echo get_site_url() ?>/contact/"><span>6455
+                                        Hiller Suite 10, El Paso, Texas 79925</span></a></a></li>
+                            <li class="menu-item contact"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><span>Call
+                                        Us Today!
+                                        <?php printPhone(); ?></span></a></li>
+                        </ul>
+                        <img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="22" />
+
+                    </div>
                     <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="menu-item directions"><a href="<?php echo get_site_url() ?>/contact/"><span>6455
-                                    Hiller Suite 10, El Paso, Texas 79925</span></a></a></li>
-                        <li class="menu-item contact"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><span>Call
-                                    Us Today!
-                                    <?php printPhone(); ?></span></a></li>
-                    </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="container ">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <a id="header-logo" class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.svg"
-                        alt="<?php echo get_bloginfo(
-                            'description'
-                        ); ?>" /></a>
             </div>
         </div>
     </div>

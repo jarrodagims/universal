@@ -180,7 +180,7 @@
   text-align: center;
   overflow: hidden;
   list-style: none;
-  background: #1A1A1A;
+  background: #33373F;
 
   .container {
     width: 100%;
@@ -246,7 +246,7 @@
       height: 10px;
       border-left: 7px solid transparent;
       border-right: 7px solid transparent;
-      border-bottom: 7px solid $sherpa-brand-primary;
+      border-bottom: 7px solid $sherpa-secondary-color;
       content: '';
       bottom: 0;
       opacity: 0;

@@ -48,101 +48,7 @@ body #main .container article #sidebar {
   text-align: center;
   position: relative;
 
-  .icon-row .flex-row {
-    border: 0;
-  }
-
-  .home-module-3 {
-    padding-top: 0;
-    background: none;
-    margin-top: 10px;
-
-    &::after {
-      display: none; 
-    }
-
-    .card { 
-      margin-left: 0;
-
-      .card-top {
-        font-size: 24px;
-        background-size: 80% auto;
-      } 
-    }
-
-    .card-secondary {
-      font-size: 14px;
-    }
-
-    .card-secondary img {
-      width: 100px;
-      height: 100px;
-    }
-
-    .btn {
-      font-size: 8px;
-    }
-  }   
-
-  .sidebar-top-dark {
-    background: #33373f;
-    padding: 2.95em 3em;
-    margin-top: 3em;
-
-    p { 
-      margin-bottom: 0;
-      color: $white;
-      font-family: "Poppins", sans-serif;
-      line-height: 1.5;
-      font-size: 20px;
-      font-weight: 400;
-    }
-  }
-
-  .extra-padding {
-    background: #000;
-  }
-
-  .shadow {
-    @include dropshadow();
-  }
-
-  .box {
-    background: $sherpa-secondary-color;
-    padding: 44px;
-    margin-top: 20px;
-
-    h2 {
-      color: $white;
-      line-height: 1.5;
-      font-size: 21px;
-      margin-bottom: 1.25em;
-    }
-
-    a .btn {
-      display: block;
-      clear: both;
-      margin: 0 auto 10px;
-      width: 160px;
-      font-size: 10px;
-      padding: 16px 0;
-      @include dropshadow();
-    }
-  }
-
-  h3 {
-    font-size: 26px;
-    line-height: 1.5;
-    font-family: "Roboto", sans-serif;
-    color: $white;
-  }
-
-  h4 {
-    font-size: 19px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    color: $white;
-  }
+  
 }
 
 @include media-breakpoint-up(md) {
@@ -210,4 +116,36 @@ body #main .container article #sidebar p.cff-post-text {
 
 body #main .container article #sidebar .green-box p {
   color: #fff;
+}
+
+
+.sidebar {
+
+    .sidebar-top {
+        background: url('../img/bg-sidebar-top.jpg') 0 0 no-repeat;
+        background-size: cover;
+        text-align: center;
+        height: 415px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto;
+        }
+    }
+
+    .sidebar-bottom {
+      background: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+
+      img {
+        margin-right: 1em;
+      }
+    }
 }

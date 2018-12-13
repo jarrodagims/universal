@@ -1,59 +1,40 @@
 .home-module-1 {
-  .navbar-sherpa {
-    padding: 0 0;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  background: url('../img/bg-hero.jpg')center 0 no-repeat;
+  background: url("../img/bg-hero.jpg") center 0 no-repeat;
   background-size: cover;
 
   .jumbotron {
-    height: 480px;
+    height: auto;
     margin-bottom: 0;
   }
 
-
   .jumbo-content {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
 
     h1 {
       margin-top: 1em;
       font-size: 25px;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 1em;
-
 
       span {
         display: block;
         font-size: 39px;
         text-transform: none;
-        margin-top: .5em;
+        margin-top: 0.5em;
         margin-bottom: 0;
         letter-spacing: 0;
       }
     }
-
-    .btn {
-      @include gradient-faded();
-
-      &:hover {
-        background: $sherpa-secondary-color;
-      }
-    }
-
-
-    .btn::before { 
-        @include gradient-faded();
-    }
   }
 
-  
-
   @include media-breakpoint-down(md) {
-
-     background: url('../img/bg-hero-mobile.jpg') center 0 no-repeat;
-     background-size: cover;
+    background: url("../img/bg-hero-mobile.jpg") center 0 no-repeat;
+    background-size: cover;
 
     .jumbotron {
       padding: 3em;
@@ -61,18 +42,15 @@
     }
 
     .jumbo-content {
-
       h1 {
         font-size: 15px;
         margin-top: 0;
 
         span {
-          font-size: 30px; 
+          font-size: 30px;
           line-height: 1.5;
         }
       }
     }
   }
-
 }
-
