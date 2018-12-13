@@ -165,6 +165,10 @@
   flex-basis: 0;
   position: relative;
 
+  @include media-breakpoint-down(md) {
+    height: 50px;
+  }
+
   .navbar-brand {
     margin-right: auto;
   }

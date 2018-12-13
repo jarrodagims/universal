@@ -12,7 +12,7 @@
                 <span>High-Quality Ironing Services in El Paso</span>
             </h1>
 
-            <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact
+            <a href="<?=SITEURL?>/contact/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact
                     Us Today</button></a>
         </div>
     </div>
@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="card-bottom">
-                        <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0"
+                        <a href="<?=SITEURL?>/contact/" class="header-button"><button class="btn btn-primary my-2 my-sm-0"
                                 type="submit">Contact Us Today</button></a>
                     </div>
                 </div>
@@ -92,28 +92,22 @@
                             <?php echo get_template_part('template-parts/icons/icon','1') ?>
                             <h3>Express Ironing </h3>
                             <p>Need a shirt or dress ironed as soon as possible?
-                                Don’t worry, we’ll take care of it! In <strong>15-20 minutes</strong>, your article of
-                                clothing will
-                                look good as new.</p>
+                                <span class="br-md">
+                                    Don’t worry, we’ll take care of it! In <strong>15-20 minutes</strong>, your article
+                                    of
+                                    clothing will
+                                    look good as new.
+                                </span></p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="box">
+                        <div class="box darker">
                             <?php echo get_template_part('template-parts/icons/icon','2') ?>
 
-                            <h3>Quality Ironing Services</h3>
-                            <p>Bring us your clean clothes and we’ll iron it all for you!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col flex-col">
-                <div class="row">
-                    <div class="col">
-                        <div class="box">
-                            <?php echo get_template_part('template-parts/icons/icon','1') ?>
+
+
                             <h3>Corporate Ironing Services</h3>
                             <p>Quality Iron Maid also offers corporate ironing services to local companies. We’ve
                                 worked with hotels, border patrol, and the Sun Metro in the past so we can take care of
@@ -121,9 +115,20 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col flex-col">
                 <div class="row">
                     <div class="col">
-                        <div class="box">
+                        <div class="box darkest">
+                            <?php echo get_template_part('template-parts/icons/icon','5') ?>
+                            <h3>Quality Ironing Services</h3>
+                            <p>Bring us your clean clothes and we’ll <span class="br-md">iron it all for you!</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="box darker longer">
                             <?php echo get_template_part('template-parts/icons/icon','3') ?>
                             <h3>Fast Turnaround</h3>
                             <p>Since we will iron freshly laundered clothing, the turnaround time on orders is usually
@@ -135,9 +140,9 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <div class="box">
+                        <div class="box darkest">
                             <?php echo get_template_part('template-parts/icons/icon','4') ?>
-                            <h3>Dry Cleaning Services Available</h3>
+                            <h3>Dry Cleaning <span class="br-md">Services Available</span></h3>
                             <p>We understand that sometimes dry cleaning services do become necessary. For this reason,
                                 we offer dry cleaning services through a partner. If you’re interested in dry cleaning,
                                 give our team a call!</p>

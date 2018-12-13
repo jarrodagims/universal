@@ -15,7 +15,7 @@
                 <div>
                     <span class="title">Address</span>
                     <p>
-                        1475 George Dieter Street<br />
+                        1475 George Dieter Dr<br />
                         Suite C<br />
                         El Paso, TX 79936<br />
                         PH. (915) 320-6795
@@ -34,7 +34,7 @@
             </div>
             <div class="button-footer">
                 <div>
-                    <a href="<?= SITEURL ?>/contact-us/">
+                    <a href="<?= SITEURL ?>/contact/">
                         <button class="btn btn-primary">
                             Contact us today
                         </button>

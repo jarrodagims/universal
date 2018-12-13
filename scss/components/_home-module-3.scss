@@ -17,6 +17,7 @@
             padding-top: 4em;
             padding-bottom: .5em;
             background: url('../img/bg-sidebar-top.jpg') right 0 no-repeat;
+            background-size: 80% auto;
 
             span {
                 color: $sherpa-brand-primary;
@@ -26,6 +27,19 @@
         .card-bottom {
             padding-bottom: 2em;
         }
+    }
+
+    @include media-breakpoint-between(sm,lg) {
+        .card {
+            .card-top {
+                background-size: 80% auto;
+                font-size: 24px;
+            }
+        }
+    }
+
+    @include media-breakpoint-between(xs,md) {
+      background-position: calc(100vw - 150px) 0;
     }
 
     h2 {
@@ -78,9 +92,12 @@
         margin-bottom: 10px;
     }
 
+   
+
     @include media-breakpoint-down(md) {
         text-align: center;
         padding: 3em 0 0;
+        background: none;
 
         .card {
             margin-left: 0;
@@ -92,7 +109,9 @@
                 font-size: 27px;
                 padding-left: .5em;
                 padding-right: .5em;
-                background-size: 80% auto;
+                padding-top: 5em;
+                background-size: 60% auto;
+                background-position: right 0;
             }
 
             &.card-secondary {
@@ -133,6 +152,14 @@
 
         p {
             font-size: 15px;
+        }
+    }
+
+     @include media-breakpoint-down(sm) {
+        .card {
+            .card-top {
+                background-size: 80% auto;
+            }
         }
     }
 }

@@ -33,7 +33,22 @@
         letter-spacing: 0;
       }
     }
+
+    .btn {
+      @include gradient-faded();
+
+      &:hover {
+        background: $sherpa-secondary-color;
+      }
+    }
+
+
+    .btn::before { 
+        @include gradient-faded();
+    }
   }
+
+  
 
   @include media-breakpoint-down(md) {
 

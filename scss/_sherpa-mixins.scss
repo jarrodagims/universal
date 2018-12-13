@@ -1,73 +1,69 @@
-
 @mixin sm-lighten($color) {
-	background-color: $color;
-	&:hover,
-	&:active,
-	&:focus {
-		background-color: lighten($color, 10%);
-	}
+  background-color: $color;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: lighten($color, 10%);
+  }
 }
 
 @mixin sm-darken($color) {
-	background-color: $color;
-	&:hover,
-	&:active,
-	&:focus {
-		background-color: darken($color, 10%);
-	}
+  background-color: $color;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($color, 10%);
+  }
 }
 
 @mixin sm-single-color($scolor, $color) {
-	background-color: $scolor;
-	&:hover,
-	&:active,
-	&:focus {
-		background-color: $color;
-	}
+  background-color: $scolor;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color;
+  }
 }
 
 @mixin expander($background) {
-	cursor: pointer;
-	span {
-		position: relative;
-		padding-right: calc(20px + .5em);
-		&::after {
-			@include svg-filled-arrow(137CCD);
-			content: '';
-			display: block;
-			height: 20px;
-			width: 20px;
-			position: absolute;
-			right: 0;
-			top: 50%;
-			transform: translateY(-50%);
-			transition: transform ease-in-out 300ms;
-			background-repeat: no-repeat;
-		}
-	}
+  cursor: pointer;
+  span {
+    position: relative;
+    padding-right: calc(20px + 0.5em);
+    &::after {
+      @include svg-chevron(_trim($sherpa-brand-primary));
+      content: "";
+      display: block;
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform ease-in-out 300ms;
+      background-repeat: no-repeat;
+    }
+  }
 
-	&:hover span::after {
-			@include svg-filled-arrow(F25F2B);
-		}
+  &:hover span::after {
+    @include svg-chevron(_trim($sherpa-brand-primary));
+  }
 
+  &.expanded {
+    span::after {
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
 
-
-	&.expanded {
-
-		span::after {
-			transform: translateY(-50%) rotate(180deg);
-		}
-	}
-
-	span {
-		display: inline-block;
-	}
+  span {
+    display: inline-block;
+  }
 }
 
-
-h1, h2, h3 {
-
-	&.expander {
-		@include expander(#ff0000);
-	}
+h1,
+h2,
+h3 {
+  &.expander {
+    @include expander(#ff0000);
+  }
 }

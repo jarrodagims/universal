@@ -571,6 +571,10 @@
 
    @media screen and (max-width: 992px) {
 
+     .col {
+       justify-content: center;
+     }
+
       .flex-col {
         flex-direction: column;
       }

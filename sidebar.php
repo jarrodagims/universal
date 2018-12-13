@@ -1,5 +1,5 @@
 <div id="sidebar">
-    <?php if (is_page('contact-us')) : ?>
+    <?php if (is_page('contact')) : ?>
     <div id="contact-form">
         <?php if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
                 echo do_shortcode('[contact-form-7 id="74" title="Contact Form"]');
@@ -10,7 +10,7 @@
     </div>
 </div>
 <?php endif; ?>
-<?php if (!is_page('contact-us')) : ?>
+<?php if (!is_page('contact')) : ?>
 <section class="home-module-2">
     <section class="icon-row">
         <?php echo get_template_part('template-parts/icon', 'row'); ?>
@@ -23,7 +23,7 @@
         </div>
 
         <div class="card-bottom">
-            <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact
+            <a href="<?=SITEURL?>/contact/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact
                     Us Today</button></a>
         </div>
     </div>

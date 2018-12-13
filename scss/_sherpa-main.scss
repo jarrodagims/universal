@@ -111,7 +111,7 @@ body {
   &.error404 #main {
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 100px;
+    margin-top: 0px;
 
     @include media-breakpoint-up(md) {
       h1 {
@@ -279,6 +279,7 @@ body {
           }
         }
 
+
         @include media-breakpoint-down(sm) {
           .columns {
             flex-direction: column;
@@ -290,7 +291,7 @@ body {
           }
         }
 
-        @include media-breakpoint-down(xs) {
+        @include media-breakpoint-down(md) {
           h1 {
             text-align: center;
             line-height: 1.5;
@@ -462,6 +463,26 @@ body {
           font-family: 'Poppins', sans-serif;
         }
 
+        @include media-breakpoint-down(md) {
+
+          h1 {
+            font-size: 22px;
+          }
+
+          p.blurb {
+            font-size: 15px;
+          }
+
+          h2 {
+            font-size: 19px;
+          }
+
+          p {
+            font-size: 15px;
+          }
+        
+        }
+
         min-height: 10em;
         padding: 0 0 3em;
 
@@ -574,6 +595,10 @@ body {
         color: $sherpa-brand-primary;
         opacity: 0.75;
         font-family: 'Poppins', sans-serif;
+
+        &.expander {
+          @include expander($sherpa-brand-primary);
+        }
       }
 
       @include media-breakpoint-up(sm) {
@@ -661,7 +686,7 @@ body #main {
   }
 }
 
-@include media-breakpoint-down(xs) {
+@include media-breakpoint-down(md) {
   .page-template-default,
   .blog,
   .error-404, 
