@@ -1,46 +1,11 @@
 .home-module-4 {
-    background: #0D5572;
-    color: $white;
-    position: relative;
-    text-align: center;
-    padding: 5.5em 0;
-    font-family: 'Poppins', sans-serif;
+   padding: 7em 0;
+   background: url('../img/bg-game.jpg') 0 0 no-repeat;
+   background-size: cover;
+   color: #fff;
 
-    h2 {
-      font-size: 19px;
-      color: $white;
-      text-align: center;
-    }
-
-    p {
-      font-size: 25px;
-      line-height: 1.5;
-    }
-
-    &::before {
-      content: '';
-      width: 100%;
-      height: 8px;
-      @include gradient();
-      display: block;
-      position: absolute;
-      top: 0;
-    }
-
-  @include media-breakpoint-down(md) {
-    padding: 2em 0;
-
-    h2 {
-      font-size: 20px;
-    }
-
-    p {
-      font-size: 15px;
-      margin-bottom: 0;
-    }
-
-     &::before {
-       height: 3px;
-     }
-  }
+   h2 {
+     color: #fff;
+     font-size: 36px;
+   }
 }

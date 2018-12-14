@@ -29,7 +29,7 @@
 <section class="home-module-3">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col col-md-6">
                 <h1>Bar <img src="<?=IMGURL?>and.svg" alt="And" height="50" /> Grill
                     <span>Where Good Times Happen and Memories are Made</span>
                 </h1>
@@ -46,18 +46,26 @@
                     new people, enjoy the game, a good joke, great jams, or
                     engaging conversation.</p>
             </div>
-            <div class="col col-md-5">
+            <div class="col col-md-5 offset-md-1">
+                <?php get_sidebar(); ?>
+            </div>
+        </div>
+    </div>
+</section>
 
-                <div class="sidebar">
-                    <div class="sidebar-top">
-                        <img src="<?=IMGURL?>our-grill.svg" alt="Our Grill" />
-                    </div>
-                    <div class="sidebar-bottom">
-                        <img src="<?=IMGURL?>uber-eats-logo.png" alt="Uber Eats" />
+<section class="home-module-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>What We Do</h2>
 
-                        <a href=""><img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="20" /></a>
-                    </div>
-                </div>
+                <p>
+                    We provide El Paso with a place to relax and enjoy time with friends and family. Live life to the
+                    fullest and enjoy an evening at Crown & Eagle sports bar. Our friendly staff and bartenders are
+                    ready to serve you!
+                </p>
+            </div>
+            <div class="col">
             </div>
         </div>
     </div>
