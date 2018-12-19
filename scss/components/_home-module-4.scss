@@ -1,8 +1,14 @@
 .home-module-4 {
-   padding: 11em 0;
+  
    background: url('../img/bg-game.jpg') 0 0 no-repeat;
    background-size: cover;
    color: #fff;
+
+   .container {
+       @include drop-tag();
+        padding-top: 11em;
+        padding-bottom: 11em;
+   }
 
    h2 {
      color: #fff;
@@ -15,5 +21,26 @@
        font-size: 17px;
        line-height: 2;
        margin-bottom: 0;
+   }
+
+   @include media-breakpoint-down(md) {
+       text-align: center;
+
+       .container {
+           padding: 3.5em 3em;
+
+           &::before {
+             right: 30px;
+           }
+       }
+
+
+       h2 {
+           font-size: 18px;
+       }
+
+       p {
+           font-size: 15px;
+       }
    }
 }

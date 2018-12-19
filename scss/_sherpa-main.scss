@@ -705,6 +705,8 @@ body #main {
 
   #sidebar {
     order: 2;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .map-container {
@@ -713,6 +715,14 @@ body #main {
 
   body #main .container article {
     padding-bottom: 0;
+  }
+
+  .row {
+    flex-direction: column;
+
+    .col {
+      flex: 1;
+    }
   }
 }
 

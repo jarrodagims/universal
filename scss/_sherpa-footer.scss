@@ -86,7 +86,7 @@
   .btn {
     letter-spacing: 1px;
     margin-bottom: 0;
-    padding: 1.5em 4em;
+    padding: 1.5em 2em;
     font-size: 11px;
     text-transform: uppercase;
   }
@@ -588,7 +588,7 @@
       padding: 0 1em;
 
       &:hover {
-        color: $sherpa-brand-primary;
+        color: $sherpa-secondary-color;
       }
     }
 

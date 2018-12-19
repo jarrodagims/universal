@@ -2,6 +2,15 @@
     background: #000;
     color: #fff;
 
+    .container {
+        @include drop-tag();
+       
+
+        &::before {
+          right: 0;
+        }
+      }
+
     p {
         font-size: 17px;
         font-family: 'Poppins', sans-serif;
@@ -15,8 +24,10 @@
     }
 
     .col {
-        padding: 7.5em 0;
+        padding-top: 6.25em;
+        padding-bottom: 6.25em;
     }
+
 
     .col:first-child {
         position: relative;

@@ -67,3 +67,25 @@ h3 {
     @include expander(#ff0000);
   }
 }
+
+@mixin drop-tag() {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 129px;
+    height: 60px;
+    display: block;
+    background: $sherpa-secondary-color;
+    position: absolute;
+    top: 0;
+    @include dropshadow();
+  }
+
+  @include media-breakpoint-down(md) {
+    &::before {
+      height: 39px;
+      width: 67px;
+    }
+  }
+}

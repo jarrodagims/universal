@@ -18,15 +18,14 @@
 // Special components
 @import "mixins";
 @import "icons";
-@import "components/index";
 @import "sherpa-mixins";
+@import "components/index";
 @import "sherpa-navbar";
 @import "sherpa-buttons";
-@import "sherpa-general"; 
+@import "sherpa-general";
 //@import "sherpa-socialmedia";
 
-
-// Sections 
+// Sections
 @import "sherpa-header";
 @import "sherpa-main";
 @import "sherpa-sidebar";
@@ -36,4 +35,3 @@
 @import "sherpa-home";
 
 @import "typography";
-

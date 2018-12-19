@@ -2,4 +2,8 @@
    background: url('../img/bg-band.jpg') center center no-repeat;
    background-size: cover;
    height: 328px;
+
+   @include media-breakpoint-down(md) {
+        height: 140px;
+   }
 }

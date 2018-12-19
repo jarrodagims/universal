@@ -74,4 +74,33 @@
 
    color: #fff;
  }
+
+ @include media-breakpoint-down(md) {
+     padding: 2em;
+
+     .saloon-banner {
+         padding: 10px;
+
+         > div {
+             padding: 2em 1em 1em;
+         }
+     }
+
+     img {
+         width: 72px;
+     }
+
+     .saloon-logo::before {
+         width: 150px;
+         top: -10px;
+     }
+
+     h2 {
+         font-size: 16px;
+     }
+
+     h3 {
+         font-size: 10px;
+     }
+ }
 }

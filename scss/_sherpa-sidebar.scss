@@ -170,8 +170,8 @@ body #main .container article #sidebar .green-box p {
     align-items: center;
 
     img {
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
       margin: 0 auto;
     }
   }
@@ -187,6 +187,35 @@ body #main .container article #sidebar .green-box p {
       margin-right: 1em;
     }
   }
+
+  @include media-breakpoint-down(md) {
+
+    width: 100%;
+
+    .sidebar-top {
+      height: 180px;
+      background: url("../img/bg-sidebar-top-mobile.jpg") 0 0 no-repeat;
+      background-size: cover;
+    }
+
+    .sidebar-top img {
+      width: 150px;
+      height: 150px;
+    }
+
+    img {
+      height: 55px;
+    }
+
+    .sidebar-bottom a img {
+      height: 12px;
+    }
+
+    .sidebar-table {
+      width: auto;
+      position: relative;
+    }
+  }
 }
 
 .sidebar-table {
@@ -194,14 +223,12 @@ body #main .container article #sidebar .green-box p {
   
   .column-1 {
     text-align: center;
-
   }
 
   .tablepress td {
     color: #fff;
     font-family: "acumin-pro-condensed", sans-serif;
     vertical-align: middle;
-
     
      span {
       color: #71BF44;

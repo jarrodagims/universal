@@ -38,7 +38,7 @@
                 <div><span class="title">OFFICE HOURS</span>
                     <p>Monday - Sunday:<br />
                         11:00am - 2:00am</p>
-                    <img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="22" />
+                    <img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="32" />
                 </div>
             </div>
             <!-- <div class="d-md-none d-xs-block d-sm-block">

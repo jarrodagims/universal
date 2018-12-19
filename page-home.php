@@ -30,42 +30,47 @@
     <div class="container">
         <div class="row">
             <div class="col col-md-6">
-                <h1>Bar <img src="<?=IMGURL?>and.svg" alt="And" height="50" /> Grill
-                    <span>Where Good Times Happen and Memories are Made</span>
-                </h1>
+                <div class="extra-padding">
+                    <h1>Bar <img src="<?=IMGURL?>and.svg" alt="And" height="50" /> Grill
+                        <span>Where Good Times Happen and Memories are Made</span>
+                    </h1>
 
-                <h2 data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
-                    <span>The best and biggest patio bar in the area!</span>
-                </h2>
+                    <h2 data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
+                        <span>The best and biggest patio bar in the area!</span>
+                    </h2>
 
-                <ul class="collapse" id="collapse">
-                    <li>The best and biggest patio bar in the area!</li>
-                    <li>We are the top restaurant bar in El Paso where you can catch football games and other major
-                        sports.</li>
-                    <li>Our bar & grill is highly-reviewed and talked about among local sports fans.</li>
-                    <li>Looking for a local place to chill? Come to El Paso’s newest sports bar.</li>
-                    <li>We are located on the east side of town.</li>
-                    <li>Check out our new and improved food menu.</li>
-                    <li>We value your reviews. Tell us what’s up!</li>
-                    <li>We work hard to keep a top rating with our frequent guests.</li>
-                    <li>If you’re a sports fan, this is the place to be!</li>
-                    <li>Our quality restaurant menu truly sets us apart from other local bar & grills.</li>
-                    <li>Our patio hosts a variety of live music, including musicians and DJ’s.</li>
-                    <li>We are a local tavern with fine drinks and great people.</li>
-                    <li>Don’t want to go home? Come hang out here — we’re open late!</li>
-                    <li>We offer a quality food menu to satisfy any appetite.</li>
-                </ul>
+                    <ul class="collapse" id="collapse">
+                        <li>The best and biggest patio bar in the area!</li>
+                        <li>We are the top restaurant bar in El Paso where you can catch football games and other major
+                            sports.</li>
+                        <li>Our bar & grill is highly-reviewed and talked about among local sports fans.</li>
+                        <li>Looking for a local place to chill? Come to El Paso’s newest sports bar.</li>
+                        <li>We are located on the east side of town.</li>
+                        <li>Check out our new and improved food menu.</li>
+                        <li>We value your reviews. Tell us what’s up!</li>
+                        <li>We work hard to keep a top rating with our frequent guests.</li>
+                        <li>If you’re a sports fan, this is the place to be!</li>
+                        <li>Our quality restaurant menu truly sets us apart from other local bar & grills.</li>
+                        <li>Our patio hosts a variety of live music, including musicians and DJ’s.</li>
+                        <li>We are a local tavern with fine drinks and great people.</li>
+                        <li>Don’t want to go home? Come hang out here — we’re open late!</li>
+                        <li>We offer a quality food menu to satisfy any appetite.</li>
+                    </ul>
 
 
-                <h3>Welcome to Crown and Eagle — Where Everyone is Treated Like Royalty</h3>
+                    <h3>Welcome to Crown and Eagle — Where Everyone is Treated Like Royalty</h3>
 
-                <p>We have a saying around here: Wear Your Crown Like a King or Queen!
-                    You work hard and you deserve to play hard and enjoy the things life has to offer. That’s where we
-                    come in. We dig sports. We appreciate good food. And we love to laugh. We want to share that with
-                    everyone that stops by. As a local sports bar & grill and patio bar, we like to give our customers
-                    the opportunity to let loose, have a good time, meet
-                    new people, enjoy the game, a good joke, great jams, or
-                    engaging conversation.</p>
+                    <p>We have a saying around here: Wear Your Crown Like a King or Queen!
+                        You work hard and you deserve to play hard and enjoy the things life has to offer. That’s where
+                        we
+                        come in. We dig sports. We appreciate good food. And we love to laugh. We want to share that
+                        with
+                        everyone that stops by. As a local sports bar & grill and patio bar, we like to give our
+                        customers
+                        the opportunity to let loose, have a good time, meet
+                        new people, enjoy the game, a good joke, great jams, or
+                        engaging conversation.</p>
+                </div>
             </div>
             <div class="col col-md-5 offset-md-1">
                 <?php get_sidebar(); ?>
@@ -77,7 +82,7 @@
 <section class="home-module-4">
     <div class="container">
         <div class="row">
-            <div class="col col-md-5">
+            <div class="col col-md-5 col-xs-12">
                 <h2>We’re Your Spot For a Great Time
                 </h2>
 
@@ -87,7 +92,7 @@
                     ready to serve you!
                 </p>
             </div>
-            <div class="col">
+            <div class="col col-xs-12">
             </div>
         </div>
     </div>
@@ -125,13 +130,17 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>We Offer Variety & Entertainment </h2>
 
-                <p>The Crown & Eagle is a full bar and restaurant with a quality menu and food specials. Burgers.
-                    Wings. Tacos. Tuna melts and sandwiches. That’s right. Come inside or chill in our patio bar. Plus,
-                    there is always something happening around here. We don't’ sit idle. Walk in and find Poker
-                    tournaments one night, comedy another, drink specials, a live band, drink specials, impromptu
-                    dancing, one of our famous Raiders fan parties and did we mention drink specials?</p>
+                <div class="extra-padding">
+                    <h2>We Offer Variety & Entertainment </h2>
+
+                    <p>The Crown & Eagle is a full bar and restaurant with a quality menu and food specials. Burgers.
+                        Wings. Tacos. Tuna melts and sandwiches. That’s right. Come inside or chill in our patio bar.
+                        Plus,
+                        there is always something happening around here. We don't’ sit idle. Walk in and find Poker
+                        tournaments one night, comedy another, drink specials, a live band, drink specials, impromptu
+                        dancing, one of our famous Raiders fan parties and did we mention drink specials?</p>
+                </div>
             </div>
         </div>
     </div>

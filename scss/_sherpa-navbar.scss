@@ -169,6 +169,13 @@
     justify-content: flex-start;
     align-items: center;
   }
+
+  @include media-breakpoint-down(md) {
+    img {
+      height: 12px;
+      margin-left: auto;
+    }
+  }
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -330,7 +337,7 @@
   }
 
   .navbar-brand {
-    width: 271px;
+    width: 201px;
     max-width: 100%;
     padding: 10px 0;
   }
@@ -353,15 +360,15 @@
     .navbar-sherpa {
       order: 2;
       position: absolute;
-      left: 0;
+      right: 0;
       width: 100%;
       padding: 0 0;
-      top: 10px;
+      top: 50px;
     }
 
     .navbar-toggler:not(:disabled):not(.disabled) {
       position: absolute;
-      left: 20px;
+      right: 20px;
       top: 0;
     }
   }

@@ -1,7 +1,6 @@
 @mixin icon-small() {
   width: 100%;
   list-style: none;
-  background: url('../img/bg-hanger.jpg') 0 100% no-repeat;
   background-size: cover; 
 
 
@@ -25,7 +24,6 @@
     margin-bottom: 0;
     width: 100%;
     list-style: none !important;
-    border: 3px solid $white;
 
     &.visible-xs {
       display: flex !important;
@@ -36,32 +34,13 @@
     }
 
     .flex-col {
-      width: 50%;
+      width: 33.33%;
       margin-bottom: 0;
 
       &::after {
         display: none;
       }
-
-      &:nth-child(2) {
-        order: 0;
-      }
-
-      &:nth-child(1) {
-        order: 1;
-      }
-
-      &:nth-child(3) {
-        order: 3;
-      }
-
-      &:nth-child(4) {
-        order: 4;
-      }
-
-      &:nth-child(5) {
-        order: 5;
-      }
+      
 
       &:last-child a {
         padding: 2em 1em;
@@ -69,7 +48,7 @@
 
       a {
         font-size: 9px;
-        padding: 2.75em 1em;
+        padding: 1em;
         font-weight: 400;
         display: flex;
         align-items: center;
@@ -78,9 +57,8 @@
         white-space: nowrap;
         color: $white;
         font-family: 'Poppins', sans-serif;
-        font-size: 16px;
-        border: 3px solid $white;
-        background: rgba(0,0,0,0.8);
+        font-size: 14px;
+        
 
         span {
           display: block !important;
