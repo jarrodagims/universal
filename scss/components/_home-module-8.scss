@@ -43,4 +43,14 @@
             top: 0;
         }
     }
+
+    @include media-breakpoint-down(md) {
+        .col:first-child {
+            padding: 0 0;
+        }
+
+        .col:first-child::before {
+            display: none;
+        }
+    }
 }
