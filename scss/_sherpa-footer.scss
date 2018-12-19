@@ -3,8 +3,8 @@
 #footer {
   padding: 2em 0;
   text-align: center;
-  background: $white;
-  color: #000;
+  background: #1E1E21;
+  color: #fff;
 
   .container-fluid {
     max-width: 1700px;
@@ -35,6 +35,15 @@
 
   .address-footer {
     text-align: left;
+
+    &::before {
+      content: '';
+      border-left: 1px solid #ADACAC;
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      left: -30px;
+    }
   }
 
   .address-footer p {
@@ -50,10 +59,6 @@
 
   .navbar-brand {
      margin: 0 0;
-  }
-
-  .navbar-brand img {
-   width: 269px;
   }
 
   h2 {
@@ -241,7 +246,7 @@
     font-size: 16px;
     line-height: 1.75;
     font-weight: 300;
-    color: #606060;
+    color: #fff;
   }
 
   ul {
@@ -343,13 +348,13 @@
     display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    color: #000000;
+    color: #fff;
     font-weight: 600;
     text-transform: uppercase;
   }
 
   .social-media-button {
-    color: #1A1A1A;
+    color: #CCCCCC;
     font-size: 1.25rem;
 
     &:hover {
@@ -493,19 +498,32 @@
 
 
 .footer-nav {
-  background: #1A1A1A;
-
+  background: #1E1E21;
+  display: flex;
+  justify-content: center;
+  
   li a {
     color: $sherpa-brand-primary;
-    text-transform: uppercase;
   }
 
   @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: center;
+
+    .flex-row {
+      justify-content: space-between;
+
+      > div:first-child {
+        flex: 1;
+        justify-content: flex-end;
+      }
+    }
+
     li.menu-item:first-child {
       margin-left: 0 !important;
     }
 
-    padding: .25em 0;
+    padding: 0 0 1em;
   }
 
   .navbar-sherpa {
@@ -536,10 +554,10 @@
 .sub-footer {
   padding: 32px 0;
   text-align: center;
-  background: #FFF;
   color: $white;
   font-size: 16px;
-  color: #29292C;
+  color: #fff;
+  background: #000; 
 
   p {
     margin-bottom: 0;
@@ -562,9 +580,17 @@
     align-items: center;
 
     a {
-      color: #29292C;
+      color: #CCCCCC;
+      padding: 0 1em;
+
       &:hover {
         color: $sherpa-brand-primary;
+      }
+    }
+
+    li:first-child {
+      a {
+        padding-left: 0;
       }
     }
   }

@@ -37,7 +37,7 @@
     </p>
     <![endif]-->
     <div class="top-header <?php if(!is_front_page()) : ?>internal<?php endif; ?>">
-        <div class="container-fluid">
+        <div class="container">
             <div class="v-align">
                 <div class="col-xs-12 navbar-button text-center">
                     <div class="navbar-left">

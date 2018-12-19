@@ -15,7 +15,49 @@
             @include raleway();
             font-size: 41px;
             color: #999B95;
+            margin-bottom: 1em;
         }
+    }
+
+    h2 {
+        font-size: 27px;
+        margin-bottom: 1em;
+        cursor: pointer;
+        cursor: hand;
+
+        span {
+            display: inline-block;
+            position: relative;
+            padding-right: 30px;
+
+            &::after {
+              @include svg-arrow($white);
+              width: 20px;
+              height: 20px;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              display: block;
+              content: "";
+              margin-left: 10px;
+              position: absolute;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 36px; 
+        margin-bottom: 1em;
+    }
+
+    .sidebar-table {
+        position: absolute;
+       width: 412px;
+    }
+
+    .col-md-5 {
+        display: flex;
+        justify-content: flex-end;
     }
 }
  

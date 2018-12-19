@@ -52,8 +52,11 @@ body #main .container article #sidebar {
 .sidebar {
   .icon-calendar {
     position: relative;
-   background: #CCC;
+    background: #ccc;
     padding: 1em;
+    margin-top: 24px;
+    font-size: 17px;
+
 
     span {
       display: block;
@@ -76,8 +79,12 @@ body #main .container article #sidebar {
     }
   }
 
-  .tablepress tfoot th, .tablepress thead th {
-     background: rgba(204, 204, 204, 0.3);
+  .tablepress tfoot th,
+  .tablepress thead th {
+    background: rgba(204, 204, 204, 0.3);
+    @include raleway();
+    font-weight: 400;
+    font-size: 11px;
   }
 }
 
@@ -148,7 +155,11 @@ body #main .container article #sidebar .green-box p {
   color: #fff;
 }
 
+
+
 .sidebar {
+  width: 412px;
+
   .sidebar-top {
     background: url("../img/bg-sidebar-top.jpg") 0 0 no-repeat;
     background-size: cover;
@@ -175,5 +186,43 @@ body #main .container article #sidebar .green-box p {
     img {
       margin-right: 1em;
     }
+  }
+}
+
+.sidebar-table {
+  // position: absolute;
+  
+  .column-1 {
+    text-align: center;
+
+  }
+
+  .tablepress td {
+    color: #fff;
+    font-family: "acumin-pro-condensed", sans-serif;
+    vertical-align: middle;
+
+    
+     span {
+      color: #71BF44;
+    }
+  }
+
+  .tablepress .even td {
+    background: #1e1e21;
+
+  }
+
+  .tablepress .odd td {
+    background: #1e1e21;
+  }
+
+  .tablepress .row-hover tr:hover td {
+    background: #1e1e21;
+  }
+
+  .tablepress tr td:first-child {
+    @include raleway();
+    font-size: 11px;
   }
 }

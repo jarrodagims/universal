@@ -12,12 +12,13 @@
                             ); ?>" /></a>
             </div>
             <div class="col">
+                <span class="title">Contact</span>
                 <p>Hit us up on the east side of town! El Paso’s best patio bar.
                     Crown and Eagle bar and grill at our convenient location.</p>
             </div>
             <div class="col phone-footer">
                 <div>
-                    <span class="title">Address</span>
+                    <span class="title">&nbsp;</span>
                     <p>1731 Lee Trevino<br />
                         El Paso, Texas 79936<br />
                         <strong>Call Us Today!</strong><br />
@@ -25,23 +26,18 @@
                     </p>
                 </div>
             </div>
+
             <div class="col address-footer">
-                <div>
-                    <span class="title">OFFICE HOURS</span>
+                <div><span class="title">OFFICE HOURS</span>
                     <p>Monday - Sunday:<br />
                         11:00am - 2:00am</p>
-
-                    <a href="<?= SITEURL ?>/contact/">
-                        <button class="btn btn-primary">
-                            Contact us today
-                        </button>
-                    </a>
+                    <img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="22" />
                 </div>
             </div>
             <div class="d-md-none d-xs-block d-sm-block">
                 <?php
 $sm = new SocialMedia(array('facebook', 'twitter'));
-$sm->setSize('md');
+$sm->setSize('sm');
 $sm->showNetworkButtons();
 $sm->setColorType('singleColor');
 ?>
@@ -49,8 +45,20 @@ $sm->setColorType('singleColor');
         </div>
     </div>
 </section>
-<section class="footer-nav d-none d-md-block">
-    <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
+<section class="footer-nav d-none d-md-flex">
+    <div class="container">
+        <div class="row flex-row">
+            <div>
+                <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
+            </div>
+            <div><a href="<?= SITEURL ?>/contact/">
+                    <button class="btn btn-primary">
+                        Contact us today
+                    </button></a>
+            </div>
+        </div>
+    </div>
+
 </section>
 <section class="sub-footer">
     <div class="container">
@@ -59,7 +67,7 @@ $sm->setColorType('singleColor');
                 <div class="d-none d-md-block">
                     <?php
 $sm = new SocialMedia(array('facebook', 'twitter'));
-$sm->setSize('md');
+$sm->setSize('sm');
 $sm->showNetworkButtons();
 $sm->setColorType('singleColor');
 ?>

@@ -18,7 +18,9 @@
     <img src="<?=IMGURL?>uber-eats-logo.png" alt="Uber Eats" />
     <a href=""><img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="20" /></a>
 </div>
-<div class="icon-calendar"><span>Daily Schedule</span></div>
-<?php echo do_shortcode('[table id=1 /]'); ?>
+<div class="sidebar-table">
+    <div class="icon-calendar"><span>Daily Schedule</span></div>
+    <?php echo do_shortcode('[table id=1 /]'); ?>
+</div>
 <?php endif; ?>
 </div>

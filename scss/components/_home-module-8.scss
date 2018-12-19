@@ -1,3 +1,35 @@
 .home-module-8 {
+    background: #000;
+    color: #fff;
 
+    p {
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 2;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .col {
+        padding: 7.5em 0;
+    }
+
+    .col:first-child {
+        position: relative;
+
+        &::before {
+            background: url('../img/bg-girls.jpg') 0 0 no-repeat;
+            background-size: cover;
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 50vw;
+            left: -25vw;
+            top: 0;
+        }
+    }
 }

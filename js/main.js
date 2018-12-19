@@ -48,7 +48,6 @@
       );
 
       function resize() {
-        adjustSlide();
 
         if ($(window).width() >= 992) {
           deskFunctions();

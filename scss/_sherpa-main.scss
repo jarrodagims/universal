@@ -279,7 +279,6 @@ body {
           }
         }
 
-
         @include media-breakpoint-down(sm) {
           .columns {
             flex-direction: column;
@@ -460,11 +459,10 @@ body {
           font-size: 30px;
           color: #606060;
           font-weight: 300;
-          font-family: 'Poppins', sans-serif;
+          font-family: "Poppins", sans-serif;
         }
 
         @include media-breakpoint-down(md) {
-
           h1 {
             font-size: 22px;
           }
@@ -480,7 +478,6 @@ body {
           p {
             font-size: 15px;
           }
-        
         }
 
         min-height: 10em;
@@ -594,7 +591,7 @@ body {
         line-height: 1.5;
         color: $sherpa-brand-primary;
         opacity: 0.75;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
 
         &.expander {
           @include expander($sherpa-brand-primary);
@@ -689,7 +686,7 @@ body #main {
 @include media-breakpoint-down(md) {
   .page-template-default,
   .blog,
-  .error-404, 
+  .error-404,
   .post-template-default {
     #header {
       position: relative;
@@ -707,9 +704,9 @@ body #main {
   }
 
   #sidebar {
-    order: 2; 
+    order: 2;
   }
- 
+
   .map-container {
     width: 100%;
   }

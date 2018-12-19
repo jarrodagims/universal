@@ -1,11 +1,19 @@
 .home-module-4 {
-   padding: 7em 0;
+   padding: 11em 0;
    background: url('../img/bg-game.jpg') 0 0 no-repeat;
    background-size: cover;
    color: #fff;
 
    h2 {
      color: #fff;
+     font-weight: 500;
      font-size: 36px;
+   }
+
+   p {
+       font-family: 'Poppins', sans-serif;
+       font-size: 17px;
+       line-height: 2;
+       margin-bottom: 0;
    }
 }

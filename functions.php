@@ -184,3 +184,9 @@ function add_gutenberg_assets() {
 	// Load the theme styles within Gutenberg.
 	wp_enqueue_style( 'gutenberg', get_theme_file_uri( '/css/gutenberg-editor-style.css' ), false );
 }
+
+function wpb_add_fonts() {
+    wp_enqueue_style( 'moderno', 'https://use.typekit.net/cyi5jdy.css', false );
+}
+
+add_action( 'wp_enqueue_scripts', 'wpb_add_fonts' );

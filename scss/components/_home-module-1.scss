@@ -1,10 +1,11 @@
 .home-module-1 {
-  background: url("../img/bg-hero.jpg") center 0 no-repeat;
+  background: url("../img/bg-hero.jpg") center center no-repeat;
   background-size: cover;
 
   .jumbotron {
     height: auto;
     margin-bottom: 0;
+    padding: 2rem 2rem 4rem;
   }
 
   .jumbo-content {
