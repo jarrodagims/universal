@@ -1,6 +1,11 @@
 .home-module-9 {
   padding: 6.5em 0;
 
+  .col-md-5 {
+    justify-content: flex-end;
+    display: flex;
+  }
+
   h2 {
     font-size: 36px;
   }

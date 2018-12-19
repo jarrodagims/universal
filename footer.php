@@ -6,57 +6,66 @@
 <section id="footer">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col logo-footer">
-                <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png" alt="<?php echo get_bloginfo(
+            <div class="col">
+
+                <div class="row align-items-center">
+
+                    <div class="col logo-footer">
+                        <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
+                                alt="<?php echo get_bloginfo(
                                 'description'
                             ); ?>" /></a>
-            </div>
-            <div class="col">
-                <span class="title">Contact</span>
-                <p>Hit us up on the east side of town! El Paso’s best patio bar.
-                    Crown and Eagle bar and grill at our convenient location.</p>
-            </div>
-            <div class="col phone-footer">
-                <div>
-                    <span class="title">&nbsp;</span>
-                    <p>1731 Lee Trevino<br />
-                        El Paso, Texas 79936<br />
-                        <strong>Call Us Today!</strong><br />
-                        <?php printPhone(); ?>
-                    </p>
+                    </div>
+                    <div class="col">
+                        <span class="title">Contact</span>
+                        <p>Hit us up on the east side of town! El Paso’s best patio bar.
+                            Crown and Eagle bar and grill at our convenient location.</p>
+                    </div>
+                    <div class="col phone-footer">
+                        <div>
+                            <span class="title">&nbsp;</span>
+                            <p>1731 Lee Trevino<br />
+                                El Paso, Texas 79936<br />
+                                <strong>Call Us Today!</strong><br />
+                                <?php printPhone(); ?>
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-            <div class="col address-footer">
+            <div class="col col-md-2 address-footer">
                 <div><span class="title">OFFICE HOURS</span>
                     <p>Monday - Sunday:<br />
                         11:00am - 2:00am</p>
                     <img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="22" />
                 </div>
             </div>
-            <div class="d-md-none d-xs-block d-sm-block">
+            <!-- <div class="d-md-none d-xs-block d-sm-block">
                 <?php
 $sm = new SocialMedia(array('facebook', 'twitter'));
 $sm->setSize('sm');
 $sm->showNetworkButtons();
 $sm->setColorType('singleColor');
 ?>
+            </div> -->
+        </div>
+
+        <div class="row flex-row">
+            <div class="col">
+                <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
+            </div>
+            <div class="col col-md-2"><a href="<?= SITEURL ?>/contact/">
+                    <button class="btn btn-primary">
+                        Contact us today
+                    </button></a>
             </div>
         </div>
     </div>
 </section>
 <section class="footer-nav d-none d-md-flex">
     <div class="container">
-        <div class="row flex-row">
-            <div>
-                <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
-            </div>
-            <div><a href="<?= SITEURL ?>/contact/">
-                    <button class="btn btn-primary">
-                        Contact us today
-                    </button></a>
-            </div>
-        </div>
+
     </div>
 
 </section>

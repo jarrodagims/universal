@@ -34,7 +34,11 @@
   }
 
   .address-footer {
-    text-align: left;
+    text-align: right;
+
+    img {
+      margin: 1em auto;
+    }
 
     &::before {
       content: '';
