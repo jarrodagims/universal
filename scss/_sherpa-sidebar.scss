@@ -229,12 +229,15 @@ body #main .container article #sidebar .green-box p {
   tbody td.column-1 {
     text-align: center;
     border-left: 0;
+    padding-bottom: 0;
+    padding-top: 13px;
   }
 
   .tablepress td {
     color: #fff;
     font-family: "acumin-pro-condensed", sans-serif;
-    vertical-align: middle;
+    vertical-align: top;
+     padding-bottom: 2em;
     
      span {
       color: #71BF44;
@@ -243,7 +246,7 @@ body #main .container article #sidebar .green-box p {
 
   .tablepress .even td {
     background: #1e1e21;
-
+   
   }
 
   .tablepress .odd td {

@@ -4,10 +4,10 @@
     Template Name: Home
 */ ?>
 
-<section class="home-module-1">
+<section class="home-module-1 waypoint">
     <div class="jumbotron">
         <div class="jumbo-content">
-            <img src="<?=IMGURL?>logo-lg.png" class="navbar-brand" alt="<?php bloginfo( 'name' ); ?>" />
+            <div class="fade-down"><img src="<?=IMGURL?>logo-lg.png" class="navbar-brand" alt="<?php bloginfo( 'name' ); ?>" /></div>
 
             <a href="<?=SITEURL?>/contact/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact
                     Us Today</button></a>
@@ -83,7 +83,7 @@
 <section class="home-module-4">
     <div class="container">
         <div class="row">
-            <div class="col col-lg-5 col-sm-12 col-xs-12">
+            <div class="col col-lg-6 col-sm-12 col-xs-12">
                 <h2>We’re Your Spot For a Great Time
                 </h2>
 
@@ -103,12 +103,12 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="saloon-banner">
+                <div class="saloon-banner waypoint">
                     <div>
                         <div class="saloon-logo">
                             <img src="<?=IMGURL ?>/saloon-logo.png" alt="Crown & Eagle" />
                         </div>
-                        <h2>happy hour specials and drink specials</h2>
+                        <h2 class="fade-down">happy hour specials and drink specials</h2>
                         <h3>11 a.m. to 7 p.m.</h3>
                     </div>
                 </div>
