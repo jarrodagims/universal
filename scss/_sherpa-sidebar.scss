@@ -1,5 +1,5 @@
 .sidebar-content {
-  margin-top: 20px;
+  margin-top: 100px;
 
   .post-title {
     font-weight: 300;
@@ -43,7 +43,7 @@
 
 body #main .container article #sidebar {
   float: right;
-  width: 346px;
+  width: 417px;
   margin-left: 4em;
   text-align: center;
   position: relative;
@@ -56,7 +56,7 @@ body #main .container article #sidebar {
     padding: 1em;
     margin-top: 24px;
     font-size: 17px;
-
+    text-align: left;
 
     span {
       display: block;
@@ -188,6 +188,11 @@ body #main .container article #sidebar .green-box p {
     }
   }
 
+  .tablepress tbody td, .tablepress tfoot th {
+    border-top: 1px solid #5b5b5d;
+    border-left: 1px solid #5b5b5d;
+  }
+
   @include media-breakpoint-down(md) {
 
     width: 100%;
@@ -221,8 +226,9 @@ body #main .container article #sidebar .green-box p {
 .sidebar-table {
   // position: absolute;
   
-  .column-1 {
+  tbody td.column-1 {
     text-align: center;
+    border-left: 0;
   }
 
   .tablepress td {

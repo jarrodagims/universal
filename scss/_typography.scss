@@ -89,6 +89,10 @@ p.no-margin {
   color: #8F9699;
 }
 
+a {
+  color: $sherpa-secondary-color;
+}
+
 
 @include media-breakpoint-down(xs) {
 

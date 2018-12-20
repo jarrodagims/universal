@@ -1,10 +1,11 @@
 .home-module-3 {
-  background: url("../img/bg-beverages.png") right 0 no-repeat;
+  background: url("../img/bg-beverages.png") right 100% no-repeat;
   background-size: 50% auto;
 
   ul {
     font-size: 12px;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 3em;  
 
     li {
       font-size: 16px;
@@ -12,7 +13,7 @@
       font-weight: 300;
     }
   }
-
+ 
   
   .container {
       @include drop-tag();
@@ -112,7 +113,8 @@
    }
 
     .container {
-      padding: 2em 0;
+      padding-top: 2em;
+      padding-bottom: 2em;
 
       &::before {
         display: none;

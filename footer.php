@@ -52,10 +52,10 @@ $sm->setColorType('singleColor');
         </div>
 
         <div class="row flex-row">
-            <div class="col">
+            <div class="col d-lg-block d-none">
                 <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
             </div>
-            <div class="col col-md-2"><a href="<?= SITEURL ?>/contact/">
+            <div class="col col-lg-2"><a href="<?= SITEURL ?>/contact/">
                     <button class="btn btn-primary">
                         Contact us today
                     </button></a>

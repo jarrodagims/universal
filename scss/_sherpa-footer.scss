@@ -223,6 +223,15 @@
       height: 100px;
     }
 
+    .address-footer::before {
+      display: none;
+    }
+
+    .address-footer img {
+      height: 14px;
+      display: block;
+    }
+
     .hours-footer, .contact-footer, .logo-footer, .button-footer {
       text-align: center;
       width: auto;
@@ -428,7 +437,7 @@
     }
 
     span.title {
-      font-size: 14px;
+      font-size: 10px;
       margin-bottom: 0;
     }
 
@@ -665,7 +674,7 @@
         width: auto;
         margin: 0 auto;
         width: auto;
-        height: 32px;
+        height: 140px;
         display: block;
       }
     }
@@ -679,8 +688,6 @@
 
   #footer {
     padding: 2em 0;
-
-  
 
     .row {
       flex-direction: column;
@@ -723,6 +730,9 @@
       }
     }
   }
+
+  
+
 }
 
 

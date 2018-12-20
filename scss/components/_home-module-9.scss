@@ -22,4 +22,24 @@
     padding-top: 6.5em;
     padding-bottom: 6.5em;
   }
+
+  @include media-breakpoint-down(md) {
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+    }
+
+    .container {
+        padding: 4em 30px 2em;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
 }

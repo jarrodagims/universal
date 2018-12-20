@@ -31,7 +31,7 @@
     position: relative;
     padding-right: calc(20px + 0.5em);
     &::after {
-      @include svg-chevron(_trim($sherpa-brand-primary));
+      @include svg-arrow(_trim(#cccccc));
       content: "";
       display: block;
       height: 20px;
@@ -46,7 +46,7 @@
   }
 
   &:hover span::after {
-    @include svg-chevron(_trim($sherpa-brand-primary));
+    @include svg-arrow(_trim(#cccccc));
   }
 
   &.expanded {

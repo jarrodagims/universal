@@ -29,14 +29,15 @@
 <section class="home-module-3">
     <div class="container">
         <div class="row">
-            <div class="col col-md-6">
+            <div class="col col-xs-12 col-lg-6">
                 <div class="extra-padding">
                     <h1>Bar <img src="<?=IMGURL?>and.svg" alt="And" height="50" /> Grill
                         <span>Where Good Times Happen and Memories are Made</span>
                     </h1>
 
-                    <h2 data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
-                        <span>The best and biggest patio bar in the area!</span>
+                    <h2 class="expander" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
+                        aria-controls="collapse">
+                        The best and biggest patio bar in the area!
                     </h2>
 
                     <ul class="collapse" id="collapse">
@@ -72,7 +73,7 @@
                         engaging conversation.</p>
                 </div>
             </div>
-            <div class="col col-md-5 offset-md-1">
+            <div class="col col-xs-12 col-lg-5 offset-lg-1">
                 <?php get_sidebar(); ?>
             </div>
         </div>
@@ -82,7 +83,7 @@
 <section class="home-module-4">
     <div class="container">
         <div class="row">
-            <div class="col col-md-5 col-xs-12">
+            <div class="col col-lg-5 col-sm-12 col-xs-12">
                 <h2>We’re Your Spot For a Great Time
                 </h2>
 
@@ -92,7 +93,7 @@
                     ready to serve you!
                 </p>
             </div>
-            <div class="col col-xs-12">
+            <div class="col d-xs-none d-sm-none d-lg-block col-xs-12">
             </div>
         </div>
     </div>
@@ -150,11 +151,10 @@
     <div class="container">
         <div class="row">
             <div class="col col-md-6">
-
+                <img src="<?=IMGURL?>bg-girls-mobile.jpg" alt="A Royally Good Time" class="d-xs-block d-sm-block d-md-none" />
             </div>
-            <div class="col col-md-5 offset-md-1">
+            <div class="col col-sm-12 col-xs-12 col-lg-5 offset-lg-1">
                 <h2>A Royally Good Time</h2>
-
                 <p>
                     Many places call themselves sports bars because they mount a television on the wall and broadcast
                     the occasional game. At Crown & Eagle, we believe sports are a great way to bring people together—
@@ -174,7 +174,7 @@
 <section class="home-module-9">
     <div class="container">
         <div class="row">
-            <div class="col col-md-6">
+            <div class="col col-xs-12 col-sm-12 col-lg-6">
                 <h2>Family Atmosphere</h2>
 
                 <p>During the day Crown & Eagle bar has a lively family-friendly
@@ -187,10 +187,13 @@
                 <p>Don’t have time to dine in? We are now taking phone orders for pick up. Call us today, place your
                     order, and enjoy El Paso’s greatest food specials. </p>
             </div>
-            <div class="col col-md-5 offset-md-1">
-                <img src="<?=IMGURL?>drinks-food.jpg" alt="Food and Drinks" />
+            <div class="col col-xs-12 col-sm-12 col-lg-5 offset-lg-1">
+                <img src="<?=IMGURL?>drinks-food.jpg" alt="Food and Drinks" class="d-md-block d-none" />
+
+
             </div>
         </div>
     </div>
+    <img src="<?=IMGURL?>drinks-food-mobile.jpg" alt="Food and Drinks" class="d-xs-block d-sm-block d-md-none" />
 </section>
 <?php get_footer(); ?>

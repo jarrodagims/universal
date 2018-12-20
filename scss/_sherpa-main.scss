@@ -240,7 +240,7 @@ body {
         h3 {
           @include raleway();
           color: #606060;
-          font-size: 25px;
+          font-size: 28px;
         }
 
         p.blurb {
@@ -256,7 +256,7 @@ body {
         }
 
         h2 {
-          font-size: 20px;
+          font-size: 28px;
           color: $sherpa-brand-primary;
         }
 
@@ -361,24 +361,64 @@ body {
           margin: 0 auto;
           background-size: cover;
 
+          @include media-breakpoint-down(md) {
+            margin-top: 2em;
+          }
+
           @include media-breakpoint-up(md) {
             height: 256px;
           }
 
-          .banner-text {
+          .banner-title {
             z-index: 1;
             position: absolute;
             font-size: 21px;
             @include raleway();
-            width: 369px;
+            width: 100%;
             height: 100%;
-            background: $sherpa-dark-color;
             justify-content: center;
             align-items: center;
             margin-left: auto;
-            font-weight: 300;
+            font-weight: 400;
             display: flex;
             flex-direction: column;
+            color: #fff;
+
+            .title {
+              font-family: "Poppins", sans-serif;
+              font-weight: 700;
+              font-size: 101px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              line-height: 1;
+
+              span {
+                display: block;
+                font-weight: 300;
+                @include raleway();
+                font-size: 41px;
+                color: #999b95;
+                margin-bottom: 1em;
+              }
+            }
+
+            @include media-breakpoint-down(md) {
+
+                .title {
+                  font-size: 41px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-bottom: .25em;
+
+                  img {
+                    margin-left: .25em;
+                    margin-right: .25em;
+
+                  }
+                }
+            }
 
             p {
               font-size: 25px;
@@ -401,32 +441,41 @@ body {
               margin-top: 1em;
             }
 
-            @include media-breakpoint-down(sm) {
+            a {
+              margin-top: 1em;
+            }
+
+            @include media-breakpoint-down(md) {
               font-size: 1em;
               display: block;
               margin-left: auto;
               margin-right: auto;
               width: 100%;
               flex-direction: column;
-              padding: 1em;
+              padding: 1em; 
+              color: #33373F;
+
 
               strong {
                 display: block;
               }
 
-              .banner-text {
+              .banner-title {
                 margin: 0 auto;
                 flex-direction: column;
-                color: $white;
+                
               }
+
+
             }
 
-            @include media-breakpoint-down(xs) {
+            @include media-breakpoint-down(md) {
               position: relative;
 
               .btn {
-                margin: 1em auto;
+                margin: 3em auto;
                 display: block;
+                background: $sherpa-secondary-color;
               }
             }
           }
@@ -435,7 +484,7 @@ body {
             z-index: -1;
           }
 
-          @include media-breakpoint-down(sm) {
+          @include media-breakpoint-down(md) {
             justify-content: center;
             align-items: center;
             flex-direction: column;
@@ -443,23 +492,22 @@ body {
             max-height: 100%;
             background: none;
             margin-bottom: 0;
+
           }
 
           @include media-breakpoint-down(xs) {
             flex-direction: column-reverse;
-            img {
-              margin-bottom: 1em;
-            }
+          
           }
         }
 
         h1 {
           margin-bottom: 1.5em;
           line-height: 1.5;
-          font-size: 30px;
+          font-size: 41px;
           color: #606060;
           font-weight: 300;
-          font-family: "Poppins", sans-serif;
+          @include raleway();
         }
 
         @include media-breakpoint-down(md) {
@@ -586,12 +634,11 @@ body {
 
       .page-content h2,
       .page-content h3 {
-        margin-top: 0;
         font-weight: 300;
         line-height: 1.5;
-        color: $sherpa-brand-primary;
+        color: #53565B;
         opacity: 0.75;
-        font-family: "Poppins", sans-serif;
+        @include raleway();
 
         &.expander {
           @include expander($sherpa-brand-primary);
@@ -626,7 +673,7 @@ body {
 
 body #main {
   article p.no-margin {
-    margin-bottom: 1.2em;
+    margin-bottom: 0;
   }
 
   article ul {
@@ -705,8 +752,7 @@ body #main {
 
   #sidebar {
     order: 2;
-    margin-left: 30px;
-    margin-right: 30px;
+    
   }
 
   .map-container {
