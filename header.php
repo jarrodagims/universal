@@ -46,7 +46,7 @@
                                         Us Today!
                                         <?php printPhone(); ?></span></a></li>
                         </ul>
-                        <img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="22" />
+                        <a href="/"><img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="22" /></a>
 
                     </div>
                     <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>

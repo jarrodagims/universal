@@ -47,7 +47,7 @@
                         <li>Our bar & grill is highly-reviewed and talked about among local sports fans.</li>
                         <li>Looking for a local place to chill? Come to El Paso’s newest sports bar.</li>
                         <li>We are located on the east side of town.</li>
-                        <li>Check out our new and improved food menu.</li>
+                        <li>Check out our new and improved <a href="<?=SITEURL?>/menu/">food menu</a>.</li>
                         <li>We value your reviews. Tell us what’s up!</li>
                         <li>We work hard to keep a top rating with our frequent guests.</li>
                         <li>If you’re a sports fan, this is the place to be!</li>
