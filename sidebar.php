@@ -22,5 +22,24 @@
     <div class="icon-calendar"><span>Daily Schedule</span></div>
     <?php echo do_shortcode('[table id=1 /]'); ?>
 </div>
+<?php if (!is_front_page()) : ?>
+<section class="home-module-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="saloon-banner">
+                    <div>
+                        <div class="saloon-logo">
+                            <img src="<?=IMGURL ?>/saloon-logo.png" alt="Crown & Eagle" />
+                        </div>
+                        <h2>happy hour specials and drink specials</h2>
+                        <h3>11 a.m. to 7 p.m.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
 <?php endif; ?>
 </div>
