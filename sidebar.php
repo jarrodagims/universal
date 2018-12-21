@@ -1,16 +1,16 @@
 <div id="sidebar" class="sidebar">
-    <?php if (is_page('contact')) : ?>
+    <?php if (is_page('contact-us')) : ?>
     <div id="contact-form">
         <?php if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
-                echo do_shortcode('[contact-form-7 id="74" title="Contact Form"]');
+                echo do_shortcode('[contact-form-7 id="125" title="Contact Form"]');
             } else {
-                echo do_shortcode('[contact-form-7 id="74" title="Contact Form"]');
+                echo do_shortcode('[contact-form-7 id="125" title="Contact Form"]');
             }
             ?>
     </div>
 </div>
 <?php endif; ?>
-<?php if (!is_page('contact')) : ?>
+<?php if (!is_page('contact-us')) : ?>
 <div class="sidebar-top">
     <img src="<?=IMGURL?>our-grill.svg" alt="Our Grill" />
 </div>

@@ -27,7 +27,8 @@
                             <p>1731 Lee Trevino<br />
                                 El Paso, Texas 79936<br />
                                 <strong>Call Us Today!</strong><br />
-                                <?php printPhone(); ?>
+                                <a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>">
+                                    <?php printPhone(); ?></a>
                             </p>
                         </div>
                     </div>
@@ -55,7 +56,7 @@ $sm->setColorType('singleColor');
             <div class="col d-lg-block d-none">
                 <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
             </div>
-            <div class="col col-lg-2"><a href="<?= SITEURL ?>/contact/">
+            <div class="col col-lg-2"><a href="<?= SITEURL ?>/contact-us/">
                     <button class="btn btn-primary">
                         Contact us today
                     </button></a>

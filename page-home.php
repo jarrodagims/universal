@@ -9,7 +9,7 @@
         <div class="jumbo-content">
             <div class="fade-down"><img src="<?=IMGURL?>logo-lg.png" class="navbar-brand" alt="<?php bloginfo( 'name' ); ?>" /></div>
 
-            <a href="<?=SITEURL?>/contact/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact
+            <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">Contact
                     Us Today</button></a>
         </div>
     </div>
@@ -56,21 +56,23 @@
                         <li>We are a local tavern with fine drinks and great people.</li>
                         <li>Don’t want to go home? Come hang out here — we’re open late!</li>
                         <li>We offer a quality food menu to satisfy any appetite.</li>
+
                     </ul>
 
 
                     <h3>Welcome to Crown and Eagle — Where Everyone is Treated Like Royalty</h3>
 
-                    <p>We have a saying around here: Wear Your Crown Like a King or Queen!
-                        You work hard and you deserve to play hard and enjoy the things life has to offer. That’s where
-                        we
-                        come in. We dig sports. We appreciate good food. And we love to laugh. We want to share that
-                        with
-                        everyone that stops by. As a local sports bar & grill and patio bar, we like to give our
-                        customers
-                        the opportunity to let loose, have a good time, meet
-                        new people, enjoy the game, a good joke, great jams, or
-                        engaging conversation.</p>
+                    <p>We have a saying around here: <em>Wear your crown like a King or Queen!</em></p>
+
+                    <p>You work hard. You deserve to play hard by enjoying the good things in life. That’s where we
+                        come in. We dig sports. We appreciate good food. And we love to laugh! We want to share those
+                        enjoyments with everyone.
+                    </p>
+
+                    <p>As a local sports bar & grill with an awesome patio bar, we enjoy giving our customers the
+                        opportunity to let loose, meet new people, enjoy a game, share a good joke, tune out to some
+                        great jams, and engage in great conversation.
+                    </p>
                 </div>
             </div>
             <div class="col col-xs-12 col-lg-5 offset-lg-1">
@@ -84,12 +86,10 @@
     <div class="container">
         <div class="row">
             <div class="col col-lg-6 col-sm-12 col-xs-12">
-                <h2>We’re Your Spot For a Great Time
-                </h2>
+                <h3>We’re Your Spot For a Great Time</h3>
 
-                <p>
-                    We provide El Paso with a place to relax and enjoy time with friends and family. Live life to the
-                    fullest and enjoy an evening at Crown & Eagle sports bar. Our friendly staff and bartenders are
+                <p>We provide El Paso with a place to relax and enjoy time with friends and family. Live life to the
+                    fullest, and enjoy an evening at Crown and Eagle Bar & Grill. Our friendly staff and bartenders are
                     ready to serve you!
                 </p>
             </div>
@@ -108,7 +108,7 @@
                         <div class="saloon-logo">
                             <img src="<?=IMGURL ?>/saloon-logo.png" alt="Crown & Eagle" />
                         </div>
-                        <h2 class="fade-down">happy hour specials and drink specials</h2>
+                        <h2>happy hour specials and drink specials</h2>
                         <h3>11 a.m. to 7 p.m.</h3>
                     </div>
                 </div>
@@ -133,14 +133,18 @@
             <div class="col">
 
                 <div class="extra-padding">
-                    <h2>We Offer Variety & Entertainment </h2>
+                    <h3>We Offer a Variety of Entertainment</h3>
 
-                    <p>The Crown & Eagle is a full bar and restaurant with a quality menu and food specials. Burgers.
-                        Wings. Tacos. Tuna melts and sandwiches. That’s right. Come inside or chill in our patio bar.
-                        Plus,
-                        there is always something happening around here. We don't’ sit idle. Walk in and find Poker
-                        tournaments one night, comedy another, drink specials, a live band, drink specials, impromptu
-                        dancing, one of our famous Raiders fan parties and did we mention drink specials?</p>
+                    <p>We have a full bar and restaurant menu with quality food and drink specials. From burgers to
+                        wings, tacos, tuna melts, and a variety of sandwiches. You can’t beat our $5 lunch menu. That’s
+                        right, only $5! Come inside or chill outside in our patio bar.</p><br />
+
+                    <p>There’s always something happening around here. We don't’ sit idle. Walk in and find Poker
+                        tournaments one night, <a href="<?=SITEURL?>/weekly-events/comedy-nights-el-paso/">comedy</a>
+                        another, <a href="<?=SITEURL?>/weekly-events/karaoke-bar-el-paso/">karaoke</a>, <a href="<?=SITEURL?>/weekly-events/live-music/">live
+                            bands</a>, drink specials, impromptu dancing, one of our famous Raiders fan club parties,
+                        and did we mention drink specials?</p>
+
                 </div>
             </div>
         </div>
@@ -154,17 +158,12 @@
                 <img src="<?=IMGURL?>bg-girls-mobile.jpg" alt="A Royally Good Time" class="d-xs-block d-sm-block d-md-none" />
             </div>
             <div class="col col-sm-12 col-xs-12 col-lg-5 offset-lg-1">
-                <h2>A Royally Good Time</h2>
-                <p>
-                    Many places call themselves sports bars because they mount a television on the wall and broadcast
-                    the occasional game. At Crown & Eagle, we believe sports are a great way to bring people together—
-                    whether it is the boxing match of the year, the Super Bowl, or the Playoffs. We make this part of
-                    the atmosphere.
-                </p>
+                <h3>A Royally Good Time</h3>
+                <p>Many places call themselves a sports bar because they mount a television on the wall and broadcast
+                    the occasional game or two. But at Crown and Eagle, we believe in taking the experience to another
+                    level—whether it’s the boxing match of the year, the Super Bowl, or the NFL playoffs.</p>
 
-                <p>
-                    Come for the drink specials, stay for the band, leave with the dawn!
-                </p>
+                <p>Sports is a great way to bring people together. And we provide the perfect atmosphere!</p>
 
             </div>
         </div>
@@ -175,22 +174,25 @@
     <div class="container">
         <div class="row">
             <div class="col col-xs-12 col-sm-12 col-lg-6">
-                <h2>Family Atmosphere</h2>
+                <h3>We’re Family-Friendly</h3>
 
-                <p>During the day Crown & Eagle bar has a lively family-friendly
-                    atmosphere. Bring the family and enjoy our food specials and
-                    spacious patio. El Paso has great weather. What better way to
+                <p>During the day, Crown and Eagle Bar & Grill has a lively family-friendly atmosphere. Bring the whole
+                    fam and enjoy our food specials and spacious patio. El Paso has great weather. What better way to
                     enjoy it than with a good meal outdoors under the great desert sky.
                 </p>
 
-                <h2>Take out & Phone Orders</h2>
-                <p>Don’t have time to dine in? We are now taking phone orders for pick up. Call us today, place your
-                    order, and enjoy El Paso’s greatest food specials. </p>
+                <h3>We Offer Take Out!</h3>
+                <p>Don’t have time to dine in? We are now taking phone orders for pick up. Call us at <a href="tel:9155943686">915-594-3686</a>
+                    to place your order, and enjoy the greatest food specials in El Paso. </p>
+
+                <h2>Your Next Adventure Awaits</h2>
+
+                <p>Hit us up! We are El Paso’s best patio bar, located on the east side of town. Come visit us at our
+                    convenient location at 1731 Lee Trevino.
+                </p>
             </div>
             <div class="col col-xs-12 col-sm-12 col-lg-5 offset-lg-1">
                 <img src="<?=IMGURL?>drinks-food.jpg" alt="Food and Drinks" class="d-md-block d-none" />
-
-
             </div>
         </div>
     </div>

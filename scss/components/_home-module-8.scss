@@ -17,10 +17,11 @@
         line-height: 2;
     }
 
-    h2 {
+    h2, h3 {
         color: #fff;
         font-size: 36px;
         font-weight: 500;
+        margin-bottom: 1em;
     }
 
     .col {
@@ -79,7 +80,7 @@
             }
         }
 
-        h2 {
+        h2, h3 {
             font-size: 18px;
         }
 

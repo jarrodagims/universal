@@ -26,9 +26,9 @@
     color: $white;
   }
 
-  &:focus, &:active, &:visited {
+  &:focus, &:active, &:visited, &:hover:focus, &:hover:active, &:hover:visited {
     border: 0 !important;
-    background: darken(#CCCCCC, 10%);
+    background: darken(#CCCCCC, 10%) !important;
   }
 
   &.btn-default {

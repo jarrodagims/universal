@@ -190,3 +190,14 @@ function wpb_add_fonts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'wpb_add_fonts' );
+
+
+add_filter( 'user_can_richedit', 'custom_user_can_richedit');
+
+function custom_user_can_richedit($type) {
+    global $post_type;
+
+    if ($post_type === 'page')
+        return false;
+    return $type;
+}
