@@ -174,69 +174,30 @@
   .flex-col {
     flex: auto;
     position: relative;
-
-
-    a {
-      padding-top: 1.75em;
-      padding-bottom: 1.75em;
-    }
-
-
-    &::after {
-      border-right: 1px solid #CCCCCC;
-      content: '';
-      display: block;
-      height: 30%;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      position: absolute;
-    }
-
-    &:last-child::after {
-      display: none;
-    }
+    flex-direction: column;
+    text-align: left;
   }
 
   .flex-col a {
-    height: 100%;
-    width: 100%;
-    display: flex;
+    width: 104px;
+    height: 104px; 
+    display: block;
     align-items: center;
-    color: #fff;
+    color: #333333;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
-    text-align: center;
     flex-direction: column;
-    flex: 1;
     position: relative;
     overflow: hidden;
     transition: all 300ms ease-in-out;
 
-
-    &::after {
-      width: 10px;
-      height: 10px;
-      border-left: 7px solid transparent;
-      border-right: 7px solid transparent;
-      border-bottom: 7px solid $sherpa-secondary-color;
-      content: '';
-      bottom: 0;
-      opacity: 0;
-      transition: opacity 0.3s ease-in-out;
-      position: absolute;
+    svg {
+      height: 40px;
     }
 
-    &:hover {
-      &:after {
-        opacity: 1;
-      }
-      text-decoration: none;
-    }
 
     &:focus, &:active {
       text-decoration: none;
-
     }
 
     .title {
