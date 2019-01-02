@@ -28,53 +28,61 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-    <!--[if lt IE 7]>
+    <div class="landing-bg">
+        <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser.</p>
     <p class="browsehappy">Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     </p>
     <![endif]-->
-    <div class="top-header <?php if(!is_front_page()) : ?>internal<?php endif; ?>">
-        <div class="container">
-            <div class="v-align">
-                <div class="col-xs-12 navbar-button text-center">
-                    <div class="navbar-left">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="menu-item directions"><a href="<?php echo get_site_url() ?>/contact-us/"><span>6455
-                                        Hiller Suite 10, El Paso, Texas 79925</span></a></a></li>
-                            <li class="menu-item contact"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><span>Call
-                                        Us Today!
-                                        <?php printPhone(); ?></span></a></li>
-                        </ul>
-                        <a href="/"><img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="22" /></a>
+        <div class="top-header <?php if(!is_front_page()) : ?>internal<?php endif; ?>">
+            <div class="container">
+                <div class="v-align">
+                    <div class="col-xs-12 navbar-button text-center">
+                        <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
+                                alt="<?php echo get_bloginfo(
+                                'description'
+                            ); ?>" /></a>
+
+                        <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
+
+                        <div class="navbar-right">
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>EL PASO, TX 915-642-6911</li>
+                                <li class="menu-item directions"><a href="<?php echo get_site_url() ?>/contact-us/"><span>6455
+                                            Hiller Suite 10, El Paso, Texas 79925</span></a></a></li>
+                                <li class="menu-item contact"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><span>Call
+                                            Us Today!
+                                            <?php printPhone(); ?></span></a></li>
+                            </ul>
+
+                        </div>
 
                     </div>
-                    <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
                 </div>
             </div>
         </div>
-    </div>
 
-    <?php if(!is_front_page()) : ?>
-    <div class="banner-header">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <a href="<?=SITEURL?>" class="navbar-brand"><img src="<?=IMGURL?>logo-lg.png" class="navbar-brand"
-                            alt="<?php bloginfo( 'name' ); ?>" /></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="home-module-2">
-        <section class="icon-row">
+        <?php if(!is_front_page()) : ?>
+        <div class="banner-header">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <?php echo get_template_part('template-parts/icon', 'row'); ?>
+                        <a href="<?=SITEURL?>" class="navbar-brand"><img src="<?=IMGURL?>logo-lg.png" class="navbar-brand"
+                                alt="<?php bloginfo( 'name' ); ?>" /></a>
                     </div>
                 </div>
             </div>
+        </div>
+        <section class="home-module-2">
+            <section class="icon-row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <?php echo get_template_part('template-parts/icon', 'row'); ?>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
-    </section>
-    <?php endif; ?>
+        <?php endif; ?>

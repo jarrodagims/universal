@@ -9,8 +9,7 @@
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
   transition: background-color 0.2s ease-in-out;
-   background : #CCCCCC;
-  background : rgba(204, 204, 204, 0.66);
+  @include gradient();
   font-weight: 600;
   color: $white; 
   transition: transform 300ms ease-in-out;
@@ -20,11 +19,8 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  border-radius: 30px;
   
-   &:hover {
-    background: darken(#CCCCCC, 10%);
-    color: $white;
-  }
 
   &:focus, &:active, &:visited, &:hover:focus, &:hover:active, &:hover:visited {
     border: 0 !important;

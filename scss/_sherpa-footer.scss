@@ -3,7 +3,7 @@
 #footer {
   padding: 2em 0;
   text-align: center;
-  background: #1E1E21;
+  background: #000000;
   color: #fff;
 
   .container-fluid {
@@ -281,8 +281,8 @@
 
   ul li {
     list-style: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 
     &:first-child {
       margin-left: 0;
@@ -564,7 +564,7 @@
   color: $white;
   font-size: 16px;
   color: #fff;
-  background: #000; 
+  background: #1A1A1A; 
 
   p {
     margin-bottom: 0;

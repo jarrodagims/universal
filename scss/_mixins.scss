@@ -1,13 +1,13 @@
 @mixin dropshadow() {
-  -webkit-box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.25);
-  box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.25);
 }
 
 @mixin dropshadow-thin() {
-  -webkit-box-shadow: 4px 4px 6px -5px rgba(0,0,0,0.75);
-  -moz-box-shadow: 4px 4px 6px -5px rgba(0,0,0,0.75);
-  box-shadow: 4px 4px 6px -5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 4px 4px 6px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 6px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 6px -5px rgba(0, 0, 0, 0.75);
 }
 
 @mixin nodropshadow() {
@@ -17,44 +17,53 @@
 }
 
 @keyframes bounce {
-  0%, 100%, 20%, 50%, 80% {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
     -webkit-transform: translateY(0);
-    -ms-transform:     translateY(0);
-    transform:         translateY(0)
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
   40% {
     -webkit-transform: translateY(-30px);
-    -ms-transform:     translateY(-30px);
-    transform:         translateY(-30px)
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
   60% {
     -webkit-transform: translateY(-15px);
-    -ms-transform:     translateY(-15px);
-    transform:         translateY(-15px)
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
 
 @mixin raleway() {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 @mixin montserrat() {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-
 @mixin gradient() {
-  background: linear-gradient(90deg, rgba(0,180,235,1) 0%, rgba(0,55,255,1) 100%);
+  background: rgb(212, 22, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(212, 22, 32, 1) 0%,
+    rgba(255, 53, 36, 1) 37%,
+    rgba(169, 43, 39, 1) 100%
+  );
 }
 
 @mixin gradient-faded() {
-  background: linear-gradient(90deg, rgba(0,180,235,1) 0%, rgba(0,55,255,0.6) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 180, 235, 1) 0%,
+    rgba(0, 55, 255, 0.6) 100%
+  );
 }
 
-
 @function _trim($string) {
-  @return str-slice(
-                  #{$string},
-                  2, -1
-  );
+  @return str-slice(#{$string}, 2, -1);
 }
