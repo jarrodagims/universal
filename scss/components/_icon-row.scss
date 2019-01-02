@@ -176,6 +176,13 @@
     position: relative;
     flex-direction: column;
     text-align: left;
+
+   > span {
+      margin-top: 200px;
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+    }
   }
 
   .flex-col a {
@@ -195,6 +202,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    
 
     &::before {
       content: '';
@@ -208,11 +216,11 @@
       transform: translateX(-50%) translateY(-50%);
     }
 
+    
+
     svg {
       height: 40px;
     }
-
-    
 
 
     &:focus, &:active {
