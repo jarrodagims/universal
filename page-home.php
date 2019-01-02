@@ -14,5 +14,16 @@
         </div>
     </div>
 </section>
+<section class="home-module-2">
+    <section class="icon-row">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <?php echo get_template_part('template-parts/icon', 'row'); ?>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
 </div>
 <?php get_footer(); ?>

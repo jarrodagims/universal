@@ -156,7 +156,7 @@
   }
 
   .navbar-brand {
-    margin-right: auto;
+    
   }
 
   .navbar-left {
@@ -226,6 +226,7 @@
   margin-right: 20px;
   color: $white;
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 
   li.menu-item {
     position: relative;
@@ -271,7 +272,7 @@
 
 .navbar-right li.menu-item.directions {
   a {
-    margin: 0 15px 0 0;
+    margin: 0 15px;
   }
 
   &::after {

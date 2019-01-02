@@ -20,10 +20,14 @@
                     <div class="col phone-footer">
                         <div>
                             <span class="title">Contact</span>
-                            <p>Hail Repair: Call Carlos: (903) 285-6438
-                                Non-Hail Dent Repair: Call Derek: (915) 256-4050
-                                Authority Automotive: Call Rick Stumvoll: (214) 766-5127
-                                Master Shine: Call Carlos Ropez: (469) 951-0745</p>
+                            <p><strong>Hail Repair:</strong> Call Carlos: <strong><a href="tel:9032856438">(903)
+                                        285-6438</a></strong>
+                                <strong>Non-Hail Dent Repair:</strong> Call Derek: <strong><a href="tel:9152564050">(915)
+                                        256-4050</a></strong>
+                                <strong>Authority Automotive:</strong> Call Rick Stumvoll: <strong><a href="tel:214 7665127">(214)
+                                        766-5127</a></strong>
+                                <strong>Master Shine:</strong> Call Carlos Ropez: <strong><a href="tel:4699510745">(469)
+                                        951-0745</a></strong></p>
                         </div>
                     </div>
 
@@ -51,12 +55,6 @@ $sm->setColorType('singleColor');
             </div>
         </div>
     </div>
-</section>
-<section class="footer-nav d-none d-md-flex">
-    <div class="container">
-
-    </div>
-
 </section>
 <section class="sub-footer">
     <div class="container">
