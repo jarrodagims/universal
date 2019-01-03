@@ -1,47 +1,85 @@
 .home-module-4 {
-  
-   background: url('../img/bg-game.jpg') 0 0 no-repeat;
-   background-size: cover;
-   color: #fff;
+  background: url('../img/bg-wheels.jpg') 100% 100% no-repeat;
+  background-size: cover;
+  padding-top: 4em;
 
-   .container {
-       @include drop-tag();
-        padding-top: 11em;
-        padding-bottom: 11em;
-   }
+  h2 {
+    font-family: "Poppins", sans-serif;
+    color: #1a1a1a;
+    font-weight: 400;
+    font-size: 30px;
+  }
 
-   h2, h3 {
-     color: #fff;
-     font-weight: 500;
-     font-size: 36px;
-     margin-bottom: 1em;
-   }
+  h3 {
+    font-family: "Poppins", sans-serif;
+    color: #606060;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
 
-   p {
-       font-family: 'Poppins', sans-serif;
-       font-size: 17px;
-       line-height: 2;
-       margin-bottom: 0;
-   }
+  .col:last-child {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
 
-   @include media-breakpoint-down(md) {
-       text-align: center;
+  .col.arrow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+    z-index: 0;
 
-       .container {
-           padding: 3.5em 3em;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -25vw;
+      margin-left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50vw;
+      height: 100%;
+      display: block;
+      background: url("../img/bg-arrow.png") 0 center no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
 
-           &::before {
-             right: 30px;
-           }
+    h2,
+    h3 {
+      color: $white;
+    }
+  }
+
+  .card {
+    background: rgba(255,255,255,0.89);
+    color: #606060;
+    text-align: left;
+    border: 0;
+    margin-top: 3em;
+
+    h3 {
+      color: #1A1A1A;
+      font-size: 30px;
+    }
+
+    .card-bottom {
+      padding: 50px;
+    }
+
+    .card-top {
+       color: $white;
+       background: #333333;
+       padding: 2em;
+
+       h2 {
+         color: #CCCCCC;
+         margin: 0;
+         font-size: 23px;
        }
-
-
-       h2, h3 {
-           font-size: 18px;
-       }
-
-       p {
-           font-size: 15px;
-       }
-   }
+    }
+  }
 }
