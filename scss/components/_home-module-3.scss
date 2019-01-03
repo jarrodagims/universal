@@ -1,158 +1,69 @@
 .home-module-3 {
-  background: url("../img/bg-beverages.png") right 100% no-repeat;
-  background-size: 50% auto;
 
-  ul {
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 3em;  
+   .circle-container {
+    text-align: right;
 
-    li {
-      font-size: 16px;
-      margin-bottom: .5em;
-      font-weight: 300;
-    }
-  }
- 
-  
-  .container {
-      @include drop-tag();
-      padding-top: 6.5em;
-      padding-bottom: 6.5em;
-
-      &::before {
-        right: 0;
-      }
-  }
-
-  p {
-    font-size: 17px;
-    font-family: "Poppins", sans-serif;
-    line-height: 2;
-  }
-
-
-  h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 101px;
-    color: #33373f;
-
-    span {
-      display: block;
-      font-weight: 300;
-      @include raleway();
-      font-size: 41px;
-      color: #999b95;
-      margin-bottom: 1em;
+    h3 {
+      font-weight: 700;
+      margin-bottom: 0;
+      font-family: 'Poppins' sans-serif;
+      color: #1A1A1A;
     }
   }
 
   h2 {
-    font-size: 27px;
-    margin-bottom: 1em;
-    cursor: pointer;
-    cursor: hand;
+    font-weight: 700;
+    font-family: 'Poppins' sans-serif;
+    margin-bottom: .5em;
 
-    span {
-      display: inline-block;
-      position: relative;
-      padding-right: 30px;
-
-      &::after {
-        @include svg-arrow($white);
-        width: 20px;
-        height: 20px;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        display: block;
-        content: "";
-        margin-left: 10px;
-        position: absolute;
-      }
+    strong {
+      color: $sherpa-brand-primary;
     }
   }
 
   h3 {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 1em;
   }
 
-  .sidebar-table {
+  .circle {
+    background: #000000;
+    border-radius: 50%;
+    width: 467px;
+    height: 467px;
+    position: relative;
+
+    em {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: block;
+      position: absolute;
+      @include gradient();
+      top: 52px;
+      left: 177px;
+      text-indent: -9999px;
+    }
+
+    svg {
+      width: 270px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  .outer-circle {
+    width: 540px;
+    height: 540px;
+    display: block;
     position: absolute;
-    width: 412px;
+    @include svg-ring();
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
   }
 
-  .col-md-5 {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  @include media-breakpoint-down(md) {
-    background: none;
-
-    ul {
-      padding-left: 0;
-      margin-left: 0;
-    }
-
-    ul li {
-      text-align: center;
-      font-size: 12px;
-      list-style: none;
-      line-height: 2;
-    }
-
-   .row {
-      .col-md-6:first-child {
-        background: url("../img/bg-beverages-mobile.png") 0 100% no-repeat;
-        background-size: 100% auto;
-        padding-bottom: 2em;
-      }
-   }
-
-    .container {
-      padding-top: 2em;
-      padding-bottom: 2em;
-
-      &::before {
-        display: none;
-      }
-    }
-
-    p {
-      font-size: 15px;
-      text-align: center;
-    }
-
-
-    h1 {
-      text-align: center;
-      font-size: 49px;
-
-      img {
-        height: 25px;
-      }
-
-      span {
-        font-size: 20px;
-        font-weight: 400;
-      }
-    }
-
-    h2 {
-      font-size: 15px;
-      text-align: center;
-    }
-
-    h3 {
-      font-size: 15px;
-      text-align: center;
-      font-weight: 400;
-      line-height: 1.5;
-    }
-
-    
-  }
+ 
 }

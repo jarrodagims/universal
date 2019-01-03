@@ -15,19 +15,49 @@
 
     h1 {
       margin-top: 1em;
-      font-size: 25px;
+      font-size: 78px;
       font-family: "Poppins", sans-serif;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: -2px;
       margin-bottom: 1em;
+      font-weight: 300;
+
+      > div {
+        
+      }
 
       span {
-        display: block;
-        font-size: 39px;
+        font-size: 42px;
+        letter-spacing: 20px;
         text-transform: none;
         margin-top: 0.5em;
-        margin-bottom: 0;
-        letter-spacing: 0;
+        margin-bottom: 0; 
+        position: relative;
+        padding-left: 147px;
+        padding-right: 147px;
+        margin-right: -20px;
+        font-weight: 400;
+
+
+        &::before, &::after {
+          width: 147px;
+          height: 3px;
+          background: #B3B3B3;
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); 
+        }
+
+
+        &::before {
+          left: -45px;
+        }
+
+        &::after {
+          right: -25px;
+        }
       }
     }
   }

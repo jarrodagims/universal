@@ -5,7 +5,7 @@
                 <?php echo get_template_part('template-parts/icons/icon','1') ?>
             </div>
         </a>
-        <span>$0 <span>(Out Of Pocket)</span>
+        <span>$0 <span>(Out Of Pocket)</span><br />
             hail repair in
             Odessa & Midland</span>
     </li>
@@ -15,7 +15,7 @@
                 <?php echo get_template_part('template-parts/icons/icon','2') ?>
             </div>
         </a>
-        <span>$200
+        <span>$200<br />
             Gift Card</span>
     </li>
     <li class="flex-col">
@@ -24,8 +24,8 @@
                 <?php echo get_template_part('template-parts/icons/icon','3') ?>
             </div>
         </a>
-        <span>We Pay Your
-            Deductible
+        <span>We Pay Your<br />
+            Deductible<br />
             $0 <span>(Out Of Pocket)</span></span>
     </li>
 
@@ -37,7 +37,7 @@
                 </div>
             </div>
         </a>
-        <span>Free Pick Up
+        <span>Free Pick Up<br />
             & Delivery</span>
     </li>
 
@@ -49,7 +49,7 @@
                 </div>
             </div>
         </a>
-        <span>Free
+        <span>Free<br />
             Rental Car</span>
     </li>
 
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </a>
-        <span>We Work With
+        <span>We Work With<br />
             All Insurance</span>
     </li>
 
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </a>
-        <span>$100 For
+        <span>$100 For<br />
             Referrals</span>
     </li>
 </ul>
