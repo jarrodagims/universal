@@ -157,8 +157,8 @@
   $margin-top: 3px;
   $combined-height: $line-height + $margin-top;
   $last-offset: 207px;
-  $last-2nd-offset: 140px;
-  $last-3rd-offset: 80px;
+  $last-2nd-offset: $last-offset - 67px;
+  $last-3rd-offset: $last-offset - 127px;
   $padding-bottom: 28px;
   
   .flex-col {
