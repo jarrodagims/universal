@@ -1,9 +1,15 @@
 .home-module-6 {
-   background: url('../img/bg-band.jpg') center center no-repeat;
-   background-size: cover;
-   height: 328px;
+    background: url('../img/bg-chevron.jpg') right 0 no-repeat;
+    background-size: cover;
+    padding: 4em 0;
 
-   @include media-breakpoint-down(md) {
-        height: 140px;
-   }
+    strong {
+        color: $sherpa-brand-primary;
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    p {
+        margin-bottom: 1em;
+    }
 }
