@@ -1,13 +1,14 @@
 .home-module-6 {
-    background: url('../img/bg-chevron.jpg') right 0 no-repeat;
-    background-size: cover;
+    background: url('../img/bg-chevron.png') right 0 no-repeat;
+    background-size: contain;
     padding: 4em 0;
 
-    strong {
+    strong.title {
         color: $sherpa-brand-primary;
         display: block;
         margin-bottom: 1em;
-    }
+        font-family: 'Montserrat', sans-serif;
+    } 
 
     p {
         margin-bottom: 1em;

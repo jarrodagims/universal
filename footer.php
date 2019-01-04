@@ -11,21 +11,19 @@
                                 'description'
                             ); ?>" /></a>
                     </div>
-                    <div class="col">
-                        <p>Please feel free to contact us.
-                            You can either call our toll-free number or check below to see if there is an office close
-                            to your area.
-
+                    <div class="col contact-footer">
+                        <p>Please feel free to contact us. You can either call our toll-free number or check below to
+                            see if there is an office close to your area.</p>
                     </div>
                     <div class="col phone-footer">
                         <div>
                             <span class="title">Contact</span>
                             <p><strong>Hail Repair:</strong> Call Carlos: <strong><a href="tel:9032856438">(903)
-                                        285-6438</a></strong>
+                                        285-6438</a></strong><br />
                                 <strong>Non-Hail Dent Repair:</strong> Call Derek: <strong><a href="tel:9152564050">(915)
-                                        256-4050</a></strong>
+                                        256-4050</a></strong><br />
                                 <strong>Authority Automotive:</strong> Call Rick Stumvoll: <strong><a href="tel:214 7665127">(214)
-                                        766-5127</a></strong>
+                                        766-5127</a></strong><br />
                                 <strong>Master Shine:</strong> Call Carlos Ropez: <strong><a href="tel:4699510745">(469)
                                         951-0745</a></strong></p>
                         </div>

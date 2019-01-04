@@ -25,13 +25,14 @@
         </div>
     </section>
 </section>
+</div>
 <section class="home-module-3">
     <div class="container">
         <div class="row">
             <div class="col text-center car-container">
-                <h2>Did your car recently get
+                <h2>Did your car recently get<br />
                     riddled with <strong>hail?</strong></h2>
-                <h3>Call us and we will work with
+                <h3>Call us and we will work with<br />
                     insurance to get it fixed right away.</h3>
                 <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0"
                         type="submit">CONTACT
@@ -48,8 +49,8 @@
                 <h3>What We Do</h3>
 
                 <p>
-                    We offer a <strong>life-time warranty</strong>, <strong>fast
-                        turnaround times</strong>, and in most instances,
+                    We offer a <strong>life-time warranty</strong>, <strong>fast<br />
+                        turnaround times</strong>, and in most instances,<br />
                     there are <strong>no out of pocket expenses</strong>.
                 </p>
             </div>
@@ -57,7 +58,7 @@
 
     </div>
 </section>
-</div>
+
 <section class="home-module-4">
     <div class="container">
         <div class="row">
@@ -152,18 +153,18 @@
         </div>
         <div class="row">
             <div class="col">
-                <strong>COLORADO</strong>
-                <p>3815 W Service Rd Evans, CO 80620</p>
-                <p>300 E 16th St Suite 209 Greeley, CO 80631</p>
+                <strong class="title">COLORADO</strong>
+                <p>3815 W Service Rd Evans, CO 80620<br />
+                    300 E 16th St Suite 209 Greeley, CO 80631</p>
             </div>
             <div class="col">
-                <strong>ARLINGTON</strong>
+                <strong class="title">ARLINGTON</strong>
                 <p>
                     1920 W Pioneer Pkwy Arlington, TX 76013
                 </p>
             </div>
             <div class="col">
-                <strong>CELINA</strong>
+                <strong class="title">CELINA</strong>
                 <p>
                     6196 Private Road 902 Celina, TX 75009
                 </p>
@@ -172,20 +173,20 @@
         <div class="row">
             <div class="col">
 
-                <strong>IRVING</strong>
+                <strong class="title">IRVING</strong>
                 <p>
                     9819 N MacArthur Blvd Irving, TX 75063
                 </p>
             </div>
             <div class="col">
-                <strong>EL PASO</strong>
+                <strong class="title">EL PASO</strong>
                 <p>
-                    By Appointment Only (915) 642-6911
+                    <strong>By Appointment Only</strong> (915) 642-6911
                 </p>
             </div>
             <div class="col">
 
-                <strong>PROSPER</strong>
+                <strong class="title">PROSPER</strong>
                 <p>
                     1069 N Preston Rd Prosper, TX 75078
                 </p>

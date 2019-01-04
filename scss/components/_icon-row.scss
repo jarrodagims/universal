@@ -151,6 +151,78 @@
   }
 }
 
+.page-template-page-home .icon-row {
+
+  $line-height: 285px;
+  $margin-top: 3px;
+  $combined-height: $line-height + $margin-top;
+  $last-offset: 207px;
+  $last-2nd-offset: 140px;
+  $last-3rd-offset: 80px;
+  $padding-bottom: 28px;
+  
+  .flex-col {
+
+    > span {
+      bottom: $last-offset + 28px;
+    }
+
+    a {
+      &::after {
+        height: $line-height;
+        margin-top: $margin-top;
+      }
+
+      &::before {
+        top: calc(100% + #{$combined-height});
+      } 
+    }
+
+    &:nth-last-child(3) {
+      a::after {
+        height: $combined-height + $last-3rd-offset;
+      }
+
+      a::before {
+        top: calc(100% + (#{$combined-height} + #{$last-3rd-offset}));
+      }
+
+      > span {
+        bottom: ($last-offset - $last-3rd-offset) + $padding-bottom;
+      }
+    }
+
+    &:nth-last-child(2) {
+      a::after {
+        height: $combined-height + $last-2nd-offset;
+      }
+
+      a::before {
+        top: calc(100% + (#{$combined-height} + #{$last-2nd-offset}));
+      }
+
+      > span {
+        bottom: ($last-offset - $last-2nd-offset) + $padding-bottom;
+      }
+    }
+
+    &:last-child() {
+      a::after {
+        height: $combined-height + $last-offset;
+      }
+
+      a::before {
+        top: calc(100% + (#{$combined-height} + #{$last-offset}));
+      }
+
+      > span {
+        bottom: $padding-bottom;
+      }
+    }
+  }
+
+}
+
 
 
 
@@ -159,8 +231,10 @@
   overflow: hidden;
   list-style: none;
 
-  .container {
-     max-width: 1770px;
+  @media screen and (min-width: 1900px) {
+    .container {
+      max-width: 1770px;
+    }
   }
 
   .flex-row {
@@ -176,10 +250,11 @@
     position: relative;
     flex-direction: column;
     text-align: left;
-    height: 600px;
+//     height: 409px;
+
+    height: 616px;
 
    > span {
-      margin-top: 300px;
       display: block;
       font-family: 'Poppins', sans-serif;
       font-size: 24px;
@@ -235,7 +310,7 @@
       width: 17px;
       height: 17px;
       position: absolute;
-      top: calc(100% + 288px);
+      
       @include gradient();
       border-radius: 50%;
     }
@@ -243,12 +318,10 @@
 
     &::after {
       content: '';
-      height: 285px;
       width: 1px;
       background: $sherpa-brand-primary;
       position: absolute;
       top: 100%;
-      margin-top: 3px;
     }
     
 

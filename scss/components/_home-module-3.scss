@@ -1,6 +1,11 @@
 .home-module-3 {
   position: relative;
   z-index: 1;
+  background: url('../img/bg-car.jpg') 0 100% no-repeat;
+  background-size: cover;
+  padding-top: 10em;
+  padding-bottom: 4em;
+
   
   &::after {
     background: url('../img/car.png') 0 100% no-repeat;
@@ -43,6 +48,7 @@
   h3 {
     font-size: 28px;
     margin-bottom: 1em;
+    line-height: 1.5;
   }
 
   .circle {

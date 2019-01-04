@@ -1,5 +1,5 @@
 .home-module-4 {
-  background: url('../img/bg-wheels.jpg') 100% 100% no-repeat;
+  background: url('../img/bg-wheels.jpg') 100% 0 no-repeat;
   background-size: cover;
   padding-top: 4em;
 
@@ -37,20 +37,20 @@
       content: "";
       position: absolute;
       left: -25vw;
-      margin-left: -30px;
       top: 50%;
       transform: translateY(-50%);
       width: 50vw;
       height: 100%;
+      margin-left: -30px;
       display: block;
       background: url("../img/bg-arrow.png") 0 center no-repeat;
       background-size: cover;
       z-index: -1;
     }
-
-    h2,
+ 
+    h2, 
     h3 {
-      color: $white;
+      color: $white; 
     }
   }
 
