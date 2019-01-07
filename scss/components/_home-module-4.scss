@@ -1,13 +1,63 @@
 .home-module-4 {
-  background: url('../img/bg-wheels.jpg') 100% 0 no-repeat;
+  background: url("../img/bg-wheel.jpg") 100% 0 no-repeat;
   background-size: cover;
   padding-top: 4em;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+
+  .container {
+    overflow: visible;
+
+    .row {
+      overflow: visible;
+
+      .col {
+        overflow: visible;
+      }
+    }
+  }
+
+  .above-card {
+    p {
+      margin-bottom: 6em;
+    }
+  }
+
+  &::before {
+    content: "";
+    @include svg-chevron();
+    background-position: right -50vh;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    background: url("../img/bg-text.png");
+    background-position: right 0;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
 
   h2 {
     font-family: "Poppins", sans-serif;
     color: #1a1a1a;
     font-weight: 400;
     font-size: 30px;
+    margin-bottom: 2em;
   }
 
   h3 {
@@ -16,7 +66,7 @@
     font-weight: 300;
     font-size: 23px;
     line-height: 1.5;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   .col:last-child {
@@ -40,29 +90,29 @@
       top: 50%;
       transform: translateY(-50%);
       width: 50vw;
-      height: 100%;
+      height: 200%;
       margin-left: -30px;
       display: block;
       background: url("../img/bg-arrow.png") 0 center no-repeat;
       background-size: cover;
       z-index: -1;
     }
- 
-    h2, 
+
+    h2,
     h3 {
-      color: $white; 
+      color: $white;
     }
   }
 
   .card {
-    background: rgba(255,255,255,0.89);
+    background: rgba(255, 255, 255, 0.89);
     color: #606060;
     text-align: left;
     border: 0;
     margin-top: 3em;
 
     h3 {
-      color: #1A1A1A;
+      color: #1a1a1a;
       font-size: 30px;
     }
 
@@ -71,15 +121,15 @@
     }
 
     .card-top {
-       color: $white;
-       background: #333333;
-       padding: 2em;
+      color: $white;
+      background: #333333;
+      padding: 2em;
 
-       h2 {
-         color: #CCCCCC;
-         margin: 0;
-         font-size: 23px;
-       }
+      h2 {
+        color: #cccccc;
+        margin: 0;
+        font-size: 23px;
+      }
     }
   }
 }

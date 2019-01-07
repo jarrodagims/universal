@@ -1,14 +1,16 @@
 .home-module-3 {
   position: relative;
   z-index: 1;
-  background: url('../img/bg-car.jpg') right 0 no-repeat;
-  background-size: cover;
+  background: url('../img/bg-car.jpg') right 100% no-repeat;
+  background-size: contain;
   padding-top: 10em;
-  padding-bottom: 4em;
+  padding-bottom: 4em;  
 
   &::before {
     content: '';
-    background: url('../img/chevron.png') right 0 no-repeat;
+    @include svg-chevron();
+    background-position: 10vw -10vh;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 200%;
@@ -17,7 +19,7 @@
     right: 0;
     bottom: 0;
   }
-
+ 
   
   &::after {
     background: url('../img/car.png') 0 100% no-repeat;

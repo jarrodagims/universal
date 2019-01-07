@@ -74,18 +74,22 @@
                 </div>
             </div>
             <div class="col col-md-7">
-                <h2>If you have non hail related dents and dings, call Derek
-                    today at: (903) 285-6438.
-                </h2>
-                <h3>Hail damage may not seem like a worry to the everyday Sun City dweller,
-                    but when storms hit, they hit hard.
-                </h3>
-                <p>Hard tends to be big and if your car isn’t covered by some garage or carport, it will more than
-                    likely suffer hail damage. Those little dents may not seem like a big deal initially, but you are
-                    going to want to find the best in hail damage repair in El Paso, TX. Those little dents can start
-                    to oxidize and will only be more
-                    expensive to repair in the long run.
-                </p>
+                <div class="above-card">
+                    <h2>If you have non hail related dents and dings, call Derek
+                        today at: <a href="tel:9032856438">(903) 285-6438</a>.
+                    </h2>
+                    <h3>Hail damage may not seem like a worry to the everyday Sun City dweller,
+                        but when storms hit, they hit hard.
+                    </h3>
+                    <p>Hard tends to be big and if your car isn’t covered by some garage or carport, it will more than
+                        likely suffer hail damage. Those little dents may not seem like a big deal initially, but you
+                        are
+                        going to want to find the best in hail damage repair in El Paso, TX. Those little dents can
+                        start
+                        to oxidize and will only be more
+                        expensive to repair in the long run.
+                    </p>
+                </div>
 
                 <div class="card">
                     <div class="card-top">

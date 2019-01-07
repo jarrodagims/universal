@@ -228,8 +228,15 @@
 
 .icon-row {
   text-align: center;
-  overflow: hidden;
+  overflow: hidden; 
   list-style: none;
+
+  @media screen and (max-width: 1900px) {
+    .container {
+      width: 90%;
+      max-width: 100%;
+    }
+  }
 
   @media screen and (min-width: 1900px) {
     .container {
