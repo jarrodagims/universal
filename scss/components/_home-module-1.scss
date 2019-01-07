@@ -1,7 +1,8 @@
 .home-module-1 {
   height: 500px;
-  
-  
+  z-index: 2;
+  position: relative;
+ 
   .jumbotron {
     height: auto;
     margin-bottom: 0;

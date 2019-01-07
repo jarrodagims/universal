@@ -73,7 +73,7 @@
 
                 </div>
             </div>
-            <div class="col col-md-7">
+            <div class="col col-md-8">
                 <div class="above-card">
                     <h2>If you have non hail related dents and dings, call Derek
                         today at: <a href="tel:9032856438">(903) 285-6438</a>.
@@ -93,7 +93,8 @@
 
                 <div class="card">
                     <div class="card-top">
-                        <h2>C&D Dent Guys offer superior hail damage repair in El Paso, TX at the best prices around.</h2>
+                        <h2><span>C&D Dent Guys</span> offer superior hail damage repair in El Paso, TX at the best
+                            prices around.</h2>
                     </div>
 
                     <div class="card-bottom">
