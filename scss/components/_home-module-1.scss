@@ -24,9 +24,14 @@
       margin-bottom: 1em;
       font-weight: 300;
 
-      > div {
-        
-      }
+      div:last-child {
+        color: #B3B3B3;
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        margin-top: .5em;
+        font-weight: 500;
+        letter-spacing: 1px;
+      } 
 
       span {
         font-size: 42px;
@@ -59,7 +64,9 @@
 
         &::after {
           right: -25px;
-        }
+        } 
+
+
       }
     }
   }
@@ -75,13 +82,33 @@
 
     .jumbo-content {
       h1 {
-        font-size: 15px;
+        font-size: 34px;
         margin-top: 0;
 
         span {
-          font-size: 30px;
+          font-size: 18px;
           line-height: 1.5;
+          padding-left: 79px;
+          padding-right: 79px;
+
+          &::before {
+            left: 0;
+          }
+
+          &::after {
+            right: 25px;
+          }
+
+          &::before, &::after {
+            width: 64px;
+          }
         }
+
+        div:last-child {
+          font-size: 11px;
+          margin-top: 1em;
+        }
+        
       }
     }
   }

@@ -165,13 +165,6 @@
     justify-content: flex-start;
     align-items: center;
   }
-
-  @include media-breakpoint-down(md) {
-    img {
-      height: 12px;
-      margin-left: auto;
-    }
-  }
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -219,6 +212,12 @@
   }
 }
 
+.navbar-right {
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
 .navbar-nav.navbar-right {
   flex-direction: row;
   left: 20px;
@@ -227,12 +226,18 @@
   color: $white;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  font-weight: 500;
+
+  a {
+    color: $white;
+  }
 
   li.menu-item {
     position: relative;
 
     a {
       float: left;
+
 
       span {
         overflow: hidden;
@@ -268,6 +273,16 @@
       color: #fff;
     }
   }
+
+  @include media-breakpoint-down(md) {
+    width: 100%;
+
+    li:first-child {
+      order: 3;
+      margin-left: auto;
+      margin-right: 100px; 
+    }
+  }
 }
 
 .navbar-right li.menu-item.directions {
@@ -286,6 +301,12 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  @include media-breakpoint-down(md) {
+    a {
+      margin: 0 15px 0 0;
+    }
+  }
 }
 
 .navbar-right li.menu-item.contact {
@@ -301,8 +322,18 @@
   }
 
   .navbar-brand {
-    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 25px;
   }
+
+//   .navbar-brand {
+//     margin: 0 auto;
+//     position: absolute;
+//     height: 99px;
+//     img {
+//       height: 99px;
+//     }
+//   }
 
   .navbar-sherpa #menu-primary {
     background: #000;
@@ -344,7 +375,7 @@
   .top-header {
     display: flex;
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 0 0;
     height: 50px;
 
     a .btn {
@@ -369,6 +400,8 @@
       position: absolute;
       right: 20px;
       top: 0;
+      transform: translateY(-50%);
+      z-index: 99;
     }
   }
 

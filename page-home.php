@@ -6,7 +6,14 @@
 <section class="home-module-1">
     <div class="jumbotron">
         <div class="jumbo-content">
+            <a class="navbar-brand d-md-none" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
+                    alt="<?php echo get_bloginfo(
+                                'description'
+                            ); ?>" /></a>
+
             <h1>CAR <strong>HAIL</strong> DAMAGE <div><span>REPAIR</span></div>
+
+                <div>IN EL PASO TX</div>
             </h1>
 
             <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">SCHEDULE
