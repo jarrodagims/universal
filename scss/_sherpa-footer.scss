@@ -437,6 +437,11 @@
       margin-bottom: 1em;
       margin-top: 1em;
       text-align: center;
+
+      strong {
+        display: block;
+        margin-top: 1em;
+      }
     }
 
     .hours-footer {
@@ -444,7 +449,7 @@
     }
 
     span.title {
-      font-size: 10px;
+      font-size: 15px;
       margin-bottom: 0;
     }
 
@@ -625,7 +630,7 @@
         flex-direction: column;
       }
 
-      background: #29292C;
+      background: #1a1a1a;
       color: $white;
    }
 }

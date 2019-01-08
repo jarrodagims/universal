@@ -67,14 +67,16 @@
 </section>
 
 <section class="home-module-4">
+    <img src="<?=IMGURL?>bg-wheel-mobile.jpg" class="d-lg-none" alt="">
     <div class="container">
         <div class="row">
             <div class="col arrow">
 
                 <div class="bg-arrow">
+
                     <h2>Hail Damage?</h2>
-                    <h3>Schedule A Repair<br />
-                        Today</h3>
+                    <h3>Schedule A Repair
+                        <span class="br-md">Today</span></h3>
                     <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0"
                             type="submit">CONTACT US TODAY</button></a>
 
@@ -82,20 +84,20 @@
             </div>
             <div class="col col-md-8">
                 <div class="above-card">
-                    <h2>If you have non hail related dents and dings, call Derek
-                        today at: <a href="tel:9032856438">(903) 285-6438</a>.
-                    </h2>
-                    <h3>Hail damage may not seem like a worry to the everyday Sun City dweller,
-                        but when storms hit, they hit hard.
-                    </h3>
-                    <p>Hard tends to be big and if your car isn’t covered by some garage or carport, it will more than
-                        likely suffer hail damage. Those little dents may not seem like a big deal initially, but you
-                        are
-                        going to want to find the best in hail damage repair in El Paso, TX. Those little dents can
-                        start
-                        to oxidize and will only be more
-                        expensive to repair in the long run.
-                    </p>
+                    <div class="extra-padding">
+                        <h2>If you have non hail related dents and dings, call Derek
+                            today at: <a href="tel:9032856438">(903) 285-6438.</a>
+                        </h2>
+                        <h3>Hail damage may not seem like a worry to the everyday Sun City dweller,
+                            but when storms hit, they hit hard.
+                        </h3>
+                        <p>Hard tends to be big and if your car isn’t covered by some garage or carport, it will more
+                            than likely suffer hail damage. Those little dents may not seem like a big deal initially,
+                            but you
+                            are going to want to find the best in hail damage repair in El Paso, TX. Those little dents
+                            can start to oxidize and will only be more expensive to repair in the long run.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="card">
@@ -105,7 +107,7 @@
                     </div>
 
                     <div class="card-bottom">
-                        <h3>If you have hail damage, call Carlos today at: <a href="tel:9032856438">(903) 285-6438</a>.
+                        <h3>If you have hail damage, call Carlos today at: <a href="tel:9032856438">(903) 285-6438.</a>
                         </h3>
 
                         <p>
@@ -133,24 +135,28 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>
-                        Paintless Dent Repair in El Paso TX
-                    </h2>
-                    <p class="blurb">
-                        Here at C&D Dent Guys understand the importance of a job well done. This makes us the place in
-                        Texas for
-                        your restoration fix. We’re experts when it comes to in Texas and we stand proudly by our work.
-                    </p>
+                    <div class="extra-padding">
+                        <h2>
+                            Paintless Dent Repair <span class="br-xs">in El Paso TX</span>
+                        </h2>
+                        <p class="blurb">
+                            Here at C&D Dent Guys understand the importance of a job well done. This makes us the place
+                            in
+                            Texas for
+                            your restoration fix. We’re experts when it comes to in Texas and we stand proudly by our
+                            work.
+                        </p>
 
-                    <p>
-                        We’ve been in business over 10 years and total over 15 years of experience working in the
-                        industry. We
-                        deliver the optimal dent repair results that you want in a short time to get your vehicle
-                        looking great,
-                        faster. Hail damage and other factors which can put dents on your vehicle shouldn’t put a
-                        “dent” on your
-                        wallet. Here at C&D Dent Guys we deliver quality work at a bargain.
-                    </p>
+                        <p>
+                            We’ve been in business over 10 years and total over 15 years of experience working in the
+                            industry. We
+                            deliver the optimal dent repair results that you want in a short time to get your vehicle
+                            looking great,
+                            faster. Hail damage and other factors which can put dents on your vehicle shouldn’t put a
+                            “dent” on your
+                            wallet. Here at C&D Dent Guys we deliver quality work at a bargain.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

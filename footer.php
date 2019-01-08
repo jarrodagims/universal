@@ -11,21 +11,21 @@
                                 'description'
                             ); ?>" /></a>
                     </div>
-                    <div class="col contact-footer">
+                    <div class="col contact-footer d-none d-md-block">
                         <p>Please feel free to contact us. You can either call our toll-free number or check below to
                             see if there is an office close to your area.</p>
                     </div>
                     <div class="col phone-footer">
                         <div>
                             <span class="title">Contact</span>
-                            <p><strong>Hail Repair:</strong> Call Carlos: <strong><a href="tel:9032856438">(903)
-                                        285-6438</a></strong><br />
-                                <strong>Non-Hail Dent Repair:</strong> Call Derek: <strong><a href="tel:9152564050">(915)
-                                        256-4050</a></strong><br />
-                                <strong>Authority Automotive:</strong> Call Rick Stumvoll: <strong><a href="tel:214 7665127">(214)
-                                        766-5127</a></strong><br />
-                                <strong>Master Shine:</strong> Call Carlos Ropez: <strong><a href="tel:4699510745">(469)
-                                        951-0745</a></strong></p>
+                            <p><strong>Hail Repair:</strong> Call Carlos: <a href="tel:9032856438">(903)
+                                    285-6438</a><br />
+                                <strong>Non-Hail Dent Repair:</strong> Call Derek: <a href="tel:9152564050">(915)
+                                    256-4050</a><br />
+                                <strong>Authority Automotive:</strong> Call Rick Stumvoll: <a href="tel:214 7665127">(214)
+                                    766-5127</a><br />
+                                <strong>Master Shine:</strong> Call Carlos Ropez: <a href="tel:4699510745">(469)
+                                    951-0745</a></p>
                         </div>
                     </div>
 

@@ -106,12 +106,65 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     top: 50%;
+
   }
 
  @include media-breakpoint-down(md)
  {
-   padding-top: 4em;
-   background: url('../img/bg-car-mobile.jpg') 100% 0 no-repeat;
+   padding-top: 0em;
+   padding-bottom: 2em;
+   background: none;
+
+   .circle-container {
+     text-align: center;
+   } 
+
+   .car-container {
+     background: url('../img/bg-car-mobile.jpg') 100% 100% no-repeat;
+     background-size: cover;
+     padding-top: 4em;
+     padding-bottom: 3em;
+   }
+
+   &::after {
+     display: none;
+   }
+
+   .outer-circle {
+     width: 152px;
+     height: 152px;
+     position: relative;
+
+      &::before {
+       content: '';
+       display: block;
+       width: 76px;
+       height: 95px;
+       position: absolute;
+       left: 50%;
+       background-repeat: no-repeat;
+       position: absolute;
+       top: 50%;
+       transform: translateX(-50%) translateY(-50%);
+       @include svg-lifetime();
+       margin-top: -10px;
+     }
+   }
+
+  
+  svg {
+    display: none;
+  }
+
+   .circle {
+     width: 132px;
+     height: 132px;
+     margin: 2em auto;
+
+      em {
+       display: none;
+     }
+   } 
 
    h2 {
      font-size: 21px;
@@ -124,3 +177,4 @@
    }
  }
 }
+ 

@@ -115,6 +115,7 @@
     text-align: left;
     border: 0;
     margin-top: 3em;
+    @include nodropshadow();
 
     h3 { 
       color: #1a1a1a;
@@ -142,5 +143,120 @@
         }
       }
     }
+  }
+
+  @include media-breakpoint-down(md) {
+    text-align: center;
+    padding-top: 0;
+    background: url('../img/bg-wheels-mobile.jpg') 0 100% no-repeat;
+    background-size: contain;
+    overflow: hidden;
+
+    .extra-padding {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .col {
+      padding: 0 0;
+      background: transparent;
+    }
+
+    .card {
+      background: none;
+      margin-top: 0;
+    }
+
+    .card .card-bottom {
+      padding: 2em 30px;
+      text-align: center;
+
+      p {
+        font-size: 15px;
+
+      }
+
+      h3 {
+        font-weight: 600; 
+        font-size: 21px !important;
+        line-height: 1.5;
+
+        a {
+          display: block;
+        }
+      }
+    }
+
+    .above-card {
+      padding-left: 15px;
+      padding-right: 15px;
+      background: #f2f2f2;
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
+    .above-card p {
+      margin-bottom: 0;
+    }
+
+
+    .col:last-child {
+      padding-top: 2em;
+
+      h2 {
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 1.5;
+      }
+
+      h3 {
+        font-size: 15px;
+        line-height: 1.5;
+      } 
+    }
+
+    .card .card-top {
+      padding: 2em;
+      text-align: center;
+
+      h2 {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+    }
+
+
+   img {
+     margin-bottom: 2em;
+   }
+   
+
+    &::before, &::after {
+      display: none;
+    }
+
+    .col.arrow {
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+
+     h2 {
+       margin-bottom: .25em;
+       font-size: 21px;
+       font-weight: 700;
+     }
+
+      h2, h3 { 
+        color: #333333;
+      }
+
+      h3 {
+        font-size: 18px;
+      } 
+    } 
   }
 }

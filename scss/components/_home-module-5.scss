@@ -31,5 +31,22 @@
      margin-bottom: 1em;
  }
 
+ @include media-breakpoint-down(md) {
+     overflow: visible;
+
+     &::before {
+         display: none;
+     }
+
+     .col:last-child {
+         background: transparent;
+         padding-bottom: 2em;
+     }
+
+     p.blurb {
+         font-size: 15px;
+     }
+ }
+
 
 }

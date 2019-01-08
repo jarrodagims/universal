@@ -13,4 +13,23 @@
     p {
         margin-bottom: 1em;
     }
+
+    @include media-breakpoint-down(md) {
+        text-align: center;
+        background-size: 100% auto;
+        @include svg-chevron-mobile();
+        content: '';
+        background-repeat: no-repeat;
+        padding-bottom: 2em;
+        padding-top: 2em;
+
+        h2 {
+            font-weight: 600;
+            font-size: 21px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
 }
