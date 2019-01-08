@@ -3,6 +3,71 @@
   list-style: none;
   background-size: cover; 
 
+  .flex-col {
+    flex-direction: column;
+    align-items: center;
+    height: 164px;
+    position: relative; 
+
+    &:first-child, &:nth-child(2), &:nth-child(3) {
+      overflow: visible;
+      margin-bottom: 20px; 
+
+      &::before {
+        content: '';
+        display: block;
+        @include gradient();
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+      }
+
+    }
+
+    &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7) {
+      width: 25%;
+      height: 194px;
+
+      a {
+        margin-top: auto;
+      }
+
+      span {
+        top: 0;
+        bottom: auto;
+      }
+
+      a::before {
+        bottom: 130px;
+        top: auto;
+      }
+
+      a::after {
+        bottom: 34px;
+        top: auto;
+        height: 96px;
+      }
+    }
+   
+
+    > span {
+      margin: 0 auto;
+      text-align: center;
+      bottom: 0;
+      display: block;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+      font-size: 11px;
+      margin-bottom: 20px;
+
+      span {
+        font-size: 11px;
+      }
+    }
+  }
 
   .flex-col.flex-row {
     flex-direction: column;
@@ -15,7 +80,6 @@
   .container, .container-fluid {
     padding: 0 0;
   }
-  
 
   .flex-row {
     flex-direction: row;
@@ -24,27 +88,11 @@
     margin-bottom: 0;
     width: 100%;
     list-style: none !important;
+  }
 
-    &.visible-xs {
-      display: flex !important;
-    }
-
-    &:after {
-      display: none;
-    }
-
-    .flex-col {
+  .flex-col {
       width: 33.33%;
       margin-bottom: 0;
-
-      &::after {
-        display: none;
-      }
-      
-
-      &:last-child a {
-        padding: 2em 1em;
-      }
 
       a {
         font-size: 9px;
@@ -58,7 +106,32 @@
         color: $white;
         font-family: 'Poppins', sans-serif;
         font-size: 14px;
-        
+        width: 34px;
+        height: 34px;
+
+        &::before {
+          top: 80px;
+          height: 6px;
+          width: 6px;
+        }
+
+        .circle {
+          &::before {
+          content: '';
+          @include gradient-circle();
+          width: 29px;
+          height: 29px;
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          }
+        }
+
+        &::after {
+          height: 47px;
+        }
 
         span {
           display: block !important;
@@ -77,8 +150,7 @@
         }
 
         svg {
-          height: 23px;
-          margin-bottom: 1em;
+          height: 13px;
           display: block;
 
           &.icon-2 {
@@ -90,17 +162,6 @@
           }
         }
 
-
-        &:hover {
-
-          &::after {
-            display: none;
-          }
-        }
-
-        &::before {
-          display: none;
-        }
       }
 
       .title span {
@@ -111,15 +172,6 @@
         display: none;
       }
     }
-  }
-
-  a {
-    color: #606060;
-
-    &::before {
-      border: 0;
-    }
-  }
 }
 
 @keyframes anim-1 {
@@ -151,7 +203,9 @@
   }
 }
 
-.page-template-page-home .icon-row {
+ @include media-breakpoint-up(md) {
+
+.icon-row {
 
   $line-height: 285px;
   $margin-top: 3px;
@@ -220,7 +274,7 @@
       }
     }
   }
-
+}
 }
 
 
@@ -257,8 +311,6 @@
     position: relative;
     flex-direction: column;
     text-align: left;
-//     height: 409px;
-
     height: 616px;
 
    > span {
@@ -317,7 +369,6 @@
       width: 17px;
       height: 17px;
       position: absolute;
-      
       @include gradient();
       border-radius: 50%;
     }
@@ -335,7 +386,6 @@
     svg {
       height: 40px;
     }
-
 
     &:focus, &:active {
       text-decoration: none;

@@ -5,9 +5,11 @@
                 <?php echo get_template_part('template-parts/icons/icon','1') ?>
             </div>
         </a>
-        <span>$0 <span>(Out Of Pocket)</span><br />
-            hail repair in
-            Odessa & Midland</span>
+        <span>$0 <span>(Out Of Pocket)</span>
+            <div class="br-md">
+                hail repair in
+                Odessa & Midland</div>
+        </span>
     </li>
     <li class="flex-col">
         <a href="">
@@ -15,8 +17,7 @@
                 <?php echo get_template_part('template-parts/icons/icon','2') ?>
             </div>
         </a>
-        <span>$200<br />
-            Gift Card</span>
+        <span>$200 <div class="br-md">Gift Card</div></span>
     </li>
     <li class="flex-col">
         <a href="">

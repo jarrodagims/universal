@@ -108,5 +108,19 @@
     top: 50%;
   }
 
- 
+ @include media-breakpoint-down(md)
+ {
+   padding-top: 4em;
+   background: url('../img/bg-car-mobile.jpg') 100% 0 no-repeat;
+
+   h2 {
+     font-size: 21px;
+     line-height: 1.5;
+   }
+
+   h3 {
+     font-size: 18px;
+     line-height: 2;
+   }
+ }
 }

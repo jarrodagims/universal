@@ -72,11 +72,10 @@
   }
 
   @include media-breakpoint-down(md) {
-    background: url("../img/bg-hero-mobile.jpg") center 0 no-repeat;
-    background-size: cover;
+    
 
     .jumbotron {
-      padding: 3em;
+      padding: 3em 3em 0;
       height: 320px;
     }
 
@@ -84,12 +83,14 @@
       h1 {
         font-size: 34px;
         margin-top: 0;
+        line-height: 1;
 
         span {
           font-size: 18px;
           line-height: 1.5;
           padding-left: 79px;
           padding-right: 79px;
+          margin-right: auto;
 
           &::before {
             left: 0;
@@ -107,6 +108,7 @@
         div:last-child {
           font-size: 11px;
           margin-top: 1em;
+          font-weight: 700;
         }
         
       }

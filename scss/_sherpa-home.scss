@@ -1,4 +1,9 @@
 .landing-bg {
   background: url("../img/bg-hero-top.jpg") center 100% no-repeat;
   background-size: cover;
+
+  @include media-breakpoint-down(md) {
+    background: url("../img/bg-hero-mobile.jpg") center 0 no-repeat;
+    background-size: cover;
+  }
 }
