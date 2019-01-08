@@ -166,3 +166,7 @@
 </svg>
 ');
 }
+
+@mixin svg-chevron-top-mobile() {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 377.17 409.45"><title>Asset 20</title><g id="b7bd3da2-bbfa-4ba8-9b5f-e2c902db99de" data-name="Layer 2"><g id="fbb33379-c258-4407-a0b8-dda74682d0df" data-name="Layer 3"><polygon points="375.03 106.05 253.26 226.92 0 0 0 165.4 229.12 385.95 253.06 409.45 277.39 385.95 377.17 286.17 377.17 153.68 375.03 106.05" fill="#999" opacity="0.1"/></g></g></svg>');
+}
