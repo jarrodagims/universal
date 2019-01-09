@@ -71,6 +71,11 @@
     }
   }
 
+  @include media-breakpoint-down(sm) {
+    background: url("../img/bg-hero-mobile2.jpg") center 100% no-repeat;
+    background-size: cover;
+  }
+
   @include media-breakpoint-down(md) {
 //     overflow: visible; 
 //     z-index: 0;
@@ -87,6 +92,8 @@
 //        top: -50px;
 //     }
     position: relative;
+    background: url("../img/bg-hero-top.jpg") center 0 no-repeat;
+    background-size: cover;
   
     &::before {
       content: '';
@@ -102,8 +109,7 @@
 
     }
 
-    background: url("../img/bg-hero-mobile2.jpg") center 100% no-repeat;
-    background-size: cover;
+    
     
 
     .jumbotron {
