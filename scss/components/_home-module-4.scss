@@ -57,6 +57,7 @@
     font-weight: 400;
     font-size: 30px;
     margin-bottom: 1em;
+    line-height: 1.5;
   }
 
   h3 {
@@ -81,6 +82,11 @@
     position: relative;
     overflow: visible;
     z-index: 0;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+    }
 
 
     &::before {
@@ -118,6 +124,7 @@
     h3 {
       @include raleway();
       font-weight: 400;
+
     }
   }
 
@@ -132,6 +139,7 @@
     h3 { 
       color: #1a1a1a;
       font-size: 30px;
+      margin-bottom: 1.5em;
     }
 
     .card-bottom {
@@ -142,13 +150,14 @@
     .card-top {
       color: $white;
       background: #333333;
-      padding: 60px 127px;  
+      padding: 76px 127px;  
 
       h2 {
         color: #cccccc;
         margin: 0;
         font-size: 23px;
         font-weight: 700;
+        line-height: 1.5;
 
         span { 
           color: $white;

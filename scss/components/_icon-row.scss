@@ -225,9 +225,9 @@
         top: calc(100% + (#{$combined-height} + #{$last-3rd-offset}));
       }
 
-      > span {
-        bottom: ($last-offset - $last-3rd-offset) + $padding-bottom;
-      }
+//       > span {
+//         bottom: ($last-offset - $last-3rd-offset) + $padding-bottom;
+//       }
     }
 
     &:nth-last-child(2) {
@@ -239,9 +239,9 @@
         top: calc(100% + (#{$combined-height} + #{$last-2nd-offset}));
       }
 
-      > span {
-        bottom: ($last-offset - $last-2nd-offset) + $padding-bottom;
-      }
+//       > span {
+//         bottom: ($last-offset - $last-2nd-offset) + $padding-bottom;
+//       }
     }
 
     &:last-child() {
@@ -253,9 +253,9 @@
         top: calc(100% + (#{$combined-height} + #{$last-offset}));
       }
 
-      > span {
-        bottom: $padding-bottom;
-      }
+//       > span {
+//         bottom: $padding-bottom;
+//       }
     }
   }
 }
@@ -278,7 +278,7 @@
 
   @media screen and (min-width: 1900px) {
     .container {
-      max-width: 1770px;
+      max-width: 1890px;
     }
   }
 
@@ -305,7 +305,7 @@
       color: #333333;
       font-weight: 600;
       position: absolute;
-      left: 104px;
+      left: 84px;
 
       > span {
         font-size: 16px;

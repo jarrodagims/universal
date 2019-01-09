@@ -84,11 +84,11 @@
 
                 </div>
             </div>
-            <div class="col col-lg-8">
+            <div class="col col-lg-9">
                 <div class="above-card">
                     <div class="extra-padding">
-                        <h2>If you have non hail related dents and dings, call Derek
-                            today at: <a href="tel:9032856438">(903) 285-6438.</a>
+                        <h2>If you have non hail related dents and dings, call Derek today at: <a href="tel:9032856438">(903)
+                                285-6438.</a>
                         </h2>
                         <h3>Hail damage may not seem like a worry to the everyday Sun City dweller,
                             but when storms hit, they hit hard.

@@ -151,6 +151,14 @@
   flex-basis: 0;
   position: relative;
 
+  @include media-breakpoint-up(md) {
+     align-items: flex-start;
+
+     .navbar-sherpa, > .navbar-right {
+       margin-top: 40px;
+     }
+  }
+
   @include media-breakpoint-down(md) {
     height: 50px;
   }
@@ -181,15 +189,18 @@
   background: transparent;
   text-align: center;
   display: flex;
-  justify-content: center;
   padding: .5em 0;
 
   @include media-breakpoint-up(md) {
 
+    .v-align {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
     .container {
       max-width: 1770px;
     }
-
 
     &.internal .v-align > div {
       justify-content: flex-start;
@@ -213,6 +224,8 @@
 }
 
 .navbar-right {
+  padding: .5rem 1rem;
+
   @include media-breakpoint-down(md) {
     width: 100%;
   }
@@ -318,7 +331,7 @@
 
 @include media-breakpoint-up(lg) {
   .navbar-brand {
-    width: 200px;
+    width: 290px;
     margin-left: 15px;
   }
 }

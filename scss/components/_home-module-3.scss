@@ -43,6 +43,8 @@
     }
   }
 
+ 
+
    .circle-container {
     text-align: right;
 
@@ -54,10 +56,14 @@
     }
 
     p {
-      @include raleway();
+      font-family: 'Poppins' sans-serif;
       color: #606060;
       font-weight: 400;
+      font-size: 20px;
 
+      strong {
+        color: #1a1a1a;
+      }
     }
   }
 
@@ -65,6 +71,8 @@
     font-weight: 700;
     font-family: 'Poppins' sans-serif;
     margin-bottom: .5em;
+    font-size: 40px;
+    line-height: 1.5;
 
     strong {
       color: $sherpa-brand-primary;
@@ -73,8 +81,9 @@
 
   h3 {
     font-size: 28px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     line-height: 1.5;
+    margin-top: 1.25em;
   }
 
   .circle {
@@ -130,12 +139,15 @@
    padding-bottom: 2em;
    background: none;
 
+   &::before {
+     display: none;
+   }
+
    .circle-container {
      text-align: center;
    } 
 
    .car-container {
-     position: relative;
      overflow: visible;
 
      &::before {
@@ -143,12 +155,12 @@
        background-size: cover;
        content: '';
        position: absolute;
-       left: 0;
+       right: -25vw;
        z-index: -9999;
        top: 0;
        display: block;
        height: 100%;
-       width: 100%;
+       width: 100vw;
      }
 //      background: url('../img/bg-car-mobile.jpg') 100% 100% no-repeat;
 //      background-size: cover;
