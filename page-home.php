@@ -6,7 +6,7 @@
 <section class="home-module-1">
     <div class="jumbotron">
         <div class="jumbo-content">
-            <a class="navbar-brand d-md-none" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
+            <a class="navbar-brand d-lg-none" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
                     alt="<?php echo get_bloginfo(
                                 'description'
                             ); ?>" /></a>
@@ -82,7 +82,7 @@
 
                 </div>
             </div>
-            <div class="col col-md-8">
+            <div class="col col-lg-8">
                 <div class="above-card">
                     <div class="extra-padding">
                         <h2>If you have non hail related dents and dings, call Derek
@@ -141,20 +141,17 @@
                         </h2>
                         <p class="blurb">
                             Here at C&D Dent Guys understand the importance of a job well done. This makes us the place
-                            in
-                            Texas for
-                            your restoration fix. We’re experts when it comes to in Texas and we stand proudly by our
-                            work.
+                            in Texas for your restoration fix. We’re experts when it comes to in Texas and we stand
+                            proudly by our work.
                         </p>
 
                         <p>
                             We’ve been in business over 10 years and total over 15 years of experience working in the
-                            industry. We
-                            deliver the optimal dent repair results that you want in a short time to get your vehicle
-                            looking great,
-                            faster. Hail damage and other factors which can put dents on your vehicle shouldn’t put a
-                            “dent” on your
-                            wallet. Here at C&D Dent Guys we deliver quality work at a bargain.
+                            industry. We deliver the optimal dent repair results that you want in a short time to get
+                            your vehicle
+                            looking great, faster. Hail damage and other factors which can put dents on your vehicle
+                            shouldn’t put a “dent” on your wallet. Here at C&D Dent Guys we deliver quality work at a
+                            bargain.
                         </p>
                     </div>
                 </div>

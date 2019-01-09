@@ -31,6 +31,18 @@
     height: 100vh;
   }
 
+  @media screen and (min-width: 992px) and (max-width: 1600px) {
+    &::after {
+      position: absolute;
+      bottom: -387px;
+      left: 0;
+      width: 80%;
+      height: 100vh;
+      background-size: 50% auto;
+      top: -25vh;
+    }
+  }
+
    .circle-container {
     text-align: right;
 

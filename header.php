@@ -36,9 +36,9 @@
     <![endif]-->
         <div class="top-header <?php if(!is_front_page()) : ?>internal<?php endif; ?>">
             <div class="container">
-                <div class="v-align">
+                <div class="v-align row">
                     <div class="col-xs-12 navbar-button text-center">
-                        <a class="navbar-brand d-md-block d-none" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
+                        <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
                                 alt="<?php echo get_bloginfo(
                                 'description'
                             ); ?>" /></a>

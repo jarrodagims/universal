@@ -98,6 +98,18 @@
       z-index: -1;
     }
 
+    @media screen and (min-width: 992px) and (max-width: 1500px) {
+      &::before {
+        left: -10vw;
+      }
+    }
+
+    @media screen and (min-width: 1500px) and (max-width: 1700px) {
+      &::before {
+        left: -15vw;
+      }
+    }
+
     h2,
     h3 {
       color: $white;  
@@ -148,8 +160,8 @@
   @include media-breakpoint-down(md) {
     text-align: center;
     padding-top: 0;
-    background: url('../img/bg-wheels-mobile.jpg') 0 100% no-repeat;
-    background-size: contain;
+//     background: url('../img/bg-wheels-mobile.jpg') 100% 100% no-repeat;
+//     background-size: cover;
     overflow: hidden;
 
     .extra-padding {

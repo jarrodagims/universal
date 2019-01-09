@@ -34,6 +34,9 @@
  @include media-breakpoint-down(md) {
      overflow: visible;
 
+    background: url('../img/bg-wheels-mobile.jpg') 100% 100% no-repeat;
+    background-size: cover;
+
      &::before {
          display: none;
      }
