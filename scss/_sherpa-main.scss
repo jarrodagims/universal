@@ -843,3 +843,14 @@ body #main {
     }
   }
 }
+
+
+.page-template-default {
+  background: url('../img/bg-internal-top.jpg') right 0 no-repeat;
+  background-size: contain;
+   
+
+   .navbar-right {
+     margin-left: auto;
+   }
+}

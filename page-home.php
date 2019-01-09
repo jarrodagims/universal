@@ -37,13 +37,15 @@
     <div class="container">
         <div class="row">
             <div class="col text-center car-container">
-                <h2>Did your car recently get<br />
-                    riddled with <strong>hail?</strong></h2>
-                <h3>Call us and we will work with<br />
-                    insurance to get it fixed right away.</h3>
-                <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0"
-                        type="submit">CONTACT
-                        US TODAY</button></a>
+                <div>
+                    <h2>Did your car recently get<br />
+                        riddled with <strong>hail?</strong></h2>
+                    <h3>Call us and we will work with<br />
+                        insurance to get it fixed right away.</h3>
+                    <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0"
+                            type="submit">CONTACT
+                            US TODAY</button></a>
+                </div>
             </div>
             <div class="col circle-container">
                 <div class="circle">
@@ -159,55 +161,6 @@
         </div>
     </section>
 </section>
-<section class="home-module-6">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h2>We are locally owned & operated!</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <strong class="title">COLORADO</strong>
-                <p>3815 W Service Rd Evans, CO 80620<br />
-                    300 E 16th St Suite 209 Greeley, CO 80631</p>
-            </div>
-            <div class="col">
-                <strong class="title">ARLINGTON</strong>
-                <p>
-                    1920 W Pioneer Pkwy Arlington, TX 76013
-                </p>
-            </div>
-            <div class="col">
-                <strong class="title">CELINA</strong>
-                <p>
-                    6196 Private Road 902 Celina, TX 75009
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
 
-                <strong class="title">IRVING</strong>
-                <p>
-                    9819 N MacArthur Blvd Irving, TX 75063
-                </p>
-            </div>
-            <div class="col">
-                <strong class="title">EL PASO</strong>
-                <p>
-                    <strong>By Appointment Only</strong> (915) 642-6911
-                </p>
-            </div>
-            <div class="col">
-
-                <strong class="title">PROSPER</strong>
-                <p>
-                    1069 N Preston Rd Prosper, TX 75078
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <?php get_footer(); ?>

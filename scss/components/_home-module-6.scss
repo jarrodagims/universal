@@ -33,3 +33,17 @@
         }
     }
 }
+
+.page-template-default {
+    .home-module-6 {
+        background: #f2f2f2  url('../img/bg-chevron-bottom.jpg') right 0 no-repeat;
+        background-size: cover;
+        
+        @include media-breakpoint-up(md) {
+            height: 540px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

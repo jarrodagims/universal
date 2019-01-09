@@ -47,6 +47,70 @@ body #main .container article #sidebar {
   margin-left: 4em;
   text-align: center;
   position: relative;
+  @include dropshadow();
+
+  h2 {
+    color: #000000;
+    
+    strong {
+      color: $sherpa-brand-primary;
+    } 
+
+    margin-bottom: 1em;
+  }
+
+  
+
+ .outer-circle {
+    width: 540px;
+    height: 540px;
+    display: block;
+    position: absolute;
+    @include svg-ring();
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    
+  }
+
+    .outer-circle {
+       width: 152px;
+       height: 152px;
+       position: relative;
+
+      &::before {
+       content: '';
+       display: block;
+       width: 76px;
+       height: 95px;
+       position: absolute;
+       left: 50%;
+       background-repeat: no-repeat;
+       position: absolute;
+       top: 50%;
+       transform: translateX(-50%) translateY(-50%);
+       @include svg-lifetime();
+       margin-top: -10px;
+     }
+    }
+
+    .circle-container {
+      .circle {
+        background: #202020;
+        border-radius: 50%;
+      }
+
+
+      .circle {
+         width: 132px;
+         height: 132px;
+         margin: 2em auto;
+
+          em {
+           display: none;
+         }
+       } 
+    }
 }
 
 .sidebar {
@@ -144,6 +208,8 @@ body #main .container article #sidebar {
 
 body #main .container article .content-contact #sidebar {
   margin-left: 0;
+
+
   @include media-breakpoint-down(xs) {
     clear: both;
   }
@@ -165,27 +231,26 @@ body #main .container article #sidebar .green-box p {
   width: 412px;
 
   .sidebar-top {
-    background: url("../img/bg-sidebar-top.jpg") 0 0 no-repeat;
+    background: #000000;
     background-size: cover;
     text-align: center;
-    height: 415px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 65px 0;
 
     img {
-      width: 300px;
-      height: 300px;
       margin: 0 auto;
     }
   }
 
   .sidebar-bottom {
-    background: #000000;
+    background: url('../img/bg-sidebar.jpg') 100% 100% no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1em;
+    flex-direction: column;
 
     img {
       margin-right: 1em;
@@ -196,6 +261,8 @@ body #main .container article #sidebar .green-box p {
     border-top: 1px solid #5b5b5d;
     border-left: 1px solid #5b5b5d;
   }
+
+  
 
   @include media-breakpoint-down(md) {
 

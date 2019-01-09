@@ -40,14 +40,7 @@
             else:
                 ?>
 
-    <div class="banner-title">
-        <div class="title">Bar <img class="d-xs-block d-lg-none d-sm-block" src="<?=IMGURL?>and.svg" alt="And" height="50" /><img
-                class="d-lg-block d-none" src="<?=IMGURL?>and-white.svg" alt="And" height="50" /> Grill</div>
-        <span>Where Good Times Happen and Memories are Made</span>
 
-        <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary" type="submit">Contact
-                Us Today</button></a>
-    </div>
     <img src="<?= IMGURL ?>bg-banner-bottom.jpg" class="d-md-none d-xs-block" alt="<?php echo get_bloginfo( 'name' ); ?>" />
     <?php
             endif; ?>

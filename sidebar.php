@@ -12,34 +12,26 @@
 <?php endif; ?>
 <?php if (!is_page('contact-us')) : ?>
 <div class="sidebar-top">
-    <img src="<?=IMGURL?>our-grill.svg" alt="Our Grill" />
+    <img src="<?=IMGURL?>car-hail-damage.svg" alt="Car Hail Damage" />
 </div>
 <div class="sidebar-bottom">
-    <img src="<?=IMGURL?>uber-eats-logo.png" alt="Uber Eats" />
-    <a href=""><img src="<?=IMGURL?>uber-eats-btn.svg" alt="Uber Eats" height="20" /></a>
-</div>
-<div class="sidebar-table">
-    <div class="icon-calendar"><span>Daily Schedule</span></div>
-    <?php echo do_shortcode('[table id=1 /]'); ?>
-</div>
-<?php if (!is_front_page()) : ?>
-<section class="home-module-5">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="saloon-banner">
-                    <div>
-                        <div class="saloon-logo">
-                            <img src="<?=IMGURL ?>/saloon-logo.png" alt="Crown & Eagle" />
-                        </div>
-                        <h2>happy hour specials and drink specials</h2>
-                        <h3>11 a.m. to 7 p.m.</h3>
-                    </div>
-                </div>
+    <section class="icon-row">
+        <?php echo get_template_part('template-parts/icon', 'row'); ?>
+    </section>
+
+    <div class="circle-container">
+        <div class="circle">
+
+            <div class="outer-circle">
+
             </div>
         </div>
     </div>
-</section>
-<?php endif; ?>
+
+    <h2>Did your car recently get<br />
+        riddled with <strong>hail?</strong></h2>
+    <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">CONTACT
+            US TODAY</button></a>
+</div>
 <?php endif; ?>
 </div>

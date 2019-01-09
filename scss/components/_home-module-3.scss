@@ -1,10 +1,10 @@
 .home-module-3 {
   position: relative;
-  z-index: 1;
   background: url('../img/bg-car.jpg') right 100% no-repeat;
   background-size: contain;
   padding-top: 10em;
   padding-bottom: 4em;  
+  z-index: 0;
 
   &::before {
     content: '';
@@ -118,8 +118,11 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     top: 50%;
-
   }
+
+   @include media-breakpoint-down(lg){
+
+   }
 
  @include media-breakpoint-down(md)
  {
@@ -132,8 +135,35 @@
    } 
 
    .car-container {
-     background: url('../img/bg-car-mobile.jpg') 100% 100% no-repeat;
-     background-size: cover;
+     position: relative;
+     overflow: visible;
+
+     &::before {
+       background: url('../img/bg-car-mobile.jpg') 100% 100% no-repeat;
+       background-size: cover;
+       content: '';
+       position: absolute;
+       left: 0;
+       z-index: -9999;
+       top: 0;
+       display: block;
+       height: 100%;
+       width: 100%;
+     }
+//      background: url('../img/bg-car-mobile.jpg') 100% 100% no-repeat;
+//      background-size: cover;
+
+//      &::before {
+//        background: url('../img/bg-car-mobile.jpg') 100% 100% no-repeat;
+//        background-size: cover;
+//        content: '';
+//        position: absolute;
+//        bottom: 0;
+//        left: 0;
+//        width: 100vw;
+//        height: 150%;
+//      }
+
      padding-top: 4em;
      padding-bottom: 3em;
    }

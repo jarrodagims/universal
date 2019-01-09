@@ -62,27 +62,6 @@
                 </div>
             </div>
         </div>
-
         <?php if(!is_front_page()) : ?>
-        <div class="banner-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <a href="<?=SITEURL?>" class="navbar-brand"><img src="<?=IMGURL?>logo-lg.png" class="navbar-brand"
-                                alt="<?php bloginfo( 'name' ); ?>" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="home-module-2">
-            <section class="icon-row">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <?php echo get_template_part('template-parts/icon', 'row'); ?>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <?php endif; ?>
+    </div>
+    <?php endif; ?>
