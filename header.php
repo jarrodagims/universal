@@ -68,3 +68,11 @@
         <?php if(!is_front_page()) : ?>
     </div>
     <?php endif; ?>
+
+
+    <?php if(!is_front_page()) : ?>
+    <a class="navbar-brand d-xs-block d-md-none" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
+            alt="<?php echo get_bloginfo(
+                                'description'
+                            ); ?>" /></a>
+    <?php endif; ?>

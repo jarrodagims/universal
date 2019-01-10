@@ -242,6 +242,12 @@
   font-size: 14px;
   font-weight: 500;
 
+  @include media-breakpoint-down(lg) {
+    li {
+      font-size: 11px;
+    }
+  }
+
   a {
     color: $white;
   }
@@ -251,7 +257,6 @@
 
     a {
       float: left;
-
 
       span {
         overflow: hidden;
@@ -331,10 +336,18 @@
 }
 
 @include media-breakpoint-up(lg) {
+  body:not(.page-template-page-home) {
+    .navbar-brand {
+      width: 259px;
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
   .navbar-brand {
     width: 290px;
     margin-left: 15px;
-  }
+  } 
 }
 
 @include media-breakpoint-down(md) {
@@ -353,7 +366,7 @@
 }
 
 
-@include media-breakpoint-down(lg) {
+@media screen and (max-width: 1400px) {
   .navbar-brand {
     width: 123px;
     margin-left: 15px;
@@ -486,17 +499,8 @@
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 
-//   .dropdown-toggle::after {
-//     content: "";
-//     @include svg-arrow($white);
-//     border: 0;
-//     width: 10px;
-//     height: 10px;
-//     display: inline-block;
-//   }
-
-  .nav-link {
-    
+  @include media-breakpoint-down(lg) {
+    font-size: 11px;
   }
 }
 
