@@ -171,6 +171,7 @@ body #main .container article #sidebar {
 
 @include media-breakpoint-down(md) {
   body #main .container article #sidebar {
+    margin-top: 4em;
     float: none;
     max-width: 100%;
     margin-left: 0;
@@ -250,6 +251,7 @@ body #main .container article #sidebar .green-box p {
     justify-content: center;
     align-items: center;
     padding: 1em;
+    padding-bottom: 4em;
     flex-direction: column;
 
     img {
@@ -267,17 +269,7 @@ body #main .container article #sidebar .green-box p {
   @include media-breakpoint-down(md) {
 
     width: 100%;
-
-    .sidebar-top {
-      height: 180px;
-      background: url("../img/bg-sidebar-top-mobile.jpg") 0 0 no-repeat;
-      background-size: cover;
-    }
-
-    .sidebar-top img {
-      width: 150px;
-      height: 150px;
-    }
+   
 
     img {
       height: 55px;

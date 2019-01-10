@@ -22,9 +22,9 @@
   border-radius: 30px;
   
 
-  &:focus, &:active, &:visited, &:hover:focus, &:hover:active, &:hover:visited {
+  &:hover &:focus, &:active, &:visited, &:hover:focus, &:hover:active, &:hover:visited {
     border: 0 !important;
-    background: darken(#CCCCCC, 10%) !important;
+    color: $white; 
   }
 
   &.btn-default {
@@ -81,6 +81,10 @@
 .btn-read-more {
   margin-top: auto; 
   background: $sherpa-secondary-color;
+
+  &:hover {
+    color: $white;
+  }
 
   &.btn-border {
     background: rgba(41,41,44,0.63);

@@ -25,14 +25,14 @@
     background: url('../img/car.png') 0 100% no-repeat;
     content: '';
     position: absolute;
-    bottom: -387px;
+    bottom: -240px;
     left: 0;
     width: 100%;
     height: 100vh;
     z-index: 0;
   }
 
-  @media screen and (min-width: 992px) and (max-width: 1600px) {
+  @media screen and (min-width: 992px) and (max-width: 1800px) {
     &::after {
       position: absolute;
       bottom: -100px;
@@ -93,7 +93,8 @@
     height: 467px;
     position: relative;
     margin-bottom: 68px;
-    margin-left: 68px;
+    margin-left: 20px;
+    margin-top: 6em;
 
     em {
       border-radius: 50%;

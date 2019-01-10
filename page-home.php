@@ -124,7 +124,7 @@
                             repair in El Paso TX, give us a call!
                         </p>
 
-                        <p>ReviewsWe understand that there are many other reasons why your car might end up with a dent
+                        <p>We understand that there are many other reasons why your car might end up with a dent
                             or two. While we excel at hail damage, our team is also very experienced in other types of
                             dent repair, such as paintless dent repair in El Paso TX. This process is efficient, and
                             once it is done you would never know there was once a dent in your car. We are that good!</p>
@@ -143,16 +143,17 @@
                             Paintless Dent Repair <span class="br-xs">in El Paso TX</span>
                         </h2>
                         <p class="blurb">
-                            Here at C&D Dent Guys understand the importance of a job well done. This makes us the place
-                            in Texas for your restoration fix. We’re experts when it comes to in Texas and we stand
-                            proudly by our work.
+                            We, here at C&D Dent Guys understand the importance of a job well done. This makes us the
+                            premiere place in Texas for your restoration fix. We’re experts when it comes to paintless
+                            dent repair in Texas and we stand proudly by our work.
                         </p>
 
                         <p>
-                            We’ve been in business over 10 years and total over 15 years of experience working in the
+                            We’ve been in business over 5 years and total over 15 years of experience working in the
                             industry. We deliver the optimal dent repair results that you want in a short time to get
-                            shouldn’t put a “dent” on your wallet. Here at C&D Dent Guys we deliver quality work at a
-                            bargain.
+                            your vehicle looking great, faster. Hail damage and other factors which can put dents on
+                            your vehicle shouldn’t put a “dent” on your wallet. Here at C&D Dent Guys we deliver
+                            quality work at a bargain.
                         </p>
                     </div>
                 </div>

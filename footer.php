@@ -35,7 +35,8 @@
             <div class="col">
                 <strong class="title">EL PASO</strong>
                 <p>
-                    <strong>By Appointment Only</strong> (915) 642-6911
+                    <strong>By Appointment Only</strong> <a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>">(877)
+                        354-DENT</a>
                 </p>
             </div>
             <div class="col">

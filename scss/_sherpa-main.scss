@@ -226,7 +226,6 @@ body {
         h1 {
           color: #606060;
           font-size: 32px;
-          @include raleway();
 
           span {
             margin-top: 0;
@@ -238,7 +237,6 @@ body {
 
         h2,
         h3 {
-          @include raleway();
           color: #53565B;
         }
 
@@ -522,9 +520,9 @@ body {
           margin-bottom: .5em;
           line-height: 1.5;
           font-size: 41px;
-          color: #999B95;
-          font-weight: 300;
-          @include raleway();
+          color: #000;
+          font-weight: 700;
+          font-family: 'Poppins', sans-serif;
         }
 
         @include media-breakpoint-down(md) {
@@ -658,18 +656,17 @@ body {
       }
 
       
-
+ 
       .page-content h2,
       .page-content h3 {
         font-weight: 300;
         line-height: 1.5;
-        color: #53565B;
+        color: #000000;
         opacity: 0.75;
-        @include raleway();
 
         &.expander {
           @include expander($sherpa-brand-primary);
-          color: #33373F;
+          color: #000000;
           font-size: 28px;
         }
       }
@@ -845,7 +842,7 @@ body #main {
 }
 
 
-.page-template-default {
+body:not(.page-template-page-home) {
   background: url('../img/bg-internal-top.jpg') right 0 no-repeat;
   background-size: contain;
    
