@@ -60,7 +60,7 @@
                 <p>
                     We offer a <strong>life-time warranty</strong>, <strong>fast<br />
                         turnaround times</strong>, and in most</span> <span class="br-xs">instances,
-                        there are <strong>no out of <span class="br-xs">pocket expenses</span></strong>.
+                        <span class="br-md">there are <strong>no out of <span class="br-xs">pocket expenses</span></span></strong>.
                 </p>
             </div>
         </div>
