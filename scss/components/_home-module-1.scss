@@ -94,6 +94,8 @@
     position: relative;
     background: url("../img/bg-hero-top.jpg") center 0 no-repeat;
     background-size: cover;
+    height: auto;
+    padding-bottom: 1em;
   
     &::before {
       content: '';
@@ -110,6 +112,7 @@
     .jumbotron {
       padding: 3em 3em 0;
       height: 320px;
+      padding-top: 0;
     }
 
     .jumbo-content {
@@ -117,6 +120,7 @@
         font-size: 34px;
         margin-top: 0;
         line-height: 1;
+        width: 100%;
 
         span {
           font-size: 18px;
@@ -124,13 +128,14 @@
           padding-left: 79px;
           padding-right: 79px;
           margin-right: auto;
+          letter-spacing: 16px;
 
           &::before {
             left: 0;
           }
 
           &::after {
-            right: 25px;
+            right: 20px;
           }
 
           &::before, &::after {
@@ -142,6 +147,7 @@
           font-size: 11px;
           margin-top: 1em;
           font-weight: 700;
+          letter-spacing: 1px;
         }
         
       }

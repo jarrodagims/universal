@@ -59,8 +59,8 @@
 
                 <p>
                     We offer a <strong>life-time warranty</strong>, <strong>fast<br />
-                        turnaround times</strong>, and in most instances,<br />
-                    there are <strong>no out of pocket expenses</strong>.
+                        turnaround times</strong>, and in most</span> <span class="br-xs">instances,
+                        there are <strong>no out of <span class="br-xs">pocket expenses</span></strong>.
                 </p>
             </div>
         </div>
@@ -79,8 +79,8 @@
                     <h2>Hail Damage?</h2>
                     <h3>Schedule A Repair
                         <span class="br-md">Today</span></h3>
-                    <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0"
-                            type="submit">CONTACT US TODAY</button></a>
+                    <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary " type="submit">CONTACT
+                            US TODAY</button></a>
 
                 </div>
             </div>
@@ -109,7 +109,8 @@
                     </div>
 
                     <div class="card-bottom">
-                        <h3>If you have hail damage, call Carlos today at: <a href="tel:9032856438">(903) 285-6438.</a>
+                        <h3>If you have hail damage, <span class="br-xs">call Carlos today at:</span> <span class="br-xs"><a
+                                    href="tel:9032856438">(903) 285-6438.</a></span>
                         </h3>
 
                         <p>
@@ -150,8 +151,6 @@
                         <p>
                             We’ve been in business over 10 years and total over 15 years of experience working in the
                             industry. We deliver the optimal dent repair results that you want in a short time to get
-                            your vehicle
-                            looking great, faster. Hail damage and other factors which can put dents on your vehicle
                             shouldn’t put a “dent” on your wallet. Here at C&D Dent Guys we deliver quality work at a
                             bargain.
                         </p>

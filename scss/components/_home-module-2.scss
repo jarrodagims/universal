@@ -1,6 +1,13 @@
 .home-module-2 {
 
+    @include media-breakpoint-down(md) {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
     @include media-breakpoint-between(sm,md) {
+        
+
         .icon-row .flex-col a {
             font-size: 1em;
             padding-left: 1em;

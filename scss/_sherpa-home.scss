@@ -1,6 +1,7 @@
 .page-template-page-home .landing-bg {
-  background: url("../img/bg-hero-top.jpg") center 0 no-repeat;
+  background: url("../img/bg-hero-top.jpg") center -25vh no-repeat;
   background-size: cover;
+  overflow: hidden;
 
   @include media-breakpoint-down(md) {
 //     background: url("../img/bg-hero-mobile2.jpg") center 0 no-repeat;

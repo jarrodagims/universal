@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h2>We are locally owned & operated!</h2>
+                <h2>We are locally <span class="br-xs">owned & operated!</span></h2>
             </div>
         </div>
         <div class="row">
