@@ -64,7 +64,6 @@
                 </p>
             </div>
         </div>
-
     </div>
 </section>
 
@@ -161,6 +160,8 @@
         </div>
     </section>
 </section>
+
+</div>
 
 
 <?php get_footer(); ?>

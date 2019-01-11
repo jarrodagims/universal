@@ -175,15 +175,26 @@ function my_acf_format_value( $value, $post_id, $field ) {
 add_filter('acf/format_value/type=textarea', 'my_acf_format_value', 10, 3);
 
 // Add backend styles for Gutenberg.
-add_action( 'enqueue_block_editor_assets', 'add_gutenberg_assets' );
+// add_action( 'enqueue_block_editor_assets', 'add_gutenberg_assets' );
 
-/**
- * Load Gutenberg stylesheet.
- */
-function add_gutenberg_assets() {
-	// Load the theme styles within Gutenberg.
-	wp_enqueue_style( 'gutenberg', get_theme_file_uri( '/css/gutenberg-editor-style.css' ), false );
+// /**
+//  * Load Gutenberg stylesheet.
+//  */
+// function add_gutenberg_assets() {
+// 	// Load the theme styles within Gutenberg.
+// 	wp_enqueue_style( 'gutenberg', get_theme_file_uri( '/css/gutenberg-editor-style.css' ), false );
+// } 
+
+
+function mytheme_block_editor_styles() {
+    wp_enqueue_style(
+		'slug-block-editor-styles',
+		get_theme_file_uri( '/css/gutenberg-editor-style.css' ),
+		false
+	);
 }
+
+add_action( 'enqueue_block_editor_assets', 'mytheme_block_editor_styles' );
 
 function wpb_add_fonts() {
     wp_enqueue_style( 'moderno', 'https://use.typekit.net/cyi5jdy.css', false );

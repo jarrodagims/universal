@@ -2,3 +2,9 @@ html .mceContentBody,
 .wp-block {
   max-width: 100%;
 }
+
+@media (min-width: 600px) {
+  .edit-post-text-editor {
+    max-width: 100% !important;
+  }
+}

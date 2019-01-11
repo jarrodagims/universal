@@ -140,6 +140,16 @@
    padding-bottom: 0;
    background: none;
    overflow: hidden;
+//    z-index: 4;
+   position: relative;
+
+    z-index: 9999;
+
+   .col {
+    
+   }
+
+
 
    &::before {
      display: none;
@@ -158,18 +168,18 @@
    .car-container {
      overflow: visible;
 
-     &::before {
-       background: url('../img/bg-car-mobile.jpg') 100% 100% no-repeat;
-       background-size: cover;
-       content: '';
-       position: absolute;
-       right: -25vw;
-       z-index: -9999;
-       bottom: 0;
-       display: block;
-       height: 150%;
-       width: 100vw;
-     }
+//      &::before {
+//        background: url('../img/bg-car-mobile.jpg') 100% 100% no-repeat;
+//        background-size: cover;
+//        content: '';
+//        position: absolute;
+//        right: -25vw;
+//        z-index: -1;
+//        bottom: 0;
+//        display: block;
+//        height: 150%;
+//        width: 100vw;
+//      }
 //      background: url('../img/bg-car-mobile.jpg') 100% 100% no-repeat;
 //      background-size: cover;
 

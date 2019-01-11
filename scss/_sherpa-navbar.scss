@@ -186,10 +186,13 @@
 .top-header {
   position: relative;
   z-index: 99;
-  background: transparent;
   text-align: center;
   display: flex;
   padding: .5em 0;
+
+  @include media-breakpoint-down(lg) {
+    background: #000; 
+  }
 
   @include media-breakpoint-up(md) {
 
@@ -419,6 +422,8 @@
     position: absolute;
     width: 100%;
     left: 0 !important;
+    z-index: 9999;
+
   }
 
   
@@ -429,8 +434,8 @@
     padding: 0 0;
     height: 50px;
 
-    @include media-breakpoint-down(md) {
-      background: #000;
+    @include media-breakpoint-down(lg) {
+      background: #000; 
     }
 
     a .btn {
@@ -450,6 +455,7 @@
       padding: 0 0;
       top: 0;
       margin-top: 10px;
+      z-index: 999;
     }
 
     .navbar-toggler:not(:disabled):not(.disabled) {
