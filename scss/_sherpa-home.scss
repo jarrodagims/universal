@@ -13,7 +13,7 @@
   @include media-breakpoint-down(md) {
     &::before {
       @include svg-chevron-top-mobile();
-      background-position: 100% 70%;
+      background-position: 100% 50%;
       background-repeat: no-repeat;
       content: '';
       z-index: 3; 
@@ -29,7 +29,7 @@
 
     &::after {
        background: url('../img/bg-car-mobile.jpg') 100% 100% no-repeat;
-       background-size: cover;
+       background-size: contain;
        content: '';
        position: absolute;
        right: 0;

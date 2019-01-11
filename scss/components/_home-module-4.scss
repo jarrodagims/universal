@@ -3,7 +3,6 @@
 //   background-size: cover;
   padding-top: 4em;
   position: relative;
-  z-index: -1;
   overflow: hidden;
 
   .container {
@@ -186,6 +185,7 @@
 //     background: url('../img/bg-wheels-mobile.jpg') 100% 100% no-repeat;
 //     background-size: cover;
     overflow: hidden;
+    z-index: 999;
    
 
     .extra-padding {

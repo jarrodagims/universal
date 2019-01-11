@@ -3,9 +3,9 @@
 /*
     Template Name: Home
 */ ?>
-<section class="home-module-1">
+<section class="home-module-1 waypoint">
     <div class="jumbotron">
-        <div class="jumbo-content">
+        <div class="jumbo-content fade-down">
             <a class="navbar-brand d-lg-none" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
                     alt="<?php echo get_bloginfo(
                                 'description'
@@ -16,12 +16,13 @@
                 <div>IN EL PASO TX</div>
             </h1>
 
-            <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0" type="submit">SCHEDULE
+            <a href="<?=SITEURL?>/contact-us/" class="header-button link-button"><button class="btn btn-primary my-2 my-sm-0"
+                    type="submit">SCHEDULE
                     AN APPOINTMENT</button></a>
         </div>
     </div>
 </section>
-<section class="home-module-2">
+<section class="home-module-2  waypoint-stagger">
     <section class="icon-row">
         <div class="container">
             <div class="row">
@@ -33,7 +34,7 @@
     </section>
 </section>
 </div>
-<section class="home-module-3">
+<section class="home-module-3 waypoint">
     <div class="container">
         <div class="row">
             <div class="col text-center car-container">
@@ -42,7 +43,7 @@
                         riddled with <strong>hail?</strong></h2>
                     <h3>Call us and we will work with<br />
                         insurance to get it fixed right away.</h3>
-                    <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary my-2 my-sm-0"
+                    <a href="<?=SITEURL?>/contact-us/" class="header-button link-button"><button class="btn btn-primary my-2 my-sm-0"
                             type="submit">CONTACT
                             US TODAY</button></a>
                 </div>
@@ -51,8 +52,8 @@
                 <div class="circle">
                     <em></em>
                     <?php echo get_template_part('template-parts/svg', 'lifetime'); ?>
-                    <div class="outer-circle">
-
+                    <div class="outer-circle-container">
+                        <div class="outer-circle scale-up"></div>
                     </div>
                 </div>
                 <h3>What We Do</h3>
@@ -71,14 +72,15 @@
     <img src="<?=IMGURL?>bg-wheel-mobile.jpg" class="d-lg-none" alt="">
     <div class="container">
         <div class="row">
-            <div class="col arrow">
+            <div class="col arrow waypoint">
 
-                <div class="bg-arrow">
+                <div class="bg-arrow fade-in-left">
 
                     <h2>Hail Damage?</h2>
                     <h3>Schedule A Repair
                         <span class="br-md">Today</span></h3>
-                    <a href="<?=SITEURL?>/contact-us/" class="header-button"><button class="btn btn-primary " type="submit">CONTACT
+                    <a href="<?=SITEURL?>/contact-us/" class="header-button link-button"><button class="btn btn-primary "
+                            type="submit">CONTACT
                             US TODAY</button></a>
 
                 </div>
@@ -92,7 +94,7 @@
                         <h3>Hail damage may not seem like a worry to the everyday Sun City dweller,
                             but when storms hit, they hit hard.
                         </h3>
-                        <p>Hard tends to be big and if your car isn’t covered by some garage or carport, it will more
+                        <p>Hail tends to be big and if your car isn’t covered by some garage or carport, it will more
                             than likely suffer hail damage. Those little dents may not seem like a big deal initially,
                             but you
                             are going to want to find the best in hail damage repair in El Paso, TX. Those little dents
@@ -133,27 +135,34 @@
         </div>
     </div>
 
-    <section class="home-module-5">
+    <section class="home-module-5 waypoint">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="extra-padding">
-                        <h2>
-                            Paintless Dent Repair <span class="br-xs">in El Paso TX</span>
-                        </h2>
-                        <p class="blurb">
-                            We, here at C&D Dent Guys understand the importance of a job well done. This makes us the
-                            premiere place in Texas for your restoration fix. We’re experts when it comes to paintless
-                            dent repair in Texas and we stand proudly by our work.
-                        </p>
+                        <div class="fade-down">
+                            <h2>
+                                Paintless Dent Repair <span class="br-xs">in El Paso TX</span>
+                            </h2>
+                            <p class="blurb">
+                                We, here at C&D Dent Guys understand the importance of a job well done. This makes us
+                                the
+                                premiere place in Texas for your restoration fix. We’re experts when it comes to
+                                paintless
+                                dent repair in Texas and we stand proudly by our work.
+                            </p>
 
-                        <p>
-                            We’ve been in business over 5 years and total over 15 years of experience working in the
-                            industry. We deliver the optimal dent repair results that you want in a short time to get
-                            your vehicle looking great, faster. Hail damage and other factors which can put dents on
-                            your vehicle shouldn’t put a “dent” on your wallet. Here at C&D Dent Guys we deliver
-                            quality work at a bargain.
-                        </p>
+                            <p>
+                                We’ve been in business over 5 years and total over 15 years of experience working in
+                                the
+                                industry. We deliver the optimal dent repair results that you want in a short time to
+                                get
+                                your vehicle looking great, faster. Hail damage and other factors which can put dents
+                                on
+                                your vehicle shouldn’t put a “dent” on your wallet. Here at C&D Dent Guys we deliver
+                                quality work at a bargain.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -30,11 +30,6 @@ h2 {
   font-weight: 300;
 }
 
-#main {
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-  }
-}
 
 
 @include media-breakpoint-down(md) {

@@ -64,16 +64,37 @@ Animations
 
  */
 
-.fade-down {
-  opacity: 0;
-  transform: translateY(-100px);
-  transition: all $transitionTime ease-in-out;
-}
-
-.active {
+@include media-breakpoint-up(md) {
   .fade-down {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all $transitionTime ease-in-out;
+  }
+
+  .active {
+    .fade-down {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all $transitionTime ease-in-out;
+  }
+
+  .active {
+    .fade-in-left {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .icon-row .flex-col {
+  }
+
+  .active .icon-row .flex-col {
   }
 }
 
@@ -203,7 +224,7 @@ body {
           }
 
           &.directions:after {
-            background: #53565B;
+            background: #53565b;
           }
         }
       }
@@ -237,7 +258,7 @@ body {
 
         h2,
         h3 {
-          color: #53565B;
+          color: #53565b;
         }
 
         p.blurb {
@@ -370,7 +391,7 @@ body {
           text-align: center;
           margin: 0 auto;
           background-size: cover;
-          background: url('../img/bg-banner-bottom.jpg') 0 0 no-repeat;
+          background: url("../img/bg-banner-bottom.jpg") 0 0 no-repeat;
 
           @include media-breakpoint-down(md) {
             margin-top: 2em;
@@ -405,8 +426,8 @@ body {
               line-height: 1;
 
               img {
-                margin-left: .15em;
-                margin-right: .15em;
+                margin-left: 0.15em;
+                margin-right: 0.15em;
                 height: 45px;
               }
 
@@ -421,20 +442,18 @@ body {
             }
 
             @include media-breakpoint-down(md) {
+              .title {
+                font-size: 41px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 0.25em;
 
-                .title {
-                  font-size: 41px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  margin-bottom: .25em;
-
-                  img {
-                    margin-left: .25em;
-                    margin-right: .25em;
-
-                  }
+                img {
+                  margin-left: 0.25em;
+                  margin-right: 0.25em;
                 }
+              }
             }
 
             p {
@@ -469,9 +488,8 @@ body {
               margin-right: auto;
               width: 100%;
               flex-direction: column;
-              padding: 1em; 
-              color: #33373F;
-
+              padding: 1em;
+              color: #33373f;
 
               strong {
                 display: block;
@@ -481,7 +499,6 @@ body {
                 margin: 0 auto;
                 flex-direction: column;
               }
-
             }
 
             @include media-breakpoint-down(md) {
@@ -507,22 +524,20 @@ body {
             max-height: 100%;
             background: none;
             margin-bottom: 0;
-
           }
 
           @include media-breakpoint-down(xs) {
             flex-direction: column-reverse;
-          
           }
         }
 
         h1 {
-          margin-bottom: .5em;
+          margin-bottom: 0.5em;
           line-height: 1.5;
           font-size: 41px;
           color: #000;
           font-weight: 700;
-          font-family: 'Poppins', sans-serif;
+          font-family: "Poppins", sans-serif;
         }
 
         @include media-breakpoint-down(md) {
@@ -643,9 +658,9 @@ body {
           margin: 0 0;
         }
 
-         &.expander {
-            margin-bottom: 2.5em;
-         }
+        &.expander {
+          margin-bottom: 2.5em;
+        }
 
         @include media-breakpoint-down(xs) {
           &.expander {
@@ -655,8 +670,6 @@ body {
         }
       }
 
-      
- 
       .page-content h2,
       .page-content h3 {
         font-weight: 300;
@@ -675,9 +688,9 @@ body {
         text-align: center;
 
         h3 {
-          margin-top: 1em; 
+          margin-top: 1em;
           margin-bottom: 0;
-        }  
+        }
       }
 
       @include media-breakpoint-up(sm) {
@@ -693,7 +706,7 @@ body {
           p,
           ul {
             font-size: 17px;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
           }
 
           .contact-info p {
@@ -788,7 +801,6 @@ body #main {
 
   #sidebar {
     order: 2;
-    
   }
 
   .map-container {
@@ -841,13 +853,32 @@ body #main {
   }
 }
 
-
 body:not(.page-template-page-home) {
-  background: url('../img/bg-internal-top.jpg') right 0 no-repeat;
+  background: url("../img/bg-internal-top.jpg") right 0 no-repeat;
   background-size: contain;
-   
 
-   .navbar-right {
-     margin-left: auto;
-   }
+  .navbar-right {
+    margin-left: auto;
+  }
 }
+
+@include media-breakpoint-up(md) {
+  .scale-up {
+    transition: all $transitionTime ease-in-out;
+  }
+}
+
+// @include media-breakpoint-up(md) {
+//   .circle {
+//     &::before {
+//       transform: scale(0);
+//       transition: all $transitionTime ease-in-out;
+//     }
+//   }
+
+//   .active .circle {
+//     &::before {
+//       transform: scale(1) translateX(-50%) translateY(-50%);
+//     }
+//   }
+// }

@@ -1,20 +1,22 @@
 @mixin icon-small() {
   width: 100%;
   list-style: none;
-  background-size: cover; 
+  background-size: cover;
 
   .flex-col {
     flex-direction: column;
     align-items: center;
     height: 164px;
-    position: relative; 
+    position: relative;
 
-    &:first-child, &:nth-child(2), &:nth-child(3) {
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3) {
       overflow: visible;
-      margin-bottom: 20px; 
+      margin-bottom: 20px;
 
       &::before {
-        content: '';
+        content: "";
         display: block;
         @include gradient();
         height: 1px;
@@ -23,10 +25,12 @@
         width: 100%;
         left: 0;
       }
-
     }
 
-    &:nth-child(4), &:nth-child(5), &:nth-child(6), &:nth-child(7) {
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7) {
       width: 25%;
       height: 194px;
 
@@ -37,6 +41,7 @@
       span {
         top: 0;
         bottom: auto;
+
       }
 
       a::before {
@@ -50,7 +55,6 @@
         height: 96px;
       }
     }
-   
 
     > span {
       margin: 0 auto;
@@ -62,6 +66,7 @@
       transform: translateX(-50%);
       font-size: 11px;
       margin-bottom: 20px;
+      opacity: 1 !important;
 
       span {
         font-size: 11px;
@@ -77,7 +82,8 @@
     display: flex;
   }
 
-  .container, .container-fluid {
+  .container,
+  .container-fluid {
     padding: 0 0;
   }
 
@@ -91,33 +97,33 @@
   }
 
   .flex-col {
-      width: 33.33%;
-      margin-bottom: 0;
+    width: 33.33%;
+    margin-bottom: 0;
 
-      a {
-        font-size: 9px;
-        padding: 1em;
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        line-height: 1.5;
-        white-space: nowrap;
-        color: $white;
-        font-family: 'Poppins', sans-serif;
-        font-size: 14px;
-        width: 34px;
-        height: 34px;
+    a {
+      font-size: 9px;
+      padding: 1em;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.5;
+      white-space: nowrap;
+      color: $white;
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      width: 34px;
+      height: 34px;
 
+      &::before {
+        top: 80px;
+        height: 6px;
+        width: 6px;
+      }
+
+      .circle {
         &::before {
-          top: 80px;
-          height: 6px;
-          width: 6px;
-        }
-
-        .circle {
-          &::before {
-          content: '';
+          content: "";
           @include gradient-circle();
           width: 29px;
           height: 29px;
@@ -126,52 +132,51 @@
           top: 50%;
           left: 50%;
           transform: translateX(-50%) translateY(-50%);
-          }
         }
-
-        &::after {
-          height: 47px;
-        }
-
-        span {
-          display: block !important;
-        }
-
-        &:hover {
-          background: $sherpa-secondary-color;
-        }
-
-        .icon {
-          flex: 1;
-        }
-
-        .title {
-          background: transparent;
-        }
-
-        svg {
-          height: 13px;
-          display: block;
-
-          &.icon-2 {
-            height: 28px;
-          }
-
-          &.icon-4 {
-            height: 36px;
-          }
-        }
-
       }
 
-      .title span {
+      &::after {
+        height: 47px;
+      }
+
+      span {
+        display: block !important;
+      }
+
+      &:hover {
+        background: $sherpa-secondary-color;
+      }
+
+      .icon {
+        flex: 1;
+      }
+
+      .title {
+        background: transparent;
+      }
+
+      svg {
+        height: 13px;
         display: block;
-      }
 
-      &.line {
-        display: none;
+        &.icon-2 {
+          height: 28px;
+        }
+
+        &.icon-4 {
+          height: 36px;
+        }
       }
     }
+
+    .title span {
+      display: block;
+    }
+
+    &.line {
+      display: none;
+    }
+  }
 }
 
 @keyframes anim-1 {
@@ -188,85 +193,79 @@
 }
 
 @include media-breakpoint-up(lg) {
+  .icon-row {
+    $line-height: 285px;
+    $margin-top: 3px;
+    $combined-height: $line-height + $margin-top;
+    $last-offset: 207px;
+    $last-2nd-offset: $last-offset - 67px;
+    $last-3rd-offset: $last-offset - 127px;
+    $padding-bottom: 28px;
 
-.icon-row {
-
-  $line-height: 285px;
-  $margin-top: 3px;
-  $combined-height: $line-height + $margin-top;
-  $last-offset: 207px;
-  $last-2nd-offset: $last-offset - 67px;
-  $last-3rd-offset: $last-offset - 127px;
-  $padding-bottom: 28px;
-  
-  .flex-col {
-
-    > span {
-      bottom: $last-offset + 28px;
-    }
-
-    a {
-      &::after {
-        height: $line-height;
-        margin-top: $margin-top;
+    .flex-col {
+      > span {
+        bottom: $last-offset + 28px;
       }
 
-      &::before {
-        top: calc(100% + #{$combined-height});
-      } 
-    }
+      a {
+        &::after {
+          height: $line-height;
+          margin-top: $margin-top;
+        }
 
-    &:nth-last-child(3) {
-      a::after {
-        height: $combined-height + $last-3rd-offset;
+        &::before {
+          top: calc(100% + #{$combined-height});
+        }
       }
 
-      a::before {
-        top: calc(100% + (#{$combined-height} + #{$last-3rd-offset}));
+      &:nth-last-child(3) {
+        a::after {
+          height: $combined-height + $last-3rd-offset;
+        }
+
+        a::before {
+          top: calc(100% + (#{$combined-height} + #{$last-3rd-offset}));
+        }
+
+        //       > span {
+        //         bottom: ($last-offset - $last-3rd-offset) + $padding-bottom;
+        //       }
       }
 
-//       > span {
-//         bottom: ($last-offset - $last-3rd-offset) + $padding-bottom;
-//       }
-    }
+      &:nth-last-child(2) {
+        a::after {
+          height: $combined-height + $last-2nd-offset;
+        }
 
-    &:nth-last-child(2) {
-      a::after {
-        height: $combined-height + $last-2nd-offset;
+        a::before {
+          top: calc(100% + (#{$combined-height} + #{$last-2nd-offset}));
+        }
+
+        //       > span {
+        //         bottom: ($last-offset - $last-2nd-offset) + $padding-bottom;
+        //       }
       }
 
-      a::before {
-        top: calc(100% + (#{$combined-height} + #{$last-2nd-offset}));
+      &:last-child() {
+        a::after {
+          height: $combined-height + $last-offset;
+        }
+
+        a::before {
+          top: calc(100% + (#{$combined-height} + #{$last-offset}));
+        }
+
+        //       > span {
+        //         bottom: $padding-bottom;
+        //       }
       }
-
-//       > span {
-//         bottom: ($last-offset - $last-2nd-offset) + $padding-bottom;
-//       }
-    }
-
-    &:last-child() {
-      a::after {
-        height: $combined-height + $last-offset;
-      }
-
-      a::before {
-        top: calc(100% + (#{$combined-height} + #{$last-offset}));
-      }
-
-//       > span {
-//         bottom: $padding-bottom;
-//       }
     }
   }
 }
-}
-
-
-
 
 .icon-row {
   text-align: center;
-  overflow: hidden; 
+  overflow: hidden;
   list-style: none;
 
   @media screen and (max-width: 1900px) {
@@ -297,9 +296,9 @@
     text-align: left;
     height: 616px;
 
-   > span {
+    > span {
       display: block;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       font-size: 24px;
       margin-left: auto;
       color: #333333;
@@ -316,40 +315,47 @@
 
   .flex-col a {
     width: 104px;
-    height: 104px; 
+    height: 104px;
     align-items: center;
     color: #333333;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
     flex-direction: column;
     position: relative;
     overflow: hidden;
     transition: all 300ms ease-in-out;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: visible;
-    
 
     .circle {
       &::before {
-      content: '';
-      @include gradient-circle();
-      width: 80px;
-      height: 80px;
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
+        content: "";
+        @include gradient-circle();
+        width: 80px;
+        height: 80px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+
+    &:hover {
+      background: $sherpa-brand-primary;
+
+      .circle::before {
+        display: none;
       }
     }
 
     &::before {
-      content: '';
+      content: "";
       width: 17px;
       height: 17px;
       position: absolute;
@@ -357,21 +363,20 @@
       border-radius: 50%;
     }
 
-
     &::after {
-      content: '';
+      content: "";
       width: 1px;
       background: $sherpa-brand-primary;
       position: absolute;
       top: 100%;
     }
-    
 
     svg {
       height: 40px;
     }
 
-    &:focus, &:active {
+    &:focus,
+    &:active {
       text-decoration: none;
     }
 
@@ -385,7 +390,6 @@
       color: $white;
     }
   }
-
 
   .flex-col.contact-button {
     display: none;
@@ -401,11 +405,8 @@
     }
   }
 
-
   @include media-breakpoint-down(lg) {
-
     @include icon-small();
-
 
     .flex-row {
       &::before {
@@ -419,20 +420,17 @@
   }
 }
 
-
 body #main .container article #sidebar {
-
   .icon-row {
     @include icon-small();
 
     .flex-col:last-child {
       li {
-        background: rgba(0,0,0,0.7);
+        background: rgba(0, 0, 0, 0.7);
         &:nth-child(even) {
-          background: rgba(0,0,0,0.36);
+          background: rgba(0, 0, 0, 0.36);
         }
       }
     }
   }
-
 }

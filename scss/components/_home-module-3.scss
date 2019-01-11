@@ -95,18 +95,56 @@
     margin-bottom: 68px;
     margin-left: 20px;
     margin-top: 6em;
+    z-index: 0;
+
+    @keyframes pulse {
+      0% { box-shadow:0 0 8px $sherpa-brand-primary, inset 0 0 8px $sherpa-brand-primary; }
+      50% { box-shadow:0 0 16px $sherpa-brand-primary, inset 0 0 14px $sherpa-brand-primary; }
+      100% { box-shadow:0 0 8px $sherpa-brand-primary, inset 0 0 8px $sherpa-brand-primary; }
+    }
 
     em {
       border-radius: 50%;
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       display: block;
       position: absolute;
-      @include gradient();
       top: 52px;
-      left: 178px;
+      left: 173px;
       text-indent: -9999px;
-      overflow: hidden;
+      z-index: 0;
+      background: rgb(153,3,0);
+      background: radial-gradient(circle, rgba(153,3,0,1) 0%, rgba(242,242,242,0) 100%);
+
+      &::after {
+        content: '';
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        border-radius: 50%;
+        @include gradient();
+        z-index: -1;
+        animation: pulse 2s linear 1s infinite;
+      }
+
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background-color:transparent;
+        width: 60px;
+        height: 60px;
+        border-radius:50px;
+        box-shadow: 0 0 8px $sherpa-brand-primary, inset 0 0 8px $sherpa-brand-primary;
+        animation: pulse 2s linear 1s infinite;
+        z-index: 99;
+      }
 
     }
 
@@ -123,11 +161,40 @@
     width: 540px;
     height: 540px;
     display: block;
-    position: absolute;
     @include svg-ring();
-    left: 50%;
+    z-index: -1;
+  }
+
+  .outer-circle-container {
     transform: translateX(-50%) translateY(-50%);
+    left: 50%;
     top: 50%;
+    position: absolute;
+  }
+ 
+
+  @include media-breakpoint-up(md) {
+
+    .circle {
+      transition: all 1s ease-in-out;
+    }
+
+    .outer-circle {
+      transition: all 1.5s ease-in-out;
+    }
+
+     .circle em {
+        transition: all 2s ease-in-out;
+     }
+
+    .outer-circle, .circle, .circle em {
+      transform: scale(0); 
+
+    }
+
+     &.active .outer-circle, &.active .circle, &.active .circle em {
+      transform: scale(1);
+    }
   }
 
    @include media-breakpoint-down(lg){

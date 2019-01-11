@@ -95,10 +95,19 @@ $sm->setColorType('singleColor');
             <div class="col d-lg-block d-none">
                 <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
             </div>
-            <div class="col col-lg-2"><a href="<?= SITEURL ?>/contact-us/">
+            <div class="col col-lg-2"><a href="<?= SITEURL ?>/contact-us/" class="link-button">
                     <button class="btn btn-primary">
                         Contact us today
                     </button></a>
+
+                <div class="d-md-none">
+                    <?php
+$sm = new SocialMedia(array('facebook', 'twitter'));
+$sm->setSize('sm');
+$sm->showNetworkButtons();
+$sm->setColorType('singleColor');
+?>
+                </div>
             </div>
         </div>
     </div>

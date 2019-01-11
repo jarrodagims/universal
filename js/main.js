@@ -21,6 +21,28 @@
       });
     });
 
+    //waypoint activate animations in a staggered fashion
+    $(".waypoint-stagger").each(function() {
+      var goldenSection = 1 / 1.61803398875; /* ( 1 / phi ) */
+      var ms_i_1 = 1 / goldenSection;
+
+      $(this).waypoint({
+        handler: function() {
+          $.each($(".waypoint-stagger .flex-row .flex-col"), function(
+            index,
+            object
+          ) {
+            var $object = $(object);
+
+            setTimeout(function() {
+              $object.addClass("active");
+            }, 120 * (index + 1) * ms_i_1);
+          });
+        },
+        offset: "2000"
+      });
+    });
+
     (function() {
       var deskFunctions = function() {
         //make dropdown hoverable
@@ -48,7 +70,6 @@
       );
 
       function resize() {
-
         if ($(window).width() >= 992) {
           deskFunctions();
         } else if ($(window).width() < 992) {
