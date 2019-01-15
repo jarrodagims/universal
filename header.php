@@ -28,54 +28,33 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <?php if(is_front_page()) : ?>
-    <div class="chevron-bg">
-        <?php endif; ?>
-        <div class="landing-bg">
-            <!--[if lt IE 7]>
+    <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser.</p>
     <p class="browsehappy">Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     </p>
     <![endif]-->
-            <div class="top-header <?php if(!is_front_page()) : ?>internal<?php endif; ?>">
-                <div class="container">
-                    <div class="v-align row">
-                        <div class="col-xs-12 navbar-button text-center">
+    <div class="top-header <?php if(!is_front_page()) : ?>internal<?php endif; ?>">
+        <div class="container">
+            <div class="v-align row">
+                <div class="col-xs-12 navbar-button text-center">
 
 
-                            <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
-                                    alt="<?php echo get_bloginfo(
+                    <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
+                            alt="<?php echo get_bloginfo(
                                 'description'
                             ); ?>" /></a>
 
-                            <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
 
-                            <div class="navbar-right">
-
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li>EL PASO, TX <a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>">(877)
-                                            354-DENT</a></li>
-                                    <li class="menu-item directions"><a href="<?php echo get_site_url() ?>/contact-us/"><span>6455
-                                                Hiller Suite 10, El Paso, Texas 79925</span></a></a></li>
-                                    <li class="menu-item contact"><a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"><span>Call
-                                                Us Today!
-                                                <?php printPhone(); ?></span></a></li>
-                                </ul>
-
-                            </div>
-
-                        </div>
+                    <div class="navbar-right">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>1926 Montana Ave 79903 | PH: <a href="tel:9157759828">915.775.9828</a></li>
+                            <li>8001 N Mesa St 79932 | PH: <a href="tel:9155815565">915.581.5565</a></li>
+                            <li>
+                                <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-primary">Contact us</button></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <?php if(!is_front_page()) : ?>
         </div>
-        <?php endif; ?>
-
-
-        <?php if(!is_front_page()) : ?>
-        <a class="navbar-brand d-xs-block d-lg-none" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.png"
-                alt="<?php echo get_bloginfo(
-                                'description'
-                            ); ?>" /></a>
-        <?php endif; ?>
+    </div>

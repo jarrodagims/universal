@@ -1,6 +1,7 @@
 .home-module-2 {
     z-index: 999;
     position: relative;
+    background: #F7F7F7;
 
     @include media-breakpoint-down(md) {
         padding-left: 35px;

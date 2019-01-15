@@ -1,173 +1,88 @@
 .home-module-1 {
-  height: 400px;
-  position: relative;
+  background: #F7F7F7;
+  padding-bottom: 2em;
   
-  @media screen and (max-width: 1400px) {
+ .bg-jumbo {
+   background: url('../img/build/bg-hero.jpg') 0 0 no-repeat;
+   background-size: cover;
+ }
+
+  ul.menu {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
- 
-  .jumbotron {
-    height: auto;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 2em;
     margin-bottom: 0;
-    padding: 0 2rem 0;
-  }
 
-  .jumbo-content {
-    
-    z-index: 7;
-
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-
-    h1 {
-      margin-top: 0;
-      font-size: 78px;
-      font-family: "Poppins", sans-serif;
-      text-transform: uppercase;
-      letter-spacing: -2px;
-      margin-bottom: 0.5em;
-      font-weight: 300;
-      line-height: .85;
+    > li {
+      color: $white;
+      flex: 1;
+      padding: 1.5em 2em;
+      background: rgba(255,255,255,0.19);
+      @include raleway();
       position: relative;
+      font-size: 19px;
 
-      > div span {
-        margin-right: -36px;
+      &:first-child {
+        background: $sherpa-brand-primary;
       }
 
-      div:last-child {
-        color: #B3B3B3;
-        font-size: 24px;
-        font-family: 'Poppins', sans-serif;
-        margin-top: 1em;
-        font-weight: 500;
-        letter-spacing: 5px;
-        margin-bottom: 0;
-      } 
-
-      span {
-        font-size: 42px;
-        letter-spacing: 36px;
-        text-transform: none;
-        margin: 0.5em auto 0;
-        position: relative;
-        font-weight: 400;
-
-        &::before {
-          content: "";
-          display: inline-block;
-          width: 147px;
-          margin: 0 .5em 0 -55%;
-          vertical-align: middle;
-          border-bottom: 1px solid;
+      &:last-child {
+        &::after, &::before {
+          display: none;
         }
+      }
 
-        &::after {
-          content: "";
-          display: inline-block;
-          width: 147px;
-          vertical-align: middle;
-          border-bottom: 1px solid;
-          transform: translateX(-36px);
-          margin: 0 -55% 0 .5em;
-        }
+      &::before {
+        content: '';
+        background: $sherpa-secondary-color;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        right: -3px;
+        top: -40%;
+        width: 7px;
+        height: 7px;
+      }
+
+      &::after {
+        border-right: 1px solid $sherpa-secondary-color;
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 1px;
+        display: block;
+        height: 140%;
       }
     }
   }
-  
 
-  @include media-breakpoint-down(sm) {
-    background: url("../img/bg-hero-mobile2.jpg") center 100% no-repeat;
-    background-size: cover;
-  }
+  ul.menu-secondary {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    @include dropshadow();
+    background: $white;
+    margin-bottom: 0;
 
-  @include media-breakpoint-down(md) {
-    padding-bottom: 3em;
-  }
-
-//    @include media-breakpoint-down(md) {
-//      overflow: visible;
-     
-//       &::after {
-//         @include svg-chevron-top-mobile();
-//         background-position: 0 0;
-//         background-repeat: no-repeat;
-//         content: '';
-//         z-index: -1; 
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         display: block;
-//         width: 100%;
-//         height: 100%;
-//         background-size: cover;
-//       }
-//     }
-
-
-
-  @include media-breakpoint-down(lg) {
-    position: relative;
-    background: url("../img/bg-hero-top.jpg") center 80% no-repeat;
-    background-size: cover;
-    height: auto;
-  
-    &::before {
-      content: '';
-      background: rgb(0,0,0);
-      background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 30%, rgba(255,255,255,0) 60%);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    > li {
+      padding: 1.5em 2em;
     }
 
-    
-    .jumbotron {
-      padding: 3em 3em 0;
-      height: 320px;
-      padding-top: 0;
+    ul {
+      padding-left: 0;
+      list-style: none;
+      list-style-type: none;
     }
 
-    .jumbo-content {
-      
-
-      h1 {
-        font-size: 34px;
-        margin-top: 0;
-        line-height: 1;
-        width: 100%;
-
-        > div span {
-          margin-right: -16px;
-        }
-
-        span {
-          font-size: 18px;
-          line-height: 1.5;
-          letter-spacing: 16px;
-
-          &::after {
-            transform: translateX(-16px);
-          }
-
-          &::before, &::after {
-            width: 64px;
-          }
-        }
-
-        div:last-child {
-          font-size: 11px;
-          margin-top: 1em;
-          font-weight: 700;
-          letter-spacing: 1px;
-        }
-        
-      }
+    p, li {
+      font-size: 13px;
     }
+
   }
 }

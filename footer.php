@@ -1,53 +1,5 @@
-<section class="home-module-6">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h2>We are locally <span class="br-xs">owned & operated!</span></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <strong class="title">COLORADO</strong>
-                <p>3815 W Service Rd Evans, CO 80620<br />
-                    300 E 16th St Suite 209 Greeley, CO 80631</p>
-            </div>
-            <div class="col">
-                <strong class="title">ARLINGTON</strong>
-                <p>
-                    1920 W Pioneer Pkwy Arlington, TX 76013
-                </p>
-            </div>
-            <div class="col">
-                <strong class="title">CELINA</strong>
-                <p>
-                    6196 Private Road 902 Celina, TX 75009
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-
-                <strong class="title">IRVING</strong>
-                <p>
-                    9819 N MacArthur Blvd Irving, TX 75063
-                </p>
-            </div>
-            <div class="col">
-                <strong class="title">EL PASO</strong>
-                <p>
-                    <strong>By Appointment Only</strong> <a href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>">(877)
-                        354-DENT</a>
-                </p>
-            </div>
-            <div class="col">
-
-                <strong class="title">PROSPER</strong>
-                <p>
-                    1069 N Preston Rd Prosper, TX 75078
-                </p>
-            </div>
-        </div>
-    </div>
+<section class="footer-top">
+    <img src="<?=IMGURL?>bg-bottom.jpg" alt="">
 </section>
 <section id="footer">
     <div class="container">
@@ -60,75 +12,66 @@
                                 'description'
                             ); ?>" /></a>
                     </div>
-                    <div class="col contact-footer d-none d-md-block">
-                        <p>Please feel free to contact us. <span class="br-md">You can either call our toll-free</span>
-                            number or check below to
-                            see if <span class="br-md">there is an office close to your area.</span></p>
+                    <div class="col footer-nav">
+                        <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
                     </div>
-                    <div class="col phone-footer">
+                    <div class="col footer-social">
                         <div>
-                            <span class="title">Contact</span>
-                            <p><strong>Hail Repair:</strong> Call Carlos: <a href="tel:9032856438">(903)
-                                    285-6438</a><br />
-                                <strong>Non-Hail Dent Repair:</strong> Call Derek: <a href="tel:9152564050">(915)
-                                    256-4050</a><br />
-                                <strong>Authority Automotive:</strong> Call Rick Stumvoll: <a href="tel:214 7665127">(214)
-                                    766-5127</a><br />
-                                <strong>Master Shine:</strong> Call Carlos Ropez: <a href="tel:4699510745">(469)
-                                    951-0745</a></p>
+                            <?php
+                        $sm = new SocialMedia(array('facebook', 'twitter'));
+                        $sm->setSize('sm');
+                        $sm->showNetworkButtons();
+                        $sm->setColorType('singleColor');
+                        ?>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="d-md-none d-xs-block d-sm-block">
-                <?php
-$sm = new SocialMedia(array('facebook', 'twitter'));
-$sm->setSize('sm');
-$sm->showNetworkButtons();
-$sm->setColorType('singleColor');
-?>
-            </div> -->
         </div>
+        <div class="row">
+            <div class="col">
+                <span class="title">Contact Ay Caramba!</span>
+                <p>Come and pay us a visit! We have two convenient locations and can’t wait to show you around. We want
+                    to hear from you!</p>
 
-        <div class="row flex-row">
-            <div class="col d-lg-block d-none">
-                <?php echo non_responsive_bs_menu('footer', 'left', SITENAME); ?>
+                <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-primary">Contact Us</button></a>
             </div>
-            <div class="col col-lg-2"><a href="<?= SITEURL ?>/contact-us/" class="link-button">
-                    <button class="btn btn-primary">
-                        Contact us today
-                    </button></a>
 
-                <div class="d-md-none">
-                    <?php
-$sm = new SocialMedia(array('facebook', 'twitter'));
-$sm->setSize('sm');
-$sm->showNetworkButtons();
-$sm->setColorType('singleColor');
-?>
-                </div>
+            <div class="col">
+                <span class="title">Locations</span>
+
+                <p>1926 Montana Ave 79903 | PH: 915.775.9828</p>
+
+                <p>
+                    <a href="<?=SITEURL?>/contact-us/" class="hours"><button class="btn-primary btn btn-outline">Hours</button></a>
+                    Sunday - Thursday: 7:00am - 9:00pm<br />
+                    Friday - Saturday: 7:00am - 10:00pm</p>
             </div>
+
+            <div class="col">
+                <span class="title">&nbsp;</span>
+
+                <p>8001 N Mesa St 79932 | PH: 915.581.5565</p>
+
+                <p><a href="<?=SITEURL?>/contact-us/" class="hours"><button class="btn btn-primary btn-outline">Hours</button></a>
+                    Sunday - Thursday: 7:00am - 9:00pm<br />
+                    Friday - Saturday: 7:00am - 10:00pm</p>
+            </div>
+
         </div>
+    </div>
+
     </div>
 </section>
 <section class="sub-footer">
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="d-none d-md-block">
-                    <?php
-$sm = new SocialMedia(array('facebook', 'twitter'));
-$sm->setSize('sm');
-$sm->showNetworkButtons();
-$sm->setColorType('singleColor');
-?>
-                </div>
                 <p class="small">
                     &copy;
-                    <?php echo date('Y'); ?> C&D Dent Guys | All Rights Reserved
+                    <?php echo date('Y'); ?>
+                    <?= SITENAME ?> | All Rights Reserved
                 </p>
-
             </div>
         </div>
     </div>

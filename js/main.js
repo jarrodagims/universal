@@ -16,6 +16,8 @@
       $(this).waypoint({
         handler: function() {
           self.addClass("active");
+          //disable after activating once
+          this.destroy();
         },
         offset: "50%"
       });
@@ -38,6 +40,8 @@
               $object.addClass("active");
             }, 120 * (index + 1) * ms_i_1);
           });
+          //disable after activating once
+          this.destroy();
         },
         offset: "2000"
       });

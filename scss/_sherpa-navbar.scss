@@ -64,6 +64,8 @@
   .navbar-form {
     border: 0;
     border-color: $sherpa-navbar-default-border;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   // Dropdown menu items
@@ -176,10 +178,10 @@
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff !important;
+  color: #fff;
 
   &:hover {
-    color: $white !important;
+    color: $sherpa-secondary-color;
   }
 }
 
@@ -190,9 +192,6 @@
   display: flex;
   padding: .5em 0;
 
-  @include media-breakpoint-down(lg) {
-    background: #000; 
-  }
 
   @include media-breakpoint-up(md) {
 
@@ -240,10 +239,16 @@
   left: 20px;
   top: 50%;
   margin-right: 20px;
-  color: $white;
-  font-family: 'Montserrat', sans-serif;
+  color: #4D4D4D;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    margin-right: 1em;
+  }
 
   @include media-breakpoint-down(lg) {
     li {
@@ -252,7 +257,11 @@
   }
 
   a {
-    color: $white;
+    color: #4D4D4D;
+
+    button {
+      margin-left: 2em;
+    }
   }
 
   li.menu-item {
@@ -433,10 +442,6 @@
     justify-content: space-between;
     padding: 0 0;
     height: 50px;
-
-    @include media-breakpoint-down(lg) {
-      background: #000; 
-    }
 
     a .btn {
       padding: 1em 4em;

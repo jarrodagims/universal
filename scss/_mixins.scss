@@ -46,6 +46,14 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@mixin serif() {
+  font-family: "big-caslon-fb", serif;
+}
+
+@mixin acumin() {
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+}
+
 @mixin gradient() {
   background: rgb(212, 22, 32);
   background: linear-gradient(

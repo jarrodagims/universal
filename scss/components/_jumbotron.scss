@@ -9,74 +9,22 @@
   flex-direction: column;
   height: 709px;
   justify-content: center;
+  margin-bottom: 0;
   
-  span.brand {
-    font-weight: 600;
-  }
 
   h1 {
-    font-size: 75px;
     color: $white;
-    font-weight: 500; 
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 80px;
-    
-    strong {
-      font-weight: 600;
-    }
-    
-    .br-md {
-      font-size: 43px;
+    @include acumin();
+    font-size: 103px;
+
+    span {
+      @include serif();
       display: block;
-    } 
-  }
-
-  p {
-    color: $white;
-    font-size: 26px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    margin-top: 0px;
-
-    strong {
-      font-weight: 700;
+      font-size: 33px;
     }
   }
 
-  @include media-breakpoint-down(md) {
-    height: auto;
-    width: 100%;
-    padding: 5em 0 2.5em;
-
-    .btn {
-      margin-top: 0;
-    }
-
-    .br-xs {
-      display: block;
-    }
-
-    p {
-      font-size: 13px;
-
-      strong {
-        font-weight: 700;
-      }
-    }
-
-    h1 {
-      font-size: 30px;
-
-      .br-md {
-        font-size: 17px;
-        margin-top: .25em;
-      }
-    }
-
-    .btn {
-      font-size: 8px;
-    }
-  }
+ 
 }
 
 span.brand {
