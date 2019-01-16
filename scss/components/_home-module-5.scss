@@ -1,4 +1,6 @@
 .home-module-5 {
+
+    
     
     .col {
         display: flex;
@@ -7,5 +9,21 @@
         flex-direction: column;
     }
 
+    h2 {
+        @include serif();
+        font-size: 45px;
+       
+    }
+
+    em {
+        @include serif();
+        font-size: 24px;
+         line-height: 1;
+         font-weignt: 300;
+    }
+
+    p {
+        font-size: 13px;
+    }
 
 }

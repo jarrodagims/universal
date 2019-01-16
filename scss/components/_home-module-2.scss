@@ -2,6 +2,45 @@
     z-index: 999;
     position: relative;
     background: #F7F7F7;
+    padding: 3em 0;
+
+    h2 {
+        @include serif();
+    }
+
+    .h3 {
+        @include serif();
+        font-size: 21px;
+        margin-bottom: 2em;
+
+        span {
+            position: relative;
+
+            &::after {
+                @include svg-square-arrow();
+                content: '';
+                width: 20px;
+                height: 20px;
+                display: block;
+                position: absolute;
+                right: -30px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    em {
+        font-size: 24px;
+        @include serif();
+        line-height: 1.25;
+        margin-bottom: 1.5em;
+        display: block;
+    }
+
+    p {
+        font-size: 13px;
+    }
 
     @include media-breakpoint-down(md) {
         padding-left: 35px;

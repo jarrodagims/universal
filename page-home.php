@@ -93,11 +93,13 @@
 
                 <h2>A Mexican Restaurant Focused on Quality</h2>
 
-                <p class="h3">Visit us for the best Mexican food in El Paso</h3>
+                <p class="h3"><span>Visit us for the best Mexican food in El Paso</span></h3>
 
 
                     <p>
-                        <em>Ay Caramba! is a local Mexican restaurant focused on serving quality homestyle food.</em>
+                        <em><span class="brand">Ay Caramba!</span> is a local Mexican restaurant focused on serving
+                            quality homestyle
+                            food.</em>
                     </p>
 
                     <p>The restaurant began in 1998 by the Aguirre family with the intention of cooking with authentic
@@ -113,7 +115,7 @@
             <div class="col">
                 <div id="sidebar">
 
-                    <h2>Preparing Homestyle Mexican Food</h2>
+                    <h2>Preparing Homestyle <span class="br-md br-xs">Mexican Food</span></h2>
 
                     <p>We get up every day excited for the opportunity to prepare homestyle meals and dishes for our
                         patrons. We know how much people love Mexican food and keeping those traditions alive is
@@ -170,7 +172,7 @@
         <div class="row">
             <div class="col">
 
-                <h2>Browse our Menu and Check Out What We Have To Offer</h2>
+                <h2 class="icon-h2">Browse our Menu and Check Out What We Have To Offer</h2>
 
                 <p>Take a look at our menu and find something for the whole family. Read more about our traditional
                     recipe items or get information about how to reserve our party room!</p>

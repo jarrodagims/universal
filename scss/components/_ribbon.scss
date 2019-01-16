@@ -3,11 +3,15 @@
   background-size: cover;
   position: relative;
 
+  img {
+    margin-top: 37px;
+  }
+
   .col {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    min-height: 310px;
   }
 
   &::before {
