@@ -48,7 +48,13 @@ input[type="submit"] {
     padding: 16px 30px;
     font-size: 10px;
 
-    &:hover {
+    &:hover,
+  &:focus,
+  &:active,
+  &:visited,
+  &:hover:focus,
+  &:hover:active,
+  &:hover:visited {
       background: $sherpa-secondary-color;
       color: $white;
     }

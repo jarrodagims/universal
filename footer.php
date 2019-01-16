@@ -40,22 +40,21 @@
             <div class="col">
                 <span class="title">Locations</span>
 
-                <p>1926 Montana Ave 79903 | PH: 915.775.9828</p>
+                <p class="plus">1926 Montana Ave 79903 | PH: 915.775.9828</p>
 
-                <p>
-                    <a href="<?=SITEURL?>/contact-us/" class="hours"><button class="btn-primary btn btn-outline">Hours</button></a>
-                    Sunday - Thursday: 7:00am - 9:00pm<br />
-                    Friday - Saturday: 7:00am - 10:00pm</p>
+                <div class="hours"><a href="<?=SITEURL?>/contact-us/" class="hours"><button class="btn-primary btn btn-outline">Hours</button></a>
+                    <p>Sunday - Thursday: 7:00am - 9:00pm<br />Friday - Saturday: 7:00am - 10:00pm</p>
+                </div>
             </div>
 
             <div class="col">
                 <span class="title">&nbsp;</span>
 
-                <p>8001 N Mesa St 79932 | PH: 915.581.5565</p>
+                <p class="plus">8001 N Mesa St 79932 | PH: 915.581.5565</p>
 
-                <p><a href="<?=SITEURL?>/contact-us/" class="hours"><button class="btn btn-primary btn-outline">Hours</button></a>
-                    Sunday - Thursday: 7:00am - 9:00pm<br />
-                    Friday - Saturday: 7:00am - 10:00pm</p>
+                <div class="hours"><a href="<?=SITEURL?>/contact-us/" class="hours"><button class="btn btn-primary btn-outline">Hours</button></a>
+                    <p>Sunday - Thursday: 7:00am - 9:00pm<br />Friday - Saturday: 7:00am - 10:00pm</p>
+                </div>
             </div>
 
         </div>
@@ -68,7 +67,7 @@
         <div class="row">
             <div class="col">
                 <p class="small">
-                    &copy;
+                    Need Help? <a href="<?=SITEURL?>/contact-us/">Contact Us</a> &copy;
                     <?php echo date('Y'); ?>
                     <?= SITENAME ?> | All Rights Reserved
                 </p>

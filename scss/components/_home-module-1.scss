@@ -25,6 +25,8 @@
       @include raleway();
       position: relative;
       font-size: 19px;
+      display: flex;
+      align-items: center;
 
       &:first-child {
         background: $sherpa-brand-primary;

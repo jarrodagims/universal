@@ -25,6 +25,20 @@
     <?= get_option('sherpa_schema') ?>
 
     <?php endif; ?>
+    <!--
+            |\/\  ,.
+    /   `' |,-,
+   /         /_
+ _/            /
+(.-,--.       /
+/o/  o \     /
+\_\    /   _/
+(__`--'    _)
+ /         |
+(_____,'    \  AY CARAMBA!
+   \_       _\
+     `._..-'
+-->
 </head>
 
 <body <?php body_class(); ?>>

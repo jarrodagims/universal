@@ -292,12 +292,36 @@
     margin: 0 auto;
   }
 
+  .hours {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      margin-right: 1em;
+      
+    }
+  }
+
   p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.75;
     font-weight: 300;
     color: #666666;
     text-align: left; 
+  }
+
+  p.plus {
+    &::before {
+      content: '+ ';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      position: relative;
+    }
   }
 
   ul {
@@ -394,6 +418,9 @@
 
     .row:first-child {
       flex: 1;
+      justify-content: center;
+      align-items: center;
+      display: flex;
     }
   }
 
@@ -566,7 +593,7 @@
       margin-left: 0 !important;
     }
 
-    padding: 0 0 1em;
+    padding: 0 0;
   }
 
   .navbar-sherpa {
@@ -606,13 +633,20 @@
     margin-bottom: 0;
   }
 
+  a {
+    color: $white;
+    &::hover {
+      color: $white;
+    }
+  }
+
   .agi-logo {
     margin-left: 0.5em;
   }
 
   .col {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
   }
 

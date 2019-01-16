@@ -1,12 +1,35 @@
 .ribbon {
   background: url("../img/build/bg-middle.jpg") center center no-repeat;
   background-size: cover;
+  position: relative;
 
   .col {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 400px;
+  }
+
+  &::before {
+    content: '';
+    background: url('../img/build/bg-cactus.png') 0 100% no-repeat;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+  }
+
+  &::after {
+    content: '';
+    background: url('../img/build/bg-mariachi.png') 100% 100% no-repeat;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
   }
 
 }
