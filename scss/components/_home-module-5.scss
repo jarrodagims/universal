@@ -1,5 +1,21 @@
 .home-module-5 {
     overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 101%;
+        height: 84px;
+        top: 0px;
+        transform: translateX(-50%);
+        left: 50%;
+        position: absolute;
+        @include svg-rounded();
+        background-repeat: no-repeat;
+        background-position: center 100%;
+        z-index: 99;
+      }
 
     .map-column {
         .row:first-child .col {
@@ -15,6 +31,7 @@
                 z-index: 99;
                 pointer-events: none;
             }
+
         }
 
         .row:last-child .col {
