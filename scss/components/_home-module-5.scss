@@ -1,7 +1,38 @@
 .home-module-5 {
+    overflow: hidden;
 
-    
-    
+    .map-column {
+        .row:first-child .col {
+            &::before {
+                content: '';
+                background: rgba(0,0,0,0.7);
+                width: 100vw;
+                height: 100%;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 99;
+                pointer-events: none;
+            }
+        }
+
+        .row:last-child .col {
+            &::before {
+                content: '';
+                background: rgba(0,0,0,0.63);
+                width: 100vw;
+                height: 100%;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 99;
+                pointer-events: none;
+            }
+        }
+    }
+
     .col {
         display: flex;
         justify-content: center;

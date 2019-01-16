@@ -3,6 +3,7 @@
   padding-top: 86px;
   position: relative;
   z-index: 0;
+  overflow: hidden;
 
   h2, h3 {
       @include serif();
@@ -44,6 +45,7 @@
 
   .row .col:first-child {
     text-align: center;
+ 
 
     &::before {
       text-align: center;
@@ -73,7 +75,7 @@
   &::after {
     content: '';
     display: block;
-    width: 120%;
+    width: 101%;
     height: 84px;
     bottom: 0;
     transform: translateX(-50%);

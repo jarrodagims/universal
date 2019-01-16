@@ -216,15 +216,15 @@
                     Crossroads shopping center and across the GECU. </p>
             </div>
 
-            <div class="col">
+            <div class="col map-column">
                 <div class="row">
                     <div class="col"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.8113943214803!2d-106.47493584861849!3d31.775629681193998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e759a4359e7057%3A0xd2970bc80607569e!2sAy+Caramba+Restaurant!5e0!3m2!1sen!2sus!4v1547652523092"
-                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                            width="500%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217179.66146282374!2d-106.42510997104993!3d31.73140162504905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ddfeea2a3c7b5b%3A0x3561ba7217d78e59!2sAy+Caramba+Restaurant!5e0!3m2!1sen!2sus!4v1547652573725"
-                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            width="500%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
