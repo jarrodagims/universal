@@ -1,5 +1,8 @@
 .home-module-4 {
   background: #333333;
+  padding-top: 86px;
+  position: relative;
+  z-index: 0;
 
   h2, h3 {
       @include serif();
@@ -15,5 +18,83 @@
 
   p {
     font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  img {
+    margin: 0 auto;
+  } 
+
+  .icon-h2 {
+    text-align: center;  
+
+    &::before, &::after {
+      content: '';
+      height: 1px;
+      width: 163px;
+      display: block;
+      margin: 1em auto;
+      background: #ED1D25;
+    } 
+
+    &::after {
+      margin-top: 1em;
+    }
+  }
+
+  .row .col:first-child {
+    text-align: center;
+
+    &::before {
+      text-align: center;
+      content: '';
+      width: 1px;
+      height: 100%;
+      position: absolute; 
+      top: 0;
+      right: 0;
+      background: #808080;
+      }
+  }
+
+  &::before {
+    position: absolute;
+    background: $white;
+    width: 100%;
+    height: 84px;
+    content: '';
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: -1;
+
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 120%;
+    height: 84px;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    @include svg-rounded();
+    background-repeat: no-repeat;
+    background-position: center 100%;
+  }
+
+  > div {
+    padding-bottom: 84px;
+    &::before {
+      content: '';
+      background: #333333;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 86px;
+      bottom: 60px;
+    }
   }
 }

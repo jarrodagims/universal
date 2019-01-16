@@ -174,3 +174,7 @@
 @mixin svg-square-arrow() {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.28 23.28"><title>square-arrow</title><g id="bd0e11dd-b520-48a1-9053-0ff732984c74" data-name="Layer 2"><g id="b0a64ed2-10bb-4fb4-99cd-98d9b4afb26b" data-name="Layer 8"><rect width="23.28" height="23.28" fill="#1a1a1a" opacity="0.12"/><polygon points="8.18 18.24 8.85 18.9 16.11 11.64 8.85 4.38 8.18 5.04 14.78 11.64 8.18 18.24" fill="#fff"/></g></g></svg>');
 }
+
+@mixin svg-rounded() {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1936 61.25"><title>svg-rounded</title><g id="e4ae9f7a-d25e-4056-99d6-b7c7f2496d5c" data-name="Layer 2"><g id="a231c6fc-e8fd-42da-9f71-96a4149d6587" data-name="Layer 1"><path d="M0,0V7.83C291.72,42,620.37,61.25,968,61.25S1644.28,42,1936,7.83V0" fill="#333" fill-rule="evenodd"/></g></g></svg>');
+}

@@ -168,30 +168,37 @@
 </section>
 
 <section class="home-module-4">
-    <div class="container">
-        <div class="row">
-            <div class="col">
 
-                <h2 class="icon-h2">Browse our Menu and Check Out What We Have To Offer</h2>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="<?=IMGURL?>icon-mexican-top.png" alt="" />
+                    <h2 class="icon-h2">Browse our Menu and Check Out What We Have To Offer</h2>
 
-                <p>Take a look at our menu and find something for the whole family. Read more about our traditional
-                    recipe items or get information about how to reserve our party room!</p>
+                    <p>Take a look at our menu and find something for the whole family. Read more about our traditional
+                        recipe items or get information about how to reserve our party room!</p>
 
-            </div>
-            <div class="col">
-                <h2>The Ay Caramba Promise of Authentic Flavor</h2>
+                </div>
+                <div class="col">
+                    <h2>The Ay Caramba Promise of Authentic Flavor</h2>
 
-                <h3>The Ay Caramba! Promise of Authentic Flavor</h3>
+                    <h3>The Ay Caramba! Promise of Authentic Flavor</h3>
 
-                <p>Part of Ay Caramba’s mission is to create a positive atmosphere for people to enjoy the best quality
-                    and traditional Mexican food in the area. We know that many of these traditional items remind
-                    people of their homemade meals and that’s why we make everything from scratch and use only the best
-                    ingredients. We want to uphold the well-known family values and traditions of the Mexican culture
-                    in our restaurant and through our food.
-                </p>
+                    <p>Part of Ay Caramba’s mission is to create a positive atmosphere for people to enjoy the best
+                        quality
+                        and traditional Mexican food in the area. We know that many of these traditional items remind
+                        people of their homemade meals and that’s why we make everything from scratch and use only the
+                        best
+                        ingredients. We want to uphold the well-known family values and traditions of the Mexican
+                        culture
+                        in our restaurant and through our food.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+
 </section>
 
 <section class="home-module-5">
