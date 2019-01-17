@@ -112,6 +112,12 @@
   }
 
   @include media-breakpoint-down(md) {
+     ul.menu-secondary {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
 
        ul.menu {
          flex-wrap: wrap;
@@ -120,10 +126,21 @@
 
          li {
            text-align: center;
+           border-bottom: 3px solid $sherpa-secondary-color;
+           color: #8D8E8E;
+           background: $white;
+           justify-content: center;
+           @include dropshadow();
+           
+
+           
          }
 
           > li:first-child {
             width: 100%;
+            text-align: center;
+            justify-content: center;
+            background: $white;
           }
 
           > li {
@@ -131,10 +148,13 @@
             text-align: center;
             flex: auto;
 
+
             &::after, &::before {
               display: none;
             }
           }
        }
     }
+
+   
 }

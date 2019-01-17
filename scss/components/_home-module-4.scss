@@ -91,4 +91,22 @@
       bottom: 60px;
     }
   }
+
+  @include media-breakpoint-down(md) {
+    .row .col:first-child {
+
+      &::before {
+        display: none;
+      }
+
+      > div {
+        padding: 0 0;
+      }
+    }
+
+    .row .col:last-child>div {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
 }

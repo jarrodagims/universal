@@ -13,7 +13,8 @@
                     <div>
                         Mexican Restaurant
 
-                        <div><a href="<?=SITEURL?>/menu/"><button class="btn btn-primary">Our Menu</button></a>
+                        <div class="d-md-none d-xs-flex"><a href="<?=SITEURL?>/menu/"><button class="btn btn-primary">Our
+                                    Menu</button></a>
                             <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-outline">Contact Us</button></a></div>
                     </div>
                     <span>Serving Traditional <span class="br-xs">Mexican Dishes, Tacos, & Steak</span></span>

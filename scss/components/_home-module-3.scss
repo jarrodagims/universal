@@ -25,5 +25,16 @@
   .row .col:last-child > div {
     padding-left: 7em;
   }
+
+  @include media-breakpoint-down(md) {
+    .row {
+      flex-direction: column-reverse;
+
+      .col:last-child>div {
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+  }
 }
  

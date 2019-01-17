@@ -36,4 +36,17 @@
     width: 100%;
   }
 
+  @include media-breakpoint-down(lg) {
+    &::before, &::after {
+      background-size: 25% auto;
+    }
+  }
+  
+
+  @include media-breakpoint-down(md) {
+    &::before, &::after {
+      display: none;
+    }
+  }
+
 }
