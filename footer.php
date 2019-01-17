@@ -56,7 +56,6 @@
                     <p>Sunday - Thursday: 7:00am - 9:00pm<br />Friday - Saturday: 7:00am - 10:00pm</p>
                 </div>
             </div>
-
         </div>
     </div>
 

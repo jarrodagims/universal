@@ -9,8 +9,14 @@
         <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
         <div class="jumbotron">
             <div class="jumbo-content">
-                <h1>Mexican Restaurant
-                    <span>Serving Traditional Mexican Dishes, Tacos, & Steak</span>
+                <h1>
+                    <div>
+                        Mexican Restaurant
+
+                        <div><a href="<?=SITEURL?>/menu/"><button class="btn btn-primary">Our Menu</button></a>
+                            <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-outline">Contact Us</button></a></div>
+                    </div>
+                    <span>Serving Traditional <span class="br-xs">Mexican Dishes, Tacos, & Steak</span></span>
                 </h1>
             </div>
         </div>
@@ -149,19 +155,22 @@
                 <img src="<?=IMGURL?>ay-caramba-building.jpg" alt="Ay Caramba" />
             </div>
             <div class="col">
-                <h2>Check Out Some of Our
-                    Signature Mexican Dishes</h2>
+                <div>
+                    <h2>Check Out Some of Our
+                        Signature Mexican Dishes</h2>
 
-                <p>Ay Caramba! has an extensive and varied menu with many of your favorite traditional dishes and
-                    classic Mexican food. Whether you are looking for carnitas, delicious tacos, enchiladas, tortas, or
-                    seafood items.
-                </p>
+                    <p>Ay Caramba! has an extensive and varied menu with many of your favorite traditional dishes and
+                        classic Mexican food. Whether you are looking for carnitas, delicious tacos, enchiladas,
+                        tortas, or
+                        seafood items.
+                    </p>
 
-                <p>
-                    <em>Click here for our full menu.</em>
-                </p>
+                    <p>
+                        <em>Click here for our full menu.</em>
+                    </p>
 
-                <a href="#"><button class="btn btn-primary">Learn More</button></a>
+                    <a href="#"><button class="btn btn-primary">Learn More</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -173,27 +182,31 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="<?=IMGURL?>icon-mexican-top.png" alt="" />
-                    <h2 class="icon-h2">Browse our Menu and Check Out What We Have To Offer</h2>
+                    <div><img src="<?=IMGURL?>icon-mexican-top.png" alt="" />
+                        <h2 class="icon-h2">Browse our Menu and Check Out What We Have To Offer</h2>
 
-                    <p>Take a look at our menu and find something for the whole family. Read more about our traditional
-                        recipe items or get information about how to reserve our party room!</p>
-
+                        <p>Take a look at our menu and find something for the whole family. Read more about our
+                            traditional
+                            recipe items or get information about how to reserve our party room!</p>
+                    </div>
                 </div>
                 <div class="col">
-                    <h2>The Ay Caramba Promise of Authentic Flavor</h2>
+                    <div>
 
-                    <h3>The Ay Caramba! Promise of Authentic Flavor</h3>
+                        <h2>The Ay Caramba! Promise of Authentic Flavor</h2>
 
-                    <p>Part of Ay Caramba’s mission is to create a positive atmosphere for people to enjoy the best
-                        quality
-                        and traditional Mexican food in the area. We know that many of these traditional items remind
-                        people of their homemade meals and that’s why we make everything from scratch and use only the
-                        best
-                        ingredients. We want to uphold the well-known family values and traditions of the Mexican
-                        culture
-                        in our restaurant and through our food.
-                    </p>
+                        <p>Part of Ay Caramba’s mission is to create a positive atmosphere for people to enjoy the best
+                            quality
+                            and traditional Mexican food in the area. We know that many of these traditional items
+                            remind
+                            people of their homemade meals and that’s why we make everything from scratch and use only
+                            the
+                            best
+                            ingredients. We want to uphold the well-known family values and traditions of the Mexican
+                            culture
+                            in our restaurant and through our food.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -205,24 +218,30 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>
-                    Two Locations to Serve You
-                </h2>
+                <div>
+                    <h2>
+                        Two Locations to Serve You
+                    </h2>
 
-                <p><em>Ay Caramba! Mexican Restaurant has two locations in El Paso to better serve you.</em></p>
+                    <p><em>Ay Caramba! Mexican Restaurant has two locations in El Paso to better serve you.</em></p>
 
-                <p>We are located on 1926 Montana Ave 79903 near the intersection between Montana and Cotton. We have
-                    our second location on 8001 North Mesa 79932 on the intersection of Mesa and Crossroads on the
-                    Crossroads shopping center and across the GECU. </p>
+                    <p>We are located on 1926 Montana Ave 79903 near the intersection between Montana and Cotton. We
+                        have
+                        our second location on 8001 North Mesa 79932 on the intersection of Mesa and Crossroads on the
+                        Crossroads shopping center and across the GECU. </p>
+                </div>
             </div>
 
             <div class="col map-column">
                 <div class="row">
-                    <div class="col"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.8113943214803!2d-106.47493584861849!3d31.775629681193998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e759a4359e7057%3A0xd2970bc80607569e!2sAy+Caramba+Restaurant!5e0!3m2!1sen!2sus!4v1547652523092"
+                    <div class="col flex-grow-1">
+                        <span>1926 Montana Ave 79903</span>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.8113943214803!2d-106.47493584861849!3d31.775629681193998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e759a4359e7057%3A0xd2970bc80607569e!2sAy+Caramba+Restaurant!5e0!3m2!1sen!2sus!4v1547652523092"
                             width="500%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col flex-grow-1">
+                        <span>8001 N Mesa St 79932</span>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217179.66146282374!2d-106.42510997104993!3d31.73140162504905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ddfeea2a3c7b5b%3A0x3561ba7217d78e59!2sAy+Caramba+Restaurant!5e0!3m2!1sen!2sus!4v1547652573725"
                             width="500%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>

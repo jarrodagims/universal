@@ -137,11 +137,11 @@
 }
 
 
-// .v-align {
-//   @include media-breakpoint-down(md) {
-//     height: 50px;
-//   }
-// } 
+.v-align {
+  @include media-breakpoint-down(md) {
+    height: 100%;
+  }
+} 
 
 .v-align > div {
   display: flex;
@@ -153,20 +153,9 @@
   flex-basis: 0;
   position: relative;
 
-  @media screen and (min-width: 1200px) {
-     align-items: flex-start;
-
-     .navbar-sherpa, > .navbar-right {
-       margin-top: 20px;
-     } 
-  }
-
   @include media-breakpoint-down(md) {
     height: 50px;
-  }
-
-  .navbar-brand {
-    
+    flex-direction: column-reverse;
   }
 
   .navbar-left {
@@ -198,6 +187,10 @@
     .v-align {
       justify-content: flex-start;
       align-items: flex-start;
+
+      .navbar-sherpa {
+        display: none;
+      }
     }
 
     .container {
@@ -227,6 +220,8 @@
 
 .navbar-right {
   padding: .5rem 1rem;
+  margin-left: auto;
+  margin-right: 0;
 
   @include media-breakpoint-down(md) {
     width: 100%;
@@ -236,23 +231,32 @@
 
 .navbar-nav.navbar-right {
   flex-direction: row;
-  left: 20px;
   top: 50%;
-  margin-right: 20px;
   color: #4D4D4D;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 300;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
 
   li {
-    margin-right: 1em;
+    margin-left: 1em;
+
+   &::before {
+    content: '+ ';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
   }
 
-  @include media-breakpoint-down(lg) {
-    li {
-      font-size: 11px;
+    &:last-child {
+      margin-left: 0;
+
+      &::before {
+        display: none;
+      }
     }
   }
 
@@ -307,12 +311,54 @@
 
   @include media-breakpoint-down(md) {
     width: 100%;
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+    top: auto;
+    left: 0;
+    transform: none;
+    flex-direction: row;
+    margin: 0 0;
+    background: #000;
+    color: $white;
 
-    li:first-child {
-      order: 3;
-      margin-left: auto;
-      margin-right: 60px; 
-      font-size: 9px;
+    a {
+      color: $white;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      font-size: 11px;
+      position: relative;
+      padding-right: 20px;
+      @include svg-contact(_trim($sherpa-secondary-color));
+
+
+      &::after {
+        margin-left: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    li {
+      flex: 1;
+      margin: 0 0;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:first-child {
+        border-right: 1px solid #fff;
+      }
+
+
+      &::before {
+        display: none;
+      }
     }
   }
 }
@@ -377,30 +423,33 @@
   }
 }
 
+@include media-breakpoint-down(md) {
 
-@media screen and (max-width: 1400px) {
   .navbar-brand {
     width: 123px;
     margin-left: 15px;
+    display: block !important;
+    padding-bottom: 0;
   }
-}
 
-@include media-breakpoint-down(md) {
   .navbar-right {
     position: relative;
-    top: 50%;
+    height: 50px;
+    padding: 0 0;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    
   }
 
-  
+  .navbar-sherpa {
+    position: absolute;
+    left: 0;
+    top: 0;;
+    width: 100%;
+    z-index: 9999;
+  }
 
-//   .navbar-brand {
-//     margin: 0 auto;
-//     position: absolute;
-//     height: 99px;
-//     img {
-//       height: 99px;
-//     }
-//   }
 
   .navbar-sherpa #menu-primary {
     background: #000;
@@ -416,12 +465,6 @@
     justify-content: center;
   }
 
-  .navbar-sherpa .navbar-collapse,
-  .navbar-sherpa .navbar-collapse.collapsing,
-  .navbar-sherpa .navbar-collapse.collapse.in {
-    //       height: 100% !important;
-  }
-
   .v-align .header-button {
     margin-right: 60px;
   }
@@ -432,10 +475,7 @@
     width: 100%;
     left: 0 !important;
     z-index: 9999;
-
   }
-
-  
 
   .top-header {
     display: flex;
@@ -477,7 +517,7 @@
   }
 
   .navbar-dark .navbar-toggler-icon {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.65 9.52"><title>toggler</title><g id="e58359eb-2c5d-4976-9fba-dc643ce0dd82" data-name="Layer 2"><g id="b9d2cb83-6000-42db-b0ae-3d08e3eb8a0a" data-name="Layer 3"><g opacity="0.7"><rect y="4.01" width="20.65" height="1.5" fill="#ebebeb"/><rect width="20.65" height="1.5" fill="#ebebeb"/><rect y="8.01" width="20.65" height="1.5" fill="#ebebeb"/></g></g></g></svg>');
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.65 9.52"><g id="e58359eb-2c5d-4976-9fba-dc643ce0dd82" data-name="Layer 2"><g id="b9d2cb83-6000-42db-b0ae-3d08e3eb8a0a" data-name="Layer 3"><g opacity="0.7"><rect y="4.01" width="20.65" height="1.5" fill="#CECECE"/><rect width="20.65" height="1.5" fill="#CECECE"/><rect y="8.01" width="20.65" height="1.5" fill="#CECECE"/></g></g></g></svg>');
     background-repeat: no-repeat;
     background-position: center center;
   }

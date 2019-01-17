@@ -44,7 +44,6 @@ input[type="submit"] {
   &.btn-outline {
     border: 2px solid $sherpa-secondary-color;
     color: #606060;
-    padding: 16px 30px;
     font-size: 10px;
 
     &:hover,
@@ -86,7 +85,6 @@ input[type="submit"] {
 
   @include media-breakpoint-down(sm) {
     font-size: 9px;
-    padding: 1.5em 5em;
   }
 }
 

@@ -60,32 +60,24 @@
       }
   }
 
-//   &::before {
-//     position: absolute;
-//     background: $white;
-//     width: 100%;
-//     height: 84px;
-//     content: '';
-//     bottom: 0;
-//     left: 0;
-//     display: block;
-//     z-index: -1;
+  .row .col:first-child {
+    > div {
+      padding: 0 7em;
+    }
+  }
 
-//   }
+  .row .col:last-child {
 
-//   &::after {
-//     content: '';
-//     display: block;
-//     width: 101%;
-//     height: 84px;
-//     bottom: 0;
-//     transform: translateX(-50%);
-//     left: 50%;
-//     position: absolute;
-//     @include svg-rounded();
-//     background-repeat: no-repeat;
-//     background-position: center 100%;
-//   }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+      
+    > div {
+      padding-left: 7em;
+      
+    }
+  }
 
   > div {
     &::before {

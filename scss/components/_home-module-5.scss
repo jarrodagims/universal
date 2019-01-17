@@ -2,6 +2,14 @@
     overflow: hidden;
     position: relative;
 
+    .row .col:first-child > div {
+        padding-right: 7em;
+    }
+
+    .row .col:last-child {
+        padding-left: 0;
+    }
+
     &::before {
         content: '';
         display: block;
@@ -18,7 +26,34 @@
       }
 
     .map-column {
+
+        span {
+            color: $white;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translateY(-50%) transtlateX(-50%);
+            z-index: 99;
+            display: block;
+            width: 100%;
+            font-size: 25px;
+
+            &::before {
+                content: '+ ';
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+                position: relative;
+              }
+        }
+
+        .row {
+            width: 100%;
+        }
+
         .row:first-child .col {
+            width: 100%;
+
             &::before {
                 content: '';
                 background: rgba(0,0,0,0.7);
@@ -35,6 +70,8 @@
         }
 
         .row:last-child .col {
+            width: 100%;
+
             &::before {
                 content: '';
                 background: rgba(0,0,0,0.63);

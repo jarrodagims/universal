@@ -5,6 +5,14 @@
  .bg-jumbo {
    background: url('../img/build/bg-hero.jpg') 0 0 no-repeat;
    background-size: cover;
+
+   @include media-breakpoint-down(md) {
+     background: none;
+
+     .navbar-sherpa {
+       display: none;
+     }
+   }
  }
 
   ul.menu {
@@ -27,6 +35,7 @@
       font-size: 19px;
       display: flex;
       align-items: center;
+      width: 14.3%;
 
       &:first-child {
         background: $sherpa-brand-primary;
@@ -73,7 +82,8 @@
     margin-bottom: 0;
 
     > li {
-      padding: 1.5em 2em;
+      padding: 4em 2em;
+      width: 14.3%;
     }
 
     ul {
@@ -86,5 +96,45 @@
       font-size: 13px;
     }
 
+    
+    li {
+      color: #c3c3c3;
+    }
+
+    > li:first-child {
+      color: #4D4D4D;
+      -webkit-box-shadow: inset -10px 0px 13px -8px rgba(0,0,0,0.1);
+      -moz-box-shadow: inset -10px 0px 13px -8px rgba(0,0,0,0.1);
+      box-shadow: inset -10px 0px 13px -8px rgba(0,0,0,0.1);
+    }
+
+
   }
+
+  @include media-breakpoint-down(md) {
+
+       ul.menu {
+         flex-wrap: wrap;
+         text-align: center;
+         padding-top: 0;
+
+         li {
+           text-align: center;
+         }
+
+          > li:first-child {
+            width: 100%;
+          }
+
+          > li {
+            width: 50%;
+            text-align: center;
+            flex: auto;
+
+            &::after, &::before {
+              display: none;
+            }
+          }
+       }
+    }
 }

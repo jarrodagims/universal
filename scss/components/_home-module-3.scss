@@ -21,5 +21,9 @@
     @include serif();
     font-size: 15px;
   }
+
+  .row .col:last-child > div {
+    padding-left: 7em;
+  }
 }
  
