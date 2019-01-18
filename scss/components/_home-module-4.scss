@@ -100,13 +100,26 @@
       }
 
       > div {
-        padding: 0 0;
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
 
     .row .col:last-child>div {
-      padding-left: 0;
+      padding-left: 15px;
       text-align: center;
+    }
+
+    .row .col:last-child {
+      padding-top: 3em;
+
+      &::before {
+        width: 100%;
+        content: '';
+        background: #CECECE;
+        height: 1px;
+        margin-bottom: 3em;
+      }
     }
   }
 }

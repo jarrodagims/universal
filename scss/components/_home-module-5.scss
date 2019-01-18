@@ -113,12 +113,74 @@
 
     @include media-breakpoint-down(md) {
 
+        &::before {
+            display: none;
+        }
 
-         .row .col:first-child>div {
+        .map-column {
+            padding-right: 0;
+        }
+
+        .map-column span {
+            font-size: 12px;
+            display: block;
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+
+        em {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+
+        
+
+        .map-column .col {
+            &::before {
+                content: '';
+                background: rgba(0,0,0,0.63);
+                width: 100vw;
+                height: 100%;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 2;
+                pointer-events: none;
+            }
+        }
+
+        .map-column:first-child .col {
+            &::before {
+                content: '';
+                background: rgba(0,0,0,0.7);
+                width: 100vw;
+                height: 100%;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 2;
+                pointer-events: none;
+            }
+        }
+
+
+         .row .col:first-child>div.extra-padding {
             text-align: center;
             padding-top: 4em;
             padding-bottom: 4em;
-            padding-right: 0;
+            padding-right: 15px;
+        }
+
+
+        iframe {
+            height: 132px;
         }
     }
 

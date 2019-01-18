@@ -40,8 +40,7 @@
             else:
                 ?>
 
-
-    <img src="<?= IMGURL ?>bg-banner-bottom.jpg" class="d-md-none d-xs-block" alt="<?php echo get_bloginfo( 'name' ); ?>" />
+    <img src="<?=IMGURL?>bg-bottom.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>">
     <?php
             endif; ?>
 </div>

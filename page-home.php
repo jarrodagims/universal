@@ -23,13 +23,41 @@
         </div>
 
         <ul class="menu">
-            <li>Our Specialty Dishes</li>
-            <li>Breakfast Favorites</li>
-            <li>Burritos</li>
-            <li>Seafood</li>
-            <li>Tacos</li>
-            <li>Caldo</li>
-            <li>Other Favorites</li>
+            <li>
+                <div>
+                    Our Specialty Dishes
+                </div>
+            </li>
+            <li>
+                <div>
+                    Breakfast Favorites
+                </div>
+            </li>
+            <li>
+                <div>
+                    Burritos
+                </div>
+            </li>
+            <li>
+                <div>
+                    Seafood
+                </div>
+            </li>
+            <li>
+                <div>
+                    Tacos
+                </div>
+            </li>
+            <li>
+                <div>
+                    Caldo
+                </div>
+            </li>
+            <li>
+                <div>
+                    Other Favorites
+                </div>
+            </li>
         </ul>
     </div>
 
@@ -98,24 +126,29 @@
 
             <div class="col">
 
-                <h2>A Mexican Restaurant Focused on Quality</h2>
+                <div class="extra-padding">
+                    <h2>A Mexican Restaurant Focused on Quality</h2>
 
-                <p class="h3"><span>Visit us for the best Mexican food in El Paso</span></h3>
+                    <p class="h3"><span>Visit us for the best Mexican food in El Paso</span></h3>
 
 
-                    <p>
-                        <em><span class="brand">Ay Caramba!</span> is a local Mexican restaurant focused on serving
-                            quality homestyle
-                            food.</em>
-                    </p>
+                        <p>
+                            <em><span class="brand">Ay Caramba!</span> is a local Mexican restaurant focused on serving
+                                quality homestyle
+                                food.</em>
+                        </p>
 
-                    <p>The restaurant began in 1998 by the Aguirre family with the intention of cooking with authentic
-                        Mexican flavor. Our specialty is making traditional Mexican dishes the way your grandma would
-                        make
-                        them! We prepare all of our food with all the love, patience, and expertise of old-fashioned
-                        Mexican cooks. Our aim is to keep people’s favorite dishes alive through these traditional
-                        recipes
-                        and never forget the dishes that have made Mexican food a favorite around the world.</p>
+                        <p>The restaurant began in 1998 by the Aguirre family with the intention of cooking with
+                            authentic
+                            Mexican flavor. Our specialty is making traditional Mexican dishes the way your grandma
+                            would
+                            make
+                            them! We prepare all of our food with all the love, patience, and expertise of
+                            old-fashioned
+                            Mexican cooks. Our aim is to keep people’s favorite dishes alive through these traditional
+                            recipes
+                            and never forget the dishes that have made Mexican food a favorite around the world.</p>
+                </div>
 
             </div>
 
@@ -183,7 +216,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div><img src="<?=IMGURL?>icon-mexican-top.png" alt="" />
+                    <div class="extra-padding"><img src="<?=IMGURL?>icon-mexican-top.png" alt="" />
                         <h2 class="icon-h2">Browse our Menu and Check Out What We Have To Offer</h2>
 
                         <p>Take a look at our menu and find something for the whole family. Read more about our
@@ -192,7 +225,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div>
+                    <div class="extra-padding">
 
                         <h2>The Ay Caramba! Promise of Authentic Flavor</h2>
 
@@ -219,7 +252,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div>
+                <div class="extra-padding">
                     <h2>
                         Two Locations to Serve You
                     </h2>
@@ -233,7 +266,7 @@
                 </div>
             </div>
 
-            <div class="col map-column">
+            <div class="col map-column d-lg-block d-none">
                 <div class="row">
                     <div class="col flex-grow-1">
                         <span>1926 Montana Ave 79903</span>
@@ -249,6 +282,22 @@
                 </div>
             </div>
 
+        </div>
+
+    </div>
+
+    <div class="row map-column d-lg-none">
+        <div class="col">
+            <span>1926 Montana Ave 79903</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3391.8113943214803!2d-106.47493584861849!3d31.775629681193998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e759a4359e7057%3A0xd2970bc80607569e!2sAy+Caramba+Restaurant!5e0!3m2!1sen!2sus!4v1547652523092"
+                width="500%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="row map-column d-lg-none">
+        <div class="col">
+            <span>8001 N Mesa St 79932</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217179.66146282374!2d-106.42510997104993!3d31.73140162504905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ddfeea2a3c7b5b%3A0x3561ba7217d78e59!2sAy+Caramba+Restaurant!5e0!3m2!1sen!2sus!4v1547652573725"
+                width="500%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
 </section>

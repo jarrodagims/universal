@@ -27,6 +27,21 @@
   }
 
   @include media-breakpoint-down(md) {
+
+    .col:first-child {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .col:last-child {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
     .row {
       flex-direction: column-reverse;
 

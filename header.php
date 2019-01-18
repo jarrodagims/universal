@@ -82,3 +82,12 @@
             </div>
         </div>
     </div>
+    <?php if(!is_front_page()) : ?>
+    <div class="container">
+        <div class="row">
+            <div class="col internal">
+                <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
+            </div>
+        </div>
+    </div>
+    <?php endif; ?>
