@@ -182,11 +182,14 @@
   padding: .5em 0;
 
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
+
+    min-height: 205px;
 
     .v-align {
       justify-content: flex-start;
       align-items: flex-start;
+      width: 100%;
 
       .navbar-sherpa {
         display: none;
@@ -195,6 +198,11 @@
 
     .container {
       max-width: 1770px;
+      display: flex;
+      justify-content: space-between;
+
+      align-items: center;
+
     }
 
     &.internal .v-align > div {
@@ -207,6 +215,10 @@
   }
 
  
+}
+
+.internal .top-header {
+  background: #F7F7F7;
 }
 
 #menu-secondary {
@@ -225,6 +237,11 @@
   margin-left: auto;
   margin-right: 0;
 
+
+  @include media-breakpoint-up(md) {
+     margin-top: auto;
+  }
+
   @include media-breakpoint-down(md) {
     width: 100%;
     
@@ -241,6 +258,7 @@
   justify-content: center;
   align-items: center;
   margin-left: auto;
+
 
   li {
     margin-left: 1em;
@@ -611,6 +629,12 @@
 
 .internal .navbar-dark .navbar-nav .nav-link {
   color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+
+  &:hover {
+    color: $sherpa-brand-primary;
+  }
 }
 
 .internal .navbar-sherpa .navbar-collapse {

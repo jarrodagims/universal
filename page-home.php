@@ -127,7 +127,25 @@
             <div class="col">
 
                 <div class="extra-padding">
-                    <h2>A Mexican Restaurant Focused on Quality</h2>
+                    <h2>A Mexican Restaurant Focused on Quality
+
+                        <ul>
+                            <li>Visit us for the best Mexican food in El Paso!</li>
+                            <li>We use only the top ingredients for all of our dishes.</li>
+                            <li>Our highly-reviewed establishment provides quality customer service.</li>
+                            <li>We are a local Mexican restaurant serving El Pasoans since 1998.</li>
+                            <li>We have among the highest ratings for Mexican restaurants in the area.</li>
+                            <li>Leave us your reviews, we want to hear from you!</li>
+                            <li>For authentic Mexican food, Ay Caramba! is the place.</li>
+                            <li>Our dishes come from traditional recipes.</li>
+                            <li>Our menu includes seafood dishes as well.</li>
+                            <li>Come experience our high-quality steaks.</li>
+                            <li>We offer breakfast, lunch, and dinner.</li>
+                            <li>Call us ahead for carry out!</li>
+                            <li>Be sure to browse our menu and find your favorite Mexican plates.</li>
+                        </ul>
+
+                    </h2>
 
                     <p class="h3"><span>Visit us for the best Mexican food in El Paso</span></h3>
 

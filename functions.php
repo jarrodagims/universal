@@ -202,6 +202,17 @@ function wpb_add_fonts() {
 
 add_action( 'wp_enqueue_scripts', 'wpb_add_fonts' );
 
+add_filter( 'body_class','my_body_classes' );
+function my_body_classes( $classes ) {
+ 
+    if(!is_front_page()) {
+		$classes[] = 'internal';
+	}
+
+	return $classes;
+     
+}
+
 
 // add_filter( 'user_can_richedit', 'custom_user_can_richedit');
 
