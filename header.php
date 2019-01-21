@@ -48,7 +48,7 @@
     <p class="browsehappy">Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     </p>
     <![endif]-->
-    <div class="d-xs-flex d-md-none">
+    <div class="d-xs-flex d-lg-none">
         <div class="navbar-right">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="tel:9155333377">1926 Montana Ave 79903&nbsp;&nbsp;| </a></li>
@@ -67,7 +67,7 @@
                             ); ?>" /></a>
 
 
-                    <div class="navbar-right d-none d-md-flex">
+                    <div class="navbar-right d-none d-lg-flex">
                         <ul class="nav navbar-nav navbar-right">
                             <li>1926 Montana Ave 79903 | PH: <a href="tel:9155333377">915.533.3377</a></li>
                             <li>8001 N Mesa St 79932 | PH: <a href="tel:9155815565">915.581.5565</a></li>

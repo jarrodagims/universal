@@ -13,7 +13,7 @@
     margin-bottom: .75em;
   }
 
-  p {
+  p, ul li {
     font-size: 13px;
   }
 
@@ -27,6 +27,12 @@
   }
 
   @include media-breakpoint-down(md) {
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin-left: 0;
+    }
 
     .col:first-child {
       padding-top: 0;

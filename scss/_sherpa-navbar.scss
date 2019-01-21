@@ -201,6 +201,7 @@
     .container {
 //       max-width: 1770px;
       display: flex;
+      max-width: 100%;
       justify-content: space-between;
 
       align-items: center;
@@ -261,11 +262,19 @@
   top: 50%;
   color: #4D4D4D;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
   font-weight: 300;
   justify-content: center;
   align-items: center;
   margin-left: auto;
+
+  @media screen and (max-width: 1599px) {
+      font-size: 11px;
+      justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 1600px) {
+      font-size: 14px;
+  }
 
 
   li {
@@ -337,7 +346,7 @@
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     width: 100%;
     display: flex;
     margin-left: 0;
@@ -394,16 +403,16 @@
 
 .navbar-nav.navbar-right {
 
-  @include media-breakpoint-between(md, lg) {
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 15px;
-    height: 75px;
+//   @include media-breakpoint-between(md, lg) {
+//     align-items: center;
+//     justify-content: flex-end;
+//     margin-right: 15px;
+//     height: 75px;
 
-    li {
-      font-size: 11px;
-    }
-  }
+//     li {
+//       font-size: 11px;
+//     }
+//   }
 }
 
 .navbar-right li.menu-item.directions {
@@ -461,8 +470,20 @@
 
 @include media-breakpoint-down(md) {
 
+  .navbar-right {
+    height: 50px;
+  }
+
   .navbar-brand {
-    width: 123px;
+     width: 123px;
+  }
+
+}
+
+
+@include media-breakpoint-down(lg) {
+
+  .navbar-brand {
     margin-left: 15px;
     display: block !important;
     padding-bottom: 0;
@@ -470,13 +491,13 @@
 
   .navbar-right {
     position: relative;
-    height: 50px;
     padding: 0 0;
     display: flex;
     flex: 1;
     flex-direction: row;
-    
   }
+
+
 
   .navbar-sherpa {
     position: absolute;

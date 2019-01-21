@@ -9,11 +9,10 @@
                         Contact Ay Caramba!
                     </h2>
 
-                    <p class="h3">Come on over and try our delicious Mexican food.</p>
+                    <p class="h3">Come and pay us a visit!</p>
 
-                    <p>Our taqueria serves the best tacos in all of El Paso. We have two convenient locations to serve
-                        you. Visit us at 1926 Montana Ave or 8001 North Mesa. As always, we look forward to serving
-                        you!</p>
+                    <p>Visit us at 1926 Montana Ave (Ph: 915-533-3377) or 8001 North Mesa (Ph: 915-581-5565). We look
+                        forward to serving you!</p>
                 </div>
             </div>
 
