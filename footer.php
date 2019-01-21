@@ -88,22 +88,26 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <span class="title">Contact Ay Caramba!</span>
-                <p>Come and pay us a visit! We have two convenient locations and can’t wait to show you around. We want
-                    to hear from you!</p>
+            <div class="col contact-footer">
+                <div><span class="title">Contact Ay Caramba!</span>
+                    <p>Come and pay us a visit! We have two convenient locations and can’t wait to show you around. We
+                        want
+                        to hear from you!</p>
 
-                <a href="<?=SITEURL?>/contact-us/" class="d-none d-md-block"><button class="btn btn-primary">Contact Us</button></a>
+                    <a href="<?=SITEURL?>/contact-us/" class="d-none d-md-block"><button class="btn btn-primary">Contact
+                            Us</button></a>
+                </div>
             </div>
 
-            <div class="col">
-                <span class="title locations">Locations</span>
+            <div class="col location-footer">
+                <div><span class="title locations">Locations</span>
 
-                <div class="footer-block">
-                    <p class="plus">1926 Montana Ave 79903 | PH: 915.775.9828</p>
+                    <div class="footer-block">
+                        <p class="plus">1926 Montana Ave 79903 | PH: 915.775.9828</p>
 
-                    <div class="hours"><a href="<?=SITEURL?>/contact-us/" class="hours"><button class="btn-primary btn btn-outline">Hours</button></a>
-                        <p>Sunday - Thursday: 7:00am - 9:00pm<br />Friday - Saturday: 7:00am - 10:00pm</p>
+                        <div class="hours"><a href="<?=SITEURL?>/contact-us/" class="hours"><button class="btn-primary btn btn-outline">Hours</button></a>
+                            <p>Sunday - Thursday: 7:00am - 9:00pm<br />Friday - Saturday: 7:00am - 10:00pm</p>
+                        </div>
                     </div>
                 </div>
             </div>

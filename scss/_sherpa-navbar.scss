@@ -8,6 +8,8 @@
   border-color: $sherpa-navbar-default-border;
   margin-bottom: 0;
 
+  
+
   .navbar-brand {
     color: $sherpa-navbar-default-brand-color;
     &:hover,
@@ -64,7 +66,7 @@
   .navbar-form {
     border: 0;
     border-color: $sherpa-navbar-default-border;
-    margin: 0 auto;
+    margin: 1em auto;
     justify-content: center;
   }
 

@@ -1,6 +1,18 @@
 .home-module-1 {
   background: #F7F7F7;
   padding-bottom: 2em;
+
+  @include media-breakpoint-up(md) {
+    .navbar-sherpa {
+       position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
   
  .bg-jumbo {
    background: url('../img/build/bg-hero.jpg') 0 0 no-repeat;
@@ -82,7 +94,7 @@
     margin-bottom: 0;
 
     > li {
-      padding: 4em 2em;
+      padding: 4em 4em;
       width: 14.3%;
     }
 

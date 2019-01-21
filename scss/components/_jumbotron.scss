@@ -7,7 +7,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 709px;
+  height: 570px;
   justify-content: center;
   margin-bottom: 0;
   
@@ -17,10 +17,11 @@
     @include acumin();
     font-size: 103px;
 
-    span {
+    > span {
       @include serif();
       display: block;
       font-size: 33px;
+      margin-top: .5em;
     }
   }
 

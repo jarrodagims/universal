@@ -6,10 +6,23 @@
 
     h2 {
         @include serif();
+        cursor: pointer;
+        cursor: hand;
+        font-size: 45px;
+        line-height: 1.25;
 
+        ul {
+          margin-top: 2em;
+          font-size: 13px;
+          font-family: 'Poppins', sans-serif;
+
+          li {
+              margin-bottom: 1em;
+          }
+        }
     }
 
-    .h3 {
+    .h3 { 
         @include serif();
         font-size: 21px;
         margin-bottom: 2em;
@@ -52,6 +65,12 @@
 
         h2 {
             font-size: 25px;
+
+            ul {
+                padding-left: 0;
+                list-style: none;
+
+            }
         }
 
 

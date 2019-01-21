@@ -1,9 +1,16 @@
 .home-module-5 {
     overflow: hidden;
     position: relative;
+    
+
 
     .row .col:first-child > div {
         padding-right: 7em;
+
+        .extra-padding {
+            padding-top: 7em;
+    padding-bottom: 7em;
+        }
     }
 
     .row .col:last-child {

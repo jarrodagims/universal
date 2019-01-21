@@ -6,6 +6,10 @@
   z-index: 0;
   overflow: hidden;
 
+  h2 {
+    font-size: 45px;
+  }
+
   h2, h3 {
       @include serif();
   }
@@ -29,19 +33,18 @@
 
   .icon-h2 {
     text-align: center;  
+    font-size: 32px;
+    line-height: 1.5;
 
     &::before, &::after {
       content: '';
       height: 1px;
       width: 163px;
       display: block;
-      margin: 1em auto;
+      margin: .5em auto;
       background: #ED1D25;
-    } 
-
-    &::after {
-      margin-top: 1em;
     }
+
   }
 
   .row .col:first-child {
@@ -57,7 +60,7 @@
       top: 0;
       right: 0;
       background: #808080;
-      }
+    }
   }
 
   .row .col:first-child {
