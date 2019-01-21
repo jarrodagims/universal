@@ -96,6 +96,15 @@
   }
 
   @include media-breakpoint-down(md) {
+
+    .icon-h2 {
+      font-size: 25px;
+    }
+
+    h2 {
+      font-size: 25px;
+    }
+
     .row .col:first-child {
 
       &::before {

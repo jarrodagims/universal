@@ -26,7 +26,7 @@
   }
 
   @include media-breakpoint-down(md) {
-    height: 508px;
+    height: 400px;
     background: url('../img/bg-hero-mobile.jpg') 0 0 no-repeat;
     background-size: cover;
     position: relative;
@@ -41,6 +41,7 @@
 
       .btn-outline {
         color: $white;
+        padding: calc(1em - 4px) 1.5em;
       }
     }
 

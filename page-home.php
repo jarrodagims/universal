@@ -178,15 +178,20 @@
                         patrons. We know how much people love Mexican food and keeping those traditions alive is
                         important to us.</p>
 
-                    <a href="#"><button class="btn btn-primary">See our speciality dishes</button></a>
+                    <a href="<?=SITEURL?>/menu/"><button class="btn btn-primary">See our speciality dishes</button></a>
 
+                </div>
+
+
+                <div class="d-xs-block d-md-none">
+                    <img src="<?=IMGURL?>icon-mexican-restaurant.svg" alt="Mexican Restaurant" width="153" />
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="ribbon">
+<section class="ribbon d-none d-md-block">
 
     <div class="container">
         <div class="row">
@@ -220,7 +225,7 @@
                         <em>Click here for our full menu.</em>
                     </p>
 
-                    <a href="#"><button class="btn btn-primary">Learn More</button></a>
+                    <a href="<?=SITEURL?>/menu/"><button class="btn btn-primary">Learn More</button></a>
                 </div>
             </div>
         </div>

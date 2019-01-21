@@ -62,9 +62,16 @@
         text-align: center;
         padding-bottom: 0;
         padding-top: 0;
+        background: #F7F7F7 url("../img/build/bg-stained-glass.jpg") center 100% no-repeat;
+        background-size: contain;
+
+        img {
+            margin-bottom: 2em;
+        }
 
         h2 {
             font-size: 25px;
+            margin-bottom: 1.5em;
 
             ul {
                 padding-left: 0;
@@ -77,6 +84,7 @@
         .h3 {
             font-size: 16px;
             font-style: italic;
+            margin-bottom: 5.5em;
         }
 
         em {

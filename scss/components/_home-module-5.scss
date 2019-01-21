@@ -120,6 +120,8 @@
 
     @include media-breakpoint-down(md) {
 
+      
+
         &::before {
             display: none;
         }
@@ -180,8 +182,8 @@
 
          .row .col:first-child>div.extra-padding {
             text-align: center;
-            padding-top: 4em;
-            padding-bottom: 4em;
+            padding-top: 3em;
+            padding-bottom: 2em;
             padding-right: 15px;
         }
 
@@ -214,5 +216,15 @@
         font-style: italic;
         margin-bottom: 1em;
         font-weight: 300;
+    }
+
+    @include media-breakpoint-down(md) {
+        overflow: hidden;
+        
+       .map-column span {
+            transform: translateY(-50%) translateX(-50%) !important;
+            left: 50%;
+            top: 50%;
+        } 
     }
 }

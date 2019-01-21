@@ -66,7 +66,6 @@
   .navbar-form {
     border: 0;
     border-color: $sherpa-navbar-default-border;
-    margin: 1em auto;
     justify-content: center;
   }
 
@@ -156,8 +155,7 @@
   position: relative;
 
   @include media-breakpoint-down(md) {
-    height: 50px;
-    flex-direction: column-reverse;
+    height: 75px;
   }
 
   .navbar-left {
@@ -183,6 +181,8 @@
   display: flex;
   padding: .5em 0;
 
+ 
+
 
   @include media-breakpoint-up(lg) {
 
@@ -199,7 +199,7 @@
     }
 
     .container {
-      max-width: 1770px;
+//       max-width: 1770px;
       display: flex;
       justify-content: space-between;
 
@@ -213,6 +213,12 @@
       .navbar {
         padding-left: 0;
       }
+    }
+  }
+
+   @media screen and (min-width: 1700px) {
+    .container {
+      max-width: 1770px;
     }
   }
 
@@ -392,7 +398,7 @@
     align-items: center;
     justify-content: flex-end;
     margin-right: 15px;
-    height: 50px;
+    height: 75px;
 
     li {
       font-size: 11px;
@@ -511,7 +517,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 0;
-    height: 50px;
+    height: 75px;
 
     a .btn {
       padding: 1em 4em;
@@ -528,9 +534,10 @@
       right: 0;
       width: 100%;
       padding: 0 0;
-      top: 0;
-      margin-top: 10px;
+      top: 50%;
       z-index: 999;
+      transform: translateY(-15px);
+      
     }
 
     .navbar-toggler:not(:disabled):not(.disabled) {
@@ -589,11 +596,16 @@
   font-weight: 400;
   cursor: pointer;
   cursor: hand;
+
+  &:hover {
+    color: $sherpa-brand-primary;
+  }
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: .6rem;
+  padding-left: .6rem;
+  letter-spacing: 2px;  
 
   &:hover {
     color: $white;
@@ -630,9 +642,8 @@
 
 
 .internal .navbar-dark .navbar-nav .nav-link {
-  color: #000;
   font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+  
 
   &:hover {
     color: $sherpa-brand-primary;
@@ -641,13 +652,25 @@
 
 .internal .navbar-sherpa .navbar-collapse {
   justify-content: flex-start;
-
 }
 
-.internal .navbar-sherpa {
-  padding-left: 0;
-}
 
-.internal .navbar-sherpa li:first-child a {
+
+
+
+@include media-breakpoint-up(md) {
+  
+  .internal .navbar-dark .navbar-nav .nav-link {
+    font-size: 12px;
+     letter-spacing: 2px;
+    color: #000;
+  }
+
+  .internal .navbar-sherpa li:first-child a {
   padding-left: 0;
+  }
+
+  .internal .navbar-sherpa {
+    padding-left: 0;
+  }
 }

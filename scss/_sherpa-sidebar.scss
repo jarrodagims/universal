@@ -18,12 +18,15 @@
   }
 }
 
-.page-template-page-home {
-  #sidebar {
-    width: 506px;
-    padding: 3.5em 6em 10.5em
+@include media-breakpoint-up(md) {
+  .page-template-page-home {
+    #sidebar {
+      width: 506px;
+      padding: 3.5em 6em 10.5em
+    }
   }
 }
+
 
 #sidebar {
   float: right;
@@ -80,11 +83,21 @@ body #main .container article #sidebar {
 
   h2 {
     color: #333333;
-    
+    margin-top: 2em;
+    font-size: 27px;
+    line-height: 1.35em;
   }
+
+  .btn {
+    margin-top: 0;
+    font-size: 10px;
+  }
+
+  padding-bottom: 6em;
 
   @include media-breakpoint-down(md) {
     margin-left: 0;
+
   }
 }
 
@@ -97,6 +110,20 @@ body #main .container article #sidebar {
     margin-left: 0;
     margin-bottom: 2em;
     width: 100%;
+    padding: 2em 2em 6em;
+
+    h2 {
+      font-size: 25px;
+      line-height: 1.5;
+
+      &::before, &::after {
+        margin: .5em auto;
+      }
+    }
+
+    .btn {
+      margin-top: 1.5em;
+    }
   }
 
   body #main .container {

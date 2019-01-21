@@ -51,7 +51,7 @@
     <div class="d-xs-flex d-md-none">
         <div class="navbar-right">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="tel:9157759828">1926 Montana Ave 79903&nbsp;&nbsp;| </a></li>
+                <li><a href="tel:9155333377">1926 Montana Ave 79903&nbsp;&nbsp;| </a></li>
                 <li><a href="tel:9155815565">8001 N Mesa St 79932&nbsp;&nbsp;| </a></li>
             </ul>
         </div>
@@ -69,7 +69,7 @@
 
                     <div class="navbar-right d-none d-md-flex">
                         <ul class="nav navbar-nav navbar-right">
-                            <li>1926 Montana Ave 79903 | PH: <a href="tel:9157759828">915.775.9828</a></li>
+                            <li>1926 Montana Ave 79903 | PH: <a href="tel:9155333377">915.533.3377</a></li>
                             <li>8001 N Mesa St 79932 | PH: <a href="tel:9155815565">915.581.5565</a></li>
                             <li>
                                 <a href="<?=SITEURL?>/contact-us/"><button class="btn btn-primary">Contact us</button></a>
@@ -83,7 +83,7 @@
         </div>
     </div>
     <?php if(!is_front_page()) : ?>
-    <div class="container">
+    <div class="container d-md-block d-none">
         <div class="row">
             <div class="col internal">
                 <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>

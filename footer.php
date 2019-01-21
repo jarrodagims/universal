@@ -103,7 +103,7 @@
                 <div><span class="title locations">Locations</span>
 
                     <div class="footer-block">
-                        <p class="plus">1926 Montana Ave 79903 | PH: 915.775.9828</p>
+                        <p class="plus">1926 Montana Ave 79903 | PH: <a href="tel:915.533.3377">915.533.3377</a></p>
 
                         <div class="hours"><a href="<?=SITEURL?>/contact-us/" class="hours"><button class="btn-primary btn btn-outline">Hours</button></a>
                             <p>Sunday - Thursday: 7:00am - 9:00pm<br />Friday - Saturday: 7:00am - 10:00pm</p>
@@ -116,7 +116,7 @@
                 <span class="title d-none d-md-block">&nbsp;</span>
 
                 <div class="footer-block">
-                    <p class="plus">8001 N Mesa St 79932 | PH: 915.581.5565</p>
+                    <p class="plus">8001 N Mesa St 79932 | PH: <a href="tel:915.581.5565">915.581.5565</a></p>
 
                     <div class="hours"><a href="<?=SITEURL?>/contact-us/" class="hours"><button class="btn btn-primary btn-outline">Hours</button></a>
                         <p>Sunday - Thursday: 7:00am - 9:00pm<br />Friday - Saturday: 7:00am - 10:00pm</p>
