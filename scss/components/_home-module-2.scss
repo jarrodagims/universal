@@ -56,14 +56,18 @@
         font-size: 13px;
     }
 
+    @include media-breakpoint-down(sm) {
+        background: #F7F7F7 url("../img/build/bg-stained-glass.jpg") center 100% no-repeat;
+        background-size: contain;
+    }
+
     @include media-breakpoint-down(md) {
         
         position: relative;
         text-align: center;
         padding-bottom: 0;
         padding-top: 0;
-        background: #F7F7F7 url("../img/build/bg-stained-glass.jpg") center 100% no-repeat;
-        background-size: contain;
+        
 
         img {
             margin-bottom: 2em;

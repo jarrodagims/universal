@@ -17,7 +17,7 @@
 <div class="sidebar-bottom">
     <h2>Preparing Homestyle <span class="br-md br-xs">Mexican Food</span></h2>
 
-    <a href="#"><button class="btn btn-primary">See our speciality dishes</button></a>
+    <a href="<?=SITEURL?>/menu/"><button class="btn btn-primary">See our speciality dishes</button></a>
 
 </div>
 <?php endif; ?>
