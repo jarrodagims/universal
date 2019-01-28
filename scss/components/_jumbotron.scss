@@ -1,93 +1,64 @@
-#home-main {
-  position: relative; 
-}
-
 .jumbotron {
   background: transparent;
-  text-align: center;
   display: flex;
-  flex-direction: column;
-  height: 570px;
   justify-content: center;
-  margin-bottom: 0;
-  
+  align-items: center;
+  text-align: center;
+  height: 778px;
 
   h1 {
+    line-height: 1;
+    margin-bottom: .5em;
+  }
+
+
+  h2 {
+    @include serif();
     color: $white;
-    @include acumin();
-    font-size: 103px;
-
-    > span {
-      @include serif();
-      display: block;
-      font-size: 33px;
-      margin-top: .5em;
-    }
-  }
-
-  @include media-breakpoint-down(md) {
-    height: 400px;
-    background: url('../img/bg-hero-mobile.jpg') 0 0 no-repeat;
-    background-size: cover;
+    font-style: italic;
+    font-size: 23px;
     position: relative;
+    text-align: center;
+    padding-bottom: .5em;
+    margin-top: auto;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 500px;
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      margin: 0 auto;
+      transform: translateX(-50%);
+      left: 50%;
+      background: rgba(255,255,255,0.5);
+    }
+  }
+
+  h1 {
+    @include acumin();
+    font-style: normal; 
+    color: $white; 
+    font-size: 80px;
+  } 
+
+  .jumbo-content {
     display: flex;
-    padding: 0 0;
-
-    .jumbo-content {
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .btn-outline {
-        color: $white;
-        padding: calc(1em - 4px) 1.5em;
-      }
-    }
-
-
-    h1 {
-      font-size: 47px;
-      display: flex;
-      height: 100%;
-      flex-direction: column;
-      flex: 1;
-      margin-bottom: 0;
-
-      > div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex: 1;
-        height: 100%;
-      }
-
-      
-      > span {
-        margin-top: auto;
-        display: block;
-        width: 100%;
-        background: rgba(0,0,0,0.5);
-        font-size: 17px;
-        padding: 2em 0;
-       
-
-        > span {
-          font-size: 17px;
-        }
-      }
-    }
-  }
-
- 
-}
-
-span.brand {
-  color: $sherpa-brand-primary;
-}
-
-#home-main {
-   .flex-col {
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    flex: 1;
+    height: 100%;
   }
-}
+
+  .contact-us {
+    margin-bottom: auto;
+  }
+
+  .learn-more {
+    margin-top: auto;
+    color: $white;
+    display: block;
+  }
+} 

@@ -2,9 +2,9 @@
     <?php if (is_page('contact-us')) : ?>
     <div id="contact-form">
         <?php if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
-                echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]');
+                echo do_shortcode('[contact-form-7 id="62" title="Contact Form"]');
             } else {
-                echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]');
+                echo do_shortcode('[contact-form-7 id="62" title="Contact Form"]');
             }
             ?>
     </div>

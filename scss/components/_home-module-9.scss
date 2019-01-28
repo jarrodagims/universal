@@ -1,47 +1,4 @@
 .home-module-9 {
   
 
-  .col-md-5 {
-    justify-content: flex-end;
-    display: flex;
-  }
-
-  h2, h3 {
-    font-size: 36px;
-    color: #606060;
-    margin-bottom: 1em;
-  }
-
-  p {
-    font-size: 17px;
-    line-height: 2;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 2em;
-  }
-
-  .container {
-    @include drop-tag();
-    padding-top: 6.5em;
-    padding-bottom: 6.5em;
-  }
-
-  @include media-breakpoint-down(md) {
-    text-align: center;
-
-    img {
-      margin: 0 auto;
-    }
-
-    .container {
-        padding: 4em 30px 2em;
-    }
- 
-    h2, h3 {
-      font-size: 18px;
-    }
-
-    p {
-      font-size: 15px;
-    }
-  }
 }

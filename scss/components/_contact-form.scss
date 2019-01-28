@@ -1,7 +1,7 @@
 #contact-form {
   text-align: center;
   background-position-y: bottom;
-  background: $sherpa-dark-color;
+  background: transparent !important;
   padding: 0;
   max-width: 100%;
   width: 100%;
@@ -109,14 +109,14 @@
       margin: 2em auto;
       padding: 0;
       text-align: center;
-      color: $white;
+      color: #000;
       display: inline-block;
 
       h1,
       h2,
       h3,
       h4 {
-        color: $white;
+        color: #000;
       }
 
       h4 {
@@ -147,9 +147,9 @@
       input[type="email"],
       input[type="tel"],
       textarea {
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(0, 0, 0, 0.15);
         border: 0;
-        color: $white;
+        color: #000;
         padding: 1em;
         margin-bottom: 1em;
 
@@ -342,9 +342,9 @@
     input[type="email"],
     input[type="tel"],
     textarea {
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(0, 0, 0, 0.15);
       border: 0;
-      color: $white;
+      color: #000;
       padding: 1em;
       margin-bottom: 1.25em;
       transition: all 0.3ms ease-in;
@@ -356,7 +356,7 @@
       }
 
       &::placeholder {
-        color: $white;
+        color: #000;
         font-weight: normal;
       }
     }
@@ -413,7 +413,6 @@
 
       input[type="submit"] {
         width: 144px;
-        @include dropshadow();
       }
     }
 

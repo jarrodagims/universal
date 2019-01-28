@@ -23,65 +23,62 @@
       });
     });
 
-    // //waypoint activate animations in a staggered fashion
-    // $(".waypoint-stagger").each(function() {
-    //   var goldenSection = 1 / 1.61803398875; /* ( 1 / phi ) */
-    //   var ms_i_1 = 1 / goldenSection;
+    var hoverMenu = function() {
+      var arr = [];
 
-    //   $(this).waypoint({
-    //     handler: function() {
-    //       $.each($(".waypoint-stagger .flex-row .flex-col"), function(
-    //         index,
-    //         object
-    //       ) {
-    //         var $object = $(object);
+      $.each($("ul.menu-secondary > li"), function(index, value) {
+        arr.push($(this));
+      });
 
-    //         setTimeout(function() {
-    //           $object.addClass("active");
-    //         }, 120 * (index + 1) * ms_i_1);
-    //       });
-    //       //disable after activating once
-    //       this.destroy();
-    //     },
-    //     offset: "2000"
-    //   });
-    // });
+      $.each($("ul.menu li"), function(index, value) {
+        $(this).hover(function() {
+          $("ul.menu-secondary > li").removeClass("active");
+          $("ul.menu li").removeClass("active");
 
-    // (function() {
-    //   var deskFunctions = function() {
-    //     //make dropdown hoverable
-    //     $(".dropdown-toggle").attr("data-toggle", "hover");
-    //   };
+          $(this).addClass("active");
 
-    //   var mobileFunctions = function() {
-    //     //make dropdown clickable
-    //     $(".dropdown-toggle").attr("data-toggle", "dropdown");
-    //   };
+          arr[index].addClass("active");
+        });
+      });
+    };
 
-    //   //Only do slideshow on small screens
-    //   var timeout;
-    //   window.addEventListener(
-    //     "resize",
-    //     function(event) {
-    //       if (timeout) {
-    //         window.cancelAnimationFrame(timeout);
-    //       }
-    //       timeout = window.requestAnimationFrame(function() {
-    //         resize();
-    //       });
-    //     },
-    //     false
-    //   );
+    (function() {
+      var deskFunctions = function() {
+        //make dropdown hoverable
+        $(".dropdown-toggle").attr("data-toggle", "hover");
 
-    //   function resize() {
-    //     if ($(window).width() >= 992) {
-    //       deskFunctions();
-    //     } else if ($(window).width() < 992) {
-    //       mobileFunctions();
-    //     }
-    //   }
+        hoverMenu();
+      };
 
-    //   resize();
-    // })();
+      var mobileFunctions = function() {
+        //make dropdown clickable
+        $(".dropdown-toggle").attr("data-toggle", "dropdown");
+      };
+
+      //Only do slideshow on small screens
+      var timeout;
+      window.addEventListener(
+        "resize",
+        function(event) {
+          if (timeout) {
+            window.cancelAnimationFrame(timeout);
+          }
+          timeout = window.requestAnimationFrame(function() {
+            resize();
+          });
+        },
+        false
+      );
+
+      function resize() {
+        if ($(window).width() >= 992) {
+          deskFunctions();
+        } else if ($(window).width() < 992) {
+          mobileFunctions();
+        }
+      }
+
+      resize();
+    })();
   });
 })(jQuery);

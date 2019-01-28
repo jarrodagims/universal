@@ -4,10 +4,8 @@
 
 .btn,
 input[type="submit"] {
-  padding: 1em 1.5em;
-  font-size: 11px;
-  letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif;
+  padding: 1.5em 3em;
+  font-size: 15px;
   font-weight: 600;
   color: $white;
   border: transparent;
@@ -17,7 +15,9 @@ input[type="submit"] {
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   position: relative;
-  background: $sherpa-secondary-color;
+  @include gradient-btn(100);
+  @include acumin();
+  letter-spacing: 3px;
 
   &:hover,
   &:focus,
@@ -41,6 +41,19 @@ input[type="submit"] {
     }
   }
 
+  &.btn-transparent {
+    background: transparent;
+    text-transform: uppercase;
+
+    &::before {
+      display: none;
+    }
+
+    &:hover::before {
+      display: none;
+    }
+  }
+
   &.btn-outline {
     border: 2px solid $sherpa-secondary-color;
     color: #606060;
@@ -54,9 +67,9 @@ input[type="submit"] {
   &:hover:focus,
   &:hover:active,
   &:hover:visited {
-      background: $sherpa-secondary-color;
-      color: $white;
-    }
+    background: $sherpa-secondary-color;
+    color: $white;
+  }
 
     background: transparent;
   }
@@ -84,7 +97,7 @@ input[type="submit"] {
     padding: 24px 31px;
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(lg) {
     font-size: 9px;
   }
 }
