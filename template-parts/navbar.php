@@ -1,4 +1,4 @@
-<div id="nav-sidebar">
+<div id="nav-sidebar" class="sticky">
     <ul class="list-unstyled">
         <li><a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?= IMGURL; ?>logo.svg"
                     alt="<?php echo get_bloginfo(

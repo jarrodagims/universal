@@ -23,3 +23,11 @@
 
 /* Plugin for Cycle2; Copyright (c) 2012 M. Alsup; v20141007 */
 !function(a){"use strict";function b(b,c,d,e){"caption2"===c.captionPlugin&&a.each(["caption","overlay"],function(){var a,b=this+"Fx",f=c[b+"Out"]||"hide",g=d[this+"Template"],h=c.API.getComponent(this),i=c[b+"Sel"],j=c.speed;c.sync&&(j/=2),a=i?h.find(i):h,h.length&&g?("hide"==f&&(j=0),a[f](j,function(){var k=c.API.tmpl(g,d,c,e);h.html(k),a=i?h.find(i):h,i&&a.hide(),f=c[b+"In"]||"show",a[f](j)})):h.hide()})}function c(b,c,d,e){"caption2"===c.captionPlugin&&a.each(["caption","overlay"],function(){var a=d[this+"Template"],b=c.API.getComponent(this);b.length&&a&&b.html(c.API.tmpl(a,d,c,e))})}a.extend(a.fn.cycle.defaults,{captionFxOut:"fadeOut",captionFxIn:"fadeIn",captionFxSel:void 0,overlayFxOut:"fadeOut",overlayFxIn:"fadeIn",overlayFxSel:void 0}),a(document).on("cycle-bootstrap",function(a,d){d.container.on("cycle-update-view-before",b),d.container.one("cycle-update-view-after",c)})}(jQuery);
+
+/*!
+Waypoints Sticky Element Shortcut - 4.0.1
+Copyright © 2011-2016 Caleb Troughton
+Licensed under the MIT license.
+https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
+*/
+!function(){"use strict";function t(s){this.options=e.extend({},i.defaults,t.defaults,s),this.element=this.options.element,this.$element=e(this.element),this.createWrapper(),this.createWaypoint()}var e=window.jQuery,i=window.Waypoint;t.prototype.createWaypoint=function(){var t=this.options.handler;this.waypoint=new i(e.extend({},this.options,{element:this.wrapper,handler:e.proxy(function(e){var i=this.options.direction.indexOf(e)>-1,s=i?this.$element.outerHeight(!0):"";this.$wrapper.height(s),this.$element.toggleClass(this.options.stuckClass,i),t&&t.call(this,e)},this)}))},t.prototype.createWrapper=function(){this.options.wrapper&&this.$element.wrap(this.options.wrapper),this.$wrapper=this.$element.parent(),this.wrapper=this.$wrapper[0]},t.prototype.destroy=function(){this.$element.parent()[0]===this.wrapper&&(this.waypoint.destroy(),this.$element.removeClass(this.options.stuckClass),this.options.wrapper&&this.$element.unwrap())},t.defaults={wrapper:'<div class="sticky-wrapper" />',stuckClass:"stuck",direction:"down right"},i.Sticky=t}();

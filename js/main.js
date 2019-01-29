@@ -23,31 +23,23 @@
       });
     });
 
-    var hoverMenu = function() {
-      var arr = [];
+    function stickyExample() {
+      var $stickyElement = $(".sticky");
 
-      $.each($("ul.menu-secondary > li"), function(index, value) {
-        arr.push($(this));
-      });
-
-      $.each($("ul.menu li"), function(index, value) {
-        $(this).hover(function() {
-          $("ul.menu-secondary > li").removeClass("active");
-          $("ul.menu li").removeClass("active");
-
-          $(this).addClass("active");
-
-          arr[index].addClass("active");
+      if ($stickyElement.length) {
+        sticky = new Waypoint.Sticky({
+          element: $stickyElement[0],
+          wrapper: '<div class="sticky-wrapper waypoint" />'
         });
-      });
-    };
+      }
+    }
 
     (function() {
       var deskFunctions = function() {
         //make dropdown hoverable
         $(".dropdown-toggle").attr("data-toggle", "hover");
 
-        hoverMenu();
+        stickyExample();
       };
 
       var mobileFunctions = function() {

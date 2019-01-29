@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col">
                         <h2>WHERE FUN, COMFORT, AND
-                            QUALITY COLLIDE TO BRING YOU
+                            <span class="br-md">QUALITY COLLIDE TO BRING YOU</span>
                             THE PERFECT HOME</h2>
                         <h3>Well, you’ve certainly arrived at the right place and we’re so happy you did!
                         </h3>
@@ -108,11 +108,11 @@
                 </div>
             </div>
             <ul class="slide-nav">
-                <li>POPLIN</li>
-                <li>PAISLEY</li>
-                <li>CAMBRIC</li>
-                <li>VELOUR</li>
-                <li>TRELLIS</li>
+                <li class="active"><a href="#">POPLIN</a></li>
+                <li><a href="#">PAISLEY</a></li>
+                <li><a href="#">CAMBRIC</a></li>
+                <li><a href="#">VELOUR</a></li>
+                <li><a href="#">TRELLIS</a></li>
             </ul>
         </section>
 

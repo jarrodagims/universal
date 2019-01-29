@@ -15,17 +15,17 @@
 
    ul.slide-nav {
     display: flex;
-
+    background: #F4F4F4;
     justify-content: space-between;
     list-style: none;
     padding-left: 0;
     margin-left: 0;
-    @include gradient();
     margin: 137px 0 0;
     color: $white;
     @include acumin();
     font-size: 26px;
     letter-spacing: $letterSpacing;
+    overflow: hidden;
   }
 
   ul {
@@ -47,6 +47,56 @@
     background: #606060;
     display: block;
     margin-bottom: .5em;
+  }
+
+  ul.slide-nav li {
+    width: 20%;
+    position: relative;
+    display: flex;
+  }
+
+  ul.slide-nav li a {
+      color: $white;
+      padding: 1em 40px;
+      transition: background 300ms ease-in-out;
+      width: 100%;
+
+      &:hover {
+        background: $sherpa-brand-primary;
+        color: $white;
+      }
+  }
+
+  ul.slide-nav li:first-child a {
+    color: $sherpa-brand-primary;
+
+    &:hover {
+        background: $sherpa-brand-primary;
+        color: $white;
+      }
+  }
+
+  ul.slide-nav li:nth-child(2) {
+    position: relative;
+    z-index: 0;
+
+    &::after {
+        content: '';
+        @include gradient();
+        display: block;
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0; 
+        z-index: -1;         
+      }
+  }
+
+  ul.slide-nav li:first-child {
+    margin-left: 80px;
+    background: $white;
+    color: $sherpa-brand-primary;
   }
 }
  

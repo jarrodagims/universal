@@ -854,7 +854,6 @@ body #main {
 }
 
 body:not(.page-template-page-home) {
-  background: url("../img/bg-internal-top.jpg") right 0 no-repeat;
   background-size: contain;
 
   .navbar-right {
@@ -872,10 +871,15 @@ span.brand {
   color: $sherpa-brand-primary;
 }
 
+
+
 #nav-sidebar {
   width: 80px;
   display: block;
   background: #fdd9d9;
+  height: 100%;
+
+  
 
   > ul.list-unstyled {
     @include bg-gradient(top, $list1);
@@ -898,6 +902,9 @@ span.brand {
       align-items: center;
       display: flex;
 
+      &:hover {
+        background: transparent;
+      }
     }
   }
 
@@ -909,20 +916,23 @@ span.brand {
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.31);
 
-
     > a {
       width: 100%;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: background 300ms ease-in-out;
+
+      &:hover {
+        background: $sherpa-brand-primary;
+      }
     }
 
     a > svg {
       width: 24px;
       height: 24px;
     }
-   
   }
 
   > ul.list-unstyled > li:first-child {
@@ -948,11 +958,15 @@ span.brand {
 .page-template-page-home {
   .navbar-collapse,
   .navbar-form {
-      position: absolute;
-      left: 80px;
-      width: 200px;
-      top: 0;
-      background: #606060;
-
+    position: absolute;
+    left: 80px;
+    width: 200px;
+    top: 0;
+    background: #606060;
   }
+}
+
+.stuck {
+  position: fixed;
+  top: 0;
 }

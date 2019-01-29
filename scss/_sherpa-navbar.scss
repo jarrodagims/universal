@@ -194,6 +194,12 @@ the right sidebar including social icons address and phone
     border: 0;
     height: 100%;
     width: 100%;
+    transition: background 300ms ease-in-out;
+
+    &:hover {
+      background: $sherpa-brand-primary;
+
+    }
   }
 
   .navbar-sherpa {

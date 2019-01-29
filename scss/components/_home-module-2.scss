@@ -23,6 +23,8 @@
 
   h3 {
     @include acumin();
+    font-size: 19px;
+    letter-spacing: 0;
   }
 
   .col:last-child {
