@@ -99,9 +99,18 @@
   );
 }
 
+$list1: rgba(245, 137, 65, 1), rgba(206, 45, 70, 1);
+
+@mixin bg-gradient($direction, $list, $transparency: 1) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
+}
+
 @mixin gradient-btn($transparency: 0.75) {
   &::before {
-    @include bg-gradient($transparency);
+    @include bg-gradient(left, $list1, $transparency);
     content: "";
     position: absolute;
     top: 0;

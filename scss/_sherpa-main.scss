@@ -13,15 +13,13 @@
 #breadcrumbs {
   font-style: italic;
   @include serif();
-  color: #B1B1B2;
+  color: #b1b1b2;
   margin-top: 22px;
   margin-bottom: 25px;
 
   a {
-    color: #B1B1B2;
+    color: #b1b1b2;
   }
-
-  
 }
 
 /*
@@ -268,7 +266,7 @@ body {
         p {
           font-weight: 300;
           color: #606060;
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 17px;
           line-height: 2;
 
@@ -872,4 +870,89 @@ body:not(.page-template-page-home) {
 
 span.brand {
   color: $sherpa-brand-primary;
+}
+
+#nav-sidebar {
+  width: 80px;
+  display: block;
+  background: #fdd9d9;
+
+  > ul.list-unstyled {
+    @include bg-gradient(top, $list1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+  }
+
+  > ul.list-unstyled > li:first-child {
+    padding: 1em 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > a {
+      margin-right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+
+    }
+  }
+
+  > ul.list-unstyled > li {
+    height: 14.28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.31);
+
+
+    > a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a > svg {
+      width: 24px;
+      height: 24px;
+    }
+   
+  }
+
+  > ul.list-unstyled > li:first-child {
+    background: $white;
+  }
+
+  flex: 1;
+
+  .collapsing {
+    transition: none !important;
+  }
+}
+
+.sidebar-container {
+  flex-direction: row;
+  display: flex;
+}
+
+.content {
+  width: 100%;
+}
+
+.page-template-page-home {
+  .navbar-collapse,
+  .navbar-form {
+      position: absolute;
+      left: 80px;
+      width: 200px;
+      top: 0;
+      background: #606060;
+
+  }
 }

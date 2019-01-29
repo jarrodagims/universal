@@ -1,4 +1,10 @@
 .home-module-1 {
     background: url('../img/bg-hero.jpg') 0 95% no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+
+    .jumbotron {
+        width: 100%;
+    }    
 }

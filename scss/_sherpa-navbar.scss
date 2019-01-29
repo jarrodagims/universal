@@ -8,8 +8,6 @@
   border-color: $sherpa-navbar-default-border;
   margin-bottom: 0;
 
-  
-
   .navbar-brand {
     color: $sherpa-navbar-default-brand-color;
     &:hover,
@@ -180,5 +178,36 @@ the right sidebar including social icons address and phone
     flex-direction: row;
     font-size: 17px;
     letter-spacing: 1px;
+  }
+}
+
+
+
+.page-template-page-home {
+
+  .navbar {
+    padding: 0 0;
+    width: 100%;
+  }
+
+  .navbar-dark .navbar-toggler {
+    border: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .navbar-sherpa {
+    @include acumin();
+    letter-spacing: $letterSpacing;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  #menu-primary {
+    li a {
+      padding: 1em;
+    }
   }
 }
