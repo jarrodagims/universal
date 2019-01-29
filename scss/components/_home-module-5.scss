@@ -5,6 +5,16 @@
   padding-top: 150px;
   padding-bottom: 250px;
 
+  .container {
+    position: relative;
+
+    &::before {
+      @include numberTag();
+      content: '04';
+      position: absolute;
+    }
+  }
+
   h2 {
     color: $white;
   }

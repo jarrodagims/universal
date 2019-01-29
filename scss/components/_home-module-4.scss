@@ -5,6 +5,16 @@
   padding-top: 230px;
   padding-bottom: 160px;
 
+  .container {
+    position: relative;
+
+    &::before {
+      @include numberTag();
+      content: '03';
+      position: absolute;
+    }
+  }
+
   h2 {
     color: $white;
     @include acumin();

@@ -51,6 +51,8 @@ h2 {
 
 p {
   line-height: 1.75;
+  @include acumin();
+  font-size: 14px;
 }
 
 body {

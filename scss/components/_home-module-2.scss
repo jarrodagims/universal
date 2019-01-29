@@ -1,15 +1,45 @@
 .home-module-2 {
+  padding-top: 148px;
+  padding-bottom: 148px;
+  @include acumin();
+
+  .container {
+    position: relative;
+
+    &::before {
+      @include numberTag();
+      content: '01';
+      position: absolute;
+    }
+  }
+
   h2 {
     @include acumin();
     font-size: 44px;
+    position: relative;
+
   }
 
   h3 {
     @include acumin();
   }
 
- 
+  .col:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 
-  padding-top: 148px;
-  padding-bottom: 148px;
+    img {
+      margin-left: auto;
+      height: auto;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    margin-top: 2em;
+  }
+  
+
+  
 }

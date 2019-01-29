@@ -1,14 +1,27 @@
 .home-module-3 {
   @include acumin();
+  padding-top: 190px;
+  color: #000;
+
+  .container {
+    position: relative;
+
+    &::before {
+      @include numberTag();
+      content: '02';
+      position: absolute;
+    }
+  }
 
    ul.slide-nav {
     display: flex;
+
     justify-content: space-between;
     list-style: none;
     padding-left: 0;
     margin-left: 0;
     @include gradient();
-    margin: 0 0;
+    margin: 137px 0 0;
     color: $white;
     @include acumin();
     font-size: 26px;
@@ -19,6 +32,21 @@
     list-style: none;
     padding-left: 0;
     margin-left: 0;
+    color: #000;
+  }
+
+  h2, h3 {
+    font-size: 44px;
+    color: #4D4D4D;
+  }
+
+  h3::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #606060;
+    display: block;
+    margin-bottom: .5em;
   }
 }
  

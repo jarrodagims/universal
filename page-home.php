@@ -195,38 +195,48 @@
 
                     <div class="col">
                         <div class="mini-card"><img src="<?=IMGURL?>landscaping.jpg" alt="">
-                            <h3>BEAUTIFUL
-                                LANDSCAPING</h3>
-                            <p>At Zia Homes, we believe that a beautiful home begins from the outside in. Whether you
-                                are
-                                interested in the addition of grass, trees or rocks, we can customize your yard
-                                according to
-                                your liking. Curb appeal will be heightened to the max! </p>
+                            <div class="extra-padding">
+                                <h3>BEAUTIFUL
+                                    LANDSCAPING</h3>
+                                <p>At Zia Homes, we believe that a beautiful home begins from the outside in. Whether
+                                    you
+                                    are
+                                    interested in the addition of grass, trees or rocks, we can customize your yard
+                                    according to
+                                    your liking. Curb appeal will be heightened to the max! </p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="mini-card"><img src="<?=IMGURL?>partners.jpg" alt="">
-                            <h3>
-                                A PARTNER WHO
-                                COMMUNICATES</h3>
-                            <p>There’ll be no shortage of emails, phone calls, or text
-                                message to go around! Because when you choose to work with us, we take that relationship
-                                seriously. We’re always attentive to your needs and do our best to provide you with
-                                answers
-                                quickly and thoughtfully. </p>
+                            <div class="extra-padding">
+                                <h3>
+                                    A PARTNER WHO
+                                    COMMUNICATES</h3>
+                                <p>There’ll be no shortage of emails, phone calls, or text
+                                    message to go around! Because when you choose to work with us, we take that
+                                    relationship
+                                    seriously. We’re always attentive to your needs and do our best to provide you with
+                                    answers
+                                    quickly and thoughtfully. </p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="mini-card"><img src="<?=IMGURL?>buyers.jpg" alt="">
-                            <h3>
-                                A COMPREHENSIVE
-                                BUYER’S WARRANTY
-                            </h3>
-                            <p>Feel confident knowing the home of your dreams is under warranty. Zia Homes offers an
-                                all-inclusive warranty that includes a two-year systems warranty and a 10 year extended
-                                warranty. So even if there are hiccups along the way, they will be gone in no time!</p>
+                            <div class="extra-padding">
+                                <h3>
+                                    A COMPREHENSIVE
+                                    BUYER’S WARRANTY
+                                </h3>
+                                <p>Feel confident knowing the home of your dreams is under warranty. Zia Homes offers an
+                                    all-inclusive warranty that includes a two-year systems warranty and a 10 year
+                                    extended
+                                    warranty. So even if there are hiccups along the way, they will be gone in no time!
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -240,6 +250,7 @@
     <div class="container">
         <div class="row">
             <div class="col contact-form">
+                <span class="number">06</span>
                 <h2>
                     Ready To Meet Your Future Home?
                     It’s Waiting To Meet You Too!
@@ -264,24 +275,32 @@
                 </div>
             </div>
 
-            <div class="col contact-box">
-                <div>
-                    <h3>
-                        CONTACT</h3>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13568.887513821299!2d-106.3226118!3d31.7644338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaabe3f730c44f680!2sZia+Homes+Inc!5e0!3m2!1sen!2sus!4v1548778060474"
+                    width="484" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
 
-                    <p>2244 Trawood Dr # 207, El Paso, Tx 79935</p>
+            <div class="col box-container">
+                <div class="contact-box">
+                    <div>
+                        <h3>
+                            CONTACT</h3>
 
-                    <h3>OFFICE HOURS</h3>
+                        <p>2244 Trawood Dr # 207, El Paso, Tx 79935</p>
 
-                    <p>Monday – Friday: 9 AM – 5 PM<br />
-                        Saturday: By Appointment</p>
+                        <h3>OFFICE HOURS</h3>
 
-                    <?php
-                $sm = new SocialMedia(array('facebook', 'twitter'));
-                $sm->setSize('sm');
-                $sm->showNetworkButtons();
-                $sm->setColorType('singleColor');
-                ?>
+                        <p>Monday – Friday: 9 AM – 5 PM<br />
+                            Saturday: By Appointment</p>
+
+                        <?php
+            $sm = new SocialMedia(array('facebook', 'twitter'));
+            $sm->setSize('sm');
+            $sm->showNetworkButtons();
+            $sm->setColorType('singleColor');
+            ?>
+                    </div>
                 </div>
             </div>
         </div>
