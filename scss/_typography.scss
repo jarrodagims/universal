@@ -11,6 +11,8 @@ h2,
 h3,
 h4 {
   font-weight: 300;
+  @include acumin();
+  letter-spacing: $letterSpacing;
 
   strong {
     font-weight: 700;
@@ -28,30 +30,23 @@ h2 {
   font-weight: 300;
 }
 
-
-
 @include media-breakpoint-down(md) {
-   h2 {
-      font-size: 20px;
-   }
+  h2 {
+    font-size: 20px;
+  }
 
-   h3 {
-     font-size: 18px;
-   }
+  h3 {
+    font-size: 18px;
+  }
 }
-
-
-
 
 .text-white {
   h1,
-h2,
-h3,
-h4 {
-
-  color: #fff;
-}
-
+  h2,
+  h3,
+  h4 {
+    color: #fff;
+  }
 }
 
 p {
@@ -61,7 +56,6 @@ p {
 body {
   font-size: 16px;
 }
-
 
 p.no-margin {
   margin: 0 0;
@@ -74,7 +68,7 @@ p.no-margin {
 }
 
 .serif-text {
-  color: #8F9699;
+  color: #8f9699;
 }
 
 a {
@@ -83,11 +77,9 @@ a {
   &:hover {
     color: darken($sherpa-secondary-color, 10%);
   }
-} 
-
+}
 
 @include media-breakpoint-down(xs) {
-
   #main {
     .container {
       article {

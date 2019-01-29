@@ -1,52 +1,18 @@
 .ribbon {
-  background: url("../img/build/bg-middle.jpg") center center no-repeat;
+  background: url("../img/bg-mid-banner.jpg") center center no-repeat;
   background-size: cover;
-  position: relative;
+  height: 228px;
+}
 
-  img {
-    margin-top: 37px;
-  }
+.ribbon-2 {
+  @include gradient();
+  @include acumin();
+  color: $white;
+  font-size: 44px;
+  padding: .5em 0;
 
-  .col {
+  a {
+    margin-left: 1em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 310px;
   }
-
-  &::before {
-    content: '';
-    background: url('../img/build/bg-cactus.png') 0 100% no-repeat;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-  }
-
-  &::after {
-    content: '';
-    background: url('../img/build/bg-mariachi.png') 100% 100% no-repeat;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-  }
-
-  @include media-breakpoint-down(lg) {
-    &::before, &::after {
-      background-size: 25% auto;
-    }
-  }
-  
-
-  @include media-breakpoint-down(md) {
-    &::before, &::after {
-      display: none;
-    }
-  }
-
 }

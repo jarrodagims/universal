@@ -1,4 +1,24 @@
 .home-module-3 {
-  
+  @include acumin();
+
+   ul.slide-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    @include gradient();
+    margin: 0 0;
+    color: $white;
+    @include acumin();
+    font-size: 26px;
+    letter-spacing: $letterSpacing;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
 }
  

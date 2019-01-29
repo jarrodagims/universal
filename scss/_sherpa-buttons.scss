@@ -1,10 +1,18 @@
 // This is for creating extra buttons
 // Mixin for creating additional buttons:
 //      button-variant($color, $background, $border)
+input[type=submit] {
+  background: transparent;
+  border: 0;
+
+  &:focus, &:active {
+    background: $sherpa-brand-primary;
+  }
+}
 
 .btn,
-input[type="submit"] {
-  padding: 1.5em 3em;
+.btn-success {
+  padding: 1em 2em;
   font-size: 15px;
   font-weight: 600;
   color: $white;
@@ -17,7 +25,8 @@ input[type="submit"] {
   position: relative;
   @include gradient-btn(100);
   @include acumin();
-  letter-spacing: 3px;
+  letter-spacing: $letterSpacing;
+  text-transform: uppercase;
 
   &:hover,
   &:focus,
@@ -52,6 +61,20 @@ input[type="submit"] {
     &:hover::before {
       display: none;
     }
+  }
+
+  &.btn-secondary {
+   background: rgba(255, 255, 255, .14);
+   padding: 1em 2em;
+
+   &::before {
+     display: none;
+   }
+
+   &:hover {
+     background: $white;
+     color: $sherpa-brand-primary;
+   }
   }
 
   &.btn-outline {

@@ -86,16 +86,10 @@
       padding-bottom: 1.25em;
     }
 
-    input[type="submit"] {
-      width: auto;
-      margin-left: 1em;  
-    }
-
     p {
       margin-bottom: 2em;
     }
   }
-
 
   @include media-breakpoint-down(sm) {
     text-align: center;
@@ -168,17 +162,6 @@
         height: 2em;
         padding-bottom: 1.25em;
       }
-
-      input[type="submit"] {
-        margin-top: 1em;
-        width: 148px;
-        margin-left: 0;
-
-        @include media-breakpoint-down(xs) {
-          width: 125px;
-        }
-      }
-
       p {
         margin-bottom: 1.75em;
       }
@@ -291,13 +274,8 @@
   //}
 }
 
-
-
 #contact-form {
-
   form {
-
-
     h1,
     h2,
     h3,
@@ -309,8 +287,9 @@
       font-size: 20px;
     }
 
-    div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
-       color: $sherpa-dark-color;
+    div.wpcf7-validation-errors,
+    div.wpcf7-acceptance-missing {
+      color: $sherpa-dark-color;
     }
 
     .form-group {
@@ -342,12 +321,16 @@
     input[type="email"],
     input[type="tel"],
     textarea {
-      background: rgba(0, 0, 0, 0.15);
+      background: rgba(203,203,203,0.44);
       border: 0;
       color: #000;
       padding: 1em;
       margin-bottom: 1.25em;
       transition: all 0.3ms ease-in;
+
+      &.wpcf7-not-valid {
+        border: 1px solid red;
+      }
 
       &::focus {
         outline: none !important;
@@ -365,22 +348,6 @@
       overflow: hidden;
       height: 2em;
       padding-bottom: 1.25em;
-    }
-
-    input[type="submit"] {
-      margin-top: 1em;
-      margin-bottom: 1em;
-      margin-left: 0;
-      padding: 20px 32px;
-      transition: all 0.3s ease-in-out; 
-      border: 0;
-      background: $sherpa-secondary-color;
-      color: $white;
-
-      &:hover {
-        color: $white;
-        background: darken($sherpa-brand-primary, 10%);
-      }
     }
 
     p {
@@ -410,20 +377,12 @@
       h4 {
         margin-bottom: 1.5em;
       }
-
-      input[type="submit"] {
-        width: 144px;
-      }
     }
 
     .testimonials-widget {
       h4 {
         margin-bottom: 1.2em;
       }
-      .btn {
-        width: 144px;
-      }
     }
   }
 }
-

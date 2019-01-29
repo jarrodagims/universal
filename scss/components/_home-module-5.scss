@@ -1,3 +1,11 @@
 .home-module-5 {
-    
+  background: url('../img/bg-couches.jpg') 0 0 no-repeat;
+  background-size: cover; 
+  color: $white;
+  padding-top: 150px;
+  padding-bottom: 250px;
+
+  h2 {
+    color: $white;
+  }
 }

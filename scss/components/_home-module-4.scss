@@ -1,3 +1,17 @@
 .home-module-4 {
-  
+  background: url("../img/bg-family.jpg") 0 0 no-repeat;
+  background-size: cover;
+  color: $white;
+  padding-top: 230px;
+  padding-bottom: 160px;
+
+  h2 {
+    color: $white;
+    @include acumin();
+    font-size: 44px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }

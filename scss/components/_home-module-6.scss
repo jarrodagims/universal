@@ -1,3 +1,18 @@
 .home-module-6 {
-    
+    text-align: center;
+
+
+    .mini-card {
+        background: #F4F4F4;
+        flex: 1;
+        height: 100%;
+        
+        p {
+            padding: 1em;
+        }
+
+        img {
+            margin-bottom: 1em;
+        }
+    }
 }
