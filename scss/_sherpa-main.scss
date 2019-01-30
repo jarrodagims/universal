@@ -971,4 +971,10 @@ span.brand {
 .stuck {
   position: fixed;
   top: 0;
+
+  &#nav-sidebar {
+    > ul.list-unstyled > li:first-child {
+       height: 14.28%;
+    }
+  }
 }

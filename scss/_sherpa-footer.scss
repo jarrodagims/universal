@@ -9,6 +9,11 @@
 
   @include dropshadow();
 
+  h2 {
+    line-height: 1.5;
+    letter-spacing: 0;
+  } 
+
   .container {
     max-width: 1480px;
   }

@@ -305,6 +305,16 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="row row-buttons">
+                            <div class="col">
+                                <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                                    <button class="btn btn-primary">
+                                        CHECK OUT OUR BLOG
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -318,16 +328,19 @@
                         <span class="number">06</span>
                         <h2>
                             Ready To Meet Your Future Home?
-                            It’s Waiting To Meet You Too!
+                            <span class="br-md">It’s Waiting To Meet You Too!</span>
                         </h2>
 
                         <p>
-                            We know the excitement can be hard to contain and at the same time, it can feel extremely
-                            overwhelming. But not to worry, as the saying goes, an action is the solution to fear. At
-                            Zia
-                            Homes,
-                            we’ll help guide you in finding the perfect home. Our team will gladly answer your initial
-                            questions
+                            <span class="br-md">We know the excitement can be hard to contain and at the same time, it
+                                can feel extremely</span>
+                            <span class="br-md">overwhelming. But not to worry, as the saying goes, an action is the
+                                solution to fear. At
+                                Zia
+                                Homes,</span>
+                            <span class="br-md">we’ll help guide you in finding the perfect home. Our team will gladly
+                                answer your initial
+                                questions</span>
                             and guide you down the path of becoming a happy new homeowner. <a
                                 href="tel:
     9155918153">Give us
