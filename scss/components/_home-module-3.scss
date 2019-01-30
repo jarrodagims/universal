@@ -8,10 +8,6 @@
     margin-left: 5em;
   }
 
-  .contact-us {
-    display: block;
-  }
-
   h2 {
     margin-bottom: 1.75em;
   }
@@ -25,6 +21,14 @@
 
       justify-content: center;
     }
+  }
+
+  .row-buttons {
+    padding-top: 161px;
+  }
+
+  a.contact-us {
+    margin-right: 1em;
   }
 
 

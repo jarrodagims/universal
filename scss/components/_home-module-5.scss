@@ -2,9 +2,10 @@
   background: url('../img/bg-couches.jpg') center center no-repeat;
   background-size: cover; 
   color: $white;
-  padding-top: 150px;
-  padding-bottom: 250px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
+  
   .container {
     position: relative;
 
@@ -17,5 +18,6 @@
 
   h2 {
     color: $white;
+    font-size: 44px;
   }
 }

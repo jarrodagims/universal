@@ -78,10 +78,19 @@ input[type=submit] {
   }
 
   &.btn-outline {
-    border: 2px solid $sherpa-secondary-color;
-    color: #606060;
-    font-size: 10px;
-    padding: 1em 3em;
+    background: transparent;
+    color: $sherpa-brand-primary;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 0;
+
+    
+
+    span {
+      background: $white;
+      padding: 1em 2em;
+      margin: 1px;
+    }
 
     &:hover,
   &:focus,
@@ -91,7 +100,7 @@ input[type=submit] {
   &:hover:active,
   &:hover:visited {
     background: $sherpa-secondary-color;
-    color: $white;
+    color: $sherpa-brand-primary;
   }
 
     background: transparent;

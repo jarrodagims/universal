@@ -48,6 +48,12 @@
                             century home. And most
                             importantly, we keep you—the future dweller— at heart in everything we do.
                         </p>
+
+                        <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                            <button class="btn btn-primary">
+                                MORE ABOUT US
+                            </button>
+                        </a>
                     </div>
                     <div class="col">
                         <img src="<?=IMGURL?>bg-interior.jpg" alt="Interior">
@@ -111,11 +117,17 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row row-buttons">
                                 <div class="col">
                                     <a href="<?=SITEURL?>/contact-us/" class="contact-us">
                                         <button class="btn btn-primary">
-                                            SCHEDULE A TOUR
+                                            VIEW OUR FLOORPLANS
+                                        </button>
+                                    </a>
+
+                                    <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                                        <button class="btn btn-outline">
+                                            <span>SCHEDULE A TOUR</span>
                                         </button>
                                     </a>
                                 </div>
@@ -144,7 +156,7 @@
                 <div class="row">
                     <div class="col">
                         <h2>THE ANSWER IS SIMPLE.
-                            WE UNDERSTAND THE NEEDS OF EL PASO RESIDENTS. </h2>
+                            <span class="br-md">WE UNDERSTAND THE NEEDS OF</span> EL PASO RESIDENTS. </h2>
 
                         <p>
                             Just like ordering a dish that contains all the right flavors, we construct homes with all
@@ -242,7 +254,7 @@
                                 <div class="mini-card"><img src="<?=IMGURL?>landscaping.jpg" alt="">
                                     <div class="extra-padding">
                                         <h3>BEAUTIFUL
-                                            LANDSCAPING</h3>
+                                            <span class="br-md">LANDSCAPING</span></h3>
                                         <p>At Zia Homes, we believe that a beautiful home begins from the outside in.
                                             Whether
                                             you
@@ -260,7 +272,7 @@
                                     <div class="extra-padding">
                                         <h3>
                                             A PARTNER WHO
-                                            COMMUNICATES</h3>
+                                            <span class="br-md">COMMUNICATES</span></h3>
                                         <p>There’ll be no shortage of emails, phone calls, or text
                                             message to go around! Because when you choose to work with us, we take that
                                             relationship
@@ -278,7 +290,7 @@
                                     <div class="extra-padding">
                                         <h3>
                                             A COMPREHENSIVE
-                                            BUYER’S WARRANTY
+                                            <span class="br-md">BUYER’S WARRANTY</span>
                                         </h3>
                                         <p>Feel confident knowing the home of your dreams is under warranty. Zia Homes
                                             offers an
