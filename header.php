@@ -35,10 +35,10 @@
     <![endif]-->
 
     <div class="top-header <?php if(!is_front_page()) : ?>internal<?php endif; ?>">
-        <div class="container">
+        <div class="container-fluid">
 
             <div class="v-align row">
-                <div class="col-xs-12 navbar-button text-center">
+                <div class="col navbar-button text-center">
 
 
                     <?php if(!is_front_page()) : ?>

@@ -2,14 +2,6 @@
 
 (function($) {
   $(document).ready(function() {
-    // $(".expander").click(function(event) {
-    //   event.preventDefault();
-    //   $($(this).data("target")).slideToggle();
-    //   $(this).toggleClass("expanded");
-    // });
-
-    // $(".expander").wrapInner("<span></span>");
-
     $(".waypoint").each(function() {
       var self = $(this);
 

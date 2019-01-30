@@ -1,16 +1,54 @@
 .home-module-3 {
   @include acumin();
-  padding-top: 190px;
   color: #000;
+  height: 778px;
+
+  table {
+    width: 100%;
+    margin-left: 5em;
+  }
+
+  .contact-us {
+    display: block;
+  }
+
+  h2 {
+    margin-bottom: 1.75em;
+  }
+
+  .full-height {
+    height: 100%;
+
+    &.col {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+    }
+  }
+
 
   .container {
     position: relative;
+    height: 100%;
 
-    &::before {
-      @include numberTag();
-      content: '02';
-      position: absolute;
+
+    > .row {
+      height: 100%;
+      align-items: center;
+      display: flex;
+
+      > .row {
+        display: flex;
+        align-items: center;
+      }
     }
+
+//     &::before {
+//       @include numberTag();
+//       content: '02';
+//       position: absolute;
+//     }
   }
 
    ul.slide-nav {
@@ -20,12 +58,44 @@
     list-style: none;
     padding-left: 0;
     margin-left: 0;
-    margin: 137px 0 0;
+    margin: 0 0;
     color: $white;
     @include acumin();
     font-size: 26px;
     letter-spacing: $letterSpacing;
     overflow: hidden;
+  }
+
+  .number-header {
+    &::before {
+      @include numberTag();
+      content: '02';
+      position: absolute;
+    }
+  }
+
+  .floor-header {
+    flex: 0;
+  }
+
+  ul.floorplan {
+    font-size: 13px;
+    padding-left: 5em;
+
+    li {
+      margin-bottom: .5em;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: flex-start;
+
+      span {
+        padding-left: 10em;
+      }
+
+      span.brand {
+        font-size: 21px;
+      }
+    }
   }
 
   ul {
@@ -68,7 +138,7 @@
   }
 
   ul.slide-nav li:first-child a {
-    color: $sherpa-brand-primary;
+    color: #CBCBCB;
 
     &:hover {
         background: $sherpa-brand-primary;

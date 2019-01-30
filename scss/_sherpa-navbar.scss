@@ -145,6 +145,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* 
@@ -177,7 +179,11 @@ the right sidebar including social icons address and phone
     align-items: center;
     flex-direction: row;
     font-size: 17px;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+
+    li:last-child {
+      margin-left: 1em;
+    }
   }
 }
 

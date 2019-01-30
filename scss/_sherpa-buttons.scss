@@ -53,7 +53,7 @@ input[type=submit] {
   &.btn-transparent {
     background: transparent;
     text-transform: uppercase;
-
+ 
     &::before {
       display: none;
     }

@@ -63,44 +63,66 @@
         <section class="home-module-3">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="row">
-                            <div class="col">
-                                <h2>FLOORPLANS</h2>
+                    <div class="col full-height">
+                        <div>
+                            <div class="row">
+                                <div class="col floor-header number-header">
+                                    <h2>FLOORPLANS</h2>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
+                            <div class="row full-height">
+                                <div class="col floor-header">
 
 
-                                <h3>POPLIN</h3>
+                                    <h3>POPLIN</h3>
+                                </div>
+                                <div class="col">
+
+
+                                    <table class="floorplan" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td>FLOORPLAN</td>
+                                            <td>SINGLE STORY
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>LIVING AREA
+                                            </td>
+                                            <td>1750 SQ. FT
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>BEDROOMS
+                                            </td>
+                                            <td>4
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>BATHEOOMS
+                                            </td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PRICE
+                                            </td>
+                                            <td><span class="brand">$280,000</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
-                            <div class="col">
-                                <ul>
-                                    <li>FLOORPLAN</li>
-                                    <li>LIVING AREA</li>
-                                    <li>BEDROOMS</li>
-                                    <li>BATHEOOMS</li>
-                                    <li>PRICE</li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                SINGLE STORY<br />
-                                1750 SQ. FT<br />
-                                4<br />
-                                2<br />
-                                <span class="brand">$280,000</span>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                                        <button class="btn btn-primary">
+                                            SCHEDULE A TOUR
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                                    <button class="btn btn-primary">
-                                        SCHEDULE A TOUR
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
+
+
                     </div>
                     <div class="col">
                         <img src="<?=IMGURL?>3d.png" alt="3d View">
