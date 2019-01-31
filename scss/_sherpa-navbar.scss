@@ -223,3 +223,12 @@ the right sidebar including social icons address and phone
     }
   }
 }
+
+.navbar-collapse,
+    .navbar-form {
+      position: absolute;
+      left: 80px;
+      width: 200px;
+      top: 0;
+      background: #606060;
+    }

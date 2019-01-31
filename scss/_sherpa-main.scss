@@ -879,6 +879,7 @@ span.brand {
   background: #fdd9d9;
   height: 100%;
   z-index: 999;
+  margin-left: -80px;
 
   
 
@@ -951,6 +952,77 @@ span.brand {
 .sidebar-container {
   flex-direction: row;
   display: flex;
+
+  .nav-sidebar {
+    width: 80px;
+    background: #F4F4F4;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+
+    .navbar-collapse,
+    .navbar-form {
+      position: absolute;
+      left: 0;
+      top: 80px;
+      width: 100%;
+    }
+
+    #nav-sidebar>ul.list-unstyled>li:nth-child(2) {
+      width: 100%;
+      position: absolute;
+    }
+
+    .navbar-toggler {
+      width: 80px;
+      margin-left: auto;
+    }
+
+
+    .navbar-brand  img {
+      width: auto;
+      height: 60px;
+    }
+
+    #nav-sidebar {
+      top: 0;
+      left: 0;
+      height: 80px;
+      width: 100%;
+      position: absolute;
+      top: -80px;
+      margin-left: 0;
+    }
+
+    .navbar-dark .navbar-toggler {
+      width: 80px;
+    }
+
+    #nav-sidebar>ul.list-unstyled {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      height: 100%;
+      right: 0;
+
+      > li {
+        height: 100%;
+        border-bottom: 0;
+
+        &:nth-child(1n+3) {
+          display: none;
+        }
+      }
+    }
+
+    .nav-sidebar {
+      height: 80px;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
 }
 
 .content {
@@ -958,13 +1030,14 @@ span.brand {
 }
 
 .page-template-page-home {
-  .navbar-collapse,
-  .navbar-form {
-    position: absolute;
-    left: 80px;
-    width: 200px;
-    top: 0;
-    background: #606060;
+  @include media-breakpoint-up(md) {
+    .navbar-collapse,
+    .navbar-form {
+      position: absolute;
+      left: 80px;
+      width: 200px;
+      top: 0;
+    }
   }
 }
 

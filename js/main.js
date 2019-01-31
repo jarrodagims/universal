@@ -26,12 +26,12 @@
       }
     }
 
+    stickyExample();
+
     (function() {
       var deskFunctions = function() {
         //make dropdown hoverable
         $(".dropdown-toggle").attr("data-toggle", "hover");
-
-        stickyExample();
       };
 
       var mobileFunctions = function() {

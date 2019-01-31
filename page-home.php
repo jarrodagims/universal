@@ -4,7 +4,7 @@
     Template Name: Home
 */ ?>
 <div class="sidebar-container">
-
+    <div class="nav-sidebar"></div>
 
     <div class="content">
         <section class="home-module-1">
@@ -308,7 +308,7 @@
 
                         <div class="row row-buttons">
                             <div class="col">
-                                <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                                <a href="<?=SITEURL?>/blog/" class="contact-us">
                                     <button class="btn btn-primary">
                                         CHECK OUT OUR BLOG
                                     </button>
@@ -358,10 +358,10 @@
                         </div>
                     </div>
 
-                    <div class="map">
+                    <div class="map col">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13568.887513821299!2d-106.3226118!3d31.7644338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaabe3f730c44f680!2sZia+Homes+Inc!5e0!3m2!1sen!2sus!4v1548778060474"
-                            width="484" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
 
                     <div class="col box-container">
