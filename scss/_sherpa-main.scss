@@ -958,7 +958,7 @@ span.brand {
     background: #F4F4F4;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     flex-direction: column;
 
     .navbar-collapse,
@@ -1030,7 +1030,7 @@ span.brand {
 }
 
 .page-template-page-home {
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(xl) {
     .navbar-collapse,
     .navbar-form {
       position: absolute;
