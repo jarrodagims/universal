@@ -81,15 +81,15 @@ input[type=submit] {
     background: transparent;
     color: $sherpa-brand-primary;
     overflow: hidden;
-    padding-left: 0;
-    padding-right: 0;
-
-    
+    padding: calc(1em + 1px) 0 1em;
 
     span {
       background: $white;
+      transform: translate3d(0, 0, 0);
       padding: 1em 2em;
+      top: 1px;
       margin: 1px;
+      -webkit-backface-visibility: inherit;
     }
 
     &:hover,

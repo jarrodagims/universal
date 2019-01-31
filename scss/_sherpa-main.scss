@@ -905,6 +905,7 @@ span.brand {
       align-items: center;
       display: flex;
 
+
       &:hover {
         background: transparent;
       }
@@ -961,6 +962,8 @@ span.brand {
   @include media-breakpoint-down(lg) {
     flex-direction: column;
 
+    overflow: hidden;
+
     .navbar-collapse,
     .navbar-form {
       position: absolute;
@@ -977,6 +980,10 @@ span.brand {
     .navbar-toggler {
       width: 80px;
       margin-left: auto;
+    }
+
+    .navbar-brand {
+      z-index: 999;
     }
 
 

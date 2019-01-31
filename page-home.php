@@ -50,8 +50,9 @@
                             importantly, we keep you—the future dweller— at heart in everything we do.
                         </p>
 
-                        <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                            <button class="btn btn-primary">
+                        <a href="<?=SITEURL?>/contact-us/" class="contact-us"
+                            style="-webkit-transform: translateZ(0px);">
+                            <button class="btn btn-primary" style="-webkit-transform: translateZ(0px);">
                                 MORE ABOUT US
                             </button>
                         </a>
@@ -366,11 +367,217 @@
                         </div>
                     </div>
 
-                    <div class="map col">
+                    <!-- <div class="map col">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13568.887513821299!2d-106.3226118!3d31.7644338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaabe3f730c44f680!2sZia+Homes+Inc!5e0!3m2!1sen!2sus!4v1548778060474"
                             width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+
+                            
+                    </div> -->
+
+                    <div id="map" class="map col"></div>
+                    <script>
+                    function initMap() {
+                        // Styles a map in night mode.
+
+                        var myLatLng = {
+                            lat: 31.764737609832668,
+                            lng: -106.32264095000005
+                        };
+
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            center: myLatLng, // Configure your latitude and longitude
+                            zoom: 14,
+                            disableDefaultUI: true,
+                            styles: // Please paste the generated code from Style Wizard here. 
+                                [{
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#212121"
+                                        }]
+                                    },
+                                    {
+                                        "elementType": "geometry.fill",
+                                        "stylers": [{
+                                                "color": "#5e5e5e"
+                                            },
+                                            {
+                                                "visibility": "on"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "elementType": "labels.icon",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    },
+                                    {
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [{
+                                            "color": "#757575"
+                                        }]
+                                    },
+                                    {
+                                        "elementType": "labels.text.stroke",
+                                        "stylers": [{
+                                            "color": "#212121"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "administrative",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#757575"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "administrative.country",
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [{
+                                            "color": "#9e9e9e"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "administrative.land_parcel",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "administrative.locality",
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [{
+                                            "color": "#bdbdbd"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "poi",
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [{
+                                            "color": "#757575"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "poi.park",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#181818"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "poi.park",
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [{
+                                            "color": "#616161"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "poi.park",
+                                        "elementType": "labels.text.stroke",
+                                        "stylers": [{
+                                            "color": "#1b1b1b"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [{
+                                            "color": "#2c2c2c"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road",
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [{
+                                            "color": "#8a8a8a"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road.arterial",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#373737"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road.highway",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#3c3c3c"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road.highway",
+                                        "elementType": "geometry.fill",
+                                        "stylers": [{
+                                            "color": "#6e6e6e"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road.highway",
+                                        "elementType": "geometry.stroke",
+                                        "stylers": [{
+                                            "color": "#ffffff"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road.highway.controlled_access",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#4e4e4e"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "road.local",
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [{
+                                            "color": "#616161"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "transit",
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [{
+                                            "color": "#757575"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "water",
+                                        "elementType": "geometry",
+                                        "stylers": [{
+                                            "color": "#000000"
+                                        }]
+                                    },
+                                    {
+                                        "featureType": "water",
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [{
+                                            "color": "#3d3d3d"
+                                        }]
+                                    }
+                                ]
+                        });
+
+                        var image = '/wordpress/wp-content/themes/zia-homes/img/mapPin.svg';
+
+
+                        var marker = new google.maps.Marker({
+                            position: myLatLng,
+                            map: map,
+                            title: 'Hello World!',
+                            icon: image
+                        });
+
+                        marker.setMap(map);
+
+
+                    }
+                    </script>
+                    <script
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-5ozVWQaaSdI_RbSAiSz4A2p509v1IrY&callback=initMap"
+                        async defer>
+                    </script>
 
                     <div class="col box-container">
                         <div class="contact-box">
