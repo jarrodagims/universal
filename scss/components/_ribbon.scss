@@ -2,6 +2,13 @@
   background: url("../img/bg-mid-banner.jpg") center center no-repeat;
   background-size: cover;
   height: 228px;
+
+  @include media-breakpoint-down(lg) {
+    background: url("../img/bg-ribbon-sm.jpg") right 0 no-repeat;
+    background-size: cover;
+    height: 346px;
+    display: block;
+  }
 }
 
 .ribbon-2 {
@@ -16,4 +23,11 @@
     margin-left: 1em;
     display: flex;
   }
+
+
+  @include media-breakpoint-down(lg) {
+      font-size: 24px;
+  }
+
+  
 }

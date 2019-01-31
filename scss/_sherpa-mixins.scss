@@ -95,15 +95,17 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F58941',endColorstr='#CE2D46' , GradientType=1);
 }
 
-@mixin bg-gradient($transparency: 0.75) {
-  background: linear-gradient(
-    90deg,
-    rgba(245, 137, 65, $transparency) 0%,
-    rgba(206, 45, 70, $transparency) 99.88%
-  );
-}
+// @mixin bg-gradient($transparency: 0.75) {
+//   background: linear-gradient(
+//     90deg,
+//     rgba(245, 137, 65, $transparency) 0%,
+//     rgba(206, 45, 70, $transparency) 99.88%
+//   );
+// }
 
 $list1: rgba(245, 137, 65, 1), rgba(206, 45, 70, 1);
+
+$list2:  rgba(219,75,68,1), rgba(206,45,70,1);
 
 @mixin bg-gradient($direction, $list, $transparency: 1) {
   background: -webkit-linear-gradient($direction, $list);
@@ -250,4 +252,14 @@ h3 {
   top: -150px;
   left: -144px;
   letter-spacing: -2px;
+
+
+  @include media-breakpoint-down(lg) {
+    position: relative;
+      display: block;
+      left: 0;
+      top: 0;
+      line-height: 1;
+      font-size: 80px;
+  }
 }

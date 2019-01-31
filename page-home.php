@@ -184,6 +184,13 @@
                             believe in
                             providing that same goodness.</p>
 
+
+                        <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                            <button class="btn btn-primary">
+                                CHECK OUT OUR FEATURES
+                            </button>
+                        </a>
+
                     </div>
                     <div class="col">
 
@@ -232,7 +239,7 @@
 
                         <a href="<?=SITEURL?>/contact-us/" class="contact-us">
                             <button class="btn btn-primary">
-                                LEARN MORE
+                                READ OUR FAQ
                             </button>
                         </a>
                     </div>
@@ -246,8 +253,8 @@
                 <div class="row">
                     <div class="col">
 
-                        <h2>HERE’S WHAT YOU GET WHEN YOU CHOOSE ZIA HOMES
-                            <span class="br-md">AS YOUR HOME BUILDER:</span></h2>
+                        <h2>HERE’S WHAT YOU GET WHEN <span class="br-xs">YOU CHOOSE ZIA HOMES</span>
+                            <span class="br-md br-xs">AS YOUR HOME BUILDER:</span></h2>
 
                         <div class="row">
 

@@ -19,6 +19,7 @@
     font-size: 44px;
     position: relative;
     margin-bottom: .5em;
+    color: #4D4D4D;
   }
 
   h3 {
@@ -44,5 +45,12 @@
   }
   
 
-  
+  @include media-breakpoint-down(lg) {
+    padding-top: 0;
+    padding-bottom: 4em;
+
+    img {
+      margin-top: 4em;
+    }
+  }
 }

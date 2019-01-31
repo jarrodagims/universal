@@ -122,6 +122,32 @@
     }
   }
 
+  @include media-breakpoint-down(lg) {
+
+    .contact-box {
+      > div {
+        padding: 2em;
+      }
+    }
+
+    #contact-form {
+        padding-top: 0;
+        margin-bottom: 0;
+
+        form {
+          margin: 0 0;
+        }
+    }
+
+    .map {
+      order: 3;
+    }
+
+    ul.social-media {
+      margin-top: 0;
+    }
+  }
+
 }
 
 
@@ -130,4 +156,8 @@
   color: $white;
   text-align: center;
   padding: 1em 0;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 9px;
+  }
 } 

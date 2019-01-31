@@ -30,7 +30,7 @@
   a.contact-us {
     margin-right: 1em;
   }
-
+ 
 
   .container {
     position: relative;
@@ -123,6 +123,8 @@
     margin-bottom: .5em;
   }
 
+ 
+
   ul.slide-nav li {
     width: 20%;
     position: relative;
@@ -174,6 +176,122 @@
     border-left: 0;
     background: $white;
     color: $sherpa-brand-primary;
+
+  }
+
+  @include media-breakpoint-down(lg) {
+
+    height: auto;
+
+    ul.slide-nav li:first-child {
+      margin-left: 43px;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 100%;
+        height: 3px;
+        @include bg-gradient(left, $list2);
+        display: block;
+        position: absolute;
+        top: 0
+      }
+    }
+
+
+    ul.slide-nav li:nth-child(2) {
+
+      &::after {
+          top: 3px;      
+        }
+    }
+
+    ul.slide-nav {
+//       display: block;
+      overflow: hidden;
+      @include bg-gradient(left, $list2);
+      position: relative;
+      
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 3px;
+        background: $white;
+
+
+      }
+    }
+
+    ul.slide-nav li {
+      text-align: center;
+      border-left: 1px solid rgba(255,255,255,0.25);
+//       float: left;
+    }
+
+    ul.slide-nav li a {
+       padding: 4em 2em;
+       font-size: 13px;
+    } 
+
+    table {
+      margin-left: 0;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .brand {
+      font-size: 24px;
+    }
+
+    .container > .row {
+      height: auto;
+    }
+
+    .row-buttons {
+      padding-top: 2em;
+      padding-bottom: 4em;
+    }
+
+    .full-height {
+      height: auto;
+    }
+
+    .row {
+      display: block;
+    }
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    h3::before {
+      margin-top: .5em;
+      margin-bottom: .5em;
+    }
+
+      .full-height {
+
+      &.col {
+        display: block;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+      
+      ul.slide-nav {
+        justify-content: flex-start;
+
+        li {
+          width: auto;
+        }
+      }
+
   }
 }
  
