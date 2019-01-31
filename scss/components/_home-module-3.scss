@@ -1,7 +1,8 @@
 .home-module-3 {
   @include acumin();
   color: #000;
-  height: 778px;
+//   height: 778px;
+  padding-top: 200px;
 
   table {
     width: 100%;
@@ -57,12 +58,12 @@
 
    ul.slide-nav {
     display: flex;
-    background: #F4F4F4;
+    @include bg-gradient(top, $list2);
     justify-content: space-between;
     list-style: none;
     padding-left: 0;
     margin-left: 0;
-    margin: 0 0;
+    margin: 200px 0 0;
     color: $white;
     @include acumin();
     font-size: 26px;
@@ -176,12 +177,14 @@
     border-left: 0;
     background: $white;
     color: $sherpa-brand-primary;
-
+    margin-left: 40px;
   }
 
   @include media-breakpoint-down(lg) {
 
     height: auto;
+    padding-top: 2em;
+
 
     ul.slide-nav li:first-child {
       margin-left: 43px;
@@ -208,6 +211,7 @@
 
     ul.slide-nav {
 //       display: block;
+      margin-top: 2em;
       overflow: hidden;
       @include bg-gradient(left, $list2);
       position: relative;
