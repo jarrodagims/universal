@@ -12,8 +12,9 @@
             <div class="jumbotron">
                 <div class="jumbo-content">
                     <h2>Home Builder</h2>
-                    <h1>BUILDING HOMES THAT
-                        <span class="br-md">LOOK ALMOST AS GOOD AS YOU!</span></h1>
+                    <h1>BUILDING HOMES <span class="br-xs">THAT
+                            <span class="br-md">LOOK ALMOST AS <span class="br-xs">GOOD AS YOU!</span></span></span>
+                    </h1>
 
                     <a href="<?=SITEURL?>/contact-us/" class="contact-us">
                         <button class="btn btn-primary">
