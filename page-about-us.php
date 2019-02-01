@@ -35,36 +35,39 @@
                                     bedroom, and beyond!</p>
                             </div>
                         </div>
-                        <hr />
-                        <div class="row text-center">
-                            <div class="col">
-                                <h2>OUR TEAM INCLUDES THE FOLLOWING MEMBERS:</h2>
+                        <div class="img-row">
+                            <hr />
+                            <div class="row text-center">
+                                <div class="col">
+                                    <h2>OUR TEAM INCLUDES <span class="br-md">THE FOLLOWING MEMBERS:</span></h2>
+                                </div>
                             </div>
+                            <div class="d-flex row text-center img-row">
+                                <div class="col"> <img class="alignnone wp-image-54 size-full"
+                                        src="http://localhost/wordpress/zia-homes/wp-content/uploads/sites/35/2019/02/viviana.jpg"
+                                        alt="" width="406" height="352" />
+                                    <p>
+                                        VIVIANA RONQUILLO CEO
+                                    </p> <a href="mailto:ziainc@sbcglobal.net">ziainc@sbcglobal.net</a>
+                                </div>
+                                <div class="col"> <img class="alignnone wp-image-56 size-full"
+                                        src="http://localhost/wordpress/zia-homes/wp-content/uploads/sites/35/2019/02/rene.jpg"
+                                        alt="" width="406" height="352" />
+                                    <p>
+                                        RENE BOTELLO MARKETING DIRECTOR
+                                    </p> <a href="mailto:renebotello@summusrealty.com">renebotello@summusrealty.com</a>
+                                </div>
+                                <div class="col"> <img class="alignnone wp-image-57 size-full"
+                                        src="http://localhost/wordpress/zia-homes/wp-content/uploads/sites/35/2019/02/ana.jpg"
+                                        alt="" width="406" height="352" />
+                                    <p>
+                                        ANA HERNANDEZ SOCIAL MEDIA MANAGER
+                                    </p> <a
+                                        href="mailto:anahernandez@summusrealty.com">anahernandez@summusrealty.com</a>
+                                </div>
+                            </div>
+                            <hr />
                         </div>
-                        <div class="d-flex row text-center img-row">
-                            <div class="col"> <img class="alignnone wp-image-54 size-full"
-                                    src="http://localhost/wordpress/zia-homes/wp-content/uploads/sites/35/2019/02/viviana.jpg"
-                                    alt="" width="406" height="352" />
-                                <p>
-                                    VIVIANA RONQUILLO CEO
-                                </p> <a href="mailto:ziainc@sbcglobal.net">ziainc@sbcglobal.net</a>
-                            </div>
-                            <div class="col"> <img class="alignnone wp-image-56 size-full"
-                                    src="http://localhost/wordpress/zia-homes/wp-content/uploads/sites/35/2019/02/rene.jpg"
-                                    alt="" width="406" height="352" />
-                                <p>
-                                    RENE BOTELLO MARKETING DIRECTOR
-                                </p> <a href="mailto:renebotello@summusrealty.com">renebotello@summusrealty.com</a>
-                            </div>
-                            <div class="col"> <img class="alignnone wp-image-57 size-full"
-                                    src="http://localhost/wordpress/zia-homes/wp-content/uploads/sites/35/2019/02/ana.jpg"
-                                    alt="" width="406" height="352" />
-                                <p>
-                                    ANA HERNANDEZ SOCIAL MEDIA MANAGER
-                                </p> <a href="mailto:anahernandez@summusrealty.com">anahernandez@summusrealty.com</a>
-                            </div>
-                        </div>
-                        <hr />
                         <div><img class="alignleft size-full wp-image-73"
                                 src="http://localhost/wordpress/zia-homes/wp-content/uploads/sites/35/2019/02/handshake.jpg"
                                 alt="" />

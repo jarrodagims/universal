@@ -1109,3 +1109,78 @@ span.brand {
 .page-bottom {
   padding-bottom: 5em;
 }
+
+.img-row {
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+  hr {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+ul.floorplan-nav {
+  display: flex;
+  @include acumin();
+  margin: 0 auto;
+  justify-content: center;
+
+
+  li {
+    margin-right: 2em;
+  }
+}
+
+.page-content {
+  margin-top: 125px;
+}
+
+.page-template-page-floorplans .page-content {
+  margin-top: 3em;
+}
+
+.floorplan-list {
+
+  @include acumin();
+
+  .col {
+    text-align: center;
+    display: flex;
+
+    > div {
+      background: #E5E5E5;
+      width: 100%;
+
+    }
+  }
+
+  .row {
+    margin-bottom: 30px;
+  }
+
+  
+  h2 {
+    margin-bottom: 0;
+    font-size: 50px;
+    color: #000;
+  }
+
+  h3 {
+    font-size: 22px;
+    border-bottom: 1px solid #606060;
+  }
+
+  .price {
+    display: block;
+    width: 100%;
+    @include bg-gradient(left, $list1);
+    color: $white;
+    font-size: 26px;
+  }
+
+}
