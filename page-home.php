@@ -31,7 +31,7 @@
             </div>
         </section>
 
-        <section class="home-module-2">
+        <section id="home-module-2" class="home-module-2">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -68,7 +68,7 @@
 
         </section>
 
-        <section class="home-module-3">
+        <section id="home-module-3" class="home-module-3">
             <div class="container">
                 <div class="row">
                     <div class="col full-height">
@@ -152,7 +152,7 @@
             </ul>
         </section>
 
-        <section class="home-module-4">
+        <section id="home-module-4" class="home-module-4">
 
             <div class="container">
                 <div class="row">
@@ -217,7 +217,7 @@
         </section>
 
 
-        <section class="home-module-5">
+        <section id="home-module-5" class="home-module-5">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -248,7 +248,7 @@
             </div>
         </section>
 
-        <section class="home-module-6">
+        <section id="home-module-6" class="home-module-6">
             <div class="container">
 
                 <div class="row">

@@ -2,6 +2,20 @@
 
 (function($) {
   $(document).ready(function() {
+    $(".sidebar-link").click(function(event) {
+      var target = $(this).data("target");
+
+      event.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: $(this)
+            .data("target")
+            .offset().top
+        },
+        300
+      );
+    });
+
     $(".check-list li").each(function() {
       $(this).wrapInner("<span></span>");
     });

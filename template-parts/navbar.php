@@ -9,27 +9,27 @@
             <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
         </li>
         <li>
-            <a href="#">
+            <a class="sidebar-link" data-target="#home-module-1">
                 <?php echo get_template_part('template-parts/icons/icon','1') ?>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a class="sidebar-link" href="#home-module-2" data-target="#home-module-2">
                 <?php echo get_template_part('template-parts/icons/icon','2') ?>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a class="sidebar-link" href="#home-module-3" data-target="#home-module-3">
                 <?php echo get_template_part('template-parts/icons/icon','3') ?>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a class="sidebar-link" href="#home-module-4" data-target="#home-module-4">
                 <?php echo get_template_part('template-parts/icons/icon','4') ?>
             </a>
         </li>
         <li>
-            <a href="#">
+            <a class="sidebar-link" href="#home-module-5" data-target="#home-module-5">
                 <?php echo get_template_part('template-parts/icons/icon','5') ?>
             </a>
         </li>
