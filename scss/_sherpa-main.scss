@@ -1142,6 +1142,14 @@ ul.floorplan-nav {
 
 .page-template-page-floorplans .page-content {
   margin-top: 3em;
+
+  
+
+  h1, h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 1em;
+  }
 }
 
 .floorplan-list {
@@ -1152,10 +1160,33 @@ ul.floorplan-nav {
     text-align: center;
     display: flex;
 
+
     > div {
       background: #E5E5E5;
       width: 100%;
 
+      &.coming-soon {
+        @include bg-gradient(left, $list1);
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h3 {
+          border-bottom: 1px solid $white;
+          padding-bottom: .5em;
+        }
+
+        h2 {
+          color: $white;
+        }
+
+        p {
+          margin-bottom: 0;
+          font-size: 30px;
+        }
+      }
     }
   }
 
@@ -1170,9 +1201,14 @@ ul.floorplan-nav {
     color: #000;
   }
 
-  h3 {
+  .sft {
     font-size: 22px;
     border-bottom: 1px solid #606060;
+    margin-bottom: 1em;
+    display: inline-block;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-bottom: .5em;
   }
 
   .price {
@@ -1182,5 +1218,7 @@ ul.floorplan-nav {
     color: $white;
     font-size: 26px;
   }
+
+  
 
 }
