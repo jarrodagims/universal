@@ -185,6 +185,8 @@ the right sidebar including social icons address and phone
       margin-left: 1em;
     }
   }
+
+ 
 }
 
 
@@ -222,9 +224,8 @@ the right sidebar including social icons address and phone
       padding: 1em;
     }
   }
-}
 
-.navbar-collapse,
+  .navbar-collapse,
     .navbar-form {
       position: absolute;
       left: 80px;
@@ -232,3 +233,54 @@ the right sidebar including social icons address and phone
       top: 0;
       background: #606060;
     }
+}
+
+
+.internal-header {
+  background: url('../img/bg-header-internal.jpg') center 0 no-repeat;
+  background-size: cover;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 125px;
+
+  .col {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-right {
+    justify-content: flex-end;
+    color: $white;
+  }
+
+  li {
+    font-size: 17px;
+    @include acumin();
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: $white;
+    letter-spacing: $letterSpacing;
+  }
+
+  .jumbotron {
+    padding: 0 0;
+    height: 100%;
+
+    h1 {
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .contact-us {
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+}
+

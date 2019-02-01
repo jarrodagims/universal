@@ -608,8 +608,4 @@
     </div>
 </div>
 
-
-<div class="sub-footer">
-    &copy; <?php echo date('Y'); ?> Zia Homes | All Rights Reserved
-</div>
 <?php get_footer(); ?>

@@ -240,7 +240,7 @@ body {
         }
 
         h1 {
-          color: #606060;
+          color: #4D4D4D;
           font-size: 32px;
 
           span {
@@ -253,8 +253,8 @@ body {
 
         h2,
         h3 {
-          color: #53565b;
-        }
+          color: #4D4D4D;
+        } 
 
         p.blurb {
           font-weight: 300;
@@ -265,7 +265,7 @@ body {
 
         p {
           font-weight: 300;
-          color: #606060;
+          color: #808080;
           font-family: "Roboto", sans-serif;
           font-size: 17px;
           line-height: 2;
@@ -293,7 +293,7 @@ body {
         }
 
         ul {
-          color: #606060;
+          color: #808080;
         }
 
         @include media-breakpoint-up(md) {
@@ -532,10 +532,10 @@ body {
 
         h1 {
           margin-bottom: 1em;
-          line-height: 1.5;
-          font-size: 45px;
-          color: #000;
-          @include serif();
+          font-size: 44px;
+          color: #4D4D4D;
+          @include acumin();
+          line-height: 1.25;
         }
 
         @include media-breakpoint-down(md) {
@@ -634,10 +634,6 @@ body {
         margin-left: 0;
       }
 
-      h2 {
-        margin-bottom: 1em;
-      }
-
       ul li,
       ol li {
         margin-bottom: 0.5em;
@@ -648,9 +644,7 @@ body {
 
       h2,
       h3 {
-        font-size: 16px;
         font-weight: 400;
-        margin-bottom: 1.5em;
 
         &.no-margin {
           margin: 0 0;
@@ -672,10 +666,9 @@ body {
       .page-content h3 {
         font-weight: 300;
         line-height: 1.5;
-        color: #666666;
         opacity: 0.75;
-        @include serif();
-        font-style: italic;
+        color: #4D4D4D;
+        text-transform: uppercase;
 
         &.expander {
           @include expander($sherpa-brand-primary);
@@ -699,9 +692,7 @@ body {
             width: 50%;
           }
 
-          p {
-            margin-bottom: 3em;
-          }
+         
 
           p,
           ul {
@@ -723,6 +714,16 @@ body {
 body #main {
   article p.no-margin {
     margin-bottom: 0;
+  }
+
+  .banner-bottom {
+    width: 100%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+
+    img {
+      width: 100%;
+    }
   }
 
   article ul {
@@ -1057,4 +1058,54 @@ span.brand {
        height: 14.28%;
     }
   }
+}
+
+.content-page {
+  h1 {
+    @include acumin();
+    font-size: 44px;
+  }
+}
+
+.img-row {
+  p {
+    margin: 0 0;
+    font-size: 22px;
+  }
+
+  img.alignnone {
+    margin: 0 0;
+  }
+}
+
+
+.highlight-box {
+  text-align: center;
+  background: #F1F1F1;
+  margin-bottom: 3em;
+  margin-top: 3em;
+
+
+  .box-header {
+    @include gradient();
+    color: $white;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    
+    p {
+      margin-bottom: 0;
+      font-size: 30px;
+
+    }
+  }
+
+  .col {
+    font-size: 14px;
+    @include acumin();
+    padding: 2em 4em;
+  }
+}
+
+.page-bottom {
+  padding-bottom: 5em;
 }

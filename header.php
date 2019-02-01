@@ -49,6 +49,7 @@
                             ); ?>"
                             width="88" /></a>
                     <?php endif; ?>
+                    <?php if(!is_front_page) : ?>
 
                     <div class="navbar-right d-none d-lg-flex">
 
@@ -67,7 +68,53 @@
                         </ul>
                     </div>
 
+                    <?php endif; ?>
+
                 </div>
             </div>
         </div>
     </div>
+
+    <?php if(!is_front_page()) : ?>
+    <div class="internal-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
+                    <div class="navbar-right d-none d-lg-flex">
+                        <?php
+                        $sm = new SocialMedia(array('facebook', 'twitter'));
+                        $sm->setSize('sm');
+                        $sm->showNetworkButtons();
+                        $sm->setColorType('singleColor');
+                        ?>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>2244 TRAWOOD DR # 207, EL PASO, TX 79935</li>
+                            <li><?php printPhone(); ?></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="jumbotron">
+            <div class="jumbo-content">
+                <h2><?php
+    if ( function_exists('yoast_breadcrumb') ) {
+      yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+    } 
+    ?>
+                </h2>
+                <h1><?php echo get_the_title(); ?></h1>
+
+                <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                    <button class="btn btn-primary">
+                        CONTACT US
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <?php endif; ?>
