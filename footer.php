@@ -1,4 +1,4 @@
-<?php wp_footer(); ?>
+<?php wp_footer();?>
 <?php
 /**
  *
@@ -6,8 +6,12 @@
  *
  */
 ?>
+
+<?php if (!is_front_page()): ?>
+</div> <!-- end sidebar container -->
+<?php endif;?>
 <div class="sub-footer">
-    &copy; <?php echo date('Y'); ?> Zia Homes | All Rights Reserved
+  &copy; <?php echo date('Y'); ?> Zia Homes | All Rights Reserved
 </div>
 </body>
 

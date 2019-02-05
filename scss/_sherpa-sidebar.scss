@@ -149,6 +149,10 @@ body #main .container article #sidebar {
         }
       }
     }
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 0;
+    }
   }
 }
 

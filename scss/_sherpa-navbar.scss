@@ -161,6 +161,11 @@ the right sidebar including social icons address and phone
   justify-content: flex-end;
   @include acumin();
   margin-left: auto;
+  flex-direction: row;
+
+   a {
+      color: $white;
+    }
 
 
   ul.social-media {
@@ -170,29 +175,41 @@ the right sidebar including social icons address and phone
 
     li a {
       padding: 0 .5em;
-
     }
   }
+
+  letter-spacing: $letterSpacing;
 
   ul.navbar-right {
     display: flex;
     align-items: center;
     flex-direction: row;
     font-size: 17px;
-    letter-spacing: 3px;
+    letter-spacing: $letterSpacing;
 
     li:last-child {
       margin-left: 1em;
     }
   }
 
+  li:last-child {
+    margin-left: 1em;
+  }
+
+  @include media-breakpoint-down(lg) {
+    display: flex;
+    margin-left: 0;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+    font-size: 11px;
+    
+  }
+
  
 }
 
-
-
-.page-template-page-home {
-
+@mixin navbar-home() {
   .navbar {
     padding: 0 0;
     width: 100%;
@@ -234,6 +251,16 @@ the right sidebar including social icons address and phone
       background: #606060;
     }
 }
+
+@include media-breakpoint-down(lg) {
+
+  @include navbar-home();
+}
+
+.page-template-page-home {
+  @include navbar-home();
+}
+
 
 
 .internal-header {
@@ -284,3 +311,8 @@ the right sidebar including social icons address and phone
 
 }
 
+
+.navbar-toggler-icon { 
+  @include svg-hamburger();
+  height: 13px;
+}  

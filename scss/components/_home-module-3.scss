@@ -108,11 +108,12 @@
     padding-left: 0;
     margin-left: 0;
     color: #000;
-  }
+  } 
 
   h2, h3 {
     font-size: 44px;
     color: #4D4D4D;
+    display: inline-block;
   }
 
   h3::before {
@@ -123,7 +124,10 @@
     display: block;
     margin-bottom: .5em;
   }
-
+  
+  ul.slide-nav {
+    padding-left: 40px;
+  }
  
 
   ul.slide-nav li {
@@ -147,12 +151,13 @@
       }
   }
 
-  ul.slide-nav li:first-child a {
+  ul.slide-nav li.cycle-pager-active a {
     color: #CBCBCB;
+    background: $white;
 
-    &:hover {
-        background: $sherpa-brand-primary;
-        color: $white;
+    &:hover, &:focus {
+        background: $white;
+        color: $sherpa-brand-primary;
       }
   }
 
@@ -173,11 +178,13 @@
       }
   }
 
-  ul.slide-nav li:first-child {
+  ul.slide-nav li.cycle-pager-active  {
     border-left: 0;
     background: $white;
     color: $sherpa-brand-primary;
-    margin-left: 40px;
+
+   
+//     margin-left: 40px;
   }
 
   @include media-breakpoint-down(lg) {
@@ -185,9 +192,22 @@
     height: auto;
     padding-top: 2em;
 
+    .img-container {
+      display: flex;
 
-    ul.slide-nav li:first-child {
-      margin-left: 43px;
+    }
+
+    .img-container img {
+      height: 202px;
+      margin: 1em auto;
+    }
+
+    h2, h3 {
+      font-size: 28px;
+    }
+
+
+    ul.slide-nav li.cycle-pager-active {
       position: relative;
 
       &::before {
@@ -215,6 +235,7 @@
       overflow: hidden;
       @include bg-gradient(left, $list2);
       position: relative;
+      padding-left: 40px;
       
 
       &::before {
@@ -226,8 +247,6 @@
         width: 100%;
         height: 3px;
         background: $white;
-
-
       }
     }
 
@@ -287,6 +306,10 @@
   }
 
   @include media-breakpoint-down(md) {
+
+    .row {
+      padding-bottom: 0;
+    }
       
       ul.slide-nav {
         justify-content: flex-start;

@@ -885,7 +885,7 @@ span.brand {
   
 
   > ul.list-unstyled {
-    @include bg-gradient(top, $list1);
+    @include bg-gradient(left, $list1);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -969,7 +969,7 @@ span.brand {
     .navbar-form {
       position: absolute;
       left: 0;
-      top: 80px;
+      top: 55px;
       width: 100%;
     }
 
@@ -990,21 +990,30 @@ span.brand {
 
     .navbar-brand  img {
       width: auto;
-      height: 60px;
+      height: 45px;
+
     }
 
     #nav-sidebar {
       top: 0;
       left: 0;
-      height: 80px;
+      height: 55px;
       width: 100%;
       position: absolute;
-      top: -80px;
+      top: -55px;
       margin-left: 0;
     }
 
     .navbar-dark .navbar-toggler {
       width: 80px;
+      position: relative;
+
+      .navbar-toggler-icon {
+        transform: translateX(-50%) translateY(-50%);
+        top: 50%;
+        position: absolute;
+        left: 50%;
+      }
     }
 
     #nav-sidebar>ul.list-unstyled {
@@ -1025,12 +1034,33 @@ span.brand {
     }
 
     .nav-sidebar {
-      height: 80px;
+      height: 55px;
       width: 100%;
       top: 0;
       left: 0;
     }
   }
+}
+
+.internal .sidebar-container {
+  flex-direction: column;
+
+  @include media-breakpoint-up(lg) {
+    .sticky-wrapper {
+      display: none;
+    }
+  }
+}
+
+body.internal {
+   #nav-sidebar {
+      top: 0;
+      position: relative;
+
+      @include media-breakpoint-up(lg) {
+        display: none;
+      }
+    }
 }
 
 .content {
@@ -1104,6 +1134,16 @@ span.brand {
     @include acumin();
     padding: 2em 4em;
   }
+
+  @include media-breakpoint-down(lg) {
+    .box-header p {
+      font-size: 1em;
+    }
+
+    .col {
+      padding: 1em 2em;
+    }
+  }
 }
 
 .page-bottom {
@@ -1122,6 +1162,11 @@ span.brand {
   h2 {
     margin-bottom: 0;
   }
+
+  @include media-breakpoint-down(lg) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 ul.floorplan-nav {
@@ -1134,10 +1179,29 @@ ul.floorplan-nav {
   li {
     margin-right: 2em;
   }
+
+  @include media-breakpoint-down(lg) {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1em !important;
+
+    li {
+      margin-right: 0;
+    }
+  }
 }
 
 .page-content {
   margin-top: 125px;
+
+  @include media-breakpoint-down(lg) {
+    margin-top: 0;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 1em;
+    }
+  }
 }
 
 .page-template-page-floorplans .page-content {
@@ -1149,6 +1213,15 @@ ul.floorplan-nav {
     text-transform: uppercase;
     font-size: 32px;
     margin-bottom: 1em;
+  }
+
+  @include media-breakpoint-down(lg) {
+
+    margin-top: 1em;
+
+    h1, h2 {
+      font-size: 20px;
+    }
   }
 }
 

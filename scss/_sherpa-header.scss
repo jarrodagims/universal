@@ -32,11 +32,17 @@
     display: flex;
     justify-content: space-between;
     padding: 1.25em 0;
+
+    @include media-breakpoint-down(lg) {
+        padding: 1em 0;
+    }
 }
 
 body.internal {
-    .top-header {
-        background: $white;
-        color: $black;
+    @include media-breakpoint-up(lg) {
+        .top-header {
+            background: $white;
+            color: $black;
+        }
     }
 }

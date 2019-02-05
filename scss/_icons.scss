@@ -178,3 +178,11 @@
 @mixin svg-rounded() {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1936 61.25"><title>svg-rounded</title><g id="e4ae9f7a-d25e-4056-99d6-b7c7f2496d5c" data-name="Layer 2"><g id="a231c6fc-e8fd-42da-9f71-96a4149d6587" data-name="Layer 1"><path d="M0,0V7.83C291.72,42,620.37,61.25,968,61.25S1644.28,42,1936,7.83V0" fill="#333" fill-rule="evenodd"/></g></g></svg>');
 }
+
+@mixin svg-tab($color: red) {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.33 42.67"><defs><style>.cls-1{fill:%23#{$color};opacity:0.39;}.cls-2{fill:%23fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_4" data-name="Layer 4"><path class="cls-1" d="M0,0V42.67A21.33,21.33,0,0,0,21.33,21.33,21.33,21.33,0,0,0,0,0Z"/><polygon class="cls-2" points="6.52 26.57 7.05 27.1 12.82 21.33 7.05 15.56 6.52 16.09 11.76 21.33 6.52 26.57"/></g></g></svg>');
+}
+
+@mixin svg-hamburger() {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.23 13.11"><defs><style>.cls-1{fill:#fff;}</style></defs><title>breadcrumb</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_4" data-name="Layer 4"><rect class="cls-1" y="5.79" width="17.23" height="1.54"/><rect class="cls-1" width="17.23" height="1.54"/><rect class="cls-1" y="11.57" width="17.23" height="1.54"/></g></g></svg>') !important;
+}

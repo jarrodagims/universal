@@ -27,7 +27,7 @@
 
     &::after {
       content: '';
-      display: block;
+      display: inline-block;
       width: 500px;
       position: absolute;
       bottom: 0;
@@ -63,5 +63,17 @@
     margin-top: auto;
     color: $white;
     display: block;
+  }
+
+  @include media-breakpoint-down(lg) {
+    h2 {
+      &::after {
+        width: 141px;
+      }
+    }
+
+    .btn-transparent {
+      font-size: 10px !important;
+    }
   }
 } 

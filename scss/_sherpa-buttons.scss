@@ -79,7 +79,7 @@ input[type=submit] {
 
   &.btn-outline {
     background: transparent;
-    color: $sherpa-brand-primary;
+    color: #606060;
     overflow: hidden;
     padding: calc(1em + 1px) 0 1em;
 
@@ -131,6 +131,11 @@ input[type=submit] {
 
   @include media-breakpoint-down(lg) {
     font-size: 9px;
+
+    &.btn-outline {
+      border-bottom: 1px solid $sherpa-secondary-color;
+
+    }
   }
 }
 

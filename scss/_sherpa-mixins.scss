@@ -254,6 +254,11 @@ h3 {
   left: -144px;
   letter-spacing: -2px;
 
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+     left: 0;
+     top: -200px;
+  }
+
 
   @include media-breakpoint-down(lg) {
     position: relative;
