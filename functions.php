@@ -223,3 +223,145 @@ function my_body_classes( $classes ) {
 //         return false;
 //     return $type;
 // }
+
+/*
+Plugin Name: My Custom Post Types
+Description: Add post types for Floorplans and Floorplan reviews
+Author: Liam Carberry
+*/
+ 
+// Hook <strong>lc_custom_post_Floorplan()</strong> to the init action hook
+add_action( 'init', 'lc_custom_post_floorplan' );
+ 
+// The custom function to register a Floorplan post type
+function lc_custom_post_Floorplan() {
+ 
+  // Set the labels, this variable is used in the $args array
+  $labels = array(
+    'name'               => __( 'Floorplans' ),
+    'singular_name'      => __( 'Floorplan' ),
+    'add_new'            => __( 'Add New Floorplan' ),
+    'add_new_item'       => __( 'Add New Floorplan' ),
+    'edit_item'          => __( 'Edit Floorplan' ),
+    'new_item'           => __( 'New Floorplan' ),
+    'all_items'          => __( 'All Floorplans' ),
+    'view_item'          => __( 'View Floorplan' ),
+    'search_items'       => __( 'Search Floorplans' ),
+    'featured_image'     => 'Poster',
+    'set_featured_image' => 'Add Poster'
+  );
+ 
+  // The arguments for our post type, to be entered as parameter 2 of register_post_type()
+  $args = array(
+    'labels'            => $labels,
+    'description'       => 'Holds our Floorplans and Floorplan specific data',
+    'public'            => true,
+    'menu_position'     => 5,
+    'supports'          => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields' ),
+    'has_archive'       => true,
+    'show_in_admin_bar' => true,
+    'show_in_nav_menus' => true,
+    'has_archive'       => true,
+	'query_var'         => 'floorplan',
+	'taxonomies'          => array( 'floorplan_categories' )
+  );
+ 
+  // Call the actual WordPress function
+  // Parameter 1 is a name for the post type
+  // Parameter 2 is the $args array
+  register_post_type( 'Floorplan', $args);
+}
+ 
+
+// function create_floorplan_taxonomies() {
+//     $labels = array(
+//         'name'              => _x( 'Categories', 'taxonomy general name' ),
+//         'singular_name'     => _x( 'Category', 'taxonomy singular name' ),
+//         'search_items'      => __( 'Search Categories' ),
+//         'all_items'         => __( 'All Categories' ),
+//         'parent_item'       => __( 'Parent Category' ),
+//         'parent_item_colon' => __( 'Parent Category:' ),
+//         'edit_item'         => __( 'Edit Category' ),
+//         'update_item'       => __( 'Update Category' ),
+//         'add_new_item'      => __( 'Add New Category' ),
+//         'new_item_name'     => __( 'New Category Name' ),
+//         'menu_name'         => __( 'Categories' ),
+//     );
+
+//     $args = array(
+//         'hierarchical'      => true, // Set this to 'false' for non-hierarchical taxonomy (like tags)
+//         'labels'            => $labels,
+//         'show_ui'           => true,
+//         'show_admin_column' => true,
+//         'query_var'         => true,
+//         'rewrite'           => array( 'slug' => 'categories' ),
+//     ); 
+
+//     register_taxonomy( 'floorplan_categories', array( 'floorplan' ), $args );
+// }
+// add_action( 'init', 'create__taxonomies', 0 );
+
+// hook into the init action and call create_floorplan_taxonomies when it fires
+add_action( 'init', 'create_floorplan_taxonomies', 0 );
+
+// create two taxonomies, genres and writers for the post type "floorplan"
+function create_floorplan_taxonomies() {
+	// Add new taxonomy, make it hierarchical (like categories)
+	$labels = array(
+		'name'              => _x( 'Neighborhoods', 'taxonomy general name', 'textdomain' ),
+		'singular_name'     => _x( 'Neighborhood', 'taxonomy singular name', 'textdomain' ),
+		'search_items'      => __( 'Search Neighborhoods', 'textdomain' ),
+		'all_items'         => __( 'All Neighborhoods', 'textdomain' ),
+		'parent_item'       => __( 'Parent Neighborhood', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Neighborhood:', 'textdomain' ),
+		'edit_item'         => __( 'Edit Neighborhood', 'textdomain' ),
+		'update_item'       => __( 'Update Neighborhood', 'textdomain' ),
+		'add_new_item'      => __( 'Add New Neighborhood', 'textdomain' ),
+		'new_item_name'     => __( 'New Neighborhood Name', 'textdomain' ),
+		'menu_name'         => __( 'Neighborhood', 'textdomain' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'neighborhood/' , 'with_front' => false),
+		'rewrite'           => array( 'slug' => 'neighborhood' ),
+	);
+
+	register_taxonomy( 'neighborhood', array( 'floorplan' ), $args );
+
+	// // Add new taxonomy, NOT hierarchical (like tags)
+	// $labels = array(
+	// 	'name'                       => _x( 'Writers', 'taxonomy general name', 'textdomain' ),
+	// 	'singular_name'              => _x( 'Writer', 'taxonomy singular name', 'textdomain' ),
+	// 	'search_items'               => __( 'Search Writers', 'textdomain' ),
+	// 	'popular_items'              => __( 'Popular Writers', 'textdomain' ),
+	// 	'all_items'                  => __( 'All Writers', 'textdomain' ),
+	// 	'parent_item'                => null,
+	// 	'parent_item_colon'          => null,
+	// 	'edit_item'                  => __( 'Edit Writer', 'textdomain' ),
+	// 	'update_item'                => __( 'Update Writer', 'textdomain' ),
+	// 	'add_new_item'               => __( 'Add New Writer', 'textdomain' ),
+	// 	'new_item_name'              => __( 'New Writer Name', 'textdomain' ),
+	// 	'separate_items_with_commas' => __( 'Separate writers with commas', 'textdomain' ),
+	// 	'add_or_remove_items'        => __( 'Add or remove writers', 'textdomain' ),
+	// 	'choose_from_most_used'      => __( 'Choose from the most used writers', 'textdomain' ),
+	// 	'not_found'                  => __( 'No writers found.', 'textdomain' ),
+	// 	'menu_name'                  => __( 'Writers', 'textdomain' ),
+	// );
+
+	// $args = array(
+	// 	'hierarchical'          => false,
+	// 	'labels'                => $labels,
+	// 	'show_ui'               => true,
+	// 	'show_admin_column'     => true,
+	// 	'update_count_callback' => '_update_post_term_count',
+	// 	'query_var'             => true,
+	// 	'rewrite'               => array( 'slug' => 'writer' ),
+	// );
+
+	// register_taxonomy( 'writer', 'floorplan', $args );
+}

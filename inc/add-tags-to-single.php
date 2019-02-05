@@ -4,14 +4,14 @@ function add_tags_to_single($content)
 {
     ob_start();
     
-    if(is_single() && !empty($content)):
+    if(is_single() && !empty($content) && !is_singular('floorplan')):
     ?>
-    
+
 <div class="single-tagged-as">
     <?php the_tags('Article tagged as: ', ', ',''); ?>
 </div>
-    
-    <?php
+
+<?php
         
     endif;
     return $content . ob_get_clean();

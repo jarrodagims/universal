@@ -269,6 +269,7 @@ the right sidebar including social icons address and phone
   height: 470px;
   display: flex;
   flex-direction: column;
+
   
 
   .col {
@@ -307,6 +308,10 @@ the right sidebar including social icons address and phone
 
   h2 {
     margin-top: 0;
+  }
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 2em;
   }
 
 }
