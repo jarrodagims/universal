@@ -8,6 +8,7 @@ Template Name: Home
 
     <div class="content">
         <section id="home-module-1" class="home-module-1">
+
             <?php echo get_template_part('template-parts/navbar'); ?>
             <div class="jumbotron">
                 <div class="jumbo-content">
@@ -110,7 +111,7 @@ Template Name: Home
                                                 <td>4</td>
                                             </tr>
                                             <tr>
-                                                <td>BATHEOOMS
+                                                <td>BATHROOMS
                                                 </td>
                                                 <td>2</td>
                                             </tr>
@@ -180,7 +181,7 @@ Template Name: Home
                                                 <td>4</td>
                                             </tr>
                                             <tr>
-                                                <td>BATHEOOMS
+                                                <td>BATHROOMS
                                                 </td>
                                                 <td>2</td>
                                             </tr>
@@ -251,7 +252,7 @@ Template Name: Home
                                                 <td>4</td>
                                             </tr>
                                             <tr>
-                                                <td>BATHEOOMS
+                                                <td>BATHROOMS
                                                 </td>
                                                 <td>2</td>
                                             </tr>
@@ -322,7 +323,7 @@ Template Name: Home
                                                 <td>4</td>
                                             </tr>
                                             <tr>
-                                                <td>BATHEOOMS
+                                                <td>BATHROOMS
                                                 </td>
                                                 <td>2</td>
                                             </tr>
@@ -393,7 +394,7 @@ Template Name: Home
                                                 <td>4</td>
                                             </tr>
                                             <tr>
-                                                <td>BATHEOOMS
+                                                <td>BATHROOMS
                                                 </td>
                                                 <td>2</td>
                                             </tr>
@@ -862,13 +863,13 @@ Template Name: Home
                                 ]
                         });
 
-                        var image = '/wordpress/wp-content/themes/zia-homes/img/mapPin.svg';
+                        var image = '../wp-content/themes/zia-homes/img/mapPin.svg';
 
 
                         var marker = new google.maps.Marker({
                             position: myLatLng,
                             map: map,
-                            title: 'Hello World!',
+                            title: 'Zia Homes',
                             icon: image
                         });
 

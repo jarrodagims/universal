@@ -269,8 +269,11 @@ the right sidebar including social icons address and phone
   height: 470px;
   display: flex;
   flex-direction: column;
+  padding-top: .5em;
 
-  
+  .container-fluid {
+    position: absolute;
+  }
 
   .col {
     display: flex;

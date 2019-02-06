@@ -37,13 +37,7 @@
                         if ( get_query_var('paged') ) $paged = get_query_var('paged');
                         if ( get_query_var('page') ) $paged = get_query_var('page');
                  
-                        $query = new WP_Query( array( 'posts_per_page' => 6, 'post_type' => 'floorplan', 'paged' => $paged, 'tax_query' => array(
-                            array(
-                                'taxonomy' => 'neighborhood',
-                                'field' => 'slug',
-                                'terms' => 'westside'
-                            )
-                            ), ) );
+                        $query = new WP_Query( array( 'order' => 'ASC', 'posts_per_page' => 6, 'post_type' => 'floorplan', 'paged' => $paged ) );
 
                         $posts_per_row = 3;
                         $post_counter = 0;

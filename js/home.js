@@ -30,8 +30,7 @@
 
       if ($stickyElement.length) {
         sticky = new Waypoint.Sticky({
-          element: $stickyElement[0],
-          wrapper: '<div class="sticky-wrapper waypoint" />'
+          element: $stickyElement[0]
         });
       }
     }

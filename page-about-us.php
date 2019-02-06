@@ -1,7 +1,7 @@
 <?php get_header(); /*
 Template Name: About Us
  */?><?php get_template_part('template-parts/page/page', 'top-banner');?>
-<section id="main">
+<section id="main" class="about-us">
     <article>
         <div class="content page-content">
             <div class="container">
@@ -10,7 +10,7 @@ Template Name: About Us
                         <div class="row reverse">
                             <div class="col"> <img class="alignnone wp-image-47 size-full"
                                     src="<?=IMGURL?>bg-chairs.jpg" alt="" width="543" height="624" /></div>
-                            <div class="col">
+                            <div class="col offset-left">
                                 <?php the_content(); ?>
                             </div>
                         </div>
@@ -25,19 +25,19 @@ Template Name: About Us
                                 <div class="col"> <img class="alignnone wp-image-54 size-full"
                                         src="<?=IMGURL?>viviana.jpg" alt="" width="406" height="352" />
                                     <p>
-                                        VIVIANA RONQUILLO CEO
+                                        VIVIANA RONQUILLO <br />CEO
                                     </p> <a href="mailto:ziainc@sbcglobal.net">ziainc@sbcglobal.net</a>
                                 </div>
                                 <div class="col"> <img class="alignnone wp-image-56 size-full" src="<?=IMGURL?>rene.jpg"
                                         alt="" width="406" height="352" />
                                     <p>
-                                        RENE BOTELLO MARKETING DIRECTOR
+                                        RENE BOTELLO <br />MARKETING DIRECTOR
                                     </p> <a href="mailto:renebotello@summusrealty.com">renebotello@summusrealty.com</a>
                                 </div>
                                 <div class="col"> <img class="alignnone wp-image-57 size-full" src="<?=IMGURL?>ana.jpg"
                                         alt="" width="406" height="352" />
                                     <p>
-                                        ANA HERNANDEZ SOCIAL MEDIA MANAGER
+                                        ANA HERNANDEZ <br />SOCIAL MEDIA MANAGER
                                     </p> <a
                                         href="mailto:anahernandez@summusrealty.com">anahernandez@summusrealty.com</a>
                                 </div>
@@ -45,6 +45,7 @@ Template Name: About Us
                             <hr />
                         </div>
                         <div><img class="alignleft size-full wp-image-73" src="<?=IMGURL?>handshake.jpg" alt="" />
+                            <h2>Who We Serve</h2>
                             <p>We build homes throughout the entire El Paso area. The majority of our lots are located
                                 on the east side of town with some on the west side as well. Please see our list of
                                 available lots, where we continuously add new homes and provide you with insight into
@@ -54,8 +55,6 @@ Template Name: About Us
                                 product that is completed to your satisfaction. Before we hand over your keys, you’ll
                                 have the opportunity to inspect and request adjustments so that once move-in day
                                 arrives, you can begin your next journey as a homeowner with peace of mind.</p>
-
-
                         </div>
                     </div>
                 </div>

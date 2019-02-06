@@ -257,7 +257,7 @@ function lc_custom_post_Floorplan() {
     'description'       => 'Holds our Floorplans and Floorplan specific data',
     'public'            => true,
     'menu_position'     => 5,
-    'supports'          => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields' ),
+    'supports'          => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'page-attributes' ),
     'has_archive'       => true,
     'show_in_admin_bar' => true,
     'show_in_nav_menus' => true,

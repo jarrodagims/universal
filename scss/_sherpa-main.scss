@@ -148,7 +148,7 @@ body {
   &.error404 #main {
     padding-left: 15px;
     padding-right: 15px;
-    margin-top: 100px;
+    margin-top: 0;
 
     @include media-breakpoint-up(md) {
       h1 {
@@ -266,7 +266,6 @@ body {
         p {
           font-weight: 300;
           color: #808080;
-          font-family: "Roboto", sans-serif;
           font-size: 17px;
           line-height: 2;
 
@@ -288,12 +287,12 @@ body {
         h2 {
           ul {
             line-height: 1;
-            font-family: "Roboto", sans-serif;
           }
         }
 
         ul {
           color: #808080;
+          @include acumin();
         }
 
         @include media-breakpoint-up(md) {
@@ -390,7 +389,7 @@ body {
           text-align: center;
           margin: 0 auto;
           background-size: cover;
-          background: url("../img/bg-banner-bottom.jpg") 0 0 no-repeat;
+          background: url("../img/bg-mid-banner.jpg") 0 0 no-repeat;
 
           @include media-breakpoint-down(md) {
             margin-top: 2em;
@@ -468,7 +467,6 @@ body {
               color: $sherpa-brand-primary;
               font-size: 21px;
               font-weight: 500;
-              font-family: "Roboto", sans-serif;
             }
 
             .btn {
@@ -695,7 +693,6 @@ body {
           p,
           ul {
             font-size: 13px;
-            font-family: "Roboto", sans-serif;
           }
 
           .contact-info p {
@@ -1150,6 +1147,10 @@ body.internal {
   margin-top: 3em;
   margin-bottom: 3em;
 
+  img.alignnone {
+    margin-bottom: 3em !important;
+  }
+
   hr {
     margin-top: 3em;
     margin-bottom: 3em;
@@ -1157,6 +1158,22 @@ body.internal {
 
   h2 {
     margin-bottom: 0;
+    font-size: 44px;
+  }
+
+  p {
+    letter-spacing: 4px;
+    font-size: 22px;
+    line-height: 1.25;
+    color: #000000;
+  }
+
+  a {
+    margin-top: .5em;
+    display: block;
+    color: #808080;
+    font-size: 15px;
+    @include acumin();
   }
 
   @include media-breakpoint-down(lg) {
@@ -1194,13 +1211,13 @@ ul.floorplan-nav {
     margin-bottom: 1em !important;
 
     li {
-      margin-right: 0;
+      margin-left: 0;
     }
   }
 }
 
 .page-content {
-  margin-top: 125px;
+  margin-top: 100px;
 
   @include media-breakpoint-down(lg) {
     margin-top: 0;
@@ -1358,6 +1375,12 @@ ul.floorplan-nav {
         height: 100%;
         @include bg-gradient(left, $list1);
         color: $white;
+
+        h2 {
+          display: block;
+          opacity: 1;
+          transform: translateX(-50%) translateY(-50%);
+        }
       }
 
       .col {
@@ -1391,6 +1414,7 @@ ul.floorplan-nav {
 
     table {
       width: 100%;
+      text-transform: uppercase;
     }
 
     h2 {
@@ -1708,4 +1732,47 @@ ul.floorplan-nav {
       }
     }
   }
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .sticky-wrapper, #nav-sidebar {
+    height: 778px;
+    transition: height 300ms ease-in-out;
+  }
+
+  .sticky-wrapper #nav-sidebar {
+    height: 100%;
+  }
+
+  .internal .container {
+    max-width: 1200px;
+  }
+}
+
+
+
+.internal .about-us {
+  h1 {
+    margin-bottom: 1em;
+    font-size: 44px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+ 
+}
+
+
+.offset-left {
+  p, h2 {
+    margin-left: 30px;
+  }
+
+  
 }

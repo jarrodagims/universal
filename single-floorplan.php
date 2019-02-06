@@ -14,17 +14,12 @@
                             <div>
                                 <div class="row">
                                     <div class="col floor-header number-header">
-                                        <h2>$223,000-$226,500</h2>
-
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                                            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut
-                                            wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                            lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                        <?php echo get_field('top_paragraph'); ?>
                                     </div>
                                 </div>
                                 <div class="row full-height">
                                     <div class="col floor-header">
-                                        <h3>ARGYLE</h3>
+                                        <h3><?php the_title(); ?></h3>
                                     </div>
                                     <div class="col img-container d-lg-none">
                                         <img src="<?=IMGURL?>argyle3d.png" alt="3d View">
@@ -33,29 +28,29 @@
                                         <table class="floorplan" cellpadding="0" cellspacing="0">
                                             <tr>
                                                 <td>FLOORPLAN</td>
-                                                <td>SINGLE STORY
+                                                <td><?php echo get_field('floorplan'); ?>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>LIVING AREA
                                                 </td>
-                                                <td>1750 SQ. FT
+                                                <td><?php echo get_field('living_area'); ?>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>BEDROOMS
                                                 </td>
-                                                <td>4</td>
+                                                <td><?php echo get_field('bedrooms'); ?></td>
                                             </tr>
                                             <tr>
-                                                <td>BATHEOOMS
+                                                <td>BATHROOMS
                                                 </td>
-                                                <td>2</td>
+                                                <td><?php echo get_field('bathrooms'); ?></td>
                                             </tr>
                                             <tr>
                                                 <td>PRICE
                                                 </td>
-                                                <td><span class="brand">$280,000</span>
+                                                <td><span class="brand"><?php echo get_field('price'); ?></span>
                                                 </td>
                                             </tr>
                                         </table>
@@ -86,8 +81,6 @@
                                 </h2>
                             </div>
                         </div>
-
-
 
                         <?php
                         if ( get_query_var('paged') ) $paged = get_query_var('paged');

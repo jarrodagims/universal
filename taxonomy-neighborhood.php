@@ -120,7 +120,6 @@ $cat_name = get_queried_object()->name;
                 <div class="container">
                     <div class="row">
                         <?php echo get_field('floorplans_bottom'); ?>
-
                     </div>
                 </div>
             </div>
