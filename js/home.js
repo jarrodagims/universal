@@ -43,6 +43,7 @@
       slides: "> div",
       pauseOnHover: "true",
       pager: ".slide-nav",
+      next: ".slide-next",
       pagerTemplate: ""
       // autoHeight: "container"
     });

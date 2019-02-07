@@ -13,8 +13,16 @@ Template Name: Home
             <div class="jumbotron">
                 <div class="jumbo-content">
                     <div class="h2">Home Builder</div>
-                    <h1>BUILDING HOMES <span class="br-xs">THAT
+                    <h1>
+                        <?php if( $h1 = get_field('custom_h1') ) : ?>
+
+                        <?php echo $h1 ?>
+
+                        <?php else : ?>
+                        BUILDING HOMES <span class="br-xs">THAT
                             <span class="br-md">LOOK ALMOST AS <span class="br-xs">GOOD AS YOU!</span></span></span>
+
+                        <?php endif; ?>
                     </h1>
 
                     <a href="<?=SITEURL?>/contact-us/" class="contact-us">
@@ -37,14 +45,18 @@ Template Name: Home
                 <div class="row">
                     <div class="col">
                         <div class="extra-padding">
+                            <?php if( $section_1_title = get_field('section_1_title') ) : ?>
+
+                            <?php echo $section_1_title ?>
+
+                            <?php else : ?>
                             <h3>Welcome to Zia Homes — Where Fun, Comfort, and Quality Collide To Bring You the Perfect
                                 Home
                             </h3>
+                            <?php endif; ?>
                             <div class="h4 expander" data-toggle="collapse" data-target="#collapse"
-                                aria-expanded="false" aria-controls="collapse"><span>Well, you’ve certainly arrived at
-                                    the right place and we’re
-                                    so
-                                    happy you did!</span>
+                                aria-expanded="false" aria-controls="collapse"><span>So you’re looking for a new home?
+                                    Well, you’ve certainly arrived at the right place and we’re so happy you did!</span>
                             </div>
                             <h2 class="collapse expand" id="collapse">
                                 <ul class="expand">
@@ -58,37 +70,35 @@ Template Name: Home
                                     <li>Quality is in our DNA.</li>
                                     <li>To learn about our warranty, connect with us today.</li>
                                     <li>We take your reviews to heart. Let us know what you like, what you don’t like,
-                                        and
-                                        how we can improve our services.</li>
+                                        and how we can improve our services.</li>
                                     <li>Our goal is to receive the highest rating possible from you — the future
                                         homeowner!
                                     </li>
                                     <li>We can help make your desired upgrades a reality, simply tell us what you have
-                                        in
-                                        mind.</li>
+                                        in mind.</li>
                                     <li>Be sure to check our Facebook for Open House events.</li>
                                     <li>When it comes to the construction of your home, we’ll guide you through every
-                                        step
-                                        of the way.</li>
+                                        step of the way.</li>
                                     <li>Our lots are primarily located on the east side of town, with some on the far
-                                        west
-                                        side.</li>
+                                        west side.</li>
                                     <li>Come experience our model homes in person!</li>
                                 </ul>
                             </h2>
 
+                            <?php if( $section_1_text = get_field('section_1_text') ) : ?>
+
+                            <?php echo $section_1_text ?>
+
+                            <?php else : ?>
+
                             <p>Zia Homes considers home building both a joy and a privilege. We incorporate a playful
-                                attitude
-                                to
-                                make the process of buying a new home one that’s easy to follow and doesn’t feel stiff
-                                or
-                                exhausting. <span class="br-xs">Our homes are comfortable and built with the quality one
-                                    should receive in
-                                    a
-                                    21st
-                                    century home. And most
-                                    importantly, we keep you—the future dweller— at heart in everything we do.</span>
+                                attitude to make the process of buying a new home one that’s easy to follow and doesn’t
+                                feel stiff or exhausting. <span class="br-xs">Our homes are comfortable and built with
+                                    the quality one should receive in a 21st century home. And most importantly, we keep
+                                    you—the future dweller— at heart in everything we do.</span>
                             </p>
+                            <?php endif; ?>
+
 
                             <a href="<?=SITEURL?>/contact-us/" class="contact-us"
                                 style="-webkit-transform: translateZ(0px);">
@@ -115,370 +125,162 @@ Template Name: Home
 
 
 
-            <div class="slideshow container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col full-height">
-                            <div>
-                                <div class="row">
-                                    <div class="col floor-header number-header">
-                                        <h2>FLOORPLANS</h2>
-                                    </div>
-                                </div>
-                                <div class="row full-height">
-                                    <div class="col floor-header">
-                                        <h3>POPLIN</h3>
-                                    </div>
-                                    <div class="col img-container d-lg-none">
-                                        <img src="<?=IMGURL?>3d.png" alt="3d View">
-                                    </div>
-                                    <div class="col">
-                                        <table class="floorplan" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td>FLOORPLAN</td>
-                                                <td>SINGLE STORY
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>LIVING AREA
-                                                </td>
-                                                <td>1750 SQ. FT
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>BEDROOMS
-                                                </td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>BATHROOMS
-                                                </td>
-                                                <td>2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>PRICE
-                                                </td>
-                                                <td><span class="brand">$280,000</span>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="row row-buttons">
-                                    <div class="col">
-                                        <a href="<?=SITEURL?>/floor-plans/" class="contact-us">
-                                            <button class="btn btn-primary">
-                                                VIEW OUR FLOORPLANS
-                                            </button>
-                                        </a>
+            <div class="container">
 
-                                        <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                                            <button class="btn btn-outline">
-                                                <span>SCHEDULE A TOUR</span>
-                                            </button>
-                                        </a>
+                <div class="slide-next"></div>
+
+                <div class="slideshow">
+
+
+                    <?php  wp_reset_postdata();
+                $paged = get_query_var('paged') ? get_query_var('paged') : 1; //The magic, ternary if statement
+
+
+                // if ( get_query_var('paged') ) $paged = get_query_var('page');
+                // if ( get_query_var('page') ) $paged = get_query_var('page');
+            
+                $tax_post_args = array(
+                            'post_type' => 'floorplan',
+                            'posts_per_page' => 5,
+                            'order' => 'ASC',
+                            'paged' => $paged
+                        );
+                  
+                        $query = new WP_Query( $tax_post_args );
+
+                        $posts_per_row = 3;
+                        $post_counter = 0;
+
+                        if ( $query->have_posts() ) : ?>
+
+                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col full-height">
+                                <div>
+                                    <div class="row">
+                                        <div class="col floor-header number-header">
+                                            <h2>FLOORPLANS</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row full-height">
+                                        <div class="col floor-header">
+                                            <h3><?php the_title(); ?></h3>
+                                        </div>
+                                        <div class="col img-container d-lg-none">
+                                            <?php
+                                        $image = get_field('3d_image');
+                                        if( !empty($image) ): ?>
+                                            <img src="<?php echo $image['url']; ?>"
+                                                alt="<?php echo $image['alt']; ?>" />
+                                            <?php endif; ?>
+                                        </div>
+                                        <div class="col">
+                                            <table class="floorplan" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td>FLOORPLAN</td>
+                                                    <td><?php echo get_field('floorplan'); ?>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LIVING AREA
+                                                    </td>
+                                                    <td><?php echo get_field('living_area'); ?>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BEDROOMS
+                                                    </td>
+                                                    <td><?php echo get_field('bedrooms'); ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BATHROOMS
+                                                    </td>
+                                                    <td><?php echo get_field('bathrooms'); ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PRICE
+                                                    </td>
+                                                    <td><span class="brand"><?php echo get_field('price'); ?></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row row-buttons">
+                                        <div class="col">
+                                            <a href="<?=SITEURL?>/floor-plans/" class="contact-us">
+                                                <button class="btn btn-primary">
+                                                    VIEW OUR FLOORPLANS
+                                                </button>
+                                            </a>
+
+                                            <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                                                <button class="btn btn-outline">
+                                                    <span>SCHEDULE A TOUR</span>
+                                                </button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col d-none d-lg-block img-container">
-                            <img src="<?=IMGURL?>3d.png" alt="3d View">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col full-height">
-                            <div>
-                                <div class="row">
-                                    <div class="col floor-header number-header">
-                                        <h2>FLOORPLANS</h2>
-                                    </div>
-                                </div>
-                                <div class="row full-height">
-                                    <div class="col floor-header">
-                                        <h3>PAISLEY</h3>
-                                    </div>
-                                    <div class="col img-container d-lg-none">
-                                        <img src="<?=IMGURL?>3d.png" alt="3d View">
-                                    </div>
-                                    <div class="col">
-                                        <table class="floorplan" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td>FLOORPLAN</td>
-                                                <td>SINGLE STORY
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>LIVING AREA
-                                                </td>
-                                                <td>1750 SQ. FT
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>BEDROOMS
-                                                </td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>BATHROOMS
-                                                </td>
-                                                <td>2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>PRICE
-                                                </td>
-                                                <td><span class="brand">$280,000</span>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="row row-buttons">
-                                    <div class="col">
-                                        <a href="<?=SITEURL?>/floor-plans/" class="contact-us">
-                                            <button class="btn btn-primary">
-                                                VIEW OUR FLOORPLANS
-                                            </button>
-                                        </a>
-
-                                        <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                                            <button class="btn btn-outline">
-                                                <span>SCHEDULE A TOUR</span>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="col d-none d-lg-block img-container">
+                                <?php
+                                        $image = get_field('3d_image');
+                                        if( !empty($image) ): ?>
+                                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                <?php endif; ?>
                             </div>
                         </div>
-                        <div class="col d-none d-lg-block img-container">
-                            <img src="<?=IMGURL?>3d.png" alt="3d View">
-                        </div>
                     </div>
+
+
+                    <?php endwhile; wp_reset_postdata(); ?>
+
+                    <!-- show pagination here -->
+                    <?php else : ?>
+
+                    <!-- show 404 error here -->
+                    <?php endif; ?>
                 </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col full-height">
-                            <div>
-                                <div class="row">
-                                    <div class="col floor-header number-header">
-                                        <h2>FLOORPLANS</h2>
-                                    </div>
-                                </div>
-                                <div class="row full-height">
-                                    <div class="col floor-header">
-                                        <h3>CAMBRIC</h3>
-                                    </div>
-                                    <div class="col img-container d-lg-none">
-                                        <img src="<?=IMGURL?>3d.png" alt="3d View">
-                                    </div>
-                                    <div class="col">
-                                        <table class="floorplan" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td>FLOORPLAN</td>
-                                                <td>SINGLE STORY
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>LIVING AREA
-                                                </td>
-                                                <td>1750 SQ. FT
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>BEDROOMS
-                                                </td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>BATHROOMS
-                                                </td>
-                                                <td>2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>PRICE
-                                                </td>
-                                                <td><span class="brand">$280,000</span>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="row row-buttons">
-                                    <div class="col">
-                                        <a href="<?=SITEURL?>/floor-plans/" class="contact-us">
-                                            <button class="btn btn-primary">
-                                                VIEW OUR FLOORPLANS
-                                            </button>
-                                        </a>
-
-                                        <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                                            <button class="btn btn-outline">
-                                                <span>SCHEDULE A TOUR</span>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-none d-lg-block img-container">
-                            <img src="<?=IMGURL?>3d.png" alt="3d View">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col full-height">
-                            <div>
-                                <div class="row">
-                                    <div class="col floor-header number-header">
-                                        <h2>FLOORPLANS</h2>
-                                    </div>
-                                </div>
-                                <div class="row full-height">
-                                    <div class="col floor-header">
-                                        <h3>VELOUR</h3>
-                                    </div>
-                                    <div class="col img-container d-lg-none">
-                                        <img src="<?=IMGURL?>3d.png" alt="3d View">
-                                    </div>
-                                    <div class="col">
-                                        <table class="floorplan" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td>FLOORPLAN</td>
-                                                <td>SINGLE STORY
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>LIVING AREA
-                                                </td>
-                                                <td>1750 SQ. FT
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>BEDROOMS
-                                                </td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>BATHROOMS
-                                                </td>
-                                                <td>2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>PRICE
-                                                </td>
-                                                <td><span class="brand">$280,000</span>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="row row-buttons">
-                                    <div class="col">
-                                        <a href="<?=SITEURL?>/floor-plans/" class="contact-us">
-                                            <button class="btn btn-primary">
-                                                VIEW OUR FLOORPLANS
-                                            </button>
-                                        </a>
-
-                                        <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                                            <button class="btn btn-outline">
-                                                <span>SCHEDULE A TOUR</span>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-none d-lg-block img-container">
-                            <img src="<?=IMGURL?>3d.png" alt="3d View">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col full-height">
-                            <div>
-                                <div class="row">
-                                    <div class="col floor-header number-header">
-                                        <h2>FLOORPLANS</h2>
-                                    </div>
-                                </div>
-                                <div class="row full-height">
-                                    <div class="col floor-header">
-                                        <h3>TRELLIS</h3>
-                                    </div>
-                                    <div class="col img-container d-lg-none">
-                                        <img src="<?=IMGURL?>3d.png" alt="3d View">
-                                    </div>
-                                    <div class="col">
-                                        <table class="floorplan" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td>FLOORPLAN</td>
-                                                <td>SINGLE STORY
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>LIVING AREA
-                                                </td>
-                                                <td>1750 SQ. FT
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>BEDROOMS
-                                                </td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>BATHROOMS
-                                                </td>
-                                                <td>2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>PRICE
-                                                </td>
-                                                <td><span class="brand">$280,000</span>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="row row-buttons">
-                                    <div class="col">
-                                        <a href="<?=SITEURL?>/floor-plans/" class="contact-us">
-                                            <button class="btn btn-primary">
-                                                VIEW OUR FLOORPLANS
-                                            </button>
-                                        </a>
-
-                                        <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                                            <button class="btn btn-outline">
-                                                <span>SCHEDULE A TOUR</span>
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col d-none d-lg-block img-container">
-                            <img src="<?=IMGURL?>3d.png" alt="3d View">
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
 
             <ul class="slide-nav">
-                <li><a href="#">POPLIN</a></li>
-                <li><a href="#">PAISLEY</a></li>
-                <li><a href="#">CAMBRIC</a></li>
-                <li><a href="#">VELOUR</a></li>
-                <li><a href="#">TRELLIS</a></li>
+                <?php  wp_reset_postdata();
+                $paged = get_query_var('paged') ? get_query_var('paged') : 1; //The magic, ternary if statement
+
+
+                // if ( get_query_var('paged') ) $paged = get_query_var('page');
+                // if ( get_query_var('page') ) $paged = get_query_var('page');
+            
+                $tax_post_args = array(
+                            'post_type' => 'floorplan',
+                            'posts_per_page' => 5,
+                            'order' => 'ASC',
+                            'paged' => $paged
+                        );
+                  
+                        $query = new WP_Query( $tax_post_args );
+
+                        $posts_per_row = 3;
+                        $post_counter = 0;
+
+                        if ( $query->have_posts() ) : ?>
+
+                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                <li><a href="#"><?php the_title(); ?></a></li>
+
+
+                <?php endwhile; wp_reset_postdata(); ?>
+
+                <!-- show pagination here -->
+                <?php else : ?>
+
+                <!-- show 404 error here -->
+                <?php endif; ?>
             </ul>
         </section>
 
@@ -488,6 +290,12 @@ Template Name: Home
                 <div class="row">
                     <div class="col">
                         <div class="extra-padding">
+
+                            <?php if( $section_4 = get_field('section_4') ) : ?>
+
+                            <?php echo $section_4 ?>
+
+                            <?php else : ?>
                             <h3>Why Choose Zia Homes?</h3>
 
                             <p>The answer is simple. We understand the needs of El Paso residents. Just like ordering a
@@ -513,6 +321,8 @@ Template Name: Home
                                 take
                                 should taste delicious, we believe in providing that same goodness.</p>
 
+                            <?php endif; ?>
+
 
                             <a href="<?=SITEURL?>/contact-us/" class="contact-us">
                                 <button class="btn btn-primary">
@@ -521,6 +331,22 @@ Template Name: Home
                             </a>
                         </div>
                     </div>
+                    <div class="col">
+                    </div>
+        </section>
+
+        <section class="ribbon-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex justify-content-md-start justify-content-center align-items-center">
+                        CONTACT US TODAY! <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                            <button class="btn btn-secondary">
+                                CONTACT US
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
@@ -531,19 +357,23 @@ Template Name: Home
                     </div>
                     <div class="col">
                         <div class="extra-padding">
+                            <?php if( $section_3 = get_field('section_3') ) : ?>
+
+                            <?php echo $section_3 ?>
+
+                            <?php else : ?>
                             <h3>YOU KNOW WHAT MAKES US GOOD…
                                 <span class="br-md">HERE’S WHAT MAKES US THE BEST</span>
-
                             </h3>
 
                             <p>Our secret family recipe consists of building high-quality homes at affordable prices.
-                                Once
-                                you add in excellent customer service, you have a recipe for success! As a home builder
-                                who
-                                places their future homeowners at the forefront of everything we do, we have plenty of
-                                additional upgrades to choose from, we guarantee you will find exactly what you’re
-                                looking
-                                for, plus more! </p>
+                                Once you add in excellent customer service, you have a recipe for success! As a home
+                                builder who places their future homeowners at the forefront of everything we do, we have
+                                plenty of additional upgrades to choose from, we guarantee you will find exactly what
+                                you’re looking for, plus more! </p>
+
+                            <?php endif; ?>
+
 
                             <a href="<?=SITEURL?>/contact-us/" class="contact-us">
                                 <button class="btn btn-primary">
@@ -565,8 +395,18 @@ Template Name: Home
                     <div class="col">
 
                         <div class="extra-padding">
+
+
+                            <?php if( $section_5_title = get_field('section_5_title') ) : ?>
+
+                            <?php echo $section_5_title ?>
+
+                            <?php else : ?>
+
                             <h2>HERE’S WHAT YOU GET WHEN <span class="br-xs">YOU CHOOSE ZIA HOMES</span>
                                 <span class="br-md br-xs">AS YOUR HOME BUILDER:</span></h2>
+
+                            <?php endif;?>
 
                             <div class="row slideshow-blog">
 
@@ -625,7 +465,7 @@ Template Name: Home
                                             <h3>
                                                 A PARTNER WHO
                                                 <span class="br-md">COMMUNICATES</span></h3>
-                                            <p>There’ll be no shortage of emails, phone calls, or text message to go
+                                            <p>There’ll be no shortage of emails, phone calls, or text messages to go
                                                 around! Because when you choose to work with us, we take that
                                                 relationship seriously. We’re always attentive to your needs and do our
                                                 best to provide you with answers quickly and thoughtfully.</p>
@@ -685,18 +525,27 @@ Template Name: Home
                 <div class="row">
                     <div class="col contact-form">
                         <span class="number">06</span>
+
+
+                        <?php if( $section_6 = get_field('section_6') ) : ?>
+
+                        <?php echo $section_6 ?>
+
+                        <?php else : ?>
+
                         <h2>
                             Ready To Meet Your Future Home?
                             <span class="br-md">It’s Waiting To Meet You Too!</span>
                         </h2>
 
-                        <p>We know the excitement can be hard to contain and at the same time, it
-                            can feel extremely overwhelming. But not to worry, as the
-                            saying goes, an action is the solution to fear. At Zia Homes, we’ll help guide you in
-                            finding the perfect home. Our team will gladly
-                            answer your initial questions and guide you down the path of becoming a happy new
-                            homeowner. <a href="tel:
+                        <p>We know the excitement can be hard to contain and at the same time, it can feel extremely
+                            overwhelming. But not to worry, as the saying goes, an action is the solution to fear. At
+                            Zia Homes, we’ll help guide you in finding the perfect home. Our team will gladly answer
+                            your initial questions and guide you down the path of becoming a happy new homeowner. <a
+                                href="tel:
     9155918153">Give us a call today</a>!</p>
+
+                        <?php endif; ?>
 
 
                         <div id="contact-form">
@@ -718,7 +567,9 @@ Template Name: Home
                     </div> -->
 
                     <div class="col">
-                        <div id="map" class="map col"></div>
+                        <a href="https://goo.gl/maps/Reg1gJNqpC62" target="_blank">
+                            <div id="map" class="map col"></div>
+                        </a>
                     </div>
 
                     <script>

@@ -3,10 +3,40 @@
   color: #000;
 //   height: 778px;
   padding-top: 200px;
+  position: relative;
+
+  .slide-next {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    cursor: hand;
+    cursor: pointer;
+
+    &::before {
+      @include svg-square();
+      content: '';
+      width: 27px;
+      height: 27px;
+      display: block;
+    }
+
+    &:hover::before {
+      @include svg-square(_trim($sherpa-brand-primary), 1)
+    }
+  }
 
   table {
     width: 100%;
     margin-left: 5em;
+
+    tr td {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
   }
 
   h2 {
@@ -14,7 +44,7 @@
   }
 
   .full-height {
-    height: 100%;
+//     height: 100%;
 
     &.col {
       display: flex;
@@ -144,6 +174,7 @@
       width: 100%;
       font-size: 26px;
       letter-spacing: 6px;
+      text-transform: uppercase;
 
       &:hover {
         background: $sherpa-brand-primary;
@@ -190,8 +221,8 @@
   @include media-breakpoint-down(lg) {
 
      a.contact-us {
-    margin-right: 0;
-  }
+      margin-right: 0;
+    }
 
     height: auto;
     padding-top: 2em;
@@ -270,10 +301,11 @@
       width: 100%;
       font-size: 14px;
 
-     
 
       td {
         padding-bottom: 1em;
+        letter-spacing: 3px;
+        text-transform: uppercase; 
         letter-spacing: 3px;
       }
     }

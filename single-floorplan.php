@@ -3,12 +3,21 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <?php the_content(); ?>
+
 
                 <div class="container">
                     <div class="row">
+                        <div class="col">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col d-none d-lg-block img-container">
-                            <img src="<?=IMGURL?>argyle3d.png" alt="3d View">
+                            <?php
+                                        $image = get_field('3d_image');
+                                        if( !empty($image) ): ?>
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <?php endif; ?>
                         </div>
                         <div class="col full-height">
                             <div>
@@ -22,7 +31,11 @@
                                         <h3><?php the_title(); ?></h3>
                                     </div>
                                     <div class="col img-container d-lg-none">
-                                        <img src="<?=IMGURL?>argyle3d.png" alt="3d View">
+                                        <?php
+                                        $image = get_field('3d_image');
+                                        if( !empty($image) ): ?>
+                                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                        <?php endif; ?>
                                     </div>
                                     <div class="col">
                                         <table class="floorplan" cellpadding="0" cellspacing="0">
