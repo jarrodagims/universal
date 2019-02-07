@@ -34,13 +34,16 @@
 
 
                         <?php
-                        if ( get_query_var('paged') ) $paged = get_query_var('paged');
-                        if ( get_query_var('page') ) $paged = get_query_var('page');
+                        $paged = get_query_var('paged') ? get_query_var('paged') : 1; //The magic, ternary if statement
+
+
+                        // if ( get_query_var('paged') ) $paged = get_query_var('page');
+                        // if ( get_query_var('page') ) $paged = get_query_var('page');
                  
                         $query = new WP_Query( array( 'order' => 'ASC', 'posts_per_page' => 6, 'post_type' => 'floorplan', 'paged' => $paged ) );
 
                         $posts_per_row = 3;
-                        $post_counter = 0;
+                        $post_counter = 0; 
 
                         if ( $query->have_posts() ) : ?>
 
@@ -86,10 +89,12 @@
 
 
                             </div>
-                            <?php endwhile; wp_reset_postdata(); ?>
+                            <?php endwhile;  wp_pagenavi(); wp_reset_postdata(); ?>
                         </div>
+
                         <!-- show pagination here -->
-                        <?php else : ?>
+                        <?php else : wp_pagenavi(); ?>
+
                         <!-- show 404 error here -->
                         <?php endif; ?>
                     </div>
@@ -98,9 +103,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="container">
-                            <div class="row">
+                            <div class="row floorplan-bottom">
                                 <?php echo get_field('floorplans_bottom'); ?>
-
                             </div>
                         </div>
                     </div>

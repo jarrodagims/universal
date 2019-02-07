@@ -67,6 +67,9 @@
 
   @include media-breakpoint-down(lg) {
     h2, .h2 {
+
+      font-size: 15px;
+      
       &::after {
         width: 141px;
       }

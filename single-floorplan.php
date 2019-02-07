@@ -72,10 +72,13 @@
 
                     </div>
 
+
+
                     <section class="more-properties">
 
                         <div class="row">
                             <div class="col text-center">
+
                                 <h2>
                                     More Properties
                                 </h2>

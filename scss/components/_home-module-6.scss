@@ -45,10 +45,32 @@
   }
 
   @include media-breakpoint-down(lg) {
-    padding-top: 0;
+    padding-top: 1em;
     padding-bottom: 0;
     text-align: left;
     position: relative;
+
+    .extra-padding {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .mini-card {
+
+      h3 {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+
+      .extra-padding {
+        padding: 1em 0;
+      }
+    }
+
+
+    .container::before {
+       
+    }
 
     .pager {
       position: absolute;
@@ -73,7 +95,7 @@
     }
 
     .row-buttons {
-      padding-top: 2em;
+      padding-top: 1em;
       padding-bottom: 2em;
     }
 

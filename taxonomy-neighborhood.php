@@ -103,7 +103,7 @@ $cat_name = get_queried_object()->name;
                                 <?php endif; ?>
 
                             </div>
-                            <?php endwhile; wp_reset_postdata(); ?>
+                            <?php endwhile; wp_reset_postdata();  ?>
                         </div>
                         <!-- show pagination here -->
                         <?php else : ?>

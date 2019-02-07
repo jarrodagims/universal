@@ -397,6 +397,7 @@ body {
 
           @include media-breakpoint-up(md) {
             height: 305px;
+            margin-top: 2em;
           }
 
           .banner-title {
@@ -667,6 +668,7 @@ body {
         opacity: 0.75;
         color: #4d4d4d;
         text-transform: uppercase;
+        margin-top: 1em;
 
         &.expander {
           @include expander($sherpa-brand-primary);
@@ -692,7 +694,7 @@ body {
 
           p,
           ul {
-            font-size: 13px;
+            font-size: 17px;
           }
 
           .contact-info p {
@@ -1064,6 +1066,14 @@ body.internal {
 }
 
 .page-template-page-home {
+
+  .navbar-sherpa {
+    outline: none;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  }
   @include media-breakpoint-up(xl) {
     .navbar-collapse,
     .navbar-form {
@@ -1113,8 +1123,10 @@ body.internal {
   .box-header {
     @include gradient();
     color: $white;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+
 
     p {
       margin-bottom: 0;
@@ -1125,7 +1137,35 @@ body.internal {
   .col {
     font-size: 14px;
     @include acumin();
-    padding: 2em 4em;
+    padding: 4em 4em;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .col:nth-child(2) {
+      position: relative;
+
+      &::before {
+        border-left: 1px solid #808080;
+        height: 50%;
+        position: absolute;
+        display: block;
+        content: '';
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+      }
+
+      &::after {
+        border-right: 1px solid #808080;
+        height: 50%;
+        position: absolute;
+        display: block;
+        content: '';
+        transform: translateY(-50%);
+        top: 50%;
+        right: 0;
+      }
+    }
   }
 
   @include media-breakpoint-down(lg) {
@@ -1145,15 +1185,16 @@ body.internal {
 
 .img-row {
   margin-top: 3em;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
+
 
   img.alignnone {
     margin-bottom: 3em !important;
   }
 
   hr {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 5em;
+    margin-bottom: 5em;
   }
 
   h2 {
@@ -1198,6 +1239,7 @@ ul.floorplan-nav {
 
     a {
       color: #989898;
+      letter-spacing: $letterSpacing;
 
       &:hover {
         color: $sherpa-brand-primary;
@@ -1235,8 +1277,15 @@ ul.floorplan-nav {
   h1,
   h2 {
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 44px;
     margin-bottom: 1em;
+  }
+
+  .floorplan-bottom {
+    h1, h2 {
+      font-size: 36px;
+      color: #4E4E4E;
+    }
   }
 
   .floorplan-list {
@@ -1247,9 +1296,11 @@ ul.floorplan-nav {
     }
 
     h2 {
+      margin-top: .5em;
       margin-bottom: 0;
       font-size: 50px;
       color: #000;
+      letter-spacing: 7px;
 
       a {
         color: #000;
@@ -1268,6 +1319,8 @@ ul.floorplan-nav {
 
         .sft {
           color: #606060;
+          letter-spacing: $letterSpacing;
+          margin-top: 0;
         }
       }
 
@@ -1324,6 +1377,7 @@ ul.floorplan-nav {
       @include bg-gradient(left, $list1);
       color: $white;
       font-size: 26px;
+      padding: .5em 1em;
     }
   }
 
@@ -1375,6 +1429,9 @@ ul.floorplan-nav {
         height: 100%;
         @include bg-gradient(left, $list1);
         color: $white;
+        flex: 1;
+        width: 100%;
+        height: 100%;
 
         h2 {
           display: block;
@@ -1385,8 +1442,10 @@ ul.floorplan-nav {
 
       .col {
         a {
-          display: block;
+          display: flex;
+          flex: 1;
           height: 100%;
+          width: 100%;
 
           &:hover {
             h2 {
@@ -1415,6 +1474,11 @@ ul.floorplan-nav {
     table {
       width: 100%;
       text-transform: uppercase;
+
+      td {
+        letter-spacing: $letterSpacing;
+        padding-bottom: .5em;
+      }
     }
 
     h2 {
@@ -1480,6 +1544,7 @@ ul.floorplan-nav {
 
       &.number-header {
         flex: 1;
+        margin-top: 1.5em;
       }
     }
 
@@ -1512,10 +1577,15 @@ ul.floorplan-nav {
 
     h2,
     h3 {
-      font-size: 44px;
+      font-size: 39px;
+      letter-spacing: 6px;
       color: #4d4d4d;
       display: inline-block;
       text-transform: uppercase;
+    }
+
+    h3 {
+      margin-right: 1.25em;
     }
 
     h3::before {
@@ -1700,7 +1770,13 @@ ul.floorplan-nav {
     }
 
     .more-properties {
-      margin-top: 132px;
+      margin-top: 50px;
+      border-top: 1px solid #CBCBCB;
+      padding-top: 4em;
+
+      h2 {
+        margin-bottom: 1em;
+      }
     }
 
     @include media-breakpoint-down(lg) {
@@ -1708,6 +1784,7 @@ ul.floorplan-nav {
         .col.entry {
           margin-top: 2em;
           min-height: 392px;
+          display: flex;
 
           img {
             width: 100%;
@@ -1765,6 +1842,22 @@ ul.floorplan-nav {
     text-transform: uppercase;
   }
 
+  img.alignright, img.alignleft {
+    max-width: 100%;
+  }
+
+  img.alignleft {
+    margin-right: 80px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    img.alignleft {
+      display: block;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
  
 }
 
@@ -1775,4 +1868,28 @@ ul.floorplan-nav {
   }
 
   
+}
+
+
+ul.expand {
+  font-size: 16px;
+  list-style: none;
+  text-transform: none;
+  letter-spacing: 0;
+  padding-left: 0;
+  margin-left: 0;
+
+
+  li {
+    margin-bottom: .5em;
+  }
+
+  @include media-breakpoint-down(lg) {
+    text-align: left;
+  }
+}  
+
+.expander {
+
+  @include expander(red);
 }

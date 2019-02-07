@@ -10,6 +10,18 @@
 <!--<![endif]-->
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125707253-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125707253-1');
+    </script>
     <meta charset="<?php bloginfo('charset');?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,7 +71,6 @@
     <?php if (!is_front_page()): ?>
     <div class="sidebar-container">
         <?php echo get_template_part('template-parts/navbar'); ?>
-
         <?php endif;?>
 
         <div class="internal-header">
@@ -92,7 +103,12 @@ if (function_exists('yoast_breadcrumb')) {
 }
 ?>
                     </div>
-                    <div class="h1"><?php echo get_the_title(); ?></div>
+                    <div class="h1">
+                        <?php if(!is_home()) : 
+                        echo get_the_title(); 
+                        else: echo 'Blog';
+                        endif; ?>
+                    </div>
 
                     <a href="<?=SITEURL?>/contact-us/" class="contact-us">
                         <button class="btn btn-primary">

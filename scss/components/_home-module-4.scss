@@ -16,25 +16,29 @@
     }
   }
 
-  h2 {
+  h3 {
     color: $white;
     @include acumin();
     font-size: 44px;
+    margin-bottom: .5em;
   }
 
-  p {
-    font-size: 14px;
+  @include media-breakpoint-down(md) {
+    .extra-padding {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 
   @include media-breakpoint-down(lg) {
-    padding-top: 0;
+    padding-top: 1em;
     padding-bottom: 2em;
     background: $white; 
 
-
-    h2 {
+    h3 {
       color: #4D4D4D;
       font-size: 28px;
+      margin-top: 1em;
     }
 
     color: #808080;

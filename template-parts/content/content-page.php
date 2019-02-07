@@ -24,7 +24,23 @@
 			}
 
             echo "<article>\n";
-            echo "<div class=\"content page-content\">";
+			echo "<div class=\"content page-content\">";
+			?>
+<?php if (is_page('contact-us')) : ?>
+<div id="sidebar" class="sidebar">
+    <div id="contact-form">
+        <?php if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1') {
+    echo do_shortcode('[contact-form-7 id="62" title="Contact Form"]');
+} else {
+    echo do_shortcode('[contact-form-7 id="62" title="Contact Form"]');
+}
+?>
+    </div>
+</div>
+<?php endif; ?>
+
+
+<?php
             the_content();
             ?>
 <div class="banner banner-bottom">

@@ -33,6 +33,10 @@
     justify-content: space-between;
     padding: 1.25em 0;
 
+    @include media-breakpoint-down(md) {
+        padding: .5em 0;
+    }
+
     @include media-breakpoint-down(lg) {
         padding: 1em 0;
     }

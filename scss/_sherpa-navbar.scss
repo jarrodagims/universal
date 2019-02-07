@@ -19,7 +19,7 @@
 
   .navbar-text {
     color: $sherpa-navbar-default-color;
-  } 
+  }
 
   .navbar-nav {
     > li > a {
@@ -140,13 +140,17 @@
   }
 }
 
-
 .navbar-button {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @include media-breakpoint-down(md) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 /* 
@@ -163,10 +167,9 @@ the right sidebar including social icons address and phone
   margin-left: auto;
   flex-direction: row;
 
-   a {
-      color: $white;
-    }
-
+  a {
+    color: $white;
+  }
 
   ul.social-media {
     display: flex;
@@ -174,7 +177,7 @@ the right sidebar including social icons address and phone
     margin-right: 1em;
 
     li a {
-      padding: 0 .5em;
+      padding: 0 0.5em;
     }
   }
 
@@ -203,10 +206,7 @@ the right sidebar including social icons address and phone
     width: 100%;
     flex-direction: row;
     font-size: 11px;
-    
   }
-
- 
 }
 
 @mixin navbar-home() {
@@ -221,9 +221,16 @@ the right sidebar including social icons address and phone
     width: 100%;
     transition: background 300ms ease-in-out;
 
+    &:focus {
+      outline: none;
+      border: none !important;
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+
     &:hover {
       background: $sherpa-brand-primary;
-
     }
   }
 
@@ -243,17 +250,16 @@ the right sidebar including social icons address and phone
   }
 
   .navbar-collapse,
-    .navbar-form {
-      position: absolute;
-      left: 80px;
-      width: 200px;
-      top: 0;
-      background: #606060;
-    }
+  .navbar-form {
+    position: absolute;
+    left: 80px;
+    width: 200px;
+    top: 0;
+    background: #606060;
+  }
 }
 
 @include media-breakpoint-down(lg) {
-
   @include navbar-home();
 }
 
@@ -261,15 +267,13 @@ the right sidebar including social icons address and phone
   @include navbar-home();
 }
 
-
-
 .internal-header {
-  background: url('../img/bg-header-internal.jpg') center 0 no-repeat;
+  background: url("../img/bg-header-internal.jpg") center 0 no-repeat;
   background-size: cover;
   height: 470px;
   display: flex;
   flex-direction: column;
-  padding-top: .5em;
+  padding-top: 0.5em;
 
   .container-fluid {
     position: absolute;
@@ -316,11 +320,19 @@ the right sidebar including social icons address and phone
   @include media-breakpoint-down(lg) {
     margin-bottom: 2em;
   }
-
 }
 
-
-.navbar-toggler-icon { 
+.navbar-toggler-icon {
   @include svg-hamburger();
   height: 13px;
-}  
+}
+
+@include media-breakpoint-up(md) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+.dropdown-item { 
+  letter-spacing: $letterSpacing;
+}

@@ -13,6 +13,7 @@ h4 {
   font-weight: 300;
   @include acumin();
   letter-spacing: $letterSpacing;
+  text-transform: uppercase;
 
   strong {
     font-weight: 700;
@@ -50,8 +51,8 @@ h2 {
 
 p {
   line-height: 1.75;
-  @include acumin();
-  font-size: 14px;
+  @include acumin-condensed();
+  font-size: 17px;
 }
 
 body {
@@ -95,7 +96,6 @@ a {
     }
   }
 }
-
 
 .img-row {
   img {

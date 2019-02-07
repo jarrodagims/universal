@@ -16,15 +16,26 @@
     }
   }
 
-  h2 {
+  h3 {
     color: $white;
     font-size: 44px;
+     margin-bottom: .5em;
   }
 
-  @include media-breakpoint-down(lg) {
-      padding: 0 0 2em;
+   @include media-breakpoint-down(md) {
+      
+      .extra-padding {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
 
-      h2 {
+   }
+
+  @include media-breakpoint-down(lg) {
+      padding: 1em 0 2em;
+
+      h3 {
+        margin-top: 1em;
         font-size: 28px;
       }
   }

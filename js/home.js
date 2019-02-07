@@ -65,8 +65,8 @@
           slides: "> div",
           pauseOnHover: "true",
           next: "#slide-blog-nav",
-          pagerTemplate: ""
-          // autoHeight: "container"
+          pagerTemplate: "",
+          autoHeight: "container"
         });
       };
 

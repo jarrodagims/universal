@@ -12,7 +12,7 @@ Template Name: Home
             <?php echo get_template_part('template-parts/navbar'); ?>
             <div class="jumbotron">
                 <div class="jumbo-content">
-                    <h2>Home Builder</h2>
+                    <div class="h2">Home Builder</div>
                     <h1>BUILDING HOMES <span class="br-xs">THAT
                             <span class="br-md">LOOK ALMOST AS <span class="br-xs">GOOD AS YOU!</span></span></span>
                     </h1>
@@ -36,32 +36,72 @@ Template Name: Home
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>WHERE FUN, COMFORT, AND
-                            <span class="br-md br-xs">QUALITY COLLIDE TO BRING YOU</span>
-                            THE PERFECT HOME</h2>
-                        <h3>Well, you’ve certainly arrived at the right place and we’re so happy you did!
-                        </h3>
-                        <p>Zia Homes considers home building both a joy and a privilege. We incorporate a playful
-                            attitude
-                            to
-                            make the process of buying a new home one that’s easy to follow and doesn’t feel stiff or
-                            exhausting. <span class="br-xs">Our homes are comfortable and built with the quality one
-                                should receive in
-                                a
-                                21st
-                                century home. And most
-                                importantly, we keep you—the future dweller— at heart in everything we do.</span>
-                        </p>
+                        <div class="extra-padding">
+                            <h3>Welcome to Zia Homes — Where Fun, Comfort, and Quality Collide To Bring You the Perfect
+                                Home
+                            </h3>
+                            <div class="h4 expander" data-toggle="collapse" data-target="#collapse"
+                                aria-expanded="false" aria-controls="collapse"><span>Well, you’ve certainly arrived at
+                                    the right place and we’re
+                                    so
+                                    happy you did!</span>
+                            </div>
+                            <h2 class="collapse expand" id="collapse">
+                                <ul class="expand">
+                                    <li>Best modern home builder in the El Paso area since 1985.</li>
+                                    <li>We are a top performing new home builder.</li>
+                                    <li>Our homes are highly reviewed by current homeowners.</li>
+                                    <li>As a local builder for over 30 years, we consistently strive for customer
+                                        satisfaction.</li>
+                                    <li>When it comes to comfort and luxury, you get them both with Zia Homes!</li>
+                                    <li>We do our best to provide custom homes, built with you in mind.</li>
+                                    <li>Quality is in our DNA.</li>
+                                    <li>To learn about our warranty, connect with us today.</li>
+                                    <li>We take your reviews to heart. Let us know what you like, what you don’t like,
+                                        and
+                                        how we can improve our services.</li>
+                                    <li>Our goal is to receive the highest rating possible from you — the future
+                                        homeowner!
+                                    </li>
+                                    <li>We can help make your desired upgrades a reality, simply tell us what you have
+                                        in
+                                        mind.</li>
+                                    <li>Be sure to check our Facebook for Open House events.</li>
+                                    <li>When it comes to the construction of your home, we’ll guide you through every
+                                        step
+                                        of the way.</li>
+                                    <li>Our lots are primarily located on the east side of town, with some on the far
+                                        west
+                                        side.</li>
+                                    <li>Come experience our model homes in person!</li>
+                                </ul>
+                            </h2>
 
-                        <a href="<?=SITEURL?>/contact-us/" class="contact-us"
-                            style="-webkit-transform: translateZ(0px);">
-                            <button class="btn btn-primary" style="-webkit-transform: translateZ(0px);">
-                                MORE ABOUT US
-                            </button>
-                        </a>
+                            <p>Zia Homes considers home building both a joy and a privilege. We incorporate a playful
+                                attitude
+                                to
+                                make the process of buying a new home one that’s easy to follow and doesn’t feel stiff
+                                or
+                                exhausting. <span class="br-xs">Our homes are comfortable and built with the quality one
+                                    should receive in
+                                    a
+                                    21st
+                                    century home. And most
+                                    importantly, we keep you—the future dweller— at heart in everything we do.</span>
+                            </p>
+
+                            <a href="<?=SITEURL?>/contact-us/" class="contact-us"
+                                style="-webkit-transform: translateZ(0px);">
+                                <button class="btn btn-primary" style="-webkit-transform: translateZ(0px);">
+                                    MORE ABOUT US
+                                </button>
+                            </a>
+                        </div>
                     </div>
                     <div class="col">
-                        <img src="<?=IMGURL?>bg-interior.jpg" alt="Interior">
+                        <div class="extra-padding">
+                            <img src="<?=IMGURL?>bg-interior.jpg" alt="Interior">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -447,63 +487,40 @@ Template Name: Home
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h2>THE ANSWER IS SIMPLE.
-                            <span class="br-md">WE UNDERSTAND THE NEEDS OF</span> EL PASO RESIDENTS. </h2>
+                        <div class="extra-padding">
+                            <h3>Why Choose Zia Homes?</h3>
 
-                        <p>
-                            Just like ordering a dish that contains all the right flavors, we construct homes with all
-                            the
-                            right
-                            ingredients and the finished product is one you’ll certainly enjoy. Like our saying goes,
-                            we’re
-                            the
-                            cheese to your enchiladas and we say that for a reason!
-                        </p>
+                            <p>The answer is simple. We understand the needs of El Paso residents. Just like ordering a
+                                dish
+                                that contains all the right flavors, we construct homes with all the right ingredients
+                                and
+                                the finished product is one you’ll certainly enjoy. Like our saying goes, we’re the
+                                cheese
+                                to your enchiladas and we say that for a reason!
+                            </p>
 
-                        <p>Our decades of experience as a home builder in the Sun City has given us the ability to test
-                            out
-                            different ingredients, play with design, then share them with the community. We have a keen
-                            understanding of comfort, luxury, and quality. You’ll find that our homes incorporate these
-                            traits
-                            into the aesthetics both indoors and outdoors. From the moment you arrive at your front
-                            driveway
-                            to
-                            walking into the hallway that leads to the living space — we bring to life an opulence that
-                            can
-                            be
-                            felt throughout the entire home. Just like every bite you take should taste delicious, we
-                            believe in
-                            providing that same goodness.</p>
+                            <p>Our decades of experience as a home builder in the Sun City has given us the ability to
+                                test
+                                out different ingredients, play with design, then share them with the community. We have
+                                a
+                                keen understanding of comfort, luxury, and quality. You’ll find that our homes
+                                incorporate
+                                these traits into the aesthetics both indoors and outdoors. From the moment you arrive
+                                at
+                                your front driveway to walking into the hallway that leads to the living space — we
+                                bring to
+                                life an opulence that can be felt throughout the entire home. Just like every bite you
+                                take
+                                should taste delicious, we believe in providing that same goodness.</p>
 
 
-                        <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                            <button class="btn btn-primary">
-                                CHECK OUT OUR FEATURES
-                            </button>
-                        </a>
-
+                            <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                                <button class="btn btn-primary">
+                                    CHECK OUT OUR FEATURES
+                                </button>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col">
-
-
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="ribbon-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col d-flex justify-content-md-start justify-content-center align-items-center">
-                        CONTACT US TODAY! <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                            <button class="btn btn-secondary">
-                                CONTACT US
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </section>
 
 
@@ -513,26 +530,27 @@ Template Name: Home
                     <div class="col">
                     </div>
                     <div class="col">
-                        <h2>YOU KNOW WHAT MAKES US GOOD…
-                            <span class="br-md">HERE’S WHAT MAKES US THE BEST</span>
+                        <div class="extra-padding">
+                            <h3>YOU KNOW WHAT MAKES US GOOD…
+                                <span class="br-md">HERE’S WHAT MAKES US THE BEST</span>
 
-                        </h2>
+                            </h3>
 
-                        <p>
-                            Our secret family recipe consists of building high-quality homes at affordable prices. Once
-                            you
-                            add
-                            in excellent customer service, you have a recipe for success! As a home builder who places
-                            their
-                            future homeowners at the forefront of everything we do, we have plenty of additional
-                            upgrades to
-                            choose from, we guarantee you will find exactly what you’re looking for, plus more! </p>
+                            <p>Our secret family recipe consists of building high-quality homes at affordable prices.
+                                Once
+                                you add in excellent customer service, you have a recipe for success! As a home builder
+                                who
+                                places their future homeowners at the forefront of everything we do, we have plenty of
+                                additional upgrades to choose from, we guarantee you will find exactly what you’re
+                                looking
+                                for, plus more! </p>
 
-                        <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                            <button class="btn btn-primary">
-                                READ OUR FAQ
-                            </button>
-                        </a>
+                            <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                                <button class="btn btn-primary">
+                                    READ OUR FAQ
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -552,24 +570,54 @@ Template Name: Home
 
                             <div class="row slideshow-blog">
 
+                                <!-- <div class="col">
+                                    <div class="mini-card"><img src="<?=IMGURL?>landscaping.jpg" alt="">
+                                        <div class="extra-padding">
+                                            <h3>A Killer <span class="br-md">Appliance Package</span></h3>
+                                            <p>Imagine cooking up a storm with an exquisite stainless-steel appliance
+                                                package. When you close on a home using our valued partner, that’s
+                                                exactly what you’ll get.</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+
                                 <div class="col">
                                     <div class="mini-card"><img src="<?=IMGURL?>landscaping.jpg" alt="">
                                         <div class="extra-padding">
                                             <h3>BEAUTIFUL
                                                 <span class="br-md">LANDSCAPING</span></h3>
                                             <p>At Zia Homes, we believe that a beautiful home begins from the outside
-                                                in.
-                                                Whether
-                                                you
-                                                are
-                                                interested in the addition of grass, trees or rocks, we can customize
-                                                your
-                                                yard
-                                                according to
-                                                your liking. Curb appeal will be heightened to the max! </p>
+                                                in. Whether you are interested in the addition of grass, trees or rocks,
+                                                we can customize your yard according to your liking. Curb appeal will be
+                                                heightened to the max! </p>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- <div class="col">
+                                    <div class="mini-card"><img src="<?=IMGURL?>landscaping.jpg" alt="">
+                                        <div class="extra-padding">
+                                            <h3>The Best Features <span class="br-md">in the Sun City</span></h3>
+                                            <p>Our homes are equipped to include the standard features we believe all
+                                                homeowners should receive in a modern, luxury home. Come see them for
+                                                yourself, today.</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <!-- <div class="col">
+                                    <div class="mini-card"><img src="<?=IMGURL?>partners.jpg" alt="">
+                                        <div class="extra-padding">
+                                            <h3>Energy-Efficient <span class="br-md">Throughout</span></h3>
+                                            <p>Modern homes should take into account the realities of the environment
+                                                and the need for sustainability. When you invest in a home, you’re
+                                                investing in the future and that means the future of your children and
+                                                their community. For those reasons, we attempt to provide
+                                                energy-efficiency throughout our homes, giving you the opportunity to
+                                                reduce costs and better the environment.</p>
+                                        </div>
+                                    </div>
+                                </div> -->
 
                                 <div class="col">
                                     <div class="mini-card"><img src="<?=IMGURL?>partners.jpg" alt="">
@@ -577,16 +625,10 @@ Template Name: Home
                                             <h3>
                                                 A PARTNER WHO
                                                 <span class="br-md">COMMUNICATES</span></h3>
-                                            <p>There’ll be no shortage of emails, phone calls, or text
-                                                message to go around! Because when you choose to work with us, we take
-                                                that
-                                                relationship
-                                                seriously. We’re always attentive to your needs and do our best to
-                                                provide
-                                                you
-                                                with
-                                                answers
-                                                quickly and thoughtfully. </p>
+                                            <p>There’ll be no shortage of emails, phone calls, or text message to go
+                                                around! Because when you choose to work with us, we take that
+                                                relationship seriously. We’re always attentive to your needs and do our
+                                                best to provide you with answers quickly and thoughtfully.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -599,20 +641,27 @@ Template Name: Home
                                                 <span class="br-md">BUYER’S WARRANTY</span>
                                             </h3>
                                             <p>Feel confident knowing the home of your dreams is under warranty. Zia
-                                                Homes
-                                                offers an
-                                                all-inclusive warranty that includes a two-year systems warranty and a
-                                                10
-                                                year
-                                                extended
-                                                warranty. So even if there are hiccups along the way, they will be gone
-                                                in
-                                                no
-                                                time!
+                                                Homes offers an all-inclusive warranty that includes a two-year systems
+                                                warranty and a 10 year extended warranty. So even if there are hiccups
+                                                along the way, they will be gone in no time!
                                             </p>
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- <div class="col">
+                                    <div class="mini-card"><img src="<?=IMGURL?>buyers.jpg" alt="">
+                                        <div class="extra-padding">
+                                            <h3>
+                                                And Best of All, <span class="br-md">Peace of Mind!</span>
+                                            </h3>
+                                            <p>Whether you are moving from an apartment, an older home, or your
+                                                brother’s basement, moving is stressful. We take that stress away by
+                                                ensuring you’re completely satisfied and secure in your decision.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div> -->
                             </div>
 
                             <div class="row row-buttons">
@@ -641,21 +690,13 @@ Template Name: Home
                             <span class="br-md">It’s Waiting To Meet You Too!</span>
                         </h2>
 
-                        <p>
-                            <span class="br-md">We know the excitement can be hard to contain and at the same time, it
-                                can feel extremely</span>
-                            <span class="br-md">overwhelming. But not to worry, as the saying goes, an action is the
-                                solution to fear. At
-                                Zia
-                                Homes,</span>
-                            <span class="br-md">we’ll help guide you in finding the perfect home. Our team will gladly
-                                answer your initial
-                                questions</span>
-                            and guide you down the path of becoming a happy new homeowner. <a
-                                href="tel:
-    9155918153">Give us
-                                a
-                                call today</a>!</p>
+                        <p>We know the excitement can be hard to contain and at the same time, it
+                            can feel extremely overwhelming. But not to worry, as the
+                            saying goes, an action is the solution to fear. At Zia Homes, we’ll help guide you in
+                            finding the perfect home. Our team will gladly
+                            answer your initial questions and guide you down the path of becoming a happy new
+                            homeowner. <a href="tel:
+    9155918153">Give us a call today</a>!</p>
 
 
                         <div id="contact-form">

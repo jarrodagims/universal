@@ -78,8 +78,9 @@
 
 body #main .container article #sidebar {
   width: 356px;
-  padding: 0 0 10em;
+  padding: 0 0;
   margin-left: 105px;
+  margin-bottom: 1em;
 
   h2 {
     color: #333333;
@@ -93,7 +94,6 @@ body #main .container article #sidebar {
     font-size: 10px;
   }
 
-  padding-bottom: 6em;
 
   @include media-breakpoint-down(md) {
     margin-left: 0;

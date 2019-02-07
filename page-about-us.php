@@ -44,7 +44,8 @@ Template Name: About Us
                             </div>
                             <hr />
                         </div>
-                        <div><img class="alignleft size-full wp-image-73" src="<?=IMGURL?>handshake.jpg" alt="" />
+                        <div><img class="alignleft size-full wp-image-73" src="<?=IMGURL?>handshake.jpg" alt=""
+                                width="556" />
                             <h2>Who We Serve</h2>
                             <p>We build homes throughout the entire El Paso area. The majority of our lots are located
                                 on the east side of town with some on the west side as well. Please see our list of
@@ -67,13 +68,16 @@ Template Name: About Us
                 <div class="row">
                     <div class="col">
                         <div class="page-bottom">
-                            <h2>About Zia Homes’ Quality Assurance</h2>
-                            <p>At Zia Homes, we pride ourselves in building a quality home from the ground up. We take
-                                great lengths to ensure every house built has passed a three-phase quality assurance
-                                process. The inspections are conducted by a licensed real estate inspector who is
-                                responsible for providing us with a written report of each inspection. The field
-                                superintendents use this report to correct any defects prior to delivering the house to
-                                the buyers.</p>
+                            <div class="text-center">
+                                <h2>About Zia Homes’ Quality Assurance</h2>
+                                <p>At Zia Homes, we pride ourselves in building a quality home from the ground up. We
+                                    take great lengths to ensure every house built has passed a three-phase quality
+                                    assurance process. The inspections are conducted by a licensed real estate inspector
+                                    who is responsible for providing us with a written report of each inspection. The
+                                    field superintendents use this report to correct any defects prior to delivering the
+                                    house to the buyers.
+                                </p>
+                            </div>
 
                             <div class="highlight-box">
                                 <div class="box-header">

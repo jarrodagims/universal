@@ -261,7 +261,6 @@ function lc_custom_post_Floorplan() {
     'has_archive'       => true,
     'show_in_admin_bar' => true,
     'show_in_nav_menus' => true,
-    'has_archive'       => true,
 	'query_var'         => 'floorplan',
 	'taxonomies'          => array( 'floorplan_categories' )
   );

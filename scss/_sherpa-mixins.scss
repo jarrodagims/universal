@@ -259,13 +259,17 @@ h3 {
      top: -200px;
   }
 
-
   @include media-breakpoint-down(lg) {
-    position: relative;
+      position: relative;
       display: block;
       left: 0;
       top: 0;
       line-height: 1;
       font-size: 80px;
   }
+
+  @include media-breakpoint-down(md) {
+      left: 0.25em;
+  }
+
 }

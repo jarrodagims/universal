@@ -189,6 +189,10 @@
 
   @include media-breakpoint-down(lg) {
 
+     a.contact-us {
+    margin-right: 0;
+  }
+
     height: auto;
     padding-top: 2em;
 
@@ -265,6 +269,13 @@
       margin-left: 0;
       width: 100%;
       font-size: 14px;
+
+     
+
+      td {
+        padding-bottom: 1em;
+        letter-spacing: 3px;
+      }
     }
 
     .brand {
@@ -278,6 +289,10 @@
     .row-buttons {
       padding-top: 2em;
       padding-bottom: 4em;
+
+      .col {
+        padding-left: 15px;
+      }
     }
 
     .full-height {
@@ -306,6 +321,23 @@
   }
 
   @include media-breakpoint-down(md) {
+
+
+    h2 {
+      margin-top: 1em;
+      padding-bottom: .5em;
+    }
+
+    .full-height.col {
+      padding-left: 55px;
+      padding-right: 55px;
+    }
+
+    .number-header {
+      &::before {
+          left: -.25em;
+      }
+    } 
 
     .row {
       padding-bottom: 0;

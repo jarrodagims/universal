@@ -12,20 +12,30 @@
       content: '01';
       position: absolute;
     }
+
+    @include media-breakpoint-down(md) {
+      .extra-padding {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+  
   }
 
-  h2 {
+  h3 {
     @include acumin();
     font-size: 44px;
     position: relative;
     margin-bottom: .5em;
     color: #4D4D4D;
+    text-transform: uppercase;
   }
 
-  h3 {
-    @include acumin();
-    font-size: 19px;
+  .h4 {
+    @include acumin-condensed();
+    font-size: 22px;
     letter-spacing: 0;
+    color: #000;
   }
 
   .col:last-child {
@@ -40,21 +50,20 @@
   }
 
   p {
-    font-size: 14px;
     margin-top: 2em;
   }
-  
 
   @include media-breakpoint-down(lg) {
-    padding-top: 0;
-    padding-bottom: 4em;
-
-    h2 {
-      font-size: 28px;
-      margin-bottom: 1em;
-    }
+    padding-top: 1em;
+    padding-bottom: 3em;
 
     h3 {
+      font-size: 28px; 
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+
+    .h4 {
       font-size: 14px;
       margin-bottom: 1em;
     }
@@ -64,7 +73,7 @@
     }
 
     img {
-      margin-top: 4em;
+      margin-top: 4em; 
     }
   }
 }
