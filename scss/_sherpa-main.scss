@@ -896,31 +896,33 @@ span.brand {
   color: $sherpa-brand-primary;
 }
 
+$navWidth: 80px;
+
 #nav-sidebar {
-  width: 80px;
+  width: $navWidth;
   display: block;
   background: #fdd9d9;
   height: 100%;
   z-index: 999;
-  margin-left: -80px;
+  margin-left: -$navWidth;
 
   > ul.list-unstyled {
     @include bg-gradient(top, $list1);
     height: 100%;
     display: flex;
     flex-direction: column;
-    width: 80px;
+    width: $navWidth;
   }
 
   > ul.list-unstyled > li:first-child {
-    padding: 1.5em 0.5em;
+    padding: 1.5em .5em;
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
 
     > a {
-      margin-right: 0;
+      margin-right: -2px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -995,7 +997,7 @@ span.brand {
   display: flex;
 
   .nav-sidebar {
-    width: 80px;
+    width: $navWidth;
     background: #f4f4f4;
   }
 
@@ -1003,6 +1005,10 @@ span.brand {
     flex-direction: column;
 
     overflow: hidden;
+
+    #nav-sidebar>ul.list-unstyled>li:first-child>a {
+        margin-right: 0;
+    }
 
     .navbar-collapse,
     .navbar-form {
@@ -1018,12 +1024,14 @@ span.brand {
     }
 
     .navbar-toggler {
-      width: 80px;
+      width: $navWidth;
       margin-left: auto;
     }
 
     .navbar-brand {
       z-index: 999;
+
+      
     }
 
     .navbar-brand img {
@@ -1046,7 +1054,7 @@ span.brand {
     }
 
     .navbar-dark .navbar-toggler {
-      width: 80px;
+      width: $navWidth;
       position: relative;
 
       .navbar-toggler-icon {
@@ -1121,7 +1129,7 @@ body.internal {
     .navbar-collapse,
     .navbar-form {
       position: absolute;
-      left: 80px;
+      left: $navWidth;
       width: 200px;
       top: 0;
     }

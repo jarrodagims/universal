@@ -16,7 +16,7 @@ input[type=submit] {
   font-size: 15px;
   font-weight: 600;
   color: $white;
-  border: transparent;
+  border: 0;
   border-radius: 0;
   position: relative;
   z-index: 1;
@@ -27,6 +27,7 @@ input[type=submit] {
   @include acumin();
   letter-spacing: $letterSpacing;
   text-transform: uppercase;
+ 
 
   &:hover,
   &:focus,
