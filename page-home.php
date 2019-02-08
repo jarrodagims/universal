@@ -12,32 +12,31 @@ Template Name: Home
             <?php echo get_template_part('template-parts/navbar'); ?>
             <div class="jumbotron">
                 <div class="jumbo-content">
-                    <div class="h2">Home Builder</div>
-                    <h1>
-                        <div class="fade-down">
-                            <?php if( $h1 = get_field('custom_h1') ) : ?>
+                    <div>
+                        <div class="h2">Home Builder</div>
+                        <h1>
+                            <div class="fade-down">
+                                <?php if( $h1 = get_field('custom_h1') ) : ?>
 
-                            <?php echo $h1 ?>
+                                <?php echo $h1 ?>
 
-                            <?php else : ?>
-                            BUILDING HOMES <span class="br-xs">THAT
-                                <span class="br-md">LOOK ALMOST AS <span class="br-xs">GOOD AS YOU!</span></span></span>
+                                <?php else : ?>
+                                BUILDING HOMES <span class="br-xs">THAT
+                                    <span class="br-md">LOOK ALMOST AS <span class="br-xs">GOOD AS
+                                            YOU!</span></span></span>
 
-                            <?php endif; ?>
-                        </div>
-                    </h1>
+                                <?php endif; ?>
+                            </div>
+                        </h1>
 
-                    <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                        <button class="btn btn-primary">
-                            CONTACT US
-                        </button>
-                    </a>
+                        <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                            <button class="btn btn-primary">
+                                CONTACT US
+                            </button>
+                        </a>
+                    </div>
 
-                    <a href="<?=SITEURL?>/about-us/" class="learn-more">
-                        <button class="btn btn-primary btn-transparent">
-                            Learn More
-                        </button>
-                    </a>
+
                 </div>
             </div>
         </section>

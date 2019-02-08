@@ -115,6 +115,7 @@ $list2:  rgba(219,75,68,1), rgba(206,45,70,1);
 }
 
 @mixin gradient-btn($transparency: 0.75) {
+  @include bg-gradient(left, $list1, $transparency);
   &::before {
     @include bg-gradient(left, $list1, $transparency);
     content: "";
@@ -129,11 +130,11 @@ $list2:  rgba(219,75,68,1), rgba(206,45,70,1);
   }
 
   &:hover {
-    background: darken($sherpa-secondary-color, 10%);
+//     background: darken($sherpa-secondary-color, 10%);
     color: $white;
 
     &::before {
-      opacity: 0;
+      background: rgba(255,255,255,0.17);
     }
   }
 }

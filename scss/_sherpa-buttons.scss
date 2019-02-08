@@ -36,11 +36,11 @@ input[type=submit] {
   &:hover:active,
   &:hover:visited {
     color: $white;
-    background: $sherpa-brand-primary;
+//     background: $sherpa-brand-primary;
 
-    &::after {
-      background: $sherpa-brand-primary;
-    }
+//     &::after {
+//       background: $sherpa-brand-primary;
+//     }
   }
 
   &.btn-default {

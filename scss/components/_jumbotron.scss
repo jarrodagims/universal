@@ -6,14 +6,12 @@
   text-align: center;
   height: 778px;
   margin-bottom: 0;
-  padding-top: 180px;
+//   padding-top: 180px;
 
   h1, .h1 {
     line-height: 1;
     margin-bottom: .5em;
   }
-
-
 
   h2, .h2 {
     @include serif();
@@ -23,7 +21,7 @@
     position: relative;
     text-align: center;
     padding-bottom: .5em;
-    margin-top: auto;
+//     margin-top: auto;
     letter-spacing: -.5px;
 
     &::after {
