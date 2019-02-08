@@ -107,6 +107,29 @@ Animations
     }
   }
 
+  @keyframes grow {
+    0% {
+      wdith: 0;
+    }
+    100% {
+      width: 500px;
+    }
+  }
+
+  .waypoint .jumbotron .h2::after {
+    width: 0;
+    opacity: 0;
+    transition: 3s ease-in-out;
+  }
+
+  .waypoint.active {
+
+    .jumbotron .h2::after {
+      opacity: 1;
+      width: 500px;
+    }
+  }
+
   .icon-row .flex-col {
   }
 
@@ -924,9 +947,29 @@ span.brand {
       justify-content: center;
       align-items: center;
       transition: background 300ms ease-in-out;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(255,255,255,0.17);
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+
+     
 
       &:hover {
-        background: $sherpa-brand-primary;
+
+        &::before {
+          opacity: 1;
+        }
+       
       }
     }
 

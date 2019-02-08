@@ -7,22 +7,24 @@ Template Name: Home
     <div class="nav-sidebar"></div>
 
     <div class="content">
-        <section id="home-module-1" class="home-module-1">
+        <section id="home-module-1" class="home-module-1 waypoint">
 
             <?php echo get_template_part('template-parts/navbar'); ?>
             <div class="jumbotron">
                 <div class="jumbo-content">
                     <div class="h2">Home Builder</div>
                     <h1>
-                        <?php if( $h1 = get_field('custom_h1') ) : ?>
+                        <div class="fade-down">
+                            <?php if( $h1 = get_field('custom_h1') ) : ?>
 
-                        <?php echo $h1 ?>
+                            <?php echo $h1 ?>
 
-                        <?php else : ?>
-                        BUILDING HOMES <span class="br-xs">THAT
-                            <span class="br-md">LOOK ALMOST AS <span class="br-xs">GOOD AS YOU!</span></span></span>
+                            <?php else : ?>
+                            BUILDING HOMES <span class="br-xs">THAT
+                                <span class="br-md">LOOK ALMOST AS <span class="br-xs">GOOD AS YOU!</span></span></span>
 
-                        <?php endif; ?>
+                            <?php endif; ?>
+                        </div>
                     </h1>
 
                     <a href="<?=SITEURL?>/contact-us/" class="contact-us">

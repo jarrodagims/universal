@@ -221,6 +221,19 @@ the right sidebar including social icons address and phone
     width: 100%;
     transition: background 300ms ease-in-out;
 
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: rgba(255,255,255,0.17);
+      opacity: 0;
+      transition: opacity 300ms ease-in-out;
+    }
+
     &:focus {
       outline: none;
       border: none !important;
@@ -230,7 +243,9 @@ the right sidebar including social icons address and phone
     }
 
     &:hover {
-      background: $sherpa-brand-primary;
+      &::before {
+        opacity: 1;
+      }
     }
   }
 
