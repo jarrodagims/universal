@@ -101,7 +101,7 @@ Template Name: Home
                             <?php endif; ?>
 
 
-                            <a href="<?=SITEURL?>/contact-us/" class="contact-us"
+                            <a href="<?=SITEURL?>/about-us/" class="contact-us"
                                 style="-webkit-transform: translateZ(0px);">
                                 <button class="btn btn-primary" style="-webkit-transform: translateZ(0px);">
                                     MORE ABOUT US
@@ -325,7 +325,7 @@ Template Name: Home
                             <?php endif; ?>
 
 
-                            <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                            <a href="<?=SITEURL?>/our-home-features/" class="contact-us">
                                 <button class="btn btn-primary">
                                     CHECK OUT OUR FEATURES
                                 </button>
@@ -334,13 +334,14 @@ Template Name: Home
                     </div>
                     <div class="col">
                     </div>
+                    <img src="<?=IMGURL ?>family-sm.jpg" alt="Why choose Zia Homes" class="d-lg-none " />
         </section>
 
         <section class="ribbon-2">
             <div class="container">
                 <div class="row">
                     <div class="col d-flex justify-content-md-start justify-content-center align-items-center">
-                        CONTACT US TODAY! <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                        <div>CONTACT US TODAY!</div> <a href="<?=SITEURL?>/contact-us/" class="contact-us">
                             <button class="btn btn-secondary">
                                 CONTACT US
                             </button>
@@ -376,7 +377,7 @@ Template Name: Home
                             <?php endif; ?>
 
 
-                            <a href="<?=SITEURL?>/contact-us/" class="contact-us">
+                            <a href="<?=SITEURL?>/real-estate-el-paso/" class="contact-us">
                                 <button class="btn btn-primary">
                                     READ OUR FAQ
                                 </button>
@@ -543,8 +544,7 @@ Template Name: Home
                             overwhelming. But not to worry, as the saying goes, an action is the solution to fear. At
                             Zia Homes, we’ll help guide you in finding the perfect home. Our team will gladly answer
                             your initial questions and guide you down the path of becoming a happy new homeowner. <a
-                                href="tel:
-    9155918153">Give us a call today</a>!</p>
+                                href="tel:<?php printPhone();?>">Give us a call today!</a></p>
 
                         <?php endif; ?>
 
@@ -783,7 +783,14 @@ Template Name: Home
                                     <h3>
                                         CONTACT</h3>
 
-                                    <p>2244 Trawood Dr # 207, El Paso, Tx 79935</p>
+                                    <p><?php if (!empty(get_option('sherpa_business_address'))): ?>
+
+                                        <?=get_option('sherpa_business_address')?>
+
+                                        <?php endif;?>
+                                        <br />
+                                        <a href="tel:<?php printPhone();?>"><?php printPhone();?></a></p>
+
 
                                     <h3>OFFICE HOURS</h3>
 

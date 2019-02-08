@@ -5,6 +5,8 @@
   padding-top: 310px;
   padding-bottom: 160px;
 
+  @include buttonSpacing();
+
   .container {
     position: relative;
 
@@ -24,6 +26,14 @@
   }
 
   @include media-breakpoint-down(md) {
+     padding-bottom: 0; 
+     background: $white;
+     color: #808080;
+
+   h3 {
+      color: #4D4D4D;
+   }
+
     .extra-padding {
       padding-left: 40px;
       padding-right: 40px;
@@ -32,15 +42,30 @@
 
   @include media-breakpoint-down(lg) {
     padding-top: 1em;
-    padding-bottom: 2em;
-    background: $white; 
+   
 
     h3 {
-      color: #4D4D4D;
+     
       font-size: 28px;
       margin-top: 1em;
     }
 
-    color: #808080;
+    img {
+      margin-top: 2em;
+      width: 100%;
+      height: auto;
+    }
+
+//     .row .col {
+//       background: url('../img/family-sm.jpg') 0 0 no-repeat;
+//       background-size: contain;
+//       width: 100%;
+//     }
+
+    .row .col:first-child {
+      background: none;
+    }
+
+    
   }
 }

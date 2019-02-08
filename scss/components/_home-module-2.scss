@@ -3,6 +3,8 @@
   padding-bottom:  168px;
   @include acumin();
   background: #F1F1F1;
+  
+  @include buttonSpacing();
 
   .container {
     position: relative;
@@ -33,9 +35,9 @@
 
   .h4 {
     @include acumin-condensed();
-    font-size: 22px;
+    font-size: 19px;
     letter-spacing: 0;
-    color: #000;
+    color: #808080;
 
      &[aria-expanded="true"] span::after {
         transform: translateY(-50%) rotate(90deg);

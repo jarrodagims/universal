@@ -8,8 +8,8 @@ Template Name: About Us
                 <div class="row">
                     <div class="col">
                         <div class="row reverse">
-                            <div class="col"> <img class="alignnone wp-image-47 size-full"
-                                    src="<?=IMGURL?>bg-chairs.jpg" alt="" width="543" height="624" /></div>
+                            <div class="col"> <img src="<?=IMGURL?>bg-chairs.jpg" alt="" />
+                            </div>
                             <div class="col offset-left">
                                 <?php the_content(); ?>
                             </div>
@@ -46,6 +46,34 @@ Template Name: About Us
                         </div>
                         <div><img class="alignleft size-full wp-image-73" src="<?=IMGURL?>handshake.jpg" alt=""
                                 width="556" />
+                            <h2>Our Mission
+                            </h2>
+
+
+                            <p>Zia Home’s mission is to provide El Pasoans high-quality homes that provide comfortable
+                                and safe living at affordable prices. We strive to be on the cutting edge of home
+                                building and energy codes to bring you the best homes in El Paso, Texas.
+                            </p>
+
+                            <h2>Our Vision
+                            </h2>
+
+
+                            <p>We envision a community where new and seasoned families alike can achieve their goals of
+                                becoming homeowners.
+                            </p>
+
+                            <h2>About Our Employees
+                            </h2>
+
+
+                            <p>You’ll quickly learn that the crew at Zia Homes are some of the nicest, if not the
+                                nicest, group of people you’ll ever meet. We don’t just say this because we like talking
+                                good about ourselves, we genuinely believe in being good-hearted people and it reflects
+                                in our everyday interactions with potential homeowners. Customer service,
+                                professionalism, and diligence are at the core of our business practices.
+                            </p>
+
                             <h2>Who We Serve</h2>
                             <p>We build homes throughout the entire El Paso area. The majority of our lots are located
                                 on the east side of town with some on the west side as well. Please see our list of
@@ -108,10 +136,8 @@ Template Name: About Us
                                 Saturdays by appointment. </p>
                             <h2>Connect With Us Today!</h2>
                             <p>Now that you’ve learned a thing or two about us, we want to get to know you! Please feel
-                                free to shoot us an email at <a
-                                    href="mailto:summuscoordinator@summusrealty.com">summuscoordinator@summusrealty.com</a>
-                                or give us a call at
-                                <a href="tel:915.857.6800">915.857.6800</a>. We look forward to meeting you!</p>
+                                free to give us a call at <a href="tel:<?php printPhone();?>"><?php printPhone();?></a>.
+                                We look forward to meeting you!</p>
                         </div>
                     </div>
                 </div>

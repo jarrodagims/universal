@@ -123,7 +123,6 @@ Animations
   }
 
   .waypoint.active {
-
     .jumbotron .h2::after {
       opacity: 1;
       width: 500px;
@@ -420,7 +419,7 @@ body {
 
           @include media-breakpoint-up(md) {
             height: 305px;
-            margin-top: 2em;
+            margin-top: 6em;
           }
 
           .banner-title {
@@ -664,8 +663,11 @@ body {
         font-weight: 300;
       }
 
+
       h2,
       h3 {
+        margin-top: 0;
+        margin-bottom: .5em;
         font-weight: 400;
 
         &.no-margin {
@@ -738,8 +740,8 @@ body #main {
 
   .banner-bottom {
     width: 100%;
-    margin-bottom: 2em;
-    margin-top: 2em;
+    margin-bottom: 5em;
+    margin-top: 5em;
 
     img {
       width: 100%;
@@ -915,7 +917,7 @@ $navWidth: 80px;
   }
 
   > ul.list-unstyled > li:first-child {
-    padding: 1.5em .5em;
+    padding: 1.5em 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -952,26 +954,22 @@ $navWidth: 80px;
       position: relative;
 
       &::before {
-        content: '';
+        content: "";
         display: block;
         width: 100%;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
-        background: rgba(255,255,255,0.17);
+        background: rgba(255, 255, 255, 0.17);
         opacity: 0;
         transition: opacity 300ms ease-in-out;
       }
 
-     
-
       &:hover {
-
         &::before {
           opacity: 1;
         }
-       
       }
     }
 
@@ -1006,8 +1004,8 @@ $navWidth: 80px;
 
     overflow: hidden;
 
-    #nav-sidebar>ul.list-unstyled>li:first-child>a {
-        margin-right: 0;
+    #nav-sidebar > ul.list-unstyled > li:first-child > a {
+      margin-right: 0;
     }
 
     .navbar-collapse,
@@ -1030,8 +1028,6 @@ $navWidth: 80px;
 
     .navbar-brand {
       z-index: 999;
-
-      
     }
 
     .navbar-brand img {
@@ -1117,13 +1113,12 @@ body.internal {
 }
 
 .page-template-page-home {
-
   .navbar-sherpa {
     outline: none;
-  border: none !important;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
   }
   @include media-breakpoint-up(xl) {
     .navbar-collapse,
@@ -1178,7 +1173,6 @@ body.internal {
     padding-bottom: 1em;
     text-transform: uppercase;
 
-
     p {
       margin-bottom: 0;
       font-size: 30px;
@@ -1200,7 +1194,7 @@ body.internal {
         height: 50%;
         position: absolute;
         display: block;
-        content: '';
+        content: "";
         transform: translateY(-50%);
         top: 50%;
         left: 0;
@@ -1211,7 +1205,7 @@ body.internal {
         height: 50%;
         position: absolute;
         display: block;
-        content: '';
+        content: "";
         transform: translateY(-50%);
         top: 50%;
         right: 0;
@@ -1238,7 +1232,6 @@ body.internal {
   margin-top: 3em;
   margin-bottom: 5em;
 
-
   img.alignnone {
     margin-bottom: 3em !important;
   }
@@ -1261,11 +1254,11 @@ body.internal {
   }
 
   a {
-    margin-top: .5em;
+    margin-top: 0.5em;
     display: block;
     color: #808080;
-    font-size: 15px;
-    @include acumin();
+    font-size: 17px;
+    @include acumin-condensed();
   }
 
   @include media-breakpoint-down(lg) {
@@ -1333,9 +1326,10 @@ ul.floorplan-nav {
   }
 
   .floorplan-bottom {
-    h1, h2 {
+    h1,
+    h2 {
       font-size: 36px;
-      color: #4E4E4E;
+      color: #4e4e4e;
     }
   }
 
@@ -1347,7 +1341,7 @@ ul.floorplan-nav {
     }
 
     h2 {
-      margin-top: .5em;
+      margin-top: 0.5em;
       margin-bottom: 0;
       font-size: 50px;
       color: #000;
@@ -1428,7 +1422,7 @@ ul.floorplan-nav {
       @include bg-gradient(left, $list1);
       color: $white;
       font-size: 26px;
-      padding: .5em 1em;
+      padding: 0.5em 1em;
     }
   }
 
@@ -1528,7 +1522,7 @@ ul.floorplan-nav {
 
       td {
         letter-spacing: $letterSpacing;
-        padding-bottom: .5em;
+        padding-bottom: 0.5em;
       }
     }
 
@@ -1822,7 +1816,7 @@ ul.floorplan-nav {
 
     .more-properties {
       margin-top: 50px;
-      border-top: 1px solid #CBCBCB;
+      border-top: 1px solid #cbcbcb;
       padding-top: 4em;
 
       h2 {
@@ -1862,11 +1856,9 @@ ul.floorplan-nav {
   }
 }
 
-
-
-
 @media screen and (min-width: 1200px) {
-  .sticky-wrapper, #nav-sidebar {
+  .sticky-wrapper,
+  #nav-sidebar {
     height: 778px;
     transition: height 300ms ease-in-out;
   }
@@ -1880,8 +1872,6 @@ ul.floorplan-nav {
   }
 }
 
-
-
 .internal .about-us {
   h1 {
     margin-bottom: 1em;
@@ -1893,7 +1883,8 @@ ul.floorplan-nav {
     text-transform: uppercase;
   }
 
-  img.alignright, img.alignleft {
+  img.alignright,
+  img.alignleft {
     max-width: 100%;
   }
 
@@ -1909,18 +1900,14 @@ ul.floorplan-nav {
       margin-right: auto;
     }
   }
- 
 }
-
 
 .offset-left {
-  p, h2 {
+  p,
+  h2 {
     margin-left: 30px;
   }
-
-  
 }
-
 
 ul.expand {
   font-size: 16px;
@@ -1930,17 +1917,19 @@ ul.expand {
   padding-left: 0;
   margin-left: 0;
 
-
   li {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
 
   @include media-breakpoint-down(lg) {
     text-align: left;
   }
-}  
+}
 
 .expander {
-
   @include expander(red);
+}
+
+.list-columns {
+  column-count: 2;
 }

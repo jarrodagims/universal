@@ -10,15 +10,18 @@
 <!--<![endif]-->
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125707253-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125707253-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-125707253-1');
-</script>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125707253-1');
+    </script>
     <meta charset="<?php bloginfo('charset');?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,67 +37,65 @@
     <?=get_option('sherpa_schema')?>
 
     <?php endif;?>
-	
-	<!-- Default Statcounter code for Zia Homes
+
+    <!-- Default Statcounter code for Zia Homes
 https://zia-elpaso.com/ -->
-<script type="text/javascript">
-var sc_project=11821697; 
-var sc_invisible=1; 
-var sc_security="c5dec5b6"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11821697/0/c5dec5b6/1/" alt="Web
-Analytics"></a></div></noscript>
-<!-- End of Statcounter Code -->
+    <script type="text/javascript">
+    var sc_project = 11821697;
+    var sc_invisible = 1;
+    var sc_security = "c5dec5b6";
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+        <div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img
+                    class="statcounter" src="//c.statcounter.com/11821697/0/c5dec5b6/1/" alt="Web
+Analytics"></a></div>
+    </noscript>
+    <!-- End of Statcounter Code -->
 
-<meta name="google-site-verification" content="jGbAV86opwhXs5aCnXlnR0YfNE85sSschy5p7xX9Uyo" />
+    <meta name="google-site-verification" content="jGbAV86opwhXs5aCnXlnR0YfNE85sSschy5p7xX9Uyo" />
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "GeneralContractor",
-  "name": "Zia Homes",
-  "image": "/wp-content/themes/zia-homes/img/logo.svg",
-  "@id": "",
-  "url": "https://zia-elpaso.com/",
-  "telephone": "915-494-9069",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "2077 N Zaragoza B203",
-    "addressLocality": "El Paso",
-    "addressRegion": "TX",
-    "postalCode": "79938",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 31.7677761,
-    "longitude": -106.26264939999999
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
-    "opens": "09:00",
-    "closes": "17:00"
-  },
-  "sameAs": [
-    "https://www.facebook.com/ziahomes/",
-    "https://twitter.com/zia_homes"
-  ]
-}
-</script>	
-	
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "GeneralContractor",
+        "name": "Zia Homes",
+        "image": "/wp-content/themes/zia-homes/img/logo.svg",
+        "@id": "",
+        "url": "https://zia-elpaso.com/",
+        "telephone": "915-494-9069",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2077 N Zaragoza B203",
+            "addressLocality": "El Paso",
+            "addressRegion": "TX",
+            "postalCode": "79938",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 31.7677761,
+            "longitude": -106.26264939999999
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "09:00",
+            "closes": "17:00"
+        },
+        "sameAs": [
+            "https://www.facebook.com/ziahomes/",
+            "https://twitter.com/zia_homes"
+        ]
+    }
+    </script>
+
 </head>
 
 <body <?php body_class();?>>
@@ -117,7 +118,11 @@ Analytics"></a></div></noscript>
                             width="88" /></a>
                     <?php endif;?>
                     <ul class="nav navbar-nav navbar-right <?php if (!is_front_page()): ?>d-lg-none<?php endif;?>">
-                        <li>2244 TRAWOOD DR # 207, EL PASO, TX 79935</li>
+                        <li><?php if (!empty(get_option('sherpa_business_address'))): ?>
+
+                            <?=get_option('sherpa_business_address')?>
+
+                            <?php endif;?></li>
                         <li><a href="tel:<?php printPhone();?>">PH: <?php printPhone();?></a></li>
                     </ul>
                 </div>
@@ -144,7 +149,11 @@ $sm->showNetworkButtons();
 $sm->setColorType('singleColor');
 ?>
                             <ul class="nav navbar-nav navbar-right">
-                                <li>2244 TRAWOOD DR # 207, EL PASO, TX 79935</li>
+                                <li><?php if (!empty(get_option('sherpa_business_address'))): ?>
+
+                                    <?=get_option('sherpa_business_address')?>
+
+                                    <?php endif;?></li>
                                 <li><a href="tel:<?php printPhone();?>">PH: <?php printPhone();?></a></li>
                             </ul>
                         </div>

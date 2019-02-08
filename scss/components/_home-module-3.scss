@@ -220,6 +220,16 @@
 
   @include media-breakpoint-down(lg) {
 
+    .row-buttons {
+      a.contact-us {
+        margin-left: 1em;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
      a.contact-us {
       margin-right: 0;
     }

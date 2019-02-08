@@ -5,7 +5,8 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
-  
+  @include buttonSpacing();
+
   .container {
     position: relative;
 
@@ -19,16 +20,14 @@
   h3 {
     color: $white;
     font-size: 44px;
-     margin-bottom: .5em;
+    margin-bottom: .5em;
   }
 
    @include media-breakpoint-down(md) {
-      
       .extra-padding {
         padding-left: 40px;
         padding-right: 40px;
       }
-
    }
 
   @include media-breakpoint-down(lg) {
