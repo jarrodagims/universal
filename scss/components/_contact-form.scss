@@ -323,7 +323,7 @@
     textarea {
       background: rgba(203,203,203,0.44);
       border: 0;
-      color: #000;
+      color: #666666;
       padding: 1em;
       margin-bottom: 1.25em;
       transition: all 0.3ms ease-in;
@@ -339,7 +339,7 @@
       }
 
       &::placeholder {
-        color: #000;
+        color: #666666;
         font-weight: normal;
       }
     }

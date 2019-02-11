@@ -38,6 +38,10 @@ function sherpa_frontend_scripts()
         wp_enqueue_script('home_js');
     }
 
+    wp_register_script('map_js', THEMEURL . '/js/map.js', true);
+
+    wp_enqueue_script('map_js');
+
     sherpa_front_and_backend_scripts();
 }
 

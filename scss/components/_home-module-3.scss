@@ -220,9 +220,13 @@
 
   @include media-breakpoint-down(lg) {
 
+    .slide-next {
+      right: 30px;
+    }
+
     .row-buttons {
       a.contact-us {
-        margin-left: 1em;
+        margin-left: .5em;
 
         &:first-child {
           margin-left: 0;
@@ -311,6 +315,19 @@
       width: 100%;
       font-size: 14px;
 
+      tr {
+//         display: flex;
+
+        td:first-child {
+          width: 100%;
+        }
+
+        td:last-child {
+          text-align: left;
+          white-space: nowrap;
+        }
+      }
+
 
       td {
         padding-bottom: 1em;
@@ -371,8 +388,8 @@
     }
 
     .full-height.col {
-      padding-left: 55px;
-      padding-right: 55px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
     .number-header {

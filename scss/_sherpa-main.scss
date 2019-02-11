@@ -1335,6 +1335,8 @@ ul.floorplan-nav {
 
   .floorplan-list {
     @include acumin();
+    margin-bottom: 4em;
+
 
     .row {
       flex-wrap: wrap;
@@ -1459,6 +1461,7 @@ ul.floorplan-nav {
     //   height: 778px;
 
     .floorplan-list {
+
       h2 {
         position: absolute;
         left: 50%;
@@ -1883,10 +1886,10 @@ ul.floorplan-nav {
     text-transform: uppercase;
   }
 
-  img.alignright,
-  img.alignleft {
-    max-width: 100%;
-  }
+//   img.alignright,
+//   img.alignleft {
+//     max-width: 100%;
+//   }
 
   img.alignleft {
     margin-right: 80px;

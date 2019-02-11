@@ -77,16 +77,25 @@
 
 
 body #main .container article #sidebar {
-  width: 356px;
+  width: 420px;
   padding: 0 0;
   margin-left: 105px;
   margin-bottom: 1em;
+
+  #contact-form {
+    margin-bottom: 13.5px;
+  }
+
+  form .form-group {
+    padding-right: 0;
+  }
 
   h2 {
     color: #333333;
     margin-top: 2em;
     font-size: 27px;
     line-height: 1.35em;
+    text-transform: none;
   }
 
   .btn {

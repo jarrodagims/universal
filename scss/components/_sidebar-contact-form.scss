@@ -357,6 +357,12 @@
     padding: 2em;
     display: none !important;
   }
+
+  @include media-breakpoint-down(md) {
+    form .form-group {
+      padding-right: 0;
+    }
+  }
 }
 
 #contact-form {

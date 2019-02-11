@@ -54,6 +54,10 @@ p {
   @include acumin-condensed();
   font-size: 17px;
   margin-bottom: 2em;
+
+  @include media-breakpoint-down(md) {
+    font-size: 15px;
+  }
 }
 
 body {

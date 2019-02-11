@@ -131,8 +131,13 @@ Template Name: About Us
                             </div>
 
                             <h2>Come See Us in Person</h2>
-                            <p>Our main office is located on the east side of town on 2077 N. Zaragoza #B203, El Paso,
-                                TX 79938. We’re happy to assist you Monday through Friday from 9 a.m. to 5 p.m. and on
+                            <p>Our main office is located on the east side of town on
+                                <?php if (!empty(get_option('sherpa_business_address'))): ?>
+
+                                <?=get_option('sherpa_business_address')?>
+
+                                <?php endif;?>. We’re happy to assist you Monday through Friday from 9 a.m. to 5 p.m.
+                                and on
                                 Saturdays by appointment. </p>
                             <h2>Connect With Us Today!</h2>
                             <p>Now that you’ve learned a thing or two about us, we want to get to know you! Please feel

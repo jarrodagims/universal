@@ -19,6 +19,10 @@
   padding: 1em 0;
   letter-spacing: $letterSpacing;
 
+  .col div {
+    margin-top: -3px;
+  }
+
   a {
     margin-left: 1em;
     display: flex;
