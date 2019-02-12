@@ -5,6 +5,59 @@
   padding-top: 200px;
   position: relative;
 
+  .slide-nav-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 200px;
+  }
+
+  .slide-nav-next {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #CBCBCB;
+    width: 50px;
+    height: 100%;
+    cursor: hand;
+    cursor: pointer;
+    z-index: 9999;
+
+    &:hover {
+      background: $sherpa-brand-primary;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 24px;
+      @include svg-chevron();
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      background-repeat: no-repeat;
+    }
+
+  }
+
+//   ul.slide-nav li.cycle-slide-active + li a {
+//     position: relative;
+//     z-index: 1;
+
+//     &::after {
+//       content: '';
+//       @include gradient();
+//       display: block;
+//       width: 100vw;
+//       height: 100%;
+//       position: absolute;
+//       left: 0;
+//       top: 0; 
+//       z-index: -3;
+//     }
+//   }
+
   .slide-next {
     position: absolute;
     width: 20px;
@@ -86,19 +139,37 @@
 //     }
   }
 
+  .slide-nav-container {
+    overflow: hidden;
+    max-width: 100%;
+  }
+
    ul.slide-nav {
     display: flex;
-    @include bg-gradient(top, $list2);
+    background: $sherpa-brand-primary;
+//     @include bg-gradient(top, $list2);
     justify-content: space-between;
     list-style: none;
     padding-left: 0;
     margin-left: 0;
-    margin: 200px 0 0;
+    margin: 0 0;
     color: $white;
     @include acumin();
     font-size: 26px;
     letter-spacing: $letterSpacing;
     overflow: hidden;
+
+    &::after {
+      content: '';
+      @include gradient();
+      display: block;
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      left: 19%;
+      top: 0; 
+      z-index: -1;
+    }
   }
 
   .number-header {
@@ -157,11 +228,13 @@
   
   ul.slide-nav {
     padding-left: 40px;
+    z-index: 0;
   }
  
 
   ul.slide-nav li {
-    width: 20%;
+    width: 100%;
+//width: auto;
     position: relative;
     display: flex;
     border-left: 1px solid $white;
@@ -175,6 +248,7 @@
       font-size: 26px;
       letter-spacing: 6px;
       text-transform: uppercase;
+      display: block;
 
       &:hover {
         background: rgba(255,255,255,0.17);
@@ -182,7 +256,7 @@
       }
   }
 
-  ul.slide-nav li.cycle-pager-active a {
+  ul.slide-nav li.cycle-pager-active a, ul.slide-nav li.cycle-slide-active a {
     color: #CBCBCB;
     background: $white;
 
@@ -192,24 +266,24 @@
       }
   }
 
-  ul.slide-nav li:nth-child(2) {
-    position: relative;
-    z-index: 0;
+//   ul.slide-nav li.cycle-slide-active ~ li {
+//     position: relative;
+//     z-index: 0;
 
-    &::after {
-        content: '';
-        @include gradient();
-        display: block;
-        width: 100vw;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0; 
-        z-index: -1;         
-      }
-  }
+//     &::after {
+//         content: '';
+//         @include gradient();
+//         display: block;
+//         width: 100vw;
+//         height: 100%;
+//         position: absolute;
+//         left: 0;
+//         top: 0; 
+//         z-index: -1;         
+//       }
+//   }
 
-  ul.slide-nav li.cycle-pager-active  {
+  ul.slide-nav li.cycle-pager-active, ul.slide-nav li.cycle-slide-active  {
     border-left: 0;
     background: $white;
     color: $sherpa-brand-primary;
@@ -219,6 +293,60 @@
   }
 
   @include media-breakpoint-down(lg) {
+
+    ul.slide-nav {
+       &::after {
+        left: 19%;
+        z-index: -1;
+      }
+    }
+
+     .slide-nav-container {
+      margin-top: 3em;
+    }
+
+    .slide-nav-next {
+      @include bg-gradient(left, $list2);
+
+
+    $size: 25px;
+
+    &::after {
+      content: '';
+      background: rgba(255,255,255,.27);
+      display: inline-block;
+      margin: 0 1em 1em 0;
+      height: $size * 2;
+      width: $size;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-bottom-right-radius: $size * 2;
+      border-top-right-radius: $size * 2;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 24px;
+      @include svg-chevron();
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+
+    }
+
+      &::before {
+        width: 12px;
+        height: 12px;
+      }
+
+    }
+
 
     .slide-next {
       right: 30px;
@@ -256,7 +384,7 @@
     }
 
 
-    ul.slide-nav li.cycle-pager-active {
+    ul.slide-nav li.cycle-pager-active, ul.slide-nav li.cycle-slide-active {
       position: relative;
 
       &::before {
@@ -271,21 +399,18 @@
     }
 
 
-    ul.slide-nav li:nth-child(2) {
+   
 
-      &::after {
-          top: 3px;      
-        }
-    }
-
+   
     ul.slide-nav {
 //       display: block;
-      margin-top: 2em;
       overflow: hidden;
-      @include bg-gradient(left, $list2);
+      //@include bg-gradient(left, $list2);
       position: relative;
       padding-left: 40px;
-      
+      z-index: 0;
+
+     
 
       &::before {
         content: '';

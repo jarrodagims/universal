@@ -128,8 +128,8 @@
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 540 540"><defs><linearGradient id="e7893eba-85f4-4f90-9eea-876faa156d3d" y1="270" x2="540" y2="270" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#d41620"/><stop offset="0.38" stop-color="#ff3524"/><stop offset="1" stop-color="#a92b27"/></linearGradient></defs><title>svg-ring</title><g id="fc8c60be-8e60-4e6f-8ba8-9e025112a64a" data-name="Layer 2"><g id="b33b13a9-78ae-4547-abc1-b23e5ec5413f" data-name="Layer 7"><path d="M270,540C121.12,540,0,418.88,0,270S121.12,0,270,0,540,121.12,540,270,418.88,540,270,540ZM270,1.34C121.86,1.34,1.34,121.86,1.34,270S121.86,538.66,270,538.66,538.66,418.14,538.66,270,418.14,1.34,270,1.34Z" fill="url(#e7893eba-85f4-4f90-9eea-876faa156d3d)"/></g></g></svg>');
 }
 
-@mixin svg-chevron() {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1463.5 1136.99"><defs><linearGradient id="b2fc1765-c33e-4f80-928c-74724e7c7c84" x1="722.82" y1="-10.8" x2="763.52" y2="1149.51" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1"/></linearGradient></defs><title>Asset 1</title><g id="ee46776b-f72a-40f8-9ed0-eb7c8f47eb78" data-name="Layer 2"><g id="a6186a88-c4e8-445f-adb3-7952f4953bf0" data-name="Layer 1"><polygon points="1121.17 632.74 415 0 0 57 1054.5 1072.07 1120.63 1136.99 1187.85 1072.07 1463.5 796.43 1463.5 430.41 1457.59 298.82 1121.17 632.74" opacity="0.1" fill="url(#b2fc1765-c33e-4f80-928c-74724e7c7c84)"/></g></g></svg>');
+@mixin svg-chevron($color: ffffff) {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.28 24.33"><g id="fd1abc4c-6c75-40f9-9a29-3cd2ccd8c10f" data-name="Layer 2"><g id="b8f4a919-957d-45dd-ae7d-9521be768c91" data-name="Layer 8"><polygon points="0 23.21 1.11 24.33 13.28 12.16 1.11 0 0 1.11 11.05 12.16 0 23.21" fill="%23#{$color}"/></g></g></svg>');
 }
 
 @mixin svg-chevron2() {

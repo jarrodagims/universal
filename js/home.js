@@ -1,16 +1,19 @@
 (function($) {
   $(document).ready(function() {
-    $(".sidebar-link").click(function(e) {
-      e.preventDefault();
+    // $(".sidebar-link").click(function(e) {
+    //   e.preventDefault();
 
-      $("html, body").animate(
-        {
-          scrollTop: $($(this).attr("href")).offset().top
-        },
-        500,
-        "linear"
-      );
-    });
+    //   $("html, body").animate(
+    //     {
+    //       scrollTop: $($(this).attr("href")).offset().top
+    //     },
+    //     500,
+    //     "linear"
+    //   );
+    // });
+
+    //disable logs
+    //$.fn.cycle.log = $.noop;
 
     $(".waypoint").each(function() {
       var self = $(this);
@@ -25,6 +28,7 @@
       });
     });
 
+    //stick nav
     function stickyExample() {
       var $stickyElement = $(".sticky");
 
@@ -37,15 +41,37 @@
 
     stickyExample();
 
+    //main floor plan slideshow
     $(".slideshow").cycle({
-      timeout: 8000,
+      timeout: 0,
       fx: "fade",
       slides: "> div",
       pauseOnHover: "true",
-      pager: ".slide-nav",
+      // pager: ".slide-nav",
       next: ".slide-next",
       pagerTemplate: ""
       // autoHeight: "container"
+    });
+
+    //connect main slideshow to carousel
+    var slideshows = $(".same-slideshow").on("cycle-next cycle-prev", function(
+      e,
+      opts
+    ) {
+      // advance the other slideshow
+      slideshows.not(this).cycle("goto", opts.currSlide);
+    });
+
+    $("ul.slide-nav li a").click(function(event) {
+      event.preventDefault();
+    });
+
+    $("#cycle-2 .cycle-slide").click(function(event) {
+      console.log(this);
+      var index = $("#cycle-2")
+        .data("cycle.API")
+        .getSlideIndex(this);
+      slideshows.cycle("goto", index);
     });
 
     (function() {
@@ -54,6 +80,15 @@
         $(".dropdown-toggle").attr("data-toggle", "hover");
 
         $(".slideshow-blog").cycle("destroy");
+
+        $(".slide-nav").cycle({
+          timeout: 0,
+          fx: "carousel",
+          slides: "> li",
+          next: ".slide-nav-next",
+          carouselVisible: 5,
+          carouselFluid: true
+        });
       };
 
       var mobileFunctions = function() {
@@ -68,6 +103,15 @@
           next: "#slide-blog-nav",
           pagerTemplate: "",
           autoHeight: "container"
+        });
+
+        $(".slide-nav").cycle({
+          timeout: 0,
+          fx: "carousel",
+          slides: "> li",
+          next: ".slide-nav-next",
+          carouselVisible: 3,
+          carouselFluid: true
         });
       };
 

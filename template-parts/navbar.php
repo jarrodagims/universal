@@ -8,40 +8,79 @@
             <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
         </li>
         <li>
-            <a class="sidebar-link" href="#home-module-1" data-target="#home-module-1">
+            <a class="sidebar-link" href="#home-module-2" data-target="#home-module-2">
                 <?php echo get_template_part('template-parts/icons/icon', '1') ?>
             </a>
-
-            <!-- <div class="navbar-collapse collapse show" id="bs-example-navbar-collapse-53" style="">
+            <div class="navbar-collapse collapse show tab">
                 <div class="menu-primary-container">
                     <ul id="menu-primary" class="nav navbar-nav">
                         <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
-                            id="menu-item-11"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item active menu-item-11 nav-item">
-                            <a title="Home" href="http://localhost/wordpress/zia-homes/" class="nav-link">Home</a></li>
+                            id="menu-item-11" class="menu-item current-menu-item active nav-item">
+                            <a title="Home" href="#home-module-2" data-target="#home-module-2" class="nav-link">Welcome
+                                to Zia Homes</a></li>
                     </ul>
                 </div>
-            </div> -->
+            </div>
         </li>
         <li>
             <a class="sidebar-link" href="#home-module-3" data-target="#home-module-3">
                 <?php echo get_template_part('template-parts/icons/icon', '2') ?>
             </a>
+            <div class="navbar-collapse collapse show tab">
+                <div class="menu-primary-container">
+                    <ul id="menu-primary" class="nav navbar-nav">
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-11" class="menu-item current-menu-item active nav-item">
+                            <a title="Home" href="#home-module-3" data-target="#home-module-3" class="nav-link">Floor
+                                plans</a></li>
+                    </ul>
+                </div>
+            </div>
         </li>
         <li>
             <a class="sidebar-link" href="#home-module-4" data-target="#home-module-4">
                 <?php echo get_template_part('template-parts/icons/icon', '3') ?>
             </a>
+            <div class="navbar-collapse collapse show tab">
+                <div class="menu-primary-container">
+                    <ul id="menu-primary" class="nav navbar-nav">
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-11" class="menu-item current-menu-item active nav-item">
+                            <a title="Home" href="#home-module-4" data-target="#home-module-4" class="nav-link">Why
+                                Choose Zia Homes</a></li>
+                    </ul>
+                </div>
+            </div>
         </li>
         <li>
             <a class="sidebar-link" href="#home-module-6" data-target="#home-module-6">
                 <?php echo get_template_part('template-parts/icons/icon', '4') ?>
             </a>
+            <div class="navbar-collapse collapse show tab">
+                <div class="menu-primary-container">
+                    <ul id="menu-primary" class="nav navbar-nav">
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-11" class="menu-item current-menu-item active nav-item">
+                            <a title="Home" href="#home-module-6" data-target="#home-module-6" class="nav-link">What You
+                                Get</a></li>
+                    </ul>
+                </div>
+            </div>
         </li>
         <li>
             <a class="sidebar-link" href="#footer" data-target="#footer">
                 <?php echo get_template_part('template-parts/icons/icon', '5') ?>
             </a>
+            <div class="navbar-collapse collapse show tab">
+                <div class="menu-primary-container">
+                    <ul id="menu-primary" class="nav navbar-nav">
+                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-11" class="menu-item current-menu-item active nav-item">
+                            <a title="Home" href="#footer" data-target="#footer" class="nav-link">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+            </div>
         </li>
     </ul>
 </div>

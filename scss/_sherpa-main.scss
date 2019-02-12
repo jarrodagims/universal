@@ -941,7 +941,7 @@ $navWidth: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.31);
 
     > a {
@@ -965,6 +965,7 @@ $navWidth: 80px;
         opacity: 0;
         transition: opacity 300ms ease-in-out;
       }
+     
 
       &:hover {
         &::before {
@@ -987,6 +988,48 @@ $navWidth: 80px;
 
   .collapsing {
     transition: none !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+#nav-sidebar {
+
+  > ul.list-unstyled > li {
+      .navbar-collapse,
+      .navbar-form {
+        position: absolute;
+        left: $navWidth;
+        width: 200px;
+        top: 0;
+
+        &.tab {
+          height: 100%;
+          display: none;
+          text-align: center;
+          margin: 0 auto;
+          background: #909090;
+          justify-content: center;
+
+          a {
+            flex: 1;
+            height: 100%;
+            color: $white;
+            @include acumin();
+            letter-spacing: $letterSpacing;
+          }
+        }
+      }
+
+      &:hover {
+
+        .navbar-collapse,
+        .navbar-form { 
+          &.tab {
+            display: flex;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -1120,15 +1163,7 @@ body.internal {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
   }
-  @include media-breakpoint-up(xl) {
-    .navbar-collapse,
-    .navbar-form {
-      position: absolute;
-      left: $navWidth;
-      width: 200px;
-      top: 0;
-    }
-  }
+  
 }
 
 .stuck {
