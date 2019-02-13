@@ -178,9 +178,13 @@
     }
   }
 
+  @include media-breakpoint-down(md) {
+    padding-top: 1em;
+  }
+
 
   @include media-breakpoint-down(lg) {
-    padding-top: 1em;
+    
 
    span.number {
      left: -.25em;

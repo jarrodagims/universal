@@ -302,6 +302,8 @@ the right sidebar including social icons address and phone
   .navbar-right {
     justify-content: flex-end;
     color: $white;
+
+    
   }
 
   li {
@@ -332,6 +334,12 @@ the right sidebar including social icons address and phone
     margin-top: 0;
   }
 
+  @include media-breakpoint-between(md, lg) {
+   .navbar-right {
+     padding: .25em 0;
+   }
+  }
+
   @include media-breakpoint-down(lg) {
     margin-bottom: 2em;
   }
@@ -350,4 +358,24 @@ the right sidebar including social icons address and phone
 
 .dropdown-item { 
   letter-spacing: $letterSpacing;
+}
+
+.internal {
+
+  .social-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media {
+    display: flex;
+
+    li {
+      margin-left: 1em;
+      
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
 }

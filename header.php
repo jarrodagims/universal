@@ -117,6 +117,14 @@ Analytics"></a></div>
 ); ?>"
                             width="88" /></a>
                     <?php endif;?>
+                    <?php if (!is_front_page()): ?><div class="d-none d-lg-flex social-container">
+                        <?php
+$sm = new SocialMedia(array('facebook', 'twitter'));
+$sm->setSize('sm');
+$sm->showNetworkButtons();
+$sm->setColorType('singleColor');
+?>
+                    </div><?php endif; ?>
                     <ul class="nav navbar-nav navbar-right <?php if (!is_front_page()): ?>d-lg-none<?php endif;?>">
                         <li><?php if (!empty(get_option('sherpa_business_address'))): ?>
 
@@ -142,12 +150,7 @@ Analytics"></a></div>
                     <div class="col">
                         <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
                         <div class="navbar-right d-none d-lg-flex">
-                            <?php
-$sm = new SocialMedia(array('facebook', 'twitter'));
-$sm->setSize('sm');
-$sm->showNetworkButtons();
-$sm->setColorType('singleColor');
-?>
+
                             <ul class="nav navbar-nav navbar-right">
                                 <li><?php if (!empty(get_option('sherpa_business_address'))): ?>
 

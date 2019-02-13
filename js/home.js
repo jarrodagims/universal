@@ -1,19 +1,19 @@
 (function($) {
   $(document).ready(function() {
-    // $(".sidebar-link").click(function(e) {
-    //   e.preventDefault();
+    $(".sidebar-link").click(function(e) {
+      e.preventDefault();
 
-    //   $("html, body").animate(
-    //     {
-    //       scrollTop: $($(this).attr("href")).offset().top
-    //     },
-    //     500,
-    //     "linear"
-    //   );
-    // });
+      $("html, body").animate(
+        {
+          scrollTop: $($(this).attr("href")).offset().top
+        },
+        500,
+        "linear"
+      );
+    });
 
     //disable logs
-    //$.fn.cycle.log = $.noop;
+    $.fn.cycle.log = $.noop;
 
     $(".waypoint").each(function() {
       var self = $(this);
@@ -62,16 +62,10 @@
       slideshows.not(this).cycle("goto", opts.currSlide);
     });
 
-    $("ul.slide-nav li a").click(function(event) {
-      event.preventDefault();
-    });
-
-    $("#cycle-2 .cycle-slide").click(function(event) {
-      console.log(this);
-      var index = $("#cycle-2")
-        .data("cycle.API")
-        .getSlideIndex(this);
-      slideshows.cycle("goto", index);
+    //cycle main slideshow when clicking list item
+    $("body").on("click", "ul.slide-nav li", function() {
+      var strIndex = $(this).attr("data-hard-index");
+      $(".slideshow").cycle("goto", strIndex);
     });
 
     (function() {
@@ -79,7 +73,9 @@
         //make dropdown hoverable
         $(".dropdown-toggle").attr("data-toggle", "hover");
 
-        $(".slideshow-blog").cycle("destroy");
+        if ($(".slideshow-blog").cycle()) {
+          $(".slideshow-blog").cycle("destroy");
+        }
 
         $(".slide-nav").cycle({
           timeout: 0,
@@ -87,7 +83,8 @@
           slides: "> li",
           next: ".slide-nav-next",
           carouselVisible: 5,
-          carouselFluid: true
+          carouselFluid: true,
+          allowWrap: true
         });
       };
 

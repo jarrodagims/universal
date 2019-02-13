@@ -364,7 +364,11 @@ Template Name: Home
             </div>
 
         </section>
+
+        <?php get_template_part('template-parts/footer','part'); ?>
     </div>
+
+
 </div>
 
 <?php get_footer();?>

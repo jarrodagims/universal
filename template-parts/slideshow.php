@@ -126,12 +126,13 @@ $query = new WP_Query( $tax_post_args );
 
 $posts_per_row = 3;
 $post_counter = 0;
+$count = 0;
 
 if ( $query->have_posts() ) : ?>
 
-        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); $count++; ?>
 
-        <li><a href="#"><?php the_title(); ?></a></li>
+        <li data-hard-index="<?php echo $count - 1; ?>"><a href="javascript:void(0);"><?php the_title(); ?></a></li>
 
 
         <?php endwhile; wp_reset_postdata(); ?>

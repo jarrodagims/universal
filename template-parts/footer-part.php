@@ -1,16 +1,3 @@
-<?php wp_footer();?>
-<?php
-/**
- *
- * DO NOT WRITE JAVASCRIPT HERE
- *
- */
-?>
-
-<?php if (!is_front_page()): ?>
-</div> <!-- end sidebar container -->
-<?php endif;?>
-<?php if (!is_page('contact-us')): ?>
 <section id="footer" class="footer">
     <div class="container">
         <div class="row">
@@ -96,14 +83,3 @@ $sm->setColorType('singleColor');
         </div>
     </div>
 </section>
-<?php endif; ?>
-<div class="sub-footer">
-    &copy; <?php echo date('Y'); ?> Zia Homes | All Rights Reserved
-</div>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-5ozVWQaaSdI_RbSAiSz4A2p509v1IrY&callback=initMap" async
-    defer>
-</script>
-</body>
-
-</html>

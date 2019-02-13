@@ -8,11 +8,7 @@ Template Name: About Us
                 <div class="row">
                     <div class="col">
                         <div class="row reverse">
-                            <div class="col">
-                                <picture>
-                                    <source srcset="<?=IMGURL?>bg-chairs.jpg" media="(min-width: 992px)">
-                                    <img src="<?=IMGURL?>about-sm.jpg" alt="about us" />
-                                </picture>
+                            <div class="col"> <img src="<?=IMGURL?>bg-chairs.jpg" alt="" />
                             </div>
                             <div class="col offset-left">
                                 <?php the_content(); ?>
