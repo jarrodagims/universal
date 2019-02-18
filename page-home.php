@@ -50,10 +50,7 @@ Template Name: Home
 
                             <?php echo $section_1_title ?>
 
-                            <?php else : ?>
-                            <h3>Welcome to Zia Homes — Where Fun, Comfort, and Quality Collide To Bring You the Perfect
-                                Home
-                            </h3>
+
                             <?php endif; ?>
                             <div class="h4 expander" data-toggle="collapse" data-target="#collapse"
                                 aria-expanded="false" aria-controls="collapse"><span>So you’re looking for a new home?
@@ -90,14 +87,6 @@ Template Name: Home
 
                             <?php echo $section_1_text ?>
 
-                            <?php else : ?>
-
-                            <p>Zia Homes considers home building both a joy and a privilege. We incorporate a playful
-                                attitude to make the process of buying a new home one that’s easy to follow and doesn’t
-                                feel stiff or exhausting. <span class="br-xs">Our homes are comfortable and built with
-                                    the quality one should receive in a 21st century home. And most importantly, we keep
-                                    you—the future dweller— at heart in everything we do.</span>
-                            </p>
                             <?php endif; ?>
                             <a href="<?=SITEURL?>/about-us/" class="contact-us"
                                 style="-webkit-transform: translateZ(0px);">
@@ -139,31 +128,6 @@ Template Name: Home
 
                             <?php echo $section_4 ?>
 
-                            <?php else : ?>
-                            <h3>Why Choose Zia Homes?</h3>
-
-                            <p>The answer is simple. We understand the needs of El Paso residents. Just like ordering a
-                                dish
-                                that contains all the right flavors, we construct homes with all the right ingredients
-                                and
-                                the finished product is one you’ll certainly enjoy. Like our saying goes, we’re the
-                                cheese
-                                to your enchiladas and we say that for a reason!
-                            </p>
-
-                            <p>Our decades of experience as a home builder in the Sun City has given us the ability to
-                                test
-                                out different ingredients, play with design, then share them with the community. We have
-                                a
-                                keen understanding of comfort, luxury, and quality. You’ll find that our homes
-                                incorporate
-                                these traits into the aesthetics both indoors and outdoors. From the moment you arrive
-                                at
-                                your front driveway to walking into the hallway that leads to the living space, we
-                                bring to
-                                life an opulence that can be felt throughout the entire home. Just like every bite you
-                                take
-                                should taste delicious, we believe in providing that same goodness.</p>
 
                             <?php endif; ?>
 
@@ -206,16 +170,6 @@ Template Name: Home
 
                             <?php echo $section_3 ?>
 
-                            <?php else : ?>
-                            <h3>YOU KNOW WHAT MAKES US GOOD…
-                                <span class="br-md">HERE’S WHAT MAKES US THE BEST</span>
-                            </h3>
-
-                            <p>Our secret family recipe consists of building high-quality homes at affordable prices.
-                                Once you add in excellent customer service, you have a recipe for success! As a home
-                                builder who places their future homeowners at the forefront of everything we do, we have
-                                plenty of additional upgrades to choose from, we guarantee you will find exactly what
-                                you’re looking for, plus more! </p>
 
                             <?php endif; ?>
 
@@ -245,11 +199,6 @@ Template Name: Home
                             <?php if( $section_5_title = get_field('section_5_title') ) : ?>
 
                             <?php echo $section_5_title ?>
-
-                            <?php else : ?>
-
-                            <h2>HERE’S WHAT YOU GET WHEN <span class="br-xs">YOU CHOOSE ZIA HOMES</span>
-                                <span class="br-md br-xs">AS YOUR HOME BUILDER:</span></h2>
 
                             <?php endif;?>
 

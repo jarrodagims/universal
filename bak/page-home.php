@@ -72,7 +72,7 @@ Template Name: Home
                                     <li>To learn about our warranty, connect with us today.</li>
                                     <li>We take your reviews to heart. Let us know what you like, what you don’t like,
                                         and how we can improve our services.</li>
-                                    <li>Our goal is to receive the highest rating possible from you—the future
+                                    <li>Our goal is to receive the highest rating possible from you — the future
                                         homeowner!
                                     </li>
                                     <li>We can help make your desired upgrades a reality, simply tell us what you have
@@ -96,7 +96,7 @@ Template Name: Home
                                 attitude to make the process of buying a new home one that’s easy to follow and doesn’t
                                 feel stiff or exhausting. <span class="br-xs">Our homes are comfortable and built with
                                     the quality one should receive in a 21st century home. And most importantly, we keep
-                                    you—the future dweller—at heart in everything we do.</span>
+                                    you—the future dweller— at heart in everything we do.</span>
                             </p>
                             <?php endif; ?>
                             <a href="<?=SITEURL?>/about-us/" class="contact-us"
@@ -125,166 +125,7 @@ Template Name: Home
         </section>
 
         <section id="home-module-3" class="home-module-3">
-
-
-
-            <div class="container">
-
-                <div class="slide-next"></div>
-
-                <div class="slideshow">
-
-
-                    <?php  wp_reset_postdata();
-                $paged = get_query_var('paged') ? get_query_var('paged') : 1; //The magic, ternary if statement
-
-
-                // if ( get_query_var('paged') ) $paged = get_query_var('page');
-                // if ( get_query_var('page') ) $paged = get_query_var('page');
-            
-                $tax_post_args = array(
-                            'post_type' => 'floorplan',
-                            'posts_per_page' => 5,
-                            'order' => 'ASC',
-                            'paged' => $paged
-                        );
-                  
-                        $query = new WP_Query( $tax_post_args );
-
-                        $posts_per_row = 3;
-                        $post_counter = 0;
-
-                        if ( $query->have_posts() ) : ?>
-
-                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col full-height">
-                                <div>
-                                    <div class="row">
-                                        <div class="col floor-header number-header">
-                                            <h2>FLOORPLANS</h2>
-                                        </div>
-                                    </div>
-                                    <div class="row full-height">
-                                        <div class="col floor-header">
-                                            <h3><?php the_title(); ?></h3>
-                                        </div>
-                                        <div class="col img-container d-lg-none">
-                                            <?php
-                                        $image = get_field('3d_image');
-                                        if( !empty($image) ): ?>
-                                            <img src="<?php echo $image['url']; ?>"
-                                                alt="<?php echo $image['alt']; ?>" />
-                                            <?php endif; ?>
-                                        </div>
-                                        <div class="col">
-                                            <table class="floorplan" cellpadding="0" cellspacing="0">
-                                                <tr>
-                                                    <td>FLOORPLAN</td>
-                                                    <td><?php echo get_field('floorplan'); ?>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>LIVING AREA
-                                                    </td>
-                                                    <td><?php echo get_field('living_area'); ?>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BEDROOMS
-                                                    </td>
-                                                    <td><?php echo get_field('bedrooms'); ?></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>BATHROOMS
-                                                    </td>
-                                                    <td><?php echo get_field('bathrooms'); ?></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>PRICE
-                                                    </td>
-                                                    <td><span class="brand"><?php echo get_field('price'); ?></span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="row row-buttons">
-                                        <div class="col">
-                                            <a href="<?=SITEURL?>/floor-plans/" class="contact-us">
-                                                <button class="btn btn-primary">
-                                                    VIEW OUR FLOORPLANS
-                                                </button>
-                                            </a>
-
-                                            <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                                                <button class="btn btn-outline">
-                                                    <span>SCHEDULE A TOUR</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col d-none d-lg-block img-container">
-                                <?php
-                                        $image = get_field('3d_image');
-                                        if( !empty($image) ): ?>
-                                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                                <?php endif; ?>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <?php endwhile; wp_reset_postdata(); ?>
-
-                    <!-- show pagination here -->
-                    <?php else : ?>
-
-                    <!-- show 404 error here -->
-                    <?php endif; ?>
-                </div>
-            </div>
-
-
-            <ul class="slide-nav">
-                <?php  wp_reset_postdata();
-                $paged = get_query_var('paged') ? get_query_var('paged') : 1; //The magic, ternary if statement
-
-
-                // if ( get_query_var('paged') ) $paged = get_query_var('page');
-                // if ( get_query_var('page') ) $paged = get_query_var('page');
-            
-                $tax_post_args = array(
-                            'post_type' => 'floorplan',
-                            'posts_per_page' => 5,
-                            'order' => 'ASC',
-                            'paged' => $paged
-                        );
-                  
-                        $query = new WP_Query( $tax_post_args );
-
-                        $posts_per_row = 3;
-                        $post_counter = 0;
-
-                        if ( $query->have_posts() ) : ?>
-
-                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-
-                <li><a href="#"><?php the_title(); ?></a></li>
-
-
-                <?php endwhile; wp_reset_postdata(); ?>
-
-                <!-- show pagination here -->
-                <?php else : ?>
-
-                <!-- show 404 error here -->
-                <?php endif; ?>
-            </ul>
+            <?php get_template_part('template-parts/slideshow'); ?>
         </section>
 
         <section id="home-module-4" class="home-module-4">
@@ -523,7 +364,11 @@ Template Name: Home
             </div>
 
         </section>
+
+        <?php get_template_part('template-parts/footer','part'); ?>
     </div>
+
+
 </div>
 
 <?php get_footer();?>
