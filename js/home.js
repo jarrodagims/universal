@@ -82,6 +82,7 @@
           fx: "carousel",
           slides: "> li",
           next: ".slide-nav-next",
+          prev: ".slide-nav-prev",
           carouselVisible: 5,
           carouselFluid: true,
           allowWrap: true

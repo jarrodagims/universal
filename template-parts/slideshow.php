@@ -108,7 +108,7 @@
         <?php endif; ?>
     </div>
     <div class="slide-next"></div>
-
+    <div class="slide-prev"></div>
 </div>
 <div class="slide-nav-container">
     <ul id="cycle-2" class="slide-nav responsive same-slideshow">
@@ -144,4 +144,5 @@ if ( $query->have_posts() ) : ?>
         <?php endif; ?>
     </ul>
     <div class="slide-nav-next"></div>
+    <div class="slide-nav-prev"></div>
 </div>

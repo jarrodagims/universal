@@ -1,7 +1,6 @@
 .home-module-3 {
   @include acumin();
   color: #000;
-//   height: 778px;
   padding-top: 200px;
   position: relative;
 
@@ -38,29 +37,40 @@
       transform: translateY(-50%) translateX(-50%);
       background-repeat: no-repeat;
     }
-
   }
 
-//   ul.slide-nav li.cycle-slide-active + li a {
-//     position: relative;
-//     z-index: 1;
+  .slide-nav-prev {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #CBCBCB;
+    width: 50px;
+    height: 100%;
+    cursor: hand;
+    cursor: pointer;
+    z-index: 9999;
 
-//     &::after {
-//       content: '';
-//       @include gradient();
-//       display: block;
-//       width: 100vw;
-//       height: 100%;
-//       position: absolute;
-//       left: 0;
-//       top: 0; 
-//       z-index: -3;
-//     }
-//   }
+    &:hover {
+      background: $sherpa-brand-primary;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 13px;
+      height: 24px;
+      @include svg-chevron();
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%) rotate(180deg);
+      background-repeat: no-repeat;
+    }
+  }
 
   .slide-next {
     position: absolute;
-    width: 20px;
+    width: 20px; 
     height: 20px;
     right: 0;
     top: 50%;
@@ -114,7 +124,6 @@
   a.contact-us {
     margin-right: 1em;
   }
- 
 
   .container {
     position: relative;
@@ -150,9 +159,9 @@
 //     @include bg-gradient(top, $list2);
     justify-content: space-between;
     list-style: none;
-    padding-left: 0;
-    margin-left: 0;
+    padding-left: 0; 
     margin: 0 0;
+    margin-left: 50px;
     color: $white;
     @include acumin();
     font-size: 26px;
@@ -306,7 +315,11 @@
       margin-top: 3em;
     }
 
-    .slide-nav-next {
+    .slide-nav-prev {
+      transform: rotate(180deg);
+    }
+
+    .slide-nav-next, .slide-nav-prev {
       @include bg-gradient(left, $list2);
 
 
@@ -398,9 +411,6 @@
         top: 0
       }
     }
-
-
-   
 
    
     ul.slide-nav {
