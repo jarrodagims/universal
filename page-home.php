@@ -13,17 +13,12 @@ Template Name: Home
             <div class="jumbotron">
                 <div class="jumbo-content">
                     <div>
-                        <div class="h2">Home Builder</div>
+                        <div class="h2">Zia Homes</div>
                         <h1>
                             <div class="fade-down">
                                 <?php if( $h1 = get_field('custom_h1') ) : ?>
 
                                 <?php echo $h1 ?>
-
-                                <?php else : ?>
-                                BUILDING HOMES <span class="br-xs">THAT
-                                    <span class="br-md">LOOK ALMOST AS <span class="br-xs">GOOD AS
-                                            YOU!</span></span></span>
 
                                 <?php endif; ?>
                             </div>
@@ -52,7 +47,7 @@ Template Name: Home
 
 
                             <?php endif; ?>
-                            <div class="h4 expander" data-toggle="collapse" data-target="#collapse"
+                            <!-- <div class="h4 expander" data-toggle="collapse" data-target="#collapse"
                                 aria-expanded="false" aria-controls="collapse"><span>So you’re looking for a new home?
                                     Well, you’ve certainly arrived at the right place and we’re so happy you did!</span>
                             </div>
@@ -74,14 +69,17 @@ Template Name: Home
                                     </li>
                                     <li>We can help make your desired upgrades a reality, simply tell us what you have
                                         in mind.</li>
-                                    <li>Be sure to check our Facebook for Open House events.</li>
                                     <li>When it comes to the construction of your home, we’ll guide you through every
                                         step of the way.</li>
                                     <li>Our lots are primarily located on the east side of town, with some on the far
                                         west side.</li>
                                     <li>Come experience our model homes in person!</li>
                                 </ul>
-                            </h2>
+                            </h2> -->
+
+                            <?php if( $section_1_expander = get_field('section_1_expander') ) : ?>
+                            <?php echo $section_1_expander ?>
+                            <?php endif; ?>
 
                             <?php if( $section_1_text = get_field('section_1_text') ) : ?>
 
@@ -218,12 +216,12 @@ Template Name: Home
                                 <div class="col">
                                     <div class="mini-card"><img src="<?=IMGURL?>landscaping.jpg" alt="">
                                         <div class="extra-padding">
-                                            <h3>BEAUTIFUL
-                                                <span class="br-md">LANDSCAPING</span></h3>
-                                            <p>At Zia Homes, we believe that a beautiful home begins from the outside
-                                                in. Whether you are interested in the addition of grass, trees or rocks,
-                                                we can customize your yard according to your liking. Curb appeal will be
-                                                heightened to the max! </p>
+                                            <h3>Energy
+                                                <span class="br-md">Efficient</span></h3>
+                                            <p>At Zia Homes, we love the environment. That's why our homes exceed the
+                                                Energy Star Certification standards in energy efficiency. With state of
+                                                the art spray foam insulation, energy efficient windows, and more, you
+                                                are guaranteed to save on costs.</p>
                                         </div>
                                     </div>
                                 </div>

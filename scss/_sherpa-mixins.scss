@@ -105,7 +105,7 @@
 
 $list1: rgba(245, 137, 65, 1), rgba(206, 45, 70, 1);
 
-$list2:  rgba(219,75,68,1), rgba(206,45,70,1);
+$list2: rgba(219, 75, 68, 1), rgba(206, 45, 70, 1);
 
 @mixin bg-gradient($direction, $list, $transparency: 1) {
   background: -webkit-linear-gradient($direction, $list);
@@ -130,12 +130,12 @@ $list2:  rgba(219,75,68,1), rgba(206,45,70,1);
   }
 
   &:hover {
-//     background: darken($sherpa-secondary-color, 10%);
+    //     background: darken($sherpa-secondary-color, 10%);
     color: $white;
 
     &::before {
       opacity: 1;
-      background: rgba(255,255,255,0.17);
+      background: rgba(255, 255, 255, 0.17);
     }
   }
 }
@@ -151,7 +151,6 @@ $list2:  rgba(219,75,68,1), rgba(206,45,70,1);
 @function _trim($string) {
   @return str-slice(#{$string}, 2, -1);
 }
-
 
 @mixin sm-lighten($color) {
   background-color: $color;
@@ -218,7 +217,8 @@ $list2:  rgba(219,75,68,1), rgba(206,45,70,1);
 h1,
 h2,
 h3 {
-  &.expander {
+  &.expander,
+  .expander {
     @include expander(#ff0000);
   }
 }
@@ -257,28 +257,28 @@ h3 {
   letter-spacing: -2px;
 
   @media screen and (min-width: 1200px) and (max-width: 1600px) {
-     left: 0;
-     top: -200px;
+    left: 0;
+    top: -200px;
   }
 
   @include media-breakpoint-down(lg) {
-      position: relative;
-      display: block;
-      left: 0;
-      top: 0;
-      line-height: 1;
-      font-size: 80px;
+    position: relative;
+    display: block;
+    left: 0;
+    top: 0;
+    line-height: 1;
+    font-size: 80px;
   }
 
   @include media-breakpoint-down(md) {
-      left: 0.25em;
+    left: 0.25em;
   }
 }
 
 @mixin buttonSpacing() {
-//     a.contact-us {
-//     .btn {
-//       margin-top: 2em;
-//       }
-//     }
+  //     a.contact-us {
+  //     .btn {
+  //       margin-top: 2em;
+  //       }
+  //     }
 }

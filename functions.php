@@ -272,34 +272,6 @@ function lc_custom_post_Floorplan() {
 }
  
 
-// function create_floorplan_taxonomies() {
-//     $labels = array(
-//         'name'              => _x( 'Categories', 'taxonomy general name' ),
-//         'singular_name'     => _x( 'Category', 'taxonomy singular name' ),
-//         'search_items'      => __( 'Search Categories' ),
-//         'all_items'         => __( 'All Categories' ),
-//         'parent_item'       => __( 'Parent Category' ),
-//         'parent_item_colon' => __( 'Parent Category:' ),
-//         'edit_item'         => __( 'Edit Category' ),
-//         'update_item'       => __( 'Update Category' ),
-//         'add_new_item'      => __( 'Add New Category' ),
-//         'new_item_name'     => __( 'New Category Name' ),
-//         'menu_name'         => __( 'Categories' ),
-//     );
-
-//     $args = array(
-//         'hierarchical'      => true, // Set this to 'false' for non-hierarchical taxonomy (like tags)
-//         'labels'            => $labels,
-//         'show_ui'           => true,
-//         'show_admin_column' => true,
-//         'query_var'         => true,
-//         'rewrite'           => array( 'slug' => 'categories' ),
-//     ); 
-
-//     register_taxonomy( 'floorplan_categories', array( 'floorplan' ), $args );
-// }
-// add_action( 'init', 'create__taxonomies', 0 );
-
 // hook into the init action and call create_floorplan_taxonomies when it fires
 add_action( 'init', 'create_floorplan_taxonomies', 0 );
 
@@ -331,36 +303,13 @@ function create_floorplan_taxonomies() {
 	);
 
 	register_taxonomy( 'neighborhood', array( 'floorplan' ), $args );
-
-	// // Add new taxonomy, NOT hierarchical (like tags)
-	// $labels = array(
-	// 	'name'                       => _x( 'Writers', 'taxonomy general name', 'textdomain' ),
-	// 	'singular_name'              => _x( 'Writer', 'taxonomy singular name', 'textdomain' ),
-	// 	'search_items'               => __( 'Search Writers', 'textdomain' ),
-	// 	'popular_items'              => __( 'Popular Writers', 'textdomain' ),
-	// 	'all_items'                  => __( 'All Writers', 'textdomain' ),
-	// 	'parent_item'                => null,
-	// 	'parent_item_colon'          => null,
-	// 	'edit_item'                  => __( 'Edit Writer', 'textdomain' ),
-	// 	'update_item'                => __( 'Update Writer', 'textdomain' ),
-	// 	'add_new_item'               => __( 'Add New Writer', 'textdomain' ),
-	// 	'new_item_name'              => __( 'New Writer Name', 'textdomain' ),
-	// 	'separate_items_with_commas' => __( 'Separate writers with commas', 'textdomain' ),
-	// 	'add_or_remove_items'        => __( 'Add or remove writers', 'textdomain' ),
-	// 	'choose_from_most_used'      => __( 'Choose from the most used writers', 'textdomain' ),
-	// 	'not_found'                  => __( 'No writers found.', 'textdomain' ),
-	// 	'menu_name'                  => __( 'Writers', 'textdomain' ),
-	// );
-
-	// $args = array(
-	// 	'hierarchical'          => false,
-	// 	'labels'                => $labels,
-	// 	'show_ui'               => true,
-	// 	'show_admin_column'     => true,
-	// 	'update_count_callback' => '_update_post_term_count',
-	// 	'query_var'             => true,
-	// 	'rewrite'               => array( 'slug' => 'writer' ),
-	// );
-
-	// register_taxonomy( 'writer', 'floorplan', $args );
 }
+
+/* enable uls as children of H tags */
+function override_mce_options($initArray) {
+	$opts = '+h2[ul],+h3[ul],+h1[ul],+h2[id],+div[span]';
+	$initArray['valid_children'] = $opts;
+	$initArray['extended_valid_elements'] = 'span,h2[href],h1[href],h3[href],h2[id],h2[class],h1[id],h1[class],h3[id],h3[class]';
+	return $initArray;
+}
+add_filter('tiny_mce_before_init', 'override_mce_options');

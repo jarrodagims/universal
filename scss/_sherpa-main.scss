@@ -576,13 +576,10 @@ body {
         }
 
         min-height: 10em;
-        
 
         &:not(.col-md-6) {
           padding: 0 0 3em;
         }
-
-        
 
         .blurb {
           font-size: 22px;
@@ -667,23 +664,24 @@ body {
         font-weight: 300;
       }
 
-
       h2,
       h3 {
         margin-top: 0;
-        margin-bottom: .5em;
+        margin-bottom: 0.5em;
         font-weight: 400;
 
         &.no-margin {
           margin: 0 0;
         }
 
-        &.expander {
+        &.expander,
+        .expander {
           margin-bottom: 2.5em;
         }
 
         @include media-breakpoint-down(xs) {
-          &.expander {
+          &.expander,
+          .expander {
             margin-bottom: 2.5em;
             text-align: center;
           }
@@ -691,7 +689,8 @@ body {
       }
 
       @include media-breakpoint-down(md) {
-        h2, h3 {
+        h2,
+        h3 {
           font-size: 19px;
           margin-bottom: 1em;
           margin-top: 1em;
@@ -707,7 +706,8 @@ body {
         text-transform: uppercase;
         margin-top: 1em;
 
-        &.expander {
+        &.expander,
+        .expander {
           @include expander($sherpa-brand-primary);
           color: #000000;
           font-size: 28px;
@@ -982,7 +982,6 @@ $navWidth: 80px;
         opacity: 0;
         transition: opacity 300ms ease-in-out;
       }
-     
 
       &:hover {
         &::before {
@@ -1009,10 +1008,8 @@ $navWidth: 80px;
 }
 
 @include media-breakpoint-up(xl) {
-#nav-sidebar {
-
-  > ul.list-unstyled > li {
-
+  #nav-sidebar {
+    > ul.list-unstyled > li {
       .navbar-collapse,
       .navbar-form {
         position: absolute;
@@ -1028,7 +1025,9 @@ $navWidth: 80px;
           background: #909090;
           justify-content: center;
 
-          ul, li, a {
+          ul,
+          li,
+          a {
             display: flex;
             height: 100%;
             width: 100%;
@@ -1051,9 +1050,8 @@ $navWidth: 80px;
       }
 
       &:hover {
-
         .navbar-collapse,
-        .navbar-form { 
+        .navbar-form {
           &.tab {
             display: flex;
           }
@@ -1158,17 +1156,14 @@ $navWidth: 80px;
       left: 0;
     }
   }
-
- 
 }
-
-
 
 .internal .sidebar-container {
   flex-direction: column;
 
-  @include media-breakpoint-between(lg,xl) {
-    .navbar-collapse, .navbar-form {
+  @include media-breakpoint-between(lg, xl) {
+    .navbar-collapse,
+    .navbar-form {
       top: 0;
       background: transparent;
     }
@@ -1204,7 +1199,6 @@ body.internal {
     -moz-box-shadow: none !important;
     box-shadow: none !important;
   }
-  
 }
 
 .stuck {
@@ -1429,7 +1423,6 @@ ul.floorplan-nav {
     @include acumin();
     margin-bottom: 4em;
 
-
     .row {
       flex-wrap: wrap;
     }
@@ -1553,7 +1546,6 @@ ul.floorplan-nav {
     //   height: 778px;
 
     .floorplan-list {
-
       h2 {
         position: absolute;
         left: 50%;
@@ -1978,22 +1970,21 @@ ul.floorplan-nav {
     text-transform: uppercase;
   }
 
-//   img.alignright,
-//   img.alignleft {
-//     max-width: 100%;
-//   }
+  //   img.alignright,
+  //   img.alignleft {
+  //     max-width: 100%;
+  //   }
 
   img.alignleft {
     margin-right: 80px;
   }
 
   @include media-breakpoint-down(md) {
-
     h1 {
       font-size: 22px;
       text-align: center;
     }
- 
+
     img.alignleft {
       display: block;
       float: none;
@@ -2010,7 +2001,8 @@ ul.floorplan-nav {
   }
 
   @include media-breakpoint-down(lg) {
-    p, h2 {
+    p,
+    h2 {
       margin-left: 0;
     }
   }

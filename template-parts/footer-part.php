@@ -16,9 +16,7 @@
                     <span class="br-md">It’s Waiting To Meet You Too!</span>
                 </h2>
 
-                <p>We know the excitement can be hard to contain and at the same time, it can feel extremely
-                    overwhelming. But not to worry, as the saying goes, an action is the solution to fear. At
-                    Zia Homes, we’ll help guide you in finding the perfect home. Our team will gladly answer
+                <p>At Zia Homes, we’ll help guide you in finding the perfect home. Our team will gladly answer
                     your initial questions and guide you down the path of becoming a happy new homeowner. <a
                         href="tel:<?php printPhone();?>">Give us a call today!</a></p>
 
