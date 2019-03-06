@@ -167,8 +167,13 @@ the right sidebar including social icons address and phone
   margin-left: auto;
   flex-direction: row;
 
+  li {
+    margin-left: 1em;
+  }
+
   a {
     color: $white;
+
   }
 
   ul.social-media {
@@ -189,23 +194,38 @@ the right sidebar including social icons address and phone
     flex-direction: row;
     font-size: 17px;
     letter-spacing: $letterSpacing;
+    
+  }
 
-    li:last-child {
-      margin-left: 1em;
+  @media screen and (max-width: 468px) {
+    a.btn-header {
+      margin-top: 1em;
+      margin-left: 0;
     }
   }
 
-  li:last-child {
-    margin-left: 1em;
-  }
+  
 
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(sm) {
     display: flex;
     margin-left: 0;
-    justify-content: space-between;
+    justify-content: center;
+
+    a {
+      margin-left: 1em;
+    }
+
+    a.btn-header {
+      display: block;
+    }
+
     width: 100%;
     flex-direction: row;
     font-size: 11px;
+
+    li {
+      margin-left: 0;
+    }
   }
 }
 
@@ -362,6 +382,12 @@ the right sidebar including social icons address and phone
 
 .internal {
 
+  @include media-breakpoint-up(sm) {
+    .btn-header {
+      margin-left: 1em;
+    }
+  }
+
   .social-container {
     justify-content: center;
     align-items: center;
@@ -369,6 +395,7 @@ the right sidebar including social icons address and phone
 
   .social-media {
     display: flex;
+    margin-bottom: 0;
 
     li {
       margin-left: 1em;

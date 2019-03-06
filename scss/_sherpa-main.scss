@@ -1458,6 +1458,9 @@ ul.floorplan-nav {
 
       a > div {
         background: #e5e5e5;
+        position: relative;
+        display: flex;
+        flex-direction: column;
         width: 100%;
 
         &.coming-soon {
@@ -1510,6 +1513,7 @@ ul.floorplan-nav {
       color: $white;
       font-size: 26px;
       padding: 0.5em 1em;
+      margin-top: auto;
     }
   }
 
@@ -1573,6 +1577,8 @@ ul.floorplan-nav {
       }
 
       .col {
+      
+
         a {
           display: flex;
           flex: 1;
@@ -1586,7 +1592,7 @@ ul.floorplan-nav {
               transform: translateX(-50%) translateY(-50%);
             }
             div {
-              position: relative;
+
 
               &::before {
                 background: rgba(0, 0, 0, 0.5);
@@ -2031,4 +2037,28 @@ ul.expand {
 
 .list-columns {
   column-count: 2;
+}
+
+.pagination {
+  justify-content: center;
+ 
+  .page-numbers {
+    width: 30px;
+    height: 30px;
+    display: block;
+    @include gradient();
+    text-align: center;
+    color: $white;
+    margin-left: 10px;
+    line-height: 30px;
+  }
+
+  .prev, .next {
+    color: #4e4e4e;
+    background: #E5E5E5;
+  }
+
+  a:first-child, span:first-child {
+    margin-left: 0;
+  }
 }

@@ -112,7 +112,7 @@ function mycustom_wp_footer()
     echo '<script type="text/javascript">';
     echo 'document.addEventListener( \'wpcf7mailsent\', function( event ) {';
     echo 'window.dataLayer.push({
-        "event" : "cf7submission",
+        "event" : "cf7submission", 
         "formId" : event.detail.contactFormId,
         "response" : event.detail.inputs
     });';
@@ -238,8 +238,8 @@ function lc_custom_post_Floorplan() {
  
   // Set the labels, this variable is used in the $args array
   $labels = array(
-    'name'               => __( 'Floorplans' ),
-    'singular_name'      => __( 'Floorplan' ),
+    'name'               => __( 'Floor Plans' ),
+    'singular_name'      => __( 'Floor Plan' ),
     'add_new'            => __( 'Add New Floorplan' ),
     'add_new_item'       => __( 'Add New Floorplan' ),
     'edit_item'          => __( 'Edit Floorplan' ),
@@ -258,7 +258,7 @@ function lc_custom_post_Floorplan() {
     'public'            => true,
     'menu_position'     => 5,
     'supports'          => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'page-attributes' ),
-    'has_archive'       => true,
+    'has_archive'       => 'floor-plans',
     'show_in_admin_bar' => true,
     'show_in_nav_menus' => true,
 	'query_var'         => 'floorplan',
@@ -302,14 +302,35 @@ function create_floorplan_taxonomies() {
 		'rewrite'           => array( 'slug' => 'neighborhood' ),
 	);
 
+	
+
 	register_taxonomy( 'neighborhood', array( 'floorplan' ), $args );
+}
+
+function pagination_bar( $custom_query ) {
+
+    $total_pages = $custom_query->max_num_pages;
+    $big = 999999999; // need an unlikely integer
+
+    if ($total_pages > 1){
+        $current_page = max(1, get_query_var('paged'));
+
+        echo paginate_links(array(
+            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+            'format' => '?paged=%#%',
+            'current' => $current_page,
+			'total' => $total_pages,
+			'prev_text'=> '&lt;',
+			'next_text' => '&gt;'
+        ));
+    }
 }
 
 /* enable uls as children of H tags */
 function override_mce_options($initArray) {
 	$opts = '+h2[ul],+h3[ul],+h1[ul],+h2[id],+div[span]';
 	$initArray['valid_children'] = $opts;
-	$initArray['extended_valid_elements'] = 'span,h2[href],h1[href],h3[href],h2[id],h2[class],h1[id],h1[class],h3[id],h3[class]';
+	$initArray['extended_valid_elements'] = 'span,span[class],h2[href],h1[href],h3[href],h2[id],h2[class],h1[id],h1[class],h3[id],h3[class]';
 	return $initArray;
 }
 add_filter('tiny_mce_before_init', 'override_mce_options');

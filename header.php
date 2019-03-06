@@ -123,15 +123,17 @@ $sm = new SocialMedia(array('facebook', 'twitter'));
 $sm->setSize('sm');
 $sm->showNetworkButtons();
 $sm->setColorType('singleColor');
-?>
+?> <a class="btn-header" href="<?= UPLOADURL ?>/2019/03/Zia-Homes-Status-Sheet-03-04.pdf" target="_blank"><button class="primary btn">View Our Inventory</button></a>
                     </div><?php endif; ?>
                     <ul class="nav navbar-nav navbar-right <?php if (!is_front_page()): ?>d-lg-none<?php endif;?>">
+                        
                         <li><?php if (!empty(get_option('sherpa_business_address'))): ?>
 
                             <?=get_option('sherpa_business_address')?>
 
                             <?php endif;?></li>
                         <li><a href="tel:<?php printPhone();?>">PH: <?php printPhone();?></a></li>
+                        <li><a  class="btn-header" href="<?= UPLOADURL ?>/2019/03/Zia-Homes-Status-Sheet-03-04.pdf" target="_blank"><button class="primary btn">View Our Inventory</button></a></li>
                     </ul>
                 </div>
             </div>
@@ -158,6 +160,7 @@ $sm->setColorType('singleColor');
 
                                     <?php endif;?></li>
                                 <li><a href="tel:<?php printPhone();?>">PH: <?php printPhone();?></a></li>
+                               
                             </ul>
                         </div>
                     </div>

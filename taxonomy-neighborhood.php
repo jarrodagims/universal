@@ -83,9 +83,11 @@ $cat_name = get_queried_object()->name;
                                         <?php the_post_thumbnail(); ?>
 
                                         <h2 class="title"><?php the_title(); ?></h2>
-                                        <span class="sft"><?php echo get_field('sqft'); ?></span>
+                                        <div>
+                                            <span class="sft"><?php echo get_field('sqft'); ?></span>
+                                        </div>
 
-                                        <span class="price"><?php echo get_field('price'); ?></span>
+                                        <span class="price"><?php /*echo get_field('price');*/ ?></span>
 
                                     </div>
                                 </a>

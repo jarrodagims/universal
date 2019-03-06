@@ -64,10 +64,6 @@
 .internal-slideshow {
   overflow: visible !important;
   width: 318px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   position: absolute;
-  //   padding-top: 246px;
 
   .slide-container {
     width: 318px;
@@ -158,58 +154,55 @@
       z-index: 99;
       @include dropshadow();
     }
+  }
 
-    .slide-container {
+  .next {
+    &::before {
+      content: "";
+      width: 22px;
+      height: 22px;
+      display: block;
+      background-repeat: no-repeat;
+      margin: 0 0;
+      position: absolute;
+      background-size: 22px 22px;
+      right: 0;
     }
-  }
-}
 
-.next {
-  &::before {
-    content: "";
     width: 22px;
     height: 22px;
-    display: block;
-    background-repeat: no-repeat;
-    margin: 0 0;
     position: absolute;
-    background-size: 22px 22px;
     right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(270deg);
+    display: block;
+    overflow: hidden;
+    text-indent: -999px;
   }
 
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%) translateX(-50%) rotate(270deg);
-  display: block;
-  overflow: hidden;
-  text-indent: -999px;
-}
+  .prev {
+    &::before {
+      content: "";
+      width: 22px;
+      height: 22px;
+      display: block;
+      background-repeat: no-repeat;
+      margin: 0 0;
+      position: absolute;
+      background-size: 22px 22px;
+      right: 0;
+    }
 
-.prev {
-  &::before {
-    content: "";
     width: 22px;
     height: 22px;
-    display: block;
-    background-repeat: no-repeat;
-    margin: 0 0;
     position: absolute;
-    background-size: 22px 22px;
-    right: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    display: block;
+    overflow: hidden;
+    text-indent: -999px;
   }
-
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%) translateX(-50%) rotate(90deg);
-  display: block;
-  overflow: hidden;
-  text-indent: -999px;
 }
 
 @include media-breakpoint-down(md) {

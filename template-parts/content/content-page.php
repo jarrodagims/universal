@@ -70,11 +70,11 @@
 <div class="banner banner-bottom">
 
 </div>
-<?php if (get_field('page_bottom', $pageid)) { ?>
+<?php if (get_field('page_bottom')) { ?>
 <section class="page-bottom">
     <div class="row">
         <div class="col col-xs-12">
-            <?php echo get_field('page_bottom', $pageid); ?>
+            <?php echo get_field('page_bottom'); ?>
         </div>
     </div>
 </section>

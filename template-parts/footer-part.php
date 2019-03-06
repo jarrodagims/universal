@@ -36,7 +36,7 @@
 
 
             <div class="col map-col">
-                <a href="https://goo.gl/maps/Reg1gJNqpC62" target="_blank">
+                <a href="https://goo.gl/maps/NQXFXAonDLR2" target="_blank">
 
                     <div class="extra-padding">
                         <div id="map" class="map col">

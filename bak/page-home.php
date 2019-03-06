@@ -13,17 +13,12 @@ Template Name: Home
             <div class="jumbotron">
                 <div class="jumbo-content">
                     <div>
-                        <div class="h2">Home Builder</div>
+                        <div class="h2">Zia Homes</div>
                         <h1>
                             <div class="fade-down">
                                 <?php if( $h1 = get_field('custom_h1') ) : ?>
 
                                 <?php echo $h1 ?>
-
-                                <?php else : ?>
-                                BUILDING HOMES <span class="br-xs">THAT
-                                    <span class="br-md">LOOK ALMOST AS <span class="br-xs">GOOD AS
-                                            YOU!</span></span></span>
 
                                 <?php endif; ?>
                             </div>
@@ -50,12 +45,9 @@ Template Name: Home
 
                             <?php echo $section_1_title ?>
 
-                            <?php else : ?>
-                            <h3>Welcome to Zia Homes — Where Fun, Comfort, and Quality Collide To Bring You the Perfect
-                                Home
-                            </h3>
+
                             <?php endif; ?>
-                            <div class="h4 expander" data-toggle="collapse" data-target="#collapse"
+                            <!-- <div class="h4 expander" data-toggle="collapse" data-target="#collapse"
                                 aria-expanded="false" aria-controls="collapse"><span>So you’re looking for a new home?
                                     Well, you’ve certainly arrived at the right place and we’re so happy you did!</span>
                             </div>
@@ -67,7 +59,7 @@ Template Name: Home
                                     <li>As a local builder for over 30 years, we consistently strive for customer
                                         satisfaction.</li>
                                     <li>When it comes to comfort and luxury, you get them both with Zia Homes!</li>
-                                    <li>We do our best to provide custom homes, built with you in mind.</li>
+                                    <li>We do our best to provide homes that are built with you, the future owner, in mind.</li>
                                     <li>Quality is in our DNA.</li>
                                     <li>To learn about our warranty, connect with us today.</li>
                                     <li>We take your reviews to heart. Let us know what you like, what you don’t like,
@@ -77,27 +69,22 @@ Template Name: Home
                                     </li>
                                     <li>We can help make your desired upgrades a reality, simply tell us what you have
                                         in mind.</li>
-                                    <li>Be sure to check our Facebook for Open House events.</li>
                                     <li>When it comes to the construction of your home, we’ll guide you through every
                                         step of the way.</li>
                                     <li>Our lots are primarily located on the east side of town, with some on the far
                                         west side.</li>
                                     <li>Come experience our model homes in person!</li>
                                 </ul>
-                            </h2>
+                            </h2> -->
+
+                            <?php if( $section_1_expander = get_field('section_1_expander') ) : ?>
+                            <?php echo $section_1_expander ?>
+                            <?php endif; ?>
 
                             <?php if( $section_1_text = get_field('section_1_text') ) : ?>
 
                             <?php echo $section_1_text ?>
 
-                            <?php else : ?>
-
-                            <p>Zia Homes considers home building both a joy and a privilege. We incorporate a playful
-                                attitude to make the process of buying a new home one that’s easy to follow and doesn’t
-                                feel stiff or exhausting. <span class="br-xs">Our homes are comfortable and built with
-                                    the quality one should receive in a 21st century home. And most importantly, we keep
-                                    you—the future dweller— at heart in everything we do.</span>
-                            </p>
                             <?php endif; ?>
                             <a href="<?=SITEURL?>/about-us/" class="contact-us"
                                 style="-webkit-transform: translateZ(0px);">
@@ -139,31 +126,6 @@ Template Name: Home
 
                             <?php echo $section_4 ?>
 
-                            <?php else : ?>
-                            <h3>Why Choose Zia Homes?</h3>
-
-                            <p>The answer is simple. We understand the needs of El Paso residents. Just like ordering a
-                                dish
-                                that contains all the right flavors, we construct homes with all the right ingredients
-                                and
-                                the finished product is one you’ll certainly enjoy. Like our saying goes, we’re the
-                                cheese
-                                to your enchiladas and we say that for a reason!
-                            </p>
-
-                            <p>Our decades of experience as a home builder in the Sun City has given us the ability to
-                                test
-                                out different ingredients, play with design, then share them with the community. We have
-                                a
-                                keen understanding of comfort, luxury, and quality. You’ll find that our homes
-                                incorporate
-                                these traits into the aesthetics both indoors and outdoors. From the moment you arrive
-                                at
-                                your front driveway to walking into the hallway that leads to the living space, we
-                                bring to
-                                life an opulence that can be felt throughout the entire home. Just like every bite you
-                                take
-                                should taste delicious, we believe in providing that same goodness.</p>
 
                             <?php endif; ?>
 
@@ -206,16 +168,6 @@ Template Name: Home
 
                             <?php echo $section_3 ?>
 
-                            <?php else : ?>
-                            <h3>YOU KNOW WHAT MAKES US GOOD…
-                                <span class="br-md">HERE’S WHAT MAKES US THE BEST</span>
-                            </h3>
-
-                            <p>Our secret family recipe consists of building high-quality homes at affordable prices.
-                                Once you add in excellent customer service, you have a recipe for success! As a home
-                                builder who places their future homeowners at the forefront of everything we do, we have
-                                plenty of additional upgrades to choose from, we guarantee you will find exactly what
-                                you’re looking for, plus more! </p>
 
                             <?php endif; ?>
 
@@ -246,11 +198,6 @@ Template Name: Home
 
                             <?php echo $section_5_title ?>
 
-                            <?php else : ?>
-
-                            <h2>HERE’S WHAT YOU GET WHEN <span class="br-xs">YOU CHOOSE ZIA HOMES</span>
-                                <span class="br-md br-xs">AS YOUR HOME BUILDER:</span></h2>
-
                             <?php endif;?>
 
                             <div class="row slideshow-blog">
@@ -269,12 +216,12 @@ Template Name: Home
                                 <div class="col">
                                     <div class="mini-card"><img src="<?=IMGURL?>landscaping.jpg" alt="">
                                         <div class="extra-padding">
-                                            <h3>BEAUTIFUL
-                                                <span class="br-md">LANDSCAPING</span></h3>
-                                            <p>At Zia Homes, we believe that a beautiful home begins from the outside
-                                                in. Whether you are interested in the addition of grass, trees or rocks,
-                                                we can customize your yard according to your liking. Curb appeal will be
-                                                heightened to the max! </p>
+                                            <h3>Energy
+                                                <span class="br-md">Efficient</span></h3>
+                                            <p>At Zia Homes, we love the environment. That's why our homes exceed the
+                                                Energy Star Certification standards in energy efficiency. With state of
+                                                the art spray foam insulation, energy efficient windows, and more, you
+                                                are guaranteed to save on costs.</p>
                                         </div>
                                     </div>
                                 </div>

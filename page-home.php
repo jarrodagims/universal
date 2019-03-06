@@ -13,7 +13,7 @@ Template Name: Home
             <div class="jumbotron">
                 <div class="jumbo-content">
                     <div>
-                        <div class="h2">Zia Homes</div>
+                        <div class="h2">Home Builder</div>
                         <h1>
                             <div class="fade-down">
                                 <?php if( $h1 = get_field('custom_h1') ) : ?>
@@ -59,7 +59,7 @@ Template Name: Home
                                     <li>As a local builder for over 30 years, we consistently strive for customer
                                         satisfaction.</li>
                                     <li>When it comes to comfort and luxury, you get them both with Zia Homes!</li>
-                                    <li>We do our best to provide custom homes, built with you in mind.</li>
+                                    <li>We do our best to provide homes that are built with you, the future owner, in mind.</li>
                                     <li>Quality is in our DNA.</li>
                                     <li>To learn about our warranty, connect with us today.</li>
                                     <li>We take your reviews to heart. Let us know what you like, what you don’t like,

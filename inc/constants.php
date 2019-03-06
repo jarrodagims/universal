@@ -4,6 +4,8 @@ define('SITEURL',		get_site_url()					        );
 define('THEMEURL',		get_template_directory_uri()            );
 define('STYLEURL',		get_stylesheet_directory_uri()          );
 define('IMGURL',		get_stylesheet_directory_uri() . '/img/' );
+$upload_dir = wp_upload_dir();
+define('UPLOADURL',		$upload_dir['baseurl']             );
 
 define('FACEBOOK', 		get_option('sherpa_facebook_url')       );
 define('TWITTER', 		get_option('sherpa_twitter_url')        );
