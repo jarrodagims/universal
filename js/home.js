@@ -140,3 +140,9 @@
     })();
   });
 })(jQuery);
+var formTitle;
+switch(event.detail.contactFormId) {
+  case "14567": formTitle = "Contact Form"; 
+  formThank: "thank-you";
+  break;
+  case "14683": formTitle = "Service Requests"; formThank: "thank-you-service";break;default: formTitle = "Contact Form"; formThank: "thank-you";}dataLayer.push({"event": formTitle + " " + "Form Submitted", "cf7.formID": event.detail.contactFormId});0}, false );

@@ -60,12 +60,7 @@
                                                 </td>
                                                 <td><?php echo get_field('bathrooms'); ?></td>
                                             </tr>
-                                            <tr>
-                                                <td>PRICE
-                                                </td>
-                                                <td><span class="brand"><?php echo get_field('price'); ?></span>
-                                                </td>
-                                            </tr>
+
                                         </table>
                                     </div>
                                 </div>
