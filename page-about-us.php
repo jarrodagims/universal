@@ -32,11 +32,11 @@ Template Name: About Us
                                         VIVIANA RONQUILLO <br />CEO
                                     </p> <a href="mailto:ziainc@sbcglobal.net">ziainc@sbcglobal.net</a>
                                 </div>
-                                <div class="col"> <img class="alignnone wp-image-56 size-full" src="<?=IMGURL?>rene.jpg"
-                                        alt="" width="406" height="352" />
+                                <div class="col"> <img class="alignnone wp-image-56 size-full"
+                                        src="<?=IMGURL?>placeholder.png" alt="" width="406" height="352" />
                                     <p>
-                                        RENE BOTELLO <br />MARKETING DIRECTOR
-                                    </p> <a href="mailto:renebotello@summusrealty.com">renebotello@summusrealty.com</a>
+                                        ANDREW RYAN <br />MARKETING DIRECTOR
+                                    </p> <a href="mailto:andrewziahomes@gmail.com">andrewziahomes@gmail.com</a>
                                 </div>
                                 <div class="col"> <img class="alignnone wp-image-57 size-full" src="<?=IMGURL?>ana.jpg"
                                         alt="" width="406" height="352" />

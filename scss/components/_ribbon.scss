@@ -3,6 +3,8 @@
   background-size: cover;
   height: 228px;
 
+  
+
   @include media-breakpoint-down(lg) {
     background: url("../img/bg-ribbon-sm.jpg") right 0 no-repeat;
     background-size: cover;

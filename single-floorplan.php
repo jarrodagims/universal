@@ -1,11 +1,13 @@
 <?php get_header(); ?>
 <section id="main">
     <div class="container">
+
         <div class="row">
             <div class="col">
 
 
                 <div class="container">
+
                     <div class="row">
                         <div class="col">
                             <?php the_content(); ?>
@@ -60,14 +62,19 @@
                                                 </td>
                                                 <td><?php echo get_field('bathrooms'); ?></td>
                                             </tr>
-
+                                            <?php if (get_field('bonus')) : ?>
+                                            <tr>
+                                                <td>BONUS
+                                                </td>
+                                                <td><?php echo get_field('bonus'); ?>
+                                                </td>
+                                            </tr>
+                                            <?php endif; ?>
                                         </table>
                                     </div>
                                 </div>
                                 <div class="row row-buttons">
                                     <div class="col">
-
-
                                         <a href="<?=SITEURL?>/contact-us/" class="contact-us">
                                             <button class="btn btn-primary">
                                                 <span>SCHEDULE A TOUR</span>
@@ -77,6 +84,25 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row pagination-row">
+                        <div class="col">
+                            <?php
+ previous_post_link();
+?>
+                        </div>
+
+                        <div class="col text-center">
+                            <a href="<?=SITEURL?>/floor-plans">All Floor Plans</a>
+                        </div>
+
+                        <div class="col text-right">
+                            <?php
+next_post_link();
+?>
+                        </div>
+
 
                     </div>
 
@@ -94,6 +120,10 @@
                         </div>
 
                         <?php
+                         $terms = get_the_terms( $post->ID , array( 'neighborhood') );
+                         $term = array_shift( $terms );
+
+                         
                         if ( get_query_var('paged') ) $paged = get_query_var('paged');
                         if ( get_query_var('page') ) $paged = get_query_var('page');
                  
@@ -101,7 +131,7 @@
                             array(
                                 'taxonomy' => 'neighborhood',
                                 'field' => 'slug',
-                                'terms' => 'westside'
+                                'terms' => $term->slug
                             )
                             ), ) );
 

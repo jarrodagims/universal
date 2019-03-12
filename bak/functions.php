@@ -258,7 +258,7 @@ function lc_custom_post_Floorplan() {
     'public'            => true,
     'menu_position'     => 5,
     'supports'          => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments', 'custom-fields', 'page-attributes' ),
-    'has_archive'       => 'floorplans',
+    'has_archive'       => 'floor-plans',
     'show_in_admin_bar' => true,
     'show_in_nav_menus' => true,
 	'query_var'         => 'floorplan',
@@ -334,11 +334,3 @@ function override_mce_options($initArray) {
 	return $initArray;
 }
 add_filter('tiny_mce_before_init', 'override_mce_options');
-
-function next_prev_button($post, $dir) {
-
-	if($post) {
-	$prev_title = strip_tags(str_replace('"', '', $post->post_title));
-	echo "\t" . '<a rel="prev" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_title. '" class=" ">' . $dir . '<strong>'. $prev_title . '</strong></a>' . "\n";
-	}
-}
