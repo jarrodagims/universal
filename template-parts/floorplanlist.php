@@ -18,20 +18,15 @@ endif;
                 <h2 class="title"><?php the_title(); ?></h2>
                 <?php the_content(); ?>
                 <span class="sft"><?php echo get_field('sqft'); ?></span>
-
-                <span class="price"><?php echo get_field('price'); ?></span>
-
             </div>
         </a>
         <?php else: ?>
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
             <div class="coming-soon">
-
                 <h2><?php the_title(); ?>
                 </h2>
                 <h3><?php echo get_field('sqft'); ?></h3>
                 <p>COMING SOON</p>
-
             </div>
         </a>
         <?php endif; ?>

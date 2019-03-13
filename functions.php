@@ -330,15 +330,25 @@ function pagination_bar( $custom_query ) {
 function override_mce_options($initArray) {
 	$opts = '+h2[ul],+h3[ul],+h1[ul],+h2[id],+div[span]';
 	$initArray['valid_children'] = $opts;
-	$initArray['extended_valid_elements'] = 'span,span[class],h2[href],h1[href],h3[href],h2[id],h2[class],h1[id],h1[class],h3[id],h3[class]';
+	$initArray['extended_valid_elements'] = 'img[href],span,span[class],h2[href],h1[href],h3[href],h2[id],h2[class],h1[id],h1[class],h3[id],h3[class]';
 	return $initArray;
 }
 add_filter('tiny_mce_before_init', 'override_mce_options');
 
-function next_prev_button($post, $dir) {
 
-	if($post) {
-	$prev_title = strip_tags(str_replace('"', '', $post->post_title));
-	echo "\t" . '<a rel="prev" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_title. '" class=" ">' . $dir . '<strong>'. $prev_title . '</strong></a>' . "\n";
-	}
+function get_first_image() {
+    $attachment = get_children(
+        array(
+            'post_parent'    => get_the_ID(),
+            'post_type'      => 'attachment',
+            'post_mime_type' => 'image',
+            'order'          => 'DESC',
+            'numberposts'    => 1,
+        )
+    );
+    if ( ! is_array( $attachment ) || empty( $attachment ) ) {
+        return;
+    }
+    $attachment = current( $attachment );
+    echo wp_get_attachment_url($attachment->ID,'full');
 }

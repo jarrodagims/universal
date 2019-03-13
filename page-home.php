@@ -47,35 +47,6 @@ Template Name: Home
 
 
                             <?php endif; ?>
-                            <!-- <div class="h4 expander" data-toggle="collapse" data-target="#collapse"
-                                aria-expanded="false" aria-controls="collapse"><span>So you’re looking for a new home?
-                                    Well, you’ve certainly arrived at the right place and we’re so happy you did!</span>
-                            </div>
-                            <h2 class="collapse expand" id="collapse">
-                                <ul class="expand">
-                                    <li>Best modern home builder in the El Paso area since 1985.</li>
-                                    <li>We are a top performing new home builder.</li>
-                                    <li>Our homes are highly-reviewed by current homeowners.</li>
-                                    <li>As a local builder for over 30 years, we consistently strive for customer
-                                        satisfaction.</li>
-                                    <li>When it comes to comfort and luxury, you get them both with Zia Homes!</li>
-                                    <li>We do our best to provide homes that are built with you, the future owner, in mind.</li>
-                                    <li>Quality is in our DNA.</li>
-                                    <li>To learn about our warranty, connect with us today.</li>
-                                    <li>We take your reviews to heart. Let us know what you like, what you don’t like,
-                                        and how we can improve our services.</li>
-                                    <li>Our goal is to receive the highest rating possible from you — the future
-                                        homeowner!
-                                    </li>
-                                    <li>We can help make your desired upgrades a reality, simply tell us what you have
-                                        in mind.</li>
-                                    <li>When it comes to the construction of your home, we’ll guide you through every
-                                        step of the way.</li>
-                                    <li>Our lots are primarily located on the east side of town, with some on the far
-                                        west side.</li>
-                                    <li>Come experience our model homes in person!</li>
-                                </ul>
-                            </h2> -->
 
                             <?php if( $section_1_expander = get_field('section_1_expander') ) : ?>
                             <?php echo $section_1_expander ?>
@@ -125,7 +96,6 @@ Template Name: Home
                             <?php if( $section_4 = get_field('section_4') ) : ?>
 
                             <?php echo $section_4 ?>
-
 
                             <?php endif; ?>
 
@@ -202,16 +172,6 @@ Template Name: Home
 
                             <div class="row slideshow-blog">
 
-                                <!-- <div class="col">
-                                    <div class="mini-card"><img src="<?=IMGURL?>landscaping.jpg" alt="">
-                                        <div class="extra-padding">
-                                            <h3>A Killer <span class="br-md">Appliance Package</span></h3>
-                                            <p>Imagine cooking up a storm with an exquisite stainless-steel appliance
-                                                package. When you close on a home using our valued partner, that’s
-                                                exactly what you’ll get.</p>
-                                        </div>
-                                    </div>
-                                </div> -->
 
                                 <div class="col">
                                     <div class="mini-card"><img src="<?=IMGURL?>landscaping.jpg" alt="">
@@ -225,31 +185,6 @@ Template Name: Home
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- <div class="col">
-                                    <div class="mini-card"><img src="<?=IMGURL?>landscaping.jpg" alt="">
-                                        <div class="extra-padding">
-                                            <h3>The Best Features <span class="br-md">in the Sun City</span></h3>
-                                            <p>Our homes are equipped to include the standard features we believe all
-                                                homeowners should receive in a modern, luxury home. Come see them for
-                                                yourself, today.</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-
-                                <!-- <div class="col">
-                                    <div class="mini-card"><img src="<?=IMGURL?>partners.jpg" alt="">
-                                        <div class="extra-padding">
-                                            <h3>Energy-Efficient <span class="br-md">Throughout</span></h3>
-                                            <p>Modern homes should take into account the realities of the environment
-                                                and the need for sustainability. When you invest in a home, you’re
-                                                investing in the future and that means the future of your children and
-                                                their community. For those reasons, we attempt to provide
-                                                energy-efficiency throughout our homes, giving you the opportunity to
-                                                reduce costs and better the environment.</p>
-                                        </div>
-                                    </div>
-                                </div> -->
 
                                 <div class="col">
                                     <div class="mini-card"><img src="<?=IMGURL?>partners.jpg" alt="">
@@ -281,19 +216,6 @@ Template Name: Home
                                     </div>
                                 </div>
 
-                                <!-- <div class="col">
-                                    <div class="mini-card"><img src="<?=IMGURL?>buyers.jpg" alt="">
-                                        <div class="extra-padding">
-                                            <h3>
-                                                And Best of All, <span class="br-md">Peace of Mind!</span>
-                                            </h3>
-                                            <p>Whether you are moving from an apartment, an older home, or your
-                                                brother’s basement, moving is stressful. We take that stress away by
-                                                ensuring you’re completely satisfied and secure in your decision.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
 
                             <div class="row row-buttons">

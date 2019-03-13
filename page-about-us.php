@@ -33,7 +33,7 @@ Template Name: About Us
                                     </p> <a href="mailto:ziainc@sbcglobal.net">ziainc@sbcglobal.net</a>
                                 </div>
                                 <div class="col"> <img class="alignnone wp-image-56 size-full"
-                                        src="<?=IMGURL?>placeholder.png" alt="" width="406" height="352" />
+                                        src="<?=IMGURL?>andrew.jpg" alt="" width="406" height="352" />
                                     <p>
                                         ANDREW RYAN <br />MARKETING DIRECTOR
                                     </p> <a href="mailto:andrewziahomes@gmail.com">andrewziahomes@gmail.com</a>

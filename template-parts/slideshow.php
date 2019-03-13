@@ -3,7 +3,7 @@
         <?php  wp_reset_postdata();
                 $paged = get_query_var('paged') ? get_query_var('paged') : 1; 
             
-                $tax_post_args = array(
+                        $tax_post_args = array(
                             'post_type' => 'floorplan',
                             'posts_per_page' => 12,
                             'order' => 'ASC',
@@ -14,10 +14,11 @@
 
                         $posts_per_row = 3;
                         $post_counter = 0;
+                        
 
                         if ( $query->have_posts() ) : ?>
 
-        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+        <?php while ( $query->have_posts() ) : $query->the_post(); $post_counter++; ?>
 
         <div class="container">
             <div class="row">
@@ -36,7 +37,9 @@
                                 <?php
                                         $image = get_field('3d_image');
                                         if( !empty($image) ): ?>
-                                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                <img src="<?php echo $image['sizes']['large']; ?>"
+                                    alt="<?php echo $image['alt']; ?>" /></a><img src="<?php echo $image['url']; ?>"
+                                    alt="<?php echo $image['alt']; ?>" />
                                 <?php endif; ?>
                             </div>
                             <div class="col">
@@ -62,12 +65,14 @@
                                         </td>
                                         <td><?php echo get_field('bathrooms'); ?></td>
                                     </tr>
+                                    <?php if (get_field('bonus')) : ?>
                                     <tr>
-                                        <td>PRICE
+                                        <td>BONUS
                                         </td>
-                                        <td><span class="brand"><?php echo get_field('price'); ?></span>
+                                        <td><?php echo get_field('bonus'); ?>
                                         </td>
                                     </tr>
+                                    <?php endif; ?>
                                 </table>
                             </div>
                         </div>
@@ -92,7 +97,29 @@
                     <?php
                                         $image = get_field('3d_image');
                                         if( !empty($image) ): ?>
-                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                    <div class="modal fade" id="myModal<?php echo $post_counter; ?>" tabindex="-1" role="dialog"
+                        aria-hidden="true">
+
+
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle"><?php the_title(); ?>
+                                    </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="<?php echo $image['url']; ?>" alt="Large Image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a data-toggle="modal" data-target="#myModal<?php echo $post_counter; ?>"><img
+                            src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
                     <?php endif; ?>
                 </div>
             </div>

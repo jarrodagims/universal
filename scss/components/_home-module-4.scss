@@ -25,10 +25,10 @@
     margin-bottom: .5em;
   }
 
-  @media screen and (max-width: 1800px) {
+  @media screen and (min-width: 1800px) {
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 0; 
   }
 
   @include media-breakpoint-down(md) {

@@ -13,7 +13,7 @@ Template Name: Home
             <div class="jumbotron">
                 <div class="jumbo-content">
                     <div>
-                        <div class="h2">Zia Homes</div>
+                        <div class="h2">Home Builder</div>
                         <h1>
                             <div class="fade-down">
                                 <?php if( $h1 = get_field('custom_h1') ) : ?>
