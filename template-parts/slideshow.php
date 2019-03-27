@@ -7,7 +7,8 @@
                             'post_type' => 'floorplan',
                             'posts_per_page' => 12,
                             'order' => 'ASC',
-                            'paged' => $paged
+                            'paged' => $paged,
+                            'post__not_in' => array(2877,2878),
                         );
                   
                         $query = new WP_Query( $tax_post_args );
@@ -125,7 +126,8 @@ $tax_post_args = array(
 'post_type' => 'floorplan',
 'posts_per_page' => 12,
 'order' => 'ASC',
-'paged' => $paged
+'paged' => $paged,
+'post__not_in' => array(2877,2878),
 );
 
 $query = new WP_Query( $tax_post_args );
