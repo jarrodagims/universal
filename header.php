@@ -95,7 +95,6 @@ Analytics"></a></div>
         ]
     }
     </script>
-
 </head>
 
 <body <?php body_class();?>>

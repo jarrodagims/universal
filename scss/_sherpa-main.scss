@@ -1314,13 +1314,18 @@ body.internal {
   h2 {
     margin-bottom: 0;
     font-size: 44px;
-  }
+  } 
 
   p {
     letter-spacing: 4px;
     font-size: 22px;
     line-height: 1.25;
     color: #000000;
+    text-transform: uppercase;
+
+    a {
+      text-transform: lowercase;
+    }
   }
 
   a {
@@ -1443,16 +1448,19 @@ ul.floorplan-nav {
       text-align: center;
       display: flex;
       max-width: 33.33%;
+      justify-content: center;
 
       > a {
         display: flex;
         width: 100%;
         height: 100%;
+        text-transform: uppercase;
 
         .sft {
           color: #606060;
           letter-spacing: $letterSpacing;
           margin-top: 0;
+          text-transform: uppercase;
         }
       }
 
@@ -1472,6 +1480,7 @@ ul.floorplan-nav {
           flex-direction: column;
           overflow: hidden;
 
+
           h2 a {
             color: $white;
           }
@@ -1483,6 +1492,7 @@ ul.floorplan-nav {
 
           h2 {
             color: $white;
+            text-align: center;
           }
 
           p {
@@ -1558,6 +1568,7 @@ ul.floorplan-nav {
         transform: translateX(-50%) translateY(100px);
         color: $white;
         text-transform: uppercase;
+        text-align: center; 
         opacity: 0;
         transition: all 300ms ease-in-out;
       }
@@ -1574,10 +1585,13 @@ ul.floorplan-nav {
           display: block;
           opacity: 1;
           transform: translateX(-50%) translateY(-50%);
+          text-align: center; 
         }
       }
 
       .col {
+        justify-content: center; 
+        
         a {
           display: flex;
           flex: 1;
@@ -1585,6 +1599,7 @@ ul.floorplan-nav {
           width: 100%;
           overflow: hidden;
           position: relative;
+          justify-content: center; 
 
           &:hover {
             h2 {
@@ -1649,6 +1664,7 @@ ul.floorplan-nav {
         height: 100%;
         align-items: center;
         display: flex;
+
 
         > .row {
           display: flex;
@@ -2064,6 +2080,10 @@ ul.expand {
   }
 }
 
+.row.pagination-row {
+  padding-top: 20px;
+}
+
 @include media-breakpoint-down(lg) {
   .row.pagination-row {
     flex-direction: row;
@@ -2094,4 +2114,9 @@ ul.expand {
 a[data-toggle="modal"] {
   cursor: hand;
   cursor: pointer;
+}
+
+
+.floorplan-template-default #main .img-container .modal-content img {
+  height: auto;
 }

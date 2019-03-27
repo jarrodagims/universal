@@ -37,9 +37,8 @@
                                 <?php
                                         $image = get_field('3d_image');
                                         if( !empty($image) ): ?>
-                                <img src="<?php echo $image['sizes']['large']; ?>"
-                                    alt="<?php echo $image['alt']; ?>" /></a><img src="<?php echo $image['url']; ?>"
-                                    alt="<?php echo $image['alt']; ?>" />
+                                <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['sizes']['large']; ?>"
+                                        alt="<?php echo $image['alt']; ?>" /></a>
                                 <?php endif; ?>
                             </div>
                             <div class="col">
@@ -78,7 +77,7 @@
                         </div>
                         <div class="row row-buttons">
                             <div class="col">
-                                <a href="<?=SITEURL?>/floor-plans/" class="contact-us">
+                                <a href="<?= SITEURL ?>/floor-plans/" class="contact-us">
                                     <button class="btn btn-primary">
                                         VIEW OUR FLOOR PLANS
                                     </button>
@@ -98,28 +97,8 @@
                                         $image = get_field('3d_image');
                                         if( !empty($image) ): ?>
 
-                    <div class="modal fade" id="myModal<?php echo $post_counter; ?>" tabindex="-1" role="dialog"
-                        aria-hidden="true">
-
-
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLongTitle"><?php the_title(); ?>
-                                    </h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <img src="<?php echo $image['url']; ?>" alt="Large Image" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a data-toggle="modal" data-target="#myModal<?php echo $post_counter; ?>"><img
-                            src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+                    <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['url']; ?>"
+                            alt="<?php echo $image['alt']; ?>" /></a>
                     <?php endif; ?>
                 </div>
             </div>

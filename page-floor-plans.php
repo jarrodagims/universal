@@ -3,14 +3,7 @@
     Template Name: Floorplans
 */
 ?><?php get_template_part('template-parts/page/page', 'top-banner'); ?>
-<section id="main" class="floorplans">
-    <article>
-        <div class="content page-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-
-                        <?php 
+<?php 
                             $taxonomy     = 'neighborhood';
                             $orderby      = 'name'; 
                             $show_count   = false;
@@ -26,12 +19,22 @@
                             'title_li'     => $title
                             );
                         ?>
+<section id="main" class="floorplans">
+    <article>
+        <div class="content page-content">
 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
                         <ul class="list-inline floorplan-nav">
                             <?php wp_list_categories( $args ); ?>
                         </ul>
-
-
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
                         <?php
                         $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;; //The magic, ternary if statement
                  
@@ -73,15 +76,11 @@
                                     </div>
                                 </a>
                                 <?php else: ?>
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                <a href="#" style="pointer-events: none;" title="<?php the_title_attribute(); ?>">
                                     <div class="coming-soon">
-
-                                        <h2><?php the_title(); ?>
-                                        </h2>
+                                        <h2><?php the_title(); ?></h2>
                                         <h3><?php echo get_field('sqft'); ?></h3>
-                                        <p>
-                                            COMING SOON</p>
-
+                                        <p>COMING SOON</p>
                                     </div>
                                 </a>
                                 <?php endif; ?>

@@ -30,7 +30,7 @@ Template Name: About Us
                                         src="<?=IMGURL?>viviana.jpg" alt="" width="406" height="352" />
                                     <p>
                                         VIVIANA RONQUILLO <br />CEO
-                                    </p> <a href="mailto:ziainc@sbcglobal.net">ziainc@sbcglobal.net</a>
+                                    </p> <a href="mailto:ziahomesofelpaso@gmail.com">ziahomesofelpaso@gmail.com</a>
                                 </div>
                                 <div class="col"> <img class="alignnone wp-image-56 size-full"
                                         src="<?=IMGURL?>andrew.jpg" alt="" width="406" height="352" />
@@ -44,6 +44,23 @@ Template Name: About Us
                                         ANA HERNANDEZ <br />SOCIAL MEDIA MANAGER
                                     </p> <a
                                         href="mailto:anahernandez@summusrealty.com">anahernandez@summusrealty.com</a>
+                                </div>
+                            </div>
+                            <div class="d-flex row text-center img-row">
+                                <div class="col"> <img class="alignnone wp-image-54 size-full"
+                                        src="<?=IMGURL?>natasha-noylis.jpg" alt="" width="406" height="352" />
+                                    <p>Natasha Noylis <br />Client Success Coordinator</p> <a
+                                        href="mailto:tasha.ziahomes@gmail.com">tasha.ziahomes@gmail.com</a>
+                                </div>
+                                <div class="col"> <img class="alignnone wp-image-56 size-full"
+                                        src="<?=IMGURL?>erica-maravilla.jpg" alt="" width="406" height="352" />
+                                    <p>Erica Maravilla <br />Customer Liaison</p> <a
+                                        href="mailto:ericamaravilla76@gmail.com">ericamaravilla76@gmail.com</a>
+                                </div>
+                                <div class="col"> <img class="alignnone wp-image-57 size-full"
+                                        src="<?=IMGURL?>john-etienne.jpg" alt="" width="406" height="352" />
+                                    <p>John Etienne <br />Sales Manager</p> <a
+                                        href="mailto:johnziahomes@gmail.com">johnziahomes@gmail.com</a>
                                 </div>
                             </div>
                         </div>

@@ -197,11 +197,10 @@ next_post_link();
                                     </div>
                                 </a>
                                 <?php else: ?>
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                <a href="#" style="pointer-events: none;" title="<?php the_title_attribute(); ?>">
                                     <div class="coming-soon">
 
-                                        <h2><?php the_title(); ?>
-                                        </h2>
+                                        <h2><?php the_title(); ?></h2>
 
                                     </div>
                                 </a>
