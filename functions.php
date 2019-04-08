@@ -352,3 +352,6 @@ function get_first_image() {
     $attachment = current( $attachment );
     echo wp_get_attachment_url($attachment->ID,'full');
 }
+
+// Disable use XML-RPC
+add_filter( 'xmlrpc_enabled', '__return_false' );

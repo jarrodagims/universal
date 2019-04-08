@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col">
                         <?php
-                        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;; //The magic, ternary if statement
+                        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; //The magic, ternary if statement
                  
                         $query = new WP_Query( array('order' => 'ASC', 'posts_per_page' => 50, 'post_type' => 'floorplan', 'paged' => $paged ) );
 
@@ -72,7 +72,6 @@
                                         <span class="price">
                                             <?php /*echo get_field('price');*/ ?>
                                         </span>
-
                                     </div>
                                 </a>
                                 <?php else: ?>
