@@ -38,14 +38,8 @@
                                 <?php
                                         $image = get_field('3d_image');
                                         if( !empty($image) ): ?>
-                                <a href="<?php the_permalink(); ?>">
-                                    <picture>
-                                        <source srcset="<?php echo $image['sizes']['large']; ?>"
-                                            media="(min-width: 992px)">
-                                        <img src="<?php echo $image['sizes']['medium_large']; ?>"
-                                            alt="<?php echo $image['alt']; ?>" />
-                                    </picture>
-                                </a>
+                                <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['sizes']['large']; ?>"
+                                        alt="<?php echo $image['alt']; ?>" /></a>
                                 <?php endif; ?>
                             </div>
                             <div class="col">
@@ -104,13 +98,8 @@
                                         $image = get_field('3d_image');
                                         if( !empty($image) ): ?>
 
-                    <a href="<?php the_permalink(); ?>">
-                        <picture>
-                            <source srcset="<?php echo $image['sizes']['large']; ?>" media="(min-width: 992px)">
-                            <img src="<?php echo $image['sizes']['medium_large']; ?>"
-                                alt="<?php echo $image['alt']; ?>" />
-                        </picture>
-                    </a>
+                    <a href="<?php the_permalink(); ?>"><img src="<?php echo $image['url']; ?>"
+                            alt="<?php echo $image['alt']; ?>" /></a>
                     <?php endif; ?>
                 </div>
             </div>
