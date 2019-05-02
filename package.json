@@ -6,7 +6,7 @@
   "dependencies": {
     "deep-extend": "^0.6.0",
     "imagemin": "^5.3.1",
-    "imagemin-pngcrush": "^5.1.0",
+    "imagemin-pngcrush": "^6.0.0",
     "minimatch": "^3.0.4",
     "postcss": "^6.0.23",
     "postcss-cli-simple": "^1.0.4",

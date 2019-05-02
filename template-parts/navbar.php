@@ -1,9 +1,6 @@
 <div id="nav-sidebar" class="sticky">
     <ul class="list-unstyled">
-        <li><a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg"
-                    alt="<?php echo get_bloginfo(
-    'description'
-); ?>" width="88" /></a></li>
+
         <li>
             <?php echo responsive_bs_menu('primary', 'left', SITENAME); ?>
         </li>
