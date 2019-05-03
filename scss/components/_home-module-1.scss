@@ -54,6 +54,8 @@
     
 
     li {
+      @include montserrat();
+      
       a {
         color: #1A1A1A;
 

@@ -198,7 +198,7 @@ $list2: rgba(219, 75, 68, 1), rgba(206, 45, 70, 1);
     position: relative;
     padding-right: calc(20px + 0.5em);
     &::after {
-      @include svg-arrow(_trim(#cccccc));
+      @include svg-arrow(_trim(#B2B2B2));
       content: "";
       display: block;
       height: 20px;

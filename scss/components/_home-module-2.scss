@@ -9,11 +9,7 @@
   .container {
     position: relative;
 
-    &::before {
-      @include numberTag();
-      content: '01';
-      position: absolute;
-    }
+   
 
     @include media-breakpoint-down(md) {
       .extra-padding {

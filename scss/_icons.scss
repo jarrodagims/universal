@@ -22,10 +22,10 @@
   }
 }
 
-@mixin svg-arrow($color) {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><g id="f919258c-55bf-4ce0-a728-bcda8b449ced" data-name="Layer 2"><g id="e1d1a3ef-9b9e-4025-87c1-5feaf4a68942" data-name="Layer 4"><path d="M11,0A11,11,0,1,0,22,11,11,11,0,0,0,11,0Zm0,1.74A9.26,9.26,0,1,1,1.74,11,9.27,9.27,0,0,1,11,1.74Z" fill="%23ccc"/><polygon points="9.04 17.21 15.25 11 9.04 4.79 7.91 5.93 12.97 11 7.91 16.07 9.04 17.21" fill="%23ccc"/></g></g></svg>');
-  background-repeat: no-repeat;
-}
+// @mixin svg-arrow($color) {
+//   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><g id="f919258c-55bf-4ce0-a728-bcda8b449ced" data-name="Layer 2"><g id="e1d1a3ef-9b9e-4025-87c1-5feaf4a68942" data-name="Layer 4"><path d="M11,0A11,11,0,1,0,22,11,11,11,0,0,0,11,0Zm0,1.74A9.26,9.26,0,1,1,1.74,11,9.27,9.27,0,0,1,11,1.74Z" fill="%23ccc"/><polygon points="9.04 17.21 15.25 11 9.04 4.79 7.91 5.93 12.97 11 7.91 16.07 9.04 17.21" fill="%23ccc"/></g></g></svg>');
+//   background-repeat: no-repeat;
+// }
 
 @mixin svg-arrow-hover($color) {
   background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -190,3 +190,8 @@
 @mixin svg-square($color: 1a1a1a, $opacity: 0.12) {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 27.72"><g id="eeeee176-0aaf-4d0c-87fd-0b8c05036b6a" data-name="Layer 2"><g id="eabea376-120f-4647-b6f7-1c1e065a66a0" data-name="Layer 8"><rect width="27.72" height="27.72" fill="%23#{$color}" opacity="#{$opacity}"/><polygon points="9.74 21.71 10.53 22.5 19.18 13.86 10.53 5.21 9.74 6.01 17.59 13.86 9.74 21.71" fill="%23fff"/></g></g></svg>');
 }
+
+
+@mixin svg-arrow($color) {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.72 14.63"><title>Asset 12</title><g id="bfc62008-ea93-4f72-9052-0a5476af9136" data-name="Layer 2"><g id="ba3baf5a-3d27-48e8-a161-0979f9f2e6ed" data-name="Layer 8"><polygon points="10.85 14.06 11.41 14.63 18.72 7.31 11.41 0 10.85 0.56 17.6 7.31 10.85 14.06" fill="%23#{$color}"/><rect x="8.49" y="-1.57" width="0.79" height="17.76" transform="translate(16.19 -1.57) rotate(90)" fill="%23#{$color}"/></g></g></svg>');
+} 

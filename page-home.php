@@ -76,15 +76,25 @@ $sm->setColorType('singleColor');
         <div class="row">
             <div class="col">
                 <div class="extra-padding">
+                    <picture>
+                        <img src="<?=IMGURL?>printed-banners.jpg" alt="Interior" />
+                    </picture>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="extra-padding">
+                    <h2 class="h4 expander collapsed" data-toggle="collapse" data-target="#collapse"
+                        aria-expanded="false" aria-controls="collapse"><span>Printing Services</span></h2>
+                    <?php if( $section_1_expander = get_field('section_1_expander') ) : ?>
+                    <?php echo $section_1_expander ?>
+                    <?php endif; ?>
+
                     <?php if( $section_1_title = get_field('section_1_title') ) : ?>
 
                     <?php echo $section_1_title ?>
 
 
-                    <?php endif; ?>
-
-                    <?php if( $section_1_expander = get_field('section_1_expander') ) : ?>
-                    <?php echo $section_1_expander ?>
                     <?php endif; ?>
 
                     <?php if( $section_1_text = get_field('section_1_text') ) : ?>
@@ -99,15 +109,7 @@ $sm->setColorType('singleColor');
                     </a>
                 </div>
             </div>
-            <div class="col">
-                <div class="extra-padding">
-                    <picture>
-                        <source srcset="<?=IMGURL?>bg-interior.jpg" media="(min-width: 992px)">
-                        <img src="<?=IMGURL?>interior-sm.jpg" alt="Interior" />
-                    </picture>
 
-                </div>
-            </div>
         </div>
     </div>
 </section>
