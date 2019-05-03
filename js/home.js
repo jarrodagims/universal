@@ -41,27 +41,6 @@
 
     stickyExample();
 
-    //main floor plan slideshow
-    $(".slideshow").cycle({
-      timeout: 0,
-      fx: "fade",
-      slides: "> div",
-      pauseOnHover: "true",
-      // pager: ".slide-nav",
-      next: ".slide-next",
-      pagerTemplate: ""
-      // autoHeight: "container"
-    });
-
-    //connect main slideshow to carousel
-    var slideshows = $(".same-slideshow").on("cycle-next cycle-prev", function(
-      e,
-      opts
-    ) {
-      // advance the other slideshow
-      slideshows.not(this).cycle("goto", opts.currSlide);
-    });
-
     //cycle main slideshow when clicking list item
     $("body").on("click", "ul.slide-nav li", function() {
       var strIndex = $(this).attr("data-hard-index");
@@ -72,45 +51,11 @@
       var deskFunctions = function() {
         //make dropdown hoverable
         $(".dropdown-toggle").attr("data-toggle", "hover");
-
-        if ($(".slideshow-blog").cycle()) {
-          $(".slideshow-blog").cycle("destroy");
-        }
-
-        $(".slide-nav").cycle({
-          timeout: 0,
-          fx: "carousel",
-          slides: "> li",
-          next: ".slide-nav-next",
-          prev: ".slide-nav-prev",
-          carouselVisible: 5,
-          carouselFluid: true,
-          allowWrap: true
-        });
       };
 
       var mobileFunctions = function() {
         //make dropdown clickable
         $(".dropdown-toggle").attr("data-toggle", "dropdown");
-
-        $(".slideshow-blog").cycle({
-          timeout: 8000,
-          fx: "fade",
-          slides: "> div",
-          pauseOnHover: "true",
-          next: "#slide-blog-nav",
-          pagerTemplate: "",
-          autoHeight: "container"
-        });
-
-        $(".slide-nav").cycle({
-          timeout: 0,
-          fx: "carousel",
-          slides: "> li",
-          next: ".slide-nav-next",
-          carouselVisible: 3,
-          carouselFluid: true
-        });
       };
 
       //Only do slideshow on small screens

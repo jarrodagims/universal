@@ -58,6 +58,19 @@
   font-family: "acumin-pro-condensed", sans-serif;
 }
 
+/* COLOR VARIABLES
+============================================= */
+$lightblue: #4bcad7;
+$medblue: #35a8d7;
+$darkblue: #20419f;
+
+/* GRADIENT LISTS
+============================================= */
+
+$list1: $blue, $green, $orange;
+
+$list2: $lightblue 4.43%, $medblue 38.18%, $darkblue 87.66%;
+
 @mixin gradient() {
   background: -moz-linear-gradient(
     0% 50% 0deg,

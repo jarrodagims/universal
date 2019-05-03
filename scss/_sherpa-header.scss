@@ -22,16 +22,18 @@
 }
 
 .top-header {
-    background: $black;
-    color: $white;
     display: flex;
     flex-direction: row;
+    background: rgb(255,255,255);
+    background: linear-gradient(270deg, rgba(255,255,255,0.93) 0%, rgba(255,255,255,0.4) 54%, rgba(255,255,255,1) 100%);
+    color: $black;
+    border-bottom: 1px solid $white;
 }
 
 .v-align {
     display: flex;
     justify-content: space-between;
-    padding: 1.25em 0;
+    padding: 0 0;
 
     @include media-breakpoint-down(md) {
         padding: .5em 0;

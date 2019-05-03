@@ -1,42 +1,93 @@
 .home-module-1 {
-    background: url('../img/bg-hero.jpg') 0 95% no-repeat;
-    background-size: cover;
+  background: url("../img/bg-hero.jpg") 0 95% no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 750px;
+
+  .jumbo-container {
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    position: relative;
+    flex-direction: column;
+  }
 
-    .jumbotron {
-        width: 100%;
+  .jumbotron {
+    width: 100%;
+    flex: 1;
 
-        .btn-transparent {
-           padding: 0 0;
-           font-size: 17px;
-
-           &:hover {
-               background: transparent;
-           }
-        }
+    .jumbo-content {
+      flex: 1;
     }
 
- 
+    .secondary-nav {
+      flex: 1;
+      margin-top: auto;
+    }
+
+    .btn-transparent {
+      padding: 0 0;
+      font-size: 17px;
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  .secondary-nav {
+    background: #E5E5E5;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+  }
 
 
-    @include media-breakpoint-down(lg) {
-        background: url('../img/bg-hero-mobile.jpg') center 50% no-repeat;
-        background-size: cover;
-
-        .jumbotron {
-            height: 440px;
-            padding: 2em 0;
-        }
+  .list-inline {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    color: $black;
+    margin-bottom: 0;
     
-        h1 {
-            font-size: 34px;
-        }
 
-        h2 {
-            font-size: 15px;
-        }
+    li {
+      a {
+        color: #1A1A1A;
 
-    }    
+        &:hover {
+          color: $sherpa-brand-primary;
+        }
+      }
+     
+      &::before {
+        content: "|";
+        margin: 0 1.5em;
+      }
+
+      &:first-child::before {
+        display: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    background: url("../img/bg-hero-mobile.jpg") center 50% no-repeat;
+    background-size: cover;
+
+    .jumbotron {
+      height: 440px;
+      padding: 2em 0;
+    }
+
+    h1 {
+      font-size: 34px;
+    }
+
+    h2 {
+      font-size: 15px;
+    }
+  }
 }
