@@ -3,6 +3,10 @@
   padding-bottom:  168px;
   @include acumin();
   background: #F1F1F1;
+
+  img {
+    @include dropshadow();
+  }
   
   @include buttonSpacing();
 

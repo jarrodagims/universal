@@ -1,16 +1,69 @@
 .ribbon {
-  background: url("../img/parallax.jpg") center center no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 228px;
+  background: #42B3CD;
+  overflow: hidden;
 
-  
+  .list-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
 
-  @include media-breakpoint-down(lg) {
-    background: url("../img/bg-ribbon-sm.jpg") right 0 no-repeat;
-    background-size: cover;
-    height: 346px;
-    display: block;
+    li {
+      width: 25%;
+      display: flex;
+      text-align: center; 
+      justify-content: center;
+      color: $white;
+      font-size: 19px;
+
+      a {
+        padding: 38px 0;
+        color: $white;
+        flex: 1;
+        position: relative;
+        z-index: 0;
+      }
+
+      a::after {
+        content: '';
+       
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      &:nth-child(2) {
+        position: relative;
+
+        a::after {
+          background : #FFFFFF;
+          background : rgba(255, 255, 255, 0.1);
+        }
+      }
+
+      &:nth-child(3) {
+
+        a::after {
+          background: rgb(47,137,198);
+background: linear-gradient(270deg, rgba(47,137,198,1) 0%, rgba(36,83,169,1) 100%);
+        }
+      }
+
+      &:last-child {
+        overflow: visible;
+
+        a::after {
+          background: rgb(53,112,181);
+background: linear-gradient(270deg, rgba(53,112,181,1) 0%, rgba(32,75,159,1) 100%);
+          opacity: 0.73;
+          width:50vw;
+        }
+      }
+    }
   }
 }
 
@@ -31,10 +84,7 @@
     display: flex;
   }
 
-
   @include media-breakpoint-down(lg) {
-      font-size: 24px;
+    font-size: 24px;
   }
-
-  
 }

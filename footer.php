@@ -9,9 +9,7 @@
 
 </div>
 </div> <!-- end sidebar container -->
-<?php if (!is_page('contact-us')): ?>
-<?php get_template_part('template-parts/footer','part'); ?>
-<?php endif;?>
+
 
 <div class="sub-footer">
     &copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ); ?> | All Rights Reserved

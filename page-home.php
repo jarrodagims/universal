@@ -82,6 +82,7 @@ $sm->setColorType('singleColor');
 
                 </div>
             </div>
+            <div class="col col-md-1"></div>
             <div class="col">
                 <div class="extra-padding">
                     <h2 class="h4 expander collapsed" data-toggle="collapse" data-target="#collapse"
@@ -102,175 +103,88 @@ $sm->setColorType('singleColor');
                     <?php echo $section_1_text ?>
 
                     <?php endif; ?>
-                    <a href="<?=SITEURL?>/about-us/" class="contact-us" style="-webkit-transform: translateZ(0px);">
-                        <button class="btn btn-primary" style="-webkit-transform: translateZ(0px);">
-                            MORE ABOUT US
-                        </button>
-                    </a>
+
                 </div>
             </div>
 
         </div>
     </div>
 </section>
+
+
 
 <section class="ribbon">
-
-</section>
-
-<section id="home-module-3" class="home-module-3">
-    <?php get_template_part('template-parts/slideshow'); ?>
-</section>
-
-<section id="home-module-4" class="home-module-4">
-
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="extra-padding">
-
-                    <?php if( $section_4 = get_field('section_4') ) : ?>
-
-                    <?php echo $section_4 ?>
-
-                    <?php endif; ?>
-
-
-                    <a href="<?=SITEURL?>/our-home-features/" class="contact-us">
-                        <button class="btn btn-primary">
-                            CHECK OUT OUR FEATURES
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-            </div>
-            <img src="<?=IMGURL ?>family-sm.jpg" alt="Why choose Zia Homes" class="d-lg-none " />
-</section>
-
-<section class="ribbon-2">
-    <div class="container">
-        <div class="row">
-            <div class="col d-flex justify-content-md-start justify-content-center align-items-center">
-                <div>CONTACT US TODAY!</div> <a href="<?=SITEURL?>/contact-us/" class="contact-us">
-                    <button class="btn btn-secondary">
-                        CONTACT US
-                    </button>
-                </a>
+                <ul class="list-inline">
+                    <li>
+                        <a href="">Printing Services</a>
+                    </li>
+                    <li><a href="">Design Services</a>
+                    </li>
+                    <li><a href="">Mailing Services</a>
+                    </li>
+                    <li><a href="">Mailing Lists</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
+<section class="home-module-3">
 
-<section id="home-module-5" class="home-module-5">
     <div class="container">
+
         <div class="row">
+
             <div class="col">
-            </div>
-            <div class="col">
-                <div class="extra-padding">
-                    <?php if( $section_3 = get_field('section_3') ) : ?>
 
-                    <?php echo $section_3 ?>
-
-
-                    <?php endif; ?>
-
-
-                    <a href="<?=SITEURL?>/real-estate-el-paso/" class="contact-us">
-                        <button class="btn btn-primary">
-                            READ OUR FAQ
-                        </button>
-                    </a>
-                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="home-module-6" class="home-module-6">
-    <div id="slide-blog-nav" class="pager">
-    </div>
+<section id="home-module-5" class="home-module-2">
     <div class="container">
-
         <div class="row">
             <div class="col">
-
                 <div class="extra-padding">
+                    <picture>
+                        <img src="<?=IMGURL?>dont-advertise-entice.jpg" alt="Interior" />
+                    </picture>
 
-
-                    <?php if( $section_5_title = get_field('section_5_title') ) : ?>
-
-                    <?php echo $section_5_title ?>
-
-                    <?php endif;?>
-
-                    <div class="row slideshow-blog">
-
-
-                        <div class="col">
-                            <div class="mini-card"><img src="<?=IMGURL?>landscaping.jpg" alt="">
-                                <div class="extra-padding">
-                                    <h3>Energy
-                                        <span class="br-md">Efficient</span></h3>
-                                    <p>At Zia Homes, we love the environment. That's why our homes exceed the
-                                        Energy Star Certification standards in energy efficiency. With state of
-                                        the art spray foam insulation, energy efficient windows, and more, you
-                                        are guaranteed to save on costs.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="mini-card"><img src="<?=IMGURL?>partners.jpg" alt="">
-                                <div class="extra-padding">
-                                    <h3>
-                                        A PARTNER WHO
-                                        <span class="br-md">COMMUNICATES</span></h3>
-                                    <p>There’ll be no shortage of emails, phone calls, or text messages to go
-                                        around! Because when you choose to work with us, we take that
-                                        relationship seriously. We’re always attentive to your needs and do our
-                                        best to provide you with answers quickly and thoughtfully.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="mini-card"><img src="<?=IMGURL?>buyers.jpg" alt="">
-                                <div class="extra-padding">
-                                    <h3>
-                                        A COMPREHENSIVE
-                                        <span class="br-md">BUYER’S WARRANTY</span>
-                                    </h3>
-                                    <p>Feel confident knowing the home of your dreams is under warranty. Zia
-                                        Homes offers an all-inclusive warranty that includes a two-year systems'
-                                        warranty and a 10 year extended warranty. So even if there are hiccups
-                                        along the way, they will be gone in no time!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="row row-buttons">
-                        <div class="col">
-                            <a href="<?=SITEURL?>/blog/" class="contact-us">
-                                <button class="btn btn-primary">
-                                    CHECK OUT OUR BLOG
-                                </button>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
+            <div class="col col-md-1"></div>
+            <div class="col">
+                <div class="extra-padding">
+
+                    <h2>Our Promise
+                    </h2>
+
+                    <p>
+                        Universal Graphics has spent the last few decades immersing itself in the business of commercial
+                        printing and graphic design services. Throughout our long journey, we have learned the ins and
+                        outs of the industry, but we have always understood that what truly sets us apart is our
+                        commitment to the customer and the quality of our products.
+                    </p>
+
+                    <p>
+                        We value personal relationships with our customers and helping their business flourish. Our
+                        expertise lies in commercial printing and representing businesses through professional and
+                        quality designs and products.
+                    </p>
+
+                </div>
+            </div>
+
         </div>
     </div>
-
 </section>
 
-<?php get_template_part('template-parts/footer','part'); ?>
+
 </div>
 
 
