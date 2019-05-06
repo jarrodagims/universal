@@ -163,7 +163,7 @@ the right sidebar including social icons address and phone
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  @include acumin();
+  @include montserrat();
   margin-left: auto;
   flex-direction: row;
 
@@ -172,8 +172,7 @@ the right sidebar including social icons address and phone
   }
 
   a {
-    color: $white;
-
+    color: $black;
   }
 
   ul.social-media {

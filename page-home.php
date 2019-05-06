@@ -28,11 +28,7 @@ $sm->setColorType('singleColor');
                         </div><?php endif; ?>
                         <ul class="nav navbar-nav navbar-right <?php if (!is_front_page()): ?>d-lg-none<?php endif;?>">
 
-                            <li><?php if (!empty(get_option('sherpa_business_address'))): ?>
 
-                                <?=get_option('sherpa_business_address')?>
-
-                                <?php endif;?></li>
                             <li><a href="tel:<?php printPhone();?>">PH: <?php printPhone();?></a></li>
                         </ul>
                     </div>
@@ -135,32 +131,47 @@ $sm->setColorType('singleColor');
 
 <section class="home-module-3">
 
-    <div class="container">
+    <div class="bg-grid">
+        <div class="container">
 
-        <div class="row">
+            <div class="row">
 
-            <div class="col">
-                <div class="grid">
-                    <div class="square">
-                        Wide Format
-                    </div>
-                    <div class="square">
-                        <div class="grid">
-                            <div class="square">
+                <div class="col">
+                    <div class="grid">
+                        <div class="square">
+                            Wide Format
+                        </div>
+                        <div class="square">
+                            <div class="grid">
+                                <div class="square">
 
-                            </div>
-                            <div class="square">
-                                <img src="<?=IMGURL?>hello.svg" alt="Hello" />
-                            </div>
-                            <div class="square">
-                                Digital
-                            </div>
-                            <div class="square">
+                                </div>
+                                <div class="square">
+                                    <img src="<?=IMGURL?>hello.svg" alt="Hello" />
+                                </div>
+                                <div class="square">
+                                    Digital
+                                </div>
+                                <div class="square">
 
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row shadow">
+            <div class="col">
+                <img src="<?=IMGURL?>bg-hi.jpg" alt="Hi">
+            </div>
+            <div class="col bg-gradient">
+                <h2>
+                    Promotional Items
+                </h2>
             </div>
         </div>
     </div>

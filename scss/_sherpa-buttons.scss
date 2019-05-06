@@ -36,8 +36,8 @@ input[type=submit] {
   &:hover:focus,
   &:hover:active,
   &:hover:visited {
-    color: $white;
-    
+    color: $sherpa-brand-primary;
+    background: $white;
   }
 
  
@@ -79,8 +79,7 @@ input[type=submit] {
     &:hover:focus,
     &:hover:active,
     &:hover:visited {
-      background: $sherpa-secondary-color;
-      color: $sherpa-brand-primary;
+      background: $sherpa-brand-primary;
     }
   }
 
@@ -88,7 +87,8 @@ input[type=submit] {
   &.btn-primary {
     &:hover,
     &:focus {
-      color: $white;
+      color: $sherpa-brand-primary;
+      background: $white;
       border-color: transparent;
     }
   }

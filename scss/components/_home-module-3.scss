@@ -1,4 +1,23 @@
 .home-module-3 {
-  background: url("../img/bg-square.jpg") 0 0 no-repeat;
-  background-size: cover;
+  .bg-grid {
+    background: url("../img/bg-square.jpg") 0 0 no-repeat;
+    background-size: cover;
+    padding-top: 4em;
+  }
+
+  padding-bottom: 4em;
+
+  .bg-gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: $white;
+    }
+  }
+
+  .shadow {
+    @include dropshadow-thin();
+  }
 }

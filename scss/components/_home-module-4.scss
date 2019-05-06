@@ -20,8 +20,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgb(53,112,181);
-    background: linear-gradient(90deg, rgba(53,112,181,1) 0%, rgba(32,75,159,1) 68%);
+    @include gradient();
 
     a {
       padding: 2em 0;
@@ -41,12 +40,13 @@
     position: relative;
     
     .col {
-       padding-top: 4em;
-       padding-bottom: 4em;
+       padding-top: 6em;
+       padding-bottom: 6em;
     }
 
     p {
       margin-bottom: 0;
+      color: #1B1B1B;
     }
 
     h2 {

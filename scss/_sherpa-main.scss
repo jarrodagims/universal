@@ -926,7 +926,7 @@ $navWidth: 80px;
   margin-left: -$navWidth;
 
   > ul.list-unstyled {
-    @include bg-gradient(top, $list1);
+    @include bg-gradient(top, $list2);
     height: 100%;
     display: flex;
     flex-direction: column;

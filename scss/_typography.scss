@@ -78,10 +78,10 @@ p.no-margin {
 }
 
 a {
-  color: $sherpa-secondary-color;
+  color: $white;
 
   &:hover {
-    color: darken($sherpa-secondary-color, 10%);
+    color: $sherpa-brand-primary;
   }
 }
 
