@@ -17,6 +17,12 @@
     }
   }
 
+  .grid-container {
+    background: url('../img/grid.png') 0 0 no-repeat;
+    background-size: cover;
+    min-height: 827px;
+  }
+
   .shadow {
     @include dropshadow-thin();
   }

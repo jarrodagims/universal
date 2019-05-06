@@ -72,10 +72,12 @@ $sm->setColorType('singleColor');
         <div class="row">
             <div class="col">
                 <div class="extra-padding">
-                    <picture>
-                        <img src="<?=IMGURL?>printed-banners.jpg" alt="Interior" />
-                    </picture>
-
+                    <div class="side-text">
+                        <span>#getprinted</span>
+                        <picture>
+                            <img src="<?=IMGURL?>printed-banners.jpg" alt="Interior" />
+                        </picture>
+                    </div>
                 </div>
             </div>
             <div class="col col-md-1"></div>
@@ -132,31 +134,12 @@ $sm->setColorType('singleColor');
 <section class="home-module-3">
 
     <div class="bg-grid">
-        <div class="container">
+        <div class="container grid-container">
 
             <div class="row">
 
                 <div class="col">
                     <div class="grid">
-                        <div class="square">
-                            Wide Format
-                        </div>
-                        <div class="square">
-                            <div class="grid">
-                                <div class="square">
-
-                                </div>
-                                <div class="square">
-                                    <img src="<?=IMGURL?>hello.svg" alt="Hello" />
-                                </div>
-                                <div class="square">
-                                    Digital
-                                </div>
-                                <div class="square">
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
