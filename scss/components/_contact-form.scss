@@ -19,12 +19,9 @@
     text-align: center;
     color: $white;
     display: inline-block;
-    margin: 2em auto;
+    margin: 0 auto;
     padding: 0 0;
 
-    @include media-breakpoint-up(sm) {
-      margin: 2em auto;
-    }
 
     h1,
     h2,
@@ -321,9 +318,9 @@
     input[type="email"],
     input[type="tel"],
     textarea {
-      background: rgba(203,203,203,0.44);
+      background: rgba(255,255,255,0.06);
       border: 0;
-      color: #666666;
+      color: $white;
       padding: 1em;
       margin-bottom: 1.25em;
       transition: all 0.3ms ease-in;
@@ -339,7 +336,7 @@
       }
 
       &::placeholder {
-        color: #666666;
+        color: $white;
         font-weight: normal;
       }
     }

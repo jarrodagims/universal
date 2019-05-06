@@ -11,9 +11,8 @@ h2,
 h3,
 h4 {
   font-weight: 300;
-  @include acumin();
+  @include montserrat();
   letter-spacing: $letterSpacing;
-  text-transform: uppercase;
 
   strong {
     font-weight: 700;

@@ -23,8 +23,8 @@ input[type=submit] {
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   position: relative;
-  @include gradient-btn(100);
-  @include acumin();
+  background: $sherpa-brand-primary;
+  @include montserrat();
   letter-spacing: $letterSpacing;
   text-transform: uppercase;
  
@@ -38,19 +38,9 @@ input[type=submit] {
   &:hover:visited {
     color: $white;
     
-//     background: $sherpa-brand-primary;
-
-//     &::after {
-//       background: $sherpa-brand-primary;
-//     }
   }
 
-  &.btn-default {
-    background: #918f8d;
-    &:hover {
-      background: darken(#918f8d, 10%);
-    }
-  }
+ 
 
   &.btn-transparent {
     background: transparent;
@@ -65,25 +55,13 @@ input[type=submit] {
     }
   }
 
-  &.btn-secondary {
-   background: rgba(255, 255, 255, .14);
-   padding: 1em 2em;
-
-   &::before {
-     display: none;
-   }
-
-   &:hover {
-     background: $white;
-     color: $sherpa-brand-primary;
-   }
-  }
+ 
 
   &.btn-outline {
     background: transparent;
     color: #606060;
     overflow: hidden;
-    padding: calc(1em + 1px) 0 1em;
+    border: 1px solid $white;
 
     span {
       background: $white;
@@ -95,17 +73,15 @@ input[type=submit] {
     }
 
     &:hover,
-  &:focus,
-  &:active,
-  &:visited,
-  &:hover:focus,
-  &:hover:active,
-  &:hover:visited {
-    background: $sherpa-secondary-color;
-    color: $sherpa-brand-primary;
-  }
-
-    background: transparent;
+    &:focus,
+    &:active,
+    &:visited,
+    &:hover:focus,
+    &:hover:active,
+    &:hover:visited {
+      background: $sherpa-secondary-color;
+      color: $sherpa-brand-primary;
+    }
   }
 
   &.btn-default,

@@ -140,7 +140,99 @@ $sm->setColorType('singleColor');
         <div class="row">
 
             <div class="col">
+                <div class="grid">
+                    <div class="square">
+                        Wide Format
+                    </div>
+                    <div class="square">
+                        <div class="grid">
+                            <div class="square">
 
+                            </div>
+                            <div class="square">
+                                <img src="<?=IMGURL?>hello.svg" alt="Hello" />
+                            </div>
+                            <div class="square">
+                                Digital
+                            </div>
+                            <div class="square">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="home-module-4" class="home-module-4">
+    <div class="container bg-gray">
+        <div class="row">
+            <div class="col">
+                <h2>Our Services</h2>
+                <p>As a well-equipped press and digital printer, Universal Graphics has an extensive list of services to
+                    cover all marketing and printing material needs for any business to promote, grow, and represent
+                    their brand. Whether you need offset printing, a banner printed for your event, flyers, booklets,
+                    envelopes or postcards. There is no better way to attract customers than well designed and quality
+                    printed material.</p>
+            </div>
+            <div class="col bg-neon">
+
+            </div>
+        </div>
+    </div>
+    <div class="big-buttons">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="">SUBMIT YOUR FILES</a>
+                </div>
+                <div class="col">
+
+                    <a href="">PREPARE YOUR FILES</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-green">
+        <div class="row">
+            <div class="col">
+                <h2>Featured Products</h2>
+                <a href="">
+                    <button class="btn btn-primary">
+                        VIEW FEATURED PRODUCTS
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-printer">
+
+        <div class="row">
+            <div class="col">
+                <ul class="columns">
+                    <li>Business Cards</li>
+                    <li>Door Hangers</li>
+                    <li>Edge Cards</li>
+                    <li>Envelopes</li>
+                    <li>Event Tickets</li>
+                    <li>Fabric Banners</li>
+                    <li>Flags</li>
+                    <li>Flyers and Brochures</li>
+                    <li>Indoor Banners</li>
+                    <li>Letterhead</li>
+                    <li>Mounted Canvas</li>
+                    <li>Mugs</li>
+                    <li>NCR Forms</li>
+                    <li>Painted Edge Cards</li>
+                    <li>Postcards</li>
+                    <li>Roll Labels</li>
+                    <li>Stickers</li>
+                    <li>T-Shirt</li>
+                    <li>Tote Bags</li>
+                    <li>View All Products</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -180,6 +272,26 @@ $sm->setColorType('singleColor');
                 </div>
             </div>
 
+        </div>
+    </div>
+</section>
+
+<section id="home-module-6" class="home-module-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>About Our Location
+                </h2>
+
+                <p>Universal Graphics is conveniently located on the Eastside of El Paso near Vist
+                    del Sol and Lomaland. Find us at the heart of East El Paso where the growing
+                    industries and private sector make it a vibrant and thriving area.
+                    Universal Graphics serves customers all over the city and also in the surrounding
+                    areas of New Mexico such as Las Cruces and Alamogordo.</p>
+            </div>
+            <div class="col">
+
+            </div>
         </div>
     </div>
 </section>
