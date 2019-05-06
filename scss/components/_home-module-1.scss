@@ -75,10 +75,37 @@
     }
   }
 
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(sm) {
     background: url("../img/bg-hero-sm.jpg") center 50% no-repeat;
     background-size: cover;
+  }
+
+  @include media-breakpoint-down(lg) {
+    
     height: auto;
+
+    .secondary-nav {
+      height: 52px;
+      @include bg-gradient(left, $list2);
+
+      li {
+        display: flex;
+        align-items: center;
+
+        &::before {
+          color: $white;
+        }
+      }
+
+      li a {
+        color: $white;
+        font-size: 8px;
+      }
+
+      li a:hover {
+        color: $white;
+      }
+    }
 
     .jumbotron {
       height: 330px;

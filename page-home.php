@@ -140,13 +140,14 @@ $sm->setColorType('singleColor');
 
                 <div class="col">
                     <div class="grid">
+                        <img src="<?=IMGURL?>grid-sm.jpg" alt="" class="d-lg-none">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container d-none d-lg-block">
         <div class="row shadow">
             <div class="col">
                 <img src="<?=IMGURL?>bg-hi.jpg" alt="Hi">

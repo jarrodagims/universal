@@ -27,4 +27,21 @@
   .shadow {
     @include dropshadow-thin();
   }
+
+  @include media-breakpoint-down(lg) {
+
+    .bg-grid {
+      background: $white;
+    }
+
+    .grid-container {
+      background: none;
+      text-align: center;
+      min-height: 0;
+
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
 }

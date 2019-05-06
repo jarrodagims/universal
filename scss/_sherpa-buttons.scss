@@ -110,10 +110,6 @@ input[type=submit] {
   @include media-breakpoint-down(lg) {
     font-size: 9px;
 
-    &.btn-outline {
-      border-bottom: 1px solid $sherpa-secondary-color;
-
-    }
   }
 }
 
