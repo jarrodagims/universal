@@ -2,7 +2,7 @@
   padding-top: 168px;
   padding-bottom:  168px;
   @include acumin();
-  background: #F1F1F1;
+  background: $white;
 
   img {
     @include dropshadow();
@@ -65,17 +65,7 @@
     margin-top: 2em;
   }
 
-  .side-text {
-    span {
-      position: absolute;
-      left: -2.5em;
-      top: 1.5em;
-      transform: rotate(270deg);
-      font-size: 23px;
-      @include serif();
-      font-style: italic;
-    }
-  }
+  
 
   @include media-breakpoint-down(lg) {
     padding-top: 1em;

@@ -5,4 +5,10 @@
     background: url('../img/bg-printers.jpg') 0 0 no-repeat;
     background-size: cover;
     color: $white;
+
+    .side-text.align-bottom span {
+        color: $white;
+        top: auto;
+        bottom: 2.5em;
+    }
 }

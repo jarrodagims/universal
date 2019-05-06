@@ -3,6 +3,11 @@
   background-size: cover;
   color: $white;
   @include buttonSpacing();
+  overflow: hidden;
+
+  .side-text.align-bottom span {
+    bottom: 5em;
+  }
 
   .container {
     position: relative;
@@ -32,12 +37,18 @@
       width: 100%;
       justify-content: center;
       align-items: center;
+
+      &:hover {
+        color: $sherpa-brand-primary;
+        background: $white;
+      }
     }
   }
 
   .bg-gray {
     color: #1B1B1B;
     position: relative;
+
     
     .col {
        padding-top: 6em;

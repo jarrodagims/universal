@@ -76,11 +76,12 @@
   }
 
   @include media-breakpoint-down(lg) {
-    background: url("../img/bg-hero-mobile.jpg") center 50% no-repeat;
+    background: url("../img/bg-hero-sm.jpg") center 50% no-repeat;
     background-size: cover;
+    height: auto;
 
     .jumbotron {
-      height: 440px;
+      height: 330px;
       padding: 2em 0;
     }
 

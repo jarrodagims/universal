@@ -29,7 +29,7 @@ $sm->setColorType('singleColor');
                         <ul class="nav navbar-nav navbar-right <?php if (!is_front_page()): ?>d-lg-none<?php endif;?>">
 
 
-                            <li><a href="tel:<?php printPhone();?>">PH: <?php printPhone();?></a></li>
+                            <li><a href="tel:<?php printPhone();?>">TELEPHONE: <?php printPhone();?></a></li>
                         </ul>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ $sm->setColorType('singleColor');
     </div>
 </section>
 
-<section class="home-module-3">
+<section id="home-module-3" class="home-module-3">
 
     <div class="bg-grid">
         <div class="container grid-container">
@@ -163,13 +163,15 @@ $sm->setColorType('singleColor');
 <section id="home-module-4" class="home-module-4">
     <div class="container bg-gray">
         <div class="row">
-            <div class="col">
+            <div class="col side-text align-bottom">
                 <h2>Our Services</h2>
                 <p>As a well-equipped press and digital printer, Universal Graphics has an extensive list of services to
                     cover all marketing and printing material needs for any business to promote, grow, and represent
                     their brand. Whether you need offset printing, a banner printed for your event, flyers, booklets,
                     envelopes or postcards. There is no better way to attract customers than well designed and quality
                     printed material.</p>
+
+                <span>#printed</span>
             </div>
             <div class="col bg-neon">
 
@@ -273,7 +275,7 @@ $sm->setColorType('singleColor');
 <section id="home-module-6" class="home-module-6">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col side-text align-bottom">
                 <h2>About Our Location
                 </h2>
 
@@ -282,6 +284,8 @@ $sm->setColorType('singleColor');
                     industries and private sector make it a vibrant and thriving area.
                     Universal Graphics serves customers all over the city and also in the surrounding
                     areas of New Mexico such as Las Cruces and Alamogordo.</p>
+
+                <span>#ElPaso</span>
             </div>
             <div class="col">
 

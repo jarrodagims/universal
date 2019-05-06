@@ -23,11 +23,15 @@
         flex: 1;
         position: relative;
         z-index: 0;
+
+        &:hover {
+          color: $sherpa-brand-primary;
+          background: $white;
+        }
       }
 
       a::after {
         content: '';
-       
         position: absolute;
         left: 0;
         top: 0;
@@ -47,9 +51,15 @@
 
       &:nth-child(3) {
 
+        
+
         a::after {
           background: rgb(47,137,198);
 background: linear-gradient(270deg, rgba(47,137,198,1) 0%, rgba(36,83,169,1) 100%);
+        }
+
+        a:hover::after {
+          display: none;
         }
       }
 
@@ -61,6 +71,22 @@ background: linear-gradient(270deg, rgba(47,137,198,1) 0%, rgba(36,83,169,1) 100
 background: linear-gradient(270deg, rgba(53,112,181,1) 0%, rgba(32,75,159,1) 100%);
           opacity: 0.73;
           width:50vw;
+          z-index: -2;
+        }
+
+        a:hover {
+          color: $sherpa-brand-primary;
+        }
+
+        a:hover::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          background: $white;
         }
       }
     }
