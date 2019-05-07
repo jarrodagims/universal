@@ -50,7 +50,32 @@
 
 
     <div class="sidebar-container">
-        <div class="nav-sidebar"></div>
+        <div class="d-flex d-lg-none top-header">
+            <div class="container-fluid">
+                <div class="v-align row">
+                    <div class="col navbar-button text-center">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="tel:<?php printPhone();?>">TELEPHONE: <?php printPhone();?></a></li>
+                            <li class="nav-item menu-item directions">
+                                <a href="<?=SITEURL?>/contact-us/"><span
+                                        class="nav-link"><em><?=get_option('sherpa_business_address')?></em></span></a>
+                            </li>
+                            <li class="nav-item menu-item contact"><a
+                                    href="tel:<?php if (!empty(get_option('sherpa_telephone_number'))) : echo get_option('sherpa_telephone_number'); endif; ?>"
+                                    class="nav-link"><span><?php printPhone(); ?></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-sidebar">
+            <div class="brand-header d-lg-none">
+                <a class="navbar-brand" href='<?php echo get_site_url(); ?>'><img src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
+            'description'
+        ); ?>" /></a>
+            </div>
+        </div>
 
 
         <div class="content">

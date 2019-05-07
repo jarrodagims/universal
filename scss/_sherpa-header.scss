@@ -29,9 +29,11 @@
     color: $black;
     border-bottom: 1px solid $white;
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
         background: $black;
         color: $white;
+        padding-left: 5px;
+        padding-right: 5px;
 
         a {
             color: $white;

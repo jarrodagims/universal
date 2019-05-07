@@ -4,7 +4,7 @@
       var deskFunctions = function() {
         //make dropdown hoverable
         $(".dropdown-toggle").attr("data-toggle", "hover");
-      };
+      }; 
 
       var mobileFunctions = function() {
         //make dropdown clickable

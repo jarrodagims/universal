@@ -9,7 +9,7 @@ Template Name: Home
     <?php echo get_template_part('template-parts/navbar'); ?>
     <div class="jumbo-container">
 
-        <div class="top-header <?php if (!is_front_page()): ?>internal<?php endif;?>">
+        <div class="d-none d-lg-flex top-header <?php if (!is_front_page()): ?>internal<?php endif;?>">
             <div class="container-fluid">
 
                 <div class="v-align row">
@@ -27,14 +27,13 @@ $sm->setColorType('singleColor');
 ?>
                         </div><?php endif; ?>
                         <ul class="nav navbar-nav navbar-right <?php if (!is_front_page()): ?>d-lg-none<?php endif;?>">
-
-
                             <li><a href="tel:<?php printPhone();?>">TELEPHONE: <?php printPhone();?></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="jumbotron">
             <div class="jumbo-content">
                 <div>
@@ -165,14 +164,20 @@ $sm->setColorType('singleColor');
     <div class="container bg-gray">
         <div class="row">
             <div class="col side-text align-bottom">
-                <h2>Our Services</h2>
-                <p>As a well-equipped press and digital printer, Universal Graphics has an extensive list of services to
-                    cover all marketing and printing material needs for any business to promote, grow, and represent
-                    their brand. Whether you need offset printing, a banner printed for your event, flyers, booklets,
-                    envelopes or postcards. There is no better way to attract customers than well designed and quality
-                    printed material.</p>
+                <div class="extra-padding">
+                    <h2>Our Services</h2>
+                    <p>As a well-equipped press and digital printer, Universal Graphics has an extensive list of
+                        services to
+                        cover all marketing and printing material needs for any business to promote, grow, and represent
+                        their brand. Whether you need offset printing, a banner printed for your event, flyers,
+                        booklets,
+                        envelopes or postcards. There is no better way to attract customers than well designed and
+                        quality
+                        printed material.</p>
 
-                <span>#printed</span>
+                    <span>#printed</span>
+                </div>
+
             </div>
             <div class="col bg-neon">
 
@@ -235,7 +240,7 @@ $sm->setColorType('singleColor');
     </div>
 </section>
 
-<section id="home-module-5" class="home-module-2">
+<section id="home-module-5" class="home-module-5 home-module-2">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -277,16 +282,19 @@ $sm->setColorType('singleColor');
     <div class="container">
         <div class="row">
             <div class="col side-text align-bottom">
-                <h2>About Our Location
-                </h2>
+                <div class="extra-padding">
+                    <h2>About Our Location
+                    </h2>
 
-                <p>Universal Graphics is conveniently located on the Eastside of El Paso near Vist
-                    del Sol and Lomaland. Find us at the heart of East El Paso where the growing
-                    industries and private sector make it a vibrant and thriving area.
-                    Universal Graphics serves customers all over the city and also in the surrounding
-                    areas of New Mexico such as Las Cruces and Alamogordo.</p>
+                    <p>Universal Graphics is conveniently located on the Eastside of El Paso near Vist
+                        del Sol and Lomaland. Find us at the heart of East El Paso where the growing
+                        industries and private sector make it a vibrant and thriving area.
+                        Universal Graphics serves customers all over the city and also in the surrounding
+                        areas of New Mexico such as Las Cruces and Alamogordo.</p>
 
-                <span>#ElPaso</span>
+                    <span>#ElPaso</span>
+                </div>
+
             </div>
             <div class="col">
 
@@ -294,9 +302,6 @@ $sm->setColorType('singleColor');
         </div>
     </div>
 </section>
-
-
-</div>
 
 
 <?php get_footer();?>

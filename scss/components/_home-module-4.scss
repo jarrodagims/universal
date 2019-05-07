@@ -26,6 +26,7 @@
     align-items: center;
     text-align: center;
     @include gradient();
+    @include montserrat();
 
     a {
       padding: 2em 0;
@@ -136,6 +137,123 @@
     li {
       padding-left: 0;
     }
+  }
+
+  @include media-breakpoint-down(lg) {
+    overflow: hidden;
+    text-align: center;
+
+    .side-text.align-bottom span {
+        transform: none;
+        bottom: 0;
+        top: 0;
+        left: 30px;
+        bottom: auto;
+        font-size: 12px;
+    }
+
+    .bg-gray {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
+
+    .bg-gray .col {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
+    ul.columns {
+      column-count: 2;
+      @include acumin();
+      font-size: 15px;
+
+      &::before {
+        content: '';
+        border-right: 1px solid rgba(255,255,255,0.18);
+        position: absolute;
+        height: 100vh;
+        left: calc(50% - .5em);
+        top: -4em;
+      }
+
+      li:nth-child(-n+10) {
+        text-align: right;
+        padding-right: 1em;
+      }
+
+      li:nth-child(n+11) {
+        text-align: left;
+      }
+    }
+
+    .bg-neon {
+      display: none;
+    }
+
+    .bg-green {
+      padding: 2em 0;
+    }
+
+    .bg-printer {
+      
+
+      &::after {
+        @include bg-gradient(top, $list2);
+        opacity: 0.5;
+        content: '';
+        position: absolute;
+        left: -50vw;
+        height: 100%;
+        width: 150vw;
+        top: 0;
+        z-index: -1;
+      }
+
+      &::before {
+        background: rgba(0,0,0,0.75);
+      }
+    }
+
+    .big-buttons {
+      padding-top: 6em;
+      background: url('../img/printing-neon.jpg') 0 0 no-repeat;
+      background-size: cover;
+
+      a {
+        font-size: 12px;
+      }
+
+      .row {
+        position: relative;
+        
+        &::before {
+          @include bg-gradient(left, $list2);
+          opacity: 0.5;
+          content: '';
+          position: absolute;
+          left: -50vw;
+          height: 100%;
+          width: 150vw;
+          top: 0;
+
+        }
+      }
+
+      .container {
+        padding: 0 0;
+      }
+
+      .row {
+        flex-direction: row;
+        margin: 0 0;
+
+        .col {
+          padding: 0 0;
+        }
+      }
+    }
+
   }
 
   

@@ -91,6 +91,20 @@ background: linear-gradient(270deg, rgba(53,112,181,1) 0%, rgba(32,75,159,1) 100
       }
     }
   }
+
+  @include media-breakpoint-down(lg) {
+    .container {
+      padding: 0 0;
+    }
+
+    .list-inline {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 50%;
+      }
+    }
+  }
 }
 
 .ribbon-2 {

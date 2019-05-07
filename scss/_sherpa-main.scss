@@ -1027,9 +1027,15 @@ $navWidth: 80px;
   .collapsing {
     transition: none !important;
   }
+
+  @include media-breakpoint-down(md) {
+    > ul.list-unstyled > li:first-child {
+      background: transparent;
+    }
+  }
 }
 
-@include media-breakpoint-up(xl) {
+@include media-breakpoint-up(md) {
   #nav-sidebar {
     > ul.list-unstyled > li {
       .navbar-collapse,
@@ -1037,7 +1043,7 @@ $navWidth: 80px;
         position: absolute;
         left: $navWidth;
         width: 200px;
-        top: 0;
+        z-index: 9999;
 
         &.tab {
           height: 100%;
@@ -1092,9 +1098,8 @@ $navWidth: 80px;
     background: #f1f1f1;
   }
 
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     flex-direction: column;
-
     overflow: hidden;
 
     #nav-sidebar > ul.list-unstyled > li:first-child > a {
@@ -1134,7 +1139,7 @@ $navWidth: 80px;
       height: 55px;
       width: 100%;
       position: absolute;
-      top: -55px;
+      top: 0;
       margin-left: 0;
 
       > ul.list-unstyled {
@@ -1157,7 +1162,7 @@ $navWidth: 80px;
     #nav-sidebar > ul.list-unstyled {
       flex-direction: row;
       width: 100%;
-      justify-content: space-between;
+      justify-content: flex-end;
       height: 100%;
       right: 0;
 
@@ -1176,6 +1181,10 @@ $navWidth: 80px;
       width: 100%;
       top: 0;
       left: 0;
+    }
+
+    .brand-header {
+      padding: 0 20px;
     }
   }
 }

@@ -125,7 +125,7 @@ $list2: $lightblue 4.43%, $medblue 38.18%, $darkblue 87.66%;
   background: -moz-linear-gradient($direction, $list);
   background: -o-linear-gradient($direction, $list);
   background: linear-gradient($direction, $list);
-}
+} 
 
 @mixin gradient-btn($transparency: 0.75) {
   @include bg-gradient(left, $list1, $transparency);

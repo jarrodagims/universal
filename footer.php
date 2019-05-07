@@ -7,8 +7,6 @@
  */
 ?>
 
-</div>
-</div> <!-- end sidebar container -->
 
 <footer id="footer">
     <div class="container">
@@ -47,30 +45,30 @@
                                 </span>
 
                                 <p>
-                                    UNIVERSAL GRAPHICS, INC.<br />
+                                    <span class="sub-title">UNIVERSAL GRAPHICS, INC.</span><br />
                                     1217 Barranca Dr STE. B<br />
                                     El Paso, TX 79935
                                 </p>
 
                                 <p>
-                                    TELEPHONE:<br />
+                                    <span class="sub-title">TELEPHONE:</span><br />
                                     Office: (915) 591-8943<br />
                                 </p>
 
-                                <p>
-                                    <img src="<?=IMGURL?>instagram.svg" alt="Instagram" width="109"> #getprinted#ELPaso
-                                </p>
+                                <div class="d-none d-lg-inline-block"><img src=" <?=IMGURL?>instagram.svg"
+                                        alt="Instagram" width="109"> #getprinted#ELPaso</div>
+
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="extra-padding">
-                                <span class="h2">
+                                <span class="h2 d-none d-lg-block">
                                     &nbsp;
                                 </span>
-                                <span class="title">HOURS</span>
+                                <span class="sub-title">HOURS</span>
                                 <p>
-                                    Monday - Friday: 8 a.m. - 5 p.m.
+                                    Monday - Friday: 8 a.m. - 5 p.m.<br />
                                     Saturday - Sunday: Closed
                                 </p>
 
@@ -81,6 +79,10 @@
                                     services,
                                     give us a
                                     call at <a href="tel:9155918943">915-591-8943</a>.
+                                </p>
+
+                                <p class="d-lg-none">
+                                    <img src="<?=IMGURL?>instagram.svg" alt="Instagram" width="109"> #getprinted#ELPaso
                                 </p>
 
                                 <?php
@@ -106,7 +108,8 @@
 <div class="sub-footer">
     &copy; <?php echo date('Y'); ?> <?php echo get_bloginfo( 'name' ); ?> | All Rights Reserved
 </div>
-
+</div> <!-- end content container -->
+</div> <!-- end sidebar container -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-5ozVWQaaSdI_RbSAiSz4A2p509v1IrY&callback=initMap" async
     defer>
 </script>

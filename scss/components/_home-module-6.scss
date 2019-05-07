@@ -11,4 +11,30 @@
         top: auto;
         bottom: 2.5em;
     }
+
+    @include media-breakpoint-down(lg) {
+        text-align: center;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        background: url('../img/bg-about-sm.jpg') 0 0 no-repeat;
+        background-size: cover;
+
+        .extra-padding {
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+
+        .side-text.align-bottom span {
+            transform: none;
+            bottom: 0;
+            top: 0;
+            left: 30px;
+            bottom: auto;
+            font-size: 12px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
 }
