@@ -105,8 +105,7 @@ body #main .container article #sidebar {
 
 
   @include media-breakpoint-down(md) {
-    margin-left: 0;
-
+    margin-left: auto;
   }
 }
 

@@ -79,7 +79,57 @@
 
 
         <div class="content">
-            <?php if(!is_front_page()) :?>
+            <?php if(!is_front_page() && !is_page_template('page-grid.php')) :?>
+            <section class="internal-banner waypoint">
+                <?php echo get_template_part('template-parts/navbar'); ?>
+                <div class="jumbo-container">
+                    <div class="d-none d-lg-flex top-header">
+                        <div class="container-fluid">
+                            <div class="v-align row">
+                                <div class="col navbar-button text-center">
+                                    <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img
+                                            src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
+    'description'
+); ?>" /></a>
+
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="tel:<?php printPhone();?>">TELEPHONE: <?php printPhone();?></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner">
+                        <div class="banner-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>
+                                        <div class="header">
+                                            <div class="header-content">
+                                                <div class="h1"><?php if(!is_home()) :
+                                            echo get_the_title();
+                                            else: echo 'Blog';
+                                            endif; ?></div>
+                                                <img src="<?=IMGURL?>find-us-on.svg" alt="Find Us On">
+                                                <?php
+                                            $sm = new SocialMedia(array('facebook', 'twitter'));
+                                            $sm->setSize('sm');
+                                            $sm->showNetworkButtons();
+                                            $sm->setColorType('singleColor');
+                                            ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <?php else : ?>
 
             <section class="internal-banner waypoint">
                 <?php echo get_template_part('template-parts/navbar'); ?>
