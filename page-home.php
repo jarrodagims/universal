@@ -5,7 +5,6 @@ Template Name: Home
  */?>
 
 <section id="home-module-1" class="home-module-1 waypoint">
-
     <?php echo get_template_part('template-parts/navbar'); ?>
     <div class="jumbo-container">
 

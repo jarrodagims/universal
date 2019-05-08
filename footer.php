@@ -7,7 +7,18 @@
  */
 ?>
 
-
+<div class="contact-ribbon">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <p>
+                    Contact Us Today. Come by and visit us at the print shop! If you have questions about any of our
+                    services or how
+                    we can help your business please give us a call 915-591-8943. We look forward to serving you.</p>
+            </div>
+        </div>
+    </div>
+</div>
 <footer id="footer">
     <div class="container">
         <div class="row">

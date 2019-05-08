@@ -286,13 +286,11 @@ the right sidebar including social icons address and phone
   }
 }
 
-@include media-breakpoint-down(md) {
-  @include navbar-home();
-}
+// @include media-breakpoint-down(md) {
+//   @include navbar-home();
+// }
 
-.page-template-page-home {
-  @include navbar-home();
-}
+@include navbar-home(); 
 
 .internal-header {
   background: url("../img/bg-header-internal.jpg") center 0 no-repeat;

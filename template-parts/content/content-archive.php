@@ -38,7 +38,7 @@
 <?php
 			endif;
 			echo '<h3><a href="' . $permalink . '">';
-            echo short_title('...', 5);
+            echo the_title();
             echo '</a>' . $edit_link . '</h3>';
             echo '<p>';
             sherpa_excerpt();
