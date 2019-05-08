@@ -2021,6 +2021,10 @@ ul.floorplan-nav {
     height: 100%;
   }
 
+  .internal .sticky-wrapper, #nav-sidebar {
+    height: auto;
+  }
+
 //   .internal .container {
 //     max-width: 1200px;
 //   }
@@ -2175,5 +2179,16 @@ a[data-toggle="modal"] {
 
   p {
     margin-bottom: 0;
+  }
+}
+
+.internal-banner {
+  display: flex;
+
+  .banner {
+    width: 100%;
+    height: 316px;
+    background: url('../img/bg-hero-internal.jpg') 0 0 no-repeat;
+    background-size: cover;
   }
 }

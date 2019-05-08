@@ -56,15 +56,12 @@
     }
 }
 
-// body.internal {
-//     @include media-breakpoint-up(lg) {
-//         .top-header {
-//             background: $white;
-//             color: $black;
-//         }
-//     }
-
-//     .v-align {
-//         padding: .75em 0;
-//     }
-// }
+body.internal {
+    @include media-breakpoint-up(lg) {
+        .top-header {
+            background: $white;
+            color: $black;
+            padding: 2em 0;
+        }
+    }
+}

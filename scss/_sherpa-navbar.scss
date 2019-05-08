@@ -161,7 +161,7 @@ the right sidebar including social icons address and phone
 
 .navbar-right {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   @include montserrat();
   margin-left: auto;

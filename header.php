@@ -81,12 +81,11 @@
         <div class="content">
             <?php if(!is_front_page()) :?>
 
-            <section id="home-module-1" class="home-module-1 waypoint">
+            <section class="internal-banner waypoint">
                 <?php echo get_template_part('template-parts/navbar'); ?>
                 <div class="jumbo-container">
                     <div class="d-none d-lg-flex top-header">
                         <div class="container-fluid">
-
                             <div class="v-align row">
                                 <div class="col navbar-button text-center">
                                     <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img
@@ -101,6 +100,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="banner">
                     </div>
                 </div>
             </section>

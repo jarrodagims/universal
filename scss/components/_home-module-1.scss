@@ -6,11 +6,7 @@
   position: relative;
   height: 750px;
 
-  .jumbo-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
+  
 
   .jumbotron {
     width: 100%;
@@ -121,3 +117,9 @@
     }
   }
 }
+
+.jumbo-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
