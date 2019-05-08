@@ -352,7 +352,7 @@ the right sidebar including social icons address and phone
   @include media-breakpoint-down(lg) {
     margin-bottom: 2em;
   }
-}
+} 
 
 .navbar-toggler-icon {
   @include svg-hamburger();
@@ -362,6 +362,7 @@ the right sidebar including social icons address and phone
 @include media-breakpoint-up(md) {
   .dropdown:hover > .dropdown-menu {
     display: block;
+    margin-top: -8px;
   }
 }
 
