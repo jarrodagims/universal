@@ -26,17 +26,17 @@
     });
 
     //stick nav
-    function stickyExample() {
-      var $stickyElement = $(".sticky");
+    // function stickyExample() {
+    //   var $stickyElement = $(".sticky");
 
-      if ($stickyElement.length) {
-        sticky = new Waypoint.Sticky({
-          element: $stickyElement[0]
-        });
-      }
-    }
+    //   if ($stickyElement.length) {
+    //     sticky = new Waypoint.Sticky({
+    //       element: $stickyElement[0]
+    //     });
+    //   }
+    // }
 
-    stickyExample();
+    // stickyExample();
 
     //cycle main slideshow when clicking list item
     $("body").on("click", "ul.slide-nav li", function() {

@@ -2022,6 +2022,17 @@ ul.floorplan-nav {
 //   }
 // }
 
+@include media-breakpoint-up(lg) {
+  .internal .sticky-wrapper, .internal #nav-sidebar {
+    height: auto;
+    position: fixed;
+  }
+
+  .internal #nav-sidebar>ul.list-unstyled>li {
+    height: 104px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .sticky-wrapper,
   #nav-sidebar {
@@ -2231,6 +2242,7 @@ a[data-toggle="modal"] {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+      top: 1em;
     }
 
     .navbar-nav {
@@ -2240,8 +2252,8 @@ a[data-toggle="modal"] {
       @include montserrat();
       font-size: 11px;
 
-      li a {
-        margin: 0 1em;
+      > li > a {
+        margin: 0 3em;
         letter-spacing: .5px;
         color: $white;
       }
