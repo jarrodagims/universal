@@ -102,6 +102,30 @@
                         </div>
                     </div>
                     <div class="banner">
+                        <div class="banner-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>
+                                        <div class="header">
+                                            <div class="header-content">
+                                                <div class="h1"><?php if(!is_home()) :
+                                            echo get_the_title();
+                                            else: echo 'Blog';
+                                            endif; ?></div>
+                                                <img src="<?=IMGURL?>find-us-on.svg" alt="Find Us On">
+                                                <?php
+                                            $sm = new SocialMedia(array('facebook', 'twitter'));
+                                            $sm->setSize('sm');
+                                            $sm->showNetworkButtons();
+                                            $sm->setColorType('singleColor');
+                                            ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

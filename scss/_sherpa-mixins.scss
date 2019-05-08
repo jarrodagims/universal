@@ -216,7 +216,7 @@ $list2: $lightblue 4.43%, $medblue 38.18%, $darkblue 87.66%;
     @include svg-arrow(_trim(#cccccc));
   }
 
-  &.expanded {
+  &[aria-expanded="true"] {
     span::after {
       transform: translateY(-50%) rotate(90deg);
     }
@@ -230,7 +230,7 @@ $list2: $lightblue 4.43%, $medblue 38.18%, $darkblue 87.66%;
 h1,
 h2,
 h3 {
-  &.expander,
+  &[data-toggle="collapse"],
   .expander {
     @include expander(#ff0000);
   }

@@ -12,9 +12,6 @@
       );
     });
 
-    //disable logs
-    $.fn.cycle.log = $.noop;
-
     $(".waypoint").each(function() {
       var self = $(this);
 

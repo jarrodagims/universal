@@ -380,9 +380,23 @@ the right sidebar including social icons address and phone
     align-items: center;
   }
 
+  .banner {
+    @include montserrat();
+
+    .h1 {
+      font-size: 26px;
+    }
+  }
+
   .social-media {
     display: flex;
     margin-bottom: 0;
+    justify-content: center;
+    margin-top: 1em;
+
+    a {
+      color: #CBCBCB;
+    }
 
     li {
       margin-left: 1em;
