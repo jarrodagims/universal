@@ -1039,6 +1039,7 @@ $navWidth: 80px;
   @include media-breakpoint-down(md) {
     > ul.list-unstyled > li:first-child {
       background: transparent;
+      height: auto !important;
     }
   }
 }

@@ -191,6 +191,42 @@
 
   @include media-breakpoint-down(md) {
 
+    iframe {
+      display: none;
+    }
+
+    .col-get-in-touch {
+      .extra-padding {
+        padding-bottom: 0;
+      }
+    }
+
+    .extra-padding {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .col-hours .extra-padding {
+      padding-top: 0;
+    }
+
+    .navbar-brand img {
+      height: 69px;
+    }
+
+    .h2 {
+      font-size: 18px;
+    }
+
+    .btn {
+      font-size: 9px;
+    }
+
+    span.sub-title {
+      font-size: 10px;
+    }
+
+
    
      .contact-box {
       @include dropshadow();

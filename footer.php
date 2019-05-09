@@ -26,7 +26,7 @@
                 <div class="">
                     <div class="row">
                         <div class="col">
-                            <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img
+                            <a class="navbar-brand d-lg-block" href='<?php echo get_site_url(); ?>'><img
                                     src="<?=IMGURL;?>logo-dark.svg" alt="<?php echo get_bloginfo(
         'description'
     ); ?>" /></a>
@@ -49,7 +49,7 @@
 
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col col-get-in-touch">
                             <div class="extra-padding">
                                 <span class="h2">
                                     Get In Touch
@@ -72,7 +72,7 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col col-hours">
                             <div class="extra-padding">
                                 <span class="h2 d-none d-lg-block">
                                     &nbsp;

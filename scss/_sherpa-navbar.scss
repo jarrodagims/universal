@@ -429,6 +429,7 @@ the right sidebar including social icons address and phone
     li.menu-item.directions, li.menu-item.contact {
       position: relative;
       padding: 0 1em;
+      margin-left: 0;
     }
 
     li.menu-item.directions::after {
