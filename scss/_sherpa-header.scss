@@ -28,6 +28,11 @@
     background: linear-gradient(270deg, rgba(255,255,255,0.93) 0%, rgba(255,255,255,0.4) 54%, rgba(255,255,255,1) 100%);
     color: $black;
     border-bottom: 1px solid $white;
+    padding: .75em 0;
+
+    .navbar-right {
+        margin-bottom: 1em;
+    }
 
     @include media-breakpoint-down(md) {
         background: $black;
@@ -40,6 +45,10 @@
             font-weight: 600;
         }
     }
+}
+
+.internal .navbar-right {
+    margin-bottom: 0;
 }
 
 .v-align {

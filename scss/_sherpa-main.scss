@@ -25,7 +25,7 @@
 .side-text {
     span {
       position: absolute;
-      left: -2.5em;
+      left: -1em;
       top: 1.5em;
       transform: rotate(270deg); 
       font-size: 23px;
@@ -144,7 +144,7 @@ Animations
   .waypoint.active {
     .jumbotron .h2::after {
       opacity: 1;
-      width: 500px;
+      width: 360px;
     }
   }
 
@@ -988,7 +988,7 @@ $navWidth: 80px;
 
     &:first-child {
       flex: 0 auto;
-       height: 104px;
+       height: 127px;
     } 
 
     > a {
@@ -1045,6 +1045,10 @@ $navWidth: 80px;
 
 @include media-breakpoint-up(lg) {
   #nav-sidebar {
+     .dropdown-menu {
+       position: relative;
+     }
+
     > ul.list-unstyled > li {
       .navbar-collapse,
       .navbar-form {
@@ -2230,6 +2234,10 @@ a[data-toggle="modal"] {
       align-items: center;
     }
 
+    .banner-content {
+      position: relative;
+    }
+
     .banner-content, .container, .row, .col {
       height: 100%;
       width: 100%;
@@ -2269,3 +2277,78 @@ a[data-toggle="modal"] {
     }
   }
 }
+
+.grid-banner {
+  .banner {
+    @include bg-gradient(left, $list3);
+  }
+
+  .container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    
+    
+    .col {
+      background: #000;
+      @include dropshadow();
+    }
+
+    
+    .row .col:first-child {
+      background: url('../img/bg-internal-banner.jpg') 0 0 no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-column-gap: 10px;
+  margin-top: 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  &.three-column {
+    grid-template-columns: 300px 300px 3fr;
+  }
+
+  &.letterpress-column {
+    grid-template-columns: 300px 300px 300px 1fr;
+  }
+
+  .span-two-rows {
+    grid-column: 4;
+    grid-row: span 2;
+
+    .box {
+      height: 100%;
+    }
+  }
+
+  .span-three-columns {
+    grid-column: 1 / span 3;
+  }
+
+  .box {
+    background: black;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  } 
+
+  p {
+    @include montserrat();
+    padding: .5em 0;
+    margin-bottom: 0;
+    background: $white;
+    width: 100%;
+  }
+}
+
+.page-template-page-grid .sidebar-content {
+  padding-top: 110px;
+}
+

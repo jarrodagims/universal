@@ -68,7 +68,7 @@ $sm->setColorType('singleColor');
 <section id="home-module-2" class="home-module-2">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col col-md-7">
                 <div class="extra-padding">
                     <div class="side-text">
                         <span>#getprinted</span>
@@ -78,31 +78,31 @@ $sm->setColorType('singleColor');
                     </div>
                 </div>
             </div>
-            <div class="col col-md-1"></div>
             <div class="col">
-                <div class="extra-padding">
+                <div>
                     <h2 class="h4 expander collapsed" data-toggle="collapse" data-target="#collapse"
                         aria-expanded="false" aria-controls="collapse"><span>Printing Services</span></h2>
-                    <?php if( $section_1_expander = get_field('section_1_expander') ) : ?>
-                    <?php echo $section_1_expander ?>
-                    <?php endif; ?>
+                    <div class="extra-padding">
+                        <?php if( $section_1_expander = get_field('section_1_expander') ) : ?>
+                        <?php echo $section_1_expander ?>
+                        <?php endif; ?>
 
-                    <?php if( $section_1_title = get_field('section_1_title') ) : ?>
+                        <?php if( $section_1_title = get_field('section_1_title') ) : ?>
 
-                    <?php echo $section_1_title ?>
+                        <?php echo $section_1_title ?>
 
 
-                    <?php endif; ?>
+                        <?php endif; ?>
 
-                    <?php if( $section_1_text = get_field('section_1_text') ) : ?>
+                        <?php if( $section_1_text = get_field('section_1_text') ) : ?>
 
-                    <?php echo $section_1_text ?>
+                        <?php echo $section_1_text ?>
 
-                    <?php endif; ?>
+                        <?php endif; ?>
 
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>

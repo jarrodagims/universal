@@ -25,25 +25,28 @@
 
             echo "<article>\n";
             echo "<div class=\"sidebar-content\">";
+            if(!is_page_template('page-grid.php')) : 
             get_sidebar();
+            endif;
             echo "<div class=\"content page-content\">";
             if(get_field('custom_h1')) :
                 echo  get_field('custom_h1', $pageid);
-            else :
+            elseif(!is_page_template('page-grid.php')) :
                 echo '<h1>' . get_the_title() . '</h1>';
             endif;
             the_content();
+            if(!is_page_template('page-grid.php')) : 
             ?>
 <div class="banner banner-bottom">
     <?php if (has_post_thumbnail( $post->ID ) ):
                 echo the_post_thumbnail(array(1060,209));
-            else:
+            elseif(!is_page_template('page-grid.php')) :
                 ?>
     <img src="<?=IMGURL?>bg-bottom.jpg" alt="<?php echo get_bloginfo( 'name' ); ?>">
     <?php
             endif; ?>
 </div>
-<?php
+<?php        endif;
             if (get_field('page_bottom', $pageid)) { ?>
 <section class="page-bottom">
     <div class="row">

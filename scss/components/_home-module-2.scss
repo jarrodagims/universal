@@ -1,6 +1,6 @@
 .home-module-2 {
-  padding-top: 168px;
-  padding-bottom:  168px;
+  padding-top: 80px;
+  padding-bottom:  80px;
   @include acumin();
   background: $white;
 
@@ -14,18 +14,25 @@
     position: relative;
   }
 
+  h2 {
+    margin-bottom: 2em;
+  }
+
   h3 {
     @include acumin();
     font-size: 44px;
     position: relative;
-    margin-bottom: .5em;
     color: #4D4D4D;
     text-transform: uppercase;
+    margin: 0 0;
   }
 
   .h2 {
     @include montserrat();
     font-weight: 300;
+    font-size: 30px;
+    margin: 0 0 1em;
+    line-height: 1.5;
   }
 
   .h4 {
@@ -33,6 +40,7 @@
     font-size: 23px;
     letter-spacing: 0;
     font-style: italic;
+    margin-top: 0;
 
      &[aria-expanded="true"] span::after {
         transform: translateY(-50%) rotate(90deg);
@@ -51,7 +59,12 @@
   }
 
   p {
+    font-size: 14px;
     margin-top: 2em;
+  }
+
+  .extra-padding {
+    padding-left: 2.5em;
   }
 
   

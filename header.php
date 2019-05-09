@@ -129,9 +129,9 @@
                 </div>
             </section>
 
-            <?php else : ?>
+            <?php elseif (is_page_template('page-grid.php')) : ?>
 
-            <section class="internal-banner waypoint">
+            <section class="grid-banner internal-banner waypoint">
                 <?php echo get_template_part('template-parts/navbar'); ?>
                 <div class="jumbo-container">
                     <div class="d-none d-lg-flex top-header">
@@ -153,10 +153,15 @@
                     </div>
                     <div class="banner">
                         <div class="banner-content">
+                            <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>
+
                             <div class="container">
+
                                 <div class="row">
                                     <div class="col">
-                                        <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>
+                                    </div>
+                                    <div class="col">
+
                                         <div class="header">
                                             <div class="header-content">
                                                 <div class="h1"><?php if(!is_home()) :

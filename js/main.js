@@ -47,13 +47,13 @@
     (function() {
       var deskFunctions = function() {
         //make dropdown hoverable
-        $(".dropdown-toggle").attr("data-toggle", "hover");
+        // $(".dropdown-toggle").attr("data-toggle", "hover");
         // $(".top-header").prependTo(".jumbo-container");
       };
 
       var mobileFunctions = function() {
         //make dropdown clickable
-        $(".dropdown-toggle").attr("data-toggle", "dropdown");
+        // $(".dropdown-toggle").attr("data-toggle", "dropdown");
         // $(".top-header").prependTo(".sidebar-container");
       };
 

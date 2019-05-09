@@ -63,13 +63,16 @@
 $lightblue: #4bcad7;
 $medblue: #35a8d7;
 $darkblue: #20419f;
-
+$ceruleanblue: #3570b5;
+$darkestblue: #204b9f;
 /* GRADIENT LISTS
 ============================================= */
 
 $list1: $blue, $green, $orange;
 
 $list2: $lightblue 4.43%, $medblue 38.18%, $darkblue 87.66%;
+
+$list3: $ceruleanblue 0%, $darkestblue 68.8%;
 
 // @mixin gradient() {
 //   background: -moz-linear-gradient(
@@ -113,7 +116,7 @@ $list2: $lightblue 4.43%, $medblue 38.18%, $darkblue 87.66%;
 //     90deg,
 //     rgba(245, 137, 65, $transparency) 0%,
 //     rgba(206, 45, 70, $transparency) 99.88%
-//   ); 
+//   );
 // }
 
 // $list1: rgba(245, 137, 65, 1), rgba(206, 45, 70, 1);
@@ -125,7 +128,7 @@ $list2: $lightblue 4.43%, $medblue 38.18%, $darkblue 87.66%;
   background: -moz-linear-gradient($direction, $list);
   background: -o-linear-gradient($direction, $list);
   background: linear-gradient($direction, $list);
-} 
+}
 
 @mixin gradient-btn($transparency: 0.75) {
   @include bg-gradient(left, $list1, $transparency);
@@ -198,7 +201,7 @@ $list2: $lightblue 4.43%, $medblue 38.18%, $darkblue 87.66%;
     position: relative;
     padding-right: calc(20px + 0.5em);
     &::after {
-      @include svg-arrow(_trim(#B2B2B2));
+      @include svg-arrow(_trim(#b2b2b2));
       content: "";
       display: block;
       height: 20px;
@@ -297,8 +300,12 @@ h3 {
 }
 
 @mixin gradient() {
-  background: rgb(53,112,181);
-  background: linear-gradient(90deg, rgba(53,112,181,1) 0%, rgba(32,75,159,1) 68%);
+  background: rgb(53, 112, 181);
+  background: linear-gradient(
+    90deg,
+    rgba(53, 112, 181, 1) 0%,
+    rgba(32, 75, 159, 1) 68%
+  );
 }
 
 .bg-gradient {
