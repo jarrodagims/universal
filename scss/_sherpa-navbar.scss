@@ -138,6 +138,12 @@
   img {
     width: 210px;
   }
+
+  @include media-breakpoint-down(md) {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .navbar-button {

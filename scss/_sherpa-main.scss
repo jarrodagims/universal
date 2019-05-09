@@ -1126,6 +1126,10 @@ $navWidth: 80px;
        top: 55px;
     }
 
+    .dropdown-menu {
+      position: relative;
+    }
+
     #nav-sidebar > ul.list-unstyled > li:first-child > a {
       margin-right: 0;
     }
@@ -1152,11 +1156,13 @@ $navWidth: 80px;
 
     .navbar-brand {
       z-index: 999;
+      width: auto;
     }
 
     .navbar-brand img {
       width: auto;
       height: 45px;
+      margin: 0 auto;
     }
 
     #nav-sidebar {

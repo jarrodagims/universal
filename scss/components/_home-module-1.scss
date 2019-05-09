@@ -82,20 +82,24 @@
     background-size: cover;
   }
 
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(md) {
     
     height: auto;
 
     .secondary-nav {
       height: 52px;
       @include bg-gradient(left, $list2);
+      text-align: center;
+      padding: 0 1em;
 
       li {
         display: flex;
         align-items: center;
+      
 
         &::before {
           color: $white;
+          margin: 0 .5em;
         }
       }
 
@@ -110,12 +114,13 @@
     }
 
     .jumbotron {
-      height: 400px;
+      height: 350px;
       padding: 2em 0;
     }
 
     h1 {
-      font-size: 34px;
+      font-size: 20px;
+      line-height: 1.5;
     }
 
     h2 {

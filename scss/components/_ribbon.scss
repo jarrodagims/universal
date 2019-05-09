@@ -93,6 +93,9 @@ background: linear-gradient(270deg, rgba(53,112,181,1) 0%, rgba(32,75,159,1) 100
   }
 
   @include media-breakpoint-down(lg) {
+    margin-top: 2em;
+    margin-bottom: 0;
+
     .container {
       padding: 0 0;
     }
@@ -102,6 +105,11 @@ background: linear-gradient(270deg, rgba(53,112,181,1) 0%, rgba(32,75,159,1) 100
       flex-wrap: wrap;
       li {
         width: 50%;
+        font-size: 14px;
+
+        a {
+          padding: 38px 0;
+        }
       }
     }
   }

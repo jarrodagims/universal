@@ -68,12 +68,15 @@ $sm->setColorType('singleColor');
 <section id="home-module-2" class="home-module-2">
     <div class="container">
         <div class="row">
-            <div class="col col-md-7">
+            <div class="col col-lg-7">
                 <div class="side-text">
                     <span>#getprinted</span>
+
                     <picture>
-                        <img src="<?=IMGURL?>printed-banners.jpg" alt="Interior" />
+                        <source srcset="<?=IMGURL?>printed-banners.jpg" media="(min-width: 992px)">
+                        <img src="<?=IMGURL?>banner-window.jpg" />
                     </picture>
+
                 </div>
             </div>
             <div class="col">
@@ -135,7 +138,7 @@ $sm->setColorType('singleColor');
             <div class="row">
 
                 <div class="col">
-                    <div class="grid">
+                    <div class="grid-img">
                         <img src="<?=IMGURL?>grid-sm.jpg" alt="" class="d-lg-none">
                     </div>
                 </div>
@@ -240,9 +243,11 @@ $sm->setColorType('singleColor');
 <section id="home-module-5" class="home-module-5 home-module-2">
     <div class="container">
         <div class="row">
-            <div class="col col-md-7">
+            <div class="col col-lg-7">
+
                 <picture>
-                    <img src="<?=IMGURL?>dont-advertise-entice.jpg" alt="Interior" />
+                    <source srcset="<?=IMGURL?>dont-advertise-entice.jpg" media="(min-width: 992px)">
+                    <img src="<?=IMGURL?>entice-banner.jpg" alt="Interior" />
                 </picture>
             </div>
             <div class="col">

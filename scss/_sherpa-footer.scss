@@ -11,6 +11,10 @@
   @include dropshadow();
   overflow: hidden;
 
+  a {
+    color: $white;
+  }
+
    span.sub-title {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
