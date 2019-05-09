@@ -4,6 +4,10 @@
 input[type=submit] {
   background: transparent;
   border: 0;
+  font-size: 12px;
+  letter-spacing: 0;
+  padding-left: 3em;
+  padding-right: 3em;
 
   &:focus, &:active {
     background: $sherpa-brand-primary;
@@ -12,7 +16,7 @@ input[type=submit] {
 
 .btn,
 .btn-success {
-  padding: 1em 2em;
+  padding: 1.5em 2em;
   font-size: 15px;
   font-weight: 600;
   color: $white;

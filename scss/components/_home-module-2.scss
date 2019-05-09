@@ -19,12 +19,16 @@
   }
 
   h3 {
-    @include acumin();
+    font-family: "acumin-pro-condensed", sans-serif;
     font-size: 44px;
     position: relative;
-    color: #4D4D4D;
-    text-transform: uppercase;
     margin: 0 0;
+
+    ul li {
+      font-size: 14px;
+      margin-bottom: 1em;
+      line-height: 1.5;
+    }
   }
 
   .h2 {

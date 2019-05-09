@@ -1,5 +1,8 @@
 .home-module-5 {
   
+  h2 {
+    margin-bottom: 1em;
+  }
 
   @include media-breakpoint-down(lg) {
     .row .col:first-child {

@@ -11,12 +11,19 @@
   @include dropshadow();
   overflow: hidden;
 
+   span.sub-title {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
   .h2 {
     display: block;
     margin-bottom: 1em;
     @include montserrat();
     letter-spacing: 0;
     font-weight: 300;
+    font-size: 28px;
   }
 
   .extra-padding {
@@ -75,6 +82,7 @@
 
   p {
    letter-spacing: 0;
+   font-size: 14px;
   }
 
   p img {
@@ -225,10 +233,7 @@
       margin-bottom: 0;
     }
 
-    span.sub-title {
-      font-family: 'Poppins', sans-serif;
-      letter-spacing: 0;
-    }
+   
 
     .form-group {
       text-align: center;
