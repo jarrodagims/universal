@@ -14,7 +14,8 @@
                         class="menu-item current-menu-item active nav-item">
                         <a title="Home" href="#home-module-2" data-target="#home-module-2"
                             class="sidebar-link nav-link">Printing
-                            Services</a></li>
+                            Services</a>
+                    </li>
                 </ul>
             </div>
         </li>

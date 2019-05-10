@@ -116,13 +116,13 @@ $sm->setColorType('singleColor');
             <div class="col">
                 <ul class="list-inline">
                     <li>
-                        <a href="">Printing Services</a>
+                        <a href="#">Printing Services</a>
                     </li>
-                    <li><a href="">Design Services</a>
+                    <li><a href="<?=SITEURL?>/printing-services/graphic-design/">Design Services</a>
                     </li>
-                    <li><a href="">Mailing Services</a>
+                    <li><a href="#">Mailing Services</a>
                     </li>
-                    <li><a href="">Mailing Lists</a>
+                    <li><a href="#">Mailing Lists</a>
                     </li>
                 </ul>
             </div>
@@ -198,7 +198,7 @@ $sm->setColorType('singleColor');
         <div class="row">
             <div class="col">
                 <h2>Featured Products</h2>
-                <a href="">
+                <a href="<?=SITEURL?>/printing-services/banners/">
                     <button class="btn btn-primary">
                         VIEW FEATURED PRODUCTS
                     </button>

@@ -54,6 +54,13 @@
     color: #1B1B1B;
     position: relative;
 
+    @include media-breakpoint-up(lg) {
+      .extra-padding {
+        padding-right: 2em;
+      }
+    }
+
+
     
     .col {
        padding-top: 6em;
