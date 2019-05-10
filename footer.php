@@ -66,8 +66,10 @@
                                     Office: (915) 591-8943<br />
                                 </p>
 
-                                <div class="d-none d-lg-inline-block"><img src=" <?=IMGURL?>instagram.svg"
-                                        alt="Instagram" width="109"> #getprinted#ELPaso</div>
+                                <div class="d-none d-lg-inline-block"><a
+                                        href="https://www.instagram.com/universalgraphicsinc/" class="instagram-button"
+                                        target="_blank"><img src=" <?=IMGURL?>instagram.svg" alt="Instagram"
+                                            width="109"> #getprinted#ELPaso</a></div>
 
                             </div>
                         </div>
@@ -93,7 +95,9 @@
                                 </p>
 
                                 <p class="d-lg-none">
-                                    <img src="<?=IMGURL?>instagram.svg" alt="Instagram" width="109"> #getprinted#ELPaso
+                                    <a href="https://www.instagram.com/universalgraphicsinc/" class="instagram-button"
+                                        target="_blank"><img src="<?=IMGURL?>instagram.svg" alt="Instagram" width="109">
+                                        #getprinted#ELPaso</a>
                                 </p>
 
                                 <ul class="list-inline social-media sm">

@@ -2332,6 +2332,55 @@ a[data-toggle="modal"] {
       height: 100%;
     }
   }
+ 
+  .box {
+    
+  }
+ 
+  .img {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .collating {
+    background: url('../img/collating.png');
+  }
+
+  .folding {
+    background: url('../img/folding.png');
+  }
+
+  .laminating {
+    background: url('../img/laminating.png');
+  }
+
+  .hand-work {
+    background: url('../img/handwork.png');
+  }
+
+  .hole-drilling {
+    background: url('../img/hole-drilling.png');
+  }
+
+  .numbering {
+    background: url('../img/numbering.png');
+  }
+
+  .paper-cutting {
+    background: url('../img/paper-cutting.png');
+  }
+
+  .perforating {
+    background: url('../img/perforating.png');
+  }
+
+  .shrink-wrapping {
+    background: url('../img/shrink-wrapping.png');
+  }
 
   .span-three-columns {
     grid-column: 1 / span 3;

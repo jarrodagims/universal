@@ -11,6 +11,10 @@
   @include dropshadow();
   overflow: hidden;
 
+  #contact-form form div.wpcf7-validation-errors, #contact-form form div.wpcf7-acceptance-missing {
+    color: red;
+  }
+
   a {
     color: $white;
   }

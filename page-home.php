@@ -51,13 +51,13 @@ $sm->setColorType('singleColor');
         <div class="secondary-nav">
             <ul class="list-inline">
                 <li>
-                    <a href="">OFFSET</a></li>
+                    OFFSET</li>
                 <li>
-                    <a href="">DIGITAL</a></li>
+                    DIGITAL</li>
                 <li>
-                    <a href="">WIDE FORMAT</a></li>
+                    WIDE FORMAT</li>
                 <li>
-                    <a href="">PROMOTIONAL ITEMS</a>
+                    PROMOTIONAL ITEMS
                 </li>
             </ul>
         </div>
@@ -167,13 +167,10 @@ $sm->setColorType('singleColor');
                 <div class="extra-padding">
                     <h2>Our Services</h2>
                     <p>As a well-equipped press and digital printer, Universal Graphics has an extensive list of
-                        services to
-                        cover all marketing and printing material needs for any business to promote, grow, and represent
-                        their brand. Whether you need offset printing, a banner printed for your event, flyers,
-                        booklets,
-                        envelopes or postcards. There is no better way to attract customers than well designed and
-                        quality
-                        printed material.</p>
+                        services to cover all marketing and printing material needs for any business to promote, grow,
+                        and represent their brand. Whether you need offset printing, a banner printed for your event,
+                        flyers, booklets, envelopes or postcards. There is no better way to attract customers than well
+                        designed and quality printed material.</p>
 
                     <span>#printed</span>
                 </div>
@@ -265,8 +262,10 @@ $sm->setColorType('singleColor');
 
                     <p>
                         We value personal relationships with our customers and helping their business flourish. Our
-                        expertise lies in commercial printing and representing businesses through professional and
-                        quality designs and products.
+                        expertise lies in commercial printniversal Graphics serves customers all over the city and also
+                        in the surrounding areas of New Mexico such as Las Cruces and Alamogordo.ing and representing
+                        businesses through professional and quality designs and products.
+
                     </p>
 
                 </div>
@@ -284,11 +283,9 @@ $sm->setColorType('singleColor');
                     <h2>About Our Location
                     </h2>
 
-                    <p>Universal Graphics is conveniently located on the Eastside of El Paso near Vist
-                        del Sol and Lomaland. Find us at the heart of East El Paso where the growing
-                        industries and private sector make it a vibrant and thriving area.
-                        Universal Graphics serves customers all over the city and also in the surrounding
-                        areas of New Mexico such as Las Cruces and Alamogordo.</p>
+                    <p>Universal Graphics is conveniently located on the Eastside of El Paso near Vista del Sol and
+                        Lomaland. Find us at the heart of East El Paso where the growing industries and private sector
+                        make it a vibrant and thriving area. </p>
 
                     <span>#ElPaso</span>
                 </div>

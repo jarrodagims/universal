@@ -113,24 +113,23 @@ input[type=submit] {
   }
 }
 
-.btn-read-more {
-  margin-top: auto;
-  background: $sherpa-secondary-color;
+// .btn-read-more {
+//   margin-top: auto;
 
-  &:hover {
-    color: $white;
-  }
+//   &:hover {
+//     color: $white;
+//   }
 
-  &.btn-border {
-    background: rgba(41, 41, 44, 0.63);
-    color: $white;
+//   &.btn-border {
+//     background: rgba(41, 41, 44, 0.63);
+//     color: $white;
 
-    &:hover {
-      color: $white;
-      background: $sherpa-brand-primary;
-    }
-  }
-}
+//     &:hover {
+//       color: $white;
+//       background: $sherpa-brand-primary;
+//     }
+//   }
+// }
 
 .btn.active.focus,
 .btn.active:focus,

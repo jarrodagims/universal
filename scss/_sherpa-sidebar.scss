@@ -1,6 +1,4 @@
 .sidebar-content {
-
-
   @include media-breakpoint-between(sm, md) {
     .flex-row {
       flex-direction: column;
@@ -22,11 +20,10 @@
   .page-template-page-home {
     #sidebar {
       width: 506px;
-      padding: 3.5em 6em 10.5em
+      padding: 3.5em 6em 10.5em;
     }
   }
 }
-
 
 #sidebar {
   float: right;
@@ -34,10 +31,7 @@
   margin-left: 4em;
   text-align: center;
   position: relative;
-  @include dropshadow();
   padding: 2em 4em 10em;
-  background: $white url('../img/bg-sidebar-bottom.png') center 100% no-repeat;
-
 
   h2 {
     color: #000000;
@@ -45,22 +39,23 @@
     font-size: 29px;
     position: relative;
 
-    &::before, &::after {
-      content: '';
+    &::before,
+    &::after {
+      content: "";
       height: 1px;
       width: 163px;
       display: block;
-      margin: .95em auto;
-      background: #ED1D25;
+      margin: 0.95em auto;
+      background: $sherpa-brand-primary;
     }
 
     &::after {
       margin-top: 1em;
     }
-    
+
     strong {
       color: $sherpa-brand-primary;
-    } 
+    }
 
     margin-bottom: 1em;
   }
@@ -72,15 +67,15 @@
   .btn {
     margin-top: 2em;
   }
-
 }
 
-
 body #main .container article #sidebar {
-  width: auto;
+  width: 468px;
   padding: 0 0;
   margin-left: 105px;
   margin-bottom: 1em;
+  z-index: 9999;
+
 
   #contact-form {
     margin-bottom: 13.5px;
@@ -96,21 +91,20 @@ body #main .container article #sidebar {
     font-size: 27px;
     line-height: 1.35em;
     text-transform: none;
+    @include montserrat();
   }
 
   .btn {
-    margin-top: 0;
-    font-size: 10px;
+    background: $sherpa-brand-primary;
+    color: $white;
   }
 
-
   @include media-breakpoint-down(md) {
-    margin-left: auto;
+    margin-left: 0;
   }
 }
 
-
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   #sidebar {
     margin-top: 2em;
     float: none;
@@ -125,8 +119,9 @@ body #main .container article #sidebar {
       font-size: 25px;
       line-height: 1.5;
 
-      &::before, &::after {
-        margin: .5em auto;
+      &::before,
+      &::after {
+        margin: 0.5em auto;
       }
     }
 
@@ -165,15 +160,10 @@ body #main .container article #sidebar {
 }
 
 #sidebar {
-  
-
-
   @include media-breakpoint-down(xs) {
     clear: both;
   }
 }
-
-
 
 .sidebar {
   width: 412px;
