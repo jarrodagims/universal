@@ -24,7 +24,12 @@
 			}
 
             echo "<article>\n";
-            echo "<div class=\"sidebar-content\">";
+            
+            if(is_page('printing-services')) :
+                echo "<div class=\"sidebar-content with-bar\">";
+                else :
+                    echo "<div class=\"sidebar-content\">";
+                endif;
             if(!is_page_template('page-grid.php')) : 
             get_sidebar();
             endif;

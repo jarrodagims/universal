@@ -1048,6 +1048,9 @@ $navWidth: 80px;
       position: relative;
     }
 
+    .dropdown-item {
+      font-size: 12px;
+    }
     > ul.list-unstyled > li {
       .navbar-collapse,
       .navbar-form {
@@ -2032,6 +2035,10 @@ ul.floorplan-nav {
   .internal #nav-sidebar {
     height: auto;
     position: fixed;
+    flex: 0 auto;
+    .dropdown-item {
+      white-space: inherit;
+    }
   }
 
   .internal #nav-sidebar > ul.list-unstyled > li {
@@ -2044,6 +2051,7 @@ ul.floorplan-nav {
   #nav-sidebar {
     height: 750px;
     transition: height 300ms ease-in-out;
+    flex: 0 auto;
   }
 
   .sticky-wrapper #nav-sidebar {
@@ -2116,6 +2124,7 @@ ul.expand {
   letter-spacing: 0;
   padding-left: 0;
   margin-left: 0;
+  @include acumin();
 
   li {
     margin-bottom: 0.5em;
@@ -2209,6 +2218,12 @@ a[data-toggle="modal"] {
   p {
     margin-bottom: 0;
   }
+  a {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
 }
 
 .internal-banner {
@@ -2218,7 +2233,7 @@ a[data-toggle="modal"] {
     width: 100%;
     height: 316px;
     z-index: 1;
-    background: url("../img/bg-hero-internal.jpg") 0 0 no-repeat;
+    background: url("../img/internal-header-banner.jpg") 0 0 no-repeat;
     background-size: cover;
     text-align: center;
     color: $white;
@@ -2289,15 +2304,59 @@ a[data-toggle="modal"] {
     display: flex;
     justify-content: center;
 
-    .col {
-      background: #000;
-      @include dropshadow();
+    .row {
+      height: auto;
     }
 
-    .row .col:first-child {
-      background: url("../img/bg-internal-banner.jpg") 0 0 no-repeat;
-      background-size: cover;
+    .col {
+      height: auto;
+    }
+
+    &.printing-options {
+      margin-top: 0;
+      height: auto;
       z-index: -1;
+      position: relative;
+//       left: 50%;
+//       transform: translateX(-50%);
+
+      .col {
+        background: #f1f1f1;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    &.bg-container .col {
+      background: #000;
+      @include dropshadow();
+
+
+      &.bg-header-banner {
+        background: url("../img/bg-internal-banner.jpg") 0 0 no-repeat;
+        background-size: cover;
+        z-index: -1;
+      }
+    }
+    
+    .printing-list ul {
+      display: flex;
+      padding-left: 0;
+      list-style: none;
+      background: #f1f1f1;
+      justify-content: space-between;
+      margin-bottom: 0;
+
+      li {
+        padding: 2em;
+        color: $black;
+      }
+
+      li:first-child {
+        background: #000;
+        color: $white;
+      }
     }
   }
 }
@@ -2318,7 +2377,7 @@ a[data-toggle="modal"] {
   }
 
   &.letterpress-column {
-    grid-template-columns: 300px 300px 300px 1fr;
+    grid-template-columns: 300px 300px 300px 300px;
   }
   &.four-column {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -2459,9 +2518,41 @@ a[data-toggle="modal"] {
   .wire-binding {
     background: url("../img/wire-binding.jpg");
   }
+
+  .mailing-services {
+    background: url("../img/mailing-services.jpg");
+  }
+
+  .personalizing {
+    background: url("../img/personalizing.jpg");
+  }
+
+  .variable-data {
+    background: url("../img/variable-data.jpg");
+  }
+
   .span-three-columns {
     grid-column: 1 / span 3;
+  }
 
+  .debasing {
+    background: url("../img/debasing.jpg");
+  }
+
+  .die-cut {
+    background: url("../img/die-cut.png");
+  }
+
+  .scoring {
+    background: url("../img/scoring.jpg");
+  }
+
+  .foil-stamp { 
+    background: url("../img/foil-stamp.jpg");
+  }
+
+  .embossing {
+    background: url("../img/embossing.jpg");
   }
 
   p {
@@ -2475,6 +2566,10 @@ a[data-toggle="modal"] {
 
 .page-template-page-grid .sidebar-content {
   padding-top: 110px;
+
+  &.with-bar {
+    padding-top: 170px;
+  }
 }
 
 

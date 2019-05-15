@@ -87,11 +87,17 @@
     
     height: auto;
 
+    .list-inline {
+      flex-wrap: wrap;
+    }
+
     .secondary-nav {
       height: 52px;
       @include bg-gradient(left, $list2);
       text-align: center;
-      padding: 0 1em;
+      padding: 1em;
+      flex-wrap: wrap;
+      height: auto;
 
       li {
         display: flex;
@@ -101,7 +107,7 @@
 
         &::before {
           color: $white;
-          margin: 0 .5em;
+          margin: 0 1em;
         }
       }
 

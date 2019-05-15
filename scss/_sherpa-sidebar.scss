@@ -33,6 +33,8 @@
   position: relative;
   padding: 2em 4em 10em;
 
+ 
+
   h2 {
     color: #000000;
     @include serif();
@@ -75,6 +77,17 @@ body #main .container article #sidebar {
   margin-left: 105px;
   margin-bottom: 1em;
   z-index: 9999;
+
+ &.submit-files {
+    margin: 0 auto;
+    float: none;
+    margin-left: auto;
+    z-index: 0;
+  }
+
+  input[type="file"] {
+    color: #000;
+  }
 
 
   #contact-form {

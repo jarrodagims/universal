@@ -51,13 +51,13 @@ $sm->setColorType('singleColor');
         <div class="secondary-nav">
             <ul class="list-inline">
                 <li>
-                    OFFSET</li>
+                    <a href="<?=SITEURL?>/printing-services/">OFFSET</a></li>
                 <li>
-                    DIGITAL</li>
+                    <a href="<?=SITEURL?>/printing-services/">DIGITAL</a></li>
                 <li>
-                    WIDE FORMAT</li>
+                    <a href="<?=SITEURL?>/printing-services/wide-format-printing/">WIDE FORMAT</a></li>
                 <li>
-                    PROMOTIONAL ITEMS
+                    <a href="<?=SITEURL?>/promo-items/">PROMOTIONAL ITEMS</a>
                 </li>
             </ul>
         </div>
@@ -116,13 +116,13 @@ $sm->setColorType('singleColor');
             <div class="col">
                 <ul class="list-inline">
                     <li>
-                        <a href="#">Printing Services</a>
+                        <a href="<?=SITEURL?>/printing-services/">Printing Services</a>
                     </li>
                     <li><a href="<?=SITEURL?>/printing-services/graphic-design/">Design Services</a>
                     </li>
-                    <li><a href="#">Mailing Services</a>
+                    <li><a href="<?=SITEURL?>/marketing-services/">Mailing Services</a>
                     </li>
-                    <li><a href="#">Mailing Lists</a>
+                    <li><a href="<?=SITEURL?>/marketing-services/">Mailing Lists</a>
                     </li>
                 </ul>
             </div>
@@ -139,21 +139,37 @@ $sm->setColorType('singleColor');
 
                 <div class="col">
                     <div class="grid-img">
-                        <img src="<?=IMGURL?>grid-sm.jpg" alt="" class="d-lg-none">
+
+                        <img src="<?=IMGURL?>grid-sidebar.jpg" alt="Sidebar" usemap="#image-map" class="d-xl-none">
+
+                        <map name="image-map">
+                            <area target="" alt="Digital" title="Digital" href="<?=SITEURL?>/printing-services/"
+                                coords="0,228,361,116" shape="rect">
+                            <area target="" alt="Wide Format" title="Wide Format"
+                                href="<?=SITEURL?>/printing-services/wide-format-printing/" coords="1,230,360,458"
+                                shape="rect">
+                            <area target="" alt="Offset" title="Offset" href="<?=SITEURL?>/printing-services/"
+                                coords="0,459,361,574" shape="rect">
+                            <area target="" alt="Promotional Items" title="Promotional Items"
+                                href="<?=SITEURL?>/printing-services/promotional-items/" coords="0,574,361,801"
+                                shape="rect">
+                            <area target="" alt="Hello" title="Contact Us" href="<?=SITEURL?>/contact-us/"
+                                coords="2,0,361,114" shape="rect">
+                        </map>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container d-none d-lg-block">
+    <div class="container d-none d-xl-block">
         <div class="row shadow">
             <div class="col">
                 <img src="<?=IMGURL?>bg-hi.jpg" alt="Hi">
             </div>
             <div class="col bg-gradient">
                 <h2>
-                    Promotional Items
+                    <a href="<?=SITEURL?>/promo-items/">Promotional Items</a>
                 </h2>
             </div>
         </div>
@@ -185,11 +201,7 @@ $sm->setColorType('singleColor');
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <a href="">SUBMIT YOUR FILES</a>
-                </div>
-                <div class="col">
-
-                    <a href="">PREPARE YOUR FILES</a>
+                    <a href="<?=SITEURL?>/submit-files/">SUBMIT YOUR FILES</a>
                 </div>
             </div>
         </div>
@@ -198,7 +210,7 @@ $sm->setColorType('singleColor');
         <div class="row">
             <div class="col">
                 <h2>Featured Products</h2>
-                <a href="<?=SITEURL?>/printing-services/banners/">
+                <a href="<?=SITEURL?>/printing-services/">
                     <button class="btn btn-primary">
                         VIEW FEATURED PRODUCTS
                     </button>

@@ -1,6 +1,6 @@
 (function($) {
   $(document).ready(function() {
-    $(".sidebar-link").click(function(e) {
+    $(".sidebar-link.contact-link").click(function(e) {
       e.preventDefault();
 
       $("html, body").animate(
@@ -39,10 +39,6 @@
     // stickyExample();
 
     //cycle main slideshow when clicking list item
-    $("body").on("click", "ul.slide-nav li", function() {
-      var strIndex = $(this).attr("data-hard-index");
-      $(".slideshow").cycle("goto", strIndex);
-    });
 
     (function() {
       var deskFunctions = function() {

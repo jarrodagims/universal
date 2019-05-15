@@ -309,6 +309,8 @@ the right sidebar including social icons address and phone
   flex-direction: column;
   padding-top: 0.5em;
 
+
+
   .container-fluid {
     position: absolute;
   }
@@ -381,7 +383,12 @@ the right sidebar including social icons address and phone
   letter-spacing: 0;
 }
 
+.banner .dropdown-menu {
+  width: 300px;
+} 
+
 .internal {
+
   @include media-breakpoint-up(sm) {
     .btn-header {
       margin-left: 1em;

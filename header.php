@@ -229,8 +229,8 @@ StatCounter"></a></div>
                             <div class="container bg-container">
 
                                 <div class="row header-row">
-                                    <div class="col">
-                                        <div class="bg-header-banner"></div>
+                                    <div class="col bg-header-banner">
+
                                     </div>
                                     <div class="col">
 
@@ -260,13 +260,24 @@ StatCounter"></a></div>
                                                 </ul>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
-
-
                             </div>
+                            <?php if(is_page('printing-services')) : ?>
+                            <div class="container printing-options">
+                                <div class="row printing-list">
+                                    <div class="col">
+                                        <ul>
+                                            <li>Color Options</li>
+                                            <li>Full Color</li>
+                                            <li>Spot Color Printing</li>
+                                            <li>Two Color Printing</li>
+                                            <li>Black & White</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
