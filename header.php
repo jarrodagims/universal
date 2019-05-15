@@ -11,7 +11,7 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125707253-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121649798-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -20,7 +20,7 @@
     }
     gtag('js', new Date());
 
-    gtag('config', 'UA-125707253-1');
+    gtag('config', 'UA-121649798-1');
     </script>
     <meta charset="<?php bloginfo('charset');?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -37,6 +37,66 @@
     <?=get_option('sherpa_schema')?>
 
     <?php endif;?>
+
+    <meta name="google-site-verification" content="6mQG0vpMJdvzUVh4TJ_bjjR6w1G_3op0Th4q2zelpDw" />
+    <meta name="google-site-verification" content="6-17-z-8Sq-j9s-gZspsw8GF4Us6wyYmfCTbvepH0-Q" />
+
+    <!-- Default Statcounter code for Universal Graphics
+http://www.ug-inc.com/ -->
+    <script type="text/javascript">
+    var sc_project = 11750143;
+    var sc_invisible = 1;
+    var sc_security = "e9a2e06d";
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript>
+        <div class="statcounter"><a title="Web Analytics
+Made Easy - StatCounter" href="https://statcounter.com/" target="_blank"><img class="statcounter"
+                    src="https://c.statcounter.com/11750143/0/e9a2e06d/1/" alt="Web Analytics Made Easy -
+StatCounter"></a></div>
+    </noscript>
+    <!-- End of Statcounter Code -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Universal Graphics, Inc.",
+        "image": "http://ug-inc.com/wp-content/themes/universal-graphics/img/logo.svg",
+        "@id": "",
+        "url": "http://www.ug-inc.com/",
+        "telephone": "(915) 591-8943",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1217 Barranca Dr Ste B",
+            "addressLocality": "El Paso",
+            "addressRegion": "TX",
+            "postalCode": "79935",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 31.7539544,
+            "longitude": -106.33253669999999
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "sameAs": [
+            "https://www.facebook.com/UniversalGraphicsInc/",
+            "https://twitter.com/gil_the_printer"
+        ]
+    }
+    </script>
 
 </head>
 
@@ -166,10 +226,11 @@
                         <div class="banner-content">
                             <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>
 
-                            <div class="container">
+                            <div class="container bg-container">
 
-                                <div class="row">
+                                <div class="row header-row">
                                     <div class="col">
+                                        <div class="bg-header-banner"></div>
                                     </div>
                                     <div class="col">
 
@@ -199,8 +260,12 @@
                                                 </ul>
                                             </div>
                                         </div>
+
+
                                     </div>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>

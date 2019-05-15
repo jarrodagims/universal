@@ -281,7 +281,9 @@ the right sidebar including social icons address and phone
     li a {
       padding: 1em;
     }
-  }
+  } 
+
+  
 
   .navbar-collapse,
   .navbar-form {
@@ -368,12 +370,15 @@ the right sidebar including social icons address and phone
 @include media-breakpoint-up(md) {
   .dropdown:hover > .dropdown-menu {
     display: block;
-    margin-top: -8px;
+    margin-top: 0px;
+    background: rgba(0,0,0,0.95);
   }
 }
 
 .dropdown-item {
-  letter-spacing: $letterSpacing;
+  font-size: 12px;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .internal {

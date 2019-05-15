@@ -70,6 +70,7 @@
         color: $sherpa-dark-color;
         font-weight: normal;
         text-transform: uppercase;
+        @include poppins();
 
         &::before {
           content: "| ";
@@ -148,6 +149,8 @@
         &::placeholder {
           color: $white;
           font-weight: normal;
+          @include poppins();
+
           &::before {
             content: "| ";
             display: block;
@@ -304,6 +307,8 @@
         input {
           width: 100%;
           outline: 0;
+          @include poppins();
+
           &:focus {
             outline: 0;
           }
@@ -315,16 +320,40 @@
       }
     }
 
+    .wpcf7-form-control-wrap {
+      input {
+        padding-right: 30px;
+      }
+      &::before {
+        content: "";
+        @include svg-arrow(_trim($white));
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0.5em;
+        top: 15px;
+        transform: translateY(-50%);
+        font-weight: 300;
+        vertical-align: middle;
+        background-size: 15px;
+        background-position: center center;
+        height: 100%;
+        width: 30px;
+      }
+    }
+
+
     input[type="text"],
     input[type="email"],
     input[type="tel"],
     textarea {
-      background: rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.08);
       border: 0;
       color: $white;
       padding: 1em;
       margin-bottom: 1.25em;
       transition: all 0.3ms ease-in;
+      padding-right:30px;
+      font-size: 12px;
 
       &.wpcf7-not-valid {
         border: 1px solid red;
@@ -339,7 +368,7 @@
       &::placeholder {
         color: $white;
         font-weight: normal;
-        font-family: "Poppins", sans-serif;
+        @include poppins();
       }
     }
 

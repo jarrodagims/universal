@@ -42,7 +42,7 @@
     stickyExample();
 
     //cycle main slideshow when clicking list item
-    $("body").on("click", "ul.slide-nav li", function() {
+    $("body").on("click", "ul.slide-nav li.contact-link", function() {
       var strIndex = $(this).attr("data-hard-index");
       $(".slideshow").cycle("goto", strIndex);
     });

@@ -51,11 +51,15 @@
 }
 
 @mixin acumin() {
-  font-family: "acumin-pro-extra-condensed", sans-serif;
-}
+  font-family: "acumin-pro-semi-condensed", sans-serif;
+} 
 
 @mixin acumin-condensed() {
-  font-family: "acumin-pro-condensed", sans-serif;
+  font-family: "acumin-pro-semi-condensed", sans-serif;
+}
+
+@mixin poppins() {
+  font-family: "Poppins", sans-serif;
 }
 
 /* COLOR VARIABLES
@@ -65,7 +69,7 @@ $medblue: #35a8d7;
 $darkblue: #20419f;
 $ceruleanblue: #3570b5;
 $darkestblue: #204b9f;
-/* GRADIENT LISTS
+/* GRADIENT LISTS 
 ============================================= */
 
 $list1: $blue, $green, $orange;

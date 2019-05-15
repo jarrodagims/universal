@@ -14,7 +14,8 @@
                 <p>
                     Contact Us Today. Come by and visit us at the print shop! If you have questions about any of our
                     services or how
-                    we can help your business please give us a call 915-591-8943. We look forward to serving you.</p>
+                    we can help your business please give us a call <a href="tel:9155918943">915-591-8943</a>. We look
+                    forward to serving you.</p>
             </div>
         </div>
     </div>
@@ -63,7 +64,7 @@
 
                                 <p>
                                     <span class="sub-title">TELEPHONE:</span><br />
-                                    Office: (915) 591-8943<br />
+                                    Office: <a href="tel:9155918943">(915) 591-8943</a><br />
                                 </p>
 
                                 <div class="d-none d-lg-inline-block"><a
@@ -91,7 +92,7 @@
                                     Barranca Dr. Suite B, El Paso, Texas. For any questions or inquiries about our
                                     services,
                                     give us a
-                                    call at <a href="tel:9155918943">915-591-8943</a>.
+                                    call at <br /><a href="tel:9155918943">915-591-8943</a>.
                                 </p>
 
                                 <p class="d-lg-none">

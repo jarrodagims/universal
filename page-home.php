@@ -169,8 +169,8 @@ $sm->setColorType('singleColor');
                     <p>As a well-equipped press and digital printer, Universal Graphics has an extensive list of
                         services to cover all marketing and printing material needs for any business to promote, grow,
                         and represent their brand. Whether you need offset printing, a banner printed for your event,
-                        flyers, booklets, envelopes or postcards. There is no better way to attract customers than well
-                        designed and quality printed material.</p>
+                        flyers, booklets, envelopes or postcards. There is no better way to attract customers than
+                        well-designed and quality printed material.</p>
 
                     <span>#printed</span>
                 </div>

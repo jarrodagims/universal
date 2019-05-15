@@ -17,10 +17,18 @@
 
   a {
     color: $white;
+    
+  }
+
+  .instagram-button {
+    @include poppins();
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
   }
 
    span.sub-title {
-    font-family: 'Poppins', sans-serif;
+    @include poppins();
     letter-spacing: 1px;
     font-size: 12px;
   }
@@ -128,7 +136,7 @@
 
 
     li a {
-      padding: 1em;
+      padding: .5em;
       color: #BFC2C1;
 
       &:hover {

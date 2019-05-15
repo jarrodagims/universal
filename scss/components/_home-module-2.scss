@@ -19,13 +19,13 @@
   }
 
   h3 {
-    font-family: "acumin-pro-condensed", sans-serif;
+    @include acumin();
     font-size: 44px;
-    position: relative;
+    position: relative; 
     margin: 0 0;
 
-    ul li {
-      font-size: 14px;
+    ul li { 
+      font-size: 15px;
       margin-bottom: 1em;
       line-height: 1.5;
     }
@@ -63,7 +63,7 @@
   }
 
   p {
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 2em;
   }
 

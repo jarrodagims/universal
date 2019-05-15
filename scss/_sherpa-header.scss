@@ -29,9 +29,11 @@
     color: $black;
     border-bottom: 1px solid $white;
     padding: .75em 0;
+    width: 100%;
 
     .navbar-right {
         margin-bottom: 1em;
+        font-weight: 500;
     }
 
     @include media-breakpoint-down(md) {

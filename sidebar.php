@@ -13,5 +13,20 @@
     <?php endif; ?>
     <?php if (!is_page('contact-us')) : ?>
 
-    <img src="<?=IMGURL?>grid-sidebar.jpg" alt=""><?php endif; ?>
+    <img src="<?=IMGURL?>grid-sidebar.jpg" alt="Sidebar" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="" alt="Digital" title="Digital" href="<?=SITEURL?>/printing-services/" coords="0,228,361,116"
+            shape="rect">
+        <area target="" alt="Wide Format" title="Wide Format"
+            href="<?=SITEURL?>/printing-services/wide-format-printing/" coords="1,230,360,458" shape="rect">
+        <area target="" alt="Offset" title="Offset" href="<?=SITEURL?>/printing-services/" coords="0,459,361,574"
+            shape="rect">
+        <area target="" alt="Promotional Items" title="Promotional Items"
+            href="<?=SITEURL?>/printing-services/promotional-items/" coords="0,574,361,801" shape="rect">
+        <area target="" alt="Hello" title="Contact Us" href="<?=SITEURL?>/contact-us/" coords="2,0,361,114"
+            shape="rect">
+    </map>
+
+    <?php endif; ?>
 </div>
