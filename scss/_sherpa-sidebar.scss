@@ -83,6 +83,10 @@ body #main .container article #sidebar {
     float: none;
     margin-left: auto;
     z-index: 0;
+
+    .form-group {
+      padding-left: 0;
+    }
   }
 
   input[type="file"] {

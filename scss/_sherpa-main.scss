@@ -2230,7 +2230,7 @@ a[data-toggle="modal"] {
   display: flex;
 
   .banner {
-    width: 100%;
+    width: 100%; 
     height: 316px;
     z-index: 1;
     background: url("../img/internal-header-banner.jpg") 0 0 no-repeat;
@@ -2292,6 +2292,10 @@ a[data-toggle="modal"] {
       height: 10px;
     }
   }
+  @include media-breakpoint-down(md) {
+    .banner {
+    }
+  }
 }
 
 .grid-banner {
@@ -2317,8 +2321,8 @@ a[data-toggle="modal"] {
       height: auto;
       z-index: -1;
       position: relative;
-//       left: 50%;
-//       transform: translateX(-50%);
+      //       left: 50%;
+      //       transform: translateX(-50%);
 
       .col {
         background: #f1f1f1;
@@ -2332,14 +2336,13 @@ a[data-toggle="modal"] {
       background: #000;
       @include dropshadow();
 
-
       &.bg-header-banner {
         background: url("../img/bg-internal-banner.jpg") 0 0 no-repeat;
         background-size: cover;
         z-index: -1;
       }
     }
-    
+
     .printing-list ul {
       display: flex;
       padding-left: 0;
@@ -2357,6 +2360,12 @@ a[data-toggle="modal"] {
         background: #000;
         color: $white;
       }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .printing-list ul {
+      flex-direction: column;
     }
   }
 }
@@ -2395,14 +2404,6 @@ a[data-toggle="modal"] {
   .box {
   }
 
-  .img {
-    width: 100%;
-    height: 100%;
-    flex: 1;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .box {
     background: black;
     height: 300px;
@@ -2410,7 +2411,10 @@ a[data-toggle="modal"] {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
   a > p {
     padding: 0 0;
   }
@@ -2438,97 +2442,97 @@ a[data-toggle="modal"] {
   }
 
   .collating {
-    background: url("../img/collating.png");
+    background-image: url("../img/collating.png");
   }
 
   .folding {
-    background: url("../img/folding.png");
+    background-image: url("../img/folding.png");
   }
 
   .laminating {
-    background: url("../img/laminating.png");
+    background-image: url("../img/laminating.png");
   }
 
   .hand-work {
-    background: url("../img/handwork.png");
+    background-image: url("../img/handwork.png");
   }
 
   .hole-drilling {
-    background: url("../img/hole-drilling.png");
+    background-image: url("../img/hole-drilling.png");
   }
 
   .numbering {
-    background: url("../img/numbering.png");
+    background-image: url("../img/numbering.png");
   }
 
   .paper-cutting {
-    background: url("../img/paper-cutting.png");
+    background-image: url("../img/paper-cutting.png");
   }
 
   .perforating {
-    background: url("../img/perforating.png");
+    background-image: url("../img/perforating.png");
   }
 
   .shrink-wrapping {
-    background: url("../img/shrink-wrapping.png");
+    background-image: url("../img/shrink-wrapping.png");
   }
 
   .posters {
-    background: url("../img/posters.jpg");
+    background-image: url("../img/posters.jpg");
   }
   .posters {
-    background: url("../img/posters.jpg");
+    background-image: url("../img/posters.jpg");
   }
   .decals {
-    background: url("../img/decals.jpg");
+    background-image: url("../img/decals.jpg");
   }
   .window-graphics {
-    background: url("../img/window-graphics.jpg");
+    background-image: url("../img/window-graphics.jpg");
   }
   .vehicle-magnets {
-    background: url("../img/vehicle-magnets.jpg");
+    background-image: url("../img/vehicle-magnets.jpg");
   }
   .banners {
-    background: url("../img/banners.jpg");
+    background-image: url("../img/banners.jpg");
   }
   .business-forms {
-    background: url("../img/business-forms.jpg");
+    background-image: url("../img/business-forms.jpg");
   }
   .business-cards {
-    background: url("../img/business-cards.jpg");
+    background-image: url("../img/business-cards.jpg");
   }
   .flyers {
-    background: url("../img/flyers.jpg");
+    background-image: url("../img/flyers.jpg");
   }
   .postcards {
-    background: url("../img/postcards.jpg");
+    background-image: url("../img/postcards.jpg");
   }
   .brochures {
-    background: url("../img/brochures.jpg");
+    background-image: url("../img/brochures.jpg");
   }
   .saddle-stitching {
-    background: url("../img/saddle-stitching.jpg");
+    background-image: url("../img/saddle-stitching.jpg");
   }
   .comb-binding {
-    background: url("../img/comb-binding.jpg");
+    background-image: url("../img/comb-binding.jpg");
   }
   .stapling {
-    background: url("../img/stapling.jpg");
+    background-image: url("../img/stapling.jpg");
   }
   .wire-binding {
-    background: url("../img/wire-binding.jpg");
+    background-image: url("../img/wire-binding.jpg");
   }
 
   .mailing-services {
-    background: url("../img/mailing-services.jpg");
+    background-image: url("../img/mailing-services.jpg");
   }
 
   .personalizing {
-    background: url("../img/personalizing.jpg");
+    background-image: url("../img/personalizing.jpg");
   }
 
   .variable-data {
-    background: url("../img/variable-data.jpg");
+    background-image: url("../img/variable-data.jpg");
   }
 
   .span-three-columns {
@@ -2536,23 +2540,32 @@ a[data-toggle="modal"] {
   }
 
   .debasing {
-    background: url("../img/debasing.jpg");
+    background-image: url("../img/debasing.jpg");
   }
 
   .die-cut {
-    background: url("../img/die-cut.png");
+    background-image: url("../img/die-cut.png");
   }
 
   .scoring {
-    background: url("../img/scoring.jpg");
+    background-image: url("../img/scoring.jpg");
   }
 
-  .foil-stamp { 
-    background: url("../img/foil-stamp.jpg");
+  .foil-stamp {
+    background-image: url("../img/foil-stamp.jpg");
   }
 
   .embossing {
-    background: url("../img/embossing.jpg");
+    background-image: url("../img/embossing.jpg");
+  }
+
+  .img {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   p {
@@ -2561,6 +2574,31 @@ a[data-toggle="modal"] {
     margin-bottom: 0;
     background: $white;
     width: 100%;
+  }
+
+  .banner-box {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    > div {
+      position: relative;
+    }
+  }
+
+  .banner-box::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -2571,7 +2609,6 @@ a[data-toggle="modal"] {
     padding-top: 170px;
   }
 }
-
 
 .contact-ribbon {
   a {
