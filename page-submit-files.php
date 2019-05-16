@@ -8,7 +8,7 @@
 
                     <div id="sidebar" class="submit-files">
                         <div class="sidebar-content">
-                            <div id="contact-form">
+                            <div id="contact-form" class="d-block">
                                 <h2>Submit Files</h2>
 
                                 <?php if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1') {

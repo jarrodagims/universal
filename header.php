@@ -146,12 +146,14 @@ StatCounter"></a></div>
                 <?php echo get_template_part('template-parts/navbar'); ?>
                 <div class="jumbo-container">
                     <?php echo get_template_part('template-parts/top-header'); ?>
-                    <div class="banner">
+                    <div class="banner banner-internal">
                         <div class="banner-content">
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
-                                        <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>
+                                        <div class="d-none d-lg-flex">
+                                            <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>
+                                        </div>
                                         <div class="header">
                                             <div class="header-content">
                                                 <div class="h1"><?php if(!is_home()) :
@@ -194,7 +196,8 @@ StatCounter"></a></div>
                     <?php echo get_template_part('template-parts/top-header'); ?>
                     <div class="banner">
                         <div class="banner-content">
-                            <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>
+                            <div class="d-none d-lg-flex">
+                                <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?></div>
 
                             <div class="container bg-container">
 

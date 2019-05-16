@@ -2293,9 +2293,18 @@ a[data-toggle="modal"] {
     }
   }
   @include media-breakpoint-down(md) {
-    .banner {
 
+    .banner .row {
+      width: auto;
+    }
+
+    
+    .banner {
       height: auto;
+
+      &.banner-internal {
+        height: 250px;
+      }
     }
   }
 }
@@ -2399,10 +2408,14 @@ a[data-toggle="modal"] {
       }
     }
 
+    .row.printing-list {
+      width: 100%;
+    }
 
 
     .row.header-row {
       height: 300px;
+      width: 100%;
     }
 
     .container.bg-container .col {

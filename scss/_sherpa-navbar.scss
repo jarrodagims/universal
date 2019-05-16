@@ -281,6 +281,15 @@ the right sidebar including social icons address and phone
     li a {
       padding: 1em;
     }
+
+    @include media-breakpoint-down(md) {
+
+      li a {
+        font-size: 15px;
+        text-align: center;
+        padding: 1em;
+      }
+    }
   } 
 
   
@@ -428,15 +437,18 @@ the right sidebar including social icons address and phone
   }
 }
 
+
+
 @include media-breakpoint-down(lg) {
   .navbar-right {
     margin-bottom: 0;
     margin-left: auto;
+    flex-wrap: wrap;
 
-    li:first-child {
-      flex: 1;
-      text-align: left;
+    li:nth-child(2) {
+      justify-content: flex-end;
     }
+
 
     li.menu-item.directions, li.menu-item.contact {
       position: relative;
@@ -493,7 +505,35 @@ the right sidebar including social icons address and phone
   }
 }
 
+@include media-breakpoint-down(sm) {
+  .navbar-right {
+
+    li:first-child {
+      text-align: left;
+      flex: 0 0 100%;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 2em;
+    }
+
+    li:nth-child(2) {
+      flex: 1;
+      display: flex;
+      text-align: left;
+      align-self: flex-start;
+      justify-content: flex-start;
+    }
+  }
+}
+
 
 .dropdown-menu {
   top: auto;
+}
+
+@include media-breakpoint-down(sm) {
+  .dropdown-item {
+    font-size: 15px !important;
+  }
 }
