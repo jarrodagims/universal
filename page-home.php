@@ -8,30 +8,7 @@ Template Name: Home
     <?php echo get_template_part('template-parts/navbar'); ?>
     <div class="jumbo-container">
 
-        <div class="d-none d-lg-flex top-header <?php if (!is_front_page()): ?>internal<?php endif;?>">
-            <div class="container-fluid">
-
-                <div class="v-align row">
-                    <div class="col navbar-button text-center">
-                        <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img
-                                src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
-    'description'
-); ?>" /></a>
-                        <?php if (!is_front_page()): ?><div class="d-none d-lg-flex social-container">
-                            <?php
-$sm = new SocialMedia(array('facebook', 'twitter'));
-$sm->setSize('sm');
-$sm->showNetworkButtons();
-$sm->setColorType('singleColor');
-?>
-                        </div><?php endif; ?>
-                        <ul class="nav navbar-nav navbar-right <?php if (!is_front_page()): ?>d-lg-none<?php endif;?>">
-                            <li><a href="tel:<?php printPhone();?>">TELEPHONE: <?php printPhone();?></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php echo get_template_part('template-parts/top-header'); ?>
 
         <div class="jumbotron">
             <div class="jumbo-content">
@@ -140,7 +117,10 @@ $sm->setColorType('singleColor');
                 <div class="col">
                     <div class="grid-img">
 
-                        <img src="<?=IMGURL?>grid-sidebar.jpg" alt="Sidebar" usemap="#image-map" class="d-xl-none">
+                        <picture>
+                            <source srcset="<?=IMGURL?>grid-retina.png 2x" />
+                            <img src="<?=IMGURL?>grid-sm.png" alt="Sidebar" usemap="#image-map" class="d-xl-none" />
+                        </picture>
 
                         <map name="image-map">
                             <area target="" alt="Digital" title="Digital" href="<?=SITEURL?>/printing-services/"
@@ -151,8 +131,7 @@ $sm->setColorType('singleColor');
                             <area target="" alt="Offset" title="Offset" href="<?=SITEURL?>/printing-services/"
                                 coords="0,459,361,574" shape="rect">
                             <area target="" alt="Promotional Items" title="Promotional Items"
-                                href="<?=SITEURL?>/printing-services/promotional-items/" coords="0,574,361,801"
-                                shape="rect">
+                                href="<?=SITEURL?>/printing-services/promo-items/" coords="0,574,361,801" shape="rect">
                             <area target="" alt="Hello" title="Contact Us" href="<?=SITEURL?>/contact-us/"
                                 coords="2,0,361,114" shape="rect">
                         </map>

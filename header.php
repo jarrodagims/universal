@@ -115,6 +115,8 @@ StatCounter"></a></div>
                 <div class="v-align row">
                     <div class="col navbar-button text-center">
                         <ul class="nav navbar-nav navbar-right">
+                            <li><a href="<?=SITEURL?>/submit-files/"><button class="btn btn-primary">Submit Your
+                                        Files</button></a></li>
                             <li><a href="tel:<?php printPhone();?>">TELEPHONE: <?php printPhone();?></a></li>
                             <li class="nav-item menu-item directions">
                                 <a href="<?=SITEURL?>/contact-us/"><span
@@ -143,23 +145,7 @@ StatCounter"></a></div>
             <section class="internal-banner waypoint">
                 <?php echo get_template_part('template-parts/navbar'); ?>
                 <div class="jumbo-container">
-                    <div class="d-none d-lg-flex top-header">
-                        <div class="container-fluid">
-                            <div class="v-align row">
-                                <div class="col navbar-button text-center">
-                                    <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img
-                                            src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
-    'description'
-); ?>" /></a>
-
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="tel:<?php printPhone();?>">TELEPHONE: <?php printPhone();?></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php echo get_template_part('template-parts/top-header'); ?>
                     <div class="banner">
                         <div class="banner-content">
                             <div class="container">
@@ -205,23 +191,7 @@ StatCounter"></a></div>
             <section class="grid-banner internal-banner waypoint">
                 <?php echo get_template_part('template-parts/navbar'); ?>
                 <div class="jumbo-container">
-                    <div class="d-none d-lg-flex top-header">
-                        <div class="container-fluid">
-                            <div class="v-align row">
-                                <div class="col navbar-button text-center">
-                                    <a class="navbar-brand d-lg-block d-none" href='<?php echo get_site_url(); ?>'><img
-                                            src="<?=IMGURL;?>logo.svg" alt="<?php echo get_bloginfo(
-    'description'
-); ?>" /></a>
-
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="tel:<?php printPhone();?>">TELEPHONE: <?php printPhone();?></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php echo get_template_part('template-parts/top-header'); ?>
                     <div class="banner">
                         <div class="banner-content">
                             <?php echo non_responsive_bs_menu('secondary-menu', 'left', SITENAME); ?>

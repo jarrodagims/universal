@@ -167,7 +167,7 @@ the right sidebar including social icons address and phone
 
 .navbar-right {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
   @include montserrat();
   margin-left: auto;
@@ -491,4 +491,9 @@ the right sidebar including social icons address and phone
       }
     }
   }
+}
+
+
+.dropdown-menu {
+  top: auto;
 }
