@@ -1084,6 +1084,7 @@ $navWidth: 80px;
           a {
             flex: 1;
             height: 100%;
+            font-size: 12px;
             color: $white;
             @include acumin();
             letter-spacing: $letterSpacing;

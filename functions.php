@@ -174,18 +174,6 @@ function my_acf_format_value( $value, $post_id, $field ) {
 
 add_filter('acf/format_value/type=textarea', 'my_acf_format_value', 10, 3);
 
-// Add backend styles for Gutenberg.
-// add_action( 'enqueue_block_editor_assets', 'add_gutenberg_assets' );
-
-// /**
-//  * Load Gutenberg stylesheet.
-//  */
-// function add_gutenberg_assets() {
-// 	// Load the theme styles within Gutenberg.
-// 	wp_enqueue_style( 'gutenberg', get_theme_file_uri( '/css/gutenberg-editor-style.css' ), false );
-// } 
-
-
 function mytheme_block_editor_styles() {
     wp_enqueue_style(
 		'slug-block-editor-styles',
@@ -196,49 +184,23 @@ function mytheme_block_editor_styles() {
 
 add_action( 'enqueue_block_editor_assets', 'mytheme_block_editor_styles' );
 
-function wpb_add_fonts() {
-    wp_enqueue_style( 'moderno', 'https://use.typekit.net/rxb4cyv.css', false );
-} 
 
 add_action( 'wp_enqueue_scripts', 'wpb_add_fonts' );
 
 add_filter( 'body_class','my_body_classes' );
 function my_body_classes( $classes ) {
- 
     if(!is_front_page()) {
 		$classes[] = 'internal';
 	}
-
 	return $classes;
-     
 }
 
-
-
-function pagination_bar( $custom_query ) {
-
-    $total_pages = $custom_query->max_num_pages;
-    $big = 999999999; // need an unlikely integer
-
-    if ($total_pages > 1){
-        $current_page = max(1, get_query_var('paged'));
-
-        echo paginate_links(array(
-            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-            'format' => '?paged=%#%',
-            'current' => $current_page,
-			'total' => $total_pages,
-			'prev_text'=> '&lt;',
-			'next_text' => '&gt;'
-        ));
-    }
-}
 
 /* enable uls as children of H tags */
 function override_mce_options($initArray) {
 	$opts = '+h2[ul],+h3[ul],+h1[ul],+h2[id],+div[span]';
 	$initArray['valid_children'] = $opts;
-	$initArray['extended_valid_elements'] = 'img[href],span,span[class],h2[href],h1[href],h3[href],h2[id],h2[class],h1[id],h1[class],h3[id],h3[class]';
+	$initArray['extended_valid_elements'] = 'span,span[class],h2[href],h1[href],h3[href],h2[id],h2[class],h1[id],h1[class],h3[id],h3[class]';
 	return $initArray;
 }
 add_filter('tiny_mce_before_init', 'override_mce_options');
